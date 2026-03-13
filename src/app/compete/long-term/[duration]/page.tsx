@@ -185,7 +185,7 @@ export default function DurationChallengesPage() {
                     </Badge>
                   </div>
 
-                  <div>
+                  {/* <div>
                     <p className="mb-2 text-xs text-muted-foreground">Stocks ({challenge.stocks.length})</p>
                     <div className="flex flex-wrap gap-1.5">
                       {challenge.stocks.map((stock) => (
@@ -197,7 +197,7 @@ export default function DurationChallengesPage() {
                     <p className="mt-2 text-[11px] text-muted-foreground">
                       Redacted on: {challenge.stocks[0]?.redactedDate ? formatDate(challenge.stocks[0].redactedDate) : "N/A"}
                     </p>
-                  </div>
+                  </div> */}
                 </CardContent>
 
                 <CardFooter>

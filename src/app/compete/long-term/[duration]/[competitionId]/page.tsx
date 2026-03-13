@@ -457,9 +457,9 @@ export default function CompetitionDetailPage() {
                     <div className="rounded-none border border-border/70 bg-muted/20 p-3">
                       <p className="text-sm font-medium">{selectedStockData?.symbol ?? "-"}</p>
                       <p className="text-xs text-muted-foreground">{selectedStockData?.companyName ?? "N/A"}</p>
-                      <p className="text-xs text-muted-foreground">
+                      {/* <p className="text-xs text-muted-foreground">
                         Redacted on: {selectedStockData?.redactedDate ? formatDate(selectedStockData.redactedDate) : "N/A"}
-                      </p>
+                      </p> */}
                     </div>
                     <StockCandlestickChart points={selectedStockData?.points ?? []} />
                   </CardContent>
