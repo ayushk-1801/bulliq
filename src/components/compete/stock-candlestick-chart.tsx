@@ -40,7 +40,7 @@ export function StockCandlestickChart({ points }: StockCandlestickChartProps) {
 
     const chart: IChartApi = createChart(containerRef.current, {
       autoSize: true,
-      height: 400,
+      height: 520,
       layout: {
         background: { type: ColorType.Solid, color: "transparent" },
         textColor: "#6b7280",
@@ -111,11 +111,11 @@ export function StockCandlestickChart({ points }: StockCandlestickChartProps) {
 
   if (points.length === 0) {
     return (
-      <div className="flex h-60 items-center justify-center rounded-none border border-border/70 bg-muted/30 text-xs text-muted-foreground">
+      <div className="flex h-[32rem] items-center justify-center rounded-none border border-border/70 bg-muted/30 text-xs text-muted-foreground">
         No OHLC data available for selected period.
       </div>
     );
   }
 
-  return <div ref={containerRef} className="h-60 w-full" />;
+  return <div ref={containerRef} className="h-[32rem] w-full" />;
 }

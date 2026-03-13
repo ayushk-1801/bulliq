@@ -10,8 +10,7 @@ import {
 } from "~/server/db/schema";
 
 const HISTORICAL_CHART_START_YEAR = 2022;
-const REDACTED_COMPETITION_START_DATE = "2020-01-01";
-const REDACTED_HISTORY_START_DATE = "2016-01-01";
+const HISTORICAL_RANGE_START_DATE = "2016-01-01";
 const labelCollator = new Intl.Collator("en", { numeric: true, sensitivity: "base" });
 
 type RouteContext = {
@@ -70,33 +69,34 @@ export async function GET(_request: Request, context: RouteContext) {
     .orderBy(asc(competitionStock.symbol));
 
   if (stockRows.length === 0) {
+    const competitionStartDate = toDateOnly(competitionRow.startDate);
     return NextResponse.json({
       range: {
-        startDate: REDACTED_HISTORY_START_DATE,
-        endDateExclusive: REDACTED_COMPETITION_START_DATE,
+        startDate: HISTORICAL_RANGE_START_DATE,
+        endDateExclusive: competitionStartDate,
         fiscalYearStart: HISTORICAL_CHART_START_YEAR,
-        fiscalYearEnd: getFiscalYearEnd(toDateOnly(competitionRow.startDate)),
+        fiscalYearEnd: getFiscalYearEnd(competitionStartDate),
       },
       companies: [],
     });
   }
 
   const competitionStartDate = toDateOnly(competitionRow.startDate);
-  const redactedEndDateExclusive = REDACTED_COMPETITION_START_DATE;
+  const rangeEndDateExclusive = competitionStartDate;
   const fiscalYearEnd = getFiscalYearEnd(competitionStartDate);
   const symbols = stockRows.map((row) => row.symbol);
 
   if (fiscalYearEnd < HISTORICAL_CHART_START_YEAR) {
     return NextResponse.json({
       range: {
-        startDate: REDACTED_HISTORY_START_DATE,
-        endDateExclusive: redactedEndDateExclusive,
+        startDate: HISTORICAL_RANGE_START_DATE,
+        endDateExclusive: rangeEndDateExclusive,
         fiscalYearStart: HISTORICAL_CHART_START_YEAR,
         fiscalYearEnd,
       },
       companies: stockRows.map((stock) => ({
         symbol: stock.redactedSymbol ?? stock.symbol,
-        redactedDate: REDACTED_COMPETITION_START_DATE,
+        redactedDate: competitionStartDate,
         companyName: stock.redactedCompanyName ?? stock.companyName,
         rows: [],
       })).sort((a, b) => {
@@ -141,7 +141,7 @@ export async function GET(_request: Request, context: RouteContext) {
 
   const companies = stockRows.map((stock) => ({
     symbol: stock.redactedSymbol ?? stock.symbol,
-    redactedDate: REDACTED_COMPETITION_START_DATE,
+    redactedDate: competitionStartDate,
     companyName: stock.redactedCompanyName ?? stock.companyName,
     rows: (rowsBySymbol.get(stock.symbol) ?? []).map((row) => ({
       statementType: row.statementType,
@@ -158,8 +158,8 @@ export async function GET(_request: Request, context: RouteContext) {
 
   return NextResponse.json({
     range: {
-      startDate: REDACTED_HISTORY_START_DATE,
-      endDateExclusive: redactedEndDateExclusive,
+      startDate: HISTORICAL_RANGE_START_DATE,
+      endDateExclusive: rangeEndDateExclusive,
       fiscalYearStart: HISTORICAL_CHART_START_YEAR,
       fiscalYearEnd,
     },

@@ -1,10 +1,11 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 
 import { StockCandlestickChart } from "~/components/compete/stock-candlestick-chart";
+import { Alert, AlertDescription } from "~/components/ui/alert";
 import {
   Accordion,
   AccordionContent,
@@ -22,6 +23,7 @@ import {
   CardTitle,
 } from "~/components/ui/card";
 import { Input } from "~/components/ui/input";
+import { Progress } from "~/components/ui/progress";
 import {
   Select,
   SelectContent,
@@ -92,7 +94,38 @@ type FinancialMetricsResponse = {
   }>;
 };
 
-type TradeAction = "buy" | "sell" | "hold";
+type TradeAction = "buy" | "sell";
+
+type CompetitionPhase = "not-started" | "running" | "fast-forwarding" | "ended";
+
+type Holding = {
+  quantity: number;
+  avgPrice: number;
+};
+
+type TradeRecord = {
+  id: number;
+  action: TradeAction;
+  symbol: string;
+  quantity: number;
+  executedPrice: number;
+  totalValue: number;
+  candleTime: string;
+};
+
+type Summary = {
+  startDate: string;
+  endDate: string;
+  holdingsValue: number;
+  portfolioValue: number;
+  profitLoss: number;
+  returnPct: number;
+};
+
+const COMPETITION_DURATION_SECONDS = 60 * 60;
+const PRE_START_VISIBLE_RATIO = 0.7;
+const FAST_FORWARD_INTERVAL_MS = 16;
+const FAST_FORWARD_TARGET_STEPS = 28;
 
 function formatDate(dateString: string): string {
   const date = new Date(`${dateString}T00:00:00.000Z`);
@@ -110,6 +143,18 @@ function formatNumber(value: number): string {
 
 function formatCapital(value: number): string {
   return new Intl.NumberFormat("en-IN", { maximumFractionDigits: 0 }).format(value);
+}
+
+function formatTimer(totalSeconds: number): string {
+  const safe = Math.max(0, totalSeconds);
+  const hours = Math.floor(safe / 3600)
+    .toString()
+    .padStart(2, "0");
+  const minutes = Math.floor((safe % 3600) / 60)
+    .toString()
+    .padStart(2, "0");
+  const seconds = (safe % 60).toString().padStart(2, "0");
+  return `${hours}:${minutes}:${seconds}`;
 }
 
 function computeChangePercent(points: StockPoint[]): number {
@@ -156,7 +201,8 @@ function groupFinancialRows(rows: FinancialMetricRow[]) {
     };
 
     statementBucket.years.add(row.fiscalYear);
-    const metricBucket = statementBucket.metrics.get(row.metric) ?? new Map<number, FinancialMetricRow>();
+    const metricBucket =
+      statementBucket.metrics.get(row.metric) ?? new Map<number, FinancialMetricRow>();
     metricBucket.set(row.fiscalYear, row);
     statementBucket.metrics.set(row.metric, metricBucket);
     byStatement.set(row.statementType, statementBucket);
@@ -186,8 +232,25 @@ export default function CompetitionDetailPage() {
   const [orderType, setOrderType] = useState<"market" | "limit">("market");
   const [limitPrice, setLimitPrice] = useState<string>("");
 
-  const [financialCompanies, setFinancialCompanies] = useState<FinancialMetricsResponse["companies"]>([]);
-  const [financialRange, setFinancialRange] = useState<FinancialMetricsResponse["range"] | null>(null);
+  const [phase, setPhase] = useState<CompetitionPhase>("not-started");
+  const [elapsedSeconds, setElapsedSeconds] = useState(0);
+  const [simulationIndex, setSimulationIndex] = useState(0);
+  const [cash, setCash] = useState(0);
+  const [holdings, setHoldings] = useState<Record<string, Holding>>({});
+  const [tradeLog, setTradeLog] = useState<TradeRecord[]>([]);
+  const [tradeMessage, setTradeMessage] = useState<{
+    type: "default" | "destructive";
+    text: string;
+  } | null>(null);
+  const [summary, setSummary] = useState<Summary | null>(null);
+  const startTimestampRef = useRef<number | null>(null);
+
+  const [financialCompanies, setFinancialCompanies] = useState<
+    FinancialMetricsResponse["companies"]
+  >([]);
+  const [financialRange, setFinancialRange] = useState<FinancialMetricsResponse["range"] | null>(
+    null,
+  );
   const [financialLoading, setFinancialLoading] = useState(false);
   const [financialError, setFinancialError] = useState<string | null>(null);
   const [companyFilter, setCompanyFilter] = useState<string>("all");
@@ -224,7 +287,17 @@ export default function CompetitionDetailPage() {
           setData(payload);
           setError(null);
           setSelectedStock(payload.stocks[0]?.symbol ?? "");
-          setLimitPrice((payload.stocks[0]?.points.at(-1)?.close ?? 0).toFixed(2));
+          setLimitPrice((payload.stocks[0]?.points[0]?.close ?? 0).toFixed(2));
+
+          setPhase("not-started");
+          setElapsedSeconds(0);
+          setSimulationIndex(0);
+          setCash(payload.competition.startingCapital);
+          setHoldings({});
+          setTradeLog([]);
+          setTradeMessage(null);
+          setSummary(null);
+          startTimestampRef.current = null;
         }
       } catch (err) {
         if (isMounted) {
@@ -306,33 +379,457 @@ export default function CompetitionDetailPage() {
     return data.stocks.find((stock) => stock.symbol === selectedStock) ?? null;
   }, [data, selectedStock]);
 
+  const maxSimulationPoints = useMemo(() => {
+    if (!data || data.stocks.length === 0) return 1;
+    return Math.max(1, ...data.stocks.map((stock) => stock.points.length));
+  }, [data]);
+
+  const preStartVisibleIndex = useMemo(() => {
+    if (maxSimulationPoints <= 1) return 0;
+    return Math.max(
+      0,
+      Math.min(
+        maxSimulationPoints - 1,
+        Math.floor((maxSimulationPoints - 1) * PRE_START_VISIBLE_RATIO),
+      ),
+    );
+  }, [maxSimulationPoints]);
+
+  const visibleIndex = useMemo(() => {
+    if (!data) return 0;
+    if (phase === "not-started") return preStartVisibleIndex;
+    return simulationIndex;
+  }, [data, phase, preStartVisibleIndex, simulationIndex]);
+
+  const remainingSeconds = Math.max(0, COMPETITION_DURATION_SECONDS - elapsedSeconds);
+  const timerProgress = (elapsedSeconds / COMPETITION_DURATION_SECONDS) * 100;
+
+  const priceBySymbol = useMemo(() => {
+    const entries = new Map<string, number>();
+    if (!data) return entries;
+
+    for (const stock of data.stocks) {
+      if (stock.points.length === 0) continue;
+      const pointIndex = Math.min(visibleIndex, stock.points.length - 1);
+      const point = stock.points[pointIndex];
+      if (!point) continue;
+      entries.set(stock.symbol, point.close);
+    }
+
+    return entries;
+  }, [data, visibleIndex]);
+
+  const selectedVisiblePoints = useMemo(() => {
+    if (!selectedStockData || selectedStockData.points.length === 0) return [];
+    const upperBound = Math.min(visibleIndex + 1, selectedStockData.points.length);
+    return selectedStockData.points.slice(0, Math.max(1, upperBound));
+  }, [selectedStockData, visibleIndex]);
+
+  const selectedCurrentPrice = useMemo(() => {
+    if (!selectedStock) return 0;
+    return priceBySymbol.get(selectedStock) ?? 0;
+  }, [selectedStock, priceBySymbol]);
+
+  useEffect(() => {
+    if (!selectedStock) return;
+    setLimitPrice(selectedCurrentPrice.toFixed(2));
+  }, [selectedStock, selectedCurrentPrice]);
+
+  const holdingsValue = useMemo(() => {
+    return Object.entries(holdings).reduce((sum, [symbol, holding]) => {
+      const currentPrice = priceBySymbol.get(symbol) ?? 0;
+      return sum + holding.quantity * currentPrice;
+    }, 0);
+  }, [holdings, priceBySymbol]);
+
+  const portfolioValue = cash + holdingsValue;
+  const netPnL = data ? portfolioValue - data.competition.startingCapital : 0;
+
+  const stockPerformanceRows = useMemo(() => {
+    if (!data) return [];
+
+    return data.stocks
+      .map((stock) => {
+        if (stock.points.length === 0) return null;
+
+        const startIdx = Math.min(preStartVisibleIndex, stock.points.length - 1);
+        const endIdx = Math.min(visibleIndex, stock.points.length - 1);
+
+        const startPrice = stock.points[startIdx]?.close ?? 0;
+        const endPrice = stock.points[endIdx]?.close ?? 0;
+        const change = endPrice - startPrice;
+        const changePct = startPrice === 0 ? 0 : (change / startPrice) * 100;
+
+        return {
+          symbol: stock.symbol,
+          companyName: stock.companyName,
+          startPrice,
+          endPrice,
+          change,
+          changePct,
+        };
+      })
+      .filter((row): row is NonNullable<typeof row> => Boolean(row))
+      .sort((a, b) => b.changePct - a.changePct);
+  }, [data, preStartVisibleIndex, visibleIndex]);
+
+  const holdingsPerformanceRows = useMemo(() => {
+    return Object.entries(holdings)
+      .map(([symbol, holding]) => {
+        const currentPrice = priceBySymbol.get(symbol) ?? 0;
+        const investedValue = holding.quantity * holding.avgPrice;
+        const currentValue = holding.quantity * currentPrice;
+        const gainLoss = currentValue - investedValue;
+        const gainLossPct = investedValue === 0 ? 0 : (gainLoss / investedValue) * 100;
+
+        return {
+          symbol,
+          quantity: holding.quantity,
+          avgPrice: holding.avgPrice,
+          currentPrice,
+          investedValue,
+          currentValue,
+          gainLoss,
+          gainLossPct,
+        };
+      })
+      .sort((a, b) => b.gainLoss - a.gainLoss);
+  }, [holdings, priceBySymbol]);
+
+  const tradeFlowSummary = useMemo(() => {
+    return tradeLog.reduce(
+      (acc, trade) => {
+        if (trade.action === "buy") {
+          acc.totalBuy += trade.totalValue;
+        } else {
+          acc.totalSell += trade.totalValue;
+        }
+
+        return acc;
+      },
+      { totalBuy: 0, totalSell: 0 },
+    );
+  }, [tradeLog]);
+
+  const finalizeCompetition = useCallback(() => {
+    if (!data || phase === "ended") return;
+
+    setPhase("ended");
+    startTimestampRef.current = null;
+
+    const lastVisibleDate = data.stocks
+      .map((stock) => {
+        if (stock.points.length === 0) return null;
+        const idx = Math.min(visibleIndex, stock.points.length - 1);
+        return stock.points[idx]?.time ?? null;
+      })
+      .filter((value): value is string => Boolean(value))
+      .sort()
+      .at(-1);
+
+    const startDate = data.stocks[0]?.points[0]?.time ?? data.competition.startDate;
+    const endDate = lastVisibleDate ?? startDate;
+
+    const currentHoldingsValue = Object.entries(holdings).reduce((sum, [symbol, holding]) => {
+      const currentPrice = priceBySymbol.get(symbol) ?? 0;
+      return sum + holding.quantity * currentPrice;
+    }, 0);
+
+    const currentPortfolioValue = cash + currentHoldingsValue;
+    const profitLoss = currentPortfolioValue - data.competition.startingCapital;
+    const returnPct =
+      data.competition.startingCapital === 0
+        ? 0
+        : (profitLoss / data.competition.startingCapital) * 100;
+
+    setSummary({
+      startDate,
+      endDate,
+      holdingsValue: currentHoldingsValue,
+      portfolioValue: currentPortfolioValue,
+      profitLoss,
+      returnPct,
+    });
+  }, [cash, data, holdings, phase, priceBySymbol, visibleIndex]);
+
+  const endCompetition = () => {
+    if (phase !== "running") return;
+    setPhase("fast-forwarding");
+  };
+
+  useEffect(() => {
+    if (phase !== "running") return;
+
+    if (maxSimulationPoints <= 1) {
+      finalizeCompetition();
+      return;
+    }
+
+    startTimestampRef.current ??= Date.now() - elapsedSeconds * 1000;
+
+    const intervalId = window.setInterval(() => {
+      const startTs = startTimestampRef.current;
+      if (!startTs) return;
+
+      const elapsed = Math.min(
+        COMPETITION_DURATION_SECONDS,
+        Math.floor((Date.now() - startTs) / 1000),
+      );
+
+      setElapsedSeconds(elapsed);
+
+      const ratio = elapsed / COMPETITION_DURATION_SECONDS;
+      const runSpan = Math.max(1, maxSimulationPoints - 1 - preStartVisibleIndex);
+      const nextIndex = Math.min(
+        maxSimulationPoints - 1,
+        preStartVisibleIndex + Math.floor(ratio * runSpan),
+      );
+      setSimulationIndex(nextIndex);
+
+      if (elapsed >= COMPETITION_DURATION_SECONDS) {
+        finalizeCompetition();
+      }
+    }, 1000);
+
+    return () => {
+      window.clearInterval(intervalId);
+    };
+  }, [
+    elapsedSeconds,
+    finalizeCompetition,
+    maxSimulationPoints,
+    phase,
+    preStartVisibleIndex,
+  ]);
+
+  useEffect(() => {
+    if (phase !== "fast-forwarding") return;
+
+    const finalIndex = Math.max(0, maxSimulationPoints - 1);
+
+    if (simulationIndex >= finalIndex) {
+      finalizeCompetition();
+      return;
+    }
+
+    const remaining = Math.max(1, finalIndex - simulationIndex);
+    const step = Math.max(1, Math.ceil(remaining / FAST_FORWARD_TARGET_STEPS));
+
+    const intervalId = window.setInterval(() => {
+      setSimulationIndex((prev) => {
+        const next = Math.min(finalIndex, prev + step);
+        if (next >= finalIndex) {
+          window.clearInterval(intervalId);
+          setTimeout(() => finalizeCompetition(), 0);
+        }
+        return next;
+      });
+    }, FAST_FORWARD_INTERVAL_MS);
+
+    return () => {
+      window.clearInterval(intervalId);
+    };
+  }, [finalizeCompetition, maxSimulationPoints, phase, simulationIndex]);
+
+  useEffect(() => {
+    if (phase !== "not-started") return;
+    setSimulationIndex(preStartVisibleIndex);
+  }, [phase, preStartVisibleIndex]);
+
+  const startCompetition = () => {
+    if (phase !== "not-started") return;
+
+    setTradeMessage(null);
+    setSummary(null);
+    setElapsedSeconds(0);
+    setSimulationIndex(preStartVisibleIndex);
+    startTimestampRef.current = Date.now();
+    setPhase("running");
+  };
+
+  const executeTrade = () => {
+    if (!data || phase !== "running") {
+      setTradeMessage({ type: "destructive", text: "Start the competition before trading." });
+      return;
+    }
+
+    if (!selectedStockData) {
+      setTradeMessage({ type: "destructive", text: "Select a stock first." });
+      return;
+    }
+
+    const parsedQuantity = Number.parseInt(quantity, 10);
+    if (!Number.isFinite(parsedQuantity) || parsedQuantity <= 0) {
+      setTradeMessage({ type: "destructive", text: "Quantity must be greater than 0." });
+      return;
+    }
+
+    const marketPrice = selectedCurrentPrice;
+    if (marketPrice <= 0) {
+      setTradeMessage({ type: "destructive", text: "No market price available for this tick." });
+      return;
+    }
+
+    const parsedLimit = Number.parseFloat(limitPrice);
+    let executedPrice = marketPrice;
+
+    if (orderType === "limit") {
+      if (!Number.isFinite(parsedLimit) || parsedLimit <= 0) {
+        setTradeMessage({ type: "destructive", text: "Enter a valid limit price." });
+        return;
+      }
+
+      if (action === "buy" && parsedLimit < marketPrice) {
+        setTradeMessage({
+          type: "destructive",
+          text: `Buy limit not filled. Current price is ${formatNumber(marketPrice)}.`,
+        });
+        return;
+      }
+
+      if (action === "sell" && parsedLimit > marketPrice) {
+        setTradeMessage({
+          type: "destructive",
+          text: `Sell limit not filled. Current price is ${formatNumber(marketPrice)}.`,
+        });
+        return;
+      }
+
+      executedPrice = marketPrice;
+    }
+
+    const totalValue = parsedQuantity * executedPrice;
+    const holding = holdings[selectedStockData.symbol];
+
+    if (action === "buy") {
+      if (cash < totalValue) {
+        setTradeMessage({ type: "destructive", text: "Insufficient budget for this order." });
+        return;
+      }
+
+      const prevQty = holding?.quantity ?? 0;
+      const prevAvg = holding?.avgPrice ?? 0;
+      const nextQty = prevQty + parsedQuantity;
+      const nextAvg =
+        nextQty === 0
+          ? 0
+          : (prevAvg * prevQty + executedPrice * parsedQuantity) / nextQty;
+
+      setCash((prev) => prev - totalValue);
+      setHoldings((prev) => ({
+        ...prev,
+        [selectedStockData.symbol]: {
+          quantity: nextQty,
+          avgPrice: nextAvg,
+        },
+      }));
+    } else {
+      if (!holding || holding.quantity < parsedQuantity) {
+        setTradeMessage({
+          type: "destructive",
+          text: `Not enough holdings to sell. You own ${holding?.quantity ?? 0} shares.`,
+        });
+        return;
+      }
+
+      const nextQty = holding.quantity - parsedQuantity;
+      setCash((prev) => prev + totalValue);
+      setHoldings((prev) => {
+        if (nextQty <= 0) {
+          const nextHoldings = { ...prev };
+          delete nextHoldings[selectedStockData.symbol];
+          return nextHoldings;
+        }
+
+        return {
+          ...prev,
+          [selectedStockData.symbol]: {
+            quantity: nextQty,
+            avgPrice: holding.avgPrice,
+          },
+        };
+      });
+    }
+
+    const candleTime = selectedVisiblePoints.at(-1)?.time ?? data.competition.startDate;
+
+    setTradeLog((prev) => [
+      {
+        id: prev.length + 1,
+        action,
+        symbol: selectedStockData.symbol,
+        quantity: parsedQuantity,
+        executedPrice,
+        totalValue,
+        candleTime,
+      },
+      ...prev,
+    ]);
+
+    setTradeMessage({
+      type: "default",
+      text: `${action.toUpperCase()} order filled for ${selectedStockData.symbol}: ${parsedQuantity} @ ${formatNumber(executedPrice)}.`,
+    });
+  };
+
   const estimatedOrderValue = useMemo(() => {
     if (!selectedStockData) return 0;
     const parsedQuantity = Number.parseInt(quantity, 10);
     if (!Number.isFinite(parsedQuantity) || parsedQuantity <= 0) return 0;
 
-    const lastClose = selectedStockData.points.at(-1)?.close ?? 0;
-    const price = orderType === "market" ? lastClose : Number.parseFloat(limitPrice) || 0;
+    const marketPrice = selectedCurrentPrice;
+    const price = orderType === "market" ? marketPrice : Number.parseFloat(limitPrice) || 0;
 
     return parsedQuantity * price;
-  }, [selectedStockData, quantity, orderType, limitPrice]);
+  }, [selectedStockData, quantity, orderType, limitPrice, selectedCurrentPrice]);
+
+  const liveNetPnLPct = useMemo(() => {
+    if (!data || data.competition.startingCapital === 0) return 0;
+    return (netPnL / data.competition.startingCapital) * 100;
+  }, [data, netPnL]);
+
+  const maxOrderQuantity = useMemo(() => {
+    if (action === "sell") {
+      return holdings[selectedStock]?.quantity ?? 0;
+    }
+
+    const parsedLimit = Number.parseFloat(limitPrice);
+    const effectivePrice =
+      orderType === "market"
+        ? selectedCurrentPrice
+        : Number.isFinite(parsedLimit) && parsedLimit > 0
+          ? parsedLimit
+          : selectedCurrentPrice;
+
+    if (effectivePrice <= 0) return 0;
+    return Math.max(0, Math.floor(cash / effectivePrice));
+  }, [action, cash, holdings, limitPrice, orderType, selectedCurrentPrice, selectedStock]);
+
+  const setMaxQuantity = () => {
+    setQuantity(maxOrderQuantity > 0 ? String(maxOrderQuantity) : "0");
+  };
 
   const stockSummaries = useMemo(() => {
     if (!data) return [];
 
     return data.stocks.map((stock) => {
-      const lastPoint = stock.points.at(-1);
+      const visiblePoints = stock.points.slice(
+        0,
+        Math.max(1, Math.min(visibleIndex + 1, stock.points.length)),
+      );
+
+      const lastPoint = visiblePoints.at(-1);
       return {
         symbol: stock.symbol,
         companyName: stock.companyName,
-        pointsCount: stock.points.length,
+        pointsCount: visiblePoints.length,
         latestClose: lastPoint?.close ?? 0,
-        high: computeHigh(stock.points),
-        low: computeLow(stock.points),
-        changePct: computeChangePercent(stock.points),
+        high: computeHigh(visiblePoints),
+        low: computeLow(visiblePoints),
+        changePct: computeChangePercent(visiblePoints),
       };
     });
-  }, [data]);
+  }, [data, visibleIndex]);
 
   const companyOptions = useMemo(() => {
     return financialCompanies.map((company) => ({
@@ -368,6 +865,220 @@ export default function CompetitionDetailPage() {
     return `${financialRange.startDate} to ${financialRange.endDateExclusive} (exclusive end)`;
   }, [financialRange]);
 
+  const tradePanelContent = (
+    <div className="grid gap-4 lg:grid-cols-3">
+      <Card className="border border-border/70 bg-card lg:col-span-2">
+        <CardHeader>
+          <CardTitle className="text-base font-semibold">Trade Panel</CardTitle>
+          <CardDescription>
+            Buy and sell using live simulated prices while the competition is running.
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div className="grid gap-3 sm:grid-cols-4">
+            <div className="rounded-none border border-border/70 bg-muted/20 p-3">
+              <p className="text-xs text-muted-foreground">Cash</p>
+              <p className="mt-1 text-base font-semibold">{formatNumber(cash)}</p>
+            </div>
+            <div className="rounded-none border border-border/70 bg-muted/20 p-3">
+              <p className="text-xs text-muted-foreground">Holdings Value</p>
+              <p className="mt-1 text-base font-semibold">{formatNumber(holdingsValue)}</p>
+            </div>
+            <div className="rounded-none border border-border/70 bg-muted/20 p-3">
+              <p className="text-xs text-muted-foreground">Net P/L</p>
+              <p
+                className={`mt-1 text-base font-semibold ${
+                  netPnL >= 0 ? "text-green-600" : "text-red-600"
+                }`}
+              >
+                {formatNumber(netPnL)} ({formatNumber(liveNetPnLPct)}%)
+              </p>
+            </div>
+            <div className="rounded-none border border-border/70 bg-muted/20 p-3">
+              <p className="text-xs text-muted-foreground">Current Price</p>
+              <p className="mt-1 text-base font-semibold">{formatNumber(selectedCurrentPrice)}</p>
+              <p className="text-[11px] text-muted-foreground">{selectedStock || "No stock selected"}</p>
+            </div>
+          </div>
+
+          <div className="grid gap-3 sm:grid-cols-2">
+            <div>
+              <p className="mb-1 text-xs text-muted-foreground">Stock</p>
+              <Select value={selectedStock} onValueChange={setSelectedStock}>
+                <SelectTrigger className="w-full">
+                  <SelectValue placeholder="Select stock" />
+                </SelectTrigger>
+                <SelectContent>
+                  {(data?.stocks ?? []).map((stock) => (
+                    <SelectItem key={stock.symbol} value={stock.symbol}>
+                      {stock.symbol}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+
+            <div>
+              <p className="mb-1 text-xs text-muted-foreground">Order Type</p>
+              <Select
+                value={orderType}
+                onValueChange={(value) => setOrderType(value as "market" | "limit")}
+              >
+                <SelectTrigger className="w-full">
+                  <SelectValue placeholder="Order type" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="market">Market</SelectItem>
+                  <SelectItem value="limit">Limit</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+
+            <div>
+              <div className="mb-1 flex items-center justify-between gap-2">
+                <p className="text-xs text-muted-foreground">Quantity</p>
+                <Button
+                  type="button"
+                  variant="outline"
+                  size="sm"
+                  className="h-6 px-2 text-[11px]"
+                  onClick={setMaxQuantity}
+                  disabled={maxOrderQuantity <= 0}
+                >
+                  {action === "buy" ? "Max Buy" : "Max Sell"}
+                </Button>
+              </div>
+              <Input
+                type="number"
+                min={1}
+                value={quantity}
+                onChange={(event) => setQuantity(event.target.value)}
+              />
+            </div>
+
+            <div>
+              <p className="mb-1 text-xs text-muted-foreground">Limit Price</p>
+              <Input
+                type="number"
+                step="0.01"
+                value={limitPrice}
+                onChange={(event) => setLimitPrice(event.target.value)}
+                disabled={orderType === "market"}
+              />
+            </div>
+          </div>
+
+          <div className="flex flex-wrap gap-2">
+            <Button
+              variant={action === "buy" ? "default" : "outline"}
+              onClick={() => setAction("buy")}
+            >
+              Buy
+            </Button>
+            <Button
+              variant={action === "sell" ? "destructive" : "outline"}
+              onClick={() => setAction("sell")}
+            >
+              Sell
+            </Button>
+          </div>
+
+          {tradeMessage ? (
+            <Alert variant={tradeMessage.type}>
+              <AlertDescription>{tradeMessage.text}</AlertDescription>
+            </Alert>
+          ) : null}
+
+          <div className="rounded-none border border-border/70">
+            <div className="border-b border-border/70 bg-muted/20 px-3 py-2">
+              <p className="text-xs font-medium text-muted-foreground">Trade Log</p>
+            </div>
+            <div className="max-h-48 overflow-auto">
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead>Time</TableHead>
+                    <TableHead>Type</TableHead>
+                    <TableHead>Stock</TableHead>
+                    <TableHead>Qty</TableHead>
+                    <TableHead>Price</TableHead>
+                    <TableHead>Value</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {tradeLog.length === 0 ? (
+                    <TableRow>
+                      <TableCell colSpan={6} className="text-xs text-muted-foreground">
+                        No trades yet.
+                      </TableCell>
+                    </TableRow>
+                  ) : (
+                    tradeLog.map((trade) => (
+                      <TableRow key={trade.id}>
+                        <TableCell>{trade.candleTime}</TableCell>
+                        <TableCell className="uppercase">{trade.action}</TableCell>
+                        <TableCell>{trade.symbol}</TableCell>
+                        <TableCell>{trade.quantity}</TableCell>
+                        <TableCell>{formatNumber(trade.executedPrice)}</TableCell>
+                        <TableCell>{formatNumber(trade.totalValue)}</TableCell>
+                      </TableRow>
+                    ))
+                  )}
+                </TableBody>
+              </Table>
+            </div>
+          </div>
+        </CardContent>
+        <CardFooter className="justify-between">
+          <p className="text-xs text-muted-foreground">
+            Estimated Value:{" "}
+            <span className="font-medium text-foreground">{formatNumber(estimatedOrderValue)}</span>
+          </p>
+          <Button onClick={executeTrade} disabled={phase !== "running"}>
+            Execute {action.toUpperCase()}
+          </Button>
+        </CardFooter>
+      </Card>
+
+      <Card className="border border-border/70 bg-card">
+        <CardHeader>
+          <CardTitle className="text-base font-semibold">Stock Snapshot</CardTitle>
+          <CardDescription>Selected ticker quick summary</CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-2 text-xs">
+          <div className="flex items-center justify-between">
+            <span className="text-muted-foreground">Symbol</span>
+            <span className="font-medium">{selectedStockData?.symbol ?? "-"}</span>
+          </div>
+          <div className="flex items-center justify-between">
+            <span className="text-muted-foreground">Company</span>
+            <span className="font-medium">{selectedStockData?.companyName ?? "-"}</span>
+          </div>
+          <div className="flex items-center justify-between">
+            <span className="text-muted-foreground">Latest Close</span>
+            <span className="font-medium">{formatNumber(selectedCurrentPrice)}</span>
+          </div>
+          <div className="flex items-center justify-between">
+            <span className="text-muted-foreground">Period High</span>
+            <span className="font-medium">{formatNumber(computeHigh(selectedVisiblePoints))}</span>
+          </div>
+          <div className="flex items-center justify-between">
+            <span className="text-muted-foreground">Period Low</span>
+            <span className="font-medium">{formatNumber(computeLow(selectedVisiblePoints))}</span>
+          </div>
+          <div className="flex items-center justify-between">
+            <span className="text-muted-foreground">Change %</span>
+            <span className="font-medium">{formatNumber(computeChangePercent(selectedVisiblePoints))}%</span>
+          </div>
+          <div className="flex items-center justify-between">
+            <span className="text-muted-foreground">Owned Qty</span>
+            <span className="font-medium">{holdings[selectedStock]?.quantity ?? 0}</span>
+          </div>
+        </CardContent>
+      </Card>
+    </div>
+  );
+
   return (
     <main className="min-h-screen bg-background">
       <div className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
@@ -389,6 +1100,25 @@ export default function CompetitionDetailPage() {
                   <Badge variant="outline" className="uppercase">
                     {data.competition.status}
                   </Badge>
+                  <Badge
+                    variant={
+                      phase === "running"
+                        ? "default"
+                        : phase === "fast-forwarding"
+                          ? "default"
+                        : phase === "ended"
+                          ? "secondary"
+                          : "outline"
+                    }
+                  >
+                    {phase === "running"
+                      ? "Live"
+                      : phase === "fast-forwarding"
+                        ? "Fast Forward"
+                      : phase === "ended"
+                        ? "Ended"
+                        : "Not Started"}
+                  </Badge>
                 </div>
                 <CardTitle className="text-2xl font-semibold">{data.competition.name}</CardTitle>
                 <CardDescription>
@@ -399,7 +1129,9 @@ export default function CompetitionDetailPage() {
               <CardContent className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
                 <div className="rounded-none border border-border/70 bg-muted/20 p-3">
                   <p className="text-xs text-muted-foreground">Starting Capital</p>
-                  <p className="mt-1 text-base font-semibold">{formatCapital(data.competition.startingCapital)}</p>
+                  <p className="mt-1 text-base font-semibold">
+                    {formatCapital(data.competition.startingCapital)}
+                  </p>
                 </div>
                 <div className="rounded-none border border-border/70 bg-muted/20 p-3">
                   <p className="text-xs text-muted-foreground">Stocks in Basket</p>
@@ -407,63 +1139,251 @@ export default function CompetitionDetailPage() {
                 </div>
                 <div className="rounded-none border border-border/70 bg-muted/20 p-3">
                   <p className="text-xs text-muted-foreground">Data Range</p>
-                  <p className="mt-1 text-base font-semibold">{data.competition.durationMonths}M historical</p>
+                  <p className="mt-1 text-base font-semibold">
+                    {data.competition.durationMonths}M historical
+                  </p>
                 </div>
                 <div className="rounded-none border border-border/70 bg-muted/20 p-3">
                   <p className="text-xs text-muted-foreground">Execution</p>
-                  <p className="mt-1 text-base font-semibold">Simulation mode</p>
+                  <p className="mt-1 text-base font-semibold">
+                    {phase === "running"
+                      ? "Running"
+                      : phase === "fast-forwarding"
+                        ? "Closing"
+                        : phase === "ended"
+                          ? "Closed"
+                          : "Ready"}
+                  </p>
+                </div>
+                <div className="rounded-none border border-border/70 bg-muted/20 p-3">
+                  <p className="text-xs text-muted-foreground">Live Net P/L</p>
+                  <p
+                    className={`mt-1 text-base font-semibold ${
+                      netPnL >= 0 ? "text-green-600" : "text-red-600"
+                    }`}
+                  >
+                    {formatNumber(netPnL)} ({formatNumber(liveNetPnLPct)}%)
+                  </p>
                 </div>
               </CardContent>
+
+              <CardFooter className="flex-col items-stretch gap-3 border-t border-border/70 pt-4">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <div>
+                    <p className="text-xs text-muted-foreground">Competition Timer</p>
+                    <p className="text-base font-semibold">{formatTimer(remainingSeconds)}</p>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <Button
+                      onClick={startCompetition}
+                      disabled={phase !== "not-started" || data.stocks.length === 0}
+                    >
+                      Start Competition
+                    </Button>
+                    <Button
+                      variant="destructive"
+                      onClick={endCompetition}
+                      disabled={phase !== "running"}
+                    >
+                      {phase === "fast-forwarding" ? "Ending..." : "End Competition"}
+                    </Button>
+                  </div>
+                </div>
+                <Progress value={timerProgress} className="h-2" />
+              </CardFooter>
             </Card>
 
+            {phase === "not-started" ? (
+              <Card className="border border-border/70 bg-card">
+                <CardContent className="py-10 text-center">
+                  <p className="text-sm font-medium">Competition is ready</p>
+                  <p className="mt-1 text-xs text-muted-foreground">
+                    Click &quot;Start Competition&quot; to load charts, trading panel, and market data.
+                  </p>
+                </CardContent>
+              </Card>
+            ) : null}
+
+            {phase !== "not-started" && summary ? (
+              <Card className="border border-border/70 bg-card">
+                <CardHeader>
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <div>
+                      <CardTitle className="text-lg font-semibold">Competition Result</CardTitle>
+                      <CardDescription>
+                        Range {summary.startDate} to {summary.endDate}
+                      </CardDescription>
+                    </div>
+                    <Badge variant={summary.profitLoss >= 0 ? "default" : "destructive"}>
+                      {summary.profitLoss >= 0 ? "Profit" : "Loss"}
+                    </Badge>
+                  </div>
+                </CardHeader>
+                <CardContent className="grid gap-3 sm:grid-cols-3">
+                  <div className="rounded-none border border-border/70 bg-muted/20 p-3">
+                    <p className="text-xs text-muted-foreground">Portfolio Value</p>
+                    <p className="mt-1 text-lg font-semibold">{formatNumber(summary.portfolioValue)}</p>
+                  </div>
+                  <div className="rounded-none border border-border/70 bg-muted/20 p-3">
+                    <p className="text-xs text-muted-foreground">Holdings</p>
+                    <p className="mt-1 text-lg font-semibold">{formatNumber(summary.holdingsValue)}</p>
+                  </div>
+                  <div className="rounded-none border border-border/70 bg-muted/20 p-3">
+                    <p className="text-xs text-muted-foreground">Profit / Loss</p>
+                    <p
+                      className={`mt-1 text-lg font-semibold ${
+                        summary.profitLoss >= 0 ? "text-green-600" : "text-red-600"
+                      }`}
+                    >
+                      {formatNumber(summary.profitLoss)} ({formatNumber(summary.returnPct)}%)
+                    </p>
+                  </div>
+                </CardContent>
+                <CardContent className="space-y-4 pt-0">
+                  <div className="grid gap-3 sm:grid-cols-3">
+                    <div className="rounded-none border border-border/70 bg-muted/20 p-3">
+                      <p className="text-xs text-muted-foreground">Total Buy Value</p>
+                      <p className="mt-1 text-base font-semibold">{formatNumber(tradeFlowSummary.totalBuy)}</p>
+                    </div>
+                    <div className="rounded-none border border-border/70 bg-muted/20 p-3">
+                      <p className="text-xs text-muted-foreground">Total Sell Value</p>
+                      <p className="mt-1 text-base font-semibold">{formatNumber(tradeFlowSummary.totalSell)}</p>
+                    </div>
+                    <div className="rounded-none border border-border/70 bg-muted/20 p-3">
+                      <p className="text-xs text-muted-foreground">Net Bought Value</p>
+                      <p className="mt-1 text-base font-semibold">
+                        {formatNumber(tradeFlowSummary.totalBuy - tradeFlowSummary.totalSell)}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="rounded-none border border-border/70">
+                    <div className="border-b border-border/70 bg-muted/20 px-3 py-2">
+                      <p className="text-xs font-medium text-muted-foreground">
+                        Stock-Wise Increment / Decrement
+                      </p>
+                    </div>
+                    <Table>
+                      <TableHeader>
+                        <TableRow>
+                          <TableHead>Stock</TableHead>
+                          <TableHead>Start</TableHead>
+                          <TableHead>End</TableHead>
+                          <TableHead>Change</TableHead>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        {stockPerformanceRows.map((row) => (
+                          <TableRow key={row.symbol}>
+                            <TableCell className="font-medium">{row.symbol}</TableCell>
+                            <TableCell>{formatNumber(row.startPrice)}</TableCell>
+                            <TableCell>{formatNumber(row.endPrice)}</TableCell>
+                            <TableCell className={row.change >= 0 ? "text-green-600" : "text-red-600"}>
+                              {formatNumber(row.change)} ({formatNumber(row.changePct)}%)
+                            </TableCell>
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </div>
+
+                  <div className="rounded-none border border-border/70">
+                    <div className="border-b border-border/70 bg-muted/20 px-3 py-2">
+                      <p className="text-xs font-medium text-muted-foreground">
+                        Bought Value Increase / Decrease (Open Holdings)
+                      </p>
+                    </div>
+                    <Table>
+                      <TableHeader>
+                        <TableRow>
+                          <TableHead>Stock</TableHead>
+                          <TableHead>Qty</TableHead>
+                          <TableHead>Bought Value</TableHead>
+                          <TableHead>Current Value</TableHead>
+                          <TableHead>Change</TableHead>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        {holdingsPerformanceRows.length === 0 ? (
+                          <TableRow>
+                            <TableCell colSpan={5} className="text-xs text-muted-foreground">
+                              No open holdings at competition end.
+                            </TableCell>
+                          </TableRow>
+                        ) : (
+                          holdingsPerformanceRows.map((row) => (
+                            <TableRow key={row.symbol}>
+                              <TableCell className="font-medium">{row.symbol}</TableCell>
+                              <TableCell>{row.quantity}</TableCell>
+                              <TableCell>{formatNumber(row.investedValue)}</TableCell>
+                              <TableCell>{formatNumber(row.currentValue)}</TableCell>
+                              <TableCell className={row.gainLoss >= 0 ? "text-green-600" : "text-red-600"}>
+                                {formatNumber(row.gainLoss)} ({formatNumber(row.gainLossPct)}%)
+                              </TableCell>
+                            </TableRow>
+                          ))
+                        )}
+                      </TableBody>
+                    </Table>
+                  </div>
+                </CardContent>
+              </Card>
+            ) : null}
+
+            {phase !== "not-started" ? (
             <Tabs defaultValue="charts" className="w-full">
               <TabsList variant="line">
                 <TabsTrigger value="charts">Charts</TabsTrigger>
                 <TabsTrigger value="financial-metrics">Financial Metrics</TabsTrigger>
-                <TabsTrigger value="trade-panel">Trade Panel</TabsTrigger>
                 <TabsTrigger value="market-table">Market Table</TabsTrigger>
               </TabsList>
 
               <TabsContent value="charts" className="pt-3">
-                <Card className="border border-border/70 bg-card">
-                  <CardHeader>
-                    <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-                      <div>
-                        <CardTitle className="text-base font-semibold">Price Chart</CardTitle>
-                        <CardDescription>
-                          Showing historical data from 2022-01-01 up to the challenge start date.
-                        </CardDescription>
-                      </div>
+                <div className="space-y-4">
+                  <Card className="border border-border/70 bg-card">
+                    <CardHeader>
+                      <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+                        <div>
+                          <CardTitle className="text-base font-semibold">Price Chart</CardTitle>
+                          <CardDescription>
+                            Candles stream as the competition runs to simulate live market movement.
+                          </CardDescription>
+                        </div>
 
-                      <div className="w-full sm:w-56">
-                        <p className="mb-1 text-xs text-muted-foreground">Stock</p>
-                        <Select value={selectedStock} onValueChange={setSelectedStock}>
-                          <SelectTrigger className="w-full">
-                            <SelectValue placeholder="Select stock" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            {data.stocks.map((stock) => (
-                              <SelectItem key={stock.symbol} value={stock.symbol}>
-                                {stock.symbol}
-                              </SelectItem>
-                            ))}
-                          </SelectContent>
-                        </Select>
+                        <div className="w-full sm:w-56">
+                          <p className="mb-1 text-xs text-muted-foreground">Stock</p>
+                          <Select value={selectedStock} onValueChange={setSelectedStock}>
+                            <SelectTrigger className="w-full">
+                              <SelectValue placeholder="Select stock" />
+                            </SelectTrigger>
+                            <SelectContent>
+                              {data.stocks.map((stock) => (
+                                <SelectItem key={stock.symbol} value={stock.symbol}>
+                                  {stock.symbol}
+                                </SelectItem>
+                              ))}
+                            </SelectContent>
+                          </Select>
+                        </div>
                       </div>
-                    </div>
-                  </CardHeader>
+                    </CardHeader>
 
-                  <CardContent className="space-y-3">
-                    <div className="rounded-none border border-border/70 bg-muted/20 p-3">
-                      <p className="text-sm font-medium">{selectedStockData?.symbol ?? "-"}</p>
-                      <p className="text-xs text-muted-foreground">{selectedStockData?.companyName ?? "N/A"}</p>
-                      {/* <p className="text-xs text-muted-foreground">
-                        Redacted on: {selectedStockData?.redactedDate ? formatDate(selectedStockData.redactedDate) : "N/A"}
-                      </p> */}
-                    </div>
-                    <StockCandlestickChart points={selectedStockData?.points ?? []} />
-                  </CardContent>
-                </Card>
+                    <CardContent className="space-y-3">
+                      <div className="rounded-none border border-border/70 bg-muted/20 p-3">
+                        <p className="text-sm font-medium">{selectedStockData?.symbol ?? "-"}</p>
+                        <p className="text-xs text-muted-foreground">
+                          {selectedStockData?.companyName ?? "N/A"}
+                        </p>
+                        <p className="text-xs text-muted-foreground">
+                          Visible candles: {selectedVisiblePoints.length}
+                        </p>
+                      </div>
+                      <StockCandlestickChart points={selectedVisiblePoints} />
+                    </CardContent>
+                  </Card>
+
+                  {tradePanelContent}
+                </div>
               </TabsContent>
 
               <TabsContent value="financial-metrics" className="pt-3">
@@ -514,14 +1434,18 @@ export default function CompetitionDetailPage() {
 
                       <div className="rounded-none border border-border/70 bg-muted/20 p-3">
                         <p className="text-xs text-muted-foreground">Companies visible</p>
-                        <p className="mt-1 text-base font-semibold">{filteredFinancialCompanies.length}</p>
+                        <p className="mt-1 text-base font-semibold">
+                          {filteredFinancialCompanies.length}
+                        </p>
                       </div>
                     </div>
 
                     {financialLoading ? (
                       <div className="flex items-center justify-center py-8">
                         <Spinner className="mr-2 h-4 w-4" />
-                        <p className="text-xs text-muted-foreground">Loading financial metrics...</p>
+                        <p className="text-xs text-muted-foreground">
+                          Loading financial metrics...
+                        </p>
                       </div>
                     ) : financialError ? (
                       <p className="text-xs text-destructive">{financialError}</p>
@@ -537,7 +1461,9 @@ export default function CompetitionDetailPage() {
                               <div className="flex w-full items-center justify-between gap-2 pr-3">
                                 <div>
                                   <p className="text-sm font-medium">{company.symbol}</p>
-                                  <p className="text-xs text-muted-foreground">{company.companyName ?? "N/A"}</p>
+                                  <p className="text-xs text-muted-foreground">
+                                    {company.companyName ?? "N/A"}
+                                  </p>
                                 </div>
                                 <Badge variant="outline">{company.rows.length} rows</Badge>
                               </div>
@@ -560,7 +1486,9 @@ export default function CompetitionDetailPage() {
                                         <TableRow>
                                           <TableHead>Metric</TableHead>
                                           {statementGroup.years.map((year) => (
-                                            <TableHead key={`${statementGroup.statementType}-${year}`}>
+                                            <TableHead
+                                              key={`${statementGroup.statementType}-${year}`}
+                                            >
                                               FY {year}
                                             </TableHead>
                                           ))}
@@ -571,14 +1499,18 @@ export default function CompetitionDetailPage() {
                                           <TableRow
                                             key={`${company.symbol}-${statementGroup.statementType}-${metricRow.metric}`}
                                           >
-                                            <TableCell className="font-medium">{metricRow.metric}</TableCell>
+                                            <TableCell className="font-medium">
+                                              {metricRow.metric}
+                                            </TableCell>
                                             {statementGroup.years.map((year) => {
                                               const valueRow = metricRow.yearMap.get(year);
                                               return (
                                                 <TableCell
                                                   key={`${company.symbol}-${statementGroup.statementType}-${metricRow.metric}-${year}`}
                                                 >
-                                                  {valueRow ? formatFinancialMetricValue(valueRow) : "-"}
+                                                  {valueRow
+                                                    ? formatFinancialMetricValue(valueRow)
+                                                    : "-"}
                                                 </TableCell>
                                               );
                                             })}
@@ -598,142 +1530,13 @@ export default function CompetitionDetailPage() {
                 </Card>
               </TabsContent>
 
-              <TabsContent value="trade-panel" className="pt-3">
-                <div className="grid gap-4 lg:grid-cols-3">
-                  <Card className="border border-border/70 bg-card lg:col-span-2">
-                    <CardHeader>
-                      <CardTitle className="text-base font-semibold">Selected Stock</CardTitle>
-                      <CardDescription>
-                        Place simulated orders for visual testing. No backend order execution is enabled.
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent className="space-y-4">
-                      <div className="grid gap-3 sm:grid-cols-2">
-                        <div>
-                          <p className="mb-1 text-xs text-muted-foreground">Stock</p>
-                          <Select value={selectedStock} onValueChange={setSelectedStock}>
-                            <SelectTrigger className="w-full">
-                              <SelectValue placeholder="Select stock" />
-                            </SelectTrigger>
-                            <SelectContent>
-                              {data.stocks.map((stock) => (
-                                <SelectItem key={stock.symbol} value={stock.symbol}>
-                                  {stock.symbol}
-                                </SelectItem>
-                              ))}
-                            </SelectContent>
-                          </Select>
-                        </div>
-
-                        <div>
-                          <p className="mb-1 text-xs text-muted-foreground">Order Type</p>
-                          <Select
-                            value={orderType}
-                            onValueChange={(value) => setOrderType(value as "market" | "limit")}
-                          >
-                            <SelectTrigger className="w-full">
-                              <SelectValue placeholder="Order type" />
-                            </SelectTrigger>
-                            <SelectContent>
-                              <SelectItem value="market">Market</SelectItem>
-                              <SelectItem value="limit">Limit</SelectItem>
-                            </SelectContent>
-                          </Select>
-                        </div>
-
-                        <div>
-                          <p className="mb-1 text-xs text-muted-foreground">Quantity</p>
-                          <Input
-                            type="number"
-                            min={1}
-                            value={quantity}
-                            onChange={(event) => setQuantity(event.target.value)}
-                          />
-                        </div>
-
-                        <div>
-                          <p className="mb-1 text-xs text-muted-foreground">Limit Price</p>
-                          <Input
-                            type="number"
-                            step="0.01"
-                            value={limitPrice}
-                            onChange={(event) => setLimitPrice(event.target.value)}
-                            disabled={orderType === "market"}
-                          />
-                        </div>
-                      </div>
-
-                      <div className="flex flex-wrap gap-2">
-                        <Button
-                          variant={action === "buy" ? "default" : "outline"}
-                          onClick={() => setAction("buy")}
-                        >
-                          Buy
-                        </Button>
-                        <Button
-                          variant={action === "sell" ? "destructive" : "outline"}
-                          onClick={() => setAction("sell")}
-                        >
-                          Sell
-                        </Button>
-                        <Button
-                          variant={action === "hold" ? "secondary" : "outline"}
-                          onClick={() => setAction("hold")}
-                        >
-                          Hold
-                        </Button>
-                      </div>
-                    </CardContent>
-                    <CardFooter className="justify-between">
-                      <p className="text-xs text-muted-foreground">
-                        Estimated Value: <span className="font-medium text-foreground">{formatNumber(estimatedOrderValue)}</span>
-                      </p>
-                      <Button disabled>{action.toUpperCase()} (Preview)</Button>
-                    </CardFooter>
-                  </Card>
-
-                  <Card className="border border-border/70 bg-card">
-                    <CardHeader>
-                      <CardTitle className="text-base font-semibold">Stock Snapshot</CardTitle>
-                      <CardDescription>Selected ticker quick summary</CardDescription>
-                    </CardHeader>
-                    <CardContent className="space-y-2 text-xs">
-                      <div className="flex items-center justify-between">
-                        <span className="text-muted-foreground">Symbol</span>
-                        <span className="font-medium">{selectedStockData?.symbol ?? "-"}</span>
-                      </div>
-                      <div className="flex items-center justify-between">
-                        <span className="text-muted-foreground">Company</span>
-                        <span className="font-medium">{selectedStockData?.companyName ?? "-"}</span>
-                      </div>
-                      <div className="flex items-center justify-between">
-                        <span className="text-muted-foreground">Latest Close</span>
-                        <span className="font-medium">{formatNumber(selectedStockData?.points.at(-1)?.close ?? 0)}</span>
-                      </div>
-                      <div className="flex items-center justify-between">
-                        <span className="text-muted-foreground">Period High</span>
-                        <span className="font-medium">{formatNumber(computeHigh(selectedStockData?.points ?? []))}</span>
-                      </div>
-                      <div className="flex items-center justify-between">
-                        <span className="text-muted-foreground">Period Low</span>
-                        <span className="font-medium">{formatNumber(computeLow(selectedStockData?.points ?? []))}</span>
-                      </div>
-                      <div className="flex items-center justify-between">
-                        <span className="text-muted-foreground">Change %</span>
-                        <span className="font-medium">
-                          {formatNumber(computeChangePercent(selectedStockData?.points ?? []))}%
-                        </span>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </div>
-              </TabsContent>
-
               <TabsContent value="market-table" className="pt-3">
                 <Card className="border border-border/70 bg-card">
                   <CardHeader>
                     <CardTitle className="text-base font-semibold">All Stocks Summary</CardTitle>
-                    <CardDescription>Comparison of all stocks inside this competition basket</CardDescription>
+                    <CardDescription>
+                      Comparison of all stocks inside this competition basket
+                    </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <Table>
@@ -745,7 +1548,7 @@ export default function CompetitionDetailPage() {
                           <TableHead>High</TableHead>
                           <TableHead>Low</TableHead>
                           <TableHead>Change %</TableHead>
-                          <TableHead>Data Points</TableHead>
+                          <TableHead>Visible Points</TableHead>
                         </TableRow>
                       </TableHeader>
                       <TableBody>
@@ -766,6 +1569,7 @@ export default function CompetitionDetailPage() {
                 </Card>
               </TabsContent>
             </Tabs>
+            ) : null}
 
             <div className="flex flex-wrap gap-2">
               <Button variant="outline" asChild>

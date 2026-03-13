@@ -25,20 +25,16 @@ type ChallengeResponse = {
   }>;
 };
 
-const REDACTED_COMPETITION_START_DATE = "2020-01-01";
-
 const labelCollator = new Intl.Collator("en", { numeric: true, sensitivity: "base" });
 
 const allowedDurations = new Set([6, 12, 18, 24]);
 
-function addMonthsUtc(dateOnly: string, months: number): string {
-  const [year, month, day] = dateOnly.split("-").map(Number);
-  if (!year || !month || !day) {
-    return dateOnly;
+function toDateOnly(value: string | Date): string {
+  if (typeof value === "string") {
+    return value;
   }
 
-  const result = new Date(Date.UTC(year, month - 1 + months, day));
-  return result.toISOString().slice(0, 10);
+  return value.toISOString().slice(0, 10);
 }
 
 export async function GET(_request: Request, context: RouteContext) {
@@ -106,9 +102,10 @@ export async function GET(_request: Request, context: RouteContext) {
 
   for (const row of stockRows) {
     const current = stocksByCompetition.get(row.competitionId) ?? [];
+    const competitionForStock = competitions.find((competitionRow) => competitionRow.id === row.competitionId);
     current.push({
       symbol: row.redactedSymbol ?? row.symbol,
-      redactedDate: REDACTED_COMPETITION_START_DATE,
+      redactedDate: competitionForStock ? toDateOnly(competitionForStock.startDate) : null,
       companyName: row.redactedCompanyName ?? row.companyName,
     });
     stocksByCompetition.set(row.competitionId, current);
@@ -118,8 +115,8 @@ export async function GET(_request: Request, context: RouteContext) {
     id: row.id,
     name: row.name,
     durationMonths: row.durationMonths,
-    startDate: REDACTED_COMPETITION_START_DATE,
-    endDate: addMonthsUtc(REDACTED_COMPETITION_START_DATE, row.durationMonths),
+    startDate: toDateOnly(row.startDate),
+    endDate: toDateOnly(row.endDate),
     startingCapital: row.startingCapital,
     status: row.status,
     stocks: (stocksByCompetition.get(row.id) ?? []).sort((a, b) => {

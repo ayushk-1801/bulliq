@@ -10,7 +10,6 @@ import {
 } from "~/server/db/schema";
 
 const HISTORICAL_CHART_START_DATE = "2022-01-01";
-const REDACTED_COMPETITION_START_DATE = "2020-01-01";
 
 type RouteContext = {
   params: Promise<{
@@ -44,16 +43,6 @@ function toDateOnly(value: string | Date): string {
   return value.toISOString().slice(0, 10);
 }
 
-function addMonthsUtc(dateOnly: string, months: number): string {
-  const [year, month, day] = dateOnly.split("-").map(Number);
-  if (!year || !month || !day) {
-    return dateOnly;
-  }
-
-  const result = new Date(Date.UTC(year, month - 1 + months, day));
-  return result.toISOString().slice(0, 10);
-}
-
 export async function GET(_request: Request, context: RouteContext) {
   const { competitionId } = await context.params;
   const parsedCompetitionId = Number.parseInt(competitionId, 10);
@@ -81,11 +70,7 @@ export async function GET(_request: Request, context: RouteContext) {
   }
 
   const competitionStartDate = toDateOnly(competitionRow.startDate);
-  const redactedStartDate = REDACTED_COMPETITION_START_DATE;
-  const redactedEndDate = addMonthsUtc(
-    REDACTED_COMPETITION_START_DATE,
-    competitionRow.durationMonths,
-  );
+  const competitionEndDate = toDateOnly(competitionRow.endDate);
 
   const stockRows = await db
     .select({
@@ -106,8 +91,8 @@ export async function GET(_request: Request, context: RouteContext) {
     return NextResponse.json({
       competition: {
         ...competitionRow,
-        startDate: redactedStartDate,
-        endDate: redactedEndDate,
+        startDate: competitionStartDate,
+        endDate: competitionEndDate,
       },
       stocks: [] as StockSeries[],
     });
@@ -160,7 +145,7 @@ export async function GET(_request: Request, context: RouteContext) {
   const stocks: StockSeries[] = stockRows
     .map((stock) => ({
       symbol: stock.redactedSymbol ?? stock.symbol,
-      redactedDate: redactedStartDate,
+      redactedDate: competitionStartDate,
       companyName: stock.redactedCompanyName ?? stock.companyName,
       points: pointsBySymbol.get(stock.symbol) ?? [],
     }))
@@ -174,8 +159,8 @@ export async function GET(_request: Request, context: RouteContext) {
   return NextResponse.json({
     competition: {
       ...competitionRow,
-      startDate: redactedStartDate,
-      endDate: redactedEndDate,
+      startDate: competitionStartDate,
+      endDate: competitionEndDate,
     },
     stocks,
   });

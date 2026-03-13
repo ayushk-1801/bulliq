@@ -32,7 +32,7 @@ type Challenge = {
   status: string;
   stocks: Array<{
     symbol: string;
-    redactedDate: string | null;
+    startDate: string | null;
     companyName: string | null;
   }>;
 };
@@ -195,7 +195,7 @@ export default function DurationChallengesPage() {
                       ))}
                     </div>
                     <p className="mt-2 text-[11px] text-muted-foreground">
-                      Redacted on: {challenge.stocks[0]?.redactedDate ? formatDate(challenge.stocks[0].redactedDate) : "N/A"}
+                      Starts on: {challenge.stocks[0]?.startDate ? formatDate(challenge.stocks[0].startDate) : "N/A"}
                     </p>
                   </div> */}
                 </CardContent>
