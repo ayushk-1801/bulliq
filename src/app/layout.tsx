@@ -5,6 +5,7 @@ import { Geist } from "next/font/google";
 import { cn } from "~/lib/utils";
 import { TooltipProvider } from "~/components/ui/tooltip";
 import { ThemeProvider } from "~/components/theme-provider";
+import { Navbar } from "~/components/navbar";
 
 export const metadata: Metadata = {
   title: "Create T3 App",
@@ -32,7 +33,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <TooltipProvider>{children}</TooltipProvider>
+          <TooltipProvider>
+            <Navbar />
+            {children}
+          </TooltipProvider>
         </ThemeProvider>
       </body>
     </html>

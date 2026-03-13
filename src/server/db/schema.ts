@@ -93,6 +93,41 @@ export const niftyFinancialMetric = createTable(
   ],
 );
 
+export const competition = createTable("competition", {
+  id: integer("id").primaryKey().generatedByDefaultAsIdentity(),
+  name: text("name").notNull(),
+  durationMonths: integer("duration_months").notNull(),
+  startDate: date("start_date").notNull(),
+  endDate: date("end_date").notNull(),
+  startingCapital: integer("starting_capital").notNull(),
+  status: text("status").notNull(),
+  createdAt: timestamp("created_at", { withTimezone: true })
+    .$defaultFn(() => new Date())
+    .notNull(),
+});
+
+export const competitionStock = createTable(
+  "competition_stock",
+  {
+    id: integer("id").primaryKey().generatedByDefaultAsIdentity(),
+    competitionId: integer("competition_id")
+      .notNull()
+      .references(() => competition.id, { onDelete: "cascade" }),
+    symbol: text("symbol")
+      .notNull()
+      .references(() => niftyCompany.symbol, { onDelete: "cascade" }),
+    redactedSymbol: text("redacted_symbol"),
+    redactedCompanyName: text("redacted_company_name"),
+    redactedDate: date("redacted_date"),
+  },
+  (t) => [
+    uniqueIndex("competition_stock_competition_symbol_uq").on(
+      t.competitionId,
+      t.symbol,
+    ),
+  ],
+);
+
 export const user = pgTable("user", {
   id: text("id").primaryKey(),
   name: text("name").notNull(),
@@ -169,6 +204,7 @@ export const sessionRelations = relations(session, ({ one }) => ({
 export const niftyCompanyRelations = relations(niftyCompany, ({ many }) => ({
   stockDaily: many(niftyStockDaily),
   financialMetrics: many(niftyFinancialMetric),
+  competitionStocks: many(competitionStock),
 }));
 
 export const niftyStockDailyRelations = relations(niftyStockDaily, ({ one }) => ({
@@ -183,6 +219,24 @@ export const niftyFinancialMetricRelations = relations(
   ({ one }) => ({
     company: one(niftyCompany, {
       fields: [niftyFinancialMetric.symbol],
+      references: [niftyCompany.symbol],
+    }),
+  }),
+);
+
+export const competitionRelations = relations(competition, ({ many }) => ({
+  competitionStocks: many(competitionStock),
+}));
+
+export const competitionStockRelations = relations(
+  competitionStock,
+  ({ one }) => ({
+    competition: one(competition, {
+      fields: [competitionStock.competitionId],
+      references: [competition.id],
+    }),
+    company: one(niftyCompany, {
+      fields: [competitionStock.symbol],
       references: [niftyCompany.symbol],
     }),
   }),
