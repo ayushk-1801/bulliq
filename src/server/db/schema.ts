@@ -1,33 +1,95 @@
 import { relations } from "drizzle-orm";
 import {
+  bigint,
   boolean,
+  date,
+  doublePrecision,
   index,
+  integer,
   pgTable,
   pgTableCreator,
   text,
   timestamp,
+  uniqueIndex,
 } from "drizzle-orm/pg-core";
 
-export const createTable = pgTableCreator((name) => `pg-drizzle_${name}`);
+export const createTable = pgTableCreator((name) => name);
 
-export const posts = createTable(
-  "post",
-  (d) => ({
-    id: d.integer().primaryKey().generatedByDefaultAsIdentity(),
-    name: d.varchar({ length: 256 }),
-    createdById: d
-      .varchar({ length: 255 })
-      .notNull()
-      .references(() => user.id),
-    createdAt: d
-      .timestamp({ withTimezone: true })
+export const niftyCompany = createTable(
+  "nifty_company",
+  {
+    id: integer("id").primaryKey().generatedByDefaultAsIdentity(),
+    symbol: text("symbol").notNull(),
+    companyName: text("company_name").notNull(),
+    stockFileStem: text("stock_file_stem").notNull(),
+    yahooSymbol: text("yahoo_symbol").notNull(),
+    status: text("status").notNull(),
+    stockRows: integer("stock_rows").notNull(),
+    financialFilesWritten: integer("financial_files_written").notNull(),
+    emptyStatements: integer("empty_statements"),
+    createdAt: timestamp("created_at", { withTimezone: true })
       .$defaultFn(() => new Date())
       .notNull(),
-    updatedAt: d.timestamp({ withTimezone: true }).$onUpdate(() => new Date()),
-  }),
+  },
   (t) => [
-    index("created_by_idx").on(t.createdById),
-    index("name_idx").on(t.name),
+    uniqueIndex("nifty_company_symbol_uq").on(t.symbol),
+    uniqueIndex("nifty_company_yahoo_symbol_uq").on(t.yahooSymbol),
+  ],
+);
+
+export const niftyStockDaily = createTable(
+  "nifty_stock_daily",
+  {
+    id: integer("id").primaryKey().generatedByDefaultAsIdentity(),
+    symbol: text("symbol").notNull(),
+    yahooSymbol: text("yahoo_symbol").notNull(),
+    tradeDate: date("trade_date").notNull(),
+    open: doublePrecision("open"),
+    high: doublePrecision("high"),
+    low: doublePrecision("low"),
+    close: doublePrecision("close"),
+    adjClose: doublePrecision("adj_close"),
+    volume: bigint("volume", { mode: "number" }),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .$defaultFn(() => new Date())
+      .notNull(),
+  },
+  (t) => [
+    index("nifty_stock_daily_symbol_idx").on(t.symbol),
+    index("nifty_stock_daily_trade_date_idx").on(t.tradeDate),
+    uniqueIndex("nifty_stock_daily_symbol_trade_date_uq").on(
+      t.symbol,
+      t.tradeDate,
+    ),
+  ],
+);
+
+export const niftyFinancialMetric = createTable(
+  "nifty_financial_metric",
+  {
+    id: integer("id").primaryKey().generatedByDefaultAsIdentity(),
+    symbol: text("symbol").notNull(),
+    statementType: text("statement_type").notNull(),
+    fiscalYear: integer("fiscal_year").notNull(),
+    metric: text("metric").notNull(),
+    numericValue: doublePrecision("numeric_value"),
+    rawValue: text("raw_value"),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .$defaultFn(() => new Date())
+      .notNull(),
+  },
+  (t) => [
+    index("nifty_financial_metric_symbol_idx").on(t.symbol),
+    index("nifty_financial_metric_statement_year_idx").on(
+      t.statementType,
+      t.fiscalYear,
+    ),
+    uniqueIndex("nifty_financial_metric_row_uq").on(
+      t.symbol,
+      t.statementType,
+      t.fiscalYear,
+      t.metric,
+    ),
   ],
 );
 
@@ -103,3 +165,25 @@ export const accountRelations = relations(account, ({ one }) => ({
 export const sessionRelations = relations(session, ({ one }) => ({
   user: one(user, { fields: [session.userId], references: [user.id] }),
 }));
+
+export const niftyCompanyRelations = relations(niftyCompany, ({ many }) => ({
+  stockDaily: many(niftyStockDaily),
+  financialMetrics: many(niftyFinancialMetric),
+}));
+
+export const niftyStockDailyRelations = relations(niftyStockDaily, ({ one }) => ({
+  company: one(niftyCompany, {
+    fields: [niftyStockDaily.symbol],
+    references: [niftyCompany.symbol],
+  }),
+}));
+
+export const niftyFinancialMetricRelations = relations(
+  niftyFinancialMetric,
+  ({ one }) => ({
+    company: one(niftyCompany, {
+      fields: [niftyFinancialMetric.symbol],
+      references: [niftyCompany.symbol],
+    }),
+  }),
+);

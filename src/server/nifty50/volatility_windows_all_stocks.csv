@@ -1,0 +1,204 @@
+symbol,start_date,end_date,months,total_ret_pct,ann_vol_pct,max_drawdown_pct,avg_rv_med_pct,avg_cs_disp_pct,avg_composite,dominant_regime,label,interest_score,source
+ADANIPORTS.NS,2022-01-03,2022-07-05,6.0,-7.85,37.15,-27.09,39.54,29.54,-0.6843,Low Volatility,Bear Market / Major Correction,26.291,rolling_6m
+ADANIPORTS.NS,2022-08-04,2023-02-06,6.0,-32.43,51.51,-52.34,32.79,23.08,-0.113,Normal,Crash / Severe Bear Market,41.22,rolling_6m
+ADANIPORTS.NS,2023-02-20,2024-09-05,18.0,152.81,38.36,-21.15,42.54,25.72,0.2977,Crisis / High Stress,High-Growth Bull Run (Volatile),61.0025,rolling_18m
+ADANIPORTS.NS,2024-08-26,2025-02-20,6.0,-25.01,36.48,-28.89,36.83,24.95,0.3338,Crisis / High Stress,Bear Market / Major Correction,29.7885,rolling_6m
+ADANIPORTS.NS,2025-01-24,2025-07-28,6.0,25.76,27.76,-9.54,32.75,24.2,0.2113,Elevated Volatility,High Volatility Sideways,22.904,rolling_6m
+ASIANPAINT.NS,2022-01-03,2022-07-05,6.0,-19.16,31.32,-27.85,31.92,22.87,-0.4635,Low Volatility,Bear Market / Major Correction,25.896,rolling_6m
+ASIANPAINT.NS,2022-08-04,2023-02-06,6.0,-20.41,20.0,-24.23,22.45,17.14,0.095,Elevated Volatility,Bear Market / Major Correction,20.3765,rolling_6m
+ASIANPAINT.NS,2023-02-20,2024-09-05,18.0,14.61,17.96,-23.52,17.83,12.8,-0.1983,Low Volatility,Mixed / Transitional Market,17.2025,rolling_18m
+ASIANPAINT.NS,2024-09-24,2025-03-25,6.0,-28.25,23.75,-35.96,22.6,16.16,0.5736,Crisis / High Stress,Crash / Severe Bear Market,25.799,rolling_6m
+ASIANPAINT.NS,2025-05-30,2025-11-28,6.0,27.24,19.49,-10.41,18.37,14.11,0.105,Elevated Volatility,Mixed / Transitional Market,18.5355,rolling_6m
+AXISBANK.NS,2022-01-03,2022-07-05,6.0,-6.87,31.51,-22.75,32.8,24.1,-0.4652,Low Volatility,Bear Market / Major Correction,22.116,rolling_6m
+AXISBANK.NS,2022-07-06,2024-07-24,24.0,88.35,22.85,-14.37,22.19,16.93,-0.0429,Normal,High-Growth Bull Run (Volatile),36.345,rolling_24m
+AXISBANK.NS,2024-07-25,2025-01-23,6.0,-19.12,22.72,-25.53,24.17,16.94,0.4123,Elevated Volatility,Bear Market / Major Correction,21.226000000000003,rolling_6m
+AXISBANK.NS,2024-12-26,2025-06-27,6.0,13.78,23.34,-12.75,23.14,16.65,0.4858,Crisis / High Stress,Mixed / Transitional Market,17.494,rolling_6m
+AXISBANK.NS,2025-05-30,2025-11-28,6.0,7.34,18.22,-15.27,20.46,14.63,-0.0173,Normal,Mixed / Transitional Market,14.192,rolling_6m
+BAJAJ-AUTO.NS,2022-03-04,2022-09-06,6.0,21.2,24.93,-10.47,27.57,20.08,-0.1689,Elevated Volatility,Mixed / Transitional Market,20.1355,rolling_6m
+BAJAJ-AUTO.NS,2022-10-07,2024-10-23,24.0,193.79,24.53,-20.55,21.9,16.17,-0.1208,Normal,High-Growth Bull Run (Volatile),64.377,rolling_24m
+BAJAJ-AUTO.NS,2024-09-24,2025-03-25,6.0,-35.66,31.28,-42.1,30.76,20.68,0.9286,Crisis / High Stress,Crash / Severe Bear Market,32.419000000000004,rolling_6m
+BAJAJ-AUTO.NS,2025-03-26,2025-09-26,6.0,9.09,24.91,-10.65,26.02,19.3,0.6228,Crisis / High Stress,Mixed / Transitional Market,16.981,rolling_6m
+BAJAJFINSV.NS,2022-01-03,2022-07-05,6.0,-32.13,35.14,-40.49,33.64,26.12,-0.3952,Low Volatility,Crash / Severe Bear Market,33.653499999999994,rolling_6m
+BAJAJFINSV.NS,2022-07-04,2023-07-10,12.0,40.3,28.35,-32.25,28.97,21.26,0.4737,Crisis / High Stress,Strong Bull Market,30.6995,rolling_12m
+BAJAJFINSV.NS,2023-06-13,2023-12-14,6.0,16.47,20.87,-11.91,19.97,13.91,-0.2907,Normal,Mixed / Transitional Market,16.586,rolling_6m
+BAJAJFINSV.NS,2024-04-18,2025-10-24,18.0,35.49,24.12,-22.45,24.08,18.0,0.0337,Elevated Volatility,Strong Bull Market,25.404500000000006,rolling_18m
+BAJFINANCE.NS,2022-01-03,2022-07-05,6.0,-21.59,36.02,-32.71,36.5,25.94,-0.4977,Low Volatility,Bear Market / Major Correction,29.734500000000004,rolling_6m
+BAJFINANCE.NS,2022-07-04,2023-07-10,12.0,33.8,27.65,-28.31,28.02,20.03,0.2776,Crisis / High Stress,High Volatility Sideways,27.795499999999997,rolling_12m
+BAJFINANCE.NS,2023-09-12,2024-03-18,6.0,-12.47,23.63,-22.74,22.48,16.32,-0.1955,Low Volatility,Bear Market / Major Correction,19.2,rolling_6m
+BAJFINANCE.NS,2024-04-18,2025-10-24,18.0,58.09,26.54,-16.77,26.45,19.24,0.0829,Elevated Volatility,Strong Recovery / Bull Run,31.0135,rolling_18m
+BHARTIARTL.NS,2022-03-04,2022-09-06,6.0,16.45,24.39,-17.37,25.62,20.05,0.3352,Crisis / High Stress,Mixed / Transitional Market,20.133000000000003,rolling_6m
+BHARTIARTL.NS,2022-09-07,2023-03-08,6.0,1.79,19.79,-13.05,20.36,15.48,0.0131,Normal,Mixed / Transitional Market,13.079999999999998,rolling_6m
+BHARTIARTL.NS,2023-04-12,2025-04-29,24.0,136.52,21.23,-13.89,20.25,14.98,0.0757,Elevated Volatility,High-Growth Bull Run (Volatile),47.334500000000006,rolling_24m
+BHARTIARTL.NS,2025-05-30,2025-11-28,6.0,13.22,18.11,-9.03,18.97,14.03,-0.0678,Normal,Mixed / Transitional Market,14.255500000000001,rolling_6m
+BPCL.NS,2022-01-03,2022-07-05,6.0,-18.91,30.08,-26.09,31.4,23.75,-0.7917,Low Volatility,Bear Market / Major Correction,25.223499999999998,rolling_6m
+BPCL.NS,2022-06-07,2022-12-07,6.0,4.4,25.15,-17.27,25.72,20.25,0.1329,Elevated Volatility,High Volatility Sideways,17.406499999999998,rolling_6m
+BPCL.NS,2023-02-20,2024-09-05,18.0,121.19,31.17,-15.19,29.61,21.67,0.142,Crisis / High Stress,High-Growth Bull Run (Volatile),48.57900000000001,rolling_18m
+BPCL.NS,2024-08-26,2025-02-20,6.0,-26.36,27.42,-32.54,29.33,21.87,0.3881,Crisis / High Stress,Bear Market / Major Correction,27.068999999999996,rolling_6m
+BPCL.NS,2025-01-24,2025-07-28,6.0,26.38,27.79,-10.22,27.95,22.39,0.4195,Crisis / High Stress,High Volatility Sideways,22.843500000000002,rolling_6m
+BRITANNIA.NS,2022-02-02,2022-08-03,6.0,4.11,25.94,-14.54,26.23,19.6,-0.191,Crisis / High Stress,High Volatility Sideways,16.9345,rolling_6m
+BRITANNIA.NS,2022-07-06,2024-07-24,24.0,52.17,19.12,-15.0,19.19,13.89,-0.0633,Normal,Strong Recovery / Bull Run,25.512500000000003,rolling_24m
+BRITANNIA.NS,2024-09-24,2025-03-25,6.0,-21.89,22.7,-29.02,21.67,15.57,0.6985,Crisis / High Stress,Bear Market / Major Correction,22.3355,rolling_6m
+BRITANNIA.NS,2025-03-26,2025-09-26,6.0,22.08,20.66,-9.88,19.91,14.99,0.2618,Crisis / High Stress,Mixed / Transitional Market,17.725,rolling_6m
+CIPLA.NS,2022-03-04,2022-09-06,6.0,11.78,24.39,-14.35,24.91,19.5,-0.0838,Elevated Volatility,Mixed / Transitional Market,18.2515,rolling_6m
+CIPLA.NS,2022-10-07,2023-04-11,6.0,-19.76,18.56,-26.51,19.51,14.5,-0.1134,Low Volatility,Bear Market / Major Correction,19.637999999999998,rolling_6m
+CIPLA.NS,2023-04-12,2025-04-29,24.0,67.93,24.4,-17.6,23.48,16.61,0.241,Elevated Volatility,Strong Recovery / Bull Run,32.3645,rolling_24m
+CIPLA.NS,2025-05-30,2025-11-28,6.0,4.48,18.35,-9.76,19.76,14.57,-0.0792,Normal,Mixed / Transitional Market,12.4085,rolling_6m
+COALINDIA.NS,2022-02-02,2022-08-03,6.0,29.45,41.83,-19.26,43.69,32.45,0.0165,Crisis / High Stress,High Volatility Sideways,32.345,rolling_6m
+COALINDIA.NS,2022-07-06,2024-07-24,24.0,171.77,28.71,-18.53,27.88,20.09,0.0216,Normal,High-Growth Bull Run (Volatile),60.715,rolling_24m
+COALINDIA.NS,2024-08-26,2025-02-20,6.0,-31.62,23.95,-34.18,26.39,20.47,0.3841,Elevated Volatility,Bear Market / Major Correction,27.2175,rolling_6m
+COALINDIA.NS,2025-01-24,2025-07-28,6.0,-1.23,21.49,-10.53,23.08,17.95,0.2266,Elevated Volatility,Mild Bear / Stagnation,13.524999999999999,rolling_6m
+COALINDIA.NS,2025-06-30,2025-12-30,6.0,1.54,14.75,-7.43,14.94,11.54,-0.4085,Low Volatility,Mixed / Transitional Market,9.3415,rolling_6m
+DRREDDY.NS,2022-01-03,2022-07-05,6.0,-9.46,27.81,-23.37,29.19,21.85,-0.424,Low Volatility,Bear Market / Major Correction,21.142500000000002,rolling_6m
+DRREDDY.NS,2022-07-06,2024-07-24,24.0,55.36,19.5,-11.6,19.9,14.4,-0.0409,Normal,Strong Recovery / Bull Run,25.865,rolling_24m
+DRREDDY.NS,2024-10-24,2025-04-29,6.0,-10.67,23.9,-21.7,21.2,16.16,0.4676,Crisis / High Stress,Bear Market / Major Correction,18.604499999999998,rolling_6m
+DRREDDY.NS,2025-04-30,2025-10-29,6.0,5.66,19.37,-12.18,20.88,15.74,0.234,Elevated Volatility,Mixed / Transitional Market,13.7785,rolling_6m
+EICHERMOT.NS,2022-05-09,2022-11-07,6.0,60.18,30.35,-9.09,30.87,23.78,0.4129,Crisis / High Stress,Strong Recovery / Bull Run,32.2415,rolling_6m
+EICHERMOT.NS,2022-11-09,2023-05-12,6.0,-2.86,25.12,-23.59,25.77,20.0,0.4591,Crisis / High Stress,High Volatility Sideways,18.225,rolling_6m
+EICHERMOT.NS,2023-04-12,2023-10-12,6.0,11.69,21.95,-14.85,23.24,16.78,0.1057,Normal,Mixed / Transitional Market,16.931,rolling_6m
+EICHERMOT.NS,2023-10-13,2025-10-29,24.0,99.98,24.71,-14.25,24.24,17.75,0.0235,Normal,High-Growth Bull Run (Volatile),40.0435,rolling_24m
+GAIL.NS,2022-02-02,2022-08-03,6.0,-3.36,35.99,-22.85,35.52,26.77,-0.3743,Elevated Volatility,High Volatility Sideways,23.360500000000002,rolling_6m
+GAIL.NS,2022-07-06,2024-07-24,24.0,151.22,32.17,-17.55,29.48,21.25,-0.0399,Normal,High-Growth Bull Run (Volatile),56.82449999999999,rolling_24m
+GAIL.NS,2024-08-26,2025-02-20,6.0,-28.95,31.62,-33.52,32.62,24.39,0.4387,Elevated Volatility,Bear Market / Major Correction,29.8865,rolling_6m
+GAIL.NS,2025-01-24,2025-07-28,6.0,2.72,32.03,-14.67,33.17,25.96,0.5988,Crisis / High Stress,High Volatility Sideways,20.0165,rolling_6m
+GAIL.NS,2025-06-30,2025-12-30,6.0,-10.59,19.41,-13.75,21.54,16.51,-0.1965,Normal,Mild Bear / Stagnation,15.492999999999999,rolling_6m
+GRASIM.NS,2022-01-03,2022-07-05,6.0,-18.77,34.16,-33.02,33.91,26.18,-0.1553,Low Volatility,Bear Market / Major Correction,28.4885,rolling_6m
+GRASIM.NS,2022-07-06,2024-07-24,24.0,105.75,20.4,-15.08,20.54,16.21,-0.0563,Normal,High-Growth Bull Run (Volatile),39.835499999999996,rolling_24m
+GRASIM.NS,2024-07-25,2025-01-23,6.0,-12.02,24.23,-19.52,23.86,18.53,0.3946,Crisis / High Stress,Bearish High Volatility,19.095499999999998,rolling_6m
+GRASIM.NS,2024-12-26,2025-06-27,6.0,15.27,24.17,-10.64,24.11,18.46,0.4121,Crisis / High Stress,Mixed / Transitional Market,18.097,rolling_6m
+GRASIM.NS,2025-05-30,2025-11-28,6.0,7.6,18.97,-9.19,20.02,14.99,-0.197,Normal,Mixed / Transitional Market,13.375499999999999,rolling_6m
+HCLTECH.NS,2022-01-03,2022-07-05,6.0,-25.94,28.74,-29.09,26.95,20.29,-0.743,Low Volatility,Bear Market / Major Correction,26.42,rolling_6m
+HCLTECH.NS,2022-10-07,2024-10-23,24.0,92.73,21.68,-22.7,21.59,15.98,-0.0852,Normal,High-Growth Bull Run (Volatile),38.506499999999996,rolling_24m
+HCLTECH.NS,2024-10-24,2025-04-29,6.0,-14.95,29.37,-31.13,25.41,17.2,0.2593,Crisis / High Stress,Bear Market / Major Correction,23.683,rolling_6m
+HCLTECH.NS,2025-06-30,2025-12-30,6.0,-6.56,19.39,-19.87,20.99,15.85,0.187,Elevated Volatility,Mild Bear / Stagnation,15.570500000000001,rolling_6m
+HDFCBANK.NS,2022-01-03,2022-07-05,6.0,-10.99,30.54,-22.66,35.51,25.21,-0.0349,Low Volatility,Bear Market / Major Correction,23.0105,rolling_6m
+HDFCBANK.NS,2022-07-04,2023-07-10,12.0,22.19,18.92,-9.57,19.41,14.16,-0.0158,Normal,Mixed / Transitional Market,16.915499999999998,rolling_12m
+HDFCBANK.NS,2023-08-11,2024-02-15,6.0,-12.65,20.59,-19.03,16.79,11.85,0.0186,Elevated Volatility,Bearish High Volatility,16.545,rolling_6m
+HDFCBANK.NS,2024-02-06,2025-08-14,18.0,37.88,19.44,-12.93,20.72,15.05,0.2225,Elevated Volatility,Strong Bull Market,21.87,rolling_18m
+HEROMOTOCO.NS,2022-01-03,2022-07-05,6.0,10.52,34.73,-21.29,36.36,27.38,-0.6016,Low Volatility,High Volatility Sideways,24.519499999999997,rolling_6m
+HEROMOTOCO.NS,2022-09-07,2023-03-08,6.0,-13.2,20.08,-15.76,21.2,16.34,-0.3459,Low Volatility,Bearish High Volatility,16.748,rolling_6m
+HEROMOTOCO.NS,2023-02-20,2024-09-05,18.0,126.88,24.51,-14.16,24.08,18.48,-0.0346,Elevated Volatility,High-Growth Bull Run (Volatile),46.826499999999996,rolling_18m
+HEROMOTOCO.NS,2024-09-24,2025-03-25,6.0,-40.78,24.01,-42.98,23.94,19.1,0.4338,Crisis / High Stress,Crash / Severe Bear Market,31.0145,rolling_6m
+HEROMOTOCO.NS,2025-03-26,2025-09-26,6.0,46.13,27.52,-6.79,27.26,20.89,0.6344,Crisis / High Stress,Strong Bull Market,26.7005,rolling_6m
+HINDALCO.NS,2022-01-03,2022-07-05,6.0,-27.78,43.92,-49.87,44.64,32.56,-0.4586,Low Volatility,Crash / Severe Bear Market,38.803,rolling_6m
+HINDALCO.NS,2022-07-06,2024-07-24,24.0,91.11,31.52,-23.46,32.28,24.11,0.1956,Crisis / High Stress,High-Growth Bull Run (Volatile),43.3235,rolling_24m
+HINDALCO.NS,2024-06-25,2024-12-24,6.0,-8.47,29.59,-18.24,31.46,22.44,0.0314,Elevated Volatility,Bearish High Volatility,20.61,rolling_6m
+HINDALCO.NS,2024-11-25,2025-11-27,12.0,22.38,26.0,-20.42,27.26,19.82,-0.1124,Elevated Volatility,High Volatility Sideways,22.743000000000002,rolling_12m
+HINDUNILVR.NS,2022-03-04,2022-09-06,6.0,27.41,27.99,-11.32,28.32,22.13,0.3584,Crisis / High Stress,High Volatility Sideways,23.339,rolling_6m
+HINDUNILVR.NS,2023-04-03,2024-04-12,12.0,-11.98,15.85,-19.03,15.96,11.38,-0.2881,Low Volatility,Mild Bear / Stagnation,14.624500000000001,rolling_12m
+HINDUNILVR.NS,2024-03-19,2024-09-23,6.0,33.6,20.28,-6.55,20.49,13.94,0.2689,Crisis / High Stress,Mixed / Transitional Market,19.596,rolling_6m
+HINDUNILVR.NS,2024-09-24,2025-03-25,6.0,-23.02,20.23,-27.75,20.22,14.65,0.4523,Crisis / High Stress,Bear Market / Major Correction,21.3155,rolling_6m
+HINDUNILVR.NS,2025-03-26,2025-09-26,6.0,11.84,18.95,-6.71,18.99,14.08,0.3033,Elevated Volatility,Mixed / Transitional Market,13.7505,rolling_6m
+ICICIBANK.NS,2022-01-03,2022-07-05,6.0,-5.92,25.93,-20.73,26.45,20.09,-0.2377,Low Volatility,Bear Market / Major Correction,18.7195,rolling_6m
+ICICIBANK.NS,2022-07-06,2024-07-24,24.0,68.47,18.51,-14.24,18.1,13.52,0.0017,Elevated Volatility,Strong Recovery / Bull Run,29.148,rolling_24m
+ICICIBANK.NS,2024-06-25,2024-12-24,6.0,8.29,18.76,-8.63,21.67,15.41,0.3434,Crisis / High Stress,Mixed / Transitional Market,13.446500000000002,rolling_6m
+ICICIBANK.NS,2025-01-24,2025-07-28,6.0,23.09,18.02,-5.37,18.63,13.26,0.1343,Elevated Volatility,Mixed / Transitional Market,15.805499999999999,rolling_6m
+ICICIBANK.NS,2025-06-30,2025-12-30,6.0,-7.14,13.11,-11.3,14.19,10.39,-0.2273,Normal,Mild Bear / Stagnation,10.711500000000001,rolling_6m
+INDUSINDBK.NS,2022-01-03,2024-01-15,24.0,85.12,30.14,-23.62,29.33,22.32,-0.3523,Low Volatility,High-Growth Bull Run (Volatile),41.016999999999996,rolling_24m
+INDUSINDBK.NS,2024-01-16,2024-07-24,6.0,-16.22,30.43,-16.53,28.49,19.8,-0.098,Normal,Bearish High Volatility,21.9715,rolling_6m
+INDUSINDBK.NS,2024-09-24,2025-03-25,6.0,-56.01,53.04,-56.45,37.69,20.22,0.5504,Crisis / High Stress,Crash / Severe Bear Market,47.900499999999994,rolling_6m
+INDUSINDBK.NS,2025-03-26,2025-09-26,6.0,8.77,31.21,-19.1,47.6,28.45,1.0508,Crisis / High Stress,High Volatility Sideways,22.626,rolling_6m
+INFY.NS,2022-01-03,2023-07-12,18.0,-29.77,26.17,-36.92,26.65,20.12,-0.0427,Crisis / High Stress,Crash / Severe Bear Market,28.01,rolling_18m
+INFY.NS,2023-08-18,2024-08-29,12.0,39.21,22.05,-19.42,22.42,16.15,-0.142,Low Volatility,Strong Bull Market,24.634,rolling_12m
+INFY.NS,2024-10-09,2025-10-13,12.0,-23.53,25.77,-30.15,25.04,17.98,0.1683,Crisis / High Stress,Bear Market / Major Correction,24.528,rolling_12m
+IOC.NS,2022-02-02,2022-08-03,6.0,-14.42,28.51,-23.69,29.75,23.23,-0.4251,Elevated Volatility,Bear Market / Major Correction,22.9675,rolling_6m
+IOC.NS,2022-07-27,2024-02-07,18.0,158.6,25.11,-13.67,20.97,15.98,-0.2854,Normal,High-Growth Bull Run (Volatile),54.3685,rolling_18m
+IOC.NS,2024-02-20,2025-02-24,12.0,-36.31,33.02,-37.88,35.68,26.03,0.7196,Crisis / High Stress,Crash / Severe Bear Market,33.416500000000006,rolling_12m
+IOC.NS,2025-04-30,2025-10-29,6.0,18.3,22.07,-11.18,22.32,17.25,0.0042,Elevated Volatility,Mixed / Transitional Market,17.985500000000002,rolling_6m
+ITC.NS,2022-01-03,2023-07-12,18.0,115.56,20.22,-11.07,19.97,15.52,-0.2918,Low Volatility,High-Growth Bull Run (Volatile),41.285,rolling_18m
+ITC.NS,2023-08-11,2024-02-15,6.0,-9.99,17.14,-15.37,16.65,12.71,0.0654,Elevated Volatility,Mild Bear / Stagnation,14.112499999999999,rolling_6m
+ITC.NS,2024-02-16,2024-08-23,6.0,25.01,20.27,-5.93,20.62,15.16,0.513,Crisis / High Stress,Mixed / Transitional Market,17.564999999999998,rolling_6m
+ITC.NS,2024-09-24,2025-03-25,6.0,-17.4,18.81,-21.56,18.66,13.47,0.2916,Elevated Volatility,Bear Market / Major Correction,17.9395,rolling_6m
+ITC.NS,2025-03-26,2025-09-26,6.0,-0.55,14.86,-10.07,16.02,11.98,0.1117,Elevated Volatility,Mild Bear / Stagnation,9.7485,rolling_6m
+JSWSTEEL.NS,2022-01-03,2022-07-05,6.0,-17.15,44.74,-31.18,44.78,31.72,-0.0991,Low Volatility,Bear Market / Major Correction,32.5265,rolling_6m
+JSWSTEEL.NS,2022-07-06,2024-07-24,24.0,58.93,24.17,-15.16,25.18,18.96,0.0372,Elevated Volatility,Strong Recovery / Bull Run,30.016000000000002,rolling_24m
+JSWSTEEL.NS,2024-06-25,2024-12-24,6.0,-0.87,25.11,-11.72,27.49,20.58,0.1167,Elevated Volatility,High Volatility Sideways,15.465999999999998,rolling_6m
+JSWSTEEL.NS,2024-11-25,2025-11-27,12.0,21.75,23.8,-12.75,23.72,17.33,-0.0422,Low Volatility,Mixed / Transitional Market,19.7835,rolling_12m
+KOTAKBANK.NS,2022-01-03,2022-07-05,6.0,-8.85,28.25,-16.06,28.74,23.18,-0.5567,Low Volatility,Bearish High Volatility,19.948,rolling_6m
+KOTAKBANK.NS,2022-07-04,2023-07-10,12.0,11.73,19.54,-16.16,20.0,15.42,-0.0899,Low Volatility,Mixed / Transitional Market,16.0875,rolling_12m
+KOTAKBANK.NS,2023-06-13,2023-12-14,6.0,-0.11,15.77,-13.98,17.13,12.8,-0.0943,Normal,Mild Bear / Stagnation,10.903,rolling_6m
+KOTAKBANK.NS,2023-11-28,2025-06-10,18.0,23.47,24.08,-19.5,23.07,15.65,0.262,Elevated Volatility,Mixed / Transitional Market,21.325499999999998,rolling_18m
+KOTAKBANK.NS,2025-05-30,2025-11-28,6.0,2.4,20.03,-12.87,21.87,15.03,0.1376,Crisis / High Stress,Mixed / Transitional Market,13.1905,rolling_6m
+LT.NS,2022-01-03,2022-07-05,6.0,-18.62,28.34,-28.88,28.32,23.14,-0.3936,Low Volatility,Bear Market / Major Correction,24.977999999999998,rolling_6m
+LT.NS,2022-07-06,2024-07-24,24.0,126.16,23.44,-14.76,22.44,17.1,-0.0334,Normal,High-Growth Bull Run (Volatile),46.116,rolling_24m
+LT.NS,2024-10-24,2025-04-29,6.0,-3.5,28.72,-22.63,25.88,18.8,0.5082,Elevated Volatility,High Volatility Sideways,19.213,rolling_6m
+LT.NS,2025-04-30,2025-10-29,6.0,18.47,17.05,-7.13,21.67,14.95,0.0112,Normal,Steady Bull Market (Low Vol),15.001000000000001,rolling_6m
+M&M.NS,2022-02-02,2022-08-03,6.0,44.21,32.65,-20.57,31.39,23.99,-0.4176,Elevated Volatility,Strong Bull Market,31.391999999999996,rolling_6m
+M&M.NS,2022-07-06,2024-07-24,24.0,153.99,26.63,-18.71,25.74,19.44,-0.0276,Normal,High-Growth Bull Run (Volatile),55.44799999999999,rolling_24m
+M&M.NS,2024-08-26,2025-08-28,12.0,17.98,28.97,-22.42,30.04,23.49,0.452,Crisis / High Stress,High Volatility Sideways,23.8165,rolling_12m
+MARUTI.NS,2022-04-05,2024-04-22,24.0,64.72,20.52,-14.55,20.84,15.58,0.0363,Normal,Strong Recovery / Bull Run,29.387999999999998,rolling_24m
+MARUTI.NS,2024-05-24,2024-11-25,6.0,-15.19,23.4,-19.52,23.51,16.3,0.3506,Crisis / High Stress,Bearish High Volatility,19.1515,rolling_6m
+MARUTI.NS,2024-11-25,2025-11-27,12.0,44.24,20.72,-13.78,21.3,15.28,0.2123,Elevated Volatility,Strong Bull Market,24.124,rolling_12m
+NESTLEIND.NS,2022-05-23,2023-11-29,18.0,41.62,16.99,-13.8,17.76,13.31,-0.1383,Normal,Strong Bull Market,21.7735,rolling_18m
+NESTLEIND.NS,2024-01-04,2025-01-13,12.0,-17.49,18.84,-21.98,19.46,14.75,0.3322,Elevated Volatility,Bear Market / Major Correction,18.3125,rolling_12m
+NESTLEIND.NS,2024-12-26,2025-06-27,6.0,14.36,19.07,-7.76,18.93,14.34,0.4945,Crisis / High Stress,Mixed / Transitional Market,14.6845,rolling_6m
+NESTLEIND.NS,2025-05-30,2025-11-28,6.0,5.26,19.87,-11.88,20.43,14.9,0.4026,Crisis / High Stress,Mixed / Transitional Market,13.625500000000002,rolling_6m
+NTPC.NS,2022-01-03,2022-07-05,6.0,11.79,29.8,-16.36,30.47,21.93,-0.7071,Low Volatility,High Volatility Sideways,21.0355,rolling_6m
+NTPC.NS,2022-07-06,2024-07-24,24.0,182.55,26.45,-15.45,24.53,18.65,-0.0094,Elevated Volatility,High-Growth Bull Run (Volatile),61.714999999999996,rolling_24m
+NTPC.NS,2024-08-26,2025-02-20,6.0,-21.62,26.81,-32.72,26.42,20.67,0.4987,Crisis / High Stress,Bear Market / Major Correction,25.4665,rolling_6m
+NTPC.NS,2025-01-24,2025-07-28,6.0,2.87,22.66,-10.55,26.0,19.83,0.5394,Crisis / High Stress,Mixed / Transitional Market,14.724499999999997,rolling_6m
+NTPC.NS,2025-06-30,2025-12-30,6.0,-2.99,13.3,-8.37,15.0,11.81,-0.3215,Normal,Mild Bear / Stagnation,9.4385,rolling_6m
+ONGC.NS,2022-02-02,2022-08-03,6.0,-20.81,47.62,-35.3,45.82,33.89,0.0903,Crisis / High Stress,Crash / Severe Bear Market,35.707499999999996,rolling_6m
+ONGC.NS,2022-07-06,2024-07-24,24.0,164.2,29.13,-17.41,28.79,20.52,0.0023,Normal,High-Growth Bull Run (Volatile),58.83149999999999,rolling_24m
+ONGC.NS,2024-07-25,2025-01-23,6.0,-21.66,31.15,-31.92,34.91,25.02,0.4682,Elevated Volatility,Bear Market / Major Correction,27.7055,rolling_6m
+ONGC.NS,2024-12-26,2025-06-27,6.0,1.07,30.34,-18.98,30.32,24.27,0.436,Elevated Volatility,High Volatility Sideways,19.5365,rolling_6m
+ONGC.NS,2025-05-30,2025-11-28,6.0,1.61,14.3,-9.91,18.17,13.88,-0.2855,Low Volatility,Mixed / Transitional Market,10.1655,rolling_6m
+POWERGRID.NS,2022-01-03,2022-07-05,6.0,4.46,27.95,-15.77,29.12,22.68,-0.8408,Low Volatility,High Volatility Sideways,18.5875,rolling_6m
+POWERGRID.NS,2022-07-06,2024-07-24,24.0,113.61,26.81,-15.47,25.31,18.85,0.0249,Low Volatility,High-Growth Bull Run (Volatile),44.650000000000006,rolling_24m
+POWERGRID.NS,2024-09-24,2025-03-25,6.0,-16.87,26.77,-31.36,24.51,18.77,0.3792,Elevated Volatility,Bear Market / Major Correction,23.613000000000003,rolling_6m
+POWERGRID.NS,2025-03-26,2025-09-26,6.0,-2.96,21.69,-14.23,23.94,18.78,0.2839,Crisis / High Stress,Mild Bear / Stagnation,14.9335,rolling_6m
+RELIANCE.NS,2022-03-04,2022-09-06,6.0,11.67,30.29,-15.69,31.38,23.69,0.3802,Crisis / High Stress,High Volatility Sideways,21.395,rolling_6m
+RELIANCE.NS,2022-10-07,2023-04-11,6.0,-3.95,20.33,-19.41,19.96,15.59,0.0359,Normal,Mild Bear / Stagnation,15.103,rolling_6m
+RELIANCE.NS,2023-04-12,2025-04-29,24.0,29.25,20.9,-27.42,20.15,14.87,0.0699,Elevated Volatility,Mixed / Transitional Market,23.0855,rolling_24m
+RELIANCE.NS,2025-05-30,2025-11-28,6.0,10.32,16.34,-12.17,18.91,14.16,-0.108,Low Volatility,Mixed / Transitional Market,13.565000000000001,rolling_6m
+SBIN.NS,2022-01-03,2022-07-05,6.0,0.29,29.28,-19.58,29.45,22.17,-0.5519,Low Volatility,High Volatility Sideways,18.6705,rolling_6m
+SBIN.NS,2022-07-06,2024-07-24,24.0,77.52,25.23,-19.21,23.71,17.38,0.0649,Normal,Strong Recovery / Bull Run,35.528499999999994,rolling_24m
+SBIN.NS,2024-07-25,2025-01-23,6.0,-12.09,24.15,-16.42,27.74,18.52,0.5281,Elevated Volatility,Bearish High Volatility,18.462999999999997,rolling_6m
+SBIN.NS,2025-01-24,2025-07-28,6.0,7.12,20.06,-11.6,22.1,17.13,0.336,Elevated Volatility,Mixed / Transitional Market,14.546999999999999,rolling_6m
+SBIN.NS,2025-06-30,2025-12-30,6.0,18.66,13.83,-4.53,14.62,11.11,-0.595,Low Volatility,Steady Bull Market (Low Vol),12.6335,rolling_6m
+SHREECEM.NS,2022-01-03,2022-07-05,6.0,-28.19,32.47,-34.49,33.11,25.49,-0.4559,Low Volatility,Bear Market / Major Correction,30.407999999999998,rolling_6m
+SHREECEM.NS,2022-07-06,2024-07-24,24.0,37.82,24.76,-19.05,24.96,18.68,0.1837,Crisis / High Stress,Strong Bull Market,25.667000000000005,rolling_24m
+SHREECEM.NS,2024-06-25,2024-12-24,6.0,-1.87,21.58,-15.58,21.38,16.36,0.0136,Normal,Mild Bear / Stagnation,14.408499999999998,rolling_6m
+SHREECEM.NS,2024-11-26,2025-05-29,6.0,19.75,24.02,-12.27,23.34,18.29,0.0253,Normal,Mixed / Transitional Market,19.456500000000002,rolling_6m
+SHREECEM.NS,2025-06-30,2025-12-30,6.0,-15.11,16.54,-20.85,18.22,13.34,-0.3048,Low Volatility,Bear Market / Major Correction,16.4045,rolling_6m
+SUNPHARMA.NS,2022-01-03,2022-07-05,6.0,-1.55,25.18,-15.96,24.97,18.92,-0.6982,Low Volatility,High Volatility Sideways,16.176499999999997,rolling_6m
+SUNPHARMA.NS,2022-07-06,2024-07-24,24.0,93.32,18.11,-12.24,18.16,13.79,-0.0482,Normal,Strong Recovery / Bull Run,34.874500000000005,rolling_24m
+SUNPHARMA.NS,2024-10-09,2025-10-13,12.0,-13.59,20.77,-19.04,20.21,15.29,0.4801,Crisis / High Stress,Bearish High Volatility,17.532999999999998,rolling_12m
+TATASTEEL.NS,2022-01-03,2022-07-05,6.0,-24.71,46.74,-38.86,45.76,31.57,-0.4022,Low Volatility,Crash / Severe Bear Market,36.622499999999995,rolling_6m
+TATASTEEL.NS,2022-07-06,2024-07-24,24.0,86.81,27.68,-17.36,28.17,20.58,0.0235,Low Volatility,High-Growth Bull Run (Volatile),38.9785,rolling_24m
+TATASTEEL.NS,2024-07-25,2025-01-23,6.0,-17.17,25.34,-27.07,27.51,19.87,0.2757,Elevated Volatility,Bear Market / Major Correction,22.549500000000002,rolling_6m
+TATASTEEL.NS,2025-01-24,2025-07-28,6.0,23.08,30.71,-20.03,31.46,22.06,0.3624,Elevated Volatility,High Volatility Sideways,24.9365,rolling_6m
+TATASTEEL.NS,2025-06-30,2025-12-30,6.0,10.04,23.35,-13.24,24.0,17.15,-0.3294,Normal,Mixed / Transitional Market,16.7605,rolling_6m
+TCS.NS,2022-04-05,2022-10-06,6.0,-18.69,25.41,-21.83,25.79,18.95,0.6831,Crisis / High Stress,Bear Market / Major Correction,21.721999999999998,rolling_6m
+TCS.NS,2022-09-07,2023-03-08,6.0,7.65,19.28,-8.05,20.35,15.05,0.1141,Normal,Mixed / Transitional Market,13.280500000000002,rolling_6m
+TCS.NS,2023-02-07,2023-08-10,6.0,-0.88,18.11,-13.17,17.64,13.76,-0.226,Low Volatility,Mild Bear / Stagnation,11.9445,rolling_6m
+TCS.NS,2023-08-18,2024-08-29,12.0,34.0,20.48,-13.0,19.78,14.67,-0.067,Low Volatility,Mixed / Transitional Market,21.202,rolling_12m
+TCS.NS,2024-08-26,2025-08-28,12.0,-31.29,20.39,-34.05,20.98,14.75,0.2662,Crisis / High Stress,Bear Market / Major Correction,24.718999999999998,rolling_12m
+TECHM.NS,2022-01-03,2022-07-05,6.0,-43.79,34.01,-46.08,33.54,26.45,-0.5963,Low Volatility,Crash / Severe Bear Market,37.357,rolling_6m
+TECHM.NS,2022-06-07,2022-12-07,6.0,-4.62,27.65,-15.24,30.55,23.51,0.7649,Crisis / High Stress,High Volatility Sideways,18.5825,rolling_6m
+TECHM.NS,2023-01-06,2025-01-23,24.0,73.75,25.64,-16.22,25.35,18.72,-0.0254,Normal,Strong Recovery / Bull Run,34.3995,rolling_24m
+TECHM.NS,2025-01-24,2025-07-28,6.0,-15.81,27.41,-26.13,28.13,20.71,0.3145,Crisis / High Stress,Bear Market / Major Correction,22.913999999999998,rolling_6m
+TECHM.NS,2025-06-30,2025-12-30,6.0,-4.88,19.85,-17.8,21.16,16.66,-0.2496,Low Volatility,Mild Bear / Stagnation,15.059500000000002,rolling_6m
+TITAN.NS,2022-01-03,2022-07-05,6.0,-22.57,32.5,-28.63,32.21,25.03,-0.3478,Low Volatility,Bear Market / Major Correction,27.749499999999998,rolling_6m
+TITAN.NS,2022-07-06,2024-07-24,24.0,72.75,21.2,-18.37,21.12,15.67,-0.0298,Low Volatility,Strong Recovery / Bull Run,32.415499999999994,rolling_24m
+TITAN.NS,2024-09-24,2025-03-25,6.0,-19.32,22.92,-21.28,22.2,16.97,0.3408,Elevated Volatility,Bear Market / Major Correction,20.502000000000002,rolling_6m
+TITAN.NS,2025-04-30,2025-10-29,6.0,10.91,19.76,-10.57,21.17,14.9,0.0255,Normal,Mixed / Transitional Market,14.7375,rolling_6m
+ULTRACEMCO.NS,2022-01-03,2022-07-05,6.0,-25.82,31.0,-34.22,32.14,24.25,-0.214,Low Volatility,Bear Market / Major Correction,28.999000000000002,rolling_6m
+ULTRACEMCO.NS,2022-07-06,2024-07-24,24.0,96.52,21.41,-12.18,20.94,16.0,0.013,Normal,High-Growth Bull Run (Volatile),37.2595,rolling_24m
+ULTRACEMCO.NS,2024-10-24,2025-04-29,6.0,7.47,26.13,-16.18,24.7,18.72,0.3532,Crisis / High Stress,High Volatility Sideways,17.993,rolling_6m
+ULTRACEMCO.NS,2025-04-30,2025-10-29,6.0,3.08,17.17,-7.51,18.97,14.21,-0.2514,Low Volatility,Mixed / Transitional Market,11.123500000000002,rolling_6m
+UPL.NS,2022-04-05,2024-04-22,24.0,-37.82,26.18,-45.57,25.97,19.45,0.1291,Normal,Crash / Severe Bear Market,31.622,rolling_24m
+UPL.NS,2024-04-18,2025-10-24,18.0,40.48,28.74,-19.57,29.48,21.39,0.2506,Elevated Volatility,Strong Bull Market,28.371000000000002,rolling_18m
+VEDL.NS,2022-01-03,2022-07-05,6.0,-38.65,51.57,-51.13,50.47,37.08,-0.54,Low Volatility,Crash / Severe Bear Market,45.354,rolling_6m
+VEDL.NS,2022-07-06,2023-01-05,6.0,45.19,39.23,-18.27,46.73,33.12,0.8189,Crisis / High Stress,Strong Bull Market,35.306,rolling_6m
+VEDL.NS,2023-02-07,2023-08-10,6.0,-20.87,27.89,-24.42,28.33,20.54,-0.1899,Elevated Volatility,Bear Market / Major Correction,23.971,rolling_6m
+VEDL.NS,2023-10-13,2025-10-29,24.0,128.21,34.0,-29.01,33.97,25.66,0.0202,Normal,High-Growth Bull Run (Volatile),54.8865,rolling_24m
+WIPRO.NS,2022-01-03,2022-07-05,6.0,-42.45,31.5,-43.84,29.85,23.02,-0.6065,Low Volatility,Crash / Severe Bear Market,35.0095,rolling_6m
+WIPRO.NS,2022-06-07,2022-12-07,6.0,-13.12,24.15,-21.04,26.63,20.3,0.5404,Crisis / High Stress,Bear Market / Major Correction,20.0005,rolling_6m
+WIPRO.NS,2023-01-06,2025-01-23,24.0,66.34,24.8,-19.53,23.24,16.97,-0.0569,Low Volatility,Strong Recovery / Bull Run,32.565,rolling_24m
+WIPRO.NS,2025-01-24,2025-07-28,6.0,-21.88,27.74,-26.85,29.69,22.1,0.5248,Crisis / High Stress,Bear Market / Major Correction,24.969,rolling_6m
+WIPRO.NS,2025-06-30,2025-12-30,6.0,-0.88,20.26,-12.7,21.31,15.87,-0.1224,Normal,Mild Bear / Stagnation,13.024999999999999,rolling_6m
+ZEEL.NS,2022-01-03,2022-07-05,6.0,-33.32,51.53,-36.45,54.22,38.97,-0.6881,Low Volatility,Crash / Severe Bear Market,41.4495,rolling_6m
+ZEEL.NS,2023-03-09,2023-09-11,6.0,44.38,45.45,-19.79,39.86,26.99,-0.1214,Normal,Strong Bull Market,36.35850000000001,rolling_6m
+ZEEL.NS,2023-12-15,2024-06-24,6.0,-45.56,73.71,-55.33,74.74,45.19,1.0613,Crisis / High Stress,Crash / Severe Bear Market,57.292500000000004,rolling_6m
+ZEEL.NS,2024-05-27,2025-05-30,12.0,-12.44,46.07,-45.94,45.53,33.8,0.3478,Elevated Volatility,Crash / Severe Bear Market,35.1825,rolling_12m
+ZEEL.NS,2025-06-30,2025-12-30,6.0,-38.68,28.5,-39.15,35.29,26.28,-0.2222,Normal,Crash / Severe Bear Market,32.731,rolling_6m
