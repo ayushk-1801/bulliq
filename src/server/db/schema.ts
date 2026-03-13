@@ -19,10 +19,10 @@ export const niftyCompany = createTable(
   "nifty_company",
   {
     id: integer("id").primaryKey().generatedByDefaultAsIdentity(),
-    symbol: text("symbol").notNull(),
+    symbol: text("symbol").notNull().unique(),
     companyName: text("company_name").notNull(),
     stockFileStem: text("stock_file_stem").notNull(),
-    yahooSymbol: text("yahoo_symbol").notNull(),
+    yahooSymbol: text("yahoo_symbol").notNull().unique(),
     status: text("status").notNull(),
     stockRows: integer("stock_rows").notNull(),
     financialFilesWritten: integer("financial_files_written").notNull(),
@@ -31,10 +31,6 @@ export const niftyCompany = createTable(
       .$defaultFn(() => new Date())
       .notNull(),
   },
-  (t) => [
-    uniqueIndex("nifty_company_symbol_uq").on(t.symbol),
-    uniqueIndex("nifty_company_yahoo_symbol_uq").on(t.yahooSymbol),
-  ],
 );
 
 export const niftyStockDaily = createTable(
@@ -128,6 +124,47 @@ export const competitionStock = createTable(
   ],
 );
 
+export const competitionNews = createTable(
+  "competition_news",
+  {
+    id: integer("id").primaryKey().generatedByDefaultAsIdentity(),
+    competitionId: integer("competition_id")
+      .notNull()
+      .references(() => competition.id, { onDelete: "cascade" }),
+    symbol: text("symbol")
+      .notNull()
+      .references(() => niftyCompany.symbol, { onDelete: "cascade" }),
+    category: text("category").notNull(),
+    rank: integer("rank").notNull(),
+    title: text("title").notNull(),
+    link: text("link").notNull(),
+    publishedAt: timestamp("published_at", { withTimezone: true }),
+    source: text("source"),
+    windowFrom: date("window_from").notNull(),
+    windowTo: date("window_to").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .$defaultFn(() => new Date())
+      .notNull(),
+  },
+  (t) => [
+    index("competition_news_competition_idx").on(t.competitionId),
+    index("competition_news_symbol_idx").on(t.symbol),
+    index("competition_news_category_idx").on(t.category),
+    uniqueIndex("competition_news_comp_symbol_category_rank_uq").on(
+      t.competitionId,
+      t.symbol,
+      t.category,
+      t.rank,
+    ),
+    uniqueIndex("competition_news_comp_symbol_category_link_uq").on(
+      t.competitionId,
+      t.symbol,
+      t.category,
+      t.link,
+    ),
+  ],
+);
+
 export const user = pgTable("user", {
   id: text("id").primaryKey(),
   name: text("name").notNull(),
@@ -143,6 +180,60 @@ export const user = pgTable("user", {
     .$defaultFn(() => /* @__PURE__ */ new Date())
     .notNull(),
 });
+
+export const leaderboard = createTable("leaderboard", {
+  userId: text("user_id")
+    .primaryKey()
+    .references(() => user.id, { onDelete: "cascade" }),
+  rating: integer("rating").notNull().default(1000),
+  competitionsPlayed: integer("competitions_played").notNull().default(0),
+  wins: integer("wins").notNull().default(0),
+  averageReturnPct: doublePrecision("average_return_pct").notNull().default(0),
+  bestReturnPct: doublePrecision("best_return_pct"),
+  lastRatingDelta: integer("last_rating_delta").notNull().default(0),
+  lastPlayedAt: timestamp("last_played_at", { withTimezone: true }),
+  createdAt: timestamp("created_at", { withTimezone: true })
+    .$defaultFn(() => new Date())
+    .notNull(),
+  updatedAt: timestamp("updated_at", { withTimezone: true })
+    .$defaultFn(() => new Date())
+    .notNull(),
+});
+
+export const competitionResult = createTable(
+  "competition_result",
+  {
+    id: integer("id").primaryKey().generatedByDefaultAsIdentity(),
+    competitionId: integer("competition_id")
+      .notNull()
+      .references(() => competition.id, { onDelete: "cascade" }),
+    userId: text("user_id")
+      .notNull()
+      .references(() => user.id, { onDelete: "cascade" }),
+    finalPortfolioValue: doublePrecision("final_portfolio_value").notNull(),
+    profitLoss: doublePrecision("profit_loss").notNull(),
+    returnPct: doublePrecision("return_pct").notNull(),
+    rank: integer("rank").notNull().default(1),
+    participantsCount: integer("participants_count").notNull().default(1),
+    ratingBefore: integer("rating_before").notNull().default(1000),
+    ratingDelta: integer("rating_delta").notNull().default(0),
+    ratingAfter: integer("rating_after").notNull().default(1000),
+    completedAt: timestamp("completed_at", { withTimezone: true })
+      .$defaultFn(() => new Date())
+      .notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true })
+      .$defaultFn(() => new Date())
+      .notNull(),
+  },
+  (t) => [
+    uniqueIndex("competition_result_competition_user_uq").on(
+      t.competitionId,
+      t.userId,
+    ),
+    index("competition_result_competition_idx").on(t.competitionId),
+    index("competition_result_user_idx").on(t.userId),
+  ],
+);
 
 export const session = pgTable("session", {
   id: text("id").primaryKey(),
@@ -188,9 +279,21 @@ export const verification = pgTable("verification", {
   ),
 });
 
-export const userRelations = relations(user, ({ many }) => ({
+export const userRelations = relations(user, ({ many, one }) => ({
   account: many(account),
   session: many(session),
+  leaderboard: one(leaderboard, {
+    fields: [user.id],
+    references: [leaderboard.userId],
+  }),
+  competitionResults: many(competitionResult),
+}));
+
+export const leaderboardRelations = relations(leaderboard, ({ one }) => ({
+  user: one(user, {
+    fields: [leaderboard.userId],
+    references: [user.id],
+  }),
 }));
 
 export const accountRelations = relations(account, ({ one }) => ({
@@ -226,7 +329,23 @@ export const niftyFinancialMetricRelations = relations(
 
 export const competitionRelations = relations(competition, ({ many }) => ({
   competitionStocks: many(competitionStock),
+  competitionNews: many(competitionNews),
+  competitionResults: many(competitionResult),
 }));
+
+export const competitionResultRelations = relations(
+  competitionResult,
+  ({ one }) => ({
+    competition: one(competition, {
+      fields: [competitionResult.competitionId],
+      references: [competition.id],
+    }),
+    user: one(user, {
+      fields: [competitionResult.userId],
+      references: [user.id],
+    }),
+  }),
+);
 
 export const competitionStockRelations = relations(
   competitionStock,
@@ -241,3 +360,14 @@ export const competitionStockRelations = relations(
     }),
   }),
 );
+
+export const competitionNewsRelations = relations(competitionNews, ({ one }) => ({
+  competition: one(competition, {
+    fields: [competitionNews.competitionId],
+    references: [competition.id],
+  }),
+  company: one(niftyCompany, {
+    fields: [competitionNews.symbol],
+    references: [niftyCompany.symbol],
+  }),
+}));

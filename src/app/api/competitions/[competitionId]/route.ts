@@ -1,9 +1,10 @@
-import { and, asc, eq, gte, inArray, lt } from "drizzle-orm";
+import { and, asc, eq, gte, inArray, lte } from "drizzle-orm";
 import { NextResponse } from "next/server";
 
 import { db } from "~/server/db";
 import {
   competition,
+  competitionNews,
   competitionStock,
   niftyCompany,
   niftyStockDaily,
@@ -31,6 +32,22 @@ type StockSeries = {
   redactedDate: string | null;
   companyName: string | null;
   points: StockSeriesPoint[];
+};
+
+type NewsCategory = "finance" | "global" | "company" | "industry";
+
+type NewsArticle = {
+  title: string;
+  link: string;
+  publishedAt: string | null;
+  source: string | null;
+  rank: number;
+};
+
+type StockNews = {
+  symbol: string;
+  companyName: string | null;
+  categories: Record<NewsCategory, NewsArticle[]>;
 };
 
 const labelCollator = new Intl.Collator("en", { numeric: true, sensitivity: "base" });
@@ -85,6 +102,74 @@ export async function GET(_request: Request, context: RouteContext) {
     .where(eq(competitionStock.competitionId, parsedCompetitionId))
     .orderBy(asc(competitionStock.symbol));
 
+  const newsRows = await db
+    .select({
+      symbol: competitionNews.symbol,
+      category: competitionNews.category,
+      rank: competitionNews.rank,
+      title: competitionNews.title,
+      link: competitionNews.link,
+      publishedAt: competitionNews.publishedAt,
+      source: competitionNews.source,
+    })
+    .from(competitionNews)
+    .where(eq(competitionNews.competitionId, parsedCompetitionId))
+    .orderBy(
+      asc(competitionNews.symbol),
+      asc(competitionNews.category),
+      asc(competitionNews.rank),
+    );
+
+  const aliasBySymbol = new Map(
+    stockRows.map((row) => [
+      row.symbol,
+      {
+        symbol: row.redactedSymbol ?? row.symbol,
+        companyName: row.redactedCompanyName ?? row.companyName,
+      },
+    ]),
+  );
+
+  const emptyCategories = (): Record<NewsCategory, NewsArticle[]> => ({
+    finance: [],
+    global: [],
+    company: [],
+    industry: [],
+  });
+
+  const newsBySymbol = new Map<string, StockNews>();
+  for (const row of newsRows) {
+    const alias = aliasBySymbol.get(row.symbol);
+    const displayedSymbol = alias?.symbol ?? row.symbol;
+
+    if (!newsBySymbol.has(displayedSymbol)) {
+      newsBySymbol.set(displayedSymbol, {
+        symbol: displayedSymbol,
+        companyName: alias?.companyName ?? null,
+        categories: emptyCategories(),
+      });
+    }
+
+    const entry = newsBySymbol.get(displayedSymbol);
+    const category = row.category as NewsCategory;
+
+    if (!entry || !(category in entry.categories)) {
+      continue;
+    }
+
+    entry.categories[category].push({
+      title: row.title,
+      link: row.link,
+      publishedAt: row.publishedAt ? toDateOnly(row.publishedAt) : null,
+      source: row.source,
+      rank: row.rank,
+    });
+  }
+
+  const news = Array.from(newsBySymbol.values()).sort((a, b) =>
+    labelCollator.compare(a.symbol, b.symbol),
+  );
+
   const symbols = stockRows.map((row) => row.symbol);
 
   if (symbols.length === 0) {
@@ -95,6 +180,7 @@ export async function GET(_request: Request, context: RouteContext) {
         endDate: competitionEndDate,
       },
       stocks: [] as StockSeries[],
+      news: [] as StockNews[],
     });
   }
 
@@ -113,7 +199,7 @@ export async function GET(_request: Request, context: RouteContext) {
       and(
         inArray(niftyStockDaily.symbol, symbols),
         gte(niftyStockDaily.tradeDate, HISTORICAL_CHART_START_DATE),
-        lt(niftyStockDaily.tradeDate, competitionStartDate),
+        lte(niftyStockDaily.tradeDate, competitionEndDate),
       ),
     )
     .orderBy(asc(niftyStockDaily.symbol), asc(niftyStockDaily.tradeDate));
@@ -163,5 +249,6 @@ export async function GET(_request: Request, context: RouteContext) {
       endDate: competitionEndDate,
     },
     stocks,
+    news,
   });
 }

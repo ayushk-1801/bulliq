@@ -1,0 +1,1320 @@
+[
+  {
+    "competitionId": 4,
+    "competitionName": "6M Stock Challenge #4",
+    "startDate": "2022-01-01",
+    "endDate": "2022-07-01",
+    "newsWindow": {
+      "from": "2021-12-01",
+      "to": "2021-12-31"
+    },
+    "stocks": [
+      {
+        "symbol": "IOC",
+        "companyName": "Indian Oil Corporation Ltd.",
+        "redactedSymbol": "STOCK-10",
+        "redactedCompanyName": "Company 10",
+        "categories": {
+          "finance": [
+            {
+              "title": "As young Indians jump into soaring stock market, risks add up - Al Jazeera",
+              "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQndRcWtSaGVYcXMxZ2xZZEJpRjlCOC1Ra3daUFdQcDNzVGJJWXByZnZkZVlVdktyMHBSNEFfcU1zcUJUOTA3RnE2cS1YbzNVUzJyUjFhQ0ZtMHdvWTBnZTMzdmZpdWVJbWY3UlkxUW5QNVhmcWs5SWg4SW9zRUd0NlV5TzY1STV2N2pncEtKblFfMTFoR1VWa2lQVmRid05BaWhJaGRJSDjSAa4BQVVfeXFMTTVOMEt5UGJGcmJqVWpvcXRLdk5GNDlLMklZNU54Sld4akRydDEtWV9neXBENUEwa3ZwaF9EQkJ1X3ZweHBvVzdTWmFvN2pMSkV3VDJaZ0xRTi1hS3Z6cW9rT1lIMjBJYWZ0MkRudG9iQ2YycmRJelNXVDNrNWRIM1Q2cEJoTWFoRW9qYzZmcGxQUEFYRGU1X0MycFFUcWtvRkVUR0dMeUVibDVLYUhR?oc=5",
+              "publishedAt": "Mon, 20 Dec 2021 08:00:00 GMT",
+              "source": "Al Jazeera"
+            },
+            {
+              "title": "Bulletin – December 2021 Global Economy The Indian Banking System - Reserve Bank of Australia",
+              "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUlR4WVljQW40aTV3ZGRHdzBublpxXzh4em5iQmU4ZTFNZ3JtSDJ5U3E2UnFBck80TDVTZ1lKd3RMYXVFMFBDME4xeWdvVFFCdkJESDdZaVdiaTZRT2Q4ZGVtVGhEUWVQd3Q5eTM5Zk1rWmpEM3p4b3lfM3VoczlPSU1ZUVd2WEU2dFBoeA?oc=5",
+              "publishedAt": "Thu, 09 Dec 2021 08:00:00 GMT",
+              "source": "Reserve Bank of Australia"
+            },
+            {
+              "title": "2021 Year in Review - S&P Global",
+              "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQemRfSndhMGowM0R5VmJtaUxiRWs1bmZpdzVud2VMZ2puNDJQVjFqU2VIQkotNV9ZX2IzQVdMRTBBUjZweDg5RzV1dTBILWp0MW5mMEVENThlY01hYVVJYXJ6T3pLa0hwenZkeXg4ekFlWk1lMi1HOXZrSnNGbDZWQVpleGlOc01s?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "S&P Global"
+            },
+            {
+              "title": "India Capital Growth – The show must go on - QuotedData",
+              "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNWHhNRUNaekJXOW5Fdmd6QnFOcGEwcThJLXg0eENYVGdKalE1cGNrT2NuRlVoSTVKN3NJeVdMZzBYR2NrNTZfTm43a1RFRWxSOTl5YW5yQmdRd1ptN2VjWDM3VFQ5Q1J6aUh4anFDOUM3TDNUWVlnaktLT2hXVlNvdm9n?oc=5",
+              "publishedAt": "Wed, 08 Dec 2021 08:00:00 GMT",
+              "source": "QuotedData"
+            },
+            {
+              "title": "Expectation from the Stock Market in 2022 - Elets BFSI",
+              "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9XaElCbXkwN0lXNm5aT2VDa1NMTFpVbkpwNHV4alJkbjVtcVNIbnhWT21keUhucTZXN0xWQmVGRkEwVVBZeGlULW9LOGQ0Tk1WeF9HZUVmMHlGdUJ0S21lTlV2bmdkNFI0R3Fpa1JURUtGeldOQTRmQy1DWQ?oc=5",
+              "publishedAt": "Tue, 28 Dec 2021 08:00:00 GMT",
+              "source": "Elets BFSI"
+            }
+          ],
+          "global": [
+            {
+              "title": "Supply chain resilience in the face of geopolitical risks - Deloitte",
+              "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSVV2bW9tUGNoNjBVVFMzOXUtOEt5aS1OVWhSdXRjWGZyS3NOYUNZTE9ETGc3dXJxRHc4aWJNMHdzZTdpeDdoX2FIVS1qRVExRGxIUWxLNTIyTDVMZVZJb3ptNXdnREQ0LVZ1OVlzLTBRZjYydGptTEZpM3VTSDR6ZzRqQjFlVVBaclJJeUVkQ1AtLWQtWEE?oc=5",
+              "publishedAt": "Fri, 03 Dec 2021 08:00:00 GMT",
+              "source": "Deloitte"
+            },
+            {
+              "title": "LIVE MARKETS Geopolitics 2022: \"managed disagreements\" - Reuters",
+              "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWmFUUHZlazhhUUd3T3VCWERKTG5EaHI2bndjcFI5alRpTzhDdnVYbHl4M0hKZEpRcjVtMWoxRDQ3WnFDVlBDdnRFcHRSWG9OOHhZai14cXJHaE1SVkZhblQxb2NoRjEtdElnazZNWXhEU21qbVU5Q2VLT2ppdDVvRUVXS1NDNUhYaFhjSzZNOWxfQmJlcFUyTmR3QkVnV1BRQVE?oc=5",
+              "publishedAt": "Mon, 13 Dec 2021 08:00:00 GMT",
+              "source": "Reuters"
+            },
+            {
+              "title": "The Power Atlas - European Council on Foreign Relations",
+              "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE10T1FQRjBtLXRhMzZNZTFKX2h0YThZSXNhc2F0VF9MdXVidFBsdFFGOUxha0NpN25laEVYbWFjaDdmMXhkS2hLZXp0NDc?oc=5",
+              "publishedAt": "Thu, 09 Dec 2021 10:57:27 GMT",
+              "source": "European Council on Foreign Relations"
+            },
+            {
+              "title": "Southeast Asia’s choices: Economic, political, and geopolitical integration face complications - orfonline.org",
+              "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBLcjF4akpHd2FrWWU3Q2kwdnlrZlVMZE1lcW5nNmRzazJqUi0wT0FzdXJZbTBITF9oTFFkdng2a2V5cE5HbFJORG40MlNKZUt5UlZnQ3REeFlCV01mR014U3FTclFwWkpmNFRxSUhGVQ?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "orfonline.org"
+            },
+            {
+              "title": "2021 Year in Review - S&P Global",
+              "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQemRfSndhMGowM0R5VmJtaUxiRWs1bmZpdzVud2VMZ2puNDJQVjFqU2VIQkotNV9ZX2IzQVdMRTBBUjZweDg5RzV1dTBILWp0MW5mMEVENThlY01hYVVJYXJ6T3pLa0hwenZkeXg4ekFlWk1lMi1HOXZrSnNGbDZWQVpleGlOc01s?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "S&P Global"
+            }
+          ],
+          "company": [
+            {
+              "title": "Top 6 Undervalued Stocks to Add to Your Watchlist - Equitymaster",
+              "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVEZaOE1VOTZHNE9nbmM3M0RwSFJDUGJKdDR4cTdod2RBNk1OUHo5cVRZVlFYNGZyTG5iZUtkNnQ1Q2JhSGp2UXFxQ2pSdHdXYTNBMFIwWGR2bk5SUml1bjA1b1V3aU1KSmlaODZUYUI3YUk2dVl5b25KdWN2TnJQbzhUb3J1dWJDUnZ5TEUwSEF1WkJoalpsbGNWUmpnR2VMaXNEZzFRdHlyRC1jRG45aW5DMVFiSXpUbWpv?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "Equitymaster"
+            },
+            {
+              "title": "Day after Haldia refinery fire, IOC team, police begin probe - The Indian Express",
+              "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQcnNGb0N4ZWRUT3Y5bmR0VHJYanlVb0ZuNVkyQmRrSm1iN1k2RWdFeU1qTGppLTlUQnRxM0JZLUhCd1UyUk1mMkVaSTdNYy1nbEpEcHliRktGLTVwaFlwWjBJZ0h3NnFzQU9ZZ3JKWm9BSk1pdy1RWmVPRzRDV1RvOEtqNGwxTzdyVzg5Mi1mNnk5ZFJiNjhIb3pDblNYWS1iMUEyR2o1aG8tVmJjcTAw0gG2AUFVX3lxTE1TUWNxOFJtSm9wd2xDZVUwTlpJSFFYbjZ5ZlgwRDFtb3ZUeFRPVE9KLTJnQTZCTmNRbXZVbG42YklsbkhMUHhYZWk0THJvUlpGRHBSbXA3bmRiV3NpdG90VlpNWjdWY1hqd2NrYzJXSmppclRnY3JhVGFNQ3ZYUlhqc003MFctc1FESlNpeXpOR1UtZEhnLTJDWU9wTFhlenBPanlzVngyYVpOcGI3eGY3UkJySjB3?oc=5",
+              "publishedAt": "Thu, 23 Dec 2021 08:00:00 GMT",
+              "source": "The Indian Express"
+            },
+            {
+              "title": "CAG pulls up ONGC for flaring high-pressure gas from Mumbai High Field - Business Standard",
+              "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNMlU4V2o5MXBpV0hKa21PTmZEUXpUX3c0YWphZ0xpdnBjejdXXzBSUHFoQUJKXzZKTWl5YmtZa0x2YnZWY0tJXzVZazducG1aRkZBSDBWdzJDN0NtUEVSbm1qZ3B4SFZTa0FBRFpUS3RzM3dKM1B5anI0TVFObjAtTEctXzFMcW4yUGR4OExQdGFaOUZWd3lJcW9KdUczVWI2Sm1ESEotVmVPY3UzRmdZMDA5Q3R5eXZsN3FHZ19UNG1iYUFTemFkWjFhdG4ta2kybGlWbS1SaUVLZ9IB3wFBVV95cUxPaERaZ3Ztd0I2ejVjSHpUbFY5RW1Ed3E3SEtIUk8wRkxfRkxHejlrTXEtV09OWTg1ODM2V2RLV0cwNWRheWZsSFRHMWg1MmhEVmxxcFZqRkxTLUZ1d3ZRUHE5QTB3ZG5pM202SW1aWFF3UTV2aWtHMkd2YXhmWHVhUWt2STlIQkNnbnJSZlp3R0ZIa1F0ckViQm03OElLM1FyUmRpQWhNcU5NQTY5N3RzQ3pXckliUmx1YjRhV2Z5NzNKVHlGeE5oQ1h3N013WDdBRm0zWEFZeDBvTmt2Nkw0?oc=5",
+              "publishedAt": "Tue, 21 Dec 2021 08:00:00 GMT",
+              "source": "Business Standard"
+            },
+            {
+              "title": "India Hydrogen Market Report 2021: Implementation Roadmap for Technologies for Transforming India into a Green Hydrogen Global Hub & Exporter - PR Newswire",
+              "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxNclpZc0FQbGdkNnBRRDhxRTdGWWd6SGNCUWg1bGRCSFFyNlJGdEZ4X3U4czlZMUxQQk93YkJsZFM1b0ZMOVowTDJ2LTJRX0RUSHJmN1V6VzRVV2F5akFJV2xfOG0tOEo5R2pHamNrUG5PZkdtd2xpRDl3a2ZBOHpYQ2JWNFNzdXZLN0Zvd0RlUUpjSW5UcFI2ZnFiNzZIajQ4VE9ROVUxSkd4NE1uSVNlMDlKZllGa0l6XzZIOUd2UllmanJ6WU1Wb1dpTWMybFFHVjFpTHB0QnQtV0MxWHRibEdOSUVwNkFNNUV5Qk1XTmpkd2hCZmdtdmJKV2lSUERhblFFZU9CSFUxeThCaHhqa3I5NGFwVE5tT09DUm9EcUY?oc=5",
+              "publishedAt": "Fri, 03 Dec 2021 08:00:00 GMT",
+              "source": "PR Newswire"
+            },
+            {
+              "title": "What to Expect from India's Top Renewable Energy Stocks in 2022 - Equitymaster",
+              "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPb0RMcnhZc1RGQkdzYlNjTjUyT2lvRlpvNHVRa2pSUWctdVYtQ2NlZ2xvX3FSd19QRkNBc0ZwaGttVU1qRVdwTTVXZjNGbi02N3E1NVZHbUNJRWhYZWtpNk1tblBxeFExWG9SVG8yaV9mWXdHX3BKekV2NTBET0NfSnJPQkZlRF8tS0xVSlZYMkNKNXhUbENTVlJNLWIzNmF3d0tuYzRCWEQ2NnlVOWxGOHdxWW5zSGE2UGoxbFpWNFJDTmxKaVlLVV9FZ1A?oc=5",
+              "publishedAt": "Thu, 30 Dec 2021 08:00:00 GMT",
+              "source": "Equitymaster"
+            }
+          ],
+          "industry": [
+            {
+              "title": "IndianOil selects AVEVA unified supply chain schedule - Indian Chemical News",
+              "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORFN4MDhPZGlqTUJIdWJqLVA0UmNyeXIxX0RfcGdxS0pJWFBMVjJHZURKazVmT1VJaG13aS1ucVd1Z01Yd2t3dFBoXzF5d3hneUlYWTgySks1SWZqVE5hV28wTWMyZ1VNNVFQSjA2TkNzUHNFS0hPQzdLYVQwQkNpNHVCZmQ3d0x2VG5jUFZ3azh2c2pVaGdIZFYzYnhuWWduRXF2Q3lMQ2VPTlXSAbIBQVVfeXFMTmFaYTZUZ2ZwbWdabG90aUZhMzh0eEpsdUxQWlRFcGw4M1FodHp1U0F6bmV6cjB3ZGU1YmpOWGh6UHA0Z0JsUGY4Rlp5TXNtSnlpN09IaHR3NnhqTzh2ekhpaHhsQ2FQd1R0TFVlQlFUWjBkZzBmNmlPc0ljdDdURmJoM25DRkRfMkJDZldBS0xDYUFvY3hKeXhaME1GNFJPZDM1MDhSM0FpeWVhNEJjalBSZw?oc=5",
+              "publishedAt": "Sat, 11 Dec 2021 08:00:00 GMT",
+              "source": "Indian Chemical News"
+            },
+            {
+              "title": "CAG pulls up ONGC for flaring high-pressure gas worth Rs 816 cr from Mumbai High Field - ET EnergyWorld",
+              "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNcVZmR2pZUWp4SWc2UVBJVmVrM21SUjZiMXJnY25Ec055ZTdyRnRsUmx5d0xsOXdfbE5qU0VYUXl2YmJKbVg2cEF0TUFJZkRVQWU3UkZRQ05UVVZyN0NhQUpqeFhkLW01b0dXZTNjNlJ1VmEzaEF6SVVQWThTaHBlRnFZRlFtOGJaS3dtMmhwSEpoRzU1dGt5TWdPVUprbWNMZDRDS241MTFsQWwzTG9lMDRNcThJQ20yenowR1hHQUFhZDk0N1BHdnlibHZPeEE5czBqSTZ2X2pRV0tCbEgwdlYyQ0k3WkFSaVBYZdIB8gFBVV95cUxQM0JrRnVaN0VNQVF3ZHN4ZUpQZHhnUHdjVUF0bG93V1p4cXJTWHVESUdjSUlzeVZiZ2pnVVFaUWVaWUxCc3VMejRMZEZmVURsTjJSUUVSb0tNc2JjZnVvQkczUGQ0UE9lVTJwM2ZQSzQxcXZ4M1Ata2kzT0trLW5NWkM4ZkV1bUV0c0g3MTVzQjBhLUlUMUU5bDFBb0hVcEotX3pXZF8welFwVGtSYTYtUkVzeUx1QkQtbDhWQ1RvbW9XWXhFazh3V2JGS3FiYUFrUjhkaURxVHpFY29xS3hzQWJJN3RTVVFTNThIYkVsX0hkUQ?oc=5",
+              "publishedAt": "Wed, 22 Dec 2021 08:00:00 GMT",
+              "source": "ET EnergyWorld"
+            },
+            {
+              "title": "DSF Round-III: India Offers 75 Discovered Oil And Gas Blocks Across 32 Sites For Development, Bids Open On Feb 1 - Swarajyamag",
+              "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOb2k5aXlKYVpKLXpWREhrcVhGT3ZCaWVKY3Z5enJYM19NZE5JZF96SWVYVE9qNnhKVzlDMXlTcmNvTnFUcGZtZHBhOEthemZxZWlEVU5jYjFTbVNpQmFnb1ZwU2NxU1czVEtON29wWU9vczdSODIxLWFmUUV2YzNLSDZkZHJVYVZlVVlkVkhLMnA5SDZTUlFCQjNzNGRINmtKNFJIWjFLYjRMczNENkswSjBtaXB4b29HMW9sZ1QtYmhUSTZkX2VzdUt2bEtLal9GemFLRGpiaWxYX03SAesBQVVfeXFMT0N3c1dnSkRqZkFteDZabmhjVUZVZmRyZlZmT2F0VU1idzJmbXhER292MDh2TERPQ1VnVXJ5Y1EyUUdwU3M4UVgyVmN4cWNaenVjUmxUa2FDUng0YWVnbnpPRG40c1IzU3dYc2dybkVDSE4ybnF5RmlRcGFfWW1DUXIzaWRvVXBkMGxBbTZzWjNMSFBsWGtxd1p3c2oxbGdDc3ZKTWNOYlYxYzd3ZkxfcVQ1UDJZQVZDOHRyUGtTWjE4ckh1UnlLb3ZnRkd6UWFHYnRnUHRHVzltVTNzN2xJU0hMMFYxengyNU5GWQ?oc=5",
+              "publishedAt": "Mon, 20 Dec 2021 08:00:00 GMT",
+              "source": "Swarajyamag"
+            },
+            {
+              "title": "Top 6 Undervalued Stocks to Add to Your Watchlist - Equitymaster",
+              "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVEZaOE1VOTZHNE9nbmM3M0RwSFJDUGJKdDR4cTdod2RBNk1OUHo5cVRZVlFYNGZyTG5iZUtkNnQ1Q2JhSGp2UXFxQ2pSdHdXYTNBMFIwWGR2bk5SUml1bjA1b1V3aU1KSmlaODZUYUI3YUk2dVl5b25KdWN2TnJQbzhUb3J1dWJDUnZ5TEUwSEF1WkJoalpsbGNWUmpnR2VMaXNEZzFRdHlyRC1jRG45aW5DMVFiSXpUbWpv?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "Equitymaster"
+            },
+            {
+              "title": "Petrol and diesel prices today in Hyderabad, Delhi, Chennai, Mumbai - 30 December 2021 - The Hans India",
+              "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQLU1xRW93VHBCVnJJaGFHWUxrejEzRlhsc3VSc1V1NF9jRVR3LXpKWG50bURYbnROa0hZNnV0bUVOcEs0M0I2WnZBdDBBV2FfOXU0ZlotNG1wd3p6bXZneDl5WXIxVUtmU25KQUZURzl1T05GOGF5aEZsdmJnWmppOEFIV0ppM3hDT09COGs0TUdGbHBaRnVjZ1JTVFNFd0RHOGJyWTRfdmxVN091QVZwV1E5RDhOMGtJVm53Z05rbmVoUkdz0gHKAUFVX3lxTE5tV3YyQy1MbVlyRm5EXzhSVUdMeTBhZ1hxRjdTNkxvd01FTWJRdld4QW5HS2IzQnl6YUhWWGg3S2MwZmRPV2RBVmlUclpROFpnY1RXN2VpMWFpd3VVVUlRc2pITVJ2RUxiODk1MWNVM3VUZWpPdWdjeXpxZmlQZGo5RTRGbnRHd3p2dlRYUU51UUxFcW9WQVFaQlpjajNxRVpsN1N5OUZuLW9MeEM2VWJOZ2xLTThjeUpBYm5yYkJtV2RZSDVfRS1RZVE?oc=5",
+              "publishedAt": "Thu, 30 Dec 2021 08:00:00 GMT",
+              "source": "The Hans India"
+            }
+          ]
+        }
+      },
+      {
+        "symbol": "ONGC",
+        "companyName": "Oil & Natural Gas Corporation Ltd.",
+        "redactedSymbol": "STOCK-09",
+        "redactedCompanyName": "Company 09",
+        "categories": {
+          "finance": [
+            {
+              "title": "As young Indians jump into soaring stock market, risks add up - Al Jazeera",
+              "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQndRcWtSaGVYcXMxZ2xZZEJpRjlCOC1Ra3daUFdQcDNzVGJJWXByZnZkZVlVdktyMHBSNEFfcU1zcUJUOTA3RnE2cS1YbzNVUzJyUjFhQ0ZtMHdvWTBnZTMzdmZpdWVJbWY3UlkxUW5QNVhmcWs5SWg4SW9zRUd0NlV5TzY1STV2N2pncEtKblFfMTFoR1VWa2lQVmRid05BaWhJaGRJSDjSAa4BQVVfeXFMTTVOMEt5UGJGcmJqVWpvcXRLdk5GNDlLMklZNU54Sld4akRydDEtWV9neXBENUEwa3ZwaF9EQkJ1X3ZweHBvVzdTWmFvN2pMSkV3VDJaZ0xRTi1hS3Z6cW9rT1lIMjBJYWZ0MkRudG9iQ2YycmRJelNXVDNrNWRIM1Q2cEJoTWFoRW9qYzZmcGxQUEFYRGU1X0MycFFUcWtvRkVUR0dMeUVibDVLYUhR?oc=5",
+              "publishedAt": "Mon, 20 Dec 2021 08:00:00 GMT",
+              "source": "Al Jazeera"
+            },
+            {
+              "title": "Bulletin – December 2021 Global Economy The Indian Banking System - Reserve Bank of Australia",
+              "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUlR4WVljQW40aTV3ZGRHdzBublpxXzh4em5iQmU4ZTFNZ3JtSDJ5U3E2UnFBck80TDVTZ1lKd3RMYXVFMFBDME4xeWdvVFFCdkJESDdZaVdiaTZRT2Q4ZGVtVGhEUWVQd3Q5eTM5Zk1rWmpEM3p4b3lfM3VoczlPSU1ZUVd2WEU2dFBoeA?oc=5",
+              "publishedAt": "Thu, 09 Dec 2021 08:00:00 GMT",
+              "source": "Reserve Bank of Australia"
+            },
+            {
+              "title": "2021 Year in Review - S&P Global",
+              "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQemRfSndhMGowM0R5VmJtaUxiRWs1bmZpdzVud2VMZ2puNDJQVjFqU2VIQkotNV9ZX2IzQVdMRTBBUjZweDg5RzV1dTBILWp0MW5mMEVENThlY01hYVVJYXJ6T3pLa0hwenZkeXg4ekFlWk1lMi1HOXZrSnNGbDZWQVpleGlOc01s?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "S&P Global"
+            },
+            {
+              "title": "India Capital Growth – The show must go on - QuotedData",
+              "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNWHhNRUNaekJXOW5Fdmd6QnFOcGEwcThJLXg0eENYVGdKalE1cGNrT2NuRlVoSTVKN3NJeVdMZzBYR2NrNTZfTm43a1RFRWxSOTl5YW5yQmdRd1ptN2VjWDM3VFQ5Q1J6aUh4anFDOUM3TDNUWVlnaktLT2hXVlNvdm9n?oc=5",
+              "publishedAt": "Wed, 08 Dec 2021 08:00:00 GMT",
+              "source": "QuotedData"
+            },
+            {
+              "title": "Expectation from the Stock Market in 2022 - Elets BFSI",
+              "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9XaElCbXkwN0lXNm5aT2VDa1NMTFpVbkpwNHV4alJkbjVtcVNIbnhWT21keUhucTZXN0xWQmVGRkEwVVBZeGlULW9LOGQ0Tk1WeF9HZUVmMHlGdUJ0S21lTlV2bmdkNFI0R3Fpa1JURUtGeldOQTRmQy1DWQ?oc=5",
+              "publishedAt": "Tue, 28 Dec 2021 08:00:00 GMT",
+              "source": "Elets BFSI"
+            }
+          ],
+          "global": [
+            {
+              "title": "Supply chain resilience in the face of geopolitical risks - Deloitte",
+              "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSVV2bW9tUGNoNjBVVFMzOXUtOEt5aS1OVWhSdXRjWGZyS3NOYUNZTE9ETGc3dXJxRHc4aWJNMHdzZTdpeDdoX2FIVS1qRVExRGxIUWxLNTIyTDVMZVZJb3ptNXdnREQ0LVZ1OVlzLTBRZjYydGptTEZpM3VTSDR6ZzRqQjFlVVBaclJJeUVkQ1AtLWQtWEE?oc=5",
+              "publishedAt": "Fri, 03 Dec 2021 08:00:00 GMT",
+              "source": "Deloitte"
+            },
+            {
+              "title": "LIVE MARKETS Geopolitics 2022: \"managed disagreements\" - Reuters",
+              "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWmFUUHZlazhhUUd3T3VCWERKTG5EaHI2bndjcFI5alRpTzhDdnVYbHl4M0hKZEpRcjVtMWoxRDQ3WnFDVlBDdnRFcHRSWG9OOHhZai14cXJHaE1SVkZhblQxb2NoRjEtdElnazZNWXhEU21qbVU5Q2VLT2ppdDVvRUVXS1NDNUhYaFhjSzZNOWxfQmJlcFUyTmR3QkVnV1BRQVE?oc=5",
+              "publishedAt": "Mon, 13 Dec 2021 08:00:00 GMT",
+              "source": "Reuters"
+            },
+            {
+              "title": "The Power Atlas - European Council on Foreign Relations",
+              "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE10T1FQRjBtLXRhMzZNZTFKX2h0YThZSXNhc2F0VF9MdXVidFBsdFFGOUxha0NpN25laEVYbWFjaDdmMXhkS2hLZXp0NDc?oc=5",
+              "publishedAt": "Thu, 09 Dec 2021 10:57:27 GMT",
+              "source": "European Council on Foreign Relations"
+            },
+            {
+              "title": "Southeast Asia’s choices: Economic, political, and geopolitical integration face complications - orfonline.org",
+              "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBLcjF4akpHd2FrWWU3Q2kwdnlrZlVMZE1lcW5nNmRzazJqUi0wT0FzdXJZbTBITF9oTFFkdng2a2V5cE5HbFJORG40MlNKZUt5UlZnQ3REeFlCV01mR014U3FTclFwWkpmNFRxSUhGVQ?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "orfonline.org"
+            },
+            {
+              "title": "2021 Year in Review - S&P Global",
+              "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQemRfSndhMGowM0R5VmJtaUxiRWs1bmZpdzVud2VMZ2puNDJQVjFqU2VIQkotNV9ZX2IzQVdMRTBBUjZweDg5RzV1dTBILWp0MW5mMEVENThlY01hYVVJYXJ6T3pLa0hwenZkeXg4ekFlWk1lMi1HOXZrSnNGbDZWQVpleGlOc01s?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "S&P Global"
+            }
+          ],
+          "company": [
+            {
+              "title": "Indian Oil Corp acquires 5% stake in IEX subsidiary Indian Gas Exchange - Business Standard",
+              "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQNjRSak1MVVBlOU5ObHU3VmtPNFk4M3hFZE5fUjdRd19PNlVtMU1iWGpYREdFbUZsT3NxTmFUazhDSGRiMUNmVjBuWkgtQlhpRF9tVFNuTFp6WFhHd2FwWUlLTW9VTlJ3N0lLT1dpOW5Idmlod3JYOUlFQndQb1V2SkRsWUs5cFZjQVExVENPVFN3akw1TWZRUTZ6MzVtZE9OSk96VFJ3Ql8wZ25JOXNWQjZrUW1YOTMtV2xyNUI5ZEk0dHZKVThESU9LS19UcnZuMUpMQ0lUWEtWQdIB3wFBVV95cUxOeFhsaU9od25Lb1ZMbVpRd2tYX00ySHFEN19JZkgxbGVxRVZxQmtidm1VUVpCdThiNUxPdnQyVzFkVWZfMDFxeGJXNS1aZjg4emNqMjZKUkN6OG1oT01GNmtzdDc4TnY5VXhYS1FHelNrTDdDNENDTnZnN3FGVGhkQy05NVJSVlE0UXNZVlBCWnpFSlpkLW5DWkNRbzVzWWlIVWNnbDBMNGhTZnJoc0hPaGdOQTd3dDQ0LWgwQkJKQ3doOFREN01FN2ZKREZ3b1pBVHZfZlJILXBVMGgtZGVz?oc=5",
+              "publishedAt": "Tue, 21 Dec 2021 08:00:00 GMT",
+              "source": "Business Standard"
+            },
+            {
+              "title": "IOC acquires 4.93 per cent equity stake in Indian Gas Exchange - The Times of India",
+              "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNWVRhakhqeTJuU3VnaU9CZzU0LWFJandvTFNfaGRJRHBELUFKSjVESzVBVW5qWWJ2bXhlQzByVkxReHd4cXFCR19DaHNaWnRjM19CRWtiWkw1OEpETER1enBlaXllT0VfOXJhdElBcUktcWl0bllJNnhUME1qOUN2NGhyV21YcUZhNkxnS3lVd3c2dDFST25CT2RydVl0VGpjOGtJdkV0a054dTZRbkVtSlJtSWM0SHMzaVFBVDFYSXBOS0lJaXhxRTVCQzVZZVBJTFZPVG1vMWhHekNldnBtYdIB5gFBVV95cUxPRUUzNjdpT2duRDJwM1lSMDJxSWJMYnNrdWVpcFhnSERzZTg4Q2hvS2lnSEhXLTE2S25LWl94ckpLcU0yeS1XV3Y2dnBlUTJHNjU3aEJFUWVrUG1vSHpsSktGWV8yMzJ2ZWQ1RTU1b3lmTk1FX0VjaTI5NE1YM2hRallJaXd6YWdNXzlWeUxGdGYyRHQyWjBkbXJfMkpzY2FzMVFCOExtTWRaR3BhRGUtOHVmVjZDNE1zR0FZS3JoMDlJUGhnT2NqMWRSNTZvZmlyRWVSTWFOSDdpS1F5cXhNRkxpZUVIQQ?oc=5",
+              "publishedAt": "Tue, 21 Dec 2021 08:00:00 GMT",
+              "source": "The Times of India"
+            },
+            {
+              "title": "DSF-III round: Bidding for 75 small and marginal oil and gas discoveries to start on February 1, says DGH - The Economic Times",
+              "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQaHk0amtpelN0aW16YmZ5Q1NPNUNEWVZXUjVxc2lJQ2dKUkZiOTdBeGhKUWEwbWs5bllHQ3RuX0J1UkFWMUNvMUVRTzdKcHRXck44UG96bG1qanM5bEV2RmVJRVdXcFdUcjF1cmREX2FhU3lwbVVHVmVrUFFjY0ZxM2ozU19VSHIwUEw2eGY1Y1hZYl9qQUNJUlZ0eFR2RVd4a0xHOUJuSm1IVGZ2djhxUlcyMExSVUVpdUh1WlZoMDBkd9IBxwFBVV95cUxPVWt5WXhHVXdQVkwwSjc1MnA3cldvNjB6ekY2SXJKWURkS0V1RF9vRjNDSE9rVE5qaExJRHhDMzduQ2pKUGRncnZKN0pPZVp0b3p6ekJ5TmI0SzdScTI4Zi1sVlY1MDRIVnJ1eXdyZTVYZ3Z3SkRWYlNSdVZ4aHppRE5OMnYzbVRPU0xVa1FaMFl2bjc4ZDJJRi1qOTZ0SWtTallGZWRjS1QtVnZKQk12TnltaTQwcUdqV3JkQ3g0eFQxQkJqUXdr?oc=5",
+              "publishedAt": "Mon, 20 Dec 2021 08:00:00 GMT",
+              "source": "The Economic Times"
+            },
+            {
+              "title": "Indian Oil acquires 4.93% stake in Indian Gas Exchange - Mint",
+              "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQRXlRNWJ6Tm0yMGh2bms0T2ZoRWFUeU9oQ25NeWVSMGt2Nk45T2VMbU83NUlsbG5oU3ZDMFZsVTFOYXZLMEcwb0ExdUVUZ0YtUnk5WUhReHo2bUJGTlFTTG9JT3d3QTN2LWpNa1o3V0hLTjktZEFOV2RCdDU2UHNnOXdvYWdwU2tHclV1M3V6OHNiNkNBWUFVWmtNTG5VWmhGN0hLYlJwQzNjQ2w4NUc0M3p3Q01TN0I0emJ4aFJQUVlnYnB3OVpabC1aX2lpT0ZtUHfSAdcBQVVfeXFMTjFXRFo4ZVE2YTI4bEduNjNXWW9DNjlrNzVZWHkzTUJyV2VYZlhfM0d3YUlfV2hKNDhwVXYtNnJkenVWT0x2ZEg4cUJvVWJ0aENMZzRlTVRDNUx2MnBja3BabG4tZ3lzTmt3TDg1M01GTktyaERSWEJqazA2SElBYVJnQzFwWnc4dzFnVkEwR1pHRHo2UGtHX20yRzRBald5Qnl5V0oyY2JHRTBLRWV5RFg1d29ZTEdycklRTEFGbVZmT1R3dUFLMW03Y0dkdTRVV3pCU19Vd2M?oc=5",
+              "publishedAt": "Tue, 21 Dec 2021 08:00:00 GMT",
+              "source": "Mint"
+            },
+            {
+              "title": "Natural gas pipelines to be laid in six Kochi city divisions - The Hindu",
+              "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbWZXNDhsbHY0V0xGam5nV3VoeldpN0Q3cXB0Y2tZNmpqYXB0Zmp5QlA3WGVJcnQ1cERWb1dTTFV4eklDanhyNjNhckRJbUJIODFpWUpLMUZJNThHUDE3aEwwemlUbE1VdFV1WFlWZWY0ZTdjbjlIQzBFUVJpU0NSRDMyZUZJWXhGVHl2eEd0UGpMNnRUNTZaXzdQNHlUSFlEaEI5R3JWR0s1UkVUYTcyaXp4TUY2SkZoTE5RWEdmcTfSAccBQVVfeXFMTkxyMlBJZF9jaG5CUXZpUksyci1kdVRNSWlHOXU3VGdDdnVQNk9Xamc0emhmR2dTdGhhT2RkSHVEeUw1eGJkQW9VRENFdDdkOWViTFQtaDB5a0F4cl9tanJodXowMUQxZkFUVU5YaUdLdFNBRWMxTEtyYnkyM0NtcDdaMHgwUTg3cWlaNURxZ3dXeXN6ZEFabkltS29FZ3hqemdjUERIRlhWQkRqVWt3TXVWRWVtREFvOGIzMkVtd1NVRWxUSG0tVQ?oc=5",
+              "publishedAt": "Thu, 16 Dec 2021 08:00:00 GMT",
+              "source": "The Hindu"
+            }
+          ],
+          "industry": [
+            {
+              "title": "ONGC inks MoU with SECI to develop renewable, ESG projects - PIB",
+              "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBfQmZmak85NEoxQkRSSzk1T2h6Z3BaUGdUNUpYZzRnTU81MVdZcGZnOGYzWGJWTDRSQzV1X3otXy1ZWWIxWmNKV2ZoLVFLMUNYT3pLemM3X3JESEdacVRmVGhySEl4Y3NodnY3d2d1R0I?oc=5",
+              "publishedAt": "Fri, 03 Dec 2021 08:00:00 GMT",
+              "source": "PIB"
+            },
+            {
+              "title": "CAG pulls up ONGC for flaring high-pressure gas worth Rs 816 cr from Mumbai High Field - ET EnergyWorld",
+              "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNcVZmR2pZUWp4SWc2UVBJVmVrM21SUjZiMXJnY25Ec055ZTdyRnRsUmx5d0xsOXdfbE5qU0VYUXl2YmJKbVg2cEF0TUFJZkRVQWU3UkZRQ05UVVZyN0NhQUpqeFhkLW01b0dXZTNjNlJ1VmEzaEF6SVVQWThTaHBlRnFZRlFtOGJaS3dtMmhwSEpoRzU1dGt5TWdPVUprbWNMZDRDS241MTFsQWwzTG9lMDRNcThJQ20yenowR1hHQUFhZDk0N1BHdnlibHZPeEE5czBqSTZ2X2pRV0tCbEgwdlYyQ0k3WkFSaVBYZdIB8gFBVV95cUxQM0JrRnVaN0VNQVF3ZHN4ZUpQZHhnUHdjVUF0bG93V1p4cXJTWHVESUdjSUlzeVZiZ2pnVVFaUWVaWUxCc3VMejRMZEZmVURsTjJSUUVSb0tNc2JjZnVvQkczUGQ0UE9lVTJwM2ZQSzQxcXZ4M1Ata2kzT0trLW5NWkM4ZkV1bUV0c0g3MTVzQjBhLUlUMUU5bDFBb0hVcEotX3pXZF8welFwVGtSYTYtUkVzeUx1QkQtbDhWQ1RvbW9XWXhFazh3V2JGS3FiYUFrUjhkaURxVHpFY29xS3hzQWJJN3RTVVFTNThIYkVsX0hkUQ?oc=5",
+              "publishedAt": "Wed, 22 Dec 2021 08:00:00 GMT",
+              "source": "ET EnergyWorld"
+            },
+            {
+              "title": "ONGC distributes aid to SC/ST beneficiaries - The Hindu",
+              "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZEdCV19Ud2FqSDVyYlpfV2Z6X2JxdGFlMG9qcjJidHJCN1dHdVZHWDFhTHJuNVdFSEc3dTB1RnE3cGUzNlU3WlJvd29ZOEl5RHJXM3d4WVZacUdma0RZRURpMlpSU2FQZjBFQUd6RkhrQnFRNG5HX09tRjFOR1JaS1JiYUJJbUZGVGJJVDNFM2NUUE5MR2NQb1RDbDdlbDBHcENZblk2VzVwR1XSAbIBQVVfeXFMUGpfUWtOeUtNTUtvbVlhdE00bDByM1ZEOElJUVU4LWh3Yk1OTTdYTHFDNkRDaXRabzRKVG90Y3NiSlhDOTJpeFRnVl9iVXVCWVY1SXJNRUFQLWZuN2F2THZZV2FXejI2OURwSnViT09BOWZfdWFUMk1saEZfYjVuM0Q1OFJabHE4Vmkwb3NITEZxSjlWOG55d1NmY0htcGhCMUl6OEQ0QTBZWGxkTHkxN1V3dw?oc=5",
+              "publishedAt": "Wed, 29 Dec 2021 08:00:00 GMT",
+              "source": "The Hindu"
+            },
+            {
+              "title": "India offers 75 oil and gas blocks in its largest-ever bid round for discovered fields - Upstream Online",
+              "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPVldzb053Y2d6a0dHQ0RuLWJUMFd2MWFuNFlENVJpUS1zclQwYXhEaVhBRTVKS3JKX1hDQ2czbHloeVZ2SWZ1a1FJc3k2UXlYcjN1VFFMZmcyTWlJYlkxZFB1bEEwVjBpRjhnbmc3V2xuVU1UcGtQR29HdmMtMklkSGxuZVlzS054cFVkN1AzakxIdFNuaG1NZEVqTlNGUzFmTVllOU9odDc1bXpiRTBlSGE0WXpzMUhCMXZqVHZfN0xLX2NQdHBpQlRKRkxJQ29iZ1JEVVZYX1Q?oc=5",
+              "publishedAt": "Sun, 19 Dec 2021 08:00:00 GMT",
+              "source": "Upstream Online"
+            },
+            {
+              "title": "Sudan owes ONGC Videsh $560 mn in unpaid dues: Govt - The Economic Times",
+              "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNc0o0OE0yb2Z3RVdQTndsc2dQOVBEWFN4dFFSREJGdEZxWTZaYjZ0Z2paQzRDYkZ0Zm54Y2xqVk1ic0pwWmJaakdwS3hwd01GMVJLSkJlcnJDcjlnVTE0RHZ3TVBzUHhvVWIyLWJMTjFSdnZINVlSeE5EZUFISlNSTmd3SE5LVzJ0amotZmRPeWthY2wzQWRmNURtd29MY01DVDMtcXlfM011S1dBUXFIU2xWdXNBa2R5U21fMk13bTEyU3Vh0gHKAUFVX3lxTFBVMXNDZkE3RHlvUEVDNUJ3eVlWV3RxUHNyaF9pdGdac0NfYkM5YzZZalAxYTMxZWhvNmVsWWMwWERXSllDSGZaYV9WckJFRjFuNUV2M3VLVXlmMFJqZmZmMnJoUDl4OFR6djdneHU3dVJBVkRLWkVaQ0Q4NUl1N0tIR29tN1pLQ094NUh0dW0xZjFzTGU3Sk5ERE83c05OSEMyWjN1YXQ4bmRLOFZ3Zm12N1BhVTJpc1ZnbGZYMlhjXzdTbFRWQnp2bFE?oc=5",
+              "publishedAt": "Mon, 06 Dec 2021 08:00:00 GMT",
+              "source": "The Economic Times"
+            }
+          ]
+        }
+      },
+      {
+        "symbol": "NTPC",
+        "companyName": "NTPC Ltd.",
+        "redactedSymbol": "STOCK-08",
+        "redactedCompanyName": "Company 08",
+        "categories": {
+          "finance": [
+            {
+              "title": "As young Indians jump into soaring stock market, risks add up - Al Jazeera",
+              "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQndRcWtSaGVYcXMxZ2xZZEJpRjlCOC1Ra3daUFdQcDNzVGJJWXByZnZkZVlVdktyMHBSNEFfcU1zcUJUOTA3RnE2cS1YbzNVUzJyUjFhQ0ZtMHdvWTBnZTMzdmZpdWVJbWY3UlkxUW5QNVhmcWs5SWg4SW9zRUd0NlV5TzY1STV2N2pncEtKblFfMTFoR1VWa2lQVmRid05BaWhJaGRJSDjSAa4BQVVfeXFMTTVOMEt5UGJGcmJqVWpvcXRLdk5GNDlLMklZNU54Sld4akRydDEtWV9neXBENUEwa3ZwaF9EQkJ1X3ZweHBvVzdTWmFvN2pMSkV3VDJaZ0xRTi1hS3Z6cW9rT1lIMjBJYWZ0MkRudG9iQ2YycmRJelNXVDNrNWRIM1Q2cEJoTWFoRW9qYzZmcGxQUEFYRGU1X0MycFFUcWtvRkVUR0dMeUVibDVLYUhR?oc=5",
+              "publishedAt": "Mon, 20 Dec 2021 08:00:00 GMT",
+              "source": "Al Jazeera"
+            },
+            {
+              "title": "Bulletin – December 2021 Global Economy The Indian Banking System - Reserve Bank of Australia",
+              "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUlR4WVljQW40aTV3ZGRHdzBublpxXzh4em5iQmU4ZTFNZ3JtSDJ5U3E2UnFBck80TDVTZ1lKd3RMYXVFMFBDME4xeWdvVFFCdkJESDdZaVdiaTZRT2Q4ZGVtVGhEUWVQd3Q5eTM5Zk1rWmpEM3p4b3lfM3VoczlPSU1ZUVd2WEU2dFBoeA?oc=5",
+              "publishedAt": "Thu, 09 Dec 2021 08:00:00 GMT",
+              "source": "Reserve Bank of Australia"
+            },
+            {
+              "title": "2021 Year in Review - S&P Global",
+              "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQemRfSndhMGowM0R5VmJtaUxiRWs1bmZpdzVud2VMZ2puNDJQVjFqU2VIQkotNV9ZX2IzQVdMRTBBUjZweDg5RzV1dTBILWp0MW5mMEVENThlY01hYVVJYXJ6T3pLa0hwenZkeXg4ekFlWk1lMi1HOXZrSnNGbDZWQVpleGlOc01s?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "S&P Global"
+            },
+            {
+              "title": "India Capital Growth – The show must go on - QuotedData",
+              "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNWHhNRUNaekJXOW5Fdmd6QnFOcGEwcThJLXg0eENYVGdKalE1cGNrT2NuRlVoSTVKN3NJeVdMZzBYR2NrNTZfTm43a1RFRWxSOTl5YW5yQmdRd1ptN2VjWDM3VFQ5Q1J6aUh4anFDOUM3TDNUWVlnaktLT2hXVlNvdm9n?oc=5",
+              "publishedAt": "Wed, 08 Dec 2021 08:00:00 GMT",
+              "source": "QuotedData"
+            },
+            {
+              "title": "Expectation from the Stock Market in 2022 - Elets BFSI",
+              "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9XaElCbXkwN0lXNm5aT2VDa1NMTFpVbkpwNHV4alJkbjVtcVNIbnhWT21keUhucTZXN0xWQmVGRkEwVVBZeGlULW9LOGQ0Tk1WeF9HZUVmMHlGdUJ0S21lTlV2bmdkNFI0R3Fpa1JURUtGeldOQTRmQy1DWQ?oc=5",
+              "publishedAt": "Tue, 28 Dec 2021 08:00:00 GMT",
+              "source": "Elets BFSI"
+            }
+          ],
+          "global": [
+            {
+              "title": "Supply chain resilience in the face of geopolitical risks - Deloitte",
+              "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSVV2bW9tUGNoNjBVVFMzOXUtOEt5aS1OVWhSdXRjWGZyS3NOYUNZTE9ETGc3dXJxRHc4aWJNMHdzZTdpeDdoX2FIVS1qRVExRGxIUWxLNTIyTDVMZVZJb3ptNXdnREQ0LVZ1OVlzLTBRZjYydGptTEZpM3VTSDR6ZzRqQjFlVVBaclJJeUVkQ1AtLWQtWEE?oc=5",
+              "publishedAt": "Fri, 03 Dec 2021 08:00:00 GMT",
+              "source": "Deloitte"
+            },
+            {
+              "title": "LIVE MARKETS Geopolitics 2022: \"managed disagreements\" - Reuters",
+              "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWmFUUHZlazhhUUd3T3VCWERKTG5EaHI2bndjcFI5alRpTzhDdnVYbHl4M0hKZEpRcjVtMWoxRDQ3WnFDVlBDdnRFcHRSWG9OOHhZai14cXJHaE1SVkZhblQxb2NoRjEtdElnazZNWXhEU21qbVU5Q2VLT2ppdDVvRUVXS1NDNUhYaFhjSzZNOWxfQmJlcFUyTmR3QkVnV1BRQVE?oc=5",
+              "publishedAt": "Mon, 13 Dec 2021 08:00:00 GMT",
+              "source": "Reuters"
+            },
+            {
+              "title": "The Power Atlas - European Council on Foreign Relations",
+              "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE10T1FQRjBtLXRhMzZNZTFKX2h0YThZSXNhc2F0VF9MdXVidFBsdFFGOUxha0NpN25laEVYbWFjaDdmMXhkS2hLZXp0NDc?oc=5",
+              "publishedAt": "Thu, 09 Dec 2021 10:57:27 GMT",
+              "source": "European Council on Foreign Relations"
+            },
+            {
+              "title": "Southeast Asia’s choices: Economic, political, and geopolitical integration face complications - orfonline.org",
+              "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBLcjF4akpHd2FrWWU3Q2kwdnlrZlVMZE1lcW5nNmRzazJqUi0wT0FzdXJZbTBITF9oTFFkdng2a2V5cE5HbFJORG40MlNKZUt5UlZnQ3REeFlCV01mR014U3FTclFwWkpmNFRxSUhGVQ?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "orfonline.org"
+            },
+            {
+              "title": "2021 Year in Review - S&P Global",
+              "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQemRfSndhMGowM0R5VmJtaUxiRWs1bmZpdzVud2VMZ2puNDJQVjFqU2VIQkotNV9ZX2IzQVdMRTBBUjZweDg5RzV1dTBILWp0MW5mMEVENThlY01hYVVJYXJ6T3pLa0hwenZkeXg4ekFlWk1lMi1HOXZrSnNGbDZWQVpleGlOc01s?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "S&P Global"
+            }
+          ],
+          "company": [
+            {
+              "title": "What to Expect from India's Top Renewable Energy Stocks in 2022 - Equitymaster",
+              "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPb0RMcnhZc1RGQkdzYlNjTjUyT2lvRlpvNHVRa2pSUWctdVYtQ2NlZ2xvX3FSd19QRkNBc0ZwaGttVU1qRVdwTTVXZjNGbi02N3E1NVZHbUNJRWhYZWtpNk1tblBxeFExWG9SVG8yaV9mWXdHX3BKekV2NTBET0NfSnJPQkZlRF8tS0xVSlZYMkNKNXhUbENTVlJNLWIzNmF3d0tuYzRCWEQ2NnlVOWxGOHdxWW5zSGE2UGoxbFpWNFJDTmxKaVlLVV9FZ1A?oc=5",
+              "publishedAt": "Thu, 30 Dec 2021 08:00:00 GMT",
+              "source": "Equitymaster"
+            },
+            {
+              "title": "Solapur NTPC unit to get Singareni coal for 25 years - The Hindu",
+              "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPN2Z5a0FMVEd2NFNEZ1labmVhZDY3Qk1COE9DVFZocDhzVHUzZ1YtNk41WDdMd0lqX1RwaUU5NGZzeWxoYTJDS3JiZmcwTHZueUhmcFgtenBuR19lY0lEdGxBc3JuRnBYVlRWYkJ4bGVyVzdVeXNlSXVnMDlRR2dzWHd2NG1OTktmMDlwOVd2SVFrUlFvdi1tQnJxaVpRTmRJb2VwM2drc0h6bWdIcjlnX1Fvb0lHZ0I3QVpZ0gHCAUFVX3lxTE43VmhsQkZJcHdJQl9LcjVDUlFNZ0xQY1d3QkpTRmlud19pWE9wU053clV0ZlZXWjNULWhmTGF6UEFOY3YxbHF3TVQ5SjZvYlgtdVItYml3Tzk1Q3JIVVgzQnVHRXF2eXU2LTkzT0diaHhOXzFXcEZ0R1gyUlkyTEJyMnJkc3BYNHBxdHVVTWJRYUNFNWJRbU5pU0J3SG1oaTJnZkNZMFBqOEY5cDBoSEZHaldrcE02VlMzendSV3dYN2RB?oc=5",
+              "publishedAt": "Sun, 26 Dec 2021 08:00:00 GMT",
+              "source": "The Hindu"
+            },
+            {
+              "title": "NTPC, AAI, NHAI's infrastructure assets identified for monetisation: Govt - Business Today",
+              "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNemlDT0JBU3ZqVFVpVjhrUkRsamx2Q2hxcmY3OVdwZEVpeUx2VFZFX0YzZDdVNGtrVE9JdFR4WGlfRnpMbE9kczZEVUtQN05tdGkwX1RudElGeDF3SVVqbzY4V1pFTlRSNWtkUDVnMy1GdGVnbjF6cmpwY1FMMlJtVWpxVkdxNWE4RW1jUmRHZlhaN0ZYX1pLcS04WmQzVmN4MUlCUmtuUWFZajA0VjhiQnBjN3B5VmpNbW9DRFNDcjdCN05PX3ZzOGJvYlF6UURwYTlz0gHYAUFVX3lxTE40RnBDNS1uZC04YXRscXFwcl9qa2dadGQwWWNsNV9VbmtoSF8xdnVKTS1oZUwzNGhlY0ZyZnVVS2FvdlVHTmdvTklzRFFoeXZoYUdpSloyU0hia2UyWG1EcE90bm5RSkVzb0FDeG15SWJmblB4bEZjd3h6elJ4UXZxM013RU5Tb2dBQzdBSVB6NE5uQlBzUk5mUEFrM0t0Vkw0ZXZ6ZWFZaDE0UXh1alhOU2IxNTBhTHFSM3M0SGQ2TGZ0Z3JqWmYwa3V2MnhZaWhmOFBkVEsxeQ?oc=5",
+              "publishedAt": "Mon, 13 Dec 2021 08:00:00 GMT",
+              "source": "Business Today"
+            },
+            {
+              "title": "Greenko forms JV with John Cockerill for electrolyzers - Mint",
+              "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNcGR2NGRhWjhzVHJmMVdBNml0SDFEbEJzWHR5UzNhTUpDbURaVTM4QmZoYnBZRHBoYzRCV1lScXZDQ2l4MlAwSWZfQnotYjVCcHFOcWJ6VUZFcUFtMXRvNGN1MTJ6NTFzLWJOYzBDR1RuM0o2RUxtZ3dmeHhZc0ZnTC0waHpWT2ZiaHBRY1Flemo0VmtGS3pvMjRJSXp2U2xMNUtOQl9EN1ZyYTZkeWJSZWhWWFYxWWN1UHlLNkdxNHY2N2ZqMDVOcG0wTTBSclRtQnfSAdcBQVVfeXFMT0YtbFNUUEl1OGtzczZraHMtcjhpTG1pX0FkTzZNcWI4aGZhTHlqaFQ5Uk9LVmtyZnFYbTVPcjVFbklPMkhaaGFweTQybFJfYU5xbG1mWUJGR01vWVdEcU9yQTlBVXY2YkctYm15djhCam9SUE1VQ1RaSk5mUDFHQUx2bk02ZG9PQkRHSDFfXzBseVlIaS14OENwOFRCdVJzT1ZpemdzVWptTXg3Si1WTG82a1JKZWxwT3JodmVrUU1LS3VaVFJMNVpuVERWOUN5NnpjV0EwMGc?oc=5",
+              "publishedAt": "Wed, 08 Dec 2021 08:00:00 GMT",
+              "source": "Mint"
+            },
+            {
+              "title": "Stocks in Focus: Tata Power, Hero Motocorp, NTPC & More - Investing.com India",
+              "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNQW1LbURlRUpnQm9SLU1nLTlIZngyQW5HUDlnTlFpNVFVX0EwazJpbjlFdkxIcTBrb0tzdElRV2YtdmNZUk56SHpQNzhmbXJwYmtMc0tLRVZJU21hdkNQSUcxWXJfczhiTm0tRzR0a0pfZ2VrNDcwQjFLZHNGc2VvUlFjQ2o0SmxvSEM4QnFTSEZXaEU?oc=5",
+              "publishedAt": "Thu, 02 Dec 2021 08:00:00 GMT",
+              "source": "Investing.com India"
+            }
+          ],
+          "industry": [
+            {
+              "title": "NTPC Receives Acknowledgement from UN for its commitment towards clean Energy - Saur Energy",
+              "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQRk56N1g1MkNIVzJieGlONVJWRVZBbXgyYkd4c05TbWx0Nk1VSVBCdU5KWXJUYUlUT1o1djZlMVZTVzdxdDBERUtJeEtuOVJtYWFQYU02M3Rydkk5b2dfN2RtQWZuWGt0WndOSmJoQ0R0RElveVFPbnVuZk4xY0NFanVHTXdOV3ljNG50bnhRTGxFM24zVkhESTJOcld5WTJSTENSV0RKX080R3NLMXV4YTN0YTNRNUNnSW85SjR3WQ?oc=5",
+              "publishedAt": "Mon, 20 Dec 2021 08:00:00 GMT",
+              "source": "Saur Energy"
+            },
+            {
+              "title": "Solapur NTPC unit to get Singareni coal for 25 years - The Hindu",
+              "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPN2Z5a0FMVEd2NFNEZ1labmVhZDY3Qk1COE9DVFZocDhzVHUzZ1YtNk41WDdMd0lqX1RwaUU5NGZzeWxoYTJDS3JiZmcwTHZueUhmcFgtenBuR19lY0lEdGxBc3JuRnBYVlRWYkJ4bGVyVzdVeXNlSXVnMDlRR2dzWHd2NG1OTktmMDlwOVd2SVFrUlFvdi1tQnJxaVpRTmRJb2VwM2drc0h6bWdIcjlnX1Fvb0lHZ0I3QVpZ0gHCAUFVX3lxTE43VmhsQkZJcHdJQl9LcjVDUlFNZ0xQY1d3QkpTRmlud19pWE9wU053clV0ZlZXWjNULWhmTGF6UEFOY3YxbHF3TVQ5SjZvYlgtdVItYml3Tzk1Q3JIVVgzQnVHRXF2eXU2LTkzT0diaHhOXzFXcEZ0R1gyUlkyTEJyMnJkc3BYNHBxdHVVTWJRYUNFNWJRbU5pU0J3SG1oaTJnZkNZMFBqOEY5cDBoSEZHaldrcE02VlMzendSV3dYN2RB?oc=5",
+              "publishedAt": "Sun, 26 Dec 2021 08:00:00 GMT",
+              "source": "The Hindu"
+            },
+            {
+              "title": "ONGC inks MoU with SECI to develop renewable, ESG projects - PIB",
+              "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBfQmZmak85NEoxQkRSSzk1T2h6Z3BaUGdUNUpYZzRnTU81MVdZcGZnOGYzWGJWTDRSQzV1X3otXy1ZWWIxWmNKV2ZoLVFLMUNYT3pLemM3X3JESEdacVRmVGhySEl4Y3NodnY3d2d1R0I?oc=5",
+              "publishedAt": "Fri, 03 Dec 2021 08:00:00 GMT",
+              "source": "PIB"
+            },
+            {
+              "title": "India’s first Green Hydrogen Microgrid Projects in Andhra - GK Today",
+              "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQeFdDdG5mTWo4cnFSVTVUZUc1VHdNNzRDelBlNFJpMWZVZ3FEdXZPRGRUcmkybjJsMXE2bjBMSnFUaTFOd0dOMDNUdDF0SV9ZVjhrbzNvVWJUcXFkRW4wRjdnblN0VzJFeXJaTDV3ZVhYa0NIM2g0Vlp4MDQ1dklUNlNnWkh1MFE?oc=5",
+              "publishedAt": "Thu, 16 Dec 2021 08:00:00 GMT",
+              "source": "GK Today"
+            },
+            {
+              "title": "What to Expect from India's Top Renewable Energy Stocks in 2022 - Equitymaster",
+              "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPb0RMcnhZc1RGQkdzYlNjTjUyT2lvRlpvNHVRa2pSUWctdVYtQ2NlZ2xvX3FSd19QRkNBc0ZwaGttVU1qRVdwTTVXZjNGbi02N3E1NVZHbUNJRWhYZWtpNk1tblBxeFExWG9SVG8yaV9mWXdHX3BKekV2NTBET0NfSnJPQkZlRF8tS0xVSlZYMkNKNXhUbENTVlJNLWIzNmF3d0tuYzRCWEQ2NnlVOWxGOHdxWW5zSGE2UGoxbFpWNFJDTmxKaVlLVV9FZ1A?oc=5",
+              "publishedAt": "Thu, 30 Dec 2021 08:00:00 GMT",
+              "source": "Equitymaster"
+            }
+          ]
+        }
+      },
+      {
+        "symbol": "CIPLA",
+        "companyName": "Cipla Ltd.",
+        "redactedSymbol": "STOCK-07",
+        "redactedCompanyName": "Company 07",
+        "categories": {
+          "finance": [
+            {
+              "title": "As young Indians jump into soaring stock market, risks add up - Al Jazeera",
+              "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQndRcWtSaGVYcXMxZ2xZZEJpRjlCOC1Ra3daUFdQcDNzVGJJWXByZnZkZVlVdktyMHBSNEFfcU1zcUJUOTA3RnE2cS1YbzNVUzJyUjFhQ0ZtMHdvWTBnZTMzdmZpdWVJbWY3UlkxUW5QNVhmcWs5SWg4SW9zRUd0NlV5TzY1STV2N2pncEtKblFfMTFoR1VWa2lQVmRid05BaWhJaGRJSDjSAa4BQVVfeXFMTTVOMEt5UGJGcmJqVWpvcXRLdk5GNDlLMklZNU54Sld4akRydDEtWV9neXBENUEwa3ZwaF9EQkJ1X3ZweHBvVzdTWmFvN2pMSkV3VDJaZ0xRTi1hS3Z6cW9rT1lIMjBJYWZ0MkRudG9iQ2YycmRJelNXVDNrNWRIM1Q2cEJoTWFoRW9qYzZmcGxQUEFYRGU1X0MycFFUcWtvRkVUR0dMeUVibDVLYUhR?oc=5",
+              "publishedAt": "Mon, 20 Dec 2021 08:00:00 GMT",
+              "source": "Al Jazeera"
+            },
+            {
+              "title": "Bulletin – December 2021 Global Economy The Indian Banking System - Reserve Bank of Australia",
+              "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUlR4WVljQW40aTV3ZGRHdzBublpxXzh4em5iQmU4ZTFNZ3JtSDJ5U3E2UnFBck80TDVTZ1lKd3RMYXVFMFBDME4xeWdvVFFCdkJESDdZaVdiaTZRT2Q4ZGVtVGhEUWVQd3Q5eTM5Zk1rWmpEM3p4b3lfM3VoczlPSU1ZUVd2WEU2dFBoeA?oc=5",
+              "publishedAt": "Thu, 09 Dec 2021 08:00:00 GMT",
+              "source": "Reserve Bank of Australia"
+            },
+            {
+              "title": "2021 Year in Review - S&P Global",
+              "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQemRfSndhMGowM0R5VmJtaUxiRWs1bmZpdzVud2VMZ2puNDJQVjFqU2VIQkotNV9ZX2IzQVdMRTBBUjZweDg5RzV1dTBILWp0MW5mMEVENThlY01hYVVJYXJ6T3pLa0hwenZkeXg4ekFlWk1lMi1HOXZrSnNGbDZWQVpleGlOc01s?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "S&P Global"
+            },
+            {
+              "title": "India Capital Growth – The show must go on - QuotedData",
+              "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNWHhNRUNaekJXOW5Fdmd6QnFOcGEwcThJLXg0eENYVGdKalE1cGNrT2NuRlVoSTVKN3NJeVdMZzBYR2NrNTZfTm43a1RFRWxSOTl5YW5yQmdRd1ptN2VjWDM3VFQ5Q1J6aUh4anFDOUM3TDNUWVlnaktLT2hXVlNvdm9n?oc=5",
+              "publishedAt": "Wed, 08 Dec 2021 08:00:00 GMT",
+              "source": "QuotedData"
+            },
+            {
+              "title": "Expectation from the Stock Market in 2022 - Elets BFSI",
+              "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9XaElCbXkwN0lXNm5aT2VDa1NMTFpVbkpwNHV4alJkbjVtcVNIbnhWT21keUhucTZXN0xWQmVGRkEwVVBZeGlULW9LOGQ0Tk1WeF9HZUVmMHlGdUJ0S21lTlV2bmdkNFI0R3Fpa1JURUtGeldOQTRmQy1DWQ?oc=5",
+              "publishedAt": "Tue, 28 Dec 2021 08:00:00 GMT",
+              "source": "Elets BFSI"
+            }
+          ],
+          "global": [
+            {
+              "title": "Supply chain resilience in the face of geopolitical risks - Deloitte",
+              "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSVV2bW9tUGNoNjBVVFMzOXUtOEt5aS1OVWhSdXRjWGZyS3NOYUNZTE9ETGc3dXJxRHc4aWJNMHdzZTdpeDdoX2FIVS1qRVExRGxIUWxLNTIyTDVMZVZJb3ptNXdnREQ0LVZ1OVlzLTBRZjYydGptTEZpM3VTSDR6ZzRqQjFlVVBaclJJeUVkQ1AtLWQtWEE?oc=5",
+              "publishedAt": "Fri, 03 Dec 2021 08:00:00 GMT",
+              "source": "Deloitte"
+            },
+            {
+              "title": "LIVE MARKETS Geopolitics 2022: \"managed disagreements\" - Reuters",
+              "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWmFUUHZlazhhUUd3T3VCWERKTG5EaHI2bndjcFI5alRpTzhDdnVYbHl4M0hKZEpRcjVtMWoxRDQ3WnFDVlBDdnRFcHRSWG9OOHhZai14cXJHaE1SVkZhblQxb2NoRjEtdElnazZNWXhEU21qbVU5Q2VLT2ppdDVvRUVXS1NDNUhYaFhjSzZNOWxfQmJlcFUyTmR3QkVnV1BRQVE?oc=5",
+              "publishedAt": "Mon, 13 Dec 2021 08:00:00 GMT",
+              "source": "Reuters"
+            },
+            {
+              "title": "The Power Atlas - European Council on Foreign Relations",
+              "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE10T1FQRjBtLXRhMzZNZTFKX2h0YThZSXNhc2F0VF9MdXVidFBsdFFGOUxha0NpN25laEVYbWFjaDdmMXhkS2hLZXp0NDc?oc=5",
+              "publishedAt": "Thu, 09 Dec 2021 10:57:27 GMT",
+              "source": "European Council on Foreign Relations"
+            },
+            {
+              "title": "Southeast Asia’s choices: Economic, political, and geopolitical integration face complications - orfonline.org",
+              "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBLcjF4akpHd2FrWWU3Q2kwdnlrZlVMZE1lcW5nNmRzazJqUi0wT0FzdXJZbTBITF9oTFFkdng2a2V5cE5HbFJORG40MlNKZUt5UlZnQ3REeFlCV01mR014U3FTclFwWkpmNFRxSUhGVQ?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "orfonline.org"
+            },
+            {
+              "title": "2021 Year in Review - S&P Global",
+              "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQemRfSndhMGowM0R5VmJtaUxiRWs1bmZpdzVud2VMZ2puNDJQVjFqU2VIQkotNV9ZX2IzQVdMRTBBUjZweDg5RzV1dTBILWp0MW5mMEVENThlY01hYVVJYXJ6T3pLa0hwenZkeXg4ekFlWk1lMi1HOXZrSnNGbDZWQVpleGlOc01s?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "S&P Global"
+            }
+          ],
+          "company": [
+            {
+              "title": "Sun Pharma vs Dr Reddy's: Which is Better? - Equitymaster",
+              "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNQzNWbkxzLVlHYnJhYUFYTG1Ka3BDbU1zX29TbXRpTG9fdzJYSnBYNjJQdjVLTWhlaFpQS29VbVlTVzlTQy02QzlZR2pvUklPMy1vcmlQU1hBQThHTDM1TFJ3OC01dUJzU0tfc0lQRW9oOEQ1UXFFLWhnYWtsd2ZzTzVlQzVzSWZEVTZsVmEydU0xSEk1M01UNjhaS0JrcHR6R0xtWWpQbjF1dXlXVUE?oc=5",
+              "publishedAt": "Thu, 16 Dec 2021 08:00:00 GMT",
+              "source": "Equitymaster"
+            },
+            {
+              "title": "E-commerce firm Purplle acquires Indian arm of makeup brand Faces Canada - Business Standard",
+              "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQTHFZYkdZemdKX2Q3U2p4aXI3eXVnYnZacE9IY0w5NWdaYUFDNDh3endNQXRvLUdmVWlfbG9zVzJBRGYtdUYyNExrb1N1eEczd1cxWjl2UDM5U0xpVGNiREdmVFd0bDBSMEJqM1FMYWVtNWNob3dhc2ZMRU5DY3ZYc1BWNnY0NW5IWWhxNWtsV2JraVh1Rm0xOV96aHVNamYyQmZxc044Z2NzQzNTQWs5NjFWM0lUdE91RnhtOWdSQVB4NzJxYUYweVdrZ3lQUlotejRKM3pXOExzZGNt0gHiAUFVX3lxTE91YWVudU9ud3RhYnhHeWdSZjhMcEV4VXZEbDd6eFJ2bDFZS2U1M3hZQ3FtOXA2b2FFcXNKdXpreko5QVJjcnhROEdMNDY2UG03cVRPODIwLUpGNVBMbllIb3JUS2wtcm5aNm5KNlJxQi1FRjZHM2ozR3hmd2RZUEZHTEFUWWlDQzBPS05CejR3cDRrR0xJbFlTUGtnUU1Rakc4ZkpxaG9uMUhxTEtBTmxfeWpyM253dlRBLXVDNEJLUU5wT0RLMkRtNmljTmFDRjlKT1hWdE1mcGVpNnhiUlJjdlE?oc=5",
+              "publishedAt": "Thu, 16 Dec 2021 08:00:00 GMT",
+              "source": "Business Standard"
+            },
+            {
+              "title": "Oral pills for Covid-19 by Sun Pharma, Cipla, Torrent & Strides - Fortune India",
+              "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPM3RweDFINEVEWExXNzFCd0FVOVZYdE10bm1LT0JaaVZHWGd2UzBFdjM1VUo1ZW9QV1dSMEtYMVV3NnZvU1NMWGJncFNKd19WeGpZLUZDdUxDMzVQWUxicmNYWDRER2ctekIwVkRoeUl0TWQ3cDcwNk1uMXBPUkZXcnU0TWZEOUdyUk5vLTBVb0VvcGF5VGFPM2xWVV9XSWFOdHdmOFpubzR6d9IBtwFBVV95cUxOTzNzTmoyOWE2a01aTFNLcU1ZN2piYU5Ua2RhaHJUQjExNEN5S1k5aWxxTVhQVmtydGV0UXAzT0tTQVlpWFdVTVVOeHZydGZYR3M0RTU0RVlNYW5lY0hLdXdTNG9pdTlqWDdUNGhHWmZyUVpmUUoxMVRSOHdWSDNONHR4eHV3NGVnblgyZkJ2OUFEWkZEbTZjbmVRNWhXNlFUQWdtczNFQ0VFVmt4eUFETEhWVC1MTnM?oc=5",
+              "publishedAt": "Tue, 28 Dec 2021 08:00:00 GMT",
+              "source": "Fortune India"
+            }
+          ],
+          "industry": [
+            {
+              "title": "CII announces the winners of the CFO Excellence Awards 2021 - PR Newswire",
+              "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQTdVSWlIOEhORGRWN2dFT3hCVFRoUjVXZHU1VzI0Tm1RblJLZmlvUkp1QS1wanU5RFlKVUJOUVl4WURUTmZiY3V4NmxSSGZfRGdYTDdlSHZtekxYWDlvVHdxdlJ5LUpER0RrVXRLTXh0ODBsUE5GNG16TGxLWmFrbHd0NHdULWJWcUxPbzk0azJzQzZ0UnVuVEpjMkVmYlo4aWlJaHZIWXJUNktsV19iYkNLejJLUUtfdGc?oc=5",
+              "publishedAt": "Tue, 21 Dec 2021 08:00:00 GMT",
+              "source": "PR Newswire"
+            },
+            {
+              "title": "Cipla launches initiative to improve access to nebulisers for acute asthma management in primary healthcare centres of rural India - expresshealthcare.in",
+              "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQeEVVRFp2d2U1YXBHVG5jZzR6VDN3Wkd1cVk5SEI5VjhLOXE4MFhpNDUwUFJmSFdHZnRqaDJ1NXgxbmxIeDc3dDRrS3pKUEN0YWpTYlVnSGM5bEFwWGZadnlvV2ZSVnp5X2hQXzVWNGJfVzBTektTaGJUTGJ3TXlNdXI0SkNOWjJod3JRTzBYbVcyLXA3bHQ5ZTlGM0Q5Tk1hc1Z0MTg3SmM4c3pGZWl4bFcwZ3loQ1Z6cUItanU3cHFDN3lmdG45Wnk0NldJX2FOWkhrVktmTXRuOHBMY01VUTd0WHR4ZGJoZG85MzV2cjB5WHpUcHEyQWhMd0dKVUNrcVp4aV9yUdIBjAJBVV95cUxOWWdfM09FYm1DWDk1c3lIRlpVTHlnSndtVVBnOFpFejBlY1FZd3Q1VUl2OV9ybk8zb2M4Z2xjcTNnZkt4TTNPbEJxLV9NWnotSF9SWUpiY1VIbmlFWlM1VW4zeDRMSnJfRlNwLS1Ga0hQOGVMVDZnN1EtZ1hJUHhId1NhZlFKc2hzLUZ2RjlnVmNNSGNBRER4clpjV0d2UW5wclJlYzVhSFZqTVVqUnMxNEZTSTVRWTFCRzdGeHRHUFNPVEI2NFFzWG5DSXVSSGw5dnEyWkhoamJpX0FjTXpIdDFCei1pU3E2Q2VRMG9aSGs0aEp3dHhKRWZ1TjFKR0R2c3dpRGlJeXJ4ZnVQ?oc=5",
+              "publishedAt": "Fri, 10 Dec 2021 08:00:00 GMT",
+              "source": "expresshealthcare.in"
+            },
+            {
+              "title": "Cipla launches initiative to improve access to nebulisers for acute asthma management in primary health care centres of rural India - Healthcare Radius",
+              "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQd1FWN3RYaFN0a29hWjkzN0xIZGZIb0dDNUVzWHVlWEVNZzI1aFA5RGh4c0RyNWpOVDY5dDhzYlpoeTZVdVZfVGpJZ21HXzh2d2xkSl9WUkxBTEpxdW5Td1dGRllMTGlBUFV1NnlockZ1aXMzaDRjWTExMDJEd2IxNW94S3RibmtyMTd1c3ZyUjRRWEg1QmRpdHE4T2lHN1lLYVJIbERUb1IwbmRWMFJESVZDbnh1V0YwWEsxYnZTaWxNY3hoUTJXNm5zSEw5WnBNN1hYNnFjbzU2cFU5RFZwQ2JwdDNMdXJhaWRYRU9pcmJEOEpSV21QelpScGFIc3hDcGc?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "Healthcare Radius"
+            },
+            {
+              "title": "Cipla appoints Geetali Thakur as Director & Head - API EHS & Process Safety - Indian Chemical News",
+              "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNREVrYVBpMi1rWmJ3TEFURGdiOU81MGNXTFZqVDMzWHFWNEduLVBvTVpzV2VWVlBCcWh0a1hjdHc0LXpNdlV6OWVhS2F2MnFIYkZwTjU5b04xUzNITEVTdk9yMFNrM1FaRDk3Um1FM1ZKTEhrblUyei1zNmtWNzkzVnB1S2JjZFpwWTl5V0p4aklscXlrbG5wd3ZHV1VHckhTbVdnWmppUVBsZlpHb2xILWp6cWUxNGc10gG_AUFVX3lxTE5pYUpaTjY2WlhzVWhkWlJKWkR5ckhOX3I3QjRKZ09udWNxZUpPcWtlV1h1MGtNYl9HanJ5REQ2LXIxang2NzJGNFhRYm11TVZJZ1RFVXBtQ1lwd2wtekI2ZmZaZkY1MFNULWwwX3d0WW93X3YtTUh2TmlaU052Ym0xLV9XWGZIYWZxa3ZTZlgxUmpUOUY5c3JxZHczd05mMDh0UjJwWG1VSUxZTDRjck9XTGszNmNjb0J0ckxKR3Aw?oc=5",
+              "publishedAt": "Wed, 15 Dec 2021 15:11:03 GMT",
+              "source": "Indian Chemical News"
+            },
+            {
+              "title": "Oral pills for Covid-19 by Sun Pharma, Cipla, Torrent & Strides - Fortune India",
+              "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPM3RweDFINEVEWExXNzFCd0FVOVZYdE10bm1LT0JaaVZHWGd2UzBFdjM1VUo1ZW9QV1dSMEtYMVV3NnZvU1NMWGJncFNKd19WeGpZLUZDdUxDMzVQWUxicmNYWDRER2ctekIwVkRoeUl0TWQ3cDcwNk1uMXBPUkZXcnU0TWZEOUdyUk5vLTBVb0VvcGF5VGFPM2xWVV9XSWFOdHdmOFpubzR6d9IBtwFBVV95cUxOTzNzTmoyOWE2a01aTFNLcU1ZN2piYU5Ua2RhaHJUQjExNEN5S1k5aWxxTVhQVmtydGV0UXAzT0tTQVlpWFdVTVVOeHZydGZYR3M0RTU0RVlNYW5lY0hLdXdTNG9pdTlqWDdUNGhHWmZyUVpmUUoxMVRSOHdWSDNONHR4eHV3NGVnblgyZkJ2OUFEWkZEbTZjbmVRNWhXNlFUQWdtczNFQ0VFVmt4eUFETEhWVC1MTnM?oc=5",
+              "publishedAt": "Tue, 28 Dec 2021 08:00:00 GMT",
+              "source": "Fortune India"
+            }
+          ]
+        }
+      },
+      {
+        "symbol": "ASIANPAINT",
+        "companyName": "Asian Paints Ltd.",
+        "redactedSymbol": "STOCK-06",
+        "redactedCompanyName": "Company 06",
+        "categories": {
+          "finance": [
+            {
+              "title": "As young Indians jump into soaring stock market, risks add up - Al Jazeera",
+              "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQndRcWtSaGVYcXMxZ2xZZEJpRjlCOC1Ra3daUFdQcDNzVGJJWXByZnZkZVlVdktyMHBSNEFfcU1zcUJUOTA3RnE2cS1YbzNVUzJyUjFhQ0ZtMHdvWTBnZTMzdmZpdWVJbWY3UlkxUW5QNVhmcWs5SWg4SW9zRUd0NlV5TzY1STV2N2pncEtKblFfMTFoR1VWa2lQVmRid05BaWhJaGRJSDjSAa4BQVVfeXFMTTVOMEt5UGJGcmJqVWpvcXRLdk5GNDlLMklZNU54Sld4akRydDEtWV9neXBENUEwa3ZwaF9EQkJ1X3ZweHBvVzdTWmFvN2pMSkV3VDJaZ0xRTi1hS3Z6cW9rT1lIMjBJYWZ0MkRudG9iQ2YycmRJelNXVDNrNWRIM1Q2cEJoTWFoRW9qYzZmcGxQUEFYRGU1X0MycFFUcWtvRkVUR0dMeUVibDVLYUhR?oc=5",
+              "publishedAt": "Mon, 20 Dec 2021 08:00:00 GMT",
+              "source": "Al Jazeera"
+            },
+            {
+              "title": "Bulletin – December 2021 Global Economy The Indian Banking System - Reserve Bank of Australia",
+              "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUlR4WVljQW40aTV3ZGRHdzBublpxXzh4em5iQmU4ZTFNZ3JtSDJ5U3E2UnFBck80TDVTZ1lKd3RMYXVFMFBDME4xeWdvVFFCdkJESDdZaVdiaTZRT2Q4ZGVtVGhEUWVQd3Q5eTM5Zk1rWmpEM3p4b3lfM3VoczlPSU1ZUVd2WEU2dFBoeA?oc=5",
+              "publishedAt": "Thu, 09 Dec 2021 08:00:00 GMT",
+              "source": "Reserve Bank of Australia"
+            },
+            {
+              "title": "2021 Year in Review - S&P Global",
+              "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQemRfSndhMGowM0R5VmJtaUxiRWs1bmZpdzVud2VMZ2puNDJQVjFqU2VIQkotNV9ZX2IzQVdMRTBBUjZweDg5RzV1dTBILWp0MW5mMEVENThlY01hYVVJYXJ6T3pLa0hwenZkeXg4ekFlWk1lMi1HOXZrSnNGbDZWQVpleGlOc01s?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "S&P Global"
+            },
+            {
+              "title": "India Capital Growth – The show must go on - QuotedData",
+              "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNWHhNRUNaekJXOW5Fdmd6QnFOcGEwcThJLXg0eENYVGdKalE1cGNrT2NuRlVoSTVKN3NJeVdMZzBYR2NrNTZfTm43a1RFRWxSOTl5YW5yQmdRd1ptN2VjWDM3VFQ5Q1J6aUh4anFDOUM3TDNUWVlnaktLT2hXVlNvdm9n?oc=5",
+              "publishedAt": "Wed, 08 Dec 2021 08:00:00 GMT",
+              "source": "QuotedData"
+            },
+            {
+              "title": "Expectation from the Stock Market in 2022 - Elets BFSI",
+              "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9XaElCbXkwN0lXNm5aT2VDa1NMTFpVbkpwNHV4alJkbjVtcVNIbnhWT21keUhucTZXN0xWQmVGRkEwVVBZeGlULW9LOGQ0Tk1WeF9HZUVmMHlGdUJ0S21lTlV2bmdkNFI0R3Fpa1JURUtGeldOQTRmQy1DWQ?oc=5",
+              "publishedAt": "Tue, 28 Dec 2021 08:00:00 GMT",
+              "source": "Elets BFSI"
+            }
+          ],
+          "global": [
+            {
+              "title": "Supply chain resilience in the face of geopolitical risks - Deloitte",
+              "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSVV2bW9tUGNoNjBVVFMzOXUtOEt5aS1OVWhSdXRjWGZyS3NOYUNZTE9ETGc3dXJxRHc4aWJNMHdzZTdpeDdoX2FIVS1qRVExRGxIUWxLNTIyTDVMZVZJb3ptNXdnREQ0LVZ1OVlzLTBRZjYydGptTEZpM3VTSDR6ZzRqQjFlVVBaclJJeUVkQ1AtLWQtWEE?oc=5",
+              "publishedAt": "Fri, 03 Dec 2021 08:00:00 GMT",
+              "source": "Deloitte"
+            },
+            {
+              "title": "LIVE MARKETS Geopolitics 2022: \"managed disagreements\" - Reuters",
+              "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWmFUUHZlazhhUUd3T3VCWERKTG5EaHI2bndjcFI5alRpTzhDdnVYbHl4M0hKZEpRcjVtMWoxRDQ3WnFDVlBDdnRFcHRSWG9OOHhZai14cXJHaE1SVkZhblQxb2NoRjEtdElnazZNWXhEU21qbVU5Q2VLT2ppdDVvRUVXS1NDNUhYaFhjSzZNOWxfQmJlcFUyTmR3QkVnV1BRQVE?oc=5",
+              "publishedAt": "Mon, 13 Dec 2021 08:00:00 GMT",
+              "source": "Reuters"
+            },
+            {
+              "title": "The Power Atlas - European Council on Foreign Relations",
+              "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE10T1FQRjBtLXRhMzZNZTFKX2h0YThZSXNhc2F0VF9MdXVidFBsdFFGOUxha0NpN25laEVYbWFjaDdmMXhkS2hLZXp0NDc?oc=5",
+              "publishedAt": "Thu, 09 Dec 2021 10:57:27 GMT",
+              "source": "European Council on Foreign Relations"
+            },
+            {
+              "title": "Southeast Asia’s choices: Economic, political, and geopolitical integration face complications - orfonline.org",
+              "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBLcjF4akpHd2FrWWU3Q2kwdnlrZlVMZE1lcW5nNmRzazJqUi0wT0FzdXJZbTBITF9oTFFkdng2a2V5cE5HbFJORG40MlNKZUt5UlZnQ3REeFlCV01mR014U3FTclFwWkpmNFRxSUhGVQ?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "orfonline.org"
+            },
+            {
+              "title": "2021 Year in Review - S&P Global",
+              "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQemRfSndhMGowM0R5VmJtaUxiRWs1bmZpdzVud2VMZ2puNDJQVjFqU2VIQkotNV9ZX2IzQVdMRTBBUjZweDg5RzV1dTBILWp0MW5mMEVENThlY01hYVVJYXJ6T3pLa0hwenZkeXg4ekFlWk1lMi1HOXZrSnNGbDZWQVpleGlOc01s?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "S&P Global"
+            }
+          ],
+          "company": [
+            {
+              "title": "How Rising Input Costs Are Weighing On India Inc.’s Operating Margin - NDTV Profit",
+              "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTmZJXzF4OGptRjVtenh6dUlNOUlXdmMyMGN0a0NqeUh3RmYyX3JEdTNEcklIZ2JqVktva3lwOTVram1VRTg1cW41Sm9DUi1UMTd5QklsenRTTExTcUFmcm9rMWJHMjVyb2NuUGt3bE4tR01vVHhrYWVkTnZhT3FsX3Y2cC15d2VicUY3Zlo1Q3JBalByT1pCSGpnaWs0eVpGdjA4SkZ4NzhrMjRZR3ZKcw?oc=5",
+              "publishedAt": "Fri, 03 Dec 2021 08:00:00 GMT",
+              "source": "NDTV Profit"
+            },
+            {
+              "title": "ICICI Bank on-boards 70 leading corporates on its digital platform ‘CorpConnect’ - Mint",
+              "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQMXNhYjFLN2RsSEUyTHQwdG9ja1hxTmVkd2RGRGRlODhPSGlOM1l5bVFLY2p2ckVDdkJvZFMwNDRLMzRvUDhaQW9RRlNIRzlIdnNGUzRKN2lxbTc0RVIwa0FPVkZ5bXluRllDNExVSGtxUERtYlVvc2JrenhyQnJJcl82NGgzZ0xzNUd5VkpWaWlLSmJ6OTM5Z0xfV25Rc3c1TEU0OFBTN0NvTnNFRGFWbVRmOFowSFdzSHl0NGtUMUpXRFhuMFduSmVaOV9QcUotNDhIadIB2gFBVV95cUxPSTEySGlRbEh2cDBjT004elRhYmhneTV5MVNpUDJPWVNsdV9obEFhTy1TU2d5ZVpISlNBZ1lWcGZFOTFxcUI4QVR3WFNhQ05Rb3FwQzRrd2JJTHRyZklub3RDQmZJakxlY0xRQ1RTRWxiYjlmbVRxVWNYc2xPYnV6bzV0YmZiTUFqUnBGdkpQdjJHZlJDYWR4dFlmdWZvOWZFQ2Vwc3djR2gwMGZrOThjdGRiY2Z6a1BrekFiZnJLMWYwTE9jV0kzMlNlLTNiVi12NHRLUURqdHV2dw?oc=5",
+              "publishedAt": "Thu, 16 Dec 2021 08:00:00 GMT",
+              "source": "Mint"
+            },
+            {
+              "title": "Asian Paints vs Berger Paints: Which is Better? - Mint",
+              "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOUjkySmRkakhmeEI4V2RtblFuN0h5aXVzZW1aYTdydUxDNFM4T0UtNGtnWm5jdVM4SUM3Z2RlYzh2X1QwVTNuRnY2YTJlbTBLQXI5Z0M3SE9UTTJIeTBTcWl4Q2VQMkhvQ0tpendCUTdYNV92M2dyWmUyR0liRGlLb3BrMTB4bHFPUGtiZWhvcXVlTEw1U1RHRFpDY2Via2ZmOWtKMmU5UlVSMmNuUGRmakRQcFFnR09kNFM1TkRTdDFDSDZCb1ZNaHRzUXRGalnSAbsBQVVfeXFMUER0N0ZGWXhvVlowMTBYTGxRQWZTODJkSXJtY1pNUEE0YlBIN2std1B4cUZQVVliTVl6M0xqTTk4YjV4SVF3RmdkbGRqcEp6RGJLd0FSUUdPejN5ejNKYzJfZnVZMHE4by16V3VlQUlCc0liejFaNUVwaWk1VGNscUZvZ2FFWm5UNFBiTEhyeERibTdLWjNvUFlMdTlJdnE5XzFWV2YyRlpQckdGenZXWTdzT0tyWkNycjNWcw?oc=5",
+              "publishedAt": "Fri, 03 Dec 2021 08:00:00 GMT",
+              "source": "Mint"
+            },
+            {
+              "title": "Indian Paints Industry: Hoping for gloss to return by end of current fiscal - Moneycontrol.com",
+              "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQRUNaSEhPbGhNQWpLTmYtMzZVZ0psR2FnV2Q4MkFCc3Bla3c3NWVoYzh2dDRJVmZzdi1uMy1sTHNkU0hSdERBX040bW10cFNRVFZXRmhIckdnY3J0RTB2MEhhc2ZNQ2tuSnZuLVRVYVpFa2g5ZVA3U2tKblRyOE9lZUstcGc3Q0RWZWJRQ3JUQ0xTd2QtcklfTFNObTh1OVEwYjF0R0NtNnRKWjFGTmJuV3lGWnhkT3g1NWxVQmoxRG9KbHVReEFxeDlhbmRKOWpUYXYyZVNLaG45UdIB3wFBVV95cUxQbkRQZHJsRVNVdk96WUtCVXpUREhOckpvUFFweWZyZWc1Z3FxclRHRy1yRDlzZHYteEYzczdMU09jLXlHR3lwdHZERjZXalQxWWFTUWwtTWh3eGVZVHMxckhva0hKekZsNUZKMUlnOEFheXVMTDdqRGdTU3pSNnY2WEtSOXZaNWgxRXM4eEgzTm1GZTNiT3VHNjJOMUFlWGYxOWZaTWhZLXVfaWsyYTVnV2pmckdHMXB3S051VkRxMVRmTXR3VUVGeWYwRnozQ25XVFozNWpXeWExUEx0RFhZ?oc=5",
+              "publishedAt": "Thu, 09 Dec 2021 08:00:00 GMT",
+              "source": "Moneycontrol.com"
+            },
+            {
+              "title": "Sensex zooms 1,016 points; Nifty settles above 17,450: Top reasons behind surge - The Times of India",
+              "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOOWZodzVlUjRjNVRMQTM0X0JWUThZbTJPenNJd1NySVJUYXdfMVp2ZHVfSTNrbFZQQUJ6Tmw5MnpQRm4ySWZocXlVcG5Bc2g1c1hZNE1ldko0d0hyQ0tLVGVxWkp4bWZOMkJuMHhpSEYzeXFodFN6XzctNW9pNnhYTXM0QzBHem1UU1JfQ25VX2U1T21tVTdwRThkZERFS0F3S2hLM1JUVS00SHhZbC13XzFmT3Y1bUVXVU5FZzVJRTdCUVJueENJam5aZ2RjZkd6eFg3VjhmTUhYZ2gzYzY4YXZVWE8xRldWWWZrZjFGQkZ0d9IB9wFBVV95cUxNdTlrTkNLY201LVpvWkhHcE4wTmRmZGVYY1R3X2pnSVFqeW1oRjJPNTlmeFpNcnZGTU9yaUc2c0dLVDBEVE5sZlZLSzg2TVBRa05rT190dEMxTFQxVlRRallZaHdfcjNJUHplMjB2Rk1FNGNyNzFwUW1KcUsxZHRCNXZKbWFZTnY4d1d4cFlHNlFQMGhrZ3JseHFjTjFZZU9TRjVRWHlKNFpZTnBtcDNDSV9nZ2R0SVpUZlI4aHhCRTBvQkp4RkgtSElhQnpWWV90TnFRaHZYS2lyWXRHNk0td0hiNlJrdDIzUzNkUUVoUlpJRkJKaFFN?oc=5",
+              "publishedAt": "Wed, 08 Dec 2021 08:00:00 GMT",
+              "source": "The Times of India"
+            }
+          ],
+          "industry": [
+            {
+              "title": "How Rising Input Costs Are Weighing On India Inc.’s Operating Margin - NDTV Profit",
+              "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTmZJXzF4OGptRjVtenh6dUlNOUlXdmMyMGN0a0NqeUh3RmYyX3JEdTNEcklIZ2JqVktva3lwOTVram1VRTg1cW41Sm9DUi1UMTd5QklsenRTTExTcUFmcm9rMWJHMjVyb2NuUGt3bE4tR01vVHhrYWVkTnZhT3FsX3Y2cC15d2VicUY3Zlo1Q3JBalByT1pCSGpnaWs0eVpGdjA4SkZ4NzhrMjRZR3ZKcw?oc=5",
+              "publishedAt": "Fri, 03 Dec 2021 08:00:00 GMT",
+              "source": "NDTV Profit"
+            },
+            {
+              "title": "ICICI Bank on-boards 70 leading corporates on its digital platform ‘CorpConnect’ - Mint",
+              "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQMXNhYjFLN2RsSEUyTHQwdG9ja1hxTmVkd2RGRGRlODhPSGlOM1l5bVFLY2p2ckVDdkJvZFMwNDRLMzRvUDhaQW9RRlNIRzlIdnNGUzRKN2lxbTc0RVIwa0FPVkZ5bXluRllDNExVSGtxUERtYlVvc2JrenhyQnJJcl82NGgzZ0xzNUd5VkpWaWlLSmJ6OTM5Z0xfV25Rc3c1TEU0OFBTN0NvTnNFRGFWbVRmOFowSFdzSHl0NGtUMUpXRFhuMFduSmVaOV9QcUotNDhIadIB2gFBVV95cUxPSTEySGlRbEh2cDBjT004elRhYmhneTV5MVNpUDJPWVNsdV9obEFhTy1TU2d5ZVpISlNBZ1lWcGZFOTFxcUI4QVR3WFNhQ05Rb3FwQzRrd2JJTHRyZklub3RDQmZJakxlY0xRQ1RTRWxiYjlmbVRxVWNYc2xPYnV6bzV0YmZiTUFqUnBGdkpQdjJHZlJDYWR4dFlmdWZvOWZFQ2Vwc3djR2gwMGZrOThjdGRiY2Z6a1BrekFiZnJLMWYwTE9jV0kzMlNlLTNiVi12NHRLUURqdHV2dw?oc=5",
+              "publishedAt": "Thu, 16 Dec 2021 08:00:00 GMT",
+              "source": "Mint"
+            },
+            {
+              "title": "Asian Paints forays into home décor with the launch of Beautiful Homes - Architectural Digest India",
+              "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPV0ZyZExlSmpEZ1hWOFNqM3ZWZTM3RGRjTF9pLW5zdTZBQ1h5a2NNenljY0UtLXY3bHNObFYtbnNxX0pWV1JmQnlpb3JXd0Vpelo0XzdiYmdvcWJYbXpJTzBhQlZDeVdHR25TV3VzRzZRZ09DNldHR2JUZjZpd0thUTJid3hEVnpkeGw5MURoUXFsX09k?oc=5",
+              "publishedAt": "Sun, 12 Dec 2021 01:19:49 GMT",
+              "source": "Architectural Digest India"
+            },
+            {
+              "title": "Asian Paints vs Berger Paints: Which is Better? - Mint",
+              "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOUjkySmRkakhmeEI4V2RtblFuN0h5aXVzZW1aYTdydUxDNFM4T0UtNGtnWm5jdVM4SUM3Z2RlYzh2X1QwVTNuRnY2YTJlbTBLQXI5Z0M3SE9UTTJIeTBTcWl4Q2VQMkhvQ0tpendCUTdYNV92M2dyWmUyR0liRGlLb3BrMTB4bHFPUGtiZWhvcXVlTEw1U1RHRFpDY2Via2ZmOWtKMmU5UlVSMmNuUGRmakRQcFFnR09kNFM1TkRTdDFDSDZCb1ZNaHRzUXRGalnSAbsBQVVfeXFMUER0N0ZGWXhvVlowMTBYTGxRQWZTODJkSXJtY1pNUEE0YlBIN2std1B4cUZQVVliTVl6M0xqTTk4YjV4SVF3RmdkbGRqcEp6RGJLd0FSUUdPejN5ejNKYzJfZnVZMHE4by16V3VlQUlCc0liejFaNUVwaWk1VGNscUZvZ2FFWm5UNFBiTEhyeERibTdLWjNvUFlMdTlJdnE5XzFWV2YyRlpQckdGenZXWTdzT0tyWkNycjNWcw?oc=5",
+              "publishedAt": "Fri, 03 Dec 2021 08:00:00 GMT",
+              "source": "Mint"
+            },
+            {
+              "title": "Asian Paints Launches its premium‘Beautiful Homes’store in Chennai - Chennaionline",
+              "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQXzlaVzBlNVJQMUNZWXlrUzdtbVpjbV9STUI0Q3FuY2FVMnpsd0lsdTJLX3ZUalNwWVVXczRLdEJrQ2Y0dVpra1ExTnkxYVV2STdKd2NlYUF1SkZnNVZ1WVYtYmhxOG1BR0lhZzVSdlJKMVJ0YXZCbXh3R2FtdEZOR05zWTRmU1owcFNFX3BaMmVRLVEtNEpmX0hjLUd1aHNzdFloQkFSWFYyQVHSAasBQVVfeXFMUF85WlcwZTVSUDFDWVl5a1M3bW1aY21fUk1CNENxbmNhVTJ6bHdJbHUyS192VGpTcFlVV3M0S3RCa0NmNHVaa2tRMU55MWFVdkk3SndjZWFBdUpGZzVWdVlWLWJocThtQUdJYWc1UnZSSjFSdGF2Qm14d0dhbXRGTkdOc1k0ZlNaMHBTRV9wWjJlUS1RLTRKZl9IYy1HdWhzc3RZaEJBUlhWMkFR?oc=5",
+              "publishedAt": "Thu, 16 Dec 2021 08:00:00 GMT",
+              "source": "Chennaionline"
+            }
+          ]
+        }
+      },
+      {
+        "symbol": "SHREECEM",
+        "companyName": "Shree Cement Ltd.",
+        "redactedSymbol": "STOCK-05",
+        "redactedCompanyName": "Company 05",
+        "categories": {
+          "finance": [
+            {
+              "title": "As young Indians jump into soaring stock market, risks add up - Al Jazeera",
+              "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQndRcWtSaGVYcXMxZ2xZZEJpRjlCOC1Ra3daUFdQcDNzVGJJWXByZnZkZVlVdktyMHBSNEFfcU1zcUJUOTA3RnE2cS1YbzNVUzJyUjFhQ0ZtMHdvWTBnZTMzdmZpdWVJbWY3UlkxUW5QNVhmcWs5SWg4SW9zRUd0NlV5TzY1STV2N2pncEtKblFfMTFoR1VWa2lQVmRid05BaWhJaGRJSDjSAa4BQVVfeXFMTTVOMEt5UGJGcmJqVWpvcXRLdk5GNDlLMklZNU54Sld4akRydDEtWV9neXBENUEwa3ZwaF9EQkJ1X3ZweHBvVzdTWmFvN2pMSkV3VDJaZ0xRTi1hS3Z6cW9rT1lIMjBJYWZ0MkRudG9iQ2YycmRJelNXVDNrNWRIM1Q2cEJoTWFoRW9qYzZmcGxQUEFYRGU1X0MycFFUcWtvRkVUR0dMeUVibDVLYUhR?oc=5",
+              "publishedAt": "Mon, 20 Dec 2021 08:00:00 GMT",
+              "source": "Al Jazeera"
+            },
+            {
+              "title": "Bulletin – December 2021 Global Economy The Indian Banking System - Reserve Bank of Australia",
+              "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUlR4WVljQW40aTV3ZGRHdzBublpxXzh4em5iQmU4ZTFNZ3JtSDJ5U3E2UnFBck80TDVTZ1lKd3RMYXVFMFBDME4xeWdvVFFCdkJESDdZaVdiaTZRT2Q4ZGVtVGhEUWVQd3Q5eTM5Zk1rWmpEM3p4b3lfM3VoczlPSU1ZUVd2WEU2dFBoeA?oc=5",
+              "publishedAt": "Thu, 09 Dec 2021 08:00:00 GMT",
+              "source": "Reserve Bank of Australia"
+            },
+            {
+              "title": "2021 Year in Review - S&P Global",
+              "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQemRfSndhMGowM0R5VmJtaUxiRWs1bmZpdzVud2VMZ2puNDJQVjFqU2VIQkotNV9ZX2IzQVdMRTBBUjZweDg5RzV1dTBILWp0MW5mMEVENThlY01hYVVJYXJ6T3pLa0hwenZkeXg4ekFlWk1lMi1HOXZrSnNGbDZWQVpleGlOc01s?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "S&P Global"
+            },
+            {
+              "title": "India Capital Growth – The show must go on - QuotedData",
+              "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNWHhNRUNaekJXOW5Fdmd6QnFOcGEwcThJLXg0eENYVGdKalE1cGNrT2NuRlVoSTVKN3NJeVdMZzBYR2NrNTZfTm43a1RFRWxSOTl5YW5yQmdRd1ptN2VjWDM3VFQ5Q1J6aUh4anFDOUM3TDNUWVlnaktLT2hXVlNvdm9n?oc=5",
+              "publishedAt": "Wed, 08 Dec 2021 08:00:00 GMT",
+              "source": "QuotedData"
+            },
+            {
+              "title": "Expectation from the Stock Market in 2022 - Elets BFSI",
+              "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9XaElCbXkwN0lXNm5aT2VDa1NMTFpVbkpwNHV4alJkbjVtcVNIbnhWT21keUhucTZXN0xWQmVGRkEwVVBZeGlULW9LOGQ0Tk1WeF9HZUVmMHlGdUJ0S21lTlV2bmdkNFI0R3Fpa1JURUtGeldOQTRmQy1DWQ?oc=5",
+              "publishedAt": "Tue, 28 Dec 2021 08:00:00 GMT",
+              "source": "Elets BFSI"
+            }
+          ],
+          "global": [
+            {
+              "title": "Supply chain resilience in the face of geopolitical risks - Deloitte",
+              "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSVV2bW9tUGNoNjBVVFMzOXUtOEt5aS1OVWhSdXRjWGZyS3NOYUNZTE9ETGc3dXJxRHc4aWJNMHdzZTdpeDdoX2FIVS1qRVExRGxIUWxLNTIyTDVMZVZJb3ptNXdnREQ0LVZ1OVlzLTBRZjYydGptTEZpM3VTSDR6ZzRqQjFlVVBaclJJeUVkQ1AtLWQtWEE?oc=5",
+              "publishedAt": "Fri, 03 Dec 2021 08:00:00 GMT",
+              "source": "Deloitte"
+            },
+            {
+              "title": "LIVE MARKETS Geopolitics 2022: \"managed disagreements\" - Reuters",
+              "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWmFUUHZlazhhUUd3T3VCWERKTG5EaHI2bndjcFI5alRpTzhDdnVYbHl4M0hKZEpRcjVtMWoxRDQ3WnFDVlBDdnRFcHRSWG9OOHhZai14cXJHaE1SVkZhblQxb2NoRjEtdElnazZNWXhEU21qbVU5Q2VLT2ppdDVvRUVXS1NDNUhYaFhjSzZNOWxfQmJlcFUyTmR3QkVnV1BRQVE?oc=5",
+              "publishedAt": "Mon, 13 Dec 2021 08:00:00 GMT",
+              "source": "Reuters"
+            },
+            {
+              "title": "The Power Atlas - European Council on Foreign Relations",
+              "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE10T1FQRjBtLXRhMzZNZTFKX2h0YThZSXNhc2F0VF9MdXVidFBsdFFGOUxha0NpN25laEVYbWFjaDdmMXhkS2hLZXp0NDc?oc=5",
+              "publishedAt": "Thu, 09 Dec 2021 10:57:27 GMT",
+              "source": "European Council on Foreign Relations"
+            },
+            {
+              "title": "Southeast Asia’s choices: Economic, political, and geopolitical integration face complications - orfonline.org",
+              "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBLcjF4akpHd2FrWWU3Q2kwdnlrZlVMZE1lcW5nNmRzazJqUi0wT0FzdXJZbTBITF9oTFFkdng2a2V5cE5HbFJORG40MlNKZUt5UlZnQ3REeFlCV01mR014U3FTclFwWkpmNFRxSUhGVQ?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "orfonline.org"
+            },
+            {
+              "title": "2021 Year in Review - S&P Global",
+              "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQemRfSndhMGowM0R5VmJtaUxiRWs1bmZpdzVud2VMZ2puNDJQVjFqU2VIQkotNV9ZX2IzQVdMRTBBUjZweDg5RzV1dTBILWp0MW5mMEVENThlY01hYVVJYXJ6T3pLa0hwenZkeXg4ekFlWk1lMi1HOXZrSnNGbDZWQVpleGlOc01s?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "S&P Global"
+            }
+          ],
+          "company": [
+            {
+              "title": "Buy Shree Cement Ltd For Target Rs.33,000 - ICICI Securities - Investment Guru",
+              "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOUEs4SFIzZF9oSXlIMDhBNzhkQ2FMN2lua1l3V083b3VodWV0blFXXzhsUG9ZNEhxVzZvemFCeWxYUlpQbDByZ3VwcnMzRy1aN096bXdGd0NDcXRxNkJhZzRzX21FMXFiUUtXeHJWem1TbV9jSDZpd2tJZVNfbXNEc2VUUHd2dkNuZEl3SGt5NVV0SWJlX3JFZ1BNUXBhV0NiUG9j?oc=5",
+              "publishedAt": "Thu, 09 Dec 2021 08:00:00 GMT",
+              "source": "Investment Guru"
+            },
+            {
+              "title": "Shree Cement to set up Rs 1500 crore cement plant in Andhra Pradesh - Business Standard",
+              "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPOVdzN3d6d2NOWUtQOUVxSnlCZ1ltRThUcm1YZ3MtNEN1bkYyNldwdXZFMkV6dGNsLWlRQ1BDRlhNY0phdnJhd2x6b1FGVm8wSzN5TnViNDA4NTFzaS1sY2hGYlBMc19yekJBdXZsck5iYjlMNnRIc2t5ZzlETlN1djEzMDk0VVJFNTEtV1pjNmFCWXpHTUhqLUs4ZnkzdDFlVXlmNGwzS000OHp6SGpHUFlsM1VNWUI1c3F6UE9IdElBdGZUVHB3cmtIRjJqaE9xZkc4WTZ30gHbAUFVX3lxTE5hMXZoN2NySFlvZkt2UlVwcFdKdDFCR2NuV3BnS3RuRmpCRjJiTTM2cmhRZ1VEZjlPYnA3WVAtVTRsMDlOTzhSNjlBNkljdVJVQnNIX1RXNkg5Rjg4a000eGVOMERpWkp5QldLSzBEUVBJZ2F3R19jYlpoUXZNbkdtMFBjaDl2OTdyRjRxX2hSNnc1aWZWWk5Wai1BVVRkaG1VTHp6SWRmSkhJYXppeHQydnJNU3lmUWJVT2JZSzJMenBJQlVfU1dVZlBGOUpSWHAyTkN2MjhSLU8xdw?oc=5",
+              "publishedAt": "Mon, 20 Dec 2021 08:00:00 GMT",
+              "source": "Business Standard"
+            },
+            {
+              "title": "Shree Cement to set up ₹1,500-cr. cement factory in Guntur dist. - The Hindu",
+              "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOb3JjbTRaY0lCekhUUFVPcGk1YUdZRDZiYUE5a0xCUzlReFhwM0NfYzNnT2JIRlNRMTVOQW9MSXRDR2ZINk1HZXBsTU5na19HT3F4Z3ZZWHhXeTE5QVVWTXRTQmZ6TEJaWWtvcDF2c1FOMnhtTFNkS0JMMFoxTlFlaVJKb29ScTFaSmhkaEZaVHIzYjA0RloxLUlXRll3NmVEZ3p6ejczNnBXT0Q5ZDZONTRmUkpyaHNRUk5fOFZHOC1tbHRjMmVtMHdFTG5jdGfSAdYBQVVfeXFMTnEtODdCcVRDVzBuTUZIVzJyUUpjcEIyazRfY2J0RXRqZGM5YWZHYXRNSW92RmM1NmZMNjBZWHRJMnI0Ri1OM2NKajVncE9ONV9DcjF4cTdGSTdHZWg2WHZMY0ZBUnZfSzBDVWI0Q01QY21tNkMzcVBkWWZTRjgzQ3lIcGN5TFQ4SmRkczQ1cFo1NTg1X1hTbmtKcUVLbXA4TmpkUU1rbFFhXzg2ZG02NnVXRy01SGRDTU91anduUlFjdl9yVmpjMk9vVnVYT25obGJveGRkZw?oc=5",
+              "publishedAt": "Mon, 20 Dec 2021 08:00:00 GMT",
+              "source": "The Hindu"
+            },
+            {
+              "title": "Shree Cement to set up Rs 1500 crore cement plant in AP - The Economic Times",
+              "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNU2xSUDJfeEJyd3ZvckVVbWZ1aDBERWt6a25ZdjEzVVM3Y2pFb2VUd2IxMlI5clktVFBuZlBjQnBkanFCMjBkR3czRTlQWnlkV1o0V3VuZWtjX2JvZGFMSllTQnhnQTRHTmxxeFJPOGtRalNPamJRd1BoMkdUZG5XT01FM1hlazZHUXJRYWxTVUZOcU01Um16MUxnWWJubzNuRzF3aV9tMVNnakZsbi1fTUViak8wVjAzemhwZGE5UXdPWmU5NmxzcjRXVmtxZG9DLWVKaVFB0gHbAUFVX3lxTE40QVdLN1BZRXY0Zm96ODBGQlVBdy1DQUQ5OGwya2sxSGloSWR3bDYxRmFGeDdMYXltMFRTbFh6MGhMYUxHelhMSEZPOF9hWlZkem82UV9ILUZEMFY0Sk5yV2QzXzBkWXZjWlZNNWZ5UlR0bFJXbkhTUnJyeGNIelZLa0VMNEhvRUhDUlB4OG1LcEpYRnlaQmpsVHlYZHY2T29DREFkVmx6bGsxRjJ5N3FiUFlpbWo4WEw4amNONXpNSm9FWXJMb2N2cFBZNHJGa25qSWpjaFVrekVlTQ?oc=5",
+              "publishedAt": "Mon, 20 Dec 2021 08:00:00 GMT",
+              "source": "The Economic Times"
+            },
+            {
+              "title": "Top 5 Cement Stocks- Quantitative Analysis - Invest Yadnya",
+              "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNai1iZHh2NHRfd21TLXBNZ2RTbFpaUnl4dURnVXBBUDM5Yk5xcEpuWWZRbV9vZzVzN1ZDeUhTVTE2NWhaX21zTXJvUWU3UnlKVlhybV9XQXh0aWxSNGdrY3pEb0IxR0c0ekdRMm9UdGxHVkVpUE51bFlTa1ZNRmYtUnR6VksxSkYyWGc?oc=5",
+              "publishedAt": "Fri, 24 Dec 2021 08:00:00 GMT",
+              "source": "Invest Yadnya"
+            }
+          ],
+          "industry": [
+            {
+              "title": "Buy Shree Cement Ltd For Target Rs.33,000 - ICICI Securities - Investment Guru",
+              "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOUEs4SFIzZF9oSXlIMDhBNzhkQ2FMN2lua1l3V083b3VodWV0blFXXzhsUG9ZNEhxVzZvemFCeWxYUlpQbDByZ3VwcnMzRy1aN096bXdGd0NDcXRxNkJhZzRzX21FMXFiUUtXeHJWem1TbV9jSDZpd2tJZVNfbXNEc2VUUHd2dkNuZEl3SGt5NVV0SWJlX3JFZ1BNUXBhV0NiUG9j?oc=5",
+              "publishedAt": "Thu, 09 Dec 2021 08:00:00 GMT",
+              "source": "Investment Guru"
+            }
+          ]
+        }
+      },
+      {
+        "symbol": "SUNPHARMA",
+        "companyName": "Sun Pharmaceutical Industries Ltd.",
+        "redactedSymbol": "STOCK-04",
+        "redactedCompanyName": "Company 04",
+        "categories": {
+          "finance": [
+            {
+              "title": "As young Indians jump into soaring stock market, risks add up - Al Jazeera",
+              "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQndRcWtSaGVYcXMxZ2xZZEJpRjlCOC1Ra3daUFdQcDNzVGJJWXByZnZkZVlVdktyMHBSNEFfcU1zcUJUOTA3RnE2cS1YbzNVUzJyUjFhQ0ZtMHdvWTBnZTMzdmZpdWVJbWY3UlkxUW5QNVhmcWs5SWg4SW9zRUd0NlV5TzY1STV2N2pncEtKblFfMTFoR1VWa2lQVmRid05BaWhJaGRJSDjSAa4BQVVfeXFMTTVOMEt5UGJGcmJqVWpvcXRLdk5GNDlLMklZNU54Sld4akRydDEtWV9neXBENUEwa3ZwaF9EQkJ1X3ZweHBvVzdTWmFvN2pMSkV3VDJaZ0xRTi1hS3Z6cW9rT1lIMjBJYWZ0MkRudG9iQ2YycmRJelNXVDNrNWRIM1Q2cEJoTWFoRW9qYzZmcGxQUEFYRGU1X0MycFFUcWtvRkVUR0dMeUVibDVLYUhR?oc=5",
+              "publishedAt": "Mon, 20 Dec 2021 08:00:00 GMT",
+              "source": "Al Jazeera"
+            },
+            {
+              "title": "Bulletin – December 2021 Global Economy The Indian Banking System - Reserve Bank of Australia",
+              "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUlR4WVljQW40aTV3ZGRHdzBublpxXzh4em5iQmU4ZTFNZ3JtSDJ5U3E2UnFBck80TDVTZ1lKd3RMYXVFMFBDME4xeWdvVFFCdkJESDdZaVdiaTZRT2Q4ZGVtVGhEUWVQd3Q5eTM5Zk1rWmpEM3p4b3lfM3VoczlPSU1ZUVd2WEU2dFBoeA?oc=5",
+              "publishedAt": "Thu, 09 Dec 2021 08:00:00 GMT",
+              "source": "Reserve Bank of Australia"
+            },
+            {
+              "title": "2021 Year in Review - S&P Global",
+              "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQemRfSndhMGowM0R5VmJtaUxiRWs1bmZpdzVud2VMZ2puNDJQVjFqU2VIQkotNV9ZX2IzQVdMRTBBUjZweDg5RzV1dTBILWp0MW5mMEVENThlY01hYVVJYXJ6T3pLa0hwenZkeXg4ekFlWk1lMi1HOXZrSnNGbDZWQVpleGlOc01s?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "S&P Global"
+            },
+            {
+              "title": "India Capital Growth – The show must go on - QuotedData",
+              "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNWHhNRUNaekJXOW5Fdmd6QnFOcGEwcThJLXg0eENYVGdKalE1cGNrT2NuRlVoSTVKN3NJeVdMZzBYR2NrNTZfTm43a1RFRWxSOTl5YW5yQmdRd1ptN2VjWDM3VFQ5Q1J6aUh4anFDOUM3TDNUWVlnaktLT2hXVlNvdm9n?oc=5",
+              "publishedAt": "Wed, 08 Dec 2021 08:00:00 GMT",
+              "source": "QuotedData"
+            },
+            {
+              "title": "Expectation from the Stock Market in 2022 - Elets BFSI",
+              "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9XaElCbXkwN0lXNm5aT2VDa1NMTFpVbkpwNHV4alJkbjVtcVNIbnhWT21keUhucTZXN0xWQmVGRkEwVVBZeGlULW9LOGQ0Tk1WeF9HZUVmMHlGdUJ0S21lTlV2bmdkNFI0R3Fpa1JURUtGeldOQTRmQy1DWQ?oc=5",
+              "publishedAt": "Tue, 28 Dec 2021 08:00:00 GMT",
+              "source": "Elets BFSI"
+            }
+          ],
+          "global": [
+            {
+              "title": "Supply chain resilience in the face of geopolitical risks - Deloitte",
+              "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSVV2bW9tUGNoNjBVVFMzOXUtOEt5aS1OVWhSdXRjWGZyS3NOYUNZTE9ETGc3dXJxRHc4aWJNMHdzZTdpeDdoX2FIVS1qRVExRGxIUWxLNTIyTDVMZVZJb3ptNXdnREQ0LVZ1OVlzLTBRZjYydGptTEZpM3VTSDR6ZzRqQjFlVVBaclJJeUVkQ1AtLWQtWEE?oc=5",
+              "publishedAt": "Fri, 03 Dec 2021 08:00:00 GMT",
+              "source": "Deloitte"
+            },
+            {
+              "title": "LIVE MARKETS Geopolitics 2022: \"managed disagreements\" - Reuters",
+              "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWmFUUHZlazhhUUd3T3VCWERKTG5EaHI2bndjcFI5alRpTzhDdnVYbHl4M0hKZEpRcjVtMWoxRDQ3WnFDVlBDdnRFcHRSWG9OOHhZai14cXJHaE1SVkZhblQxb2NoRjEtdElnazZNWXhEU21qbVU5Q2VLT2ppdDVvRUVXS1NDNUhYaFhjSzZNOWxfQmJlcFUyTmR3QkVnV1BRQVE?oc=5",
+              "publishedAt": "Mon, 13 Dec 2021 08:00:00 GMT",
+              "source": "Reuters"
+            },
+            {
+              "title": "The Power Atlas - European Council on Foreign Relations",
+              "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE10T1FQRjBtLXRhMzZNZTFKX2h0YThZSXNhc2F0VF9MdXVidFBsdFFGOUxha0NpN25laEVYbWFjaDdmMXhkS2hLZXp0NDc?oc=5",
+              "publishedAt": "Thu, 09 Dec 2021 10:57:27 GMT",
+              "source": "European Council on Foreign Relations"
+            },
+            {
+              "title": "Southeast Asia’s choices: Economic, political, and geopolitical integration face complications - orfonline.org",
+              "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBLcjF4akpHd2FrWWU3Q2kwdnlrZlVMZE1lcW5nNmRzazJqUi0wT0FzdXJZbTBITF9oTFFkdng2a2V5cE5HbFJORG40MlNKZUt5UlZnQ3REeFlCV01mR014U3FTclFwWkpmNFRxSUhGVQ?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "orfonline.org"
+            },
+            {
+              "title": "2021 Year in Review - S&P Global",
+              "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQemRfSndhMGowM0R5VmJtaUxiRWs1bmZpdzVud2VMZ2puNDJQVjFqU2VIQkotNV9ZX2IzQVdMRTBBUjZweDg5RzV1dTBILWp0MW5mMEVENThlY01hYVVJYXJ6T3pLa0hwenZkeXg4ekFlWk1lMi1HOXZrSnNGbDZWQVpleGlOc01s?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "S&P Global"
+            }
+          ],
+          "company": [
+            {
+              "title": "Sun Pharma vs Dr Reddy's: Which is Better? - Equitymaster",
+              "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNQzNWbkxzLVlHYnJhYUFYTG1Ka3BDbU1zX29TbXRpTG9fdzJYSnBYNjJQdjVLTWhlaFpQS29VbVlTVzlTQy02QzlZR2pvUklPMy1vcmlQU1hBQThHTDM1TFJ3OC01dUJzU0tfc0lQRW9oOEQ1UXFFLWhnYWtsd2ZzTzVlQzVzSWZEVTZsVmEydU0xSEk1M01UNjhaS0JrcHR6R0xtWWpQbjF1dXlXVUE?oc=5",
+              "publishedAt": "Thu, 16 Dec 2021 08:00:00 GMT",
+              "source": "Equitymaster"
+            },
+            {
+              "title": "Sun Pharma expected to shine on domestic prospects, US sales ramp up - Business Standard",
+              "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxON0RjNFhLbHFNM0ZxTjNXdEFXbnNDYXcwVUlhQ21pV3JUVWdmVnd5WVBZZS1TMGJ4WURjSF96Y09WcFdMSlBpZVdTaVl1eVhPU2wyU2ZNM2huc0V6YmhjNFhWOFlMTnlHUWF4YVNaQVJJb09FOWlMb1dkTzN6cVFLS2xtakdSN2dld3RkeUxZTjE5UTRxUmxBVmU0Um9NdTUzem5oWXktUG1zZTlac0JGbjk5QUZVNUZZZWhyb0w4cVRaS3ZaSjBvMmZQU1BvME1PX0dYNHl30gHbAUFVX3lxTE5iR1Nkc05Ma3BteTA0Y1Bya3lEcDRaSVhYcVFlWXh1TklSUV95UE85UFc3ZS1Tb1dYV3BxYjFLdmxfSWZlM1RZVW10emJXTkhrdTJnaklyWTcyQmpxdTE3dWIwT2RGUXhEX2hfOFdYQlRCT002Wm5jTnFxWDh0em1mVlQ1MG5iaVliY0lMT3pEalFIQTljUzBjNzRqalFqNUNyaE5ETnN0TVd5SUs3YzQ1dDdBYko4dTdYbkVSeEMxSHpQR2hNUmJxZTRlQmtHTEdqZGh5ZlpnMzVYSQ?oc=5",
+              "publishedAt": "Thu, 30 Dec 2021 08:00:00 GMT",
+              "source": "Business Standard"
+            },
+            {
+              "title": "Sun Pharma to set up end to end integrated manufacturing unit in Andhra Pradesh - The Hindu",
+              "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPRk5YSlNoTER6TXh5aUxlRTFSZW0tZWpOZl85UmtDaE9nNk1udnFIeFdvRmlsREJjOTUyQV9nRnNpN0JwMmx6MkJTMXVtSGJ0d3d1MnpIbVFmcGFiUkJWMUF5UTA0eGhNRjY1Q2Joek5ISEdpcUlNZGh1R1EyTzVNaTlqemZ4NFh5dnlkTTNhRVpCdk9QbG1JTVZnemUtSjF6QkpGSG1tR3lxczctel9Vemp2NEVweUhjLUh5TUpkNHVuUFZjY09XU1o5UEc2RU9UWkZ0S2JZZ2FDbDVRUGR4dnFnRnAxQnVK0gHvAUFVX3lxTE95SHlSdFlQa3FtNjN0NnVmRDB5ak8zdVZDZkhLS3VvbXFkMG5wN215Y0N5WHlNeHNwZy03TER3OWJsUFpRRTl1VjMxUi1sVmNTeTlFNDgxQ2dPOEtKYXcycFNOakd4VWVJYnZxMHpTUGtQeFpCMjVjOVRuT1Bxc1YzWGxqWUxmaW5kQmlyNHBSVDJpVDl6US0zQ3pBN2Z0NHk1YW9Ra3VKblZ1cDlXcVhPckdJZnd6cHJxczFqZXlUNU1wZ3ZlQU5TZmJDN1VHNVlrc2EwSlVESTl3YTJVdDhzaWtxNmdQcVE4Tm9lbGtz?oc=5",
+              "publishedAt": "Tue, 28 Dec 2021 08:00:00 GMT",
+              "source": "The Hindu"
+            },
+            {
+              "title": "Sun Pharma to set up new manufacturing plant in Andhra Pradesh - Mint",
+              "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdURYR2hHb283dXRGLWl2Rkh3bk5ham1na1RESkZxRGFjd29wdzhkY0R2LVBrRUVGWWtGNHN2WlB5TlpLdVdXSE1mYWFvcUxuX2NWSUZVNXBoMTZVcVJhV3BRcFhwY1RFaV9zbTFMbHF4dkhGX0Q5elN4MkwxSlBNOXFsTW5nQ21xNmJDTlpGQmpGTlNNVTNGRURuMTA3NEVmblh4V0xQVmMtd0V2UUdRdmx2a056Mjh5Q2JBeW55TdIBxAFBVV95cUxNOC13RGRka2taalNIa2NsQzdRNV9tSHVpUDRfYXNCcVJLYmV6dnVILUt5anpmRGk1OGhvSGFXY0lCYXEybFJzQUZ1QTdGelU1UzV3MW5sZ25SSjkzOTI3b3ZNd3dKVWtDODVVMFlwV2h1QUo2T2Q1RVRsekY4U3JoVHZzVjlETVlQakhUaDdYQWRrV3N4dnBJdVFYZGFCd1ZhUVJPSUNoMmlVUi1aMXppaFYxeFlGVGI0QXppT2hScXpwNWl5?oc=5",
+              "publishedAt": "Tue, 28 Dec 2021 08:00:00 GMT",
+              "source": "Mint"
+            },
+            {
+              "title": "Sun Pharma receives DCGI approval to market Molnupiravir for COVID-19 treatment in India - The Hans India",
+              "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPOW85U0J2b3IwMGtVV1NkbHdRSDktQkxXcU1VeE1wYlhzVk5qZDRURGxYZjlvN0R2c2Y1NnI2YndjaHRCWG9UZFlFTkxQdUNmaHBjSkNQOFZEeVJMYnJaeF9ZZ2ZlOXM1YnZrWVNmdXFOSnMyR2tGWFRtNm0tUmNHSTloX2RacnM5Y3JkNWZaeEd0RUdVdkNiYjdjaEVCeGYtbW54T1VGNXJKTmM2bkpMZUpzcDgxaEtIeGlGNWpDZjFhWW93d2ZoR0pjdEl5UdIB0wFBVV95cUxNNGxoZ1BTMnVvWGtHdWJRRVY5REVwczZueGNQbFNhRVJyaTBJVWpUbkgzRFhJUXhpTldscmtna0dicE1DbV9QTzFsNUZ6SkJ0Yi1hVl93aWRoYXFLY0kwajQzbDhCb1RLc0ZOYUxOSUhTbENjLXk0dDNXdG95RVJBQmJudW9XTEl0TUtCaFN2dnplYzMtQlBpLWpzSEZSWlJYd29uQzFGMTYzRWR6TUJ2Z1lOcFYwNm5VTy1OV2lKVmtjazVReWdDemRiZXpQM1FRMEU4?oc=5",
+              "publishedAt": "Tue, 28 Dec 2021 08:00:00 GMT",
+              "source": "The Hans India"
+            }
+          ],
+          "industry": [
+            {
+              "title": "Sun Pharma to set up end to end integrated manufacturing unit in Andhra Pradesh - The Hindu",
+              "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPRk5YSlNoTER6TXh5aUxlRTFSZW0tZWpOZl85UmtDaE9nNk1udnFIeFdvRmlsREJjOTUyQV9nRnNpN0JwMmx6MkJTMXVtSGJ0d3d1MnpIbVFmcGFiUkJWMUF5UTA0eGhNRjY1Q2Joek5ISEdpcUlNZGh1R1EyTzVNaTlqemZ4NFh5dnlkTTNhRVpCdk9QbG1JTVZnemUtSjF6QkpGSG1tR3lxczctel9Vemp2NEVweUhjLUh5TUpkNHVuUFZjY09XU1o5UEc2RU9UWkZ0S2JZZ2FDbDVRUGR4dnFnRnAxQnVK0gHvAUFVX3lxTE95SHlSdFlQa3FtNjN0NnVmRDB5ak8zdVZDZkhLS3VvbXFkMG5wN215Y0N5WHlNeHNwZy03TER3OWJsUFpRRTl1VjMxUi1sVmNTeTlFNDgxQ2dPOEtKYXcycFNOakd4VWVJYnZxMHpTUGtQeFpCMjVjOVRuT1Bxc1YzWGxqWUxmaW5kQmlyNHBSVDJpVDl6US0zQ3pBN2Z0NHk1YW9Ra3VKblZ1cDlXcVhPckdJZnd6cHJxczFqZXlUNU1wZ3ZlQU5TZmJDN1VHNVlrc2EwSlVESTl3YTJVdDhzaWtxNmdQcVE4Tm9lbGtz?oc=5",
+              "publishedAt": "Tue, 28 Dec 2021 08:00:00 GMT",
+              "source": "The Hindu"
+            },
+            {
+              "title": "Sun Pharma vs Dr Reddy's: Which is Better? - Equitymaster",
+              "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNQzNWbkxzLVlHYnJhYUFYTG1Ka3BDbU1zX29TbXRpTG9fdzJYSnBYNjJQdjVLTWhlaFpQS29VbVlTVzlTQy02QzlZR2pvUklPMy1vcmlQU1hBQThHTDM1TFJ3OC01dUJzU0tfc0lQRW9oOEQ1UXFFLWhnYWtsd2ZzTzVlQzVzSWZEVTZsVmEydU0xSEk1M01UNjhaS0JrcHR6R0xtWWpQbjF1dXlXVUE?oc=5",
+              "publishedAt": "Thu, 16 Dec 2021 08:00:00 GMT",
+              "source": "Equitymaster"
+            },
+            {
+              "title": "Sun Pharma gets DCGI nod for generic version of Merck’s pill in India - The Statesman",
+              "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVV85bDAtcXJ4SGJDZkZGWEY2ZXhpemZtcVl0UGpkZDZEcDgyT1dyZ3JoM29GVzhiTHFld1drRkhsWGdlRm85djg4ZHBqaFZhQ1h5MEVja01wNHJyVnBNNTU4QkxyRC0tUnFfM1JhdWhpRzRjUVc4OW5kNUdmbFg4OEI0VTdiRjhtVV80VFJmYS1QNW1oZW1velFuVGZCM2Q2dVdFRnNLQmtZaE5PTUHSAbMBQVVfeXFMTXo0WjVUMDE2NnVwT1JzQVlsd2VuLVRpSVB6ZHVuRmx4MjJHNWdFUVVxZnBSbTFmSGh4VHpUVklLb0YwVWRVa1dTbDhVU25FcWZNblhsdzY2Ri1tR1N6a2RuOXdQbGpwWDNuQXo1cng5bXh5aWNNcGhpRjg2WWVZZDB0NlZaeVg3QnRjUXFDWEhhb0o2TW84T0R5dVdlVF9rRnRNbDdoSjNiWWxvdWdtR18xWjQ?oc=5",
+              "publishedAt": "Tue, 28 Dec 2021 08:00:00 GMT",
+              "source": "The Statesman"
+            },
+            {
+              "title": "Sun Pharma spends more than double of mandatory CSR obligation for FY21 - TheCSRUniverse",
+              "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOb2RfbUZQSEJ0M2RWVVowb05RekM2X3lvek8wUG9GNkhOeUdVZElGNUo3RW5jLXJ1N3dodWlCT0lXblRiSm9nM0RlbUFBcjZjMVJXZzYzdURGR3FhV3hSWDhLTlhER1VGRnY5TmJVNjZvVmVtX203QjBjb1NTTnFmcU5CNHR6bDRyVzcwNkotR2hxYnVrVzB4c0lTcVJVT3BXWThtVXJNMkhQT1U?oc=5",
+              "publishedAt": "Tue, 07 Dec 2021 08:00:00 GMT",
+              "source": "TheCSRUniverse"
+            },
+            {
+              "title": "Sun Pharma to set up manufacturing facility in Andhra Pradesh - Express Pharma",
+              "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeVkycXRqRldpYmtGSDRrNFF3VUFFU3VyUnBJa0dDOGxsYlpKcmdjQjNlUFVSd0dyR3NsQjFrRm9weVN5UHRWSlBndmdWenRrSWE1MExwNEkySG5EUTdod1JQNC1HSUFtWk9PWExsWEtNZzV6bVpndTY5M2Y4azhmVUcyVHhYZGQ2T3h5ZU1Pd3RLVjVSOHfSAZsBQVVfeXFMUHlZYXlvbTVHTlBzdDhBdlI4RWMwNTlOTkIycWN3WjQtTjgtT3U4OEIxbVNULW5pUkMzTkV5U3hWNHNjZlhoSkY5ZUFUZm92bXF2T2Mwby1HdUZmLTlaWkxvVmhQU0kyd0NrY05HclF4YXplZ01yaWRJdTRmXzRnMk4xTFlHcHlPSHBHSGxEelJjM2FMRFI5blJQaEE?oc=5",
+              "publishedAt": "Wed, 29 Dec 2021 08:00:00 GMT",
+              "source": "Express Pharma"
+            }
+          ]
+        }
+      },
+      {
+        "symbol": "ZEEL",
+        "companyName": "Zee Entertainment Enterprises Ltd.",
+        "redactedSymbol": "STOCK-03",
+        "redactedCompanyName": "Company 03",
+        "categories": {
+          "finance": [
+            {
+              "title": "As young Indians jump into soaring stock market, risks add up - Al Jazeera",
+              "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQndRcWtSaGVYcXMxZ2xZZEJpRjlCOC1Ra3daUFdQcDNzVGJJWXByZnZkZVlVdktyMHBSNEFfcU1zcUJUOTA3RnE2cS1YbzNVUzJyUjFhQ0ZtMHdvWTBnZTMzdmZpdWVJbWY3UlkxUW5QNVhmcWs5SWg4SW9zRUd0NlV5TzY1STV2N2pncEtKblFfMTFoR1VWa2lQVmRid05BaWhJaGRJSDjSAa4BQVVfeXFMTTVOMEt5UGJGcmJqVWpvcXRLdk5GNDlLMklZNU54Sld4akRydDEtWV9neXBENUEwa3ZwaF9EQkJ1X3ZweHBvVzdTWmFvN2pMSkV3VDJaZ0xRTi1hS3Z6cW9rT1lIMjBJYWZ0MkRudG9iQ2YycmRJelNXVDNrNWRIM1Q2cEJoTWFoRW9qYzZmcGxQUEFYRGU1X0MycFFUcWtvRkVUR0dMeUVibDVLYUhR?oc=5",
+              "publishedAt": "Mon, 20 Dec 2021 08:00:00 GMT",
+              "source": "Al Jazeera"
+            },
+            {
+              "title": "Bulletin – December 2021 Global Economy The Indian Banking System - Reserve Bank of Australia",
+              "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUlR4WVljQW40aTV3ZGRHdzBublpxXzh4em5iQmU4ZTFNZ3JtSDJ5U3E2UnFBck80TDVTZ1lKd3RMYXVFMFBDME4xeWdvVFFCdkJESDdZaVdiaTZRT2Q4ZGVtVGhEUWVQd3Q5eTM5Zk1rWmpEM3p4b3lfM3VoczlPSU1ZUVd2WEU2dFBoeA?oc=5",
+              "publishedAt": "Thu, 09 Dec 2021 08:00:00 GMT",
+              "source": "Reserve Bank of Australia"
+            },
+            {
+              "title": "2021 Year in Review - S&P Global",
+              "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQemRfSndhMGowM0R5VmJtaUxiRWs1bmZpdzVud2VMZ2puNDJQVjFqU2VIQkotNV9ZX2IzQVdMRTBBUjZweDg5RzV1dTBILWp0MW5mMEVENThlY01hYVVJYXJ6T3pLa0hwenZkeXg4ekFlWk1lMi1HOXZrSnNGbDZWQVpleGlOc01s?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "S&P Global"
+            },
+            {
+              "title": "India Capital Growth – The show must go on - QuotedData",
+              "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNWHhNRUNaekJXOW5Fdmd6QnFOcGEwcThJLXg0eENYVGdKalE1cGNrT2NuRlVoSTVKN3NJeVdMZzBYR2NrNTZfTm43a1RFRWxSOTl5YW5yQmdRd1ptN2VjWDM3VFQ5Q1J6aUh4anFDOUM3TDNUWVlnaktLT2hXVlNvdm9n?oc=5",
+              "publishedAt": "Wed, 08 Dec 2021 08:00:00 GMT",
+              "source": "QuotedData"
+            },
+            {
+              "title": "Expectation from the Stock Market in 2022 - Elets BFSI",
+              "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9XaElCbXkwN0lXNm5aT2VDa1NMTFpVbkpwNHV4alJkbjVtcVNIbnhWT21keUhucTZXN0xWQmVGRkEwVVBZeGlULW9LOGQ0Tk1WeF9HZUVmMHlGdUJ0S21lTlV2bmdkNFI0R3Fpa1JURUtGeldOQTRmQy1DWQ?oc=5",
+              "publishedAt": "Tue, 28 Dec 2021 08:00:00 GMT",
+              "source": "Elets BFSI"
+            }
+          ],
+          "global": [
+            {
+              "title": "Supply chain resilience in the face of geopolitical risks - Deloitte",
+              "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSVV2bW9tUGNoNjBVVFMzOXUtOEt5aS1OVWhSdXRjWGZyS3NOYUNZTE9ETGc3dXJxRHc4aWJNMHdzZTdpeDdoX2FIVS1qRVExRGxIUWxLNTIyTDVMZVZJb3ptNXdnREQ0LVZ1OVlzLTBRZjYydGptTEZpM3VTSDR6ZzRqQjFlVVBaclJJeUVkQ1AtLWQtWEE?oc=5",
+              "publishedAt": "Fri, 03 Dec 2021 08:00:00 GMT",
+              "source": "Deloitte"
+            },
+            {
+              "title": "LIVE MARKETS Geopolitics 2022: \"managed disagreements\" - Reuters",
+              "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWmFUUHZlazhhUUd3T3VCWERKTG5EaHI2bndjcFI5alRpTzhDdnVYbHl4M0hKZEpRcjVtMWoxRDQ3WnFDVlBDdnRFcHRSWG9OOHhZai14cXJHaE1SVkZhblQxb2NoRjEtdElnazZNWXhEU21qbVU5Q2VLT2ppdDVvRUVXS1NDNUhYaFhjSzZNOWxfQmJlcFUyTmR3QkVnV1BRQVE?oc=5",
+              "publishedAt": "Mon, 13 Dec 2021 08:00:00 GMT",
+              "source": "Reuters"
+            },
+            {
+              "title": "The Power Atlas - European Council on Foreign Relations",
+              "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE10T1FQRjBtLXRhMzZNZTFKX2h0YThZSXNhc2F0VF9MdXVidFBsdFFGOUxha0NpN25laEVYbWFjaDdmMXhkS2hLZXp0NDc?oc=5",
+              "publishedAt": "Thu, 09 Dec 2021 10:57:27 GMT",
+              "source": "European Council on Foreign Relations"
+            },
+            {
+              "title": "Southeast Asia’s choices: Economic, political, and geopolitical integration face complications - orfonline.org",
+              "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBLcjF4akpHd2FrWWU3Q2kwdnlrZlVMZE1lcW5nNmRzazJqUi0wT0FzdXJZbTBITF9oTFFkdng2a2V5cE5HbFJORG40MlNKZUt5UlZnQ3REeFlCV01mR014U3FTclFwWkpmNFRxSUhGVQ?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "orfonline.org"
+            },
+            {
+              "title": "2021 Year in Review - S&P Global",
+              "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQemRfSndhMGowM0R5VmJtaUxiRWs1bmZpdzVud2VMZ2puNDJQVjFqU2VIQkotNV9ZX2IzQVdMRTBBUjZweDg5RzV1dTBILWp0MW5mMEVENThlY01hYVVJYXJ6T3pLa0hwenZkeXg4ekFlWk1lMi1HOXZrSnNGbDZWQVpleGlOc01s?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "S&P Global"
+            }
+          ],
+          "company": [
+            {
+              "title": "Sony Pictures Networks and Zee Sign Definitive Agreement Towards Creating Indian Broadcast Giant - Variety",
+              "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUHJXSFREaEpWMVZVM1NYX1NrMkhrcnIyRVVsUFlBUHU0MTJIb2FZY2pOZGpMbndCMHJUbDdBaE9HaUhkMW15Z1Q1SWFOS21uMlFEM2EwbnJzWFQtbVlPSGJ0ZE1FVXV6Mmc5SmRpNHFYZTA5VkE5T25vemQxckVPNkYtbDBCWmdhOWNIUk9hajQ2NmZuMmc?oc=5",
+              "publishedAt": "Tue, 21 Dec 2021 08:00:00 GMT",
+              "source": "Variety"
+            },
+            {
+              "title": "ZEEL, Sony seal deal to merge - The Indian Express",
+              "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQeW1mbWdBN0JiRGN6YzZhNmVTUjlRVTdtbE93NjZuMzRLZUVEX0R5ajJrR1JXSlBWdTQydHk5OS1oQ2VtdUt3blRhWTNhbURaU2lpbHNCRTlna1pCZFR6cEpUNGRFUjluWGlpVjBzWmI4WDktMl9vUlZ0VGpIM1RIWU9fTUFMUTZXdU56RkVjUnhidWNpdGh2bzFkdnpzUzdMaTN1aHpqTkk5bFhYMFhKRkZWVnZTVEFHM0g1aXdFVTlTeUJmS2VhSdIBzwFBVV95cUxPQ0VBcng1dWFOaERLN2poc1lSNV9fek9uaHN1ZExQcmduVVNOMFlONktTZ3lxQlQzTlN0c2VBb1VMT0c2eWt2OWU0MWFyc1p4X083b2RjdEVyN1cxeGZrckFZckJTLVdyMFJLVXMzejRjNDhDdWt5eXJxanJ1QVlJdXQ1UzlKanhFYUtRTmdqU3JWVGJPSEZkbm4yU3YxY0VGbzc4bFJaZUdVUlFZeEVWYjNNdDZqNG9jMTl5ZTFzRFRseldzRDc3akYwS2lodFk?oc=5",
+              "publishedAt": "Wed, 22 Dec 2021 08:00:00 GMT",
+              "source": "The Indian Express"
+            },
+            {
+              "title": "Zee Entertainment, Sony Pictures Networks India sign definitive agreements for merger - The New Indian Express",
+              "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxONDdSM3gtNUM3SmRrNkYtYmZJeDNBUHI4bFVlNHJScy03dldmNFZNSmZoUk0yTHRTRUJiM2ZiX3B2UmdaakxqY1NVR1k2ZWR0SUpEdUF0dGEtRi1zSi1sZS1hSEdoZ0tRRkUtVVN5SndfNlhFamdzRFVQNE4tMWJ6WUR0ZUoyVzdoN0h5elcxNTcxQ1VGeVZHbWJDdDM2WHl1U0tUVzYxaHQzQm96OVlEdEdIcF9tUjhrQnp2Mlp0YkNVcTVHRjhUc1NEUFhCM2U5eFcyZGl2bDFpNjE3T0RCZS1Vak1ad9IB8wFBVV95cUxOdEl6ZlhrWmFuMjBDVlBNMzJGVlBGeXRtSmE5WWtLS1JSSENRamFRWWF1M1B1M24xRnNZSEUyVDZlVldsOXJVWFNhc2FiSUtmUnFyR3dOY001S0M2aHVZbXQ1Ykh0cHRjV25oSUZNbHNvY1ZKd3hjbG16aENNOGdDb3RLVkVTRkVKVktGeEg5by1XM0Y2cXNubEFiOHJWd0VPOGgzQ3ZzTWhITW9lcklsRk4yV3Z1RC1wQ0Y4a1JWQnl2ekZfa3Q4Mm4xY3czR1p5RlpCVGNVTUtpblJyVW1tcjN1X3RXM2FHcWNobTZGMUdTMGs?oc=5",
+              "publishedAt": "Wed, 22 Dec 2021 08:00:00 GMT",
+              "source": "The New Indian Express"
+            },
+            {
+              "title": "Zee-Sony merger: Here's how the united entity will look like - Moneycontrol.com",
+              "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPX2dkU2xubGtXdFY3d0NGLWNJdUZZVldwbnBNSnU0cFlGREFPOVFSN3RpU08yYlRtemRqRlBHZ2ZxNTB4Zl9sSTdEYmJ1RzNQRTM3RE9XNW8tLV8zckxVNkpBRVdGQUxhODl4U2tDTkQ5Q0JTRTdpT0hVNTFKWlhIWjlUZnNuRWY3eXJheGc0RUQwUFRNS2RmaGhGTGVubDdCRWZ6UmlrdFVJMC1nS2JKY2RCM2NLS2VOWTQ4UTRXbDc2Z9IBxwFBVV95cUxNby1VekQ5RGxBdTVacllmNnlqTm1pcURwX2NjcHd3M1BXcEdCa2VsYk05Q2lMYk9jVjY4aDBQSEdjX0VxbmgzWlNOakdQREtVLVpYa1Y0VURlTHVhc3Nkb1pabWI5clZnRE9La0YwOHVpbGp6RldtY2hVNWl5RkFQWFlpNUYzWnZ2NFlhb2VibDZSMEhGSG1ydjMxVDU3eW95ZkFabGFfMV9lZFZFdUJWMDdDaDFXVE0tZVM0TFVhU3Nza3NyQk0w?oc=5",
+              "publishedAt": "Wed, 22 Dec 2021 08:00:00 GMT",
+              "source": "Moneycontrol.com"
+            },
+            {
+              "title": "Sony Zee merger: All you need to know - Jagran Josh",
+              "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNT3pDTmFTcmxJVzhmZV9MNmpyWXozYUxBWGVFUVp4bTI0UTBXLVE2djVSajI0bkZzQk9Xa1RHZGJ4dVFuT19KeWtaamJYb0hBSE5oN1BkZjFyTUJ1VHBGbHlUSzI1VzhJRDBlUmJYRjJUZE9kSFFLQjhTbUdPRUtBZ0ZrUkc5dlluOVRFTk16ZnNwSW1vYk1n?oc=5",
+              "publishedAt": "Wed, 22 Dec 2021 08:00:00 GMT",
+              "source": "Jagran Josh"
+            }
+          ],
+          "industry": [
+            {
+              "title": "Sony Pictures Networks and Zee Sign Definitive Agreement Towards Creating Indian Broadcast Giant - Variety",
+              "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUHJXSFREaEpWMVZVM1NYX1NrMkhrcnIyRVVsUFlBUHU0MTJIb2FZY2pOZGpMbndCMHJUbDdBaE9HaUhkMW15Z1Q1SWFOS21uMlFEM2EwbnJzWFQtbVlPSGJ0ZE1FVXV6Mmc5SmRpNHFYZTA5VkE5T25vemQxckVPNkYtbDBCWmdhOWNIUk9hajQ2NmZuMmc?oc=5",
+              "publishedAt": "Tue, 21 Dec 2021 08:00:00 GMT",
+              "source": "Variety"
+            },
+            {
+              "title": "India’s Zee is banking on a Pakistani show for its success - Al Jazeera",
+              "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNODFNeGxIa0VLSm5Jd3JmbnJENjE1T3c1MnlhSlJ3YTJqWUFzNEdsekJJUm9fcEw1TFlKdGRKMlhsVDhfM19pY3R1bG5lbXBCRXZYc0wzT2pKeV9QX3pxZ1JPbkxxMU53NHc4aGNEZUF5RXdaVS1KQ0RtcWlraWNIZnBXUzVPTTloRE9jMS1FdVl6cXZEUDhpYXdZbUhjY1dSSTFkeNIBqgFBVV95cUxPTVNzTXRPUUVWVW1Db1BldlpKMEwxUmMwQWZQWWE3bzBZdEVtMXJGXzF2aDJPaHYzaHpES1h0QzFNVFY3WHFOZmxZUXpFT2F6WVNXRHhFSEMtN0ROQm1jV28tUlYzQ2pCOWMtVG1fYzBuWTRIeHdLdHppWWZ0VUZ4eTNLaUZIbmRjVFFRMkxWMzJSUDRjZGdtOUcxaUJZOHZtNW1rb0UyVHZiUQ?oc=5",
+              "publishedAt": "Fri, 10 Dec 2021 08:00:00 GMT",
+              "source": "Al Jazeera"
+            },
+            {
+              "title": "Zee Cinema and Zee TV plan an entertainment fiesta to celebrate ‘India 75’ in collaboration with Zee Live - IWMBuzz",
+              "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQSDVERXd5MWIyUVl5WHZUZl82d2l0Y1pWSEptTW1Za0o4b1ZIMzdnYktmeWZGSkozQkpyMHoxQ2Vna3pQZWh4N1RSM2R0ZXRXcWJtR3FFd3BTTUhHWWliSTI2ZFNTMTZScWRqTjhsZ2NTWTNXU2VmaUZvN0IzckZFOE1pclNqd2MtMXBLOXdPSHVFS0xkbUVxZk8zbmZwMkE3T0ozQlEtRE1NYzRoXzJQSGpfZ05xOHY3UFhhQVNlazhOay1LOTB5NElfd1ZKX2lJZmNueEhXYUJMMjkzbVJwSmdBbFUzMjF6S3c?oc=5",
+              "publishedAt": "Tue, 21 Dec 2021 08:00:00 GMT",
+              "source": "IWMBuzz"
+            },
+            {
+              "title": "Zee Entertainment, Sony Pictures Networks India sign definitive agreements for merger - The New Indian Express",
+              "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxONDdSM3gtNUM3SmRrNkYtYmZJeDNBUHI4bFVlNHJScy03dldmNFZNSmZoUk0yTHRTRUJiM2ZiX3B2UmdaakxqY1NVR1k2ZWR0SUpEdUF0dGEtRi1zSi1sZS1hSEdoZ0tRRkUtVVN5SndfNlhFamdzRFVQNE4tMWJ6WUR0ZUoyVzdoN0h5elcxNTcxQ1VGeVZHbWJDdDM2WHl1U0tUVzYxaHQzQm96OVlEdEdIcF9tUjhrQnp2Mlp0YkNVcTVHRjhUc1NEUFhCM2U5eFcyZGl2bDFpNjE3T0RCZS1Vak1ad9IB8wFBVV95cUxOdEl6ZlhrWmFuMjBDVlBNMzJGVlBGeXRtSmE5WWtLS1JSSENRamFRWWF1M1B1M24xRnNZSEUyVDZlVldsOXJVWFNhc2FiSUtmUnFyR3dOY001S0M2aHVZbXQ1Ykh0cHRjV25oSUZNbHNvY1ZKd3hjbG16aENNOGdDb3RLVkVTRkVKVktGeEg5by1XM0Y2cXNubEFiOHJWd0VPOGgzQ3ZzTWhITW9lcklsRk4yV3Z1RC1wQ0Y4a1JWQnl2ekZfa3Q4Mm4xY3czR1p5RlpCVGNVTUtpblJyVW1tcjN1X3RXM2FHcWNobTZGMUdTMGs?oc=5",
+              "publishedAt": "Wed, 22 Dec 2021 08:00:00 GMT",
+              "source": "The New Indian Express"
+            },
+            {
+              "title": "Zee-Sony merger: Here's how the united entity will look like - Moneycontrol.com",
+              "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPX2dkU2xubGtXdFY3d0NGLWNJdUZZVldwbnBNSnU0cFlGREFPOVFSN3RpU08yYlRtemRqRlBHZ2ZxNTB4Zl9sSTdEYmJ1RzNQRTM3RE9XNW8tLV8zckxVNkpBRVdGQUxhODl4U2tDTkQ5Q0JTRTdpT0hVNTFKWlhIWjlUZnNuRWY3eXJheGc0RUQwUFRNS2RmaGhGTGVubDdCRWZ6UmlrdFVJMC1nS2JKY2RCM2NLS2VOWTQ4UTRXbDc2Z9IBxwFBVV95cUxNby1VekQ5RGxBdTVacllmNnlqTm1pcURwX2NjcHd3M1BXcEdCa2VsYk05Q2lMYk9jVjY4aDBQSEdjX0VxbmgzWlNOakdQREtVLVpYa1Y0VURlTHVhc3Nkb1pabWI5clZnRE9La0YwOHVpbGp6RldtY2hVNWl5RkFQWFlpNUYzWnZ2NFlhb2VibDZSMEhGSG1ydjMxVDU3eW95ZkFabGFfMV9lZFZFdUJWMDdDaDFXVE0tZVM0TFVhU3Nza3NyQk0w?oc=5",
+              "publishedAt": "Wed, 22 Dec 2021 08:00:00 GMT",
+              "source": "Moneycontrol.com"
+            }
+          ]
+        }
+      },
+      {
+        "symbol": "TATASTEEL",
+        "companyName": "Tata Steel Ltd.",
+        "redactedSymbol": "STOCK-02",
+        "redactedCompanyName": "Company 02",
+        "categories": {
+          "finance": [
+            {
+              "title": "As young Indians jump into soaring stock market, risks add up - Al Jazeera",
+              "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQndRcWtSaGVYcXMxZ2xZZEJpRjlCOC1Ra3daUFdQcDNzVGJJWXByZnZkZVlVdktyMHBSNEFfcU1zcUJUOTA3RnE2cS1YbzNVUzJyUjFhQ0ZtMHdvWTBnZTMzdmZpdWVJbWY3UlkxUW5QNVhmcWs5SWg4SW9zRUd0NlV5TzY1STV2N2pncEtKblFfMTFoR1VWa2lQVmRid05BaWhJaGRJSDjSAa4BQVVfeXFMTTVOMEt5UGJGcmJqVWpvcXRLdk5GNDlLMklZNU54Sld4akRydDEtWV9neXBENUEwa3ZwaF9EQkJ1X3ZweHBvVzdTWmFvN2pMSkV3VDJaZ0xRTi1hS3Z6cW9rT1lIMjBJYWZ0MkRudG9iQ2YycmRJelNXVDNrNWRIM1Q2cEJoTWFoRW9qYzZmcGxQUEFYRGU1X0MycFFUcWtvRkVUR0dMeUVibDVLYUhR?oc=5",
+              "publishedAt": "Mon, 20 Dec 2021 08:00:00 GMT",
+              "source": "Al Jazeera"
+            },
+            {
+              "title": "Bulletin – December 2021 Global Economy The Indian Banking System - Reserve Bank of Australia",
+              "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUlR4WVljQW40aTV3ZGRHdzBublpxXzh4em5iQmU4ZTFNZ3JtSDJ5U3E2UnFBck80TDVTZ1lKd3RMYXVFMFBDME4xeWdvVFFCdkJESDdZaVdiaTZRT2Q4ZGVtVGhEUWVQd3Q5eTM5Zk1rWmpEM3p4b3lfM3VoczlPSU1ZUVd2WEU2dFBoeA?oc=5",
+              "publishedAt": "Thu, 09 Dec 2021 08:00:00 GMT",
+              "source": "Reserve Bank of Australia"
+            },
+            {
+              "title": "2021 Year in Review - S&P Global",
+              "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQemRfSndhMGowM0R5VmJtaUxiRWs1bmZpdzVud2VMZ2puNDJQVjFqU2VIQkotNV9ZX2IzQVdMRTBBUjZweDg5RzV1dTBILWp0MW5mMEVENThlY01hYVVJYXJ6T3pLa0hwenZkeXg4ekFlWk1lMi1HOXZrSnNGbDZWQVpleGlOc01s?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "S&P Global"
+            },
+            {
+              "title": "India Capital Growth – The show must go on - QuotedData",
+              "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNWHhNRUNaekJXOW5Fdmd6QnFOcGEwcThJLXg0eENYVGdKalE1cGNrT2NuRlVoSTVKN3NJeVdMZzBYR2NrNTZfTm43a1RFRWxSOTl5YW5yQmdRd1ptN2VjWDM3VFQ5Q1J6aUh4anFDOUM3TDNUWVlnaktLT2hXVlNvdm9n?oc=5",
+              "publishedAt": "Wed, 08 Dec 2021 08:00:00 GMT",
+              "source": "QuotedData"
+            },
+            {
+              "title": "Expectation from the Stock Market in 2022 - Elets BFSI",
+              "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9XaElCbXkwN0lXNm5aT2VDa1NMTFpVbkpwNHV4alJkbjVtcVNIbnhWT21keUhucTZXN0xWQmVGRkEwVVBZeGlULW9LOGQ0Tk1WeF9HZUVmMHlGdUJ0S21lTlV2bmdkNFI0R3Fpa1JURUtGeldOQTRmQy1DWQ?oc=5",
+              "publishedAt": "Tue, 28 Dec 2021 08:00:00 GMT",
+              "source": "Elets BFSI"
+            }
+          ],
+          "global": [
+            {
+              "title": "Supply chain resilience in the face of geopolitical risks - Deloitte",
+              "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSVV2bW9tUGNoNjBVVFMzOXUtOEt5aS1OVWhSdXRjWGZyS3NOYUNZTE9ETGc3dXJxRHc4aWJNMHdzZTdpeDdoX2FIVS1qRVExRGxIUWxLNTIyTDVMZVZJb3ptNXdnREQ0LVZ1OVlzLTBRZjYydGptTEZpM3VTSDR6ZzRqQjFlVVBaclJJeUVkQ1AtLWQtWEE?oc=5",
+              "publishedAt": "Fri, 03 Dec 2021 08:00:00 GMT",
+              "source": "Deloitte"
+            },
+            {
+              "title": "LIVE MARKETS Geopolitics 2022: \"managed disagreements\" - Reuters",
+              "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWmFUUHZlazhhUUd3T3VCWERKTG5EaHI2bndjcFI5alRpTzhDdnVYbHl4M0hKZEpRcjVtMWoxRDQ3WnFDVlBDdnRFcHRSWG9OOHhZai14cXJHaE1SVkZhblQxb2NoRjEtdElnazZNWXhEU21qbVU5Q2VLT2ppdDVvRUVXS1NDNUhYaFhjSzZNOWxfQmJlcFUyTmR3QkVnV1BRQVE?oc=5",
+              "publishedAt": "Mon, 13 Dec 2021 08:00:00 GMT",
+              "source": "Reuters"
+            },
+            {
+              "title": "The Power Atlas - European Council on Foreign Relations",
+              "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE10T1FQRjBtLXRhMzZNZTFKX2h0YThZSXNhc2F0VF9MdXVidFBsdFFGOUxha0NpN25laEVYbWFjaDdmMXhkS2hLZXp0NDc?oc=5",
+              "publishedAt": "Thu, 09 Dec 2021 10:57:27 GMT",
+              "source": "European Council on Foreign Relations"
+            },
+            {
+              "title": "Southeast Asia’s choices: Economic, political, and geopolitical integration face complications - orfonline.org",
+              "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBLcjF4akpHd2FrWWU3Q2kwdnlrZlVMZE1lcW5nNmRzazJqUi0wT0FzdXJZbTBITF9oTFFkdng2a2V5cE5HbFJORG40MlNKZUt5UlZnQ3REeFlCV01mR014U3FTclFwWkpmNFRxSUhGVQ?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "orfonline.org"
+            },
+            {
+              "title": "2021 Year in Review - S&P Global",
+              "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQemRfSndhMGowM0R5VmJtaUxiRWs1bmZpdzVud2VMZ2puNDJQVjFqU2VIQkotNV9ZX2IzQVdMRTBBUjZweDg5RzV1dTBILWp0MW5mMEVENThlY01hYVVJYXJ6T3pLa0hwenZkeXg4ekFlWk1lMi1HOXZrSnNGbDZWQVpleGlOc01s?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "S&P Global"
+            }
+          ],
+          "company": [
+            {
+              "title": "Tata Steel deploys its first Bio-Fuel powered ship for imported raw material transportation - Tata Steel",
+              "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPWllQeTk0VDlSWVJHbzdpS2lvalBOMFM0WXVVMHJpWGE5ZFZHVUFXLUtpZS1UNTRJX0hmTFFqbGFCWHcwcUtFblhDVnNoUVB6c3Q5aUdmbjk0YUtiN0hNakdMdjFkclN6RUtyNEhPd1pCQzJNUmxzc18zZmVsTFJkbi00LXlnMU5RVl85eFdFMXFoaTgweUpNeGxZT2xEN1I3ZGQwWm9wZkIzWGZEN3gwa1lBNjZtTlNIWURxaWpaNUFvRkdSSHRCS0Rjd0o4QmFST0FsV1pXa2xhUUF6bWJGUU5LcVhjd0l2X3NybFZjejg?oc=5",
+              "publishedAt": "Mon, 06 Dec 2021 08:00:00 GMT",
+              "source": "Tata Steel"
+            },
+            {
+              "title": "Top 6 Undervalued Stocks to Add to Your Watchlist - Equitymaster",
+              "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVEZaOE1VOTZHNE9nbmM3M0RwSFJDUGJKdDR4cTdod2RBNk1OUHo5cVRZVlFYNGZyTG5iZUtkNnQ1Q2JhSGp2UXFxQ2pSdHdXYTNBMFIwWGR2bk5SUml1bjA1b1V3aU1KSmlaODZUYUI3YUk2dVl5b25KdWN2TnJQbzhUb3J1dWJDUnZ5TEUwSEF1WkJoalpsbGNWUmpnR2VMaXNEZzFRdHlyRC1jRG45aW5DMVFiSXpUbWpv?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "Equitymaster"
+            },
+            {
+              "title": "Share Market Updates: Sensex zooms over 500 points, Nifty above 16,700; MapmyIndia in focus - Business Today",
+              "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxONXF2c2lMX2NtRkx0bTZqN04xcmg1ZzFmV3R1dXB4UjJxZkZnNEl3WS04MGtnUE1xWDVpWXk4RXNRbktYcnJzSnVsTHVYbUk2dHQwNjZIMWNBTG0tNEtrS3hRaHpocmpEaVZhcVJBQUVHRFFvdkNKcThLTTRhUTNlR3JUcWRIcEtuQ0pxc3ZPTFQ3b1JCN0lyekk0QmNfMGtXWEQwTzNSYWtuNTFHc2xGSmswOFZQd3dIendielRNZjBBTFFMWDNPZ28yRkQ4eWFnUHJVeHZZZFlDZzRMTlVzbnN2S0Q3bWVFRkJNUXpnc9IB9AFBVV95cUxNOXg3WFU1dHF0MVp0VE5yeVVXU0ZOWXNFbHdYX1RPb1gtblBHclV2bk9BZlctMTROV3RScmVnejRvVWNjcEFuTEJCTnBYZ1Q1T3pQMjBya1ZwR3FyeklMQVdSSjNMQnU1Nk53cXBOcFY3UkRUdTRBTEhFSlpldFRtdUs4SUk5b3EySTB5cG4teGFnRU94QmRQSG43RUdZVVhrdkRLRWR5ejIzMUY3MlE5RUZpWFI5Vm10SnFEbGJPbXl3akxxOUNnQ1FHeGVGdnVVdXhTVlRUbEJkNzRINDFQMlZ0eFctejNrNXBPTklxU0ljSm84?oc=5",
+              "publishedAt": "Tue, 21 Dec 2021 08:00:00 GMT",
+              "source": "Business Today"
+            },
+            {
+              "title": "Tata Steel opens door for transgender persons in core mining operations - Mint",
+              "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPNWpfS244dFJyWkJZRUVGOHQwNjE2Mzd2WHAwMlpuajdfeDhSYWJwdVd1c2I0SlFpX09hcEI1blBFNFRIRVpiOFB1Xy1hbXFKV3lTeVlLTHoyYUdvWXYxR2lIMFA0b2N0MVcxRWVTckdnek4wNTZXeXNlalRhalU2cjNZb2E5YWJDTk9uX0xSbXdfS0lYWDREU3R6Y3FUVEh5bldyejhqRHJGaXpnZnlXOHhYUTc4OE9fR1JYbkVvak1BTUgyYzZtTkVBc9IB0AFBVV95cUxPRFhBbHZXR1hNQWZ1S2JjUkRVRlhReU93eFdia2lpaEt4dTNMZ1g5QUl0RjhsLWxhQlAzTVBNS1ZPazF6RmFSZkR1ZmliYTdmUnpUa01KYWRTUE5uc2FOLXBVN1E0WFRVXzV3XzJzb00yU1RGUzBqWnM5dTl2TXBfc0prajI1ZmowNVFPckJndFltQmNWcnlLRW9ka0JfdE94bjdfODJSWkpPTDRtNXB6WE5CN3NHUXNCQmxaQ0xNZHRaQ2RVYjhVOFJWbUw4d3My?oc=5",
+              "publishedAt": "Thu, 02 Dec 2021 08:00:00 GMT",
+              "source": "Mint"
+            },
+            {
+              "title": "RIL, Tata, Patanjali among 11 private establishments guarded by CISF: Govt - Business Standard",
+              "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOWFlpRUYtMzI3VnFYOGZCdzR1eDZUc1dWSGFwd0pyVWlyWlBVVkwwWDNYR0JVR3dOS2g2WE1Nd2NFakptNE5fSnRLZm0yREtKVkNqVlFCamE5dThBUy0ySUZSTjZPX3VzUDh4U2lnTndGMktHT3N1OUowTU9lSUFya3dhc1ZybW80LTF5UXVqalBIRVNPcnV6ZWdsVmRWdmJVMEIzeUZZUXNQOHlRTlU5aUxwdHhkMm83bF9rUXVmYlpiNW1uTnM0T2c0YlFuUXZpZkxXYVhrRU9ycXZvLU5ZWGJyc9IB6AFBVV95cUxQUTZBVERMYWZVcTN5VzN0al9jc0o2RlVFVEZYb29ZejBsRllHbzdHdDE2aklLbk5XMDVlSl9mVUxvTEJTVDJyOEwwNnZ1UVhwVTB2bGhMLUV5SjFDc21sYUI5M18xSEtHWmdtR2tyWVBVcFRmR1pjbE9EcHpLWkw0RWJDeE9hWUdzOVdETTFpdnBFSjFuc3ZnS095UTJHcWRnLTdBelNzTEF2OTlIZE04RGFsdDl1MGNEY2g3NUo4OGFvSnBZblRINzN5Y1A0ZzBickUxVG5LUURTVS1Fc2IteEJhSXhwamJM?oc=5",
+              "publishedAt": "Wed, 22 Dec 2021 08:00:00 GMT",
+              "source": "Business Standard"
+            }
+          ],
+          "industry": [
+            {
+              "title": "Tata Steel deploys its first Bio-Fuel powered ship for imported raw material transportation - Tata Steel",
+              "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPWllQeTk0VDlSWVJHbzdpS2lvalBOMFM0WXVVMHJpWGE5ZFZHVUFXLUtpZS1UNTRJX0hmTFFqbGFCWHcwcUtFblhDVnNoUVB6c3Q5aUdmbjk0YUtiN0hNakdMdjFkclN6RUtyNEhPd1pCQzJNUmxzc18zZmVsTFJkbi00LXlnMU5RVl85eFdFMXFoaTgweUpNeGxZT2xEN1I3ZGQwWm9wZkIzWGZEN3gwa1lBNjZtTlNIWURxaWpaNUFvRkdSSHRCS0Rjd0o4QmFST0FsV1pXa2xhUUF6bWJGUU5LcVhjd0l2X3NybFZjejg?oc=5",
+              "publishedAt": "Mon, 06 Dec 2021 08:00:00 GMT",
+              "source": "Tata Steel"
+            },
+            {
+              "title": "Ind-Ra upgrades Tata Steel's long-term issuer rating to 'AA+' - ET Auto",
+              "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOcnJjRnZSOEFFTmNuU3UzM09rWGx1MGlaZGtLcUJjdmNUOG56MXl6SGRIM0R2bFk2NFJ1VGlHQVNiaTZ6QTF1a3lxdGxNcnNIX2Vra01MNjFXUENtRGRya0tNaEdUVHNZTFhLcHl3aFFUX19fLWJsX1RzZTRvSVlNbVdvMnV3cUZjUDZ2UnZXb09fUTNoRVlyNmZSbHhfWTFwNTByd0lIRmZWeC1zaVdNX1lxaEVLY1VkS3lweDkySFpnUGk0YV9KeNIBzgFBVV95cUxON3NkbXRJV1NhNTlGb1R3ZEhFdEZlbG9CVmJmODdqS2pZQ3FTdy14SExBcld3dEQ5RDNKYmtPd3RmbEd4dmoyRWswWVR4Ml95dUJyeU9XVk92WklIX3ItempJSjNqS3hIOFlfZURyOF9NQVYxTnk0Qkh2clBuYjU0V1B6Vy1BX0piRHNzY2xhRmxRSktocVFnRGU3d2R1d2MyWWN0QVR3NFZOSXIxcXlLb0FXd09iOFJpS1l3U21pbVRZM0dFc2RJTGFNUG52QQ?oc=5",
+              "publishedAt": "Thu, 16 Dec 2021 08:00:00 GMT",
+              "source": "ET Auto"
+            },
+            {
+              "title": "Top 6 Undervalued Stocks to Add to Your Watchlist - Equitymaster",
+              "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVEZaOE1VOTZHNE9nbmM3M0RwSFJDUGJKdDR4cTdod2RBNk1OUHo5cVRZVlFYNGZyTG5iZUtkNnQ1Q2JhSGp2UXFxQ2pSdHdXYTNBMFIwWGR2bk5SUml1bjA1b1V3aU1KSmlaODZUYUI3YUk2dVl5b25KdWN2TnJQbzhUb3J1dWJDUnZ5TEUwSEF1WkJoalpsbGNWUmpnR2VMaXNEZzFRdHlyRC1jRG45aW5DMVFiSXpUbWpv?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "Equitymaster"
+            },
+            {
+              "title": "14 Transgenders Onboard Tata Steel In Core Mining Operations - NDTV",
+              "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdTFMenJnZkNxNkU5S19ZNjNCckNPd1I3MDdaLU53VVF1Zlk3dUZ6anNXZWxVeGtTQmU5blM5LVk4dnJNVTBBZVA4MjhTV2liLXVXQ3hZZ1ZSU1hwczhmTUN2bXozS09iWm1rdmpXRnNER1pEUHRYZ0UyLU1tSXk5Nno3eWQ2WG0zN3FMTlg0Z0pORWQyMkdkZlFpVkRIallxUFE?oc=5",
+              "publishedAt": "Thu, 02 Dec 2021 08:00:00 GMT",
+              "source": "NDTV"
+            },
+            {
+              "title": "JRD Tata: Steel in his spine - India Today",
+              "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdWdxb2V1NEgtOWhjOElZdkN1bElXQUVvUklOM2lpVGhwQlhfR2NJX1pTVXdCZmwwUDBTNk9IdUY4ZDFSaE9USkk2cXhWczJsQTV6bUx1OHo0LVA1UzQ5TmV6eG9FNDFrV3RYelhYQ1V5N094OE5rX1pZU3Y5VjV3RUg1cVNLdkpGMVBJR3FVNG9lZTVpMzc5RFhpNVM5WWPSAaQBQVVfeXFMTjF6TFVCcW81ci1JTzhpMG5MMzVOMnJGdDNTTmRKbUh4Z08wUFdvOE5mcnR6a3ZyT2xRMnJ3cVZ5eWtPV0tvZjU2UWkyTy1RbVRIWkZkMndrcVI5R1FBdG1heU5xT05saURqVHBkdm9ZWGg4Q01wRmJQMkpFNU9fSGNSNTF0UVZ1d3FKYUQ3NFNTWXp0SWFRUTVWVnlJYWpIVVBJVjA?oc=5",
+              "publishedAt": "Wed, 01 Dec 2021 08:00:00 GMT",
+              "source": "India Today"
+            }
+          ]
+        }
+      },
+      {
+        "symbol": "ULTRACEMCO",
+        "companyName": "UltraTech Cement Ltd.",
+        "redactedSymbol": "STOCK-01",
+        "redactedCompanyName": "Company 01",
+        "categories": {
+          "finance": [
+            {
+              "title": "As young Indians jump into soaring stock market, risks add up - Al Jazeera",
+              "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQndRcWtSaGVYcXMxZ2xZZEJpRjlCOC1Ra3daUFdQcDNzVGJJWXByZnZkZVlVdktyMHBSNEFfcU1zcUJUOTA3RnE2cS1YbzNVUzJyUjFhQ0ZtMHdvWTBnZTMzdmZpdWVJbWY3UlkxUW5QNVhmcWs5SWg4SW9zRUd0NlV5TzY1STV2N2pncEtKblFfMTFoR1VWa2lQVmRid05BaWhJaGRJSDjSAa4BQVVfeXFMTTVOMEt5UGJGcmJqVWpvcXRLdk5GNDlLMklZNU54Sld4akRydDEtWV9neXBENUEwa3ZwaF9EQkJ1X3ZweHBvVzdTWmFvN2pMSkV3VDJaZ0xRTi1hS3Z6cW9rT1lIMjBJYWZ0MkRudG9iQ2YycmRJelNXVDNrNWRIM1Q2cEJoTWFoRW9qYzZmcGxQUEFYRGU1X0MycFFUcWtvRkVUR0dMeUVibDVLYUhR?oc=5",
+              "publishedAt": "Mon, 20 Dec 2021 08:00:00 GMT",
+              "source": "Al Jazeera"
+            },
+            {
+              "title": "Bulletin – December 2021 Global Economy The Indian Banking System - Reserve Bank of Australia",
+              "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUlR4WVljQW40aTV3ZGRHdzBublpxXzh4em5iQmU4ZTFNZ3JtSDJ5U3E2UnFBck80TDVTZ1lKd3RMYXVFMFBDME4xeWdvVFFCdkJESDdZaVdiaTZRT2Q4ZGVtVGhEUWVQd3Q5eTM5Zk1rWmpEM3p4b3lfM3VoczlPSU1ZUVd2WEU2dFBoeA?oc=5",
+              "publishedAt": "Thu, 09 Dec 2021 08:00:00 GMT",
+              "source": "Reserve Bank of Australia"
+            },
+            {
+              "title": "2021 Year in Review - S&P Global",
+              "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQemRfSndhMGowM0R5VmJtaUxiRWs1bmZpdzVud2VMZ2puNDJQVjFqU2VIQkotNV9ZX2IzQVdMRTBBUjZweDg5RzV1dTBILWp0MW5mMEVENThlY01hYVVJYXJ6T3pLa0hwenZkeXg4ekFlWk1lMi1HOXZrSnNGbDZWQVpleGlOc01s?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "S&P Global"
+            },
+            {
+              "title": "India Capital Growth – The show must go on - QuotedData",
+              "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNWHhNRUNaekJXOW5Fdmd6QnFOcGEwcThJLXg0eENYVGdKalE1cGNrT2NuRlVoSTVKN3NJeVdMZzBYR2NrNTZfTm43a1RFRWxSOTl5YW5yQmdRd1ptN2VjWDM3VFQ5Q1J6aUh4anFDOUM3TDNUWVlnaktLT2hXVlNvdm9n?oc=5",
+              "publishedAt": "Wed, 08 Dec 2021 08:00:00 GMT",
+              "source": "QuotedData"
+            },
+            {
+              "title": "Expectation from the Stock Market in 2022 - Elets BFSI",
+              "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9XaElCbXkwN0lXNm5aT2VDa1NMTFpVbkpwNHV4alJkbjVtcVNIbnhWT21keUhucTZXN0xWQmVGRkEwVVBZeGlULW9LOGQ0Tk1WeF9HZUVmMHlGdUJ0S21lTlV2bmdkNFI0R3Fpa1JURUtGeldOQTRmQy1DWQ?oc=5",
+              "publishedAt": "Tue, 28 Dec 2021 08:00:00 GMT",
+              "source": "Elets BFSI"
+            }
+          ],
+          "global": [
+            {
+              "title": "Supply chain resilience in the face of geopolitical risks - Deloitte",
+              "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSVV2bW9tUGNoNjBVVFMzOXUtOEt5aS1OVWhSdXRjWGZyS3NOYUNZTE9ETGc3dXJxRHc4aWJNMHdzZTdpeDdoX2FIVS1qRVExRGxIUWxLNTIyTDVMZVZJb3ptNXdnREQ0LVZ1OVlzLTBRZjYydGptTEZpM3VTSDR6ZzRqQjFlVVBaclJJeUVkQ1AtLWQtWEE?oc=5",
+              "publishedAt": "Fri, 03 Dec 2021 08:00:00 GMT",
+              "source": "Deloitte"
+            },
+            {
+              "title": "LIVE MARKETS Geopolitics 2022: \"managed disagreements\" - Reuters",
+              "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWmFUUHZlazhhUUd3T3VCWERKTG5EaHI2bndjcFI5alRpTzhDdnVYbHl4M0hKZEpRcjVtMWoxRDQ3WnFDVlBDdnRFcHRSWG9OOHhZai14cXJHaE1SVkZhblQxb2NoRjEtdElnazZNWXhEU21qbVU5Q2VLT2ppdDVvRUVXS1NDNUhYaFhjSzZNOWxfQmJlcFUyTmR3QkVnV1BRQVE?oc=5",
+              "publishedAt": "Mon, 13 Dec 2021 08:00:00 GMT",
+              "source": "Reuters"
+            },
+            {
+              "title": "The Power Atlas - European Council on Foreign Relations",
+              "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE10T1FQRjBtLXRhMzZNZTFKX2h0YThZSXNhc2F0VF9MdXVidFBsdFFGOUxha0NpN25laEVYbWFjaDdmMXhkS2hLZXp0NDc?oc=5",
+              "publishedAt": "Thu, 09 Dec 2021 10:57:27 GMT",
+              "source": "European Council on Foreign Relations"
+            },
+            {
+              "title": "Southeast Asia’s choices: Economic, political, and geopolitical integration face complications - orfonline.org",
+              "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBLcjF4akpHd2FrWWU3Q2kwdnlrZlVMZE1lcW5nNmRzazJqUi0wT0FzdXJZbTBITF9oTFFkdng2a2V5cE5HbFJORG40MlNKZUt5UlZnQ3REeFlCV01mR014U3FTclFwWkpmNFRxSUhGVQ?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "orfonline.org"
+            },
+            {
+              "title": "2021 Year in Review - S&P Global",
+              "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQemRfSndhMGowM0R5VmJtaUxiRWs1bmZpdzVud2VMZ2puNDJQVjFqU2VIQkotNV9ZX2IzQVdMRTBBUjZweDg5RzV1dTBILWp0MW5mMEVENThlY01hYVVJYXJ6T3pLa0hwenZkeXg4ekFlWk1lMi1HOXZrSnNGbDZWQVpleGlOc01s?oc=5",
+              "publishedAt": "Tue, 14 Dec 2021 08:00:00 GMT",
+              "source": "S&P Global"
+            }
+          ],
+          "company": [
+            {
+              "title": "UltraTech Cement Ltd commences operations of bulk terminal at Kalamboli, Navi Mumbai - The Hans India",
+              "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOOFRsT3RDQ1ZDdVhhbU1Ud3pJRk5lalIxcTFYYUt2ZnA2WWFBRGZjaE10VF84YUlpcFozQ0EyN29oYjd2dGRNMWs3RmkzTDRhOTZMQjhEUnNGdnU2UXNfX09jQlhPM1dFWFdyMU4yWU9vT01hMzItU05BT1V4NGdCcmlYMXVVMHRqS0tyMUc0RUVmcE5jeUFoeVRiNmtLREdTaDF2M2VZaWRYN2w2cDNnREEzaGgyRmZzaFpTR19sWkNhQkRhbWMw0gHMAUFVX3lxTE9MV2toRlZIel9OY1V0aGFBYnc5N0RXNXMtSmgzVTVDaWdVU014TW45RTNqNTVRT29hTTZuM1V3MVpUQlk0WWFiY0VYQUFIVU5mUnIzc2VYaWlNdVdOYWJEaS1MQ3puUVp1NEs4RHl2UjdqOWhCcGtrOUxWYjV5MGxJYzRwM0JBVkhPVUZkdkE1R3BMZEpVZ2RYcUtINVc5SEU2U3daS2tqRy02U3JNU2t5MUxfb1I1VDJTYmU0QXlyUUZDT051U0xXNU9BbQ?oc=5",
+              "publishedAt": "Fri, 17 Dec 2021 08:00:00 GMT",
+              "source": "The Hans India"
+            },
+            {
+              "title": "Supreme Court upholds NCLAT order allowing sale of Binani Cement to UltraTech - BusinessLine",
+              "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPVUxWQ3hmY0dYaDFyNmc4cnB0Tk1wTUJGWnQwSE1JSzdQdF9XeVRtLUxHc1FMUUc4VWI3MnoyeDd4Z2N3ZnYxZkFHLXhJaFRaQXBqaC0wU04wOU1wVEx2RjBtZkFzbFFELWF6eWNnTG1LUmY1YVVnR0haaUtKNE56Q1JDaEFEZTlBWGpiaHRjMFBWOE9JYldKTEV0WWdpejZyb04xNnJHZnRyT0VVNXM2Mi1aYjhEd1FkZWJOOWFxZldsd1FmVG91WUJpM2FDWVlWcUs0ck5PcUxSN1FX0gHjAUFVX3lxTE1fNHFQYVdGTWNYeERuSzRVZnpoNVoyWlE0anBtQnp3elJBdWpVWHpVbVN6Y1dMSVYxRHg4U1JtV2xSWFk3bTFWdWEwUjA5SVFKTFBhSURIN1dMR0E2TEpxMDJMQkMtd0QwVVd2NnBLaWVhVWpid0FfenhyQjdBSzg5Wjgya1I3WWNyUE5UZkxfNkxybEdZSW9hOUlsX0RaZDl5dDIwWnd0VkNSazU5R1QzRXJCLWVUakVZOGpvYnc4TEZ3alV5Z0RUUGd5c2VTNTRqWXVTVW16dFZuM0R2RWxRVDRJ?oc=5",
+              "publishedAt": "Mon, 06 Dec 2021 08:00:00 GMT",
+              "source": "BusinessLine"
+            },
+            {
+              "title": "Ambuja Cement vs UltraTech Cement: Which is Better? | Company Business News - Mint",
+              "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOREJBbTN5aWtWT2M4a2dmcmxxZXE4X0s2aVlsRklMVmZKNE1SZVRQaUVmNW95WUNWXzl3RGhncllybEVwU2g4VHByalZZWVdfREFaTFFCeFoyV01BV1NOelZXTVU4dEJHRHIzM1VZY2UtUjJWSllOVFp1dlpRanllWTR6T1U5czBFMV9TS2twbGhaRXpGOUM3RGw4R0sxRi1CVVVkRkZ1RGlOdHZrOFHSAbMBQVVfeXFMT1M5cWFNUFJHbXd6Q3JEdDZUSUNZbmY3amtocXAzaEszbko5Vi1tcG1nVzlJbHpTeFRCeDNNY0ZKaXU1Y0RpaFlZMWZOOHRfYmd1dmk3U3ppSmtHc0hISndnekpMV281VjNERWRDWC1FeVRfYWtiZy1XX0pkQ0pWT1d0ZGNxY0lYUHR0R3A4NjlTTTE3Q1oxcVdsU3VyNGlfVHAwSmlnaUk2RU9ZcnhRNWQyd2c?oc=5",
+              "publishedAt": "Fri, 10 Dec 2021 08:00:00 GMT",
+              "source": "Mint"
+            },
+            {
+              "title": "7 best money making options in 2022: Take your pick - Mint",
+              "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQUzFDRzBzcU9WakR5ZkpFYkhTU2VBTVVEZUlhWEtKWW1WNXZ5Q2xaZjBBS1pDVWFQczdneXhSSFpOV0ZCUTQyaHF6V3M2ZFYyTkJtVUoySWZMcDRxNmMtei1fZS1iUEloUnVOUkUwVG52TWhVcmJVXzJrVnppbVRxdllwblFZVGwwWi1BaTdzRlYzZ0Ezd09kM0NxUEM4TWVuWXJlTWtBd1JCaDhOT2ZUUUVTdnNnWm9zbEHSAb8BQVVfeXFMTi0tdXVlQ3pKM2hvNzNXcENZUTdhODlxRDBKVS1pT2RnRlVzbTZvaFlNQzBHanRtSE9vUVFxWXdnVUdiUG1JQklKdmF3cHNXMDl5YUVoZGN0c3UtZXR3TG9SZnllZUFCT19ub2ZHYWdYOFozNTVzdWdYMXR3Y2F4RUo4azk2S19QazAzN3ZZVU9ZNHlNUWZUSHozYlNPT2tQMDNxak5UYVZoSUpvemx2bm9fWWJPcEI3Rk13TmNiaGc?oc=5",
+              "publishedAt": "Wed, 29 Dec 2021 08:00:00 GMT",
+              "source": "Mint"
+            },
+            {
+              "title": "RBL Bank stock tanks 20% on surprise RBI intervention, lack of clarity - Mint",
+              "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQTkxSWkhJa0dUN2ZfYnNFcHk1bEJrelhIaE1FZ0phc0g0UGJkaHQ2RThjQjgzakRWZ3JLeDhXZ2NXRElMMGNMa1B1cU1qdUZiUU1oR0EyQm5veEpCdzVFTU1GNHhvc1ViV3VXODVsLVJWWGV5UXRXMFIycUw0REhLRmoyVFNORlgzR0xDUzBqMWV0Y0p0SEhGc0Q3RU1nMmx2ZFVpRnJVUzNPNm0wRU16NUNERGdfTWtRQTRR0gHAAUFVX3lxTFA2czRCY0hURmV2NG11OVA5MEUzdlNQVDJBamdDNXI3UTc2dmhQeVZfNXlpcE1VVjIxZi1NTGNfZDVlVDhmeVJiUWpUaTJBV1YwUnRWd3dKbXNDOUFwNnJydUJBT09KSnFLM1BmZXdQMVBjTFVEdXhVZFJiT2N3clc0UjZfX1Q2NzUwdXF2OUw3QzBoallGQ2htMTkzSVVMR3pfMzZaZF9yVVNYLUpwQzJMbUFTY0dFUEh5bHJLSld5VA?oc=5",
+              "publishedAt": "Mon, 27 Dec 2021 08:00:00 GMT",
+              "source": "Mint"
+            }
+          ],
+          "industry": [
+            {
+              "title": "UltraTech Cement Ltd commences operations of bulk terminal at Kalamboli, Navi Mumbai - The Hans India",
+              "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOOFRsT3RDQ1ZDdVhhbU1Ud3pJRk5lalIxcTFYYUt2ZnA2WWFBRGZjaE10VF84YUlpcFozQ0EyN29oYjd2dGRNMWs3RmkzTDRhOTZMQjhEUnNGdnU2UXNfX09jQlhPM1dFWFdyMU4yWU9vT01hMzItU05BT1V4NGdCcmlYMXVVMHRqS0tyMUc0RUVmcE5jeUFoeVRiNmtLREdTaDF2M2VZaWRYN2w2cDNnREEzaGgyRmZzaFpTR19sWkNhQkRhbWMw0gHMAUFVX3lxTE9MV2toRlZIel9OY1V0aGFBYnc5N0RXNXMtSmgzVTVDaWdVU014TW45RTNqNTVRT29hTTZuM1V3MVpUQlk0WWFiY0VYQUFIVU5mUnIzc2VYaWlNdVdOYWJEaS1MQ3puUVp1NEs4RHl2UjdqOWhCcGtrOUxWYjV5MGxJYzRwM0JBVkhPVUZkdkE1R3BMZEpVZ2RYcUtINVc5SEU2U3daS2tqRy02U3JNU2t5MUxfb1I1VDJTYmU0QXlyUUZDT051U0xXNU9BbQ?oc=5",
+              "publishedAt": "Fri, 17 Dec 2021 08:00:00 GMT",
+              "source": "The Hans India"
+            },
+            {
+              "title": "Supreme Court upholds NCLAT order allowing sale of Binani Cement to UltraTech - BusinessLine",
+              "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPVUxWQ3hmY0dYaDFyNmc4cnB0Tk1wTUJGWnQwSE1JSzdQdF9XeVRtLUxHc1FMUUc4VWI3MnoyeDd4Z2N3ZnYxZkFHLXhJaFRaQXBqaC0wU04wOU1wVEx2RjBtZkFzbFFELWF6eWNnTG1LUmY1YVVnR0haaUtKNE56Q1JDaEFEZTlBWGpiaHRjMFBWOE9JYldKTEV0WWdpejZyb04xNnJHZnRyT0VVNXM2Mi1aYjhEd1FkZWJOOWFxZldsd1FmVG91WUJpM2FDWVlWcUs0ck5PcUxSN1FX0gHjAUFVX3lxTE1fNHFQYVdGTWNYeERuSzRVZnpoNVoyWlE0anBtQnp3elJBdWpVWHpVbVN6Y1dMSVYxRHg4U1JtV2xSWFk3bTFWdWEwUjA5SVFKTFBhSURIN1dMR0E2TEpxMDJMQkMtd0QwVVd2NnBLaWVhVWpid0FfenhyQjdBSzg5Wjgya1I3WWNyUE5UZkxfNkxybEdZSW9hOUlsX0RaZDl5dDIwWnd0VkNSazU5R1QzRXJCLWVUakVZOGpvYnc4TEZ3alV5Z0RUUGd5c2VTNTRqWXVTVW16dFZuM0R2RWxRVDRJ?oc=5",
+              "publishedAt": "Mon, 06 Dec 2021 08:00:00 GMT",
+              "source": "BusinessLine"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

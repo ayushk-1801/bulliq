@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 
+import { and, gte, inArray, lte, sql } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
 
@@ -8,6 +9,7 @@ import {
   competition,
   competitionStock,
   niftyCompany,
+  niftyStockDaily,
 } from "./src/server/db/schema";
 
 type DurationMonths = 6 | 12 | 18 | 24;
@@ -26,7 +28,9 @@ const COMPETITIONS_PER_DURATION = 10;
 const STOCKS_PER_COMPETITION = 10;
 const DURATIONS: DurationMonths[] = [6, 12, 18, 24];
 const RANGE_START = createUtcDate("2022-01-01");
-const RANGE_END = createUtcDate("2025-12-31");
+const MAX_COMPETITION_END = createUtcDate("2025-12-31");
+const MIN_TRADING_ROWS_PER_MONTH = 15;
+const MAX_GENERATION_ATTEMPTS = 250;
 
 async function loadEnv() {
   const envPath = path.resolve(process.cwd(), ".env");
@@ -131,7 +135,14 @@ function createCompetitionInput(
   durationMonths: DurationMonths,
   sequence: number,
 ): CompetitionInsertInput {
-  const start = randomDateBetween(RANGE_START, RANGE_END);
+  const latestStart = addMonthsUtc(MAX_COMPETITION_END, -durationMonths);
+  if (latestStart < RANGE_START) {
+    throw new Error(
+      `Invalid seed window for ${durationMonths} month duration. Latest start ${formatDateOnly(latestStart)} is before ${formatDateOnly(RANGE_START)}.`,
+    );
+  }
+
+  const start = randomDateBetween(RANGE_START, latestStart);
   const end = addMonthsUtc(start, durationMonths);
 
   return {
@@ -172,7 +183,44 @@ async function main() {
 
     for (const duration of DURATIONS) {
       for (let sequence = 1; sequence <= COMPETITIONS_PER_DURATION; sequence += 1) {
-        const competitionInput = createCompetitionInput(duration, sequence);
+        let competitionInput: CompetitionInsertInput | null = null;
+        let eligibleSymbols: string[] = [];
+
+        for (let attempt = 1; attempt <= MAX_GENERATION_ATTEMPTS; attempt += 1) {
+          const candidate = createCompetitionInput(duration, sequence);
+          const minimumRows = duration * MIN_TRADING_ROWS_PER_MONTH;
+
+          const availabilityRows = await db
+            .select({
+              symbol: niftyStockDaily.symbol,
+              rowCount: sql<number>`count(*)::int`,
+            })
+            .from(niftyStockDaily)
+            .where(
+              and(
+                inArray(niftyStockDaily.symbol, symbols),
+                gte(niftyStockDaily.tradeDate, candidate.startDate),
+                lte(niftyStockDaily.tradeDate, candidate.endDate),
+              ),
+            )
+            .groupBy(niftyStockDaily.symbol);
+
+          const candidateSymbols = availabilityRows
+            .filter((row) => row.rowCount >= minimumRows)
+            .map((row) => row.symbol);
+
+          if (candidateSymbols.length >= STOCKS_PER_COMPETITION) {
+            competitionInput = candidate;
+            eligibleSymbols = candidateSymbols;
+            break;
+          }
+        }
+
+        if (!competitionInput) {
+          throw new Error(
+            `Could not generate a ${duration} month competition with ${STOCKS_PER_COMPETITION} stocks having sufficient data after ${MAX_GENERATION_ATTEMPTS} attempts.`,
+          );
+        }
 
         await db.transaction(async (tx) => {
           const [insertedCompetition] = await tx
@@ -184,7 +232,10 @@ async function main() {
             throw new Error("Failed to insert competition row.");
           }
 
-          const selectedSymbols = pickUniqueSymbols(symbols, STOCKS_PER_COMPETITION);
+          const selectedSymbols = pickUniqueSymbols(
+            eligibleSymbols,
+            STOCKS_PER_COMPETITION,
+          );
           const redactedDate = competitionInput.startDate;
 
           await tx.insert(competitionStock).values(

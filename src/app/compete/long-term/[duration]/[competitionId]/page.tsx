@@ -58,6 +58,22 @@ type StockData = {
   points: StockPoint[];
 };
 
+type NewsCategory = "finance" | "global" | "company" | "industry";
+
+type NewsArticle = {
+  title: string;
+  link: string;
+  publishedAt: string | null;
+  source: string | null;
+  rank: number;
+};
+
+type StockNews = {
+  symbol: string;
+  companyName: string | null;
+  categories: Record<NewsCategory, NewsArticle[]>;
+};
+
 type CompetitionResponse = {
   competition: {
     id: number;
@@ -69,6 +85,7 @@ type CompetitionResponse = {
     status: string;
   };
   stocks: StockData[];
+  news: StockNews[];
 };
 
 type FinancialMetricRow = {
@@ -120,10 +137,45 @@ type Summary = {
   portfolioValue: number;
   profitLoss: number;
   returnPct: number;
+  rank?: number;
+  participantsCount?: number;
+  ratingBefore?: number;
+  ratingDelta?: number;
+  ratingAfter?: number;
+};
+
+type LeaderboardEntry = {
+  rank: number;
+  userId: string;
+  name: string;
+  image: string | null;
+  rating: number;
+  competitionsPlayed: number;
+  wins: number;
+  averageReturnPct: number;
+  bestReturnPct: number | null;
+  lastRatingDelta: number;
+  lastPlayedAt: string | null;
+};
+
+type CompetitionStanding = {
+  userId: string;
+  name: string;
+  returnPct: number;
+  finalPortfolioValue: number;
+  rank: number;
+  participantsCount: number;
+  ratingDelta: number;
+  ratingAfter: number;
+  completedAt: string;
+};
+
+type LeaderboardResponse = {
+  entries: LeaderboardEntry[];
+  competitionStandings?: CompetitionStanding[];
 };
 
 const COMPETITION_DURATION_SECONDS = 60 * 60;
-const PRE_START_VISIBLE_RATIO = 0.7;
 const FAST_FORWARD_INTERVAL_MS = 16;
 const FAST_FORWARD_TARGET_STEPS = 28;
 
@@ -155,6 +207,24 @@ function formatTimer(totalSeconds: number): string {
     .padStart(2, "0");
   const seconds = (safe % 60).toString().padStart(2, "0");
   return `${hours}:${minutes}:${seconds}`;
+}
+
+function formatSignedNumber(value: number): string {
+  return `${value > 0 ? "+" : ""}${formatNumber(value)}`;
+}
+
+function formatNewsDate(dateString: string | null): string {
+  if (!dateString) return "-";
+
+  const date = new Date(dateString);
+  if (Number.isNaN(date.getTime())) return dateString;
+
+  return new Intl.DateTimeFormat("en-IN", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(date);
 }
 
 function computeChangePercent(points: StockPoint[]): number {
@@ -227,6 +297,7 @@ export default function CompetitionDetailPage() {
   const [error, setError] = useState<string | null>(null);
 
   const [selectedStock, setSelectedStock] = useState<string>("");
+  const [selectedNewsSymbol, setSelectedNewsSymbol] = useState<string>("");
   const [action, setAction] = useState<TradeAction>("buy");
   const [quantity, setQuantity] = useState<string>("10");
   const [orderType, setOrderType] = useState<"market" | "limit">("market");
@@ -243,7 +314,14 @@ export default function CompetitionDetailPage() {
     text: string;
   } | null>(null);
   const [summary, setSummary] = useState<Summary | null>(null);
+  const [resultSyncMessage, setResultSyncMessage] = useState<string | null>(null);
+  const [leaderboardEntries, setLeaderboardEntries] = useState<LeaderboardEntry[]>([]);
+  const [competitionStandings, setCompetitionStandings] = useState<CompetitionStanding[]>([]);
+  const [leaderboardLoading, setLeaderboardLoading] = useState(false);
+  const [leaderboardError, setLeaderboardError] = useState<string | null>(null);
+  const [submittingResult, setSubmittingResult] = useState(false);
   const startTimestampRef = useRef<number | null>(null);
+  const submittedCompetitionKeyRef = useRef<string | null>(null);
 
   const [financialCompanies, setFinancialCompanies] = useState<
     FinancialMetricsResponse["companies"]
@@ -287,6 +365,7 @@ export default function CompetitionDetailPage() {
           setData(payload);
           setError(null);
           setSelectedStock(payload.stocks[0]?.symbol ?? "");
+          setSelectedNewsSymbol(payload.news[0]?.symbol ?? payload.stocks[0]?.symbol ?? "");
           setLimitPrice((payload.stocks[0]?.points[0]?.close ?? 0).toFixed(2));
 
           setPhase("not-started");
@@ -297,6 +376,8 @@ export default function CompetitionDetailPage() {
           setTradeLog([]);
           setTradeMessage(null);
           setSummary(null);
+          setResultSyncMessage(null);
+          submittedCompetitionKeyRef.current = null;
           startTimestampRef.current = null;
         }
       } catch (err) {
@@ -317,6 +398,110 @@ export default function CompetitionDetailPage() {
       isMounted = false;
     };
   }, [params.competitionId]);
+
+  const loadLeaderboard = useCallback(async () => {
+    const competitionId = params.competitionId;
+    if (!competitionId) {
+      setLeaderboardEntries([]);
+      setCompetitionStandings([]);
+      return;
+    }
+
+    try {
+      setLeaderboardLoading(true);
+      const response = await fetch(
+        `/api/leaderboard?limit=20&competitionId=${encodeURIComponent(competitionId)}`,
+        {
+          method: "GET",
+          cache: "no-store",
+        },
+      );
+
+      if (!response.ok) {
+        throw new Error(`Failed to load leaderboard (${response.status})`);
+      }
+
+      const payload = (await response.json()) as LeaderboardResponse;
+      setLeaderboardEntries(payload.entries ?? []);
+      setCompetitionStandings(payload.competitionStandings ?? []);
+      setLeaderboardError(null);
+    } catch (err) {
+      setLeaderboardError("Unable to load leaderboard.");
+      console.error(err);
+    } finally {
+      setLeaderboardLoading(false);
+    }
+  }, [params.competitionId]);
+
+  useEffect(() => {
+    void loadLeaderboard();
+  }, [loadLeaderboard]);
+
+  const submitCompetitionResult = useCallback(
+    async (result: Summary) => {
+      const competitionId = params.competitionId;
+      if (!competitionId) return;
+
+      const key = `${competitionId}:${result.endDate}:${result.portfolioValue.toFixed(2)}`;
+      if (submittedCompetitionKeyRef.current === key) {
+        return;
+      }
+      submittedCompetitionKeyRef.current = key;
+
+      try {
+        setSubmittingResult(true);
+        const response = await fetch(`/api/competitions/${competitionId}/result`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            finalPortfolioValue: result.portfolioValue,
+            profitLoss: result.profitLoss,
+            returnPct: result.returnPct,
+          }),
+        });
+
+        if (!response.ok) {
+          if (response.status === 401) {
+            setResultSyncMessage("Sign in to record rating and leaderboard progress.");
+            return;
+          }
+
+          throw new Error(`Failed to submit competition result (${response.status})`);
+        }
+
+        const payload = (await response.json()) as {
+          rank: number;
+          participantsCount: number;
+          ratingBefore: number;
+          ratingDelta: number;
+          ratingAfter: number;
+        };
+
+        setSummary((prev) => {
+          if (!prev) return prev;
+          return {
+            ...prev,
+            rank: payload.rank,
+            participantsCount: payload.participantsCount,
+            ratingBefore: payload.ratingBefore,
+            ratingDelta: payload.ratingDelta,
+            ratingAfter: payload.ratingAfter,
+          };
+        });
+
+        setResultSyncMessage("Result saved. Leaderboard updated.");
+        await loadLeaderboard();
+      } catch (err) {
+        setResultSyncMessage("Unable to sync result right now.");
+        console.error(err);
+      } finally {
+        setSubmittingResult(false);
+      }
+    },
+    [loadLeaderboard, params.competitionId],
+  );
 
   useEffect(() => {
     let isMounted = true;
@@ -379,21 +564,35 @@ export default function CompetitionDetailPage() {
     return data.stocks.find((stock) => stock.symbol === selectedStock) ?? null;
   }, [data, selectedStock]);
 
+  const selectedNewsData = useMemo(() => {
+    if (!data) return null;
+    return data.news.find((stock) => stock.symbol === selectedNewsSymbol) ?? null;
+  }, [data, selectedNewsSymbol]);
+
   const maxSimulationPoints = useMemo(() => {
     if (!data || data.stocks.length === 0) return 1;
     return Math.max(1, ...data.stocks.map((stock) => stock.points.length));
   }, [data]);
 
   const preStartVisibleIndex = useMemo(() => {
-    if (maxSimulationPoints <= 1) return 0;
-    return Math.max(
-      0,
-      Math.min(
-        maxSimulationPoints - 1,
-        Math.floor((maxSimulationPoints - 1) * PRE_START_VISIBLE_RATIO),
-      ),
+    if (!data || data.stocks.length === 0) return 0;
+
+    const timelineStock = data.stocks.reduce((longest, current) =>
+      current.points.length > longest.points.length ? current : longest,
     );
-  }, [maxSimulationPoints]);
+
+    if (!timelineStock || timelineStock.points.length === 0) return 0;
+
+    const firstAtOrAfterStart = timelineStock.points.findIndex(
+      (point) => point.time >= data.competition.startDate,
+    );
+
+    if (firstAtOrAfterStart <= 0) {
+      return 0;
+    }
+
+    return firstAtOrAfterStart - 1;
+  }, [data]);
 
   const visibleIndex = useMemo(() => {
     if (!data) return 0;
@@ -527,7 +726,7 @@ export default function CompetitionDetailPage() {
       .sort()
       .at(-1);
 
-    const startDate = data.stocks[0]?.points[0]?.time ?? data.competition.startDate;
+    const startDate = data.competition.startDate;
     const endDate = lastVisibleDate ?? startDate;
 
     const currentHoldingsValue = Object.entries(holdings).reduce((sum, [symbol, holding]) => {
@@ -550,7 +749,16 @@ export default function CompetitionDetailPage() {
       profitLoss,
       returnPct,
     });
-  }, [cash, data, holdings, phase, priceBySymbol, visibleIndex]);
+
+    void submitCompetitionResult({
+      startDate,
+      endDate,
+      holdingsValue: currentHoldingsValue,
+      portfolioValue: currentPortfolioValue,
+      profitLoss,
+      returnPct,
+    });
+  }, [cash, data, holdings, phase, priceBySymbol, submitCompetitionResult, visibleIndex]);
 
   const endCompetition = () => {
     if (phase !== "running") return;
@@ -566,6 +774,7 @@ export default function CompetitionDetailPage() {
     }
 
     startTimestampRef.current ??= Date.now() - elapsedSeconds * 1000;
+    setSimulationIndex(preStartVisibleIndex);
 
     const intervalId = window.setInterval(() => {
       const startTs = startTimestampRef.current;
@@ -578,16 +787,8 @@ export default function CompetitionDetailPage() {
 
       setElapsedSeconds(elapsed);
 
-      const ratio = elapsed / COMPETITION_DURATION_SECONDS;
-      const runSpan = Math.max(1, maxSimulationPoints - 1 - preStartVisibleIndex);
-      const nextIndex = Math.min(
-        maxSimulationPoints - 1,
-        preStartVisibleIndex + Math.floor(ratio * runSpan),
-      );
-      setSimulationIndex(nextIndex);
-
       if (elapsed >= COMPETITION_DURATION_SECONDS) {
-        finalizeCompetition();
+        setPhase("fast-forwarding");
       }
     }, 1000);
 
@@ -1326,15 +1527,131 @@ export default function CompetitionDetailPage() {
                       </TableBody>
                     </Table>
                   </div>
+
+                  <div className="grid gap-3 sm:grid-cols-3">
+                    <div className="rounded-none border border-border/70 bg-muted/20 p-3">
+                      <p className="text-xs text-muted-foreground">Competition Rank</p>
+                      <p className="mt-1 text-base font-semibold">
+                        {summary.rank && summary.participantsCount
+                          ? `#${summary.rank} / ${summary.participantsCount}`
+                          : "Pending"}
+                      </p>
+                    </div>
+                    <div className="rounded-none border border-border/70 bg-muted/20 p-3">
+                      <p className="text-xs text-muted-foreground">Rating Change</p>
+                      <p className="mt-1 text-base font-semibold">
+                        {typeof summary.ratingDelta === "number"
+                          ? formatSignedNumber(summary.ratingDelta)
+                          : "Pending"}
+                      </p>
+                    </div>
+                    <div className="rounded-none border border-border/70 bg-muted/20 p-3">
+                      <p className="text-xs text-muted-foreground">Updated Rating</p>
+                      <p className="mt-1 text-base font-semibold">
+                        {typeof summary.ratingAfter === "number"
+                          ? formatNumber(summary.ratingAfter)
+                          : "Pending"}
+                      </p>
+                    </div>
+                  </div>
+
+                  {resultSyncMessage ? (
+                    <p className="text-xs text-muted-foreground">{resultSyncMessage}</p>
+                  ) : null}
+
+                  {submittingResult ? (
+                    <p className="text-xs text-muted-foreground">Saving result to leaderboard...</p>
+                  ) : null}
                 </CardContent>
               </Card>
             ) : null}
+
+            <Card className="border border-border/70 bg-card">
+              <CardHeader>
+                <CardTitle className="text-lg font-semibold">Leaderboard</CardTitle>
+                <CardDescription>Sorted by rating with win and return performance.</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                {leaderboardLoading ? (
+                  <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                    <Spinner className="h-4 w-4" />
+                    Loading leaderboard...
+                  </div>
+                ) : leaderboardError ? (
+                  <p className="text-xs text-destructive">{leaderboardError}</p>
+                ) : leaderboardEntries.length === 0 ? (
+                  <p className="text-xs text-muted-foreground">No leaderboard entries yet.</p>
+                ) : (
+                  <div className="rounded-none border border-border/70">
+                    <Table>
+                      <TableHeader>
+                        <TableRow>
+                          <TableHead>Rank</TableHead>
+                          <TableHead>Player</TableHead>
+                          <TableHead>Rating</TableHead>
+                          <TableHead>Comps</TableHead>
+                          <TableHead>Wins</TableHead>
+                          <TableHead>Avg Return</TableHead>
+                          <TableHead>Last Delta</TableHead>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        {leaderboardEntries.map((entry) => (
+                          <TableRow key={entry.userId}>
+                            <TableCell>#{entry.rank}</TableCell>
+                            <TableCell className="font-medium">{entry.name}</TableCell>
+                            <TableCell>{formatNumber(entry.rating)}</TableCell>
+                            <TableCell>{entry.competitionsPlayed}</TableCell>
+                            <TableCell>{entry.wins}</TableCell>
+                            <TableCell>{formatNumber(entry.averageReturnPct)}%</TableCell>
+                            <TableCell>{formatSignedNumber(entry.lastRatingDelta)}</TableCell>
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </div>
+                )}
+
+                {competitionStandings.length > 0 ? (
+                  <div className="rounded-none border border-border/70">
+                    <div className="border-b border-border/70 bg-muted/20 px-3 py-2">
+                      <p className="text-xs font-medium text-muted-foreground">
+                        This Competition Standings
+                      </p>
+                    </div>
+                    <Table>
+                      <TableHeader>
+                        <TableRow>
+                          <TableHead>Rank</TableHead>
+                          <TableHead>Player</TableHead>
+                          <TableHead>Return</TableHead>
+                          <TableHead>Portfolio</TableHead>
+                          <TableHead>Rating Delta</TableHead>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        {competitionStandings.map((row) => (
+                          <TableRow key={`${row.userId}-${row.completedAt}`}>
+                            <TableCell>#{row.rank}</TableCell>
+                            <TableCell className="font-medium">{row.name}</TableCell>
+                            <TableCell>{formatNumber(row.returnPct)}%</TableCell>
+                            <TableCell>{formatNumber(row.finalPortfolioValue)}</TableCell>
+                            <TableCell>{formatSignedNumber(row.ratingDelta)}</TableCell>
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </div>
+                ) : null}
+              </CardContent>
+            </Card>
 
             {phase !== "not-started" ? (
             <Tabs defaultValue="charts" className="w-full">
               <TabsList variant="line">
                 <TabsTrigger value="charts">Charts</TabsTrigger>
                 <TabsTrigger value="financial-metrics">Financial Metrics</TabsTrigger>
+                <TabsTrigger value="news">News</TabsTrigger>
                 <TabsTrigger value="market-table">Market Table</TabsTrigger>
               </TabsList>
 
@@ -1378,7 +1695,10 @@ export default function CompetitionDetailPage() {
                           Visible candles: {selectedVisiblePoints.length}
                         </p>
                       </div>
-                      <StockCandlestickChart points={selectedVisiblePoints} />
+                      <StockCandlestickChart
+                        points={selectedVisiblePoints}
+                        startDate={data.competition.startDate}
+                      />
                     </CardContent>
                   </Card>
 
@@ -1525,6 +1845,102 @@ export default function CompetitionDetailPage() {
                           </AccordionItem>
                         ))}
                       </Accordion>
+                    )}
+                  </CardContent>
+                </Card>
+              </TabsContent>
+
+              <TabsContent value="news" className="pt-3">
+                <Card className="border border-border/70 bg-card">
+                  <CardHeader>
+                    <CardTitle className="text-base font-semibold">Competition News</CardTitle>
+                    <CardDescription>
+                      Top 5 items per category from one month before competition start.
+                    </CardDescription>
+                  </CardHeader>
+
+                  <CardContent className="space-y-4">
+                    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                      <div>
+                        <p className="mb-1 text-xs text-muted-foreground">Stock</p>
+                        <Select value={selectedNewsSymbol} onValueChange={setSelectedNewsSymbol}>
+                          <SelectTrigger className="w-full">
+                            <SelectValue placeholder="Select stock" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            {(data.news ?? []).map((stock) => (
+                              <SelectItem key={stock.symbol} value={stock.symbol}>
+                                {stock.symbol}
+                              </SelectItem>
+                            ))}
+                          </SelectContent>
+                        </Select>
+                      </div>
+
+                      <div className="rounded-none border border-border/70 bg-muted/20 p-3">
+                        <p className="text-xs text-muted-foreground">Company</p>
+                        <p className="mt-1 text-sm font-medium">
+                          {selectedNewsData?.companyName ?? "-"}
+                        </p>
+                      </div>
+
+                      <div className="rounded-none border border-border/70 bg-muted/20 p-3">
+                        <p className="text-xs text-muted-foreground">Available categories</p>
+                        <p className="mt-1 text-sm font-medium">company, finance, global, industry</p>
+                      </div>
+                    </div>
+
+                    {!selectedNewsData ? (
+                      <p className="text-xs text-muted-foreground">No news available for this competition.</p>
+                    ) : (
+                      <div className="grid gap-4 lg:grid-cols-2">
+                        {([
+                          "company",
+                          "finance",
+                          "global",
+                          "industry",
+                        ] as const).map((category) => {
+                          const articles = selectedNewsData.categories[category] ?? [];
+
+                          return (
+                            <div
+                              key={`${selectedNewsData.symbol}-${category}`}
+                              className="rounded-none border border-border/70"
+                            >
+                              <div className="border-b border-border/70 bg-muted/20 px-3 py-2">
+                                <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                                  {category}
+                                </p>
+                              </div>
+
+                              <div className="space-y-3 p-3">
+                                {articles.length === 0 ? (
+                                  <p className="text-xs text-muted-foreground">No articles found.</p>
+                                ) : (
+                                  articles.map((article) => (
+                                    <div
+                                      key={`${category}-${article.rank}-${article.link}`}
+                                      className="rounded-none border border-border/60 p-3"
+                                    >
+                                      <p className="text-[11px] text-muted-foreground">
+                                        #{article.rank} • {article.source ?? "Unknown source"} • {formatNewsDate(article.publishedAt)}
+                                      </p>
+                                      <a
+                                        href={article.link}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="mt-1 block text-sm font-medium text-foreground underline-offset-4 hover:underline"
+                                      >
+                                        {article.title}
+                                      </a>
+                                    </div>
+                                  ))
+                                )}
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
                     )}
                   </CardContent>
                 </Card>
