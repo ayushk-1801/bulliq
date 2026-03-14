@@ -60,6 +60,39 @@ type DecisionLog = {
 
 type SubmitDecision = DecisionLog;
 
+type AiIndicatorSignal = "bullish" | "bearish" | "neutral";
+
+type AiIndicatorExplanation = {
+  name: string;
+  value: string;
+  signal: AiIndicatorSignal;
+  explanation: string;
+  howItWorks: string;
+  buySellInference: string;
+};
+
+type AiFutureScenario = {
+  scenario: string;
+  probabilityPct: number | null;
+  timeframe: string;
+  trigger: string;
+  invalidation: string;
+  expectedMove: string;
+  suggestedAction: string;
+};
+
+type AiDecisionAnalysis = {
+  summary: string;
+  actualLabel: Decision;
+  isLabelAligned: boolean;
+  confidence: number | null;
+  candlestickReasoning: string;
+  futureOutlook: string;
+  futureScenarios: AiFutureScenario[];
+  indicators: AiIndicatorExplanation[];
+  riskNotes: string[];
+};
+
 type SubmitResponse = {
   status: "submitted";
   summary: {
@@ -72,6 +105,12 @@ type SubmitResponse = {
   decisions: Array<
     SubmitDecision & { expectedAction: Decision; isCorrect: boolean }
   >;
+  aiReview?: {
+    status: "available" | "unavailable" | "error";
+    model: "gemini-3.1-flash-lite-preview";
+    error?: string;
+    analysis?: AiDecisionAnalysis;
+  };
 };
 
 // ── Constants ──────────────────────────────────────────────────────────────────
@@ -1176,6 +1215,215 @@ export default function IntradayPlayPage() {
               </div>
               {/* end right column */}
             </div>
+
+            {/* AI Reasoning - Below chart, full width */}
+            {result?.aiReview && (
+              <Card className="border-border/70 bg-card border">
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-base">AI Reasoning</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  {result.aiReview.status !== "available" ||
+                  !result.aiReview.analysis ? (
+                    <p className="text-muted-foreground text-xs">
+                      {result.aiReview.error ??
+                        "AI reasoning is currently unavailable."}
+                    </p>
+                  ) : (
+                    <div className="space-y-3 text-xs">
+                      <div className="border-border/70 bg-muted/20 rounded-none border px-3 py-2">
+                        <div className="flex items-center justify-between">
+                          <span className="text-muted-foreground">Model</span>
+                          <span className="font-medium">
+                            {result.aiReview.model}
+                          </span>
+                        </div>
+                        <div className="mt-1 flex items-center justify-between">
+                          <span className="text-muted-foreground">
+                            Actual label
+                          </span>
+                          <span
+                            className={
+                              result.aiReview.analysis.actualLabel ===
+                              "BUY"
+                                ? "font-semibold text-emerald-600 dark:text-emerald-400"
+                                : result.aiReview.analysis.actualLabel ===
+                                    "SELL"
+                                  ? "font-semibold text-red-500"
+                                  : "font-medium"
+                            }
+                          >
+                            {result.aiReview.analysis.actualLabel}
+                          </span>
+                        </div>
+                        {typeof result.aiReview.analysis.confidence ===
+                          "number" && (
+                          <div className="mt-1 flex items-center justify-between">
+                            <span className="text-muted-foreground">
+                              Confidence
+                            </span>
+                            <span className="font-medium">
+                              {formatNumber(
+                                result.aiReview.analysis.confidence * 100,
+                              )}
+                              %
+                            </span>
+                          </div>
+                        )}
+                      </div>
+
+                      {result.aiReview.analysis.summary && (
+                        <p className="text-muted-foreground">
+                          {result.aiReview.analysis.summary}
+                        </p>
+                      )}
+
+                      {result.aiReview.analysis.candlestickReasoning && (
+                        <div className="border-border/70 rounded-none border px-3 py-2">
+                          <p className="text-foreground font-medium">
+                            Candlestick reasoning
+                          </p>
+                          <p className="text-muted-foreground mt-1">
+                            {result.aiReview.analysis.candlestickReasoning}
+                          </p>
+                        </div>
+                      )}
+
+                      {(result.aiReview.analysis.futureOutlook ||
+                        result.aiReview.analysis.futureScenarios.length >
+                          0) && (
+                        <div className="space-y-2">
+                          <p className="text-foreground font-medium">
+                            What can happen next
+                          </p>
+                          {result.aiReview.analysis.futureOutlook && (
+                            <p className="text-muted-foreground">
+                              {result.aiReview.analysis.futureOutlook}
+                            </p>
+                          )}
+                          {result.aiReview.analysis.futureScenarios.map(
+                            (scenario, idx) => (
+                              <div
+                                key={`${scenario.scenario}-${idx}`}
+                                className="border-border/70 bg-muted/20 rounded-none border px-3 py-2"
+                              >
+                                <div className="flex items-center justify-between gap-2">
+                                  <span className="font-semibold">
+                                    {scenario.scenario}
+                                  </span>
+                                  {typeof scenario.probabilityPct ===
+                                    "number" && (
+                                    <span className="text-muted-foreground font-medium">
+                                      {formatNumber(scenario.probabilityPct)}%
+                                    </span>
+                                  )}
+                                </div>
+                                {scenario.timeframe && (
+                                  <p className="text-muted-foreground mt-1">
+                                    Timeframe: {scenario.timeframe}
+                                  </p>
+                                )}
+                                {scenario.trigger && (
+                                  <p className="text-muted-foreground mt-1">
+                                    Trigger: {scenario.trigger}
+                                  </p>
+                                )}
+                                {scenario.invalidation && (
+                                  <p className="text-muted-foreground mt-1">
+                                    Invalidation: {scenario.invalidation}
+                                  </p>
+                                )}
+                                {scenario.expectedMove && (
+                                  <p className="text-muted-foreground mt-1">
+                                    Expected move: {scenario.expectedMove}
+                                  </p>
+                                )}
+                                {scenario.suggestedAction && (
+                                  <p className="text-muted-foreground mt-1">
+                                    Suggested action: {scenario.suggestedAction}
+                                  </p>
+                                )}
+                              </div>
+                            ),
+                          )}
+                        </div>
+                      )}
+
+                      {result.aiReview.analysis.indicators.length > 0 && (
+                        <div className="space-y-2">
+                          <p className="text-foreground font-medium">
+                            Indicator breakdown
+                          </p>
+                          {result.aiReview.analysis.indicators.map(
+                            (indicator, idx) => (
+                              <div
+                                key={`${indicator.name}-${idx}`}
+                                className="border-border/70 bg-muted/20 rounded-none border px-3 py-2"
+                              >
+                                <div className="flex items-center justify-between gap-2">
+                                  <span className="font-semibold">
+                                    {indicator.name}
+                                  </span>
+                                  <span
+                                    className={
+                                      indicator.signal === "bullish"
+                                        ? "text-emerald-600 dark:text-emerald-400"
+                                        : indicator.signal === "bearish"
+                                          ? "text-red-500"
+                                          : "text-muted-foreground"
+                                    }
+                                  >
+                                    {indicator.signal}
+                                  </span>
+                                </div>
+                                {indicator.value && (
+                                  <p className="text-muted-foreground mt-1">
+                                    Value: {indicator.value}
+                                  </p>
+                                )}
+                                {indicator.howItWorks && (
+                                  <p className="text-muted-foreground mt-1">
+                                    How it works: {indicator.howItWorks}
+                                  </p>
+                                )}
+                                {indicator.explanation && (
+                                  <p className="text-muted-foreground mt-1">
+                                    Why now: {indicator.explanation}
+                                  </p>
+                                )}
+                                {indicator.buySellInference && (
+                                  <p className="text-muted-foreground mt-1">
+                                    Buy/Sell read: {indicator.buySellInference}
+                                  </p>
+                                )}
+                              </div>
+                            ),
+                          )}
+                        </div>
+                      )}
+
+                      {result.aiReview.analysis.riskNotes.length > 0 && (
+                        <div className="space-y-1">
+                          <p className="text-foreground font-medium">
+                            Risk notes
+                          </p>
+                          {result.aiReview.analysis.riskNotes.map(
+                            (note, idx) => (
+                              <p
+                                key={`${note}-${idx}`}
+                                className="text-muted-foreground"
+                              >
+                                - {note}
+                              </p>
+                            ),
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
+            )}
           </div>
         )}
       </div>
