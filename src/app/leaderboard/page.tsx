@@ -18,6 +18,8 @@ import {
 import { db } from "~/server/db"
 import { leaderboard, user } from "~/server/db/schema"
 
+export const dynamic = "force-dynamic"
+
 function formatNumber(value: number): string {
   return new Intl.NumberFormat("en-IN", {
     maximumFractionDigits: 2,

@@ -178,12 +178,12 @@ export default function DurationChallengesPage() {
                     <span className="font-medium">{formatCapital(challenge.startingCapital)}</span>
                   </div>
 
-                  <div className="flex items-center justify-between text-xs">
+                  {/* <div className="flex items-center justify-between text-xs">
                     <span className="text-muted-foreground">Status</span>
                     <Badge variant="outline" className="uppercase">
                       {challenge.status}
                     </Badge>
-                  </div>
+                  </div> */}
 
                   {/* <div>
                     <p className="mb-2 text-xs text-muted-foreground">Stocks ({challenge.stocks.length})</p>
