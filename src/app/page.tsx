@@ -1,7 +1,6 @@
 import { headers } from "next/headers";
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import { ModeToggle } from "~/components/mode-toggle";
 import { Button } from "~/components/ui/button";
 
 import { auth } from "~/server/better-auth";
@@ -11,39 +10,48 @@ export default async function Home() {
   const session = await getSession();
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-background">
-      <div className="absolute top-4 right-4">
-        <ModeToggle />
-      </div>
+    <main className="mx-auto flex min-h-[calc(100vh-4rem)] w-full max-w-4xl items-center justify-center px-4 py-16 sm:px-6">
+      <section className="w-full rounded-2xl border border-border/70 bg-card/40 p-8 text-center backdrop-blur sm:p-10">
+        <p className="font-mono text-[10px] tracking-[0.25em] text-muted-foreground uppercase">
+          BullIQ
+        </p>
+        <h1 className="mt-2 text-4xl font-semibold tracking-tight sm:text-5xl">
+          Invest with clarity.
+        </h1>
+        <p className="mx-auto mt-3 max-w-2xl text-sm text-muted-foreground sm:text-base">
+          Stock discovery, intraday ideas, and long-term outlook in one place.
+        </p>
 
-      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
-        <div className="text-center space-y-4">
-          <h1 className="text-5xl font-bold tracking-tight">Welcome to BullIQ</h1>
-          <p className="text-xl text-muted-foreground">
-            {session
-              ? `Logged in as ${session.user?.name}`
-              : "Please sign in to continue"}
-          </p>
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+          {!session ? (
+            <>
+              <Link href="/signup">
+                <Button size="lg" className="min-w-36">Get Started</Button>
+              </Link>
+              <Link href="/login">
+                <Button size="lg" variant="outline" className="min-w-36">Sign In</Button>
+              </Link>
+            </>
+          ) : (
+            <>
+              <Link href="/discover">
+                <Button size="lg" className="min-w-36">Open Discover</Button>
+              </Link>
+              <Link href="/compete">
+                <Button size="lg" variant="outline" className="min-w-36">Open Compete</Button>
+              </Link>
+            </>
+          )}
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-4">
-          {!session ? (
-            <div className="flex gap-4">
-              <Link href="/login">
-                <Button size="lg" className="px-8">
-                  Sign In
-                </Button>
-              </Link>
-              <Link href="/signup">
-                <Button size="lg" variant="outline" className="px-8">
-                  Create Account
-                </Button>
-              </Link>
-            </div>
-          ) : (
+        {session && (
+          <div className="mt-5 flex flex-col items-center gap-2">
+            <p className="text-xs text-muted-foreground">
+              Signed in as {session.user?.name ?? session.user?.email ?? "Trader"}
+            </p>
             <form>
               <button
-                className="rounded-full bg-red-600/80 px-10 py-3 font-semibold no-underline transition hover:bg-red-700"
+                className="text-xs text-muted-foreground underline-offset-4 transition hover:text-foreground hover:underline"
                 formAction={async () => {
                   "use server";
                   await auth.api.signOut({
@@ -55,9 +63,9 @@ export default async function Home() {
                 Sign Out
               </button>
             </form>
-          )}
-        </div>
-      </div>
+          </div>
+        )}
+      </section>
     </main>
   );
 }

@@ -1,0 +1,3 @@
+ALTER TABLE "volatile_day_summary" ADD COLUMN "action" text DEFAULT 'none' NOT NULL;--> statement-breakpoint
+ALTER TABLE "volatile_day_summary" ADD CONSTRAINT "volatile_day_summary_symbol_nifty_company_symbol_fk" FOREIGN KEY ("symbol") REFERENCES "public"."nifty_company"("symbol") ON DELETE cascade ON UPDATE no action;--> statement-breakpoint
+ALTER TABLE "volatile_minute_candle" ADD CONSTRAINT "volatile_minute_candle_symbol_nifty_company_symbol_fk" FOREIGN KEY ("symbol") REFERENCES "public"."nifty_company"("symbol") ON DELETE cascade ON UPDATE no action;

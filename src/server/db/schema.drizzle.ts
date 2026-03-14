@@ -6,4 +6,6 @@ export {
   niftyCompany,
   niftyFinancialMetric,
   niftyStockDaily,
+  volatileDaySummary,
+  volatileMinuteCandle,
 } from "./schema";

@@ -10,6 +10,8 @@
     "db:migrate": "drizzle-kit migrate",
     "db:push": "drizzle-kit push",
     "db:seed:nifty50": "node scripts/seed-nifty50.mjs",
+    "db:save:volatile": "tsx scripts/save-volatile-minute-data.ts",
+    "kite:volatile": "python scripts/fetch-volatile-minute-data.py --top-n 50",
     "news:preview": "tsx scripts/preview-competition-news.ts",
     "news:preview:all": "tsx scripts/preview-competition-news.ts --competitionLimit=1000",
     "news:save": "tsx scripts/save-competition-news.ts",

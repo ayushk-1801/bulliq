@@ -22,6 +22,34 @@
       "when": 1773434400831,
       "tag": "0002_right_gorilla_man",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1773441000606,
+      "tag": "0003_chief_shooting_star",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1773441027271,
+      "tag": "0004_curved_harrier",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1773447786515,
+      "tag": "0005_rich_hitman",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1773448616334,
+      "tag": "0006_closed_mastermind",
+      "breakpoints": true
     }
   ]
 }

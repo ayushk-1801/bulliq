@@ -22,7 +22,7 @@ const competitionModes = [
     title: "Intra Day",
     description: "Fast-paced market sessions with shorter holding periods.",
     href: "/compete/intraday",
-    badge: "Coming Soon",
+    badge: "Live",
     cta: "Explore",
   },
   {
@@ -30,6 +30,13 @@ const competitionModes = [
     description: "Historical multi-month challenges built from real market data.",
     href: "/compete/long-term",
     badge: "Live",
+    cta: "Continue",
+  },
+  {
+    title: "Swing Trading",
+    description: "Daily swing trading challenges with real market data.",
+    href: "/compete/swing-trading",
+    badge: "Coming Soon",
     cta: "Continue",
   },
 ] as const;

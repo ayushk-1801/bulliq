@@ -12,6 +12,8 @@ export const env = createEnv({
         ? z.string()
         : z.string().optional(),
     DATABASE_URL: z.string().url(),
+    KNOWLEDGE_API_URL: z.string().url(),
+    STOCK_ANALYSIS_API_URL: z.string().url(),
     NODE_ENV: z
       .enum(["development", "test", "production"])
       .default("development"),
@@ -33,6 +35,8 @@ export const env = createEnv({
   runtimeEnv: {
     BETTER_AUTH_SECRET: process.env.BETTER_AUTH_SECRET,
     DATABASE_URL: process.env.DATABASE_URL,
+    KNOWLEDGE_API_URL: process.env.KNOWLEDGE_API_URL,
+    STOCK_ANALYSIS_API_URL: process.env.STOCK_ANALYSIS_API_URL,
     NODE_ENV: process.env.NODE_ENV,
   },
   /**

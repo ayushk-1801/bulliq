@@ -1,0 +1,1 @@
+ALTER TABLE "user" ADD COLUMN "has_passed_knowledge_check" boolean DEFAULT false NOT NULL;

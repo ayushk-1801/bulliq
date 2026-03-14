@@ -165,6 +165,78 @@ export const competitionNews = createTable(
   ],
 );
 
+export const volatileDaySummary = createTable(
+  "volatile_day_summary",
+  {
+    id: integer("id").primaryKey().generatedByDefaultAsIdentity(),
+    symbol: text("symbol")
+      .notNull()
+      .references(() => niftyCompany.symbol, { onDelete: "cascade" }),
+    tradeDate: date("trade_date").notNull(),
+    volatilityPct: doublePrecision("volatility_pct").notNull(),
+    open: doublePrecision("open").notNull(),
+    high: doublePrecision("high").notNull(),
+    low: doublePrecision("low").notNull(),
+    close: doublePrecision("close").notNull(),
+    totalVolume: bigint("total_volume", { mode: "number" }).notNull(),
+    drasticChangeTime: timestamp("drastic_change_time", {
+      withTimezone: true,
+    }).notNull(),
+    drasticChangePct: doublePrecision("drastic_change_pct").notNull(),
+    action: text("action").notNull().default("none"),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .$defaultFn(() => new Date())
+      .notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true })
+      .$defaultFn(() => new Date())
+      .notNull(),
+  },
+  (t) => [
+    uniqueIndex("volatile_day_summary_symbol_trade_date_uq").on(
+      t.symbol,
+      t.tradeDate,
+    ),
+    index("volatile_day_summary_trade_date_idx").on(t.tradeDate),
+    index("volatile_day_summary_symbol_idx").on(t.symbol),
+    index("volatile_day_summary_volatility_idx").on(t.volatilityPct),
+  ],
+);
+
+export const volatileMinuteCandle = createTable(
+  "volatile_minute_candle",
+  {
+    id: integer("id").primaryKey().generatedByDefaultAsIdentity(),
+    symbol: text("symbol")
+      .notNull()
+      .references(() => niftyCompany.symbol, { onDelete: "cascade" }),
+    tradeDate: date("trade_date").notNull(),
+    candleTime: timestamp("candle_time", { withTimezone: true }).notNull(),
+    open: doublePrecision("open").notNull(),
+    high: doublePrecision("high").notNull(),
+    low: doublePrecision("low").notNull(),
+    close: doublePrecision("close").notNull(),
+    volume: bigint("volume", { mode: "number" }).notNull(),
+    minuteChangePct: doublePrecision("minute_change_pct"),
+    isDrasticMoment: boolean("is_drastic_moment").notNull().default(false),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .$defaultFn(() => new Date())
+      .notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true })
+      .$defaultFn(() => new Date())
+      .notNull(),
+  },
+  (t) => [
+    uniqueIndex("volatile_minute_candle_symbol_date_time_uq").on(
+      t.symbol,
+      t.tradeDate,
+      t.candleTime,
+    ),
+    index("volatile_minute_candle_trade_date_idx").on(t.tradeDate),
+    index("volatile_minute_candle_symbol_idx").on(t.symbol),
+    index("volatile_minute_candle_drastic_idx").on(t.isDrasticMoment),
+  ],
+);
+
 export const user = pgTable("user", {
   id: text("id").primaryKey(),
   name: text("name").notNull(),
@@ -173,6 +245,9 @@ export const user = pgTable("user", {
     .$defaultFn(() => false)
     .notNull(),
   image: text("image"),
+  hasPassedKnowledgeCheck: boolean("has_passed_knowledge_check")
+    .default(false)
+    .notNull(),
   createdAt: timestamp("created_at")
     .$defaultFn(() => /* @__PURE__ */ new Date())
     .notNull(),
@@ -308,6 +383,8 @@ export const niftyCompanyRelations = relations(niftyCompany, ({ many }) => ({
   stockDaily: many(niftyStockDaily),
   financialMetrics: many(niftyFinancialMetric),
   competitionStocks: many(competitionStock),
+  volatileDaySummaries: many(volatileDaySummary),
+  volatileMinuteCandles: many(volatileMinuteCandle),
 }));
 
 export const niftyStockDailyRelations = relations(niftyStockDaily, ({ one }) => ({
@@ -371,3 +448,23 @@ export const competitionNewsRelations = relations(competitionNews, ({ one }) => 
     references: [niftyCompany.symbol],
   }),
 }));
+
+export const volatileDaySummaryRelations = relations(
+  volatileDaySummary,
+  ({ one }) => ({
+    company: one(niftyCompany, {
+      fields: [volatileDaySummary.symbol],
+      references: [niftyCompany.symbol],
+    }),
+  }),
+);
+
+export const volatileMinuteCandleRelations = relations(
+  volatileMinuteCandle,
+  ({ one }) => ({
+    company: one(niftyCompany, {
+      fields: [volatileMinuteCandle.symbol],
+      references: [niftyCompany.symbol],
+    }),
+  }),
+);

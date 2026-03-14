@@ -10,7 +10,16 @@ export const auth = betterAuth({
   }),
   emailAndPassword: {
     enabled: true,
-  }
+  },
+  user: {
+    additionalFields: {
+      hasPassedKnowledgeCheck: {
+        type: "boolean",
+        required: true,
+        defaultValue: false,
+      },
+    },
+  },
 });
 
 export type Session = typeof auth.$Infer.Session;
