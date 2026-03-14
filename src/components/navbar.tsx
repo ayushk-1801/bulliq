@@ -97,7 +97,7 @@ export function Navbar() {
                   </Avatar>
                 </button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-56">
+              <DropdownMenuContent align="end" className="w-56 bg-background">
                 <DropdownMenuLabel>
                   <div className="space-y-0.5">
                     <p className="text-foreground">

@@ -1044,10 +1044,11 @@ function ReportSections({ d }: { d: AnalysisReport }) {
 }
 
 export default function DiscoverPage() {
-  const [symbol, setSymbol] = useState("Reliance");
+  const [symbol, setSymbol] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [report, setReport] = useState<AnalysisReport | null>(null);
+  const quickPicks = ["TCS", "INFY", "RELIANCE.NS", "HDFCBANK"];
 
   async function runAnalysis(e: React.FormEvent) {
     e.preventDefault();
@@ -1088,7 +1089,10 @@ export default function DiscoverPage() {
         !report && !loading && !error && "min-h-[calc(100vh-5rem)] justify-center",
       )}
     >
-      <section className="w-full max-w-4xl self-center rounded-2xl border border-border/70 bg-linear-to-b from-card/70 to-card/35 p-5 shadow-sm backdrop-blur">
+      <section className="relative w-full max-w-4xl self-center overflow-hidden rounded-2xl border border-border/70 bg-linear-to-b from-card/70 to-card/35 p-5 shadow-sm backdrop-blur">
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-border/80 to-transparent" />
+        <div className="pointer-events-none absolute right-0 bottom-0 left-0 h-12 bg-linear-to-t from-muted/10 to-transparent" />
+
         <div className="mb-4 flex items-start justify-between gap-3">
           <div>
             <p className="font-mono text-[10px] font-semibold tracking-[0.22em] text-muted-foreground/70 uppercase">
@@ -1124,8 +1128,43 @@ export default function DiscoverPage() {
           <p className="text-xs text-muted-foreground/85">
             Tip: You can use common names like Reliance or ticker formats like RELIANCE.NS.
           </p>
+
+          <div className="border-border/60 mt-3 border-t pt-3">
+            <p className="mb-2 text-[11px] tracking-wide text-muted-foreground uppercase">Quick picks</p>
+            <div className="flex flex-wrap gap-2">
+              {quickPicks.map((pick) => (
+                <button
+                  key={pick}
+                  type="button"
+                  onClick={() => setSymbol(pick)}
+                  className="rounded-md border border-border/70 bg-muted/20 px-2.5 py-1 text-xs text-foreground/90 transition hover:bg-muted/35"
+                >
+                  {pick}
+                </button>
+              ))}
+            </div>
+          </div>
         </form>
       </section>
+
+      {!report && !loading && !error && (
+        <section className="w-full max-w-4xl self-center rounded-xl border border-border/60 bg-card/35 p-4 backdrop-blur">
+          <div className="grid gap-3 sm:grid-cols-3">
+            <div className="border-border/55 rounded-md border bg-background/20 p-3">
+              <p className="text-[11px] tracking-wide text-muted-foreground uppercase">Input</p>
+              <p className="mt-1 text-sm text-foreground/90">Enter stock name or ticker.</p>
+            </div>
+            <div className="border-border/55 rounded-md border bg-background/20 p-3">
+              <p className="text-[11px] tracking-wide text-muted-foreground uppercase">Analyze</p>
+              <p className="mt-1 text-sm text-foreground/90">Get AI technical + sentiment report.</p>
+            </div>
+            <div className="border-border/55 rounded-md border bg-background/20 p-3">
+              <p className="text-[11px] tracking-wide text-muted-foreground uppercase">Decide</p>
+              <p className="mt-1 text-sm text-foreground/90">Review signal, risk plan, and levels.</p>
+            </div>
+          </div>
+        </section>
+      )}
 
       {loading && <StockAnalysisLoader symbol={symbol.trim() || "Stock"} />}
 
