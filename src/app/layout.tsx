@@ -6,6 +6,7 @@ import { cn } from "~/lib/utils";
 import { TooltipProvider } from "~/components/ui/tooltip";
 import { ThemeProvider } from "~/components/theme-provider";
 import { Navbar } from "~/components/navbar";
+import { KnowledgeChatbot } from "~/components/knowledge-chatbot";
 
 export const metadata: Metadata = {
   title: "Create T3 App",
@@ -36,6 +37,7 @@ export default function RootLayout({
           <TooltipProvider>
             <Navbar />
             {children}
+            <KnowledgeChatbot />
           </TooltipProvider>
         </ThemeProvider>
       </body>

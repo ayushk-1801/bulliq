@@ -64,6 +64,11 @@ export function Navbar() {
               Leaderboard
             </Button>
           </Link>
+          <Link href="/knowledge">
+            <Button variant="ghost" className="text-base">
+              Learning
+            </Button>
+          </Link>
         </div>
 
         {/* Right Side - Auth & Theme Toggle */}
