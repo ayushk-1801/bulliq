@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 import { Button } from "~/components/ui/button";
 import { Textarea } from "~/components/ui/textarea";
@@ -147,7 +149,15 @@ export function KnowledgeChatbot() {
                     : "bg-muted text-foreground"
                 }`}
               >
-                <p>{message.text}</p>
+                {message.role === "assistant" ? (
+                  <div className="space-y-2 wrap-break-word [&_h1]:text-base [&_h1]:font-semibold [&_h2]:text-sm [&_h2]:font-semibold [&_h3]:text-sm [&_h3]:font-semibold [&_ol]:ml-4 [&_ol]:list-decimal [&_p]:leading-relaxed [&_ul]:ml-4 [&_ul]:list-disc [&_li]:leading-relaxed [&_code]:rounded [&_code]:bg-black/10 [&_code]:px-1 [&_code]:py-0.5 dark:[&_code]:bg-white/10">
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                      {message.text}
+                    </ReactMarkdown>
+                  </div>
+                ) : (
+                  <p>{message.text}</p>
+                )}
               </div>
             ))}
 
@@ -201,7 +211,12 @@ export function KnowledgeChatbot() {
           strokeWidth="2"
           className="h-6 w-6"
         >
-          <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" />
+          <rect x="5" y="8" width="14" height="11" rx="2" />
+          <path d="M12 4v4" />
+          <path d="M9 4h6" />
+          <circle cx="10" cy="13" r="1" />
+          <circle cx="14" cy="13" r="1" />
+          <path d="M9 16h6" />
         </svg>
       </button>
     </>
