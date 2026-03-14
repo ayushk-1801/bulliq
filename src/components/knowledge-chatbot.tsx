@@ -11,7 +11,7 @@ type ChatMessage = {
   text: string;
 };
 
-const CHAT_API_URL = "http://127.0.0.1:8002/chat";
+const CHAT_API_URL = "/api/chat";
 
 function extractAssistantReply(data: unknown): string {
   if (typeof data === "string") return data;
