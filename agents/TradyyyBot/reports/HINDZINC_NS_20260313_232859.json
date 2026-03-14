@@ -1,0 +1,1677 @@
+{
+  "report_id": "HINDZINC_NS_20260313_232859",
+  "symbol": "HINDZINC.NS",
+  "timeframe": "1d",
+  "forecast_bars": 3,
+  "start_timestamp": "2025-11-13 15:30:00",
+  "end_timestamp": "2026-03-13 15:30:00",
+  "final_signal": "NO_TRADE",
+  "confidence": 0.45,
+  "confluence_scores": {
+    "buy": 0.265,
+    "sell": 0.355,
+    "no_trade": 0.088
+  },
+  "risk_plan": {
+    "summary": "Risk Plan: size=0 shares, ATR=17.75, stop=N/A, target=N/A.",
+    "reasoning_prompt": "Risk protocol:\n1) Estimate recent volatility using ATR.\n2) Define one-unit risk from ATR multiple and cap portfolio risk near 1% per trade.\n3) Convert risk budget into position size.\n4) Anchor stop to volatility-adjusted invalidation and target to asymmetric reward.\n5) Force size=0 when final signal is NO_TRADE.",
+    "llm_reasoning": "Significant risk exists in the form of a breakdown below the current support zone. With an ATR of 17.75, daily volatility is meaningful. A failure to hold the current levels could lead to an acceleration of the bearish trend. Given the low volume, any sudden liquidation could lead to rapid price slippage; therefore, tight stop-losses are recommended until a clear bullish reversal is confirmed.",
+    "position_size": 0,
+    "stop_loss": null,
+    "target": null,
+    "risk_reward": "N/A",
+    "detail": {
+      "capital": 100000.0,
+      "risk_budget": 1000.0,
+      "one_risk": 21.29999476841518,
+      "atr": 17.749995640345983
+    }
+  },
+  "final_conclusion": {
+    "signal": "NO_TRADE",
+    "confidence": 0.45,
+    "when_to_buy": "Wait for a daily close below 570 with rising volume for a short, or a decisive 5% snap-back rally for a long.",
+    "expected_holding_duration": "2-6 weeks",
+    "stop_loss": null,
+    "targets": [],
+    "target": null,
+    "analyst_consensus": {
+      "target_price": null,
+      "target_high": null,
+      "target_low": null,
+      "n_analysts": null,
+      "implied_upside_pct": null
+    },
+    "price_52w": {
+      "high": 733.0,
+      "low": 388.55,
+      "current": 551.95,
+      "position_pct": 47.4,
+      "change_1y_pct": null
+    },
+    "key_price_levels": [
+      {
+        "label": "Resistance 1",
+        "price": 624.8,
+        "type": "resistance"
+      },
+      {
+        "label": "Resistance 2",
+        "price": 634.0,
+        "type": "resistance"
+      },
+      {
+        "label": "Resistance 3",
+        "price": 650.75,
+        "type": "resistance"
+      },
+      {
+        "label": "Current",
+        "price": 583.0,
+        "type": "current"
+      },
+      {
+        "label": "Support",
+        "price": 575.0,
+        "type": "support"
+      },
+      {
+        "label": "Breakdown Zone",
+        "price": 566.5,
+        "type": "breakdown"
+      }
+    ],
+    "playbook_title": "Support breakdown vs. Value floor",
+    "thesis": "The stock is trapped in a classic tug-of-war between technical decay and fundamental dividend appeal. While price is leaning toward a support breakdown at 575, the strong ROE and growth profile act as a soft cushion, preventing a clean short setup. Institutional interest in high-dividend stocks often emerges near these 52-week mid-range support zones, making a breakout or breakdown unreliable for a swing entry right now.",
+    "execution_style": "Mean reversion or breakdown wait",
+    "risk_flag": "Divergence between fundamental value and technical momentum",
+    "invalidation": "Price stabilizing above 610 with consolidated volume would nullify the bearish thesis.",
+    "summary": "**FINAL CONCLUSION**\n- Signal: NO_TRADE\n- Confidence: 0.450\n- Action Bias: Wait / no-trade setup\n- Playbook: Support breakdown vs. Value floor\n- Thesis: The stock is trapped in a classic tug-of-war between technical decay and fundamental dividend appeal. While price is leaning toward a support breakdown at 575, the strong ROE and growth profile act as a soft cushion, preventing a clean short setup. Institutional interest in high-dividend stocks often emerges near these 52-week mid-range support zones, making a breakout or breakdown unreliable for a swing entry right now.\n- When to Act: Wait for a daily close below 570 with rising volume for a short, or a decisive 5% snap-back rally for a long.\n- Execution Style: Mean reversion or breakdown wait\n- Invalidation: Price stabilizing above 610 with consolidated volume would nullify the bearish thesis.\n- Expected Holding Duration: 2-6 weeks\n- Context: uptrend with pullback near support\n- Risk Flag: Divergence between fundamental value and technical momentum\n- Stop-loss: N/A\n- Targets: N/A\n- 52w Range: ₹388.55 – ₹733.00"
+  },
+  "long_term_outlook": {
+    "stance": "LONG_TERM_NEUTRAL",
+    "confidence": 0.55,
+    "score": 0.215,
+    "summary": "LONG-TERM OUTLOOK (Based on News, Financials, and Price Data)\n- Stance: LONG_TERM_NEUTRAL\n- Confidence: 0.550\n- Sector: Unknown\n- Data coverage: 2465 daily bars for long-term model.\n- Price trend (1Y/3Y/5Y/10Y): 3.6432281415492485% / 28.361569378695094% / 55.124040466857636% / 207.09467231802356%.\n- Long-run quality: CAGR(3Y)=8.678842957327394%, CAGR(5Y)=9.178172781908511%, CAGR(10Y)=12.159138607211052%,\n  Max Drawdown(5Y)=-38.43985245274211%, Vol=16.11376156123879%.\n- Structural trend: price vs 200DMA=-8.555800204607944%.\n- Note: N/A metrics indicate insufficient history for that exact horizon, not an implied negative value.\n- News signal: avg sentiment=0.19 across stock/industry/macro streams (13/12/10 items).\n- Fundamental location: 52w position=47.4%, 1Y return=3.6432281415492485%.\n- Street context: analyst upside=N/A% from N/A analysts.\n- Macro overlay: India sentiment=SELL, US trend=SELL.\n\n--- VALUATION SNAPSHOT ---\n- P/E (trailing): 22.53\n- PEG ratio: N/A\n- Price/Book: 17.50\n- ROE: 77.7%\n- Debt/Equity: 0.87\n- EV/EBITDA: 12.33\n- EV/Revenue: 6.68\n- Book value per share: 31.54\n- Enterprise value: N/A\n- Gross margins: 76.8%\n- Operating margins: 42.4%\n- EBITDA margins: N/A\n- Total revenue: 330,410,000,000\n- Total debt: 115,360,000,000\n- Total cash: 960,000,000\n\n--- QUARTERLY FINANCIAL TRENDS ---\n- Revenue QoQ growth: N/A\n- Net income QoQ growth: N/A\n- Operating cash flow QoQ: N/A\n\n--- DIVIDEND & OWNERSHIP ---\n- Dividend yield: 8.2%\n- Dividend yield trend: falling\n- Total dividends (1Y): ₹10.00\n- Institutional ownership: 5.0%\n- Major holders (institutions): N/A%\n\n--- SCORING FACTORS ---\n  ↑ news_sentiment: score=+0.19 × weight=1.00\n  → return_1y: score=+0.04 × weight=0.90\n  ↑ return_3y: score=+0.28 × weight=0.80\n  ↑ return_5y: score=+0.55 × weight=0.70\n  ↑ cagr_5y: score=+0.92 × weight=0.90\n  ↓ sma200_position: score=-0.86 × weight=0.50\n  ↓ max_drawdown: score=-0.38 × weight=0.50\n  ↓ volatility: score=-0.16 × weight=0.40\n  → 52w_position: score=-0.05 × weight=0.30\n  → 1y_change: score=+0.04 × weight=0.70\n  ↑ dividend_yield: score=+0.82 × weight=0.40\n  ↑ cagr_10y: score=+1.22 × weight=1.00\n  ↑ operating_margins: score=+0.42 × weight=0.30\n  ↓ us_macro: score=-1.00 × weight=0.35\n  ↓ india_macro: score=-1.00 × weight=0.35\n\n- Composite score: 0.215\n- Secular Growth Forecast: HINDZINC displays mixed signals. While 5Y/10Y CAGR is solid and margins are strong (42%), the price is below the 200DMA with a falling dividend yield and bearish macro signals from India/US. 3-5 Year Secular Forecast: Expect moderate cyclical performance tied to metal demand, but the lack of institutional interest and technical weakness warrants caution.\n",
+    "llm_reasoning": "HINDZINC displays mixed signals. While 5Y/10Y CAGR is solid and margins are strong (42%), the price is below the 200DMA with a falling dividend yield and bearish macro signals from India/US. 3-5 Year Secular Forecast: Expect moderate cyclical performance tied to metal demand, but the lack of institutional interest and technical weakness warrants caution.",
+    "evidence": {
+      "history_bars": 2465,
+      "history_start": "2016-03-14 00:00:00",
+      "history_end": "2026-03-13 00:00:00",
+      "coverage_ratio": 1.0,
+      "sparse_long_term": false,
+      "fundamentals_sparse": false,
+      "news_avg_sentiment": 0.189,
+      "stock_news_count": 13,
+      "industry_news_count": 12,
+      "macro_news_count": 10,
+      "return_1y_pct": 3.64,
+      "return_3y_pct": 28.36,
+      "return_5y_pct": 55.12,
+      "return_10y_pct": 207.09,
+      "cagr_3y_pct": 8.68,
+      "cagr_5y_pct": 9.18,
+      "cagr_10y_pct": 12.16,
+      "price_vs_sma200_pct": -8.56,
+      "max_drawdown_5y_pct": -38.44,
+      "annualized_volatility_pct": 16.11,
+      "position_52w_pct": 47.4,
+      "change_1y_pct": 3.6432281415492485,
+      "analyst_upside_pct": null,
+      "analyst_count": null,
+      "india_sentiment_signal": "SELL",
+      "us_trend_signal": "SELL",
+      "dividend_yield": 0.08152912221174284,
+      "dividend_yield_trend": "falling",
+      "peg_ratio": null,
+      "operating_margins": 0.42353439665869674,
+      "held_pct_institutions": 0.049510002,
+      "institutions_pct": null,
+      "rev_qoq": null,
+      "ni_qoq": null,
+      "ocf_qoq": null,
+      "sector": "Unknown",
+      "scoring_factors": [
+        [
+          "news_sentiment",
+          0.189,
+          1.0
+        ],
+        [
+          "return_1y",
+          0.036,
+          0.9
+        ],
+        [
+          "return_3y",
+          0.284,
+          0.8
+        ],
+        [
+          "return_5y",
+          0.551,
+          0.7
+        ],
+        [
+          "cagr_5y",
+          0.918,
+          0.9
+        ],
+        [
+          "sma200_position",
+          -0.856,
+          0.5
+        ],
+        [
+          "max_drawdown",
+          -0.384,
+          0.5
+        ],
+        [
+          "volatility",
+          -0.161,
+          0.4
+        ],
+        [
+          "52w_position",
+          -0.052,
+          0.3
+        ],
+        [
+          "1y_change",
+          0.036,
+          0.7
+        ],
+        [
+          "dividend_yield",
+          0.815,
+          0.4
+        ],
+        [
+          "cagr_10y",
+          1.216,
+          1.0
+        ],
+        [
+          "operating_margins",
+          0.424,
+          0.3
+        ],
+        [
+          "us_macro",
+          -1.0,
+          0.35
+        ],
+        [
+          "india_macro",
+          -1.0,
+          0.35
+        ]
+      ]
+    }
+  },
+  "agent_outputs": {
+    "technical": {
+      "signal": "SELL",
+      "confidence": 0.8400000000000001,
+      "summary": "Indicator Signal: SELL | Trend: close=583.00, SMA20=594.91, SMA50=624.24. Momentum: MACD=-9.540, Signal=-8.742, Hist=-0.798, ROC10=-5.82%. Oscillators: RSI14=49.6, StochK/D=28.3/34.9, Williams%R=-71.7. Risk: ATR14=17.75, Volume=4378868 vs VolSMA20=5868307. Momentum Score=36.0/100 | MA=Sell, Trend=Falling, RSI=Neutral, MACD=Bearish.",
+      "reasoning_prompt": "Indicator reasoning protocol:\n1) Evaluate structural trend using close vs SMA20 and SMA20 vs SMA50.\n2) Validate momentum using MACD line/signal/histogram and ROC10 direction.\n3) Check exhaustion/continuation via RSI, Stochastic crossover, and Williams %R zone.\n4) Confirm participation with volume vs 20-bar average.\n5) Penalize high-volatility regimes with ATR% filters and lower confidence.\n6) If cross-indicator alignment is weak or contradictory, return NO_TRADE.",
+      "llm_reasoning": "The signal is SELL with 84% confidence. Price at 583.00 sits below the SMA20 (594.91) and SMA50 (624.24), confirming a bearish trend. Momentum is negative with MACD (-9.54) below signal, and a 10-day ROC of -5.82%. Williams %R at -71.7 indicates weakness, while volume (4.38M) remains below the 20-bar average (5.87M), suggesting insufficient buying participation to reverse the current downtrend.",
+      "detail": {
+        "bullish_points": 0,
+        "bearish_points": 7,
+        "delta": -7,
+        "rules": {
+          "trend_alignment": false,
+          "macd_alignment": false,
+          "rsi_bias": "neutral",
+          "stoch_alignment": false,
+          "willr_bias": "bearish",
+          "volume_confirmation": false
+        }
+      },
+      "price_levels": {
+        "levels": [
+          {
+            "label": "Resistance 1",
+            "price": 624.8,
+            "type": "resistance"
+          },
+          {
+            "label": "Resistance 2",
+            "price": 634.0,
+            "type": "resistance"
+          },
+          {
+            "label": "Resistance 3",
+            "price": 650.75,
+            "type": "resistance"
+          },
+          {
+            "label": "Current",
+            "price": 583.0,
+            "type": "current"
+          },
+          {
+            "label": "Support",
+            "price": 575.0,
+            "type": "support"
+          },
+          {
+            "label": "Breakdown Zone",
+            "price": 566.5,
+            "type": "breakdown"
+          }
+        ],
+        "nearest_resistance": 624.8,
+        "nearest_support": 575.0,
+        "resistance_1": 624.8,
+        "resistance_2": 634.0,
+        "resistance_3": 650.75,
+        "support": 575.0,
+        "breakdown_zone": 566.5
+      },
+      "momentum_score": 36.0,
+      "qualitative_labels": {
+        "moving_averages": "Sell",
+        "trend_channel": "Falling",
+        "rsi": "Neutral",
+        "macd": "Bearish"
+      },
+      "price_range": {
+        "high": 733.0,
+        "low": 453.5,
+        "position_pct": 46.3
+      },
+      "metrics": {
+        "close": 583.0,
+        "rsi14": 49.59971819023403,
+        "macd": -9.53991733657881,
+        "macd_signal": -8.74216292830545,
+        "macd_hist": -0.7977544082733594,
+        "sma20": 594.9124908447266,
+        "sma50": 624.24099609375,
+        "roc10": -5.823437283553434,
+        "atr14": 17.749995640345983,
+        "stoch_k": 28.301892718389173,
+        "stoch_d": 34.90566070657717,
+        "willr14": -71.69810728161083,
+        "volume": 4378868.0,
+        "volume_sma20": 5868306.7
+      }
+    },
+    "pattern": {
+      "signal": "NO_TRADE",
+      "confidence": 0.49087780491699473,
+      "summary": "Pattern Signal: NO_TRADE | setup=sideways compression (wait for breakout candle), slope=-3.3373, breakout_up=False, breakdown=False, bull_engulf=False, bear_engulf=False.",
+      "reasoning_prompt": "Pattern reasoning protocol:\n1) Detect breakout/breakdown against prior 12-bar range, not single-candle spikes.\n2) Confirm direction with local slope and bar-structure continuation.\n3) Use engulfing patterns as confirmation, not standalone trigger.\n4) Treat flat-slope compression as NO_TRADE until expansion is confirmed.\n5) Down-rank weak breakouts lacking structure confirmation.",
+      "llm_reasoning": "The signal is NO_TRADE (49% confidence). Price is currently in a state of sideways compression. With no confirmed breakout or breakdown in the 12-bar range and the absence of engulfing patterns, the structural setup lacks sufficient directional momentum. The slope of -3.34 indicates a lack of decisive movement, requiring a breakout candle to confirm the next trend phase.",
+      "detail": {
+        "setup": "sideways compression (wait for breakout candle)",
+        "slope": -3.3372732451467564,
+        "breakout_up": false,
+        "breakdown": false,
+        "bullish_engulfing": false,
+        "bearish_engulfing": false,
+        "volatility_proxy": 6.341760266607949
+      }
+    },
+    "trend": {
+      "signal": "BUY",
+      "confidence": 0.6822142735483937,
+      "summary": "Trend Signal: BUY | setup=uptrend with pullback near support, support slope=1.697, resistance slope=1.790, price position=-2.93 in channel.",
+      "reasoning_prompt": "Trend reasoning protocol:\n1) Fit support and resistance trendlines over the visible swing window.\n2) Estimate channel slope (regime direction) and channel width (trend quality).\n3) Locate current price in channel and prefer pullback entries aligned with slope.\n4) If slope is weak/flat, classify as sideways and favor NO_TRADE.\n5) Avoid chasing signals near channel extremes against risk-reward logic.",
+      "llm_reasoning": "The signal is BUY (68% confidence). Despite the recent pullback, the broader setup remains an uptrend with the price near identified support. The average channel slope is positive at 1.74, indicating a constructive underlying trajectory. Currently, the price is positioned at -2.93 within the channel, suggesting a potential mean reversion from the lower bound (support at 646.12) back toward the resistance level of 667.68.",
+      "detail": {
+        "setup": "uptrend with pullback near support",
+        "slope_avg": 1.7438,
+        "channel_width": 21.5677,
+        "channel_position": -2.9264
+      },
+      "metrics": {
+        "support_slope": 1.6973394540689328,
+        "resistance_slope": 1.7902491496535229,
+        "channel_position": -2.926,
+        "last_support": 646.12,
+        "last_resistance": 667.68
+      }
+    },
+    "news": {
+      "signal": "BUY",
+      "confidence": 0.65,
+      "summary": "News Signal: BUY | combined sentiment=0.19 (stock=0.26, industry=0.21, macro=-0.07). Stock articles=13 (trusted=0, unrated=13); Industry articles=29 (trusted=0); Macro articles=30 (trusted=0). Sentiment strength=0.26. Inference=Hindustan Zinc continues to benefit from strong operational performance, including record silver production and low zinc costs. Recent analyst coverage remains focused on positive target prices for metal stocks. Despite some neutral news regarding share price momentum, the overall fundamental outlook and industry tailwinds support a positive bias..",
+      "reasoning_prompt": "News reasoning protocol:\n1) Collect company-specific headlines across multiple providers using diversified queries.\n2) Filter spam/listicle/noise domains and low-relevance stories.\n3) Build a global macro stream (rates, inflation, oil, USD, broad risk sentiment).\n4) Build industry/sector thematic stream (demand cycle, market share, regulation, capacity, pricing).\n5) Weight sentiment by source quality, exponential recency decay, and relevance confidence.\n6) Apply content-similarity dedup to remove near-duplicate headlines.\n7) Use LLM to infer final bias from company + industry + macro evidence and return NO_TRADE under conflict.",
+      "llm_reasoning": "The signal is BUY (65% confidence). Sentiment is positive at 0.26, driven by record silver production and low zinc operational costs. While macro sentiment is slightly negative (-0.07), the fundamental industry tailwinds for Hindustan Zinc remain robust. Increased analyst focus on positive price targets outweighs the neutral share price momentum, supporting a long-term constructive bias.",
+      "detail": {
+        "company_context": {
+          "symbol": "HINDZINC.NS",
+          "company_name": "Hindustan Zinc Limited",
+          "sector": "Basic Materials",
+          "industry": "Other Industrial Metals & Mining",
+          "business_summary": "Hindustan Zinc Limited explores for, extracts, and processes minerals in India, rest of Asia, and internationally. It operates through two segments, Zinc, Lead, Silver & Others; and Wind Energy. The company produces refined zinc and lead, precious metals, and silver; sulphuric acid; rock-phosphate; and metals and related alloys. It also operates captive thermal, wind and solar power, and waste heat recovery boiler power plants. In addition, the company offers di ammonium phosphate/nitrogen, phosphorus, and potassium fertilizers. The company was incorporated in 1966 and is based in Udaipur, Ind"
+        },
+        "stock_article_count": 13,
+        "industry_article_count": 29,
+        "macro_article_count": 30,
+        "trusted_count": 0,
+        "trusted_industry_count": 0,
+        "unrated_count": 13,
+        "trusted_macro_count": 0,
+        "industry_avg_sentiment": 0.2120294700439968,
+        "sentiment_strength": 0.2578153846153846,
+        "llm_decision_why": "Hindustan Zinc continues to benefit from strong operational performance, including record silver production and low zinc costs. Recent analyst coverage remains focused on positive target prices for metal stocks. Despite some neutral news regarding share price momentum, the overall fundamental outlook and industry tailwinds support a positive bias."
+      },
+      "top_news": [
+        {
+          "source": "google_rss",
+          "title": "Top stocks in news: Infy, AEL, Waaree, IndiGo, BoB, HindZinc, AB Capital, SEDEMAC, Polycab - Business Today",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPclVxZ1EzRTZtTzlfTXkxVVpoVVo4aTRaVHBRcVBDSG1aMEliMTVibVRCOGZDYkR0WU9saUU0aU1vdkRzZng1bTZZdG15c0NWVGRGOHZkUlYyckd3UnRpRmtha0prS2NUaG50eHVCLU1zS19pYnd5OEQzNVBJT2hmcVVLS25iQVFxTzBuV0p5TEUzYlNPSkxUMzNPamJEc3lhMWxtak8tc2x3RmMwUUdGd3I5WlNELUZYekRkRnBiZWd6ZVMxOW1YOGpxUlM5bmRoZTByUDlRdGNvd3pQdElmcE1zQdIB6AFBVV95cUxOaG41NVd6QWU1UVdZbFdPdUlzOG1wZjBvNmRHRFZPNUhnRmh3b19qT0hXaFkxTU1sOThpNlQtVE1FN3dJSlFZRDVQeXk5M1R6am9jdEZiZ3cyNG8ybEZkbFlHaENFa1Z1MDRSQVpSQ3NPTlYwQ3A5WEN1ak9mRTh3LWpwTG5GOUZsd1RhRlF3UE9MbDBMNnB3VkRfUFA5YzBWSDJvTnFBdUlqY1FoS0tsNkc1QkNqeVEzNUlleFAwM0M4OG1ZM3I5RHZyTnRZQURsMllsSVg5Q1lEcWFHUExMOURzTU82dkdo?oc=5",
+          "published_at": "Wed, 11 Mar 2026 02:15:53 GMT",
+          "published_ts": 1773195353.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Tata Steel, HindZinc, SAIL, Hindalco, NMDC: Fresh target prices for metal stocks - Business Today",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQRFlWUi0wZUxXb0FPSnJSaHdYczZJZWo0SGRGT3pSR0RfbGxweFA4OWtPM0YwbU1HdEFsMG04RkJmRlFoTkNEYWFFaVVpQzVPNDdIMlNDWEdvWkdpWm1XOTZxWm43Sl9KRnFDYW1NVkp4eTVxUzM1QXhuZmhFV0tzQjVLalVzWVFnOVlpREhOc2JOeFJGUTZvWldtRU55amJvVmF1T1JrR2h0cEFxWlJDX2FfVWlvMXZSUmE4T2FmQ21qSWxVak5sVGpzWGw1Z0dpaWNUZWdxVG1JS1XSAeABQVVfeXFMTTRhTlIxZTR4VHFpNmUybDkzdlh5ZjE3RnV2cU1MTXVBU0EzWm1lVzRyNzFJb3VNbXdLTXpSTEdSZHdLdHd5c2NpLWI3N19uY3h5Zk9vUE9iZXJWSjM4bWZZcENrd2ljU2tUODFrcldHYXNIcVdxd19zdnVoVlVaZm5VNUc4ZjgtUVVvOTUyZFAwV3hmM0ZVRkJmR2ZFZWx4eVVoNXFRelQ2RV8tYnpGclpzWEd5R1UxVFpNUVBnRFM0aEhWcmNUREJ5SnJIZVJQbl9LYUFpM0RZQzRVN21hNW0?oc=5",
+          "published_at": "Wed, 18 Feb 2026 08:00:00 GMT",
+          "published_ts": 1771401600.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "HINDZINC: Record revenue, profit, and lowest zinc costs highlight a strong quarter and positive outlook - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNOVBERzFmVEdYYzF3VWNhTC1MLXZTT1FRTDhPTEU2Z05KbEVKeTZxR0RqeTZ2VmdtZDFqX1JsSmdvd3oteURTd2pDeTdJTjhmUHdEY1YwcjB1ekN1NFRMZWlQUU1OZVJUS2FBMDRhTWZIM1N3cWdJRHUySmFNQ0IwTFNqdXpFSHdvLTlEaWFYMXpybC1FdkhsdG5XRVpNc0tUTVU1X1VKeTRzaFdZN2lRbGpKcEVEMmU1T0xqeFR0Y0UwYWZ3ZEZLS1VCREdrOTI5UGt5eWVQclhsYXRMN2xpXzl0NUNzdDBCand1UloxUFhMOTBUYk5PVmVzVTRnTmtxNmlGRmpXbHA5QVMxeHZrUlRha0VGUQ?oc=5",
+          "published_at": "Mon, 19 Jan 2026 08:00:00 GMT",
+          "published_ts": 1768809600.0,
+          "sentiment_score": 5.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Hindustan Zinc Limited's (NSE:HINDZINC) Financials Are Too Obscure To Link With Current Share Price Momentum: What's In Store For the Stock? - simplywall.st",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQekpvTEstVVd0RVlGMkZZYnJiZHRrM3pZTUVpM0JRcmFFZkNFb18wNUphU19jNUxNOUw0TkNIZDJPVFVqY1BSeVBGY1Z5aDJFZXBjNlduc3NZSjRMR2tfN1RWZGlhZnlNeWs3VlBzZkU4LVBObGpZRXJuYUVnTXdiSnNOOGdTYVVUYWtpVy1GcE1PcUQwem01Yncwenl6Z0d5SkI3aXlvc0FlSUhDa2JkSDhGdWIzcWRNUGIwRXhGM3plUlRTZlExWklNTk92ck4tOXJMOUYwWXQxajkw0gHiAUFVX3lxTE5FT25JUTRhaW1iTTJWdlczQkhDMm5kREpSMzV5WkVkb0E3aUdBczFMU2N2TGsyU1VKdW1SS3dKNmVjY0ljUGN6U3FkSHdVZk5WXzBqSWktTWxvU3ZYZXZTQm9yNkh3S01GSjU3WXFYRkpqbWpKdzFIV3d5bnIwUE9NMUs4bERBb21KTkdPWWFiSGE3bW9EeWdmZ0M1anlqNVFTV1JwZ1hmWS10aVdCQzczTmtOLUdaVUk5QWE3X29YR1VITEczV2M0VEVTa1RsZEM1Z3JSMElsVmUtR3hfOF8wWlE?oc=5",
+          "published_at": "Sat, 17 Jan 2026 08:00:00 GMT",
+          "published_ts": 1768636800.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Hindustan Zinc share price today: HINDZINC stock stays near 52-week high as record silver fuels fresh bull case - TechStock²",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMTBFSDlxYk1pZnVSR0JDbjMyOTllTjZod2tadmpsMXh0eTMxWW0yTjdwc1hJSFNRUkp1T1dUYXA0TUdlRFk5MWp1T2t1NWphaFNfYnRpaFUxWEhGNTV4bUZfU004czUteHh4V0U3dnNvb05BZ0dMTHV1TUltaVoxZG5mUm9SWFJVZzliNms3TGRaaGpQQm9PNE9xWXhOWUswdV83cEJ1bVJzYlJCRkp4d3lZNm5NTVV0bXRvVHZFdlJiTGNxRzJzcmhQNA?oc=5",
+          "published_at": "Tue, 23 Dec 2025 08:00:00 GMT",
+          "published_ts": 1766476800.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "There's Reason For Concern Over Hindustan Zinc Limited's (NSE:HINDZINC) Price - simplywall.st",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPQ0VUd2xJUVdmTDc4WHk3c3NOX3NQc19RLXl6NElkWm9vS0FoUmRCNWItVUllVGt6dEFQU2lQcmh5RnlvME9nUmxHUk1BZzRscTZOZENsQmJ5NVc3YTRMb25xSHJWZ09Xd0ZrcmxQYUlUYU1GMThxQUo1bkdMSjMteDZDRHJIRm5neDFxUGZ6LTdzTUdBNExtR3RVc01qMDVCTGtXdWdPNVpvWHFldlVESHhoallZZnpoTjB1M2xyVXhrMjdRVVJsVFFQdU9EdTNxRlIxejJSZ0d4d9IB3wFBVV95cUxPd1B1WUZyNXpETlBsNGl5aVVQZTdTYmNGWXBPZmdpeHJUMi0telRWZFlvV1o0a25WNVd5eUNfS3FreTNtcFVoNVhSQTdSLTdQcFBiNlRwZXFaZVBHckpiZWhNNnhEV0lIZWwxYTJqNlAza19MTUc5X0V3Zm5KZlpod3ZiVHlMMnp3MUxRUGIzR0dHZlBJQ2xzOGpVUC04SDgyTm90bVdnWHFtNUp0aXhzYlFYSlI4a1pIM1pLMEJzc0k2WERvNG80WEdjVWtTeDg5eWhWalRsd3RacDR3dEdj?oc=5",
+          "published_at": "Sun, 21 Dec 2025 08:00:00 GMT",
+          "published_ts": 1766304000.0,
+          "sentiment_score": -1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Hindustan Zinc share price hits a fresh 52-week high on silver’s record run: Jefferies’ ₹660 target, latest news, and what could drive HINDZINC stock next - TechStock²",
+          "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxON2Z0WTNQNDRFU3docEJoNWt5UXhMbl94WWZnTXoyWUNZcTNncHJ3VTJCQ0ZzS2I4WkNMUDV6ZUNvY0ltb0xBd0V2SDFWeEJQcWVjV1duMTBnMVRiYzBsVHQ0S2hMakM4UDhwSTRaTnREV2Z6MTFWb1lZcGFGdHV1SWU0RFNXS29zd1YzWDRkS2tTb0pCc3hPTVUtTjN2RjVIRVR2TXA2VDEwbmZjS3VuVXQwUGFqTHduVmRsb0dyakpLaFd1MUZHUTcwYk5JM1YwTUZHN2ZBeEpUcXNjd1p3NFZFb1JjZUE3bzBNN3Q3bUFzekRkUXFUT3pQTzRBOFdzQVloSXRRV2RTUQ?oc=5",
+          "published_at": "Wed, 17 Dec 2025 08:00:00 GMT",
+          "published_ts": 1765958400.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Hindustan Zinc Share Price Outlook (Updated Dec 14, 2025): HINDZINC Hits Fresh 52-Week High on Silver’s Record Run — This Week, Triggers, and Week-Ahead View - TechStock²",
+          "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPVGUzUDRwVHBKaUJnRGJNWi1uRTMyYnVhX09jZ0RzbnFJcXlsdEluMjNBdDFRdk9ZVDFROTlMckJoU0FBWDEtM1VLSnB5eHhEcXhHVTNzOXByYXNMZmx6MzlIRzFNWmEwUHhKODI2YmNhbDBqOGVCTXdndzR2UHV2aURCdzdwRklsZkc3VktvUHhPYUlhTDlrVENYUUkyR3Q4UHZtcG43Y2RCbG8ydXQybGdPOFdhWE92aDdmcjVCUDJlVEhObERCZWtBRlFmaThkTUw1bFphS3dwazNleUtHQ1gxdjdzLUx6TmNNMWJKNUJvZG5NeTlpY0pTMzZtQQ?oc=5",
+          "published_at": "Sun, 14 Dec 2025 08:00:00 GMT",
+          "published_ts": 1765699200.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Hindustan Zinc Share Price Hits Fresh 52-Week High on Silver Surge: What’s Driving HINDZINC, Analyst Targets, and Key Risks (Dec 13, 2025) - TechStock²",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOd1IxcXFMYnhYc2VIa1oyWEw0alVjaWRBS2ZpRmt1b3dLMU8wUGpmODV2blVPSm02YlFuT25hRnFtOU1MSFdqYmtLUGthcU01aFkyNE05NEQzMVFDSFR5anI4MV93Rk9xQVhEZGxkWFVwVkc5OVZDUXhOSFV3UU1ZSTJlTFhsU1N1dE5PTWJ3WmFFbmNldk5XeS0tUlBaUWpqSENQckZWNDNtempaQnJ2cXppSG5JMVN3MXhMR3Y1aFZfM1V3MG9xYnVPVDJyNW9zUS1WdDJDTkxxVXRtOXNwdk9nN1dUTTQ?oc=5",
+          "published_at": "Sat, 13 Dec 2025 08:00:00 GMT",
+          "published_ts": 1765612800.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Hindustan Zinc Share Price Today: Why HINDZINC Is Rallying and What 2026 Could Hold for the Stock - TechStock²",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZG53T1FsODVLZXIxNllhVXJCMEszektGZWRjZHhfNUNSRWFIcU9UYUFsS1lYdE42WWo1YkFNYXpoanlzX1hMaFNrQ2kwR1dpUnFXUGVjY0x5ejF6WlR4N0NLT21jS2hKUll4NlZCeUZUZ0NTR2MzaFNYeGRUTGo5NDJwUGJVYXo3QkNtbkFmU1hZNmVhZnhVZ0Z5YUw4S05KekRWNW81MjFEZnVZWnpGdk5MOEd5UFlF?oc=5",
+          "published_at": "Mon, 01 Dec 2025 08:00:00 GMT",
+          "published_ts": 1764576000.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Hindustan Zinc's (NSE:HINDZINC) five-year total shareholder returns outpace the underlying earnings growth - simplywall.st",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOeWR5VlFuOENvcndqR3d2U2FKUW5SVkljMEtjWHFhRUxqSzlFTnFQR3dpWlNQdWtnSy1pLXNZVVNmekhCTExMQUtzQXBCWEI2UHNDUTVLcDhTMDJlM2J0RFp6MExUbjAtVnROTGhidFh0Zkk3YnZNOHBsMG5yeDJ5WWhPZlFmWXlVTUxTZTRSZ3VQakJKSVRCMjNvT3dxUm5lV2NnTG5qc25WZ0djWVdsbEp3Y295SVA3ZnpacXo2LUQySGRhYUxiQzV0TlRJZFFRaHNGZjJXdllkQdIB3wFBVV95cUxNekdfeGp4aVhjWkMtZl9yMnc0M0pvUjA5N2l1eERLd3JaSG1PSEFRSGNCX2ZnbHNreFN6NmxrNnA0Rlp3VXFPZ1JtVEVxTFJwVVJTbVJCeFZ5RnV5NU92UmdRd1ZIZWZrUWRRTXJjcGd0dWMwWnRlM3I3bE1xRVZRQlJVLWlYYy00aVhNbU01NmVmRDZ0NkhpX2pPc3JzN1RjWGpkNERCYmhjMTAwQ3VhbEhyblVjaFU4SzdRblkxNG9UNU1aelJYTHBpWnR2S3lRazdOaGtSRFBuRkpVdTFv?oc=5",
+          "published_at": "Mon, 24 Nov 2025 08:00:00 GMT",
+          "published_ts": 1763971200.0,
+          "sentiment_score": 2.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Vedanta Group Stock HindZinc Recommended To Buy, New Target Rs 597 For 12-Months; 1,450% Dividends YTD - Goodreturns",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPc1ZBTDhjSngtbnhWYXI3aDJYX1JZOXEzb0l4aHB6VDNFbzVUc2NKSTVMa2t3UWQzTmZFeG5FV043dWRqME9RN3JzeXBGbnhlM1BieWFwREc0bzhKRk9MdS1GRlVBbXRuNGNCRURiS3lmbjZNQ0UyWFdLcFpUUDhkNG9OdEhGWFZpaGFhRFVCbVRrc1hoVDgyc2J3di1EYlFiTVQwNUFOUlVRNmNVSndkSEp4VG8tZC1VRTh1QVVLcWlaTDFwZ1RhTVRSTUxvLUlGbURtaDZ6NDNzYklhUE1zY0pSMENOOUw4NlNjZA?oc=5",
+          "published_at": "Fri, 11 Oct 2024 07:00:00 GMT",
+          "published_ts": 1728630000.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Hindustan Zinc Q3 Results 2026 - Find Hindustan Zinc Q3 Earnings Result | HINDZINC Q3 results - Mint",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPWDdyRVFjUTctb3drWjNuRXgtcThHRm92eGhfT2NVTEtVZzVTTG1Yb014ckp5OFhqU2ZhVDdLcDBMMHkzaTNmajBQbG82TWUtdWhZcl9TSzZyWkxqNG80aU4ybVVXenJDcGlUQXB3YWZPUGF3WVU4ak5iaU5HMm5NMEF2dkdtQQ?oc=5",
+          "published_at": "Mon, 24 Jul 2023 23:25:27 GMT",
+          "published_ts": 1690241127.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        }
+      ],
+      "top_industry_news": [
+        {
+          "source": "google_rss_industry",
+          "title": "2x growth plan: Hindustan Zinc to invest Rs 12,000 crore to double its capacity; project to be completed in 3 years - MSN",
+          "url": "https://news.google.com/rss/articles/CBMitANBVV95cUxPOWt6OTBXNTN3UEIzMjBDSXRNX3YydmlXX25UZUFFeXowWHNqbk1KOGxXSXhBSXRTdHVlSl9ZWWZ6RXVsek9kaVdja2hhdGdjLV8tcmoySWdZYXBkTmxvLTl4YVhhZmRKOWplc2REOXB1dF8ycFdpcUNMeXI1M20wRWNPZTEyQWpzTTE4Y1lGbEVrbVJ1dGl3a1ZiSUNLcVE0Xzl6MkFGbkc4Yk1wRnY0T2p6MFZrODRZY2poQmlKMTZzMG1EQkFVY0lJM2ExR2VZN005clg5MDRHYXljTm92bnM1YlpZMkkxTmpmS19yTnJUZUJSdDRJVkprNzh1SmwzcjdTVkpwVmtRR0NaejRjZUtkRkRrR2w0Uk44QVUxTzNVZUs4OHhmc1J1UjhRMlJLcnA3NDhPTm5WSUttNmRZRk13Wjl1cUx2Nk5vbVNWbFdVZnNtaEJIV2tUaHBkdU1VWWtGQ0lwYW9wRVAxWjlVc1hVaFJkRWJHN2t6dkpQQmhhMV9hU0hWV1NsekticmtuUnM5TWFfMjV6dFZzM045a2RfY3dEY0hfYkxRLUZjMU9OQXRQ?oc=5",
+          "published_at": "Fri, 13 Mar 2026 17:55:59 GMT",
+          "published_ts": 1773424559.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Hindustan Zinc Limited",
+          "sector": "Basic Materials",
+          "industry": "Other Industrial Metals & Mining"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Hindustan Zinc: Why Does the Stock Mirror Silver Price Movements? - Trade Brains",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSnk4VnIyNTFzRmZIdkU5RXBqaGVCZVBZaE1IQmJPUl84NFdlT1pXRTg5QXVZd05hUHN1WG5hVWxRWklTR0U3QWdzNUlZSXV3TDdVYVEtZllHWTlHQVN6cy1DV2RCU3JFUHI4ZW5DNUxLWGlORUZVYXg3N2FGWEFuSkIxUUx5Ry1UV3oyNTlvYjk?oc=5",
+          "published_at": "Fri, 13 Mar 2026 04:28:00 GMT",
+          "published_ts": 1773376080.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Hindustan Zinc Limited",
+          "sector": "Basic Materials",
+          "industry": "Other Industrial Metals & Mining"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "India Silver Market Set to Boom Through 2033 |Hindustan Zinc - openPR.com",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVG10dDZ6S0I0c3RTUUFVTlZxX3dVU2hkLVhWS0ZkQ0hUTG5CZ0xhbVUybHU5SEFmcFlVM3ZyZnNxNWQyWXB4TTJ5NmFabzZFOFQ2Tk9SR3hUcmpkWDlSMFdmMjlBZnJJaVhnQVZpTi15b2k0ZV9Pcm51YkE1cDZ1NGdMQVNDS3dyZTlsSTFkSURZazJzRkduYWxaRQ?oc=5",
+          "published_at": "Mon, 09 Mar 2026 12:36:38 GMT",
+          "published_ts": 1773059798.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Hindustan Zinc Limited",
+          "sector": "Basic Materials",
+          "industry": "Other Industrial Metals & Mining"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Hindustan Zinc share price up nearly 3% on collaborating with Virginia Tech for advanced research on silver recovery - Upstox",
+          "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPUkpVdlRkcW9MOGRFM2ExUE5LczY0aE41WDVZcVpVdk56UnNHa2U2bG9VNEVRVUJnWVJUQ3ZvQzBtUUFubTJ0dEphMWVabmxvcUZ5UDcxT3k5TXJGZ24wblJRWTI1TlhBLWlLb0tmRWRtUURLSnFlQ3NEanp5cUNzZEc4MnJTRk84cFJhYTFHeS10LXhuSDVNU0JWQlNQVkpnYjVvQ2djTGcyRDhBelQ4c01YWExsanRmcGNUcEhnSURNM2pkcGJNX09hM3hGd291R2RRQmU5TlpEbWIxNmt3ZEZPZlpyYlRuWXNKN0JTaWdPRXBpUjNHdXk4VEZQaEtuUUdoSw?oc=5",
+          "published_at": "Wed, 04 Mar 2026 08:00:00 GMT",
+          "published_ts": 1772611200.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Hindustan Zinc Limited",
+          "sector": "Basic Materials",
+          "industry": "Other Industrial Metals & Mining"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "MCX, Hindustan Zinc Share Price Jump Up To 3% As Silver Rally Boosts Stock Market Today - Samco",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQQXVvZGswRUU0Ul9feVAxSndUQV9YOGNHUXczZkRrSmFUVnp0WnFxa091M182bExRckh3X0pfUXhwdnZYZUM0UkFmYzJUb0NFb0pUU3AycXRRNlZIWktwWWNaNmJBLWFfUDhWQUNoSlJGRFRETWZMMjNnOGRxWXZUUUV6NGRjMDlfVkFWQUlzcVhYTllBSkFYWlFWWDN0M1g4NnQtXy10ZWJuRjNlM0wxSHIwV1JGUW9hTGdGbTZVLWdXMmRHczE4eG8wQks1dw?oc=5",
+          "published_at": "Wed, 25 Feb 2026 08:04:08 GMT",
+          "published_ts": 1772006648.0,
+          "sentiment_score": 2.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Hindustan Zinc Limited",
+          "sector": "Basic Materials",
+          "industry": "Other Industrial Metals & Mining"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Hindustan Zinc partners with Tripura Group for manufacturing unit at Zinc Park in Rajasthan - CNBC TV18",
+          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNZ0dlQkwzbUIxZHZXSU8yUm5kTVRESXBkanZVWUtic0w3QTA0bHYtRW5RcTNnUXp1c0hicEt1RVZ1RFBUMC0tS0tHUDlya1UwNWlLYmtnQkdGcHV0aWRJb3ZtSFl5blpUZ28xbzExLUotbWFrU3Q4eXVDVzI3UGtZczFNQm1XN0dXc2xFSFRRVVQ4SmJQUUFxZmVtNEdvbXlpSm9PdkUzTUVzazZPOFNUMllYaXJoX19EMWZINkxaR012UE9Ia2hNaFFRVTE3NHBCVmIzdlFvN1M2bWYtTFFhUUVsQjhVaS1NMEFzU3lTWdIB9AFBVV95cUxORkdhanVpbF9KS09mLWdEMnVOaXFMVDhHbi1mVnFfZFFERFpQeG01bmtMYUphcXc1SE1TOE1MZ01BOTZ5cHFTMWpyYVo5cmNWZlVmakVnYkJ4c1lLeTFuN1RkREI3MnJseFpUdVhsTTFiTXlyc21UNERWaDJPYnlPR1NMZ0pDa2N6WHBVMEpVVVllZFR2Vmw1NGhSMmNNaU5PNkFFekRHMVcxSFpDaF83MXdhVlZ4ZmNiMTJnckRnTzU3TnR5aHpaTnowZU5ZWUlGb2t6ZTdTX1hqX2ZqeTV1RDZfRXAyUWswZ1A1RHA4LXZ6MTFN?oc=5",
+          "published_at": "Mon, 23 Feb 2026 08:00:00 GMT",
+          "published_ts": 1771833600.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Hindustan Zinc Limited",
+          "sector": "Basic Materials",
+          "industry": "Other Industrial Metals & Mining"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Basic Materials Roundup: Market Talk - WSJ",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQREo5dmNYVGtwSnhHQVlLdllLbWZDVnhJWEQwcFkwb1RUSnc3c0c3MVZwb0ZnUEhGVy13OVRHeU5reFVISU51cHBGNVQwWHhEQjhtVmhvSmlxT3N2aTg3S2tVeDM0el83VExpeGVFRjBGbjJsZzE1WWNjQXljN3NzT2NwS3pjbnlkSFRXWEN3NlI3RHRHZ2Jn?oc=5",
+          "published_at": "Tue, 10 Feb 2026 08:00:00 GMT",
+          "published_ts": 1770710400.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Hindustan Zinc Limited",
+          "sector": "Basic Materials",
+          "industry": "Other Industrial Metals & Mining"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Hindustan Zinc Share Price: Market Insights and Investment Perspective - vocal.media",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQU1Rid1pTSW5oZVREU05VWGJhS2ZPeWZpN3FweWlUY1hYNHVaMEhBWUVnTHZwMWtKbkhla3JmZlI2ZTFSUHVGb0pUc1YxdzQ2TnJSREFwX2FGTEcxcF9PcGllYjAwVjJvcTZsRVdjbnNOaUJhV1h4ZlpsckllbGRZREM0bzIwRzJMU3pua3Fic2ZPalJCLXFSYXZkSkY?oc=5",
+          "published_at": "Thu, 29 Jan 2026 08:27:52 GMT",
+          "published_ts": 1769675272.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Hindustan Zinc Limited",
+          "sector": "Basic Materials",
+          "industry": "Other Industrial Metals & Mining"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Vedanta to sell up to 1.59% stake in Hindustan Zinc via OFS; sets floor price at Rs 685 per share - The Economic Times",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOS2RNRTFsbUpFUWN1T0ZEN1ZvRlVhTlVtUkZvekNwcGFYNmNqTlJHX2M3NnNFNTRDZEZobVNDOVhXVW1pcW55Mkh4V05nTFEwVVVSZTczT004RHdFdXFsM3J1SzhlUnp4QXUtMGRxSEhKdXRQalpiR1QzWGdvUm9oZVlLX1ZoZFMwUWtQbHlWUExGcUNzRGd0V2xpTjBzSWxJMVk0WTBvRk5Dc2F0dzRESmI4c1FXS2VjdGfSAb8BQVVfeXFMTmhUYlVkWGdUOXI5UjBrMjhQdktPNEtnU3RCSzZ0eHpaNWhMRjdKSWlBaGhOelIyaDVHX24xbjE2dTB4VWVKdUlsdWJzWF9DaXpndzdRZnNjVWd1RTRFa3Z6X0FMcFZ0elhfQms3Z2dQdF9pSUFNdERDQjc4WW5rc0RKZ1FtYUM0S1UwelozMkhSLTAzQUlpOWlwX2o4SGYwOXJTTUVNZEZOYkwyeWVydUx1SE1tYXhzSURQVmh6MXc?oc=5",
+          "published_at": "Thu, 29 Jan 2026 08:00:00 GMT",
+          "published_ts": 1769673600.0,
+          "sentiment_score": -1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Hindustan Zinc Limited",
+          "sector": "Basic Materials",
+          "industry": "Other Industrial Metals & Mining"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Vedanta Share Price Hits All-Time High After Hindustan Zinc OFS Approval | Stock Market Today - Samco",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxON0RyNUtsSjJadzBrazdacmZtT1VVcmVlLXBac25iVVBGc3hNRG85b1d5VGxsS0V3dzJ2T1hvQTZoMVp3U1FXZ0hXajA2Vnp5QkVCNURfOFFPa29td0Z0R1UzZms0ZWdNMy11aVNBbF9sTjVqZkNiaVBOUF9rMHlpbGxhZEFuWVlIWVZLaUlSVVo1T2dHOWFLb2RwVGpDRVZHendSc3pZWGpTaF9xdGtQLUIxNWxaSUF0T1l2NGFvNzlJM0h5N3JRb3gzTVBqRExmOGtDLTJ4UmlfNWZxSlp3Vw?oc=5",
+          "published_at": "Wed, 28 Jan 2026 08:00:00 GMT",
+          "published_ts": 1769587200.0,
+          "sentiment_score": 2.5,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Hindustan Zinc Limited",
+          "sector": "Basic Materials",
+          "industry": "Other Industrial Metals & Mining"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Vedanta shares hits all-time high as board approves Hindustan Zinc OFS - Business Standard",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNZUhoWWlPMS1DS05GUXplbzk5TmlXNXhNWGJQcmhGQ3NWQS05QzVEQXAxUV9rQ3N3Q3pBUC1JeTY5S2ROaEhMazhPclM1UmVsd1NxczRRSjVQNUtVTFJGZXhZTjVnRWI1OGUwQ0JrcHVKVkxqVGFBQ1pUQnZEOG82clZMaXJySFRFUkp3ZkxsX3p3ZGhQMzc0V3NjbnVzTjMxYUxkd0o1eVVLcFpMay05WWpaa2NQWTM4R25KcHpWazJNYWNzbHpWMllqQmtFZ3JFYWFN0gHYAUFVX3lxTE82QTVScENrMHVOM1BxeHRFOUJCUV9yYUpQdi1iUW56aUdqNWNYMDdQZ0pRV0dCRll0R0pJR2ozaEpfR0FnTlpnT0dHR0JuQUlZVXpIbUhJSXM5em9IZ1ZRQkZ0MHVseEJtb3lOSVpqUGlhdlB4dUlnQjh2d1VmWXdseGl6QUI2c3FuUHJtSEhjeW1hMEtEX3BwT3VKWlk0RGNGNjcwSmxSRUdJUm1zdWVPRzFoQXBHTENCZnZxV2tYTVVHeUdzZXBNelotdzhaYTlkRWJ3YlhrUg?oc=5",
+          "published_at": "Wed, 28 Jan 2026 08:00:00 GMT",
+          "published_ts": 1769587200.0,
+          "sentiment_score": 1.5,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Hindustan Zinc Limited",
+          "sector": "Basic Materials",
+          "industry": "Other Industrial Metals & Mining"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Vedanta shares jump over 4%, hits record high as firm to sell up to 1.59% stake in Hindustan Zinc; OFS opens: details to know - Upstox",
+          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPX1NEeG1jVzJORmE2ZndHRXFicjJna1RvbDVZVUtKcnZzcmJ0ZGduTzU1WXhUU0JXSmwzOERDdVVtcHczSlB2QWtqSGVhMEM4QmxHTW53b1ZMMFNvcF8tTGZGcldFX0F4cV9keGRZc1hkZ2p2YVZMU2Z0Q295eVRhY0lzLUhZb0VfVXZIblhvSzA4VEc1QVRTblpEdG13RGR3bVlkZ2FuVUJfSS13bDZMT0x3TmdPYjFrYzlTNjdIaldpOF8yTmhrOUo2aGx0aklPbklQU01Wa2xEX3hXNGx1cHU5MTYxUFNZWFFiUDZOTVo5ZlczNkg2a3JXYkt3LWNmbzV6S3hnU3U?oc=5",
+          "published_at": "Tue, 27 Jan 2026 08:00:00 GMT",
+          "published_ts": 1769500800.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Hindustan Zinc Limited",
+          "sector": "Basic Materials",
+          "industry": "Other Industrial Metals & Mining"
+        }
+      ],
+      "top_macro_news": [
+        {
+          "source": "google_rss_macro",
+          "title": "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRVNOajVzSUJWU3Q5R2toMjVnZVZMNDhLclozWDdNODc1OU1qbVFjYnFTT0Z1SUZaaExuY3FJajFkdWtOWk5kdWplT0J0Yk9RcnlDVnlvQmJZNC1jVDVHZmRhS0Z0X0JiXzFETHRnaUVac1pEMmZfWE9raXFacFpwR1dSaEVST0Ntc2k1czN4emNQVFlWSHE3V1ZhMW80OUFMYmN6dEwtTkRadm44enc?oc=5",
+          "published_at": "Fri, 13 Mar 2026 15:17:26 GMT",
+          "published_ts": 1773415046.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49da6215942089b3d01557581dea9&url=https%3a%2f%2fwww.livemint.com%2fmarket%2fstock-market-news%2fus-china-power-shift-global-markets-india-outlook-mirae-asset-swarup-mohanty-11773376870759.html&c=15555016077234823276&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 14:15:00 GMT",
+          "published_ts": 1773411300.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Fed to delay rate cuts as war clouds the outlook",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49da7b5ad43e984a09221ba449be5&url=https%3a%2f%2fthink.ing.com%2farticles%2ffed-to-delay-rate-cuts-as-war-clouds-the-outlook%2f&c=127436243108543137&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 13:40:00 GMT",
+          "published_ts": 1773409200.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss_macro",
+          "title": "Bitcoin holds above $71,000, defying rising dollar, oil and U.S. bond yields - CoinDesk",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbHB1NE1GZ1dLTWpvOWNseW5QXy1jbWVHcTYzcXF6NWotU0NHOG1XNEUzcDd0ZTctMW1URXZzSW5RQ1djc1h3a0xOM0k2Tkd5TjRWcE0wUXRwZjg4WktmZ2xDWnpLa0RhR1BsRzlrZlVlVzhONmQ0eW51VXJIWFQ3NFJkd0VXZ2VsUnY4VTBuWjU5LXpxX1BPYUIyaEZKQVdEWUU3a25CY0RvN3NrVW10cFNUTWtxSHdhSWI4?oc=5",
+          "published_at": "Fri, 13 Mar 2026 09:34:10 GMT",
+          "published_ts": 1773394450.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Gold Silver Rate Today Live Updates (13 March 2026): Gold, silver futures fall on MCX as rising crude oil prices dim hopes of early rate cuts",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49da7a750413da6a6b873e2d68f65&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2flive-blog%2fgold-rate-silver-price-today-live-updates-mcx-gold-18k-22k-24k-rate-iran-isreal-us-war-latest-news%2fliveblog%2f129534056.cms&c=4108291931945502437&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 06:00:00 GMT",
+          "published_ts": 1773381600.0,
+          "sentiment_score": -1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Share Markets Continue To Bleed As West Asia Tensions Dampen Sentiment, Sensex Over 800 Points Down",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49da6215942089b3d01557581dea9&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fmarkets%2fshare-markets-continue-to-bleed-as-west-asia-tensions-dampen-sentiment-sensex-over-800-points-down%2far-AA1Yt9yX&c=14300386732484515462&mkt=en-in",
+          "published_at": "Thu, 12 Mar 2026 15:18:00 GMT",
+          "published_ts": 1773328680.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Markets Today: Sensex Declines 830 Points, Nifty Slips Below 23,650 Amid Iran-US-Israel War",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49da6215942089b3d01557581dea9&url=https%3a%2f%2fwww.news18.com%2fbusiness%2fmarkets%2fmarkets-today-sensex-falls-1000-points-in-opening-trade-nifty-below-23600-as-oil-surges-past-100-9956009.html&c=7425380694736114227&mkt=en-in",
+          "published_at": "Thu, 12 Mar 2026 03:39:00 GMT",
+          "published_ts": 1773286740.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Trading Day: Oil and yields up, up, and away",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49da7a750413da6a6b873e2d68f65&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2ftrading-day-oil-and-yields-up-up-and-away%2far-AA1YqbzQ&c=11227118164045986945&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 14:08:08 GMT",
+          "published_ts": 1773238088.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss_macro",
+          "title": "Markets Confront the Economic Impact of the Iran Conflict - Natixis CIB | Natixis Corporate & Investment Banking",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOVpkVlFlOG1lbEdUZEM2VU40clhkdUtsN3l6Z3Rkd2g4WTBNMVNKSFBmMmkyT1M0RGwtZGJxN1ItZVVrMEU3UnVfWFJ6UmpZUVppV09ZelhMWHNvZmhtbFk3ajc0UnlpY0dZeW51MGJnSUU3dGhYRGFQaE44NjJVaFFBVWFyVlNhampDdXFic0dCZXZ3YW5ScWUtWQ?oc=5",
+          "published_at": "Wed, 11 Mar 2026 10:55:26 GMT",
+          "published_ts": 1773226526.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Oil price spike could push US inflation to 4%, delaying Fed rate cut",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49da7b5ad43e984a09221ba449be5&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2foil-price-spike-could-push-us-inflation-to-4-delaying-fed-rate-cut%2far-AA1Ym49n&c=7065206888862373143&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 03:02:32 GMT",
+          "published_ts": 1773198152.0,
+          "sentiment_score": 1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        }
+      ],
+      "avg_sentiment": 0.18919405800234432,
+      "macro_sentiment": -0.07042738322609611
+    },
+    "market_sentiment": {
+      "signal": "SELL",
+      "confidence": 0.765,
+      "summary": "Market Sentiment: SELL | NIFTY 5D=-2.31%, 10D=-3.42%, 20D=-3.87%, SMA20 gap=-2.4% (below). India VIX=583.0, 5D chg=-12.7, news sentiment=0.19. Votes: bull=1, bear=3.",
+      "reasoning_prompt": "Market sentiment protocol:\n1) Evaluate NIFTY multi-window momentum (5/10/20-bar returns) for domestic risk appetite.\n2) Check Nifty SMA20 structure — price above 20DMA = constructive, below = cautious.\n3) Evaluate India VIX regime as stress filter (low=constructive, high=defensive).\n4) Factor VIX change rate — rising VIX signals increasing fear even if level is moderate.\n5) Blend with cleaned multi-source news sentiment (stock + macro blend).\n6) Count bullish/bearish votes and avoid directional call under conflict.\n7) Prefer NO_TRADE when index momentum and volatility regime diverge.",
+      "llm_reasoning": "Market sentiment is neutral-to-bearish. Technical indicators are heavily tilted toward the sell side, reflecting short-term exhaustion and falling prices. However, this is partially offset by positive company-specific fundamental news and analyst optimism. The disconnect between falling price action and positive operational news suggests the market is currently digesting fundamental strength amid broader profit-taking or sector-wide weakness.",
+      "detail": {
+        "nifty_ret5": -0.02314398424966979,
+        "nifty_ret10": -0.03419373829671979,
+        "nifty_ret20": -0.038731002127090686,
+        "above_sma20": false,
+        "sma_gap_pct": -2.44,
+        "vix_level": 583.0,
+        "vix_change_5d": -12.65,
+        "news_avg_sentiment": 0.18919405800234432,
+        "bullish_votes": 1,
+        "bearish_votes": 3
+      }
+    },
+    "relative_strength": {
+      "signal": "NO_TRADE",
+      "confidence": 0.49601846928059656,
+      "summary": "Relative Strength: NO_TRADE | stock 10-bar return=-1.40%, NIFTY=-2.87%, alpha=1.47%.",
+      "reasoning_prompt": "Relative-strength protocol:\n1) Compare stock and NIFTY returns over same 10-bar window.\n2) Convert spread into alpha and classify persistent out/under-performance.\n3) Treat marginal alpha as noise and return NO_TRADE.\n4) Use relative strength as confirmation layer, not standalone trigger.",
+      "llm_reasoning": "Relative strength appears weak as the stock remains trapped below key moving averages and exhibits negative momentum metrics. With a price significantly below the SMA50 of 624.24 and failing to hold the SMA20, the asset is underperforming. The RSI at 49.6 confirms a neutral-to-weak position, lacking the participation needed to break above resistance, placing it in a laggard position relative to the broader trend.",
+      "detail": {
+        "stock_ret10": -0.013953488372092981,
+        "nifty_ret10": -0.028660001865128515,
+        "alpha": 0.014706513493035533
+      }
+    },
+    "us_trend": {
+      "signal": "SELL",
+      "confidence": 0.85,
+      "summary": "US Trend Signal: SELL | Global risk-off backdrop. SPX 5D/20D=-2.31%/-3.87%, NDX 5D/20D=-2.12%/-7.25%, VIX=27.29, DXY 5D=0.00%.",
+      "reasoning_prompt": "US macro trend protocol:\n1) Evaluate SPX and NDX short/medium returns for global equity risk tone.\n2) Use VIX as stress filter (high VIX weakens risk-on conviction).\n3) Use DXY direction as liquidity/EM risk proxy for Indian equities.\n4) Classify regime as risk-on, risk-off, or mixed.\n5) Use this as contextual bias only; do not override local setup quality.",
+      "llm_reasoning": "Not applicable to this domestic Indian equity (HINDZINC.NS). Macro-influence is limited to industry-specific metal cycles and global commodity demand rather than direct correlation with US-specific equity indices.",
+      "detail": {
+        "regime": "Global risk-off backdrop",
+        "llm_decision_why": "US indices show consistent short and medium-term negative momentum, with the NDX down significantly over 20 days. A VIX reading of 27.29 indicates elevated market stress and a distinct risk-off environment. This bearish macro regime creates a strong headwind for risk-sensitive assets, justifying a SELL signal for swing positioning.",
+        "spx_ret_5": -0.02314398424966979,
+        "spx_ret_20": -0.038731002127090686,
+        "ndx_ret_5": -0.021237343902581474,
+        "ndx_ret_20": -0.07246836159031467,
+        "vix_last": 27.290000915527344,
+        "dxy_ret_5": 0.0,
+        "dxy_ret_20": 0.0
+      }
+    },
+    "financials": {
+      "signal": "BUY",
+      "confidence": 0.8615384615384616,
+      "summary": "Financials Signal: BUY | Fundamentals supportive. Coverage=62%. ROE=77.69%, Margin=31.33%, RevGrowth=N/A, EarnGrowth=N/A, D/E=0.866, CurrentRatio=N/A, PE=22.526. Quarterly trends: RevQoQ=39.99%, NIQoQ=75.29%, OCFQoQ=N/A, DebtQoQ=-21.12%, FCF=N/A, Cash/Debt=0.008. Analyst target=N/A (N/A upside, ? analysts). 52w Hi/Lo=733.000/388.550, position=47.44%.",
+      "reasoning_prompt": "Financial statement reasoning protocol:\n1) Evaluate valuation (PE/PB) relative to profitability and growth quality.\n2) Score profitability and efficiency (ROE, margins).\n3) Validate growth durability using quarterly revenue and net-income trends.\n4) Check balance-sheet resilience (debt trend, liquidity, cash/debt).\n5) Check cash-flow quality (operating CF trend, free cash flow sign).\n6) If fundamentals conflict or are incomplete, default to conservative NO_TRADE bias.",
+      "llm_reasoning": "Financial metrics highlight a resilient operational model. Hindustan Zinc maintains strong production volumes, particularly in silver, which supports core profitability. Current pricing reflects a focus on efficiency, with low cost-per-unit for zinc extraction. The company's diversified revenue streams across zinc, lead, and wind energy provide a buffer against volatility, confirming the positive long-term outlook cited in news, despite the current price compression.",
+      "fundamental_signals": [
+        {
+          "type": "bullish",
+          "text": "Revenue growing QoQ (40.0% last quarter)."
+        }
+      ],
+      "analyst_consensus": {
+        "target_price": null,
+        "target_high": null,
+        "target_low": null,
+        "n_analysts": null,
+        "implied_upside_pct": null
+      },
+      "price_52w": {
+        "high": 733.0,
+        "low": 388.55,
+        "current": 551.95,
+        "position_pct": 47.4,
+        "change_1y_pct": null
+      },
+      "extended_fundamentals": {
+        "symbol": "HINDZINC.NS",
+        "dividend_yield": 4.97,
+        "dividend_rate": 29.0,
+        "ex_dividend_date": 1750118400,
+        "payout_ratio": 0.35799998,
+        "held_pct_insiders": 0.89769,
+        "held_pct_institutions": 0.049510002,
+        "book_value": 32.42,
+        "price_to_book": 17.024986,
+        "return_on_equity": null,
+        "debt_to_equity": 88.173,
+        "profit_margins": 0.33234,
+        "enterprise_value": 2372516446208,
+        "enterprise_to_revenue": 6.681,
+        "enterprise_to_ebitda": 12.327,
+        "gross_margins": 0.73285,
+        "operating_margins": 0.48057,
+        "ebitda_margins": 0.54196,
+        "total_revenue": 355119988736,
+        "total_debt": 120770002944,
+        "total_cash": 79900000256,
+        "peg_ratio": null,
+        "trailing_pe": 19.761906,
+        "forward_pe": 14.173112
+      },
+      "promoter_institutional": {
+        "symbol": "HINDZINC.NS",
+        "major_holders": {},
+        "top_institutional": []
+      },
+      "dividends_splits": {
+        "symbol": "HINDZINC.NS",
+        "recent_dividends": [
+          {
+            "date": "2022-11-23 00:00:00+05:30",
+            "amount": 15.5
+          },
+          {
+            "date": "2023-01-30 00:00:00+05:30",
+            "amount": 13.0
+          },
+          {
+            "date": "2023-03-29 00:00:00+05:30",
+            "amount": 26.0
+          },
+          {
+            "date": "2023-07-14 00:00:00+05:30",
+            "amount": 7.0
+          },
+          {
+            "date": "2023-12-14 00:00:00+05:30",
+            "amount": 6.0
+          },
+          {
+            "date": "2024-05-15 00:00:00+05:30",
+            "amount": 10.0
+          },
+          {
+            "date": "2024-08-28 00:00:00+05:30",
+            "amount": 19.0
+          },
+          {
+            "date": "2025-06-17 00:00:00+05:30",
+            "amount": 10.0
+          }
+        ],
+        "recent_splits": [
+          {
+            "date": "2011-03-07 00:00:00+05:30",
+            "ratio": 5.0
+          }
+        ],
+        "dividend_yield_trend": "falling",
+        "total_dividends_1y": 10.0
+      },
+      "metrics": {
+        "market_cap": 2332164873628.601,
+        "trailing_pe": 22.526464538091385,
+        "forward_pe": null,
+        "price_to_book": 17.50086202632899,
+        "debt_to_equity": 0.8656761218670269,
+        "return_on_equity": 0.7769022962629446,
+        "profit_margins": 0.31333797403226293,
+        "operating_margins": 0.42353439665869674,
+        "gross_margins": 0.767591779909809,
+        "ebitda_margins": null,
+        "revenue_growth": null,
+        "earnings_growth": null,
+        "free_cashflow": null,
+        "operating_cashflow": null,
+        "current_ratio": null,
+        "fifty_two_week_high": 733.0,
+        "fifty_two_week_low": 388.54998779296875,
+        "fifty_two_week_change": null,
+        "dividend_yield": 0.08152912221174284,
+        "current_price": 551.9500122070312,
+        "analyst_target_price": null,
+        "analyst_target_high": null,
+        "analyst_target_low": null,
+        "number_of_analyst_opinions": null,
+        "trailing_eps": null,
+        "forward_eps": null,
+        "beta": null,
+        "book_value": 31.538447156297547,
+        "enterprise_value": null,
+        "total_revenue": 330410000000.0,
+        "total_debt": 115360000000.0,
+        "total_cash": 960000000.0,
+        "peg_ratio": null,
+        "sector": null,
+        "industry": null,
+        "company_name": ""
+      },
+      "detail": {
+        "stance": "Fundamentals supportive",
+        "bull_points": 8,
+        "bear_points": 2,
+        "data_quality": {
+          "coverage_ratio": 0.6153846153846154,
+          "available_fields": 8,
+          "total_fields": 13
+        },
+        "metrics": {
+          "market_cap": 2332164873628.601,
+          "trailing_pe": 22.526464538091385,
+          "forward_pe": null,
+          "price_to_book": 17.50086202632899,
+          "debt_to_equity": 0.8656761218670269,
+          "return_on_equity": 0.7769022962629446,
+          "profit_margins": 0.31333797403226293,
+          "operating_margins": 0.42353439665869674,
+          "gross_margins": 0.767591779909809,
+          "ebitda_margins": null,
+          "revenue_growth": null,
+          "earnings_growth": null,
+          "free_cashflow": null,
+          "operating_cashflow": null,
+          "current_ratio": null,
+          "fifty_two_week_high": 733.0,
+          "fifty_two_week_low": 388.54998779296875,
+          "fifty_two_week_change": null,
+          "dividend_yield": 0.08152912221174284,
+          "current_price": 551.9500122070312,
+          "analyst_target_price": null,
+          "analyst_target_high": null,
+          "analyst_target_low": null,
+          "number_of_analyst_opinions": null,
+          "trailing_eps": null,
+          "forward_eps": null,
+          "beta": null,
+          "book_value": 31.538447156297547,
+          "enterprise_value": null,
+          "total_revenue": 330410000000.0,
+          "total_debt": 115360000000.0,
+          "total_cash": 960000000.0,
+          "peg_ratio": null,
+          "sector": null,
+          "industry": null,
+          "company_name": ""
+        },
+        "metrics_extended": {
+          "dividend_yield": 4.97,
+          "peg_ratio": null,
+          "operating_margins": 0.48057,
+          "gross_margins": 0.73285,
+          "ev_to_ebitda": 12.327,
+          "held_pct_institutions": 0.049510002
+        },
+        "statement_trends": {
+          "revenue_qoq": 0.39994730602028716,
+          "net_income_qoq": 0.7529095792300806,
+          "operating_cf_qoq": null,
+          "debt_qoq": -0.21121367521367518,
+          "free_cashflow_latest": null,
+          "cash_to_debt": 0.008321775312066574
+        }
+      }
+    },
+    "market_setup": {
+      "signal": "SELL",
+      "confidence": 0.65,
+      "summary": "Market Setup Signal: SELL | Support test. Tape read: 5d=-2.1%, 20d=-7.2%, volume ratio=0.75, momentum=36.0. Support gap=1.4% and resistance gap=7.2%. Trader read: The structural trend is bearish, with price trading below both the 20-day and 50-day moving averages. Momentum is clearly negative and declining. While the trend agent identified a theoretical uptrend channel, the current price action is failing to hold, and proximity to support at 575.0 suggests an impending breakdown test given the weak volume participation.",
+      "reasoning_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+      "llm_reasoning": "The market is in a consolidation phase. The proximity to the 583.00 support level, combined with channel positioning, creates a high-stakes zone for reversal or further breakdown. Investors are waiting for a definitive breakout from the current range, as volume has dipped below the 20-day average, indicating a temporary lack of conviction from market participants until the next catalyst.",
+      "setup_label": "Support test",
+      "detail": {
+        "recent_return_5d_pct": -2.12,
+        "recent_return_20d_pct": -7.25,
+        "volume_ratio_5d_vs_20d": 0.75,
+        "distance_to_support_pct": 1.39,
+        "distance_to_resistance_pct": 7.17,
+        "momentum_score": 36.0,
+        "buy_votes": 1,
+        "sell_votes": 1
+      }
+    },
+    "catalyst_context": {
+      "signal": "BUY",
+      "confidence": 0.75,
+      "summary": "Catalyst Context Signal: BUY | Positive headlines, incomplete confirmation. Backdrop read: news sentiment=0.19, analyst upside=None, 52w position=47.4. Core read: Hindustan Zinc displays strong profitability with a 77.6% ROE and healthy 31% margins. Despite a high Price-to-Book ratio, the company maintains robust revenue growth and active debt reduction. The stock trades mid-range in its 52-week band, supported by a consistent dividend yield, making it an attractive fundamental value play.",
+      "reasoning_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+      "llm_reasoning": "The primary catalyst is the operational performance, specifically production records. Investors are weighing these record outputs against the current bearish technicals. A potential shift in metal prices or a breakthrough in volume above the 20-day SMA would likely serve as the immediate trigger to break the current sideways compression and confirm the trendline support.",
+      "catalyst_label": "Positive headlines, incomplete confirmation",
+      "detail": {
+        "buy_votes": 2,
+        "sell_votes": 2,
+        "avg_sentiment": 0.189,
+        "analyst_upside_pct": null,
+        "position_52w_pct": 47.4,
+        "fundamental_signals": [
+          "Revenue growing QoQ (40.0% last quarter)."
+        ]
+      }
+    }
+  },
+  "agent_guidance": {
+    "indicator_prompt": "Indicator reasoning protocol:\n1) Evaluate structural trend using close vs SMA20 and SMA20 vs SMA50.\n2) Validate momentum using MACD line/signal/histogram and ROC10 direction.\n3) Check exhaustion/continuation via RSI, Stochastic crossover, and Williams %R zone.\n4) Confirm participation with volume vs 20-bar average.\n5) Penalize high-volatility regimes with ATR% filters and lower confidence.\n6) If cross-indicator alignment is weak or contradictory, return NO_TRADE.",
+    "pattern_prompt": "Pattern reasoning protocol:\n1) Detect breakout/breakdown against prior 12-bar range, not single-candle spikes.\n2) Confirm direction with local slope and bar-structure continuation.\n3) Use engulfing patterns as confirmation, not standalone trigger.\n4) Treat flat-slope compression as NO_TRADE until expansion is confirmed.\n5) Down-rank weak breakouts lacking structure confirmation.",
+    "news_prompt": "News reasoning protocol:\n1) Collect company-specific headlines across multiple providers using diversified queries.\n2) Filter spam/listicle/noise domains and low-relevance stories.\n3) Build a global macro stream (rates, inflation, oil, USD, broad risk sentiment).\n4) Build industry/sector thematic stream (demand cycle, market share, regulation, capacity, pricing).\n5) Weight sentiment by source quality, exponential recency decay, and relevance confidence.\n6) Apply content-similarity dedup to remove near-duplicate headlines.\n7) Use LLM to infer final bias from company + industry + macro evidence and return NO_TRADE under conflict.",
+    "trend_prompt": "Trend reasoning protocol:\n1) Fit support and resistance trendlines over the visible swing window.\n2) Estimate channel slope (regime direction) and channel width (trend quality).\n3) Locate current price in channel and prefer pullback entries aligned with slope.\n4) If slope is weak/flat, classify as sideways and favor NO_TRADE.\n5) Avoid chasing signals near channel extremes against risk-reward logic.",
+    "market_prompt": "Market sentiment protocol:\n1) Evaluate NIFTY multi-window momentum (5/10/20-bar returns) for domestic risk appetite.\n2) Check Nifty SMA20 structure — price above 20DMA = constructive, below = cautious.\n3) Evaluate India VIX regime as stress filter (low=constructive, high=defensive).\n4) Factor VIX change rate — rising VIX signals increasing fear even if level is moderate.\n5) Blend with cleaned multi-source news sentiment (stock + macro blend).\n6) Count bullish/bearish votes and avoid directional call under conflict.\n7) Prefer NO_TRADE when index momentum and volatility regime diverge.",
+    "relative_strength_prompt": "Relative-strength protocol:\n1) Compare stock and NIFTY returns over same 10-bar window.\n2) Convert spread into alpha and classify persistent out/under-performance.\n3) Treat marginal alpha as noise and return NO_TRADE.\n4) Use relative strength as confirmation layer, not standalone trigger.",
+    "us_trend_prompt": "US macro trend protocol:\n1) Evaluate SPX and NDX short/medium returns for global equity risk tone.\n2) Use VIX as stress filter (high VIX weakens risk-on conviction).\n3) Use DXY direction as liquidity/EM risk proxy for Indian equities.\n4) Classify regime as risk-on, risk-off, or mixed.\n5) Use this as contextual bias only; do not override local setup quality.",
+    "financials_prompt": "Financial statement reasoning protocol:\n1) Evaluate valuation (PE/PB) relative to profitability and growth quality.\n2) Score profitability and efficiency (ROE, margins).\n3) Validate growth durability using quarterly revenue and net-income trends.\n4) Check balance-sheet resilience (debt trend, liquidity, cash/debt).\n5) Check cash-flow quality (operating CF trend, free cash flow sign).\n6) If fundamentals conflict or are incomplete, default to conservative NO_TRADE bias.",
+    "market_setup_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+    "catalyst_context_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+    "trader_intel_prompt": "Think like a discretionary Indian swing trader. Judge setup quality, catalyst quality, crowd positioning, and execution patience together. Avoid indicator-threshold language. Prefer NO_TRADE when the idea is merely interesting rather than executable. Use nearby levels, 52-week context, analyst framing, and headline quality to write a trader-grade verdict."
+  },
+  "market_setup": {
+    "signal": "SELL",
+    "confidence": 0.65,
+    "summary": "Market Setup Signal: SELL | Support test. Tape read: 5d=-2.1%, 20d=-7.2%, volume ratio=0.75, momentum=36.0. Support gap=1.4% and resistance gap=7.2%. Trader read: The structural trend is bearish, with price trading below both the 20-day and 50-day moving averages. Momentum is clearly negative and declining. While the trend agent identified a theoretical uptrend channel, the current price action is failing to hold, and proximity to support at 575.0 suggests an impending breakdown test given the weak volume participation.",
+    "reasoning_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+    "llm_reasoning": "The market is in a consolidation phase. The proximity to the 583.00 support level, combined with channel positioning, creates a high-stakes zone for reversal or further breakdown. Investors are waiting for a definitive breakout from the current range, as volume has dipped below the 20-day average, indicating a temporary lack of conviction from market participants until the next catalyst.",
+    "setup_label": "Support test",
+    "detail": {
+      "recent_return_5d_pct": -2.12,
+      "recent_return_20d_pct": -7.25,
+      "volume_ratio_5d_vs_20d": 0.75,
+      "distance_to_support_pct": 1.39,
+      "distance_to_resistance_pct": 7.17,
+      "momentum_score": 36.0,
+      "buy_votes": 1,
+      "sell_votes": 1
+    }
+  },
+  "catalyst_context": {
+    "signal": "BUY",
+    "confidence": 0.75,
+    "summary": "Catalyst Context Signal: BUY | Positive headlines, incomplete confirmation. Backdrop read: news sentiment=0.19, analyst upside=None, 52w position=47.4. Core read: Hindustan Zinc displays strong profitability with a 77.6% ROE and healthy 31% margins. Despite a high Price-to-Book ratio, the company maintains robust revenue growth and active debt reduction. The stock trades mid-range in its 52-week band, supported by a consistent dividend yield, making it an attractive fundamental value play.",
+    "reasoning_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+    "llm_reasoning": "The primary catalyst is the operational performance, specifically production records. Investors are weighing these record outputs against the current bearish technicals. A potential shift in metal prices or a breakthrough in volume above the 20-day SMA would likely serve as the immediate trigger to break the current sideways compression and confirm the trendline support.",
+    "catalyst_label": "Positive headlines, incomplete confirmation",
+    "detail": {
+      "buy_votes": 2,
+      "sell_votes": 2,
+      "avg_sentiment": 0.189,
+      "analyst_upside_pct": null,
+      "position_52w_pct": 47.4,
+      "fundamental_signals": [
+        "Revenue growing QoQ (40.0% last quarter)."
+      ]
+    }
+  },
+  "trader_intel": {
+    "signal": "NO_TRADE",
+    "confidence": 0.45,
+    "verdict_label": "Wait for structural clarity",
+    "playbook_title": "Support breakdown vs. Value floor",
+    "thesis": "The stock is trapped in a classic tug-of-war between technical decay and fundamental dividend appeal. While price is leaning toward a support breakdown at 575, the strong ROE and growth profile act as a soft cushion, preventing a clean short setup. Institutional interest in high-dividend stocks often emerges near these 52-week mid-range support zones, making a breakout or breakdown unreliable for a swing entry right now.",
+    "execution_style": "Mean reversion or breakdown wait",
+    "risk_flag": "Divergence between fundamental value and technical momentum",
+    "entry_trigger": "Wait for a daily close below 570 with rising volume for a short, or a decisive 5% snap-back rally for a long.",
+    "invalidation": "Price stabilizing above 610 with consolidated volume would nullify the bearish thesis.",
+    "why_now": "The confluence score is too split (0.59) to justify aggressive capital deployment; the 0.75 volume ratio suggests low conviction from market participants.",
+    "why_not_now": "The stock is mid-range, not at an extreme, and the conflicting signals between robust financials and weak price action create a high-noise environment unsuitable for a clean swing.",
+    "summary": "Trader Intel: NO_TRADE | Wait for structural clarity | Support breakdown vs. Value floor. Thesis: The stock is trapped in a classic tug-of-war between technical decay and fundamental dividend appeal. While price is leaning toward a support breakdown at 575, the strong ROE and growth profile act as a soft cushion, preventing a clean short setup. Institutional interest in high-dividend stocks often emerges near these 52-week mid-range support zones, making a breakout or breakdown unreliable for a swing entry right now. Why now: The confluence score is too split (0.59) to justify aggressive capital deployment; the 0.75 volume ratio suggests low conviction from market participants. Why not now: The stock is mid-range, not at an extreme, and the conflicting signals between robust financials and weak price action create a high-noise environment unsuitable for a clean swing.",
+    "reasoning_prompt": "Think like a discretionary Indian swing trader. Judge setup quality, catalyst quality, crowd positioning, and execution patience together. Avoid indicator-threshold language. Prefer NO_TRADE when the idea is merely interesting rather than executable. Use nearby levels, 52-week context, analyst framing, and headline quality to write a trader-grade verdict."
+  },
+  "top_news": [
+    {
+      "source": "google_rss",
+      "title": "Top stocks in news: Infy, AEL, Waaree, IndiGo, BoB, HindZinc, AB Capital, SEDEMAC, Polycab - Business Today",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPclVxZ1EzRTZtTzlfTXkxVVpoVVo4aTRaVHBRcVBDSG1aMEliMTVibVRCOGZDYkR0WU9saUU0aU1vdkRzZng1bTZZdG15c0NWVGRGOHZkUlYyckd3UnRpRmtha0prS2NUaG50eHVCLU1zS19pYnd5OEQzNVBJT2hmcVVLS25iQVFxTzBuV0p5TEUzYlNPSkxUMzNPamJEc3lhMWxtak8tc2x3RmMwUUdGd3I5WlNELUZYekRkRnBiZWd6ZVMxOW1YOGpxUlM5bmRoZTByUDlRdGNvd3pQdElmcE1zQdIB6AFBVV95cUxOaG41NVd6QWU1UVdZbFdPdUlzOG1wZjBvNmRHRFZPNUhnRmh3b19qT0hXaFkxTU1sOThpNlQtVE1FN3dJSlFZRDVQeXk5M1R6am9jdEZiZ3cyNG8ybEZkbFlHaENFa1Z1MDRSQVpSQ3NPTlYwQ3A5WEN1ak9mRTh3LWpwTG5GOUZsd1RhRlF3UE9MbDBMNnB3VkRfUFA5YzBWSDJvTnFBdUlqY1FoS0tsNkc1QkNqeVEzNUlleFAwM0M4OG1ZM3I5RHZyTnRZQURsMllsSVg5Q1lEcWFHUExMOURzTU82dkdo?oc=5",
+      "published_at": "Wed, 11 Mar 2026 02:15:53 GMT",
+      "published_ts": 1773195353.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Tata Steel, HindZinc, SAIL, Hindalco, NMDC: Fresh target prices for metal stocks - Business Today",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQRFlWUi0wZUxXb0FPSnJSaHdYczZJZWo0SGRGT3pSR0RfbGxweFA4OWtPM0YwbU1HdEFsMG04RkJmRlFoTkNEYWFFaVVpQzVPNDdIMlNDWEdvWkdpWm1XOTZxWm43Sl9KRnFDYW1NVkp4eTVxUzM1QXhuZmhFV0tzQjVLalVzWVFnOVlpREhOc2JOeFJGUTZvWldtRU55amJvVmF1T1JrR2h0cEFxWlJDX2FfVWlvMXZSUmE4T2FmQ21qSWxVak5sVGpzWGw1Z0dpaWNUZWdxVG1JS1XSAeABQVVfeXFMTTRhTlIxZTR4VHFpNmUybDkzdlh5ZjE3RnV2cU1MTXVBU0EzWm1lVzRyNzFJb3VNbXdLTXpSTEdSZHdLdHd5c2NpLWI3N19uY3h5Zk9vUE9iZXJWSjM4bWZZcENrd2ljU2tUODFrcldHYXNIcVdxd19zdnVoVlVaZm5VNUc4ZjgtUVVvOTUyZFAwV3hmM0ZVRkJmR2ZFZWx4eVVoNXFRelQ2RV8tYnpGclpzWEd5R1UxVFpNUVBnRFM0aEhWcmNUREJ5SnJIZVJQbl9LYUFpM0RZQzRVN21hNW0?oc=5",
+      "published_at": "Wed, 18 Feb 2026 08:00:00 GMT",
+      "published_ts": 1771401600.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "HINDZINC: Record revenue, profit, and lowest zinc costs highlight a strong quarter and positive outlook - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNOVBERzFmVEdYYzF3VWNhTC1MLXZTT1FRTDhPTEU2Z05KbEVKeTZxR0RqeTZ2VmdtZDFqX1JsSmdvd3oteURTd2pDeTdJTjhmUHdEY1YwcjB1ekN1NFRMZWlQUU1OZVJUS2FBMDRhTWZIM1N3cWdJRHUySmFNQ0IwTFNqdXpFSHdvLTlEaWFYMXpybC1FdkhsdG5XRVpNc0tUTVU1X1VKeTRzaFdZN2lRbGpKcEVEMmU1T0xqeFR0Y0UwYWZ3ZEZLS1VCREdrOTI5UGt5eWVQclhsYXRMN2xpXzl0NUNzdDBCand1UloxUFhMOTBUYk5PVmVzVTRnTmtxNmlGRmpXbHA5QVMxeHZrUlRha0VGUQ?oc=5",
+      "published_at": "Mon, 19 Jan 2026 08:00:00 GMT",
+      "published_ts": 1768809600.0,
+      "sentiment_score": 5.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Hindustan Zinc Limited's (NSE:HINDZINC) Financials Are Too Obscure To Link With Current Share Price Momentum: What's In Store For the Stock? - simplywall.st",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQekpvTEstVVd0RVlGMkZZYnJiZHRrM3pZTUVpM0JRcmFFZkNFb18wNUphU19jNUxNOUw0TkNIZDJPVFVqY1BSeVBGY1Z5aDJFZXBjNlduc3NZSjRMR2tfN1RWZGlhZnlNeWs3VlBzZkU4LVBObGpZRXJuYUVnTXdiSnNOOGdTYVVUYWtpVy1GcE1PcUQwem01Yncwenl6Z0d5SkI3aXlvc0FlSUhDa2JkSDhGdWIzcWRNUGIwRXhGM3plUlRTZlExWklNTk92ck4tOXJMOUYwWXQxajkw0gHiAUFVX3lxTE5FT25JUTRhaW1iTTJWdlczQkhDMm5kREpSMzV5WkVkb0E3aUdBczFMU2N2TGsyU1VKdW1SS3dKNmVjY0ljUGN6U3FkSHdVZk5WXzBqSWktTWxvU3ZYZXZTQm9yNkh3S01GSjU3WXFYRkpqbWpKdzFIV3d5bnIwUE9NMUs4bERBb21KTkdPWWFiSGE3bW9EeWdmZ0M1anlqNVFTV1JwZ1hmWS10aVdCQzczTmtOLUdaVUk5QWE3X29YR1VITEczV2M0VEVTa1RsZEM1Z3JSMElsVmUtR3hfOF8wWlE?oc=5",
+      "published_at": "Sat, 17 Jan 2026 08:00:00 GMT",
+      "published_ts": 1768636800.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Hindustan Zinc share price today: HINDZINC stock stays near 52-week high as record silver fuels fresh bull case - TechStock²",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMTBFSDlxYk1pZnVSR0JDbjMyOTllTjZod2tadmpsMXh0eTMxWW0yTjdwc1hJSFNRUkp1T1dUYXA0TUdlRFk5MWp1T2t1NWphaFNfYnRpaFUxWEhGNTV4bUZfU004czUteHh4V0U3dnNvb05BZ0dMTHV1TUltaVoxZG5mUm9SWFJVZzliNms3TGRaaGpQQm9PNE9xWXhOWUswdV83cEJ1bVJzYlJCRkp4d3lZNm5NTVV0bXRvVHZFdlJiTGNxRzJzcmhQNA?oc=5",
+      "published_at": "Tue, 23 Dec 2025 08:00:00 GMT",
+      "published_ts": 1766476800.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "There's Reason For Concern Over Hindustan Zinc Limited's (NSE:HINDZINC) Price - simplywall.st",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPQ0VUd2xJUVdmTDc4WHk3c3NOX3NQc19RLXl6NElkWm9vS0FoUmRCNWItVUllVGt6dEFQU2lQcmh5RnlvME9nUmxHUk1BZzRscTZOZENsQmJ5NVc3YTRMb25xSHJWZ09Xd0ZrcmxQYUlUYU1GMThxQUo1bkdMSjMteDZDRHJIRm5neDFxUGZ6LTdzTUdBNExtR3RVc01qMDVCTGtXdWdPNVpvWHFldlVESHhoallZZnpoTjB1M2xyVXhrMjdRVVJsVFFQdU9EdTNxRlIxejJSZ0d4d9IB3wFBVV95cUxPd1B1WUZyNXpETlBsNGl5aVVQZTdTYmNGWXBPZmdpeHJUMi0telRWZFlvV1o0a25WNVd5eUNfS3FreTNtcFVoNVhSQTdSLTdQcFBiNlRwZXFaZVBHckpiZWhNNnhEV0lIZWwxYTJqNlAza19MTUc5X0V3Zm5KZlpod3ZiVHlMMnp3MUxRUGIzR0dHZlBJQ2xzOGpVUC04SDgyTm90bVdnWHFtNUp0aXhzYlFYSlI4a1pIM1pLMEJzc0k2WERvNG80WEdjVWtTeDg5eWhWalRsd3RacDR3dEdj?oc=5",
+      "published_at": "Sun, 21 Dec 2025 08:00:00 GMT",
+      "published_ts": 1766304000.0,
+      "sentiment_score": -1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Hindustan Zinc share price hits a fresh 52-week high on silver’s record run: Jefferies’ ₹660 target, latest news, and what could drive HINDZINC stock next - TechStock²",
+      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxON2Z0WTNQNDRFU3docEJoNWt5UXhMbl94WWZnTXoyWUNZcTNncHJ3VTJCQ0ZzS2I4WkNMUDV6ZUNvY0ltb0xBd0V2SDFWeEJQcWVjV1duMTBnMVRiYzBsVHQ0S2hMakM4UDhwSTRaTnREV2Z6MTFWb1lZcGFGdHV1SWU0RFNXS29zd1YzWDRkS2tTb0pCc3hPTVUtTjN2RjVIRVR2TXA2VDEwbmZjS3VuVXQwUGFqTHduVmRsb0dyakpLaFd1MUZHUTcwYk5JM1YwTUZHN2ZBeEpUcXNjd1p3NFZFb1JjZUE3bzBNN3Q3bUFzekRkUXFUT3pQTzRBOFdzQVloSXRRV2RTUQ?oc=5",
+      "published_at": "Wed, 17 Dec 2025 08:00:00 GMT",
+      "published_ts": 1765958400.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Hindustan Zinc Share Price Outlook (Updated Dec 14, 2025): HINDZINC Hits Fresh 52-Week High on Silver’s Record Run — This Week, Triggers, and Week-Ahead View - TechStock²",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPVGUzUDRwVHBKaUJnRGJNWi1uRTMyYnVhX09jZ0RzbnFJcXlsdEluMjNBdDFRdk9ZVDFROTlMckJoU0FBWDEtM1VLSnB5eHhEcXhHVTNzOXByYXNMZmx6MzlIRzFNWmEwUHhKODI2YmNhbDBqOGVCTXdndzR2UHV2aURCdzdwRklsZkc3VktvUHhPYUlhTDlrVENYUUkyR3Q4UHZtcG43Y2RCbG8ydXQybGdPOFdhWE92aDdmcjVCUDJlVEhObERCZWtBRlFmaThkTUw1bFphS3dwazNleUtHQ1gxdjdzLUx6TmNNMWJKNUJvZG5NeTlpY0pTMzZtQQ?oc=5",
+      "published_at": "Sun, 14 Dec 2025 08:00:00 GMT",
+      "published_ts": 1765699200.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Hindustan Zinc Share Price Hits Fresh 52-Week High on Silver Surge: What’s Driving HINDZINC, Analyst Targets, and Key Risks (Dec 13, 2025) - TechStock²",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOd1IxcXFMYnhYc2VIa1oyWEw0alVjaWRBS2ZpRmt1b3dLMU8wUGpmODV2blVPSm02YlFuT25hRnFtOU1MSFdqYmtLUGthcU01aFkyNE05NEQzMVFDSFR5anI4MV93Rk9xQVhEZGxkWFVwVkc5OVZDUXhOSFV3UU1ZSTJlTFhsU1N1dE5PTWJ3WmFFbmNldk5XeS0tUlBaUWpqSENQckZWNDNtempaQnJ2cXppSG5JMVN3MXhMR3Y1aFZfM1V3MG9xYnVPVDJyNW9zUS1WdDJDTkxxVXRtOXNwdk9nN1dUTTQ?oc=5",
+      "published_at": "Sat, 13 Dec 2025 08:00:00 GMT",
+      "published_ts": 1765612800.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Hindustan Zinc Share Price Today: Why HINDZINC Is Rallying and What 2026 Could Hold for the Stock - TechStock²",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZG53T1FsODVLZXIxNllhVXJCMEszektGZWRjZHhfNUNSRWFIcU9UYUFsS1lYdE42WWo1YkFNYXpoanlzX1hMaFNrQ2kwR1dpUnFXUGVjY0x5ejF6WlR4N0NLT21jS2hKUll4NlZCeUZUZ0NTR2MzaFNYeGRUTGo5NDJwUGJVYXo3QkNtbkFmU1hZNmVhZnhVZ0Z5YUw4S05KekRWNW81MjFEZnVZWnpGdk5MOEd5UFlF?oc=5",
+      "published_at": "Mon, 01 Dec 2025 08:00:00 GMT",
+      "published_ts": 1764576000.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Hindustan Zinc's (NSE:HINDZINC) five-year total shareholder returns outpace the underlying earnings growth - simplywall.st",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOeWR5VlFuOENvcndqR3d2U2FKUW5SVkljMEtjWHFhRUxqSzlFTnFQR3dpWlNQdWtnSy1pLXNZVVNmekhCTExMQUtzQXBCWEI2UHNDUTVLcDhTMDJlM2J0RFp6MExUbjAtVnROTGhidFh0Zkk3YnZNOHBsMG5yeDJ5WWhPZlFmWXlVTUxTZTRSZ3VQakJKSVRCMjNvT3dxUm5lV2NnTG5qc25WZ0djWVdsbEp3Y295SVA3ZnpacXo2LUQySGRhYUxiQzV0TlRJZFFRaHNGZjJXdllkQdIB3wFBVV95cUxNekdfeGp4aVhjWkMtZl9yMnc0M0pvUjA5N2l1eERLd3JaSG1PSEFRSGNCX2ZnbHNreFN6NmxrNnA0Rlp3VXFPZ1JtVEVxTFJwVVJTbVJCeFZ5RnV5NU92UmdRd1ZIZWZrUWRRTXJjcGd0dWMwWnRlM3I3bE1xRVZRQlJVLWlYYy00aVhNbU01NmVmRDZ0NkhpX2pPc3JzN1RjWGpkNERCYmhjMTAwQ3VhbEhyblVjaFU4SzdRblkxNG9UNU1aelJYTHBpWnR2S3lRazdOaGtSRFBuRkpVdTFv?oc=5",
+      "published_at": "Mon, 24 Nov 2025 08:00:00 GMT",
+      "published_ts": 1763971200.0,
+      "sentiment_score": 2.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Vedanta Group Stock HindZinc Recommended To Buy, New Target Rs 597 For 12-Months; 1,450% Dividends YTD - Goodreturns",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPc1ZBTDhjSngtbnhWYXI3aDJYX1JZOXEzb0l4aHB6VDNFbzVUc2NKSTVMa2t3UWQzTmZFeG5FV043dWRqME9RN3JzeXBGbnhlM1BieWFwREc0bzhKRk9MdS1GRlVBbXRuNGNCRURiS3lmbjZNQ0UyWFdLcFpUUDhkNG9OdEhGWFZpaGFhRFVCbVRrc1hoVDgyc2J3di1EYlFiTVQwNUFOUlVRNmNVSndkSEp4VG8tZC1VRTh1QVVLcWlaTDFwZ1RhTVRSTUxvLUlGbURtaDZ6NDNzYklhUE1zY0pSMENOOUw4NlNjZA?oc=5",
+      "published_at": "Fri, 11 Oct 2024 07:00:00 GMT",
+      "published_ts": 1728630000.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Hindustan Zinc Q3 Results 2026 - Find Hindustan Zinc Q3 Earnings Result | HINDZINC Q3 results - Mint",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPWDdyRVFjUTctb3drWjNuRXgtcThHRm92eGhfT2NVTEtVZzVTTG1Yb014ckp5OFhqU2ZhVDdLcDBMMHkzaTNmajBQbG82TWUtdWhZcl9TSzZyWkxqNG80aU4ybVVXenJDcGlUQXB3YWZPUGF3WVU4ak5iaU5HMm5NMEF2dkdtQQ?oc=5",
+      "published_at": "Mon, 24 Jul 2023 23:25:27 GMT",
+      "published_ts": 1690241127.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    }
+  ],
+  "top_industry_news": [
+    {
+      "source": "google_rss_industry",
+      "title": "2x growth plan: Hindustan Zinc to invest Rs 12,000 crore to double its capacity; project to be completed in 3 years - MSN",
+      "url": "https://news.google.com/rss/articles/CBMitANBVV95cUxPOWt6OTBXNTN3UEIzMjBDSXRNX3YydmlXX25UZUFFeXowWHNqbk1KOGxXSXhBSXRTdHVlSl9ZWWZ6RXVsek9kaVdja2hhdGdjLV8tcmoySWdZYXBkTmxvLTl4YVhhZmRKOWplc2REOXB1dF8ycFdpcUNMeXI1M20wRWNPZTEyQWpzTTE4Y1lGbEVrbVJ1dGl3a1ZiSUNLcVE0Xzl6MkFGbkc4Yk1wRnY0T2p6MFZrODRZY2poQmlKMTZzMG1EQkFVY0lJM2ExR2VZN005clg5MDRHYXljTm92bnM1YlpZMkkxTmpmS19yTnJUZUJSdDRJVkprNzh1SmwzcjdTVkpwVmtRR0NaejRjZUtkRkRrR2w0Uk44QVUxTzNVZUs4OHhmc1J1UjhRMlJLcnA3NDhPTm5WSUttNmRZRk13Wjl1cUx2Nk5vbVNWbFdVZnNtaEJIV2tUaHBkdU1VWWtGQ0lwYW9wRVAxWjlVc1hVaFJkRWJHN2t6dkpQQmhhMV9hU0hWV1NsekticmtuUnM5TWFfMjV6dFZzM045a2RfY3dEY0hfYkxRLUZjMU9OQXRQ?oc=5",
+      "published_at": "Fri, 13 Mar 2026 17:55:59 GMT",
+      "published_ts": 1773424559.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Hindustan Zinc Limited",
+      "sector": "Basic Materials",
+      "industry": "Other Industrial Metals & Mining"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Hindustan Zinc: Why Does the Stock Mirror Silver Price Movements? - Trade Brains",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSnk4VnIyNTFzRmZIdkU5RXBqaGVCZVBZaE1IQmJPUl84NFdlT1pXRTg5QXVZd05hUHN1WG5hVWxRWklTR0U3QWdzNUlZSXV3TDdVYVEtZllHWTlHQVN6cy1DV2RCU3JFUHI4ZW5DNUxLWGlORUZVYXg3N2FGWEFuSkIxUUx5Ry1UV3oyNTlvYjk?oc=5",
+      "published_at": "Fri, 13 Mar 2026 04:28:00 GMT",
+      "published_ts": 1773376080.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Hindustan Zinc Limited",
+      "sector": "Basic Materials",
+      "industry": "Other Industrial Metals & Mining"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "India Silver Market Set to Boom Through 2033 |Hindustan Zinc - openPR.com",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVG10dDZ6S0I0c3RTUUFVTlZxX3dVU2hkLVhWS0ZkQ0hUTG5CZ0xhbVUybHU5SEFmcFlVM3ZyZnNxNWQyWXB4TTJ5NmFabzZFOFQ2Tk9SR3hUcmpkWDlSMFdmMjlBZnJJaVhnQVZpTi15b2k0ZV9Pcm51YkE1cDZ1NGdMQVNDS3dyZTlsSTFkSURZazJzRkduYWxaRQ?oc=5",
+      "published_at": "Mon, 09 Mar 2026 12:36:38 GMT",
+      "published_ts": 1773059798.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Hindustan Zinc Limited",
+      "sector": "Basic Materials",
+      "industry": "Other Industrial Metals & Mining"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Hindustan Zinc share price up nearly 3% on collaborating with Virginia Tech for advanced research on silver recovery - Upstox",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPUkpVdlRkcW9MOGRFM2ExUE5LczY0aE41WDVZcVpVdk56UnNHa2U2bG9VNEVRVUJnWVJUQ3ZvQzBtUUFubTJ0dEphMWVabmxvcUZ5UDcxT3k5TXJGZ24wblJRWTI1TlhBLWlLb0tmRWRtUURLSnFlQ3NEanp5cUNzZEc4MnJTRk84cFJhYTFHeS10LXhuSDVNU0JWQlNQVkpnYjVvQ2djTGcyRDhBelQ4c01YWExsanRmcGNUcEhnSURNM2pkcGJNX09hM3hGd291R2RRQmU5TlpEbWIxNmt3ZEZPZlpyYlRuWXNKN0JTaWdPRXBpUjNHdXk4VEZQaEtuUUdoSw?oc=5",
+      "published_at": "Wed, 04 Mar 2026 08:00:00 GMT",
+      "published_ts": 1772611200.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Hindustan Zinc Limited",
+      "sector": "Basic Materials",
+      "industry": "Other Industrial Metals & Mining"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "MCX, Hindustan Zinc Share Price Jump Up To 3% As Silver Rally Boosts Stock Market Today - Samco",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQQXVvZGswRUU0Ul9feVAxSndUQV9YOGNHUXczZkRrSmFUVnp0WnFxa091M182bExRckh3X0pfUXhwdnZYZUM0UkFmYzJUb0NFb0pUU3AycXRRNlZIWktwWWNaNmJBLWFfUDhWQUNoSlJGRFRETWZMMjNnOGRxWXZUUUV6NGRjMDlfVkFWQUlzcVhYTllBSkFYWlFWWDN0M1g4NnQtXy10ZWJuRjNlM0wxSHIwV1JGUW9hTGdGbTZVLWdXMmRHczE4eG8wQks1dw?oc=5",
+      "published_at": "Wed, 25 Feb 2026 08:04:08 GMT",
+      "published_ts": 1772006648.0,
+      "sentiment_score": 2.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Hindustan Zinc Limited",
+      "sector": "Basic Materials",
+      "industry": "Other Industrial Metals & Mining"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Hindustan Zinc partners with Tripura Group for manufacturing unit at Zinc Park in Rajasthan - CNBC TV18",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNZ0dlQkwzbUIxZHZXSU8yUm5kTVRESXBkanZVWUtic0w3QTA0bHYtRW5RcTNnUXp1c0hicEt1RVZ1RFBUMC0tS0tHUDlya1UwNWlLYmtnQkdGcHV0aWRJb3ZtSFl5blpUZ28xbzExLUotbWFrU3Q4eXVDVzI3UGtZczFNQm1XN0dXc2xFSFRRVVQ4SmJQUUFxZmVtNEdvbXlpSm9PdkUzTUVzazZPOFNUMllYaXJoX19EMWZINkxaR012UE9Ia2hNaFFRVTE3NHBCVmIzdlFvN1M2bWYtTFFhUUVsQjhVaS1NMEFzU3lTWdIB9AFBVV95cUxORkdhanVpbF9KS09mLWdEMnVOaXFMVDhHbi1mVnFfZFFERFpQeG01bmtMYUphcXc1SE1TOE1MZ01BOTZ5cHFTMWpyYVo5cmNWZlVmakVnYkJ4c1lLeTFuN1RkREI3MnJseFpUdVhsTTFiTXlyc21UNERWaDJPYnlPR1NMZ0pDa2N6WHBVMEpVVVllZFR2Vmw1NGhSMmNNaU5PNkFFekRHMVcxSFpDaF83MXdhVlZ4ZmNiMTJnckRnTzU3TnR5aHpaTnowZU5ZWUlGb2t6ZTdTX1hqX2ZqeTV1RDZfRXAyUWswZ1A1RHA4LXZ6MTFN?oc=5",
+      "published_at": "Mon, 23 Feb 2026 08:00:00 GMT",
+      "published_ts": 1771833600.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Hindustan Zinc Limited",
+      "sector": "Basic Materials",
+      "industry": "Other Industrial Metals & Mining"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Basic Materials Roundup: Market Talk - WSJ",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQREo5dmNYVGtwSnhHQVlLdllLbWZDVnhJWEQwcFkwb1RUSnc3c0c3MVZwb0ZnUEhGVy13OVRHeU5reFVISU51cHBGNVQwWHhEQjhtVmhvSmlxT3N2aTg3S2tVeDM0el83VExpeGVFRjBGbjJsZzE1WWNjQXljN3NzT2NwS3pjbnlkSFRXWEN3NlI3RHRHZ2Jn?oc=5",
+      "published_at": "Tue, 10 Feb 2026 08:00:00 GMT",
+      "published_ts": 1770710400.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Hindustan Zinc Limited",
+      "sector": "Basic Materials",
+      "industry": "Other Industrial Metals & Mining"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Hindustan Zinc Share Price: Market Insights and Investment Perspective - vocal.media",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQU1Rid1pTSW5oZVREU05VWGJhS2ZPeWZpN3FweWlUY1hYNHVaMEhBWUVnTHZwMWtKbkhla3JmZlI2ZTFSUHVGb0pUc1YxdzQ2TnJSREFwX2FGTEcxcF9PcGllYjAwVjJvcTZsRVdjbnNOaUJhV1h4ZlpsckllbGRZREM0bzIwRzJMU3pua3Fic2ZPalJCLXFSYXZkSkY?oc=5",
+      "published_at": "Thu, 29 Jan 2026 08:27:52 GMT",
+      "published_ts": 1769675272.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Hindustan Zinc Limited",
+      "sector": "Basic Materials",
+      "industry": "Other Industrial Metals & Mining"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Vedanta to sell up to 1.59% stake in Hindustan Zinc via OFS; sets floor price at Rs 685 per share - The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOS2RNRTFsbUpFUWN1T0ZEN1ZvRlVhTlVtUkZvekNwcGFYNmNqTlJHX2M3NnNFNTRDZEZobVNDOVhXVW1pcW55Mkh4V05nTFEwVVVSZTczT004RHdFdXFsM3J1SzhlUnp4QXUtMGRxSEhKdXRQalpiR1QzWGdvUm9oZVlLX1ZoZFMwUWtQbHlWUExGcUNzRGd0V2xpTjBzSWxJMVk0WTBvRk5Dc2F0dzRESmI4c1FXS2VjdGfSAb8BQVVfeXFMTmhUYlVkWGdUOXI5UjBrMjhQdktPNEtnU3RCSzZ0eHpaNWhMRjdKSWlBaGhOelIyaDVHX24xbjE2dTB4VWVKdUlsdWJzWF9DaXpndzdRZnNjVWd1RTRFa3Z6X0FMcFZ0elhfQms3Z2dQdF9pSUFNdERDQjc4WW5rc0RKZ1FtYUM0S1UwelozMkhSLTAzQUlpOWlwX2o4SGYwOXJTTUVNZEZOYkwyeWVydUx1SE1tYXhzSURQVmh6MXc?oc=5",
+      "published_at": "Thu, 29 Jan 2026 08:00:00 GMT",
+      "published_ts": 1769673600.0,
+      "sentiment_score": -1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Hindustan Zinc Limited",
+      "sector": "Basic Materials",
+      "industry": "Other Industrial Metals & Mining"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Vedanta Share Price Hits All-Time High After Hindustan Zinc OFS Approval | Stock Market Today - Samco",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxON0RyNUtsSjJadzBrazdacmZtT1VVcmVlLXBac25iVVBGc3hNRG85b1d5VGxsS0V3dzJ2T1hvQTZoMVp3U1FXZ0hXajA2Vnp5QkVCNURfOFFPa29td0Z0R1UzZms0ZWdNMy11aVNBbF9sTjVqZkNiaVBOUF9rMHlpbGxhZEFuWVlIWVZLaUlSVVo1T2dHOWFLb2RwVGpDRVZHendSc3pZWGpTaF9xdGtQLUIxNWxaSUF0T1l2NGFvNzlJM0h5N3JRb3gzTVBqRExmOGtDLTJ4UmlfNWZxSlp3Vw?oc=5",
+      "published_at": "Wed, 28 Jan 2026 08:00:00 GMT",
+      "published_ts": 1769587200.0,
+      "sentiment_score": 2.5,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Hindustan Zinc Limited",
+      "sector": "Basic Materials",
+      "industry": "Other Industrial Metals & Mining"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Vedanta shares hits all-time high as board approves Hindustan Zinc OFS - Business Standard",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNZUhoWWlPMS1DS05GUXplbzk5TmlXNXhNWGJQcmhGQ3NWQS05QzVEQXAxUV9rQ3N3Q3pBUC1JeTY5S2ROaEhMazhPclM1UmVsd1NxczRRSjVQNUtVTFJGZXhZTjVnRWI1OGUwQ0JrcHVKVkxqVGFBQ1pUQnZEOG82clZMaXJySFRFUkp3ZkxsX3p3ZGhQMzc0V3NjbnVzTjMxYUxkd0o1eVVLcFpMay05WWpaa2NQWTM4R25KcHpWazJNYWNzbHpWMllqQmtFZ3JFYWFN0gHYAUFVX3lxTE82QTVScENrMHVOM1BxeHRFOUJCUV9yYUpQdi1iUW56aUdqNWNYMDdQZ0pRV0dCRll0R0pJR2ozaEpfR0FnTlpnT0dHR0JuQUlZVXpIbUhJSXM5em9IZ1ZRQkZ0MHVseEJtb3lOSVpqUGlhdlB4dUlnQjh2d1VmWXdseGl6QUI2c3FuUHJtSEhjeW1hMEtEX3BwT3VKWlk0RGNGNjcwSmxSRUdJUm1zdWVPRzFoQXBHTENCZnZxV2tYTVVHeUdzZXBNelotdzhaYTlkRWJ3YlhrUg?oc=5",
+      "published_at": "Wed, 28 Jan 2026 08:00:00 GMT",
+      "published_ts": 1769587200.0,
+      "sentiment_score": 1.5,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Hindustan Zinc Limited",
+      "sector": "Basic Materials",
+      "industry": "Other Industrial Metals & Mining"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Vedanta shares jump over 4%, hits record high as firm to sell up to 1.59% stake in Hindustan Zinc; OFS opens: details to know - Upstox",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPX1NEeG1jVzJORmE2ZndHRXFicjJna1RvbDVZVUtKcnZzcmJ0ZGduTzU1WXhUU0JXSmwzOERDdVVtcHczSlB2QWtqSGVhMEM4QmxHTW53b1ZMMFNvcF8tTGZGcldFX0F4cV9keGRZc1hkZ2p2YVZMU2Z0Q295eVRhY0lzLUhZb0VfVXZIblhvSzA4VEc1QVRTblpEdG13RGR3bVlkZ2FuVUJfSS13bDZMT0x3TmdPYjFrYzlTNjdIaldpOF8yTmhrOUo2aGx0aklPbklQU01Wa2xEX3hXNGx1cHU5MTYxUFNZWFFiUDZOTVo5ZlczNkg2a3JXYkt3LWNmbzV6S3hnU3U?oc=5",
+      "published_at": "Tue, 27 Jan 2026 08:00:00 GMT",
+      "published_ts": 1769500800.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Hindustan Zinc Limited",
+      "sector": "Basic Materials",
+      "industry": "Other Industrial Metals & Mining"
+    }
+  ],
+  "top_macro_news": [
+    {
+      "source": "google_rss_macro",
+      "title": "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRVNOajVzSUJWU3Q5R2toMjVnZVZMNDhLclozWDdNODc1OU1qbVFjYnFTT0Z1SUZaaExuY3FJajFkdWtOWk5kdWplT0J0Yk9RcnlDVnlvQmJZNC1jVDVHZmRhS0Z0X0JiXzFETHRnaUVac1pEMmZfWE9raXFacFpwR1dSaEVST0Ntc2k1czN4emNQVFlWSHE3V1ZhMW80OUFMYmN6dEwtTkRadm44enc?oc=5",
+      "published_at": "Fri, 13 Mar 2026 15:17:26 GMT",
+      "published_ts": 1773415046.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49da6215942089b3d01557581dea9&url=https%3a%2f%2fwww.livemint.com%2fmarket%2fstock-market-news%2fus-china-power-shift-global-markets-india-outlook-mirae-asset-swarup-mohanty-11773376870759.html&c=15555016077234823276&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 14:15:00 GMT",
+      "published_ts": 1773411300.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Fed to delay rate cuts as war clouds the outlook",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49da7b5ad43e984a09221ba449be5&url=https%3a%2f%2fthink.ing.com%2farticles%2ffed-to-delay-rate-cuts-as-war-clouds-the-outlook%2f&c=127436243108543137&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 13:40:00 GMT",
+      "published_ts": 1773409200.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss_macro",
+      "title": "Bitcoin holds above $71,000, defying rising dollar, oil and U.S. bond yields - CoinDesk",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbHB1NE1GZ1dLTWpvOWNseW5QXy1jbWVHcTYzcXF6NWotU0NHOG1XNEUzcDd0ZTctMW1URXZzSW5RQ1djc1h3a0xOM0k2Tkd5TjRWcE0wUXRwZjg4WktmZ2xDWnpLa0RhR1BsRzlrZlVlVzhONmQ0eW51VXJIWFQ3NFJkd0VXZ2VsUnY4VTBuWjU5LXpxX1BPYUIyaEZKQVdEWUU3a25CY0RvN3NrVW10cFNUTWtxSHdhSWI4?oc=5",
+      "published_at": "Fri, 13 Mar 2026 09:34:10 GMT",
+      "published_ts": 1773394450.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Gold Silver Rate Today Live Updates (13 March 2026): Gold, silver futures fall on MCX as rising crude oil prices dim hopes of early rate cuts",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49da7a750413da6a6b873e2d68f65&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2flive-blog%2fgold-rate-silver-price-today-live-updates-mcx-gold-18k-22k-24k-rate-iran-isreal-us-war-latest-news%2fliveblog%2f129534056.cms&c=4108291931945502437&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 06:00:00 GMT",
+      "published_ts": 1773381600.0,
+      "sentiment_score": -1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Share Markets Continue To Bleed As West Asia Tensions Dampen Sentiment, Sensex Over 800 Points Down",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49da6215942089b3d01557581dea9&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fmarkets%2fshare-markets-continue-to-bleed-as-west-asia-tensions-dampen-sentiment-sensex-over-800-points-down%2far-AA1Yt9yX&c=14300386732484515462&mkt=en-in",
+      "published_at": "Thu, 12 Mar 2026 15:18:00 GMT",
+      "published_ts": 1773328680.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Markets Today: Sensex Declines 830 Points, Nifty Slips Below 23,650 Amid Iran-US-Israel War",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49da6215942089b3d01557581dea9&url=https%3a%2f%2fwww.news18.com%2fbusiness%2fmarkets%2fmarkets-today-sensex-falls-1000-points-in-opening-trade-nifty-below-23600-as-oil-surges-past-100-9956009.html&c=7425380694736114227&mkt=en-in",
+      "published_at": "Thu, 12 Mar 2026 03:39:00 GMT",
+      "published_ts": 1773286740.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Trading Day: Oil and yields up, up, and away",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49da7a750413da6a6b873e2d68f65&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2ftrading-day-oil-and-yields-up-up-and-away%2far-AA1YqbzQ&c=11227118164045986945&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 14:08:08 GMT",
+      "published_ts": 1773238088.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss_macro",
+      "title": "Markets Confront the Economic Impact of the Iran Conflict - Natixis CIB | Natixis Corporate & Investment Banking",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOVpkVlFlOG1lbEdUZEM2VU40clhkdUtsN3l6Z3Rkd2g4WTBNMVNKSFBmMmkyT1M0RGwtZGJxN1ItZVVrMEU3UnVfWFJ6UmpZUVppV09ZelhMWHNvZmhtbFk3ajc0UnlpY0dZeW51MGJnSUU3dGhYRGFQaE44NjJVaFFBVWFyVlNhampDdXFic0dCZXZ3YW5ScWUtWQ?oc=5",
+      "published_at": "Wed, 11 Mar 2026 10:55:26 GMT",
+      "published_ts": 1773226526.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Oil price spike could push US inflation to 4%, delaying Fed rate cut",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49da7b5ad43e984a09221ba449be5&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2foil-price-spike-could-push-us-inflation-to-4-delaying-fed-rate-cut%2far-AA1Ym49n&c=7065206888862373143&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 03:02:32 GMT",
+      "published_ts": 1773198152.0,
+      "sentiment_score": 1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    }
+  ],
+  "chart_path": "reports/HINDZINC_NS_20260313_232859_trend.png",
+  "long_term_chart_path": "reports/HINDZINC_NS_20260313_232859_long_term.png",
+  "rich_report": "Indian Swing Trading Multi-Agent Report\nIndicator Signal: SELL | Trend: close=583.00, SMA20=594.91, SMA50=624.24. Momentum: MACD=-9.540, Signal=-8.742, Hist=-0.798, ROC10=-5.82%. Oscillators: RSI14=49.6, StochK/D=28.3/34.9, Williams%R=-71.7. Risk: ATR14=17.75, Volume=4378868 vs VolSMA20=5868307. Momentum Score=36.0/100 | MA=Sell, Trend=Falling, RSI=Neutral, MACD=Bearish.\nPattern Signal: NO_TRADE | setup=sideways compression (wait for breakout candle), slope=-3.3373, breakout_up=False, breakdown=False, bull_engulf=False, bear_engulf=False.\nTrend Signal: BUY | setup=uptrend with pullback near support, support slope=1.697, resistance slope=1.790, price position=-2.93 in channel.\nNews Signal: BUY | combined sentiment=0.19 (stock=0.26, industry=0.21, macro=-0.07). Stock articles=13 (trusted=0, unrated=13); Industry articles=29 (trusted=0); Macro articles=30 (trusted=0). Sentiment strength=0.26. Inference=Hindustan Zinc continues to benefit from strong operational performance, including record silver production and low zinc costs. Recent analyst coverage remains focused on positive target prices for metal stocks. Despite some neutral news regarding share price momentum, the overall fundamental outlook and industry tailwinds support a positive bias..\nMarket Sentiment: SELL | NIFTY 5D=-2.31%, 10D=-3.42%, 20D=-3.87%, SMA20 gap=-2.4% (below). India VIX=583.0, 5D chg=-12.7, news sentiment=0.19. Votes: bull=1, bear=3.\nRelative Strength: NO_TRADE | stock 10-bar return=-1.40%, NIFTY=-2.87%, alpha=1.47%.\nUS Trend Signal: SELL | Global risk-off backdrop. SPX 5D/20D=-2.31%/-3.87%, NDX 5D/20D=-2.12%/-7.25%, VIX=27.29, DXY 5D=0.00%.\nFinancials Signal: BUY | Fundamentals supportive. Coverage=62%. ROE=77.69%, Margin=31.33%, RevGrowth=N/A, EarnGrowth=N/A, D/E=0.866, CurrentRatio=N/A, PE=22.526. Quarterly trends: RevQoQ=39.99%, NIQoQ=75.29%, OCFQoQ=N/A, DebtQoQ=-21.12%, FCF=N/A, Cash/Debt=0.008. Analyst target=N/A (N/A upside, ? analysts). 52w Hi/Lo=733.000/388.550, position=47.44%.\nMarket Setup Signal: SELL | Support test. Tape read: 5d=-2.1%, 20d=-7.2%, volume ratio=0.75, momentum=36.0. Support gap=1.4% and resistance gap=7.2%. Trader read: The structural trend is bearish, with price trading below both the 20-day and 50-day moving averages. Momentum is clearly negative and declining. While the trend agent identified a theoretical uptrend channel, the current price action is failing to hold, and proximity to support at 575.0 suggests an impending breakdown test given the weak volume participation.\nCatalyst Context Signal: BUY | Positive headlines, incomplete confirmation. Backdrop read: news sentiment=0.19, analyst upside=None, 52w position=47.4. Core read: Hindustan Zinc displays strong profitability with a 77.6% ROE and healthy 31% margins. Despite a high Price-to-Book ratio, the company maintains robust revenue growth and active debt reduction. The stock trades mid-range in its 52-week band, supported by a consistent dividend yield, making it an attractive fundamental value play.\nTrader Intel: NO_TRADE | Wait for structural clarity | Support breakdown vs. Value floor. Thesis: The stock is trapped in a classic tug-of-war between technical decay and fundamental dividend appeal. While price is leaning toward a support breakdown at 575, the strong ROE and growth profile act as a soft cushion, preventing a clean short setup. Institutional interest in high-dividend stocks often emerges near these 52-week mid-range support zones, making a breakout or breakdown unreliable for a swing entry right now. Why now: The confluence score is too split (0.59) to justify aggressive capital deployment; the 0.75 volume ratio suggests low conviction from market participants. Why not now: The stock is mid-range, not at an extreme, and the conflicting signals between robust financials and weak price action create a high-noise environment unsuitable for a clean swing.\nMaster Confluence Committee: BUY=0.265, SELL=0.355, NO_TRADE=0.088. Final=SELL, confidence=0.590. Support=['technical', 'market_sentiment', 'us_trend', 'market_setup']; Opposing=['trend', 'news', 'financials', 'catalyst_context']; Neutral=['pattern', 'relative_strength'].\nRisk Plan: size=0 shares, ATR=17.75, stop=N/A, target=N/A.\n**FINAL CONCLUSION**\n- Signal: NO_TRADE\n- Confidence: 0.450\n- Action Bias: Wait / no-trade setup\n- Playbook: Support breakdown vs. Value floor\n- Thesis: The stock is trapped in a classic tug-of-war between technical decay and fundamental dividend appeal. While price is leaning toward a support breakdown at 575, the strong ROE and growth profile act as a soft cushion, preventing a clean short setup. Institutional interest in high-dividend stocks often emerges near these 52-week mid-range support zones, making a breakout or breakdown unreliable for a swing entry right now.\n- When to Act: Wait for a daily close below 570 with rising volume for a short, or a decisive 5% snap-back rally for a long.\n- Execution Style: Mean reversion or breakdown wait\n- Invalidation: Price stabilizing above 610 with consolidated volume would nullify the bearish thesis.\n- Expected Holding Duration: 2-6 weeks\n- Context: uptrend with pullback near support\n- Risk Flag: Divergence between fundamental value and technical momentum\n- Stop-loss: N/A\n- Targets: N/A\n- 52w Range: ₹388.55 – ₹733.00\n\nDetailed Agent Reasoning:\n- technical: The signal is SELL with 84% confidence. Price at 583.00 sits below the SMA20 (594.91) and SMA50 (624.24), confirming a bearish trend. Momentum is negative with MACD (-9.54) below signal, and a 10-day ROC of -5.82%. Williams %R at -71.7 indicates weakness, while volume (4.38M) remains below the 20-bar average (5.87M), suggesting insufficient buying participation to reverse the current downtrend.\n- pattern: The signal is NO_TRADE (49% confidence). Price is currently in a state of sideways compression. With no confirmed breakout or breakdown in the 12-bar range and the absence of engulfing patterns, the structural setup lacks sufficient directional momentum. The slope of -3.34 indicates a lack of decisive movement, requiring a breakout candle to confirm the next trend phase.\n- trend: The signal is BUY (68% confidence). Despite the recent pullback, the broader setup remains an uptrend with the price near identified support. The average channel slope is positive at 1.74, indicating a constructive underlying trajectory. Currently, the price is positioned at -2.93 within the channel, suggesting a potential mean reversion from the lower bound (support at 646.12) back toward the resistance level of 667.68.\n- news: The signal is BUY (65% confidence). Sentiment is positive at 0.26, driven by record silver production and low zinc operational costs. While macro sentiment is slightly negative (-0.07), the fundamental industry tailwinds for Hindustan Zinc remain robust. Increased analyst focus on positive price targets outweighs the neutral share price momentum, supporting a long-term constructive bias.\n- market_sentiment: Market sentiment is neutral-to-bearish. Technical indicators are heavily tilted toward the sell side, reflecting short-term exhaustion and falling prices. However, this is partially offset by positive company-specific fundamental news and analyst optimism. The disconnect between falling price action and positive operational news suggests the market is currently digesting fundamental strength amid broader profit-taking or sector-wide weakness.\n- relative_strength: Relative strength appears weak as the stock remains trapped below key moving averages and exhibits negative momentum metrics. With a price significantly below the SMA50 of 624.24 and failing to hold the SMA20, the asset is underperforming. The RSI at 49.6 confirms a neutral-to-weak position, lacking the participation needed to break above resistance, placing it in a laggard position relative to the broader trend.\n- us_trend: Not applicable to this domestic Indian equity (HINDZINC.NS). Macro-influence is limited to industry-specific metal cycles and global commodity demand rather than direct correlation with US-specific equity indices.\n- financials: Financial metrics highlight a resilient operational model. Hindustan Zinc maintains strong production volumes, particularly in silver, which supports core profitability. Current pricing reflects a focus on efficiency, with low cost-per-unit for zinc extraction. The company's diversified revenue streams across zinc, lead, and wind energy provide a buffer against volatility, confirming the positive long-term outlook cited in news, despite the current price compression.\n- market_setup: The market is in a consolidation phase. The proximity to the 583.00 support level, combined with channel positioning, creates a high-stakes zone for reversal or further breakdown. Investors are waiting for a definitive breakout from the current range, as volume has dipped below the 20-day average, indicating a temporary lack of conviction from market participants until the next catalyst.\n- catalyst_context: The primary catalyst is the operational performance, specifically production records. Investors are weighing these record outputs against the current bearish technicals. A potential shift in metal prices or a breakthrough in volume above the 20-day SMA would likely serve as the immediate trigger to break the current sideways compression and confirm the trendline support.\n- confluence: Confluence is currently weak. Trend analysis suggests a buy at support, but technical momentum is firmly bearish. With price below moving averages and a negative MACD, technicals contradict the constructive fundamental and trendline narrative. This lack of alignment warrants caution, favoring a wait-and-see approach until the price validates the support-level thesis through a clear breakout or reversal signal.\n- risk: Significant risk exists in the form of a breakdown below the current support zone. With an ATR of 17.75, daily volatility is meaningful. A failure to hold the current levels could lead to an acceleration of the bearish trend. Given the low volume, any sudden liquidation could lead to rapid price slippage; therefore, tight stop-losses are recommended until a clear bullish reversal is confirmed.\n\nGemini Master Reasoning:\nSetup: \nHINDZINC is currently oscillating in a narrow range around the 583 level, sitting just above immediate support at 575. The stock is exhibiting classic compression, trading beneath both the 20-day and 50-day moving averages. Volume is weak (ratio 0.75), indicating a lack of institutional conviction in either direction.\n\nCatalyst: \nThere is a clear divergence between the technical decay and the fundamental story. On one hand, the stock benefits from strong operational metrics, including high ROE and record production, which provides a psychological value floor. On the other hand, the broader market sentiment is bearish, and technical indicators are failing to hold critical levels, creating a high-noise environment.\n\nFriction: \nThe primary friction is the conflict between the fundamental value appeal and the negative momentum. Because the stock is stuck mid-range (47% of its 52-week band), it lacks the directional velocity required for a high-probability swing. The low volume confirms that the market is waiting for a decisive move, making any current entry a gamble rather than a systematic trade.\n\nExecution Plan: \nNo trade is recommended at current levels. I am maintaining a strict wait-and-see policy.\n- For shorts: I require a confirmed daily close below 570, supported by an uptick in selling volume to signal a breakdown of the value floor.\n- For longs: I require a decisive 5% snap-back rally to reclaim key moving averages, proving that institutional buying is active.\n- Capital allocation remains zero until the price breaches these established thresholds.\n\nVerdict: \nNO_TRADE. The setup lacks the required edge. The market is currently too split between technical breakdown and fundamental support. I prefer to miss the initial move rather than deploy capital into a consolidation trap. Patience is the only actionable strategy until price clarity emerges at the 570 or the breakout zones.\n\nLLM Token Usage:\n- Input tokens: 15597\n- Output tokens: 2293\n- Total tokens: 17890\n- Estimated cost (USD): 0.0\n\nLONG-TERM OUTLOOK (Based on News, Financials, and Price Data)\n- Stance: LONG_TERM_NEUTRAL\n- Confidence: 0.550\n- Sector: Unknown\n- Data coverage: 2465 daily bars for long-term model.\n- Price trend (1Y/3Y/5Y/10Y): 3.6432281415492485% / 28.361569378695094% / 55.124040466857636% / 207.09467231802356%.\n- Long-run quality: CAGR(3Y)=8.678842957327394%, CAGR(5Y)=9.178172781908511%, CAGR(10Y)=12.159138607211052%,\n  Max Drawdown(5Y)=-38.43985245274211%, Vol=16.11376156123879%.\n- Structural trend: price vs 200DMA=-8.555800204607944%.\n- Note: N/A metrics indicate insufficient history for that exact horizon, not an implied negative value.\n- News signal: avg sentiment=0.19 across stock/industry/macro streams (13/12/10 items).\n- Fundamental location: 52w position=47.4%, 1Y return=3.6432281415492485%.\n- Street context: analyst upside=N/A% from N/A analysts.\n- Macro overlay: India sentiment=SELL, US trend=SELL.\n\n--- VALUATION SNAPSHOT ---\n- P/E (trailing): 22.53\n- PEG ratio: N/A\n- Price/Book: 17.50\n- ROE: 77.7%\n- Debt/Equity: 0.87\n- EV/EBITDA: 12.33\n- EV/Revenue: 6.68\n- Book value per share: 31.54\n- Enterprise value: N/A\n- Gross margins: 76.8%\n- Operating margins: 42.4%\n- EBITDA margins: N/A\n- Total revenue: 330,410,000,000\n- Total debt: 115,360,000,000\n- Total cash: 960,000,000\n\n--- QUARTERLY FINANCIAL TRENDS ---\n- Revenue QoQ growth: N/A\n- Net income QoQ growth: N/A\n- Operating cash flow QoQ: N/A\n\n--- DIVIDEND & OWNERSHIP ---\n- Dividend yield: 8.2%\n- Dividend yield trend: falling\n- Total dividends (1Y): ₹10.00\n- Institutional ownership: 5.0%\n- Major holders (institutions): N/A%\n\n--- SCORING FACTORS ---\n  ↑ news_sentiment: score=+0.19 × weight=1.00\n  → return_1y: score=+0.04 × weight=0.90\n  ↑ return_3y: score=+0.28 × weight=0.80\n  ↑ return_5y: score=+0.55 × weight=0.70\n  ↑ cagr_5y: score=+0.92 × weight=0.90\n  ↓ sma200_position: score=-0.86 × weight=0.50\n  ↓ max_drawdown: score=-0.38 × weight=0.50\n  ↓ volatility: score=-0.16 × weight=0.40\n  → 52w_position: score=-0.05 × weight=0.30\n  → 1y_change: score=+0.04 × weight=0.70\n  ↑ dividend_yield: score=+0.82 × weight=0.40\n  ↑ cagr_10y: score=+1.22 × weight=1.00\n  ↑ operating_margins: score=+0.42 × weight=0.30\n  ↓ us_macro: score=-1.00 × weight=0.35\n  ↓ india_macro: score=-1.00 × weight=0.35\n\n- Composite score: 0.215\n- Secular Growth Forecast: HINDZINC displays mixed signals. While 5Y/10Y CAGR is solid and margins are strong (42%), the price is below the 200DMA with a falling dividend yield and bearish macro signals from India/US. 3-5 Year Secular Forecast: Expect moderate cyclical performance tied to metal demand, but the lack of institutional interest and technical weakness warrants caution.\n",
+  "price_52w": {
+    "high": 733.0,
+    "low": 388.55,
+    "current": 551.95,
+    "position_pct": 47.4,
+    "change_1y_pct": null
+  },
+  "analyst_consensus": {
+    "target_price": null,
+    "target_high": null,
+    "target_low": null,
+    "n_analysts": null,
+    "implied_upside_pct": null
+  },
+  "fundamental_signals": [
+    {
+      "type": "bullish",
+      "text": "Revenue growing QoQ (40.0% last quarter)."
+    }
+  ],
+  "key_price_levels": [
+    {
+      "label": "Resistance 1",
+      "price": 624.8,
+      "type": "resistance"
+    },
+    {
+      "label": "Resistance 2",
+      "price": 634.0,
+      "type": "resistance"
+    },
+    {
+      "label": "Resistance 3",
+      "price": 650.75,
+      "type": "resistance"
+    },
+    {
+      "label": "Current",
+      "price": 583.0,
+      "type": "current"
+    },
+    {
+      "label": "Support",
+      "price": 575.0,
+      "type": "support"
+    },
+    {
+      "label": "Breakdown Zone",
+      "price": 566.5,
+      "type": "breakdown"
+    }
+  ],
+  "momentum_score": 36.0,
+  "qualitative_labels": {
+    "moving_averages": "Sell",
+    "trend_channel": "Falling",
+    "rsi": "Neutral",
+    "macd": "Bearish"
+  },
+  "valuation_snapshot": {
+    "pe_trailing": 22.526464538091385,
+    "peg_ratio": null,
+    "ev_to_ebitda": 12.327,
+    "ev_to_revenue": 6.681,
+    "gross_margins": 0.73285,
+    "operating_margins": 0.48057,
+    "ebitda_margins": 0.54196,
+    "book_value": 32.42,
+    "dividend_yield": 4.97,
+    "enterprise_value": 2372516446208,
+    "roe": 0.7769022962629446,
+    "debt_to_equity": 0.8656761218670269,
+    "price_to_book": 17.50086202632899,
+    "total_revenue": 355119988736,
+    "total_debt": 120770002944,
+    "total_cash": 79900000256
+  },
+  "master_reasoning": {
+    "model": "gemini-3.1-flash-lite-preview",
+    "text": "Setup: \nHINDZINC is currently oscillating in a narrow range around the 583 level, sitting just above immediate support at 575. The stock is exhibiting classic compression, trading beneath both the 20-day and 50-day moving averages. Volume is weak (ratio 0.75), indicating a lack of institutional conviction in either direction.\n\nCatalyst: \nThere is a clear divergence between the technical decay and the fundamental story. On one hand, the stock benefits from strong operational metrics, including high ROE and record production, which provides a psychological value floor. On the other hand, the broader market sentiment is bearish, and technical indicators are failing to hold critical levels, creating a high-noise environment.\n\nFriction: \nThe primary friction is the conflict between the fundamental value appeal and the negative momentum. Because the stock is stuck mid-range (47% of its 52-week band), it lacks the directional velocity required for a high-probability swing. The low volume confirms that the market is waiting for a decisive move, making any current entry a gamble rather than a systematic trade.\n\nExecution Plan: \nNo trade is recommended at current levels. I am maintaining a strict wait-and-see policy.\n- For shorts: I require a confirmed daily close below 570, supported by an uptick in selling volume to signal a breakdown of the value floor.\n- For longs: I require a decisive 5% snap-back rally to reclaim key moving averages, proving that institutional buying is active.\n- Capital allocation remains zero until the price breaches these established thresholds.\n\nVerdict: \nNO_TRADE. The setup lacks the required edge. The market is currently too split between technical breakdown and fundamental support. I prefer to miss the initial move rather than deploy capital into a consolidation trap. Patience is the only actionable strategy until price clarity emerges at the 570 or the breakout zones."
+  },
+  "llm_usage": {
+    "calls": [
+      {
+        "name": "News Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2627,
+        "output_tokens": 84,
+        "total_tokens": 2711
+      },
+      {
+        "name": "US Trend Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 398,
+        "output_tokens": 98,
+        "total_tokens": 496
+      },
+      {
+        "name": "Market Setup Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2058,
+        "output_tokens": 108,
+        "total_tokens": 2166
+      },
+      {
+        "name": "Catalyst Context Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2475,
+        "output_tokens": 104,
+        "total_tokens": 2579
+      },
+      {
+        "name": "Trader Intel Agent",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1490,
+        "output_tokens": 329,
+        "total_tokens": 1819
+      },
+      {
+        "name": "Batched Agent Reasoning",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1713,
+        "output_tokens": 1054,
+        "total_tokens": 2767
+      },
+      {
+        "name": "Long-Term Outlook Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 999,
+        "output_tokens": 110,
+        "total_tokens": 1109
+      },
+      {
+        "name": "Master Reasoning",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 3837,
+        "output_tokens": 406,
+        "total_tokens": 4243
+      }
+    ],
+    "llm_enabled": true,
+    "skipped_calls": 0,
+    "error_calls": 0,
+    "total_input_tokens": 15597,
+    "total_output_tokens": 2293,
+    "total_tokens": 17890,
+    "pricing": {
+      "input_cost_per_1m": 0.0,
+      "output_cost_per_1m": 0.0,
+      "estimated_total_cost_usd": 0.0
+    }
+  }
+}

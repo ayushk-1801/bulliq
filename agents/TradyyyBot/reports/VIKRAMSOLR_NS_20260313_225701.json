@@ -1,0 +1,1394 @@
+{
+  "report_id": "VIKRAMSOLR_NS_20260313_225701",
+  "symbol": "VIKRAMSOLR.NS",
+  "timeframe": "1d",
+  "forecast_bars": 3,
+  "start_timestamp": "2025-11-13 15:30:00",
+  "end_timestamp": "2026-03-13 15:30:00",
+  "final_signal": "NO_TRADE",
+  "confidence": 0.45,
+  "confluence_scores": {
+    "buy": 0.151,
+    "sell": 0.205,
+    "no_trade": 0.284
+  },
+  "risk_plan": {
+    "summary": "Risk Plan: size=0 shares, ATR=12.46, stop=N/A, target=N/A.",
+    "reasoning_prompt": "Risk protocol:\n1) Estimate recent volatility using ATR.\n2) Define one-unit risk from ATR multiple and cap portfolio risk near 1% per trade.\n3) Convert risk budget into position size.\n4) Anchor stop to volatility-adjusted invalidation and target to asymmetric reward.\n5) Force size=0 when final signal is NO_TRADE.",
+    "llm_reasoning": "Risk is elevated due to the conflict between short-term momentum and long-term downtrend. Volatility, proxied by an ATR of 12.46, is significant relative to the price. The primary risk is a potential breakdown below the support level of 170.09, which could lead to further liquidation, countered by the risk of missing a trend reversal if the price breaks above resistance.",
+    "position_size": 0,
+    "stop_loss": null,
+    "target": null,
+    "risk_reward": "N/A",
+    "detail": {
+      "capital": 100000.0,
+      "risk_budget": 1000.0,
+      "one_risk": 14.957141549246652,
+      "atr": 12.46428462437221
+    }
+  },
+  "final_conclusion": {
+    "signal": "NO_TRADE",
+    "confidence": 0.45,
+    "when_to_buy": "Wait for a clean breakout above the 200-level with a significant volume surge",
+    "expected_holding_duration": "2-6 weeks",
+    "stop_loss": null,
+    "targets": [],
+    "target": null,
+    "analyst_consensus": {
+      "target_price": null,
+      "target_high": null,
+      "target_low": null,
+      "n_analysts": null,
+      "implied_upside_pct": null
+    },
+    "price_52w": {
+      "high": 407.95,
+      "low": 162.1,
+      "current": 181.31,
+      "position_pct": 7.8,
+      "change_1y_pct": null
+    },
+    "key_price_levels": [
+      {
+        "label": "Resistance 1",
+        "price": 219.7,
+        "type": "resistance"
+      },
+      {
+        "label": "Resistance 2",
+        "price": 243.22,
+        "type": "resistance"
+      },
+      {
+        "label": "Resistance 3",
+        "price": 254.75,
+        "type": "resistance"
+      },
+      {
+        "label": "Current",
+        "price": 184.78,
+        "type": "current"
+      },
+      {
+        "label": "Support",
+        "price": 162.1,
+        "type": "support"
+      }
+    ],
+    "playbook_title": "Dead-money consolidation avoidance",
+    "thesis": "VIKRAMSOLR is stuck in a classic bottoming grind with no institutional sponsorship or fundamental spark. While it sits near its 52-week lows, attempting to catch a falling knife without a breakout catalyst or volume expansion is poor risk management. The stock needs to build a higher base to prove the selling pressure is exhausted.",
+    "execution_style": "Observation only",
+    "risk_flag": "Structural downtrend with thin liquidity",
+    "invalidation": "New 52-week lows would negate any recovery thesis",
+    "summary": "**FINAL CONCLUSION**\n- Signal: NO_TRADE\n- Confidence: 0.450\n- Action Bias: Wait / no-trade setup\n- Playbook: Dead-money consolidation avoidance\n- Thesis: VIKRAMSOLR is stuck in a classic bottoming grind with no institutional sponsorship or fundamental spark. While it sits near its 52-week lows, attempting to catch a falling knife without a breakout catalyst or volume expansion is poor risk management. The stock needs to build a higher base to prove the selling pressure is exhausted.\n- When to Act: Wait for a clean breakout above the 200-level with a significant volume surge\n- Execution Style: Observation only\n- Invalidation: New 52-week lows would negate any recovery thesis\n- Expected Holding Duration: 2-6 weeks\n- Context: downtrend with bounce near resistance\n- Risk Flag: Structural downtrend with thin liquidity\n- Stop-loss: N/A\n- Targets: N/A\n- 52w Range: ₹162.10 – ₹407.95"
+  },
+  "long_term_outlook": {
+    "stance": "LONG_TERM_BEARISH",
+    "confidence": 0.75,
+    "score": -0.429,
+    "summary": "LONG-TERM OUTLOOK (Based on News, Financials, and Price Data)\n- Stance: LONG_TERM_BEARISH\n- Confidence: 0.750\n- Sector: Unknown\n- Data coverage: 136 daily bars for long-term model.\n- Price trend (1Y/3Y/5Y/10Y): N/A% / N/A% / N/A% / N/A%.\n- Long-run quality: CAGR(3Y)=N/A%, CAGR(5Y)=N/A%, CAGR(10Y)=N/A%,\n  Max Drawdown(5Y)=-56.24603726657234%, Vol=47.876484635668284%.\n- Structural trend: price vs 200DMA=N/A%.\n- Note: N/A metrics indicate insufficient history for that exact horizon, not an implied negative value.\n- News signal: avg sentiment=0.02 across stock/industry/macro streams (3/12/10 items).\n- Fundamental location: 52w position=7.8%, 1Y return=N/A%.\n- Street context: analyst upside=N/A% from N/A analysts.\n- Macro overlay: India sentiment=SELL, US trend=SELL.\n\n--- VALUATION SNAPSHOT ---\n- P/E (trailing): 46.98\n- PEG ratio: N/A\n- Price/Book: 5.29\n- ROE: 11.3%\n- Debt/Equity: 0.22\n- EV/EBITDA: 5.46\n- EV/Revenue: 1.11\n- Book value per share: 34.28\n- Enterprise value: N/A\n- Gross margins: 24.6%\n- Operating margins: 10.4%\n- EBITDA margins: N/A\n- Total revenue: 34,234,530,000\n- Total debt: 2,719,360,000\n- Total cash: 391,570,000\n\n--- QUARTERLY FINANCIAL TRENDS ---\n- Revenue QoQ growth: N/A\n- Net income QoQ growth: N/A\n- Operating cash flow QoQ: N/A\n\n--- DIVIDEND & OWNERSHIP ---\n- Dividend yield: N/A\n- Dividend yield trend: N/A\n- Total dividends (1Y): ₹0.00\n- Institutional ownership: 4.9%\n- Major holders (institutions): N/A%\n\n--- SCORING FACTORS ---\n  → news_sentiment: score=+0.02 × weight=1.00\n  ↓ max_drawdown: score=-0.56 × weight=0.50\n  ↓ volatility: score=-0.48 × weight=0.40\n  ↓ 52w_position: score=-0.84 × weight=0.30\n  ↑ operating_margins: score=+0.10 × weight=0.30\n  ↓ us_macro: score=-1.00 × weight=0.35\n  ↓ india_macro: score=-1.00 × weight=0.35\n\n- Composite score: -0.429\n- Secular Growth Forecast: Vikram Solar exhibits poor technical positioning, trading near 52-week lows. Negative macro signals (India/US), high volatility (47%), and low institutional ownership (4.8%) create significant downside risk. 3-5 Year Secular Forecast: While the solar sector has tailwinds, the firm’s lack of earnings visibility and thin margins suggest it will likely underperform as industry consolidation pressures smaller players.\n",
+    "llm_reasoning": "Vikram Solar exhibits poor technical positioning, trading near 52-week lows. Negative macro signals (India/US), high volatility (47%), and low institutional ownership (4.8%) create significant downside risk. 3-5 Year Secular Forecast: While the solar sector has tailwinds, the firm’s lack of earnings visibility and thin margins suggest it will likely underperform as industry consolidation pressures smaller players.",
+    "evidence": {
+      "history_bars": 136,
+      "history_start": "2025-08-26 00:00:00",
+      "history_end": "2026-03-12 00:00:00",
+      "coverage_ratio": 0.18,
+      "sparse_long_term": true,
+      "fundamentals_sparse": false,
+      "news_avg_sentiment": 0.023,
+      "stock_news_count": 3,
+      "industry_news_count": 12,
+      "macro_news_count": 10,
+      "return_1y_pct": null,
+      "return_3y_pct": null,
+      "return_5y_pct": null,
+      "return_10y_pct": null,
+      "cagr_3y_pct": null,
+      "cagr_5y_pct": null,
+      "cagr_10y_pct": null,
+      "price_vs_sma200_pct": null,
+      "max_drawdown_5y_pct": -56.25,
+      "annualized_volatility_pct": 47.88,
+      "position_52w_pct": 7.8,
+      "change_1y_pct": null,
+      "analyst_upside_pct": null,
+      "analyst_count": null,
+      "india_sentiment_signal": "SELL",
+      "us_trend_signal": "SELL",
+      "dividend_yield": null,
+      "dividend_yield_trend": null,
+      "peg_ratio": null,
+      "operating_margins": 0.10395615187356158,
+      "held_pct_institutions": 0.04882,
+      "institutions_pct": null,
+      "rev_qoq": null,
+      "ni_qoq": null,
+      "ocf_qoq": null,
+      "sector": "Unknown",
+      "scoring_factors": [
+        [
+          "news_sentiment",
+          0.023,
+          1.0
+        ],
+        [
+          "max_drawdown",
+          -0.562,
+          0.5
+        ],
+        [
+          "volatility",
+          -0.479,
+          0.4
+        ],
+        [
+          "52w_position",
+          -0.844,
+          0.3
+        ],
+        [
+          "operating_margins",
+          0.104,
+          0.3
+        ],
+        [
+          "us_macro",
+          -1.0,
+          0.35
+        ],
+        [
+          "india_macro",
+          -1.0,
+          0.35
+        ]
+      ]
+    }
+  },
+  "agent_outputs": {
+    "technical": {
+      "signal": "BUY",
+      "confidence": 0.5771428571428572,
+      "summary": "Indicator Signal: BUY | Trend: close=184.78, SMA20=191.79, SMA50=209.07. Momentum: MACD=-10.431, Signal=-11.586, Hist=1.155, ROC10=5.48%. Oscillators: RSI14=35.5, StochK/D=53.0/41.1, Williams%R=-47.0. Risk: ATR14=12.46, Volume=4584303 vs VolSMA20=4148937. Momentum Score=53.9/100 | MA=Sell, Trend=Falling, RSI=Near oversold, MACD=Bullish.",
+      "reasoning_prompt": "Indicator reasoning protocol:\n1) Evaluate structural trend using close vs SMA20 and SMA20 vs SMA50.\n2) Validate momentum using MACD line/signal/histogram and ROC10 direction.\n3) Check exhaustion/continuation via RSI, Stochastic crossover, and Williams %R zone.\n4) Confirm participation with volume vs 20-bar average.\n5) Penalize high-volatility regimes with ATR% filters and lower confidence.\n6) If cross-indicator alignment is weak or contradictory, return NO_TRADE.",
+      "llm_reasoning": "Signal is BUY with 57.7% confidence. Price at 184.78 remains below SMA20 (191.79) and SMA50 (209.07), reflecting a persistent downtrend. However, positive MACD histogram (1.155) and ROC10 (5.48%) indicate short-term bullish momentum. RSI14 at 35.5 nears oversold territory, suggesting potential exhaustion of recent selling pressure. Volume of 4.58M exceeds the 20-day average of 4.15M, providing modest confirmation for the current bounce.",
+      "detail": {
+        "bullish_points": 5,
+        "bearish_points": 2,
+        "delta": 3,
+        "rules": {
+          "trend_alignment": false,
+          "macd_alignment": true,
+          "rsi_bias": "neutral",
+          "stoch_alignment": true,
+          "willr_bias": "neutral",
+          "volume_confirmation": true
+        }
+      },
+      "price_levels": {
+        "levels": [
+          {
+            "label": "Resistance 1",
+            "price": 219.7,
+            "type": "resistance"
+          },
+          {
+            "label": "Resistance 2",
+            "price": 243.22,
+            "type": "resistance"
+          },
+          {
+            "label": "Resistance 3",
+            "price": 254.75,
+            "type": "resistance"
+          },
+          {
+            "label": "Current",
+            "price": 184.78,
+            "type": "current"
+          },
+          {
+            "label": "Support",
+            "price": 162.1,
+            "type": "support"
+          }
+        ],
+        "nearest_resistance": 219.7,
+        "nearest_support": 162.1,
+        "resistance_1": 219.7,
+        "resistance_2": 243.22,
+        "resistance_3": 254.75,
+        "support": 162.1,
+        "breakdown_zone": null
+      },
+      "momentum_score": 53.9,
+      "qualitative_labels": {
+        "moving_averages": "Sell",
+        "trend_channel": "Falling",
+        "rsi": "Near oversold",
+        "macd": "Bullish"
+      },
+      "price_range": {
+        "high": 323.5,
+        "low": 162.1,
+        "position_pct": 14.1
+      },
+      "metrics": {
+        "close": 184.77999877929688,
+        "rsi14": 35.54210673854938,
+        "macd": -10.430631662013013,
+        "macd_signal": -11.586036495764402,
+        "macd_hist": 1.1554048337513887,
+        "sma20": 191.78750076293946,
+        "sma50": 209.0744009399414,
+        "roc10": 5.480081347693089,
+        "atr14": 12.46428462437221,
+        "stoch_k": 52.978262016341624,
+        "stoch_d": 41.10187379971984,
+        "willr14": -47.021737983658376,
+        "volume": 4584303.0,
+        "volume_sma20": 4148936.95
+      }
+    },
+    "pattern": {
+      "signal": "NO_TRADE",
+      "confidence": 0.5167527936433136,
+      "summary": "Pattern Signal: NO_TRADE | setup=sideways compression (wait for breakout candle), slope=2.0531, breakout_up=False, breakdown=False, bull_engulf=False, bear_engulf=False.",
+      "reasoning_prompt": "Pattern reasoning protocol:\n1) Detect breakout/breakdown against prior 12-bar range, not single-candle spikes.\n2) Confirm direction with local slope and bar-structure continuation.\n3) Use engulfing patterns as confirmation, not standalone trigger.\n4) Treat flat-slope compression as NO_TRADE until expansion is confirmed.\n5) Down-rank weak breakouts lacking structure confirmation.",
+      "llm_reasoning": "Signal is NO_TRADE. Price action is currently in sideways compression. Slope is 2.05, indicating a lack of directional conviction. There are no confirming breakout, breakdown, or engulfing patterns identified. The setup remains range-bound, necessitating a confirmed expansion move before initiating a technical trade.",
+      "detail": {
+        "setup": "sideways compression (wait for breakout candle)",
+        "slope": 2.0530900435014234,
+        "breakout_up": false,
+        "breakdown": false,
+        "bullish_engulfing": false,
+        "bearish_engulfing": false,
+        "volatility_proxy": 6.7911811645472415
+      }
+    },
+    "trend": {
+      "signal": "SELL",
+      "confidence": 0.7723249973618287,
+      "summary": "Trend Signal: SELL | setup=downtrend with bounce near resistance, support slope=-1.356, resistance slope=-1.350, price position=1.53 in channel.",
+      "reasoning_prompt": "Trend reasoning protocol:\n1) Fit support and resistance trendlines over the visible swing window.\n2) Estimate channel slope (regime direction) and channel width (trend quality).\n3) Locate current price in channel and prefer pullback entries aligned with slope.\n4) If slope is weak/flat, classify as sideways and favor NO_TRADE.\n5) Avoid chasing signals near channel extremes against risk-reward logic.",
+      "llm_reasoning": "Signal is SELL with 77.2% confidence. The structural trend is a established downtrend characterized by a negative slope of -1.353. Price is currently positioned at 1.528 within the channel, indicating a bounce toward resistance levels. Given the consistent downward trajectory of both support and resistance lines, current price action is viewed as a corrective rally within a larger bearish structure.",
+      "detail": {
+        "setup": "downtrend with bounce near resistance",
+        "slope_avg": -1.3532,
+        "channel_width": 9.6144,
+        "channel_position": 1.5283
+      },
+      "metrics": {
+        "support_slope": -1.35620228741092,
+        "resistance_slope": -1.350202792067456,
+        "channel_position": 1.528,
+        "last_support": 170.09,
+        "last_resistance": 179.7
+      }
+    },
+    "news": {
+      "signal": "NO_TRADE",
+      "confidence": 0.4,
+      "summary": "News Signal: NO_TRADE | combined sentiment=0.02 (stock=0.00, industry=0.13, macro=-0.08). Stock articles=3 (trusted=0, unrated=3); Industry articles=30 (trusted=0); Macro articles=30 (trusted=0). Sentiment strength=0.13. Inference=Evidence is mixed and lacks actionable company-specific catalysts. While the broader Indian solar sector shows growth potential and policy support, recent reports on Vikram Solar highlight stable debt management rather than aggressive growth. Without clear positive momentum or concrete fundamental triggers specific to the ticker, there is insufficient evidence to justify a directional trade..",
+      "reasoning_prompt": "News reasoning protocol:\n1) Collect company-specific headlines across multiple providers using diversified queries.\n2) Filter spam/listicle/noise domains and low-relevance stories.\n3) Build a global macro stream (rates, inflation, oil, USD, broad risk sentiment).\n4) Build industry/sector thematic stream (demand cycle, market share, regulation, capacity, pricing).\n5) Weight sentiment by source quality, exponential recency decay, and relevance confidence.\n6) Apply content-similarity dedup to remove near-duplicate headlines.\n7) Use LLM to infer final bias from company + industry + macro evidence and return NO_TRADE under conflict.",
+      "llm_reasoning": "Signal is NO_TRADE. Aggregate sentiment score is neutral at 0.02, reflecting an absence of actionable catalysts. While broader Indian solar industry sentiment is slightly positive (0.13), macro headwinds (-0.08) and a lack of company-specific news create a data void. Vikram Solar's current status shows stable debt management but lacks the aggressive growth narrative or specific fundamental triggers required to shift the bias from neutral.",
+      "detail": {
+        "company_context": {
+          "symbol": "VIKRAMSOLR.NS",
+          "company_name": "VIKRAM SOLAR LIMITED",
+          "sector": "Technology",
+          "industry": "Solar",
+          "business_summary": "Vikram Solar Limited manufactures and sells solar photovoltaic modules/systems in India and internationally. It also offers engineering, procurements, and construction solutions, such as risk analysis, site survey, design and engineering, procurement, civil construction, erection and commissioning, project management and control, and quality assurance. In addition, it provides solar operations and maintenance solutions, comprising preventive and corrective maintenance, performance monitoring and analysis, equipment upgrades and retrofits, spare parts management, troubleshooting and fault resol"
+        },
+        "stock_article_count": 3,
+        "industry_article_count": 30,
+        "macro_article_count": 30,
+        "trusted_count": 0,
+        "trusted_industry_count": 0,
+        "unrated_count": 3,
+        "trusted_macro_count": 0,
+        "industry_avg_sentiment": 0.1322521737727179,
+        "sentiment_strength": 0.1322521737727179,
+        "llm_decision_why": "Evidence is mixed and lacks actionable company-specific catalysts. While the broader Indian solar sector shows growth potential and policy support, recent reports on Vikram Solar highlight stable debt management rather than aggressive growth. Without clear positive momentum or concrete fundamental triggers specific to the ticker, there is insufficient evidence to justify a directional trade."
+      },
+      "top_news": [
+        {
+          "source": "google_rss",
+          "title": "These 4 Measures Indicate That Vikram Solar (NSE:VIKRAMSOLR) Is Using Debt Safely - simplywall.st",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOa192SFdpWV80Z2RRWWhIUTBScWJnUlk5dnQ5Uk84d211akk3S2hrQUlsNkxIbUJaTWQyY0xXZElUVjRxOEhJanVKbUdWaGZzYW9GOFkzWkhibFRVZ2JSakJEWXF4Tl9rVTBCY0NVV0dvd1puaEkwWWI0SmVVenNQcmxhdXVmbUdkQzk2eFRzV0pMcnUtODBaTktSZ0NMbV9vS3RrTEpBZWh1bXd3X2ZWYTVfeXRvU0d0SU5HQ3hDMkJSMnVZUGJpVVJPNkpyQy0tYzRlZUNKNHk1Umd1R2ZZMtIB5gFBVV95cUxPbDJ4NlFtX29RemYtWUZ2M0kwSV9acVdla2syVDJvc1lGVTlZVW9mcUhuQVlUMlF1SWJVQXAxUWtnTlM2UTNGamJqUGFiWFE3MkZFaVQ4VHAwaFAxcU1GbnBydHg1ZzJlMTExbW9FQndMZ1VWNlJaZ0dMdGpQNGQ3TnQzUVg0QXgzQVFOTm1ya1ptVldnaGEtcVZnUTlJZWRlMWZoOXA3aGN2Z1Y1ejFoM2hZS2NtWTQyUHFLaFNpcTl2aDg4RHUyLXRDcEVZd1VPcjZNMlR1TjI0enZKRkxjRXZQM3pBdw?oc=5",
+          "published_at": "Wed, 21 Jan 2026 08:00:00 GMT",
+          "published_ts": 1768982400.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Should Weakness in Vikram Solar Limited's (NSE:VIKRAMSOLR) Stock Be Seen As A Sign That Market Will Correct The Share Price Given Decent Financials? - simplywall.st",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNbUN1Y2ppeUFubTlfMTZpQ3JGRzRGMkYzdXVqRTdUZ1pPbVNVTTBvYVpOYW5NaF9fVmN5OUNUd1NCUzBiSkFiVVdrOUhYNWRKUWJHNEZnRjNibUFJVWl2bTNGRWhJZDFDaWFfalJmcWpocGphQ2YxNXhLME03VmRUWnBrUW1hTEUtV0phZEZHZ0J1VGNDNFNpaFUzY3ZTUG05dVRGUEhDWTZKZXlIQUNLcFYxemgwdXRQcnZBZmJaMkI2SnZ4a012WlRqV05PTWVKaVc1WkU0eTloeG0taHhib9IB5gFBVV95cUxQY3FNdC1pUlNRdF9PdVo4Nm9wd1BqRnFmaV92UmxZZ1o5a3JtdjB5WmF5dHV1RmN0dm9RYWJ6R3dCRm5xbTltMmh4RWkzRjJ0TTBObUZTOV92RXY2NFF3Tk9oMnI0aEVhSlQ0QjExc0txY29kYXpnbG5DNXlMd0xJb2J1QVJpM01XUDBSUWhUNGdfaFhTUndiaExuNmtSc1dQV0xlMlFWLWFweEd4bnU5akZkcXZMc0NIeEZVYWFEZFQ2bE4wUDA0cnk3eklUQXFFM0o0cXJZeHAxemtqTzZmbVVlajMzZw?oc=5",
+          "published_at": "Thu, 27 Nov 2025 08:00:00 GMT",
+          "published_ts": 1764230400.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "VIKRAMSOLR Stock Price and Chart — NSE:VIKRAMSOLR - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9HU0NUTTBtODRHRTFob0g0R2s4aTFCSHVleWo0ZDlKVDFhN0c3d0FyVk53TVFwRzJLb2hyQ3VvYVNNbWdnOVplUU1SeUNnQ2czWFdTUGlNWnRJb2ZyMlJsNQ?oc=5",
+          "published_at": "Tue, 26 Aug 2025 04:50:11 GMT",
+          "published_ts": 1756183811.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        }
+      ],
+      "top_industry_news": [
+        {
+          "source": "bing_rss_industry",
+          "title": "Not Adani Solar, Not Reliance — 3 solar stocks with up to 50% upside potential; Do you own any?",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49622e6b64200a050b432ed178547&url=https%3a%2f%2fwww.financialexpress.com%2fmarket%2fnot-adani-not-reliance-solar-stocks-waaree-energies-premier-energies-emmvee-photovoltaics-upside-4171783%2f&c=12753776369405599350&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 05:46:00 GMT",
+          "published_ts": 1773380760.0,
+          "sentiment_score": 1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated",
+          "company_name": "VIKRAM SOLAR LIMITED",
+          "sector": "Technology",
+          "industry": "Solar"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Solar Stock Jumps 5% After Launching Lithium-Ion Brand Targeting 7.5 GWh Cell Capacity by FY29 - Trade Brains",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOcUVoMU1nRnVyVTZ2QTliRFFFV0VLV09zenJERG9wRTZIQl9MYzF3dVRxNXk2Z3RGRWdEMVpQbHNSVDhiWThCbm1NVVhDcldmSFYyUExxdzB4a21sWEoxWHl4VS10Y2JxUXFSbjVydDlFa21EQ1kwTGZkTEFHekZBMzZXV0xaR0hzZ0l1emFIbXppdEdjNDVmMkstdHBkLUI2NnA3TGlTdU5XZWpSZzVlbHltUUJRUTFD?oc=5",
+          "published_at": "Thu, 12 Mar 2026 09:45:00 GMT",
+          "published_ts": 1773308700.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "VIKRAM SOLAR LIMITED",
+          "sector": "Technology",
+          "industry": "Solar"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "India’s Solar Journey Reflects Power of Innovation and Policy Leadership: Pralhad Joshi - BioEnergy Times",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSUFuZ19SZ2FXU3dkZDBlWDZZNzFaWkFPWXNSU1VQSXduNEpVQmpHT1FOR28yQ1FLMHpRaTdMeTgtWHowQjNPZGphLUJFcmZOTW1LaEpWSkkyNHFvaGFBQzJ1aW45ZEM5QTRXWkdPWHZXSGhfNEJVY2ZUS19RYklZT0JVRWJHY1ZGdjFINUFrYzRrSWhORlBHbUVKRDJBMTNfclRlM09jdk9VeXNiY3V4VklqVQ?oc=5",
+          "published_at": "Thu, 12 Mar 2026 08:09:56 GMT",
+          "published_ts": 1773302996.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "VIKRAM SOLAR LIMITED",
+          "sector": "Technology",
+          "industry": "Solar"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Vikram Solar’s PowerHive Launches ‘VION’ Lithium Battery Platform to Accelerate Electric Mobility and Energy Storage Solutions - EMobility+",
+          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOajM5WkxGVC1vRW94OVM0NVpvZ0dmaVphRUxDYm9sNGNQYk5ILTEwODVMVDM0SjB6bHROdTlycm03ZzdjTllsNWdERy1BZnNIdVpHQXA1TkthUHo2UjJRYXFyYktGUklGMGYtMXRjaUxaMi14YVJmOVV4TE9RZU1PeE1pZlBXSFdQejdTc2V2WXJCZkd2Zng3VFYzMUVzWkNFS2hLYjkxZnhERDN0dkE0dTRHWEVJTUVoTTYyVE82S0UyYjFJR3Bud1hETFBxMl9sNXY3RmlDWlhOdUN3R1ItZFlyc3lQMmdkTGVSRy1rS2JvX1XSAfgBQVVfeXFMT3hBZFhTOElpMWcydUpZZzdXM19HM1RkU1JaTFJrQjRuTk5Fa2hPRFpfVzZtanhraWRza0RYaE1EaTltTjYxVm5hd21wckZqVEFxbHpSRWJWaDJzbUJfZGYyV2NabTd4QmJjSnY0dXVzVW1xaEtncmsta0xHT0lSWm40S0tRX2hFaDRuWWpBekZPYm5tR0pkaWE2TVIyN1dkaTNIQVBGRXRQWDhyT210Zm5QNjY5YUlTdjRQeHQycnV1U21hdVBfYlRGQmdxVFpCLS1Zb19xSURTLWRBNlUwRHpWdk9MN19YX0VtZXh6bU1PZWo0YURHZk0?oc=5",
+          "published_at": "Thu, 12 Mar 2026 07:53:25 GMT",
+          "published_ts": 1773302005.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "VIKRAM SOLAR LIMITED",
+          "sector": "Technology",
+          "industry": "Solar"
+        },
+        {
+          "source": "bing_rss_industry",
+          "title": "India strongly positioned as the next global platform for consumer technology: Nothing co-founder",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49623a83a4f409f0845ea676e59c2&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2ftopstories%2findia-strongly-positioned-as-the-next-global-platform-for-consumer-technology-nothing-co-founder%2far-AA1XOtsQ&c=9634019043024314443&mkt=en-in",
+          "published_at": "Mon, 09 Mar 2026 04:07:00 GMT",
+          "published_ts": 1773029220.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated",
+          "company_name": "VIKRAM SOLAR LIMITED",
+          "sector": "Technology",
+          "industry": "Solar"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Vikram Solar Wins 378.75 MW INGEL Module Order - Construction World",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNYlExSzNDN0FCcGUwNTJuQXh6S09EdEF0LU9OUHNEVmt6SXRGcmNScVRFbUZOaThWb1BxNTZMb2psQmhDLVlCcVpObUlURjFCekxac2lwaXVTSFVKaWcwRFRpTkxIb3d4Q0huMXJqNktPSGVWNVZwdUVyakVveG1RSS1kT08yMnJUVnpJVDdoUEV4YnEydnZuanF3Y3ZYTlZIWVp4T2NCdFNUS0tUaWJ4Z0lqZmc2RXNLcy1FYjExZXFSdkJ2Nl9MUFJDOWRpN3M?oc=5",
+          "published_at": "Wed, 04 Mar 2026 16:23:51 GMT",
+          "published_ts": 1772641431.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "VIKRAM SOLAR LIMITED",
+          "sector": "Technology",
+          "industry": "Solar"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Vikram Solar Bags 378.75 MW High-Efficiency Module Order From INGEL For Gujarat Solar Project - Free Press Journal",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNUE91Ry1EcUI5ZDZpUDJjeEctSmRZQnZUOWR3b2pKa2QxU3poZ3k5VE5hU3RPcUYtWWIzS0VoaGFOd3B4R3dXTnhoUWpidTJNZWIwS05DNDdVdEtMdVB1UWhHMm9RbUdtV0NKZ0VremdKVklBQXNwUWdtQVBPaVZDNmRJcFlOa1dCM0s0eUpkNWJPSHN5YjdBRUV5NlNxZjBnUjJQZml3Q3lvT3FBU2VMWVdMQjdnNFV4TlgzdlhuTkJsZmw5SnU1czc4djQ3Z9IB0wFBVV95cUxQWUhkYWtiLUdWYVg2TDU0V3d4UDNPRU16YW5wbTZCbGVaZU5pZ3NQYXE3a3RzcEpjVmZ5OF9iRlh0RjZuV2M5cFphb2QyZFEtRlJvNF9FNmZvSzFKQkxSbkIxUkRITmZQQlJpRi1ZbFhNQk0xejRpZ3NOWWJWSkV4MlVwNXJyQXhTSmZOc1lmbnU3SlpiUV83OVprSTcwaXllcnN1WFdpSDB5ejJ6Sng1UDNlSkhUMzNsd3NLVDVOOXB3a3h6U043LUJWSnJRdS1fbEFF?oc=5",
+          "published_at": "Wed, 25 Feb 2026 08:00:00 GMT",
+          "published_ts": 1772006400.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "VIKRAM SOLAR LIMITED",
+          "sector": "Technology",
+          "industry": "Solar"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Vikram Solar and 2 Other Stocks in Focus After Receiving New Orders - Trade Brains",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNRWJvX1M2eUlCa2F2cnBTVHZtOEdJcm1hb19NM0ZtUk16eUtKaWFFbTV5UGJHVDItZFNYMkFtYmtFaHZCZmthNEtCVklUQ2ljbThJdEw5NkxQTERpbE1qQ2N1cEZpUGdzZkN5aFBpVzRadWYtTWVUVUs0VVdYcENLUDRSeGxjQ0VXQWQ0VTI2V3FzRnJ4Umc?oc=5",
+          "published_at": "Wed, 25 Feb 2026 08:00:00 GMT",
+          "published_ts": 1772006400.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "VIKRAM SOLAR LIMITED",
+          "sector": "Technology",
+          "industry": "Solar"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Waaree Energies crashes 14%, Vikram Solar slides over 7.5% as 126% solar import duties by US spook investors; key details - Upstox",
+          "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxNa3hQZXJKR1VMbEJVSTlJVjRzXzBwX2s0WS1LMnFKT1RPQVBhUkJ5bV9uUjdySXhJc05Rdnk2eTJjcnk4SGZxTmhIeldNOHVWTFFDaVpldm83MVp6em9aZjE1SXR3QUdNdzVZWEtUQm9vbUdacXFDNjZnSEEtV082WG5yRUN1X212Vjl0LTRpMDFfaTFkMnk4RWRlYVlBbk5VMlQ1dHN6b0hrUU80REhkWEtlV1oyeUhfenBlVEM1QUgyMGRnVDhQZVpuQ29jNHhxQnllZnhKT3d2bzRRSTVGMHF3ZTVqYlBNSmUtYnl4UWRObEFmWlFFUndWaW5EWVE2NTRtcnduOW0zOW50aFJzbXNTOFNMeTNiNTV0d0Fad0NEUQ?oc=5",
+          "published_at": "Tue, 24 Feb 2026 08:00:00 GMT",
+          "published_ts": 1771920000.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "VIKRAM SOLAR LIMITED",
+          "sector": "Technology",
+          "industry": "Solar"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Vikram Solar Signs ₹2,000 Crore Deal With Jupiter International For 2 GW ALMM-Compliant Solar Cells - SolarQuarter",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNZlhOeEhyS3d4emJWSHVYNllMbnd0ZHlTWWlydGdJS3FUSWNBaV9Ubzd5V0ZOUjQ1UmhSQzlSMFNLMzlIRERPb0MwaXpNaG5ETTRvdkUzWm5GQ2pQYnZpT0lHanlndDhyOUNqUDhCSHlzak54d0xaaUhxOHQ5WTFZSWxhb2hIYXBEQmVQeUY2cGdCeGs5WloxeE5PSThLd2dEdXBvakJpMFRSRUJ5WHRHQWo1c2pqeFJMV0lqLTl0dGhNbmU3ZHZISHZkQ1lybFZxUjE2VTNYNGRuZWM?oc=5",
+          "published_at": "Mon, 23 Feb 2026 08:00:00 GMT",
+          "published_ts": 1771833600.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "VIKRAM SOLAR LIMITED",
+          "sector": "Technology",
+          "industry": "Solar"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Vikram Solar share price falls 5%: Two reasons why the stock is in focus on Monday, February 23 - Upstox",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNaC0xWDRYQzNRNWJwMi1DbTl6MzFuOFBLTFBfTWMzNFdIcHdKS1BqcXhfa2FleHRJeEt1OTZsa29wMHNISFlMMXRFbFlLdEZHdnNLOUhvOEY1MS1zbW5acDFWa0RmYkM1Qnh5b3dPS1ZqSUJkZUppV1Byek5RalFBM0xBMVFCbkhDTXJXTEpCbVZCZEI3VEdYYWNLQjN6LU51Wjhuc3lhalY5b3RGb01aUnJ5ellIQlZUX3ozQUFLN1RSRFJWXzZQLTYtSGs2TXp4dFBrdlFGN1lXVW8?oc=5",
+          "published_at": "Sun, 22 Feb 2026 08:00:00 GMT",
+          "published_ts": 1771747200.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "VIKRAM SOLAR LIMITED",
+          "sector": "Technology",
+          "industry": "Solar"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Vikram Solar and 4 other stocks with EBITDA Growth of up to 308% to keep an eye on - Trade Brains",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQ0x2RFhSbkVqN3d3dkM3dXJkV0JWRk9CUFBqWVhXbU9hOWdvR3p4cXNIZlZmMW9SSHVheXNGem1DQjVjMFBKTDg2bG9malY1UV81TE0xS3ZLTFhUR1JCV2JUd1B2WmstckNRSXRjRWY3UGZoX2lQUlJHdU1PdlpoOXlJUl9HZmM3STNmeTh3STgwbFZsVXh4X09lMXZfR0RaMnJPM0wxNUk?oc=5",
+          "published_at": "Fri, 20 Feb 2026 08:00:00 GMT",
+          "published_ts": 1771574400.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "VIKRAM SOLAR LIMITED",
+          "sector": "Technology",
+          "industry": "Solar"
+        }
+      ],
+      "top_macro_news": [
+        {
+          "source": "google_rss_macro",
+          "title": "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRVNOajVzSUJWU3Q5R2toMjVnZVZMNDhLclozWDdNODc1OU1qbVFjYnFTT0Z1SUZaaExuY3FJajFkdWtOWk5kdWplT0J0Yk9RcnlDVnlvQmJZNC1jVDVHZmRhS0Z0X0JiXzFETHRnaUVac1pEMmZfWE9raXFacFpwR1dSaEVST0Ntc2k1czN4emNQVFlWSHE3V1ZhMW80OUFMYmN6dEwtTkRadm44enc?oc=5",
+          "published_at": "Fri, 13 Mar 2026 15:17:26 GMT",
+          "published_ts": 1773415046.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b496280daa4245973989eb39f70a5d&url=https%3a%2f%2fwww.livemint.com%2fmarket%2fstock-market-news%2fus-china-power-shift-global-markets-india-outlook-mirae-asset-swarup-mohanty-11773376870759.html&c=15555016077234823276&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 14:15:00 GMT",
+          "published_ts": 1773411300.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Fed to delay rate cuts as war clouds the outlook",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b496281f32468aaf73328e3b83653f&url=https%3a%2f%2fthink.ing.com%2farticles%2ffed-to-delay-rate-cuts-as-war-clouds-the-outlook%2f&c=127436243108543137&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 13:40:00 GMT",
+          "published_ts": 1773409200.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss_macro",
+          "title": "Bitcoin holds above $71,000, defying rising dollar, oil and U.S. bond yields - CoinDesk",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbHB1NE1GZ1dLTWpvOWNseW5QXy1jbWVHcTYzcXF6NWotU0NHOG1XNEUzcDd0ZTctMW1URXZzSW5RQ1djc1h3a0xOM0k2Tkd5TjRWcE0wUXRwZjg4WktmZ2xDWnpLa0RhR1BsRzlrZlVlVzhONmQ0eW51VXJIWFQ3NFJkd0VXZ2VsUnY4VTBuWjU5LXpxX1BPYUIyaEZKQVdEWUU3a25CY0RvN3NrVW10cFNUTWtxSHdhSWI4?oc=5",
+          "published_at": "Fri, 13 Mar 2026 09:34:10 GMT",
+          "published_ts": 1773394450.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Gold Silver Rate Today Live Updates (13 March 2026): Gold, silver futures fall on MCX as rising crude oil prices dim hopes of early rate cuts",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b496280e5943b99f32515c65c7336f&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2flive-blog%2fgold-rate-silver-price-today-live-updates-mcx-gold-18k-22k-24k-rate-iran-isreal-us-war-latest-news%2fliveblog%2f129534056.cms&c=4108291931945502437&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 06:00:00 GMT",
+          "published_ts": 1773381600.0,
+          "sentiment_score": -1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Markets Today: Sensex Declines 830 Points, Nifty Slips Below 23,650 Amid Iran-US-Israel War",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b496280daa4245973989eb39f70a5d&url=https%3a%2f%2fwww.news18.com%2fbusiness%2fmarkets%2fmarkets-today-sensex-falls-1000-points-in-opening-trade-nifty-below-23600-as-oil-surges-past-100-9956009.html&c=7425380694736114227&mkt=en-in",
+          "published_at": "Thu, 12 Mar 2026 03:39:00 GMT",
+          "published_ts": 1773286740.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Share markets continue to bleed as West Asia tensions dampen sentiment, Sensex over 800 points down",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b496280daa4245973989eb39f70a5d&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fmarkets%2fshare-markets-continue-to-bleed-as-west-asia-tensions-dampen-sentiment-sensex-over-800-points-down%2far-AA1Yt9yX&c=14300386732484515462&mkt=en-in",
+          "published_at": "Thu, 12 Mar 2026 03:04:15 GMT",
+          "published_ts": 1773284655.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Trading Day: Oil and yields up, up, and away",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b496280e5943b99f32515c65c7336f&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2ftrading-day-oil-and-yields-up-up-and-away%2far-AA1YqbzQ&c=11227118164045986945&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 14:08:08 GMT",
+          "published_ts": 1773238088.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss_macro",
+          "title": "Markets Confront the Economic Impact of the Iran Conflict - Natixis CIB | Natixis Corporate & Investment Banking",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOVpkVlFlOG1lbEdUZEM2VU40clhkdUtsN3l6Z3Rkd2g4WTBNMVNKSFBmMmkyT1M0RGwtZGJxN1ItZVVrMEU3UnVfWFJ6UmpZUVppV09ZelhMWHNvZmhtbFk3ajc0UnlpY0dZeW51MGJnSUU3dGhYRGFQaE44NjJVaFFBVWFyVlNhampDdXFic0dCZXZ3YW5ScWUtWQ?oc=5",
+          "published_at": "Wed, 11 Mar 2026 10:55:26 GMT",
+          "published_ts": 1773226526.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "S&P 500 Faces Valuation Pressure as Oil and Yields Rise Together",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b496280e5943b99f32515c65c7336f&url=https%3a%2f%2fwww.investing.com%2fanalysis%2fsp-500-faces-valuation-pressure-as-oil-and-yields-rise-together-200676476&c=11959585435036819535&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 10:53:00 GMT",
+          "published_ts": 1773226380.0,
+          "sentiment_score": -1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        }
+      ],
+      "avg_sentiment": 0.023233387262054872,
+      "macro_sentiment": -0.08116012584885966
+    },
+    "market_sentiment": {
+      "signal": "SELL",
+      "confidence": 0.8680000000000001,
+      "summary": "Market Sentiment: SELL | NIFTY 5D=-2.31%, 10D=-3.42%, 20D=-3.87%, SMA20 gap=-2.4% (below). India VIX=181.30999755859375, 5D chg=+7.2, news sentiment=0.02. Votes: bull=1, bear=4.",
+      "reasoning_prompt": "Market sentiment protocol:\n1) Evaluate NIFTY multi-window momentum (5/10/20-bar returns) for domestic risk appetite.\n2) Check Nifty SMA20 structure — price above 20DMA = constructive, below = cautious.\n3) Evaluate India VIX regime as stress filter (low=constructive, high=defensive).\n4) Factor VIX change rate — rising VIX signals increasing fear even if level is moderate.\n5) Blend with cleaned multi-source news sentiment (stock + macro blend).\n6) Count bullish/bearish votes and avoid directional call under conflict.\n7) Prefer NO_TRADE when index momentum and volatility regime diverge.",
+      "llm_reasoning": "Sentiment is neutral with a low confidence interval due to conflicting signals. Market participants appear to be in a holding pattern, as evidenced by the lack of clear directional conviction in recent price action and the scarcity of high-conviction news. The combination of oversold technicals and a bearish trend keeps sentiment cautious.",
+      "detail": {
+        "nifty_ret5": -0.02314398424966979,
+        "nifty_ret10": -0.03419373829671979,
+        "nifty_ret20": -0.038731002127090686,
+        "above_sma20": false,
+        "sma_gap_pct": -2.44,
+        "vix_level": 181.30999755859375,
+        "vix_change_5d": 7.17,
+        "news_avg_sentiment": 0.023233387262054872,
+        "bullish_votes": 1,
+        "bearish_votes": 4
+      }
+    },
+    "relative_strength": {
+      "signal": "BUY",
+      "confidence": 0.8200000000000001,
+      "summary": "Relative Strength: BUY | stock 10-bar return=11.10%, NIFTY=-2.87%, alpha=13.97%.",
+      "reasoning_prompt": "Relative-strength protocol:\n1) Compare stock and NIFTY returns over same 10-bar window.\n2) Convert spread into alpha and classify persistent out/under-performance.\n3) Treat marginal alpha as noise and return NO_TRADE.\n4) Use relative strength as confirmation layer, not standalone trigger.",
+      "llm_reasoning": "Relative strength appears weak as the asset continues to trade below its short-term and medium-term moving averages. The price has failed to breach key resistance levels, confirming its lagging status within the broader index context. Downward trend slopes further reinforce its underperformance relative to stable or bullish sector peers.",
+      "detail": {
+        "stock_ret10": 0.11099080472677492,
+        "nifty_ret10": -0.028660001865128515,
+        "alpha": 0.13965080659190343
+      }
+    },
+    "us_trend": {
+      "signal": "SELL",
+      "confidence": 0.85,
+      "summary": "US Trend Signal: SELL | Global risk-off backdrop. SPX 5D/20D=-2.31%/-3.87%, NDX 5D/20D=4.12%/-22.78%, VIX=6632.19, DXY 5D=14.91%.",
+      "reasoning_prompt": "US macro trend protocol:\n1) Evaluate SPX and NDX short/medium returns for global equity risk tone.\n2) Use VIX as stress filter (high VIX weakens risk-on conviction).\n3) Use DXY direction as liquidity/EM risk proxy for Indian equities.\n4) Classify regime as risk-on, risk-off, or mixed.\n5) Use this as contextual bias only; do not override local setup quality.",
+      "llm_reasoning": "Not applicable as the asset, Vikram Solar Limited (VIKRAMSOLR.NS), operates primarily within the Indian market. Broader macro factors influencing the sector are monitored, but there is no direct correlation to US-specific ticker trends.",
+      "detail": {
+        "regime": "Global risk-off backdrop",
+        "llm_decision_why": "The macro regime is decisively risk-off. The NDX shows deep medium-to-long-term weakness (-23%), while SPX is exhibiting short-term momentum decay. The extreme VIX reading indicates elevated volatility and stress, and the steady appreciation of the DXY confirms a flight-to-safety trend. These factors collectively create a hostile environment for risk assets.",
+        "spx_ret_5": -0.02314398424966979,
+        "spx_ret_20": -0.038731002127090686,
+        "ndx_ret_5": 0.04117375786192601,
+        "ndx_ret_20": -0.22781092333023978,
+        "vix_last": 6632.18994140625,
+        "dxy_ret_5": 0.14905267012746704,
+        "dxy_ret_20": 0.5461757226825255
+      }
+    },
+    "financials": {
+      "signal": "NO_TRADE",
+      "confidence": 0.4900771990776489,
+      "summary": "Financials Signal: NO_TRADE | Fundamentals mixed/neutral. Coverage=54%. ROE=11.26%, Margin=4.08%, RevGrowth=N/A, EarnGrowth=N/A, D/E=0.219, CurrentRatio=N/A, PE=46.981. Quarterly trends: RevQoQ=-7.34%, NIQoQ=8.31%, OCFQoQ=N/A, DebtQoQ=N/A, FCF=N/A, Cash/Debt=0.144. Analyst target=N/A (N/A upside, ? analysts). 52w Hi/Lo=407.950/162.100, position=7.81%.",
+      "reasoning_prompt": "Financial statement reasoning protocol:\n1) Evaluate valuation (PE/PB) relative to profitability and growth quality.\n2) Score profitability and efficiency (ROE, margins).\n3) Validate growth durability using quarterly revenue and net-income trends.\n4) Check balance-sheet resilience (debt trend, liquidity, cash/debt).\n5) Check cash-flow quality (operating CF trend, free cash flow sign).\n6) If fundamentals conflict or are incomplete, default to conservative NO_TRADE bias.",
+      "llm_reasoning": "Data is insufficient to generate a comprehensive financial score. However, current reports highlight stable debt management within the company's operations. The lack of detailed quarterly growth metrics or margin expansion data prevents a high-conviction fundamental rating at this time.",
+      "fundamental_signals": [
+        {
+          "type": "mixed",
+          "text": "Near 52-week low (₹162.10–₹181.31) — historically strong demand zone. Deep oversold bounces common, but confirm volume."
+        },
+        {
+          "type": "bearish",
+          "text": "Revenue contracting QoQ (-7.3% last quarter)."
+        }
+      ],
+      "analyst_consensus": {
+        "target_price": null,
+        "target_high": null,
+        "target_low": null,
+        "n_analysts": null,
+        "implied_upside_pct": null
+      },
+      "price_52w": {
+        "high": 407.95,
+        "low": 162.1,
+        "current": 181.31,
+        "position_pct": 7.8,
+        "change_1y_pct": null
+      },
+      "extended_fundamentals": {
+        "symbol": "VIKRAMSOLR.NS",
+        "dividend_yield": null,
+        "dividend_rate": null,
+        "ex_dividend_date": null,
+        "payout_ratio": 0.0,
+        "held_pct_insiders": 0.66980004,
+        "held_pct_institutions": 0.04882,
+        "book_value": 87.924,
+        "price_to_book": 2.0621216,
+        "return_on_equity": null,
+        "debt_to_equity": 8.898,
+        "profit_margins": 0.09919,
+        "enterprise_value": 50542477312,
+        "enterprise_to_revenue": 1.113,
+        "enterprise_to_ebitda": 5.458,
+        "gross_margins": 0.31324,
+        "operating_margins": 0.15225,
+        "ebitda_margins": 0.20382,
+        "total_revenue": 45429559296,
+        "total_debt": 2624640000,
+        "total_cash": 17746489344,
+        "peg_ratio": null,
+        "trailing_pe": 14.5747595,
+        "forward_pe": 10.832658
+      },
+      "promoter_institutional": {
+        "symbol": "VIKRAMSOLR.NS",
+        "major_holders": {},
+        "top_institutional": []
+      },
+      "dividends_splits": {
+        "symbol": "VIKRAMSOLR.NS",
+        "recent_dividends": [],
+        "recent_splits": [],
+        "dividend_yield_trend": null,
+        "total_dividends_1y": 0.0
+      },
+      "metrics": {
+        "market_cap": 65694084232.51483,
+        "trailing_pe": 46.981058729834466,
+        "forward_pe": null,
+        "price_to_book": 5.28942560944701,
+        "debt_to_equity": 0.2189520197038782,
+        "return_on_equity": 0.11258634335730831,
+        "profit_margins": 0.04084501817317194,
+        "operating_margins": 0.10395615187356158,
+        "gross_margins": 0.24565022507976594,
+        "ebitda_margins": null,
+        "revenue_growth": null,
+        "earnings_growth": null,
+        "free_cashflow": null,
+        "operating_cashflow": null,
+        "current_ratio": null,
+        "fifty_two_week_high": 407.95001220703125,
+        "fifty_two_week_low": 162.10000610351562,
+        "fifty_two_week_change": null,
+        "dividend_yield": null,
+        "current_price": 181.30999755859375,
+        "analyst_target_price": null,
+        "analyst_target_high": null,
+        "analyst_target_low": null,
+        "number_of_analyst_opinions": null,
+        "trailing_eps": null,
+        "forward_eps": null,
+        "beta": null,
+        "book_value": 34.277823519206095,
+        "enterprise_value": null,
+        "total_revenue": 34234530000.0,
+        "total_debt": 2719360000.0,
+        "total_cash": 391570000.0,
+        "peg_ratio": null,
+        "sector": null,
+        "industry": null,
+        "company_name": ""
+      },
+      "detail": {
+        "stance": "Fundamentals mixed/neutral",
+        "bull_points": 4,
+        "bear_points": 5,
+        "data_quality": {
+          "coverage_ratio": 0.5384615384615384,
+          "available_fields": 7,
+          "total_fields": 13
+        },
+        "metrics": {
+          "market_cap": 65694084232.51483,
+          "trailing_pe": 46.981058729834466,
+          "forward_pe": null,
+          "price_to_book": 5.28942560944701,
+          "debt_to_equity": 0.2189520197038782,
+          "return_on_equity": 0.11258634335730831,
+          "profit_margins": 0.04084501817317194,
+          "operating_margins": 0.10395615187356158,
+          "gross_margins": 0.24565022507976594,
+          "ebitda_margins": null,
+          "revenue_growth": null,
+          "earnings_growth": null,
+          "free_cashflow": null,
+          "operating_cashflow": null,
+          "current_ratio": null,
+          "fifty_two_week_high": 407.95001220703125,
+          "fifty_two_week_low": 162.10000610351562,
+          "fifty_two_week_change": null,
+          "dividend_yield": null,
+          "current_price": 181.30999755859375,
+          "analyst_target_price": null,
+          "analyst_target_high": null,
+          "analyst_target_low": null,
+          "number_of_analyst_opinions": null,
+          "trailing_eps": null,
+          "forward_eps": null,
+          "beta": null,
+          "book_value": 34.277823519206095,
+          "enterprise_value": null,
+          "total_revenue": 34234530000.0,
+          "total_debt": 2719360000.0,
+          "total_cash": 391570000.0,
+          "peg_ratio": null,
+          "sector": null,
+          "industry": null,
+          "company_name": ""
+        },
+        "metrics_extended": {
+          "dividend_yield": null,
+          "peg_ratio": null,
+          "operating_margins": 0.15225,
+          "gross_margins": 0.31324,
+          "ev_to_ebitda": 5.458,
+          "held_pct_institutions": 0.04882
+        },
+        "statement_trends": {
+          "revenue_qoq": -0.07337030517267817,
+          "net_income_qoq": 0.08314480262214041,
+          "operating_cf_qoq": null,
+          "debt_qoq": null,
+          "free_cashflow_latest": null,
+          "cash_to_debt": 0.1439934396328548
+        }
+      }
+    },
+    "market_setup": {
+      "signal": "NO_TRADE",
+      "confidence": 0.65,
+      "summary": "Market Setup Signal: NO_TRADE | Range negotiation. Tape read: 5d=+8.1%, 20d=-21.8%, volume ratio=1.01, momentum=53.9. Support gap=14.0% and resistance gap=18.9%. Trader read: The stock is in a clear structural downtrend with prices below the SMA20 and SMA50. While recent momentum shows a minor MACD crossover and a bounce, it is insufficient to overcome the bearish trend regime. Price remains stuck in compression with no clear breakout catalyst, making the current risk-reward profile unattractive.",
+      "reasoning_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+      "llm_reasoning": "The market setup is currently in a state of consolidation following a prolonged downtrend. The compression pattern suggests a potential breakout or breakdown is imminent, but currently, the setup lacks a trigger. The proximity to support levels (170.09) and resistance (179.7) defines the current trading range for future volatility expectations.",
+      "setup_label": "Range negotiation",
+      "detail": {
+        "recent_return_5d_pct": 8.13,
+        "recent_return_20d_pct": -21.84,
+        "volume_ratio_5d_vs_20d": 1.01,
+        "distance_to_support_pct": 13.99,
+        "distance_to_resistance_pct": 18.9,
+        "momentum_score": 53.9,
+        "buy_votes": 2,
+        "sell_votes": 1
+      }
+    },
+    "catalyst_context": {
+      "signal": "NO_TRADE",
+      "confidence": 0.6,
+      "summary": "Catalyst Context Signal: NO_TRADE | Deteriorating backdrop. Backdrop read: news sentiment=0.02, analyst upside=None, 52w position=7.8. Core read: Vikram Solar exhibits conflicting signals. While it trades near 52-week lows, suggesting a potential value entry, the company suffers from contracting quarterly revenue and relatively thin profit margins. The absence of clear analyst coverage and missing key liquidity metrics creates an uncertainty profile that fails to meet the threshold for a high-conviction directional trade.",
+      "reasoning_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+      "llm_reasoning": "The primary catalyst context is the absence of material company-specific news. Future price discovery will likely depend on sector-wide policy updates or specific Vikram Solar project announcements. Current technical and trend signals are struggling to find a fundamental anchor, reinforcing the wait-and-see approach.",
+      "catalyst_label": "Deteriorating backdrop",
+      "detail": {
+        "buy_votes": 0,
+        "sell_votes": 2,
+        "avg_sentiment": 0.023,
+        "analyst_upside_pct": null,
+        "position_52w_pct": 7.8,
+        "fundamental_signals": [
+          "Near 52-week low (₹162.10–₹181.31) — historically strong demand zone. Deep oversold bounces common, but confirm volume.",
+          "Revenue contracting QoQ (-7.3% last quarter)."
+        ]
+      }
+    }
+  },
+  "agent_guidance": {
+    "indicator_prompt": "Indicator reasoning protocol:\n1) Evaluate structural trend using close vs SMA20 and SMA20 vs SMA50.\n2) Validate momentum using MACD line/signal/histogram and ROC10 direction.\n3) Check exhaustion/continuation via RSI, Stochastic crossover, and Williams %R zone.\n4) Confirm participation with volume vs 20-bar average.\n5) Penalize high-volatility regimes with ATR% filters and lower confidence.\n6) If cross-indicator alignment is weak or contradictory, return NO_TRADE.",
+    "pattern_prompt": "Pattern reasoning protocol:\n1) Detect breakout/breakdown against prior 12-bar range, not single-candle spikes.\n2) Confirm direction with local slope and bar-structure continuation.\n3) Use engulfing patterns as confirmation, not standalone trigger.\n4) Treat flat-slope compression as NO_TRADE until expansion is confirmed.\n5) Down-rank weak breakouts lacking structure confirmation.",
+    "news_prompt": "News reasoning protocol:\n1) Collect company-specific headlines across multiple providers using diversified queries.\n2) Filter spam/listicle/noise domains and low-relevance stories.\n3) Build a global macro stream (rates, inflation, oil, USD, broad risk sentiment).\n4) Build industry/sector thematic stream (demand cycle, market share, regulation, capacity, pricing).\n5) Weight sentiment by source quality, exponential recency decay, and relevance confidence.\n6) Apply content-similarity dedup to remove near-duplicate headlines.\n7) Use LLM to infer final bias from company + industry + macro evidence and return NO_TRADE under conflict.",
+    "trend_prompt": "Trend reasoning protocol:\n1) Fit support and resistance trendlines over the visible swing window.\n2) Estimate channel slope (regime direction) and channel width (trend quality).\n3) Locate current price in channel and prefer pullback entries aligned with slope.\n4) If slope is weak/flat, classify as sideways and favor NO_TRADE.\n5) Avoid chasing signals near channel extremes against risk-reward logic.",
+    "market_prompt": "Market sentiment protocol:\n1) Evaluate NIFTY multi-window momentum (5/10/20-bar returns) for domestic risk appetite.\n2) Check Nifty SMA20 structure — price above 20DMA = constructive, below = cautious.\n3) Evaluate India VIX regime as stress filter (low=constructive, high=defensive).\n4) Factor VIX change rate — rising VIX signals increasing fear even if level is moderate.\n5) Blend with cleaned multi-source news sentiment (stock + macro blend).\n6) Count bullish/bearish votes and avoid directional call under conflict.\n7) Prefer NO_TRADE when index momentum and volatility regime diverge.",
+    "relative_strength_prompt": "Relative-strength protocol:\n1) Compare stock and NIFTY returns over same 10-bar window.\n2) Convert spread into alpha and classify persistent out/under-performance.\n3) Treat marginal alpha as noise and return NO_TRADE.\n4) Use relative strength as confirmation layer, not standalone trigger.",
+    "us_trend_prompt": "US macro trend protocol:\n1) Evaluate SPX and NDX short/medium returns for global equity risk tone.\n2) Use VIX as stress filter (high VIX weakens risk-on conviction).\n3) Use DXY direction as liquidity/EM risk proxy for Indian equities.\n4) Classify regime as risk-on, risk-off, or mixed.\n5) Use this as contextual bias only; do not override local setup quality.",
+    "financials_prompt": "Financial statement reasoning protocol:\n1) Evaluate valuation (PE/PB) relative to profitability and growth quality.\n2) Score profitability and efficiency (ROE, margins).\n3) Validate growth durability using quarterly revenue and net-income trends.\n4) Check balance-sheet resilience (debt trend, liquidity, cash/debt).\n5) Check cash-flow quality (operating CF trend, free cash flow sign).\n6) If fundamentals conflict or are incomplete, default to conservative NO_TRADE bias.",
+    "market_setup_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+    "catalyst_context_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+    "trader_intel_prompt": "Think like a discretionary Indian swing trader. Judge setup quality, catalyst quality, crowd positioning, and execution patience together. Avoid indicator-threshold language. Prefer NO_TRADE when the idea is merely interesting rather than executable. Use nearby levels, 52-week context, analyst framing, and headline quality to write a trader-grade verdict."
+  },
+  "market_setup": {
+    "signal": "NO_TRADE",
+    "confidence": 0.65,
+    "summary": "Market Setup Signal: NO_TRADE | Range negotiation. Tape read: 5d=+8.1%, 20d=-21.8%, volume ratio=1.01, momentum=53.9. Support gap=14.0% and resistance gap=18.9%. Trader read: The stock is in a clear structural downtrend with prices below the SMA20 and SMA50. While recent momentum shows a minor MACD crossover and a bounce, it is insufficient to overcome the bearish trend regime. Price remains stuck in compression with no clear breakout catalyst, making the current risk-reward profile unattractive.",
+    "reasoning_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+    "llm_reasoning": "The market setup is currently in a state of consolidation following a prolonged downtrend. The compression pattern suggests a potential breakout or breakdown is imminent, but currently, the setup lacks a trigger. The proximity to support levels (170.09) and resistance (179.7) defines the current trading range for future volatility expectations.",
+    "setup_label": "Range negotiation",
+    "detail": {
+      "recent_return_5d_pct": 8.13,
+      "recent_return_20d_pct": -21.84,
+      "volume_ratio_5d_vs_20d": 1.01,
+      "distance_to_support_pct": 13.99,
+      "distance_to_resistance_pct": 18.9,
+      "momentum_score": 53.9,
+      "buy_votes": 2,
+      "sell_votes": 1
+    }
+  },
+  "catalyst_context": {
+    "signal": "NO_TRADE",
+    "confidence": 0.6,
+    "summary": "Catalyst Context Signal: NO_TRADE | Deteriorating backdrop. Backdrop read: news sentiment=0.02, analyst upside=None, 52w position=7.8. Core read: Vikram Solar exhibits conflicting signals. While it trades near 52-week lows, suggesting a potential value entry, the company suffers from contracting quarterly revenue and relatively thin profit margins. The absence of clear analyst coverage and missing key liquidity metrics creates an uncertainty profile that fails to meet the threshold for a high-conviction directional trade.",
+    "reasoning_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+    "llm_reasoning": "The primary catalyst context is the absence of material company-specific news. Future price discovery will likely depend on sector-wide policy updates or specific Vikram Solar project announcements. Current technical and trend signals are struggling to find a fundamental anchor, reinforcing the wait-and-see approach.",
+    "catalyst_label": "Deteriorating backdrop",
+    "detail": {
+      "buy_votes": 0,
+      "sell_votes": 2,
+      "avg_sentiment": 0.023,
+      "analyst_upside_pct": null,
+      "position_52w_pct": 7.8,
+      "fundamental_signals": [
+        "Near 52-week low (₹162.10–₹181.31) — historically strong demand zone. Deep oversold bounces common, but confirm volume.",
+        "Revenue contracting QoQ (-7.3% last quarter)."
+      ]
+    }
+  },
+  "trader_intel": {
+    "signal": "NO_TRADE",
+    "confidence": 0.45,
+    "verdict_label": "Wait for structural reversal",
+    "playbook_title": "Dead-money consolidation avoidance",
+    "thesis": "VIKRAMSOLR is stuck in a classic bottoming grind with no institutional sponsorship or fundamental spark. While it sits near its 52-week lows, attempting to catch a falling knife without a breakout catalyst or volume expansion is poor risk management. The stock needs to build a higher base to prove the selling pressure is exhausted.",
+    "execution_style": "Observation only",
+    "risk_flag": "Structural downtrend with thin liquidity",
+    "entry_trigger": "Wait for a clean breakout above the 200-level with a significant volume surge",
+    "invalidation": "New 52-week lows would negate any recovery thesis",
+    "why_now": "The stock is mid-range with no clear direction, making it a trap for capital that could be deployed in stronger momentum names.",
+    "why_not_now": "The lack of analyst coverage, contracting revenue, and bearish trend alignment make this a low-conviction play that doesn't meet professional trade standards.",
+    "summary": "Trader Intel: NO_TRADE | Wait for structural reversal | Dead-money consolidation avoidance. Thesis: VIKRAMSOLR is stuck in a classic bottoming grind with no institutional sponsorship or fundamental spark. While it sits near its 52-week lows, attempting to catch a falling knife without a breakout catalyst or volume expansion is poor risk management. The stock needs to build a higher base to prove the selling pressure is exhausted. Why now: The stock is mid-range with no clear direction, making it a trap for capital that could be deployed in stronger momentum names. Why not now: The lack of analyst coverage, contracting revenue, and bearish trend alignment make this a low-conviction play that doesn't meet professional trade standards.",
+    "reasoning_prompt": "Think like a discretionary Indian swing trader. Judge setup quality, catalyst quality, crowd positioning, and execution patience together. Avoid indicator-threshold language. Prefer NO_TRADE when the idea is merely interesting rather than executable. Use nearby levels, 52-week context, analyst framing, and headline quality to write a trader-grade verdict."
+  },
+  "top_news": [
+    {
+      "source": "google_rss",
+      "title": "These 4 Measures Indicate That Vikram Solar (NSE:VIKRAMSOLR) Is Using Debt Safely - simplywall.st",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOa192SFdpWV80Z2RRWWhIUTBScWJnUlk5dnQ5Uk84d211akk3S2hrQUlsNkxIbUJaTWQyY0xXZElUVjRxOEhJanVKbUdWaGZzYW9GOFkzWkhibFRVZ2JSakJEWXF4Tl9rVTBCY0NVV0dvd1puaEkwWWI0SmVVenNQcmxhdXVmbUdkQzk2eFRzV0pMcnUtODBaTktSZ0NMbV9vS3RrTEpBZWh1bXd3X2ZWYTVfeXRvU0d0SU5HQ3hDMkJSMnVZUGJpVVJPNkpyQy0tYzRlZUNKNHk1Umd1R2ZZMtIB5gFBVV95cUxPbDJ4NlFtX29RemYtWUZ2M0kwSV9acVdla2syVDJvc1lGVTlZVW9mcUhuQVlUMlF1SWJVQXAxUWtnTlM2UTNGamJqUGFiWFE3MkZFaVQ4VHAwaFAxcU1GbnBydHg1ZzJlMTExbW9FQndMZ1VWNlJaZ0dMdGpQNGQ3TnQzUVg0QXgzQVFOTm1ya1ptVldnaGEtcVZnUTlJZWRlMWZoOXA3aGN2Z1Y1ejFoM2hZS2NtWTQyUHFLaFNpcTl2aDg4RHUyLXRDcEVZd1VPcjZNMlR1TjI0enZKRkxjRXZQM3pBdw?oc=5",
+      "published_at": "Wed, 21 Jan 2026 08:00:00 GMT",
+      "published_ts": 1768982400.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Should Weakness in Vikram Solar Limited's (NSE:VIKRAMSOLR) Stock Be Seen As A Sign That Market Will Correct The Share Price Given Decent Financials? - simplywall.st",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNbUN1Y2ppeUFubTlfMTZpQ3JGRzRGMkYzdXVqRTdUZ1pPbVNVTTBvYVpOYW5NaF9fVmN5OUNUd1NCUzBiSkFiVVdrOUhYNWRKUWJHNEZnRjNibUFJVWl2bTNGRWhJZDFDaWFfalJmcWpocGphQ2YxNXhLME03VmRUWnBrUW1hTEUtV0phZEZHZ0J1VGNDNFNpaFUzY3ZTUG05dVRGUEhDWTZKZXlIQUNLcFYxemgwdXRQcnZBZmJaMkI2SnZ4a012WlRqV05PTWVKaVc1WkU0eTloeG0taHhib9IB5gFBVV95cUxQY3FNdC1pUlNRdF9PdVo4Nm9wd1BqRnFmaV92UmxZZ1o5a3JtdjB5WmF5dHV1RmN0dm9RYWJ6R3dCRm5xbTltMmh4RWkzRjJ0TTBObUZTOV92RXY2NFF3Tk9oMnI0aEVhSlQ0QjExc0txY29kYXpnbG5DNXlMd0xJb2J1QVJpM01XUDBSUWhUNGdfaFhTUndiaExuNmtSc1dQV0xlMlFWLWFweEd4bnU5akZkcXZMc0NIeEZVYWFEZFQ2bE4wUDA0cnk3eklUQXFFM0o0cXJZeHAxemtqTzZmbVVlajMzZw?oc=5",
+      "published_at": "Thu, 27 Nov 2025 08:00:00 GMT",
+      "published_ts": 1764230400.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "VIKRAMSOLR Stock Price and Chart — NSE:VIKRAMSOLR - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9HU0NUTTBtODRHRTFob0g0R2s4aTFCSHVleWo0ZDlKVDFhN0c3d0FyVk53TVFwRzJLb2hyQ3VvYVNNbWdnOVplUU1SeUNnQ2czWFdTUGlNWnRJb2ZyMlJsNQ?oc=5",
+      "published_at": "Tue, 26 Aug 2025 04:50:11 GMT",
+      "published_ts": 1756183811.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    }
+  ],
+  "top_industry_news": [
+    {
+      "source": "bing_rss_industry",
+      "title": "Not Adani Solar, Not Reliance — 3 solar stocks with up to 50% upside potential; Do you own any?",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49622e6b64200a050b432ed178547&url=https%3a%2f%2fwww.financialexpress.com%2fmarket%2fnot-adani-not-reliance-solar-stocks-waaree-energies-premier-energies-emmvee-photovoltaics-upside-4171783%2f&c=12753776369405599350&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 05:46:00 GMT",
+      "published_ts": 1773380760.0,
+      "sentiment_score": 1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated",
+      "company_name": "VIKRAM SOLAR LIMITED",
+      "sector": "Technology",
+      "industry": "Solar"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Solar Stock Jumps 5% After Launching Lithium-Ion Brand Targeting 7.5 GWh Cell Capacity by FY29 - Trade Brains",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOcUVoMU1nRnVyVTZ2QTliRFFFV0VLV09zenJERG9wRTZIQl9MYzF3dVRxNXk2Z3RGRWdEMVpQbHNSVDhiWThCbm1NVVhDcldmSFYyUExxdzB4a21sWEoxWHl4VS10Y2JxUXFSbjVydDlFa21EQ1kwTGZkTEFHekZBMzZXV0xaR0hzZ0l1emFIbXppdEdjNDVmMkstdHBkLUI2NnA3TGlTdU5XZWpSZzVlbHltUUJRUTFD?oc=5",
+      "published_at": "Thu, 12 Mar 2026 09:45:00 GMT",
+      "published_ts": 1773308700.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "VIKRAM SOLAR LIMITED",
+      "sector": "Technology",
+      "industry": "Solar"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "India’s Solar Journey Reflects Power of Innovation and Policy Leadership: Pralhad Joshi - BioEnergy Times",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSUFuZ19SZ2FXU3dkZDBlWDZZNzFaWkFPWXNSU1VQSXduNEpVQmpHT1FOR28yQ1FLMHpRaTdMeTgtWHowQjNPZGphLUJFcmZOTW1LaEpWSkkyNHFvaGFBQzJ1aW45ZEM5QTRXWkdPWHZXSGhfNEJVY2ZUS19RYklZT0JVRWJHY1ZGdjFINUFrYzRrSWhORlBHbUVKRDJBMTNfclRlM09jdk9VeXNiY3V4VklqVQ?oc=5",
+      "published_at": "Thu, 12 Mar 2026 08:09:56 GMT",
+      "published_ts": 1773302996.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "VIKRAM SOLAR LIMITED",
+      "sector": "Technology",
+      "industry": "Solar"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Vikram Solar’s PowerHive Launches ‘VION’ Lithium Battery Platform to Accelerate Electric Mobility and Energy Storage Solutions - EMobility+",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOajM5WkxGVC1vRW94OVM0NVpvZ0dmaVphRUxDYm9sNGNQYk5ILTEwODVMVDM0SjB6bHROdTlycm03ZzdjTllsNWdERy1BZnNIdVpHQXA1TkthUHo2UjJRYXFyYktGUklGMGYtMXRjaUxaMi14YVJmOVV4TE9RZU1PeE1pZlBXSFdQejdTc2V2WXJCZkd2Zng3VFYzMUVzWkNFS2hLYjkxZnhERDN0dkE0dTRHWEVJTUVoTTYyVE82S0UyYjFJR3Bud1hETFBxMl9sNXY3RmlDWlhOdUN3R1ItZFlyc3lQMmdkTGVSRy1rS2JvX1XSAfgBQVVfeXFMT3hBZFhTOElpMWcydUpZZzdXM19HM1RkU1JaTFJrQjRuTk5Fa2hPRFpfVzZtanhraWRza0RYaE1EaTltTjYxVm5hd21wckZqVEFxbHpSRWJWaDJzbUJfZGYyV2NabTd4QmJjSnY0dXVzVW1xaEtncmsta0xHT0lSWm40S0tRX2hFaDRuWWpBekZPYm5tR0pkaWE2TVIyN1dkaTNIQVBGRXRQWDhyT210Zm5QNjY5YUlTdjRQeHQycnV1U21hdVBfYlRGQmdxVFpCLS1Zb19xSURTLWRBNlUwRHpWdk9MN19YX0VtZXh6bU1PZWo0YURHZk0?oc=5",
+      "published_at": "Thu, 12 Mar 2026 07:53:25 GMT",
+      "published_ts": 1773302005.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "VIKRAM SOLAR LIMITED",
+      "sector": "Technology",
+      "industry": "Solar"
+    },
+    {
+      "source": "bing_rss_industry",
+      "title": "India strongly positioned as the next global platform for consumer technology: Nothing co-founder",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49623a83a4f409f0845ea676e59c2&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2ftopstories%2findia-strongly-positioned-as-the-next-global-platform-for-consumer-technology-nothing-co-founder%2far-AA1XOtsQ&c=9634019043024314443&mkt=en-in",
+      "published_at": "Mon, 09 Mar 2026 04:07:00 GMT",
+      "published_ts": 1773029220.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated",
+      "company_name": "VIKRAM SOLAR LIMITED",
+      "sector": "Technology",
+      "industry": "Solar"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Vikram Solar Wins 378.75 MW INGEL Module Order - Construction World",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNYlExSzNDN0FCcGUwNTJuQXh6S09EdEF0LU9OUHNEVmt6SXRGcmNScVRFbUZOaThWb1BxNTZMb2psQmhDLVlCcVpObUlURjFCekxac2lwaXVTSFVKaWcwRFRpTkxIb3d4Q0huMXJqNktPSGVWNVZwdUVyakVveG1RSS1kT08yMnJUVnpJVDdoUEV4YnEydnZuanF3Y3ZYTlZIWVp4T2NCdFNUS0tUaWJ4Z0lqZmc2RXNLcy1FYjExZXFSdkJ2Nl9MUFJDOWRpN3M?oc=5",
+      "published_at": "Wed, 04 Mar 2026 16:23:51 GMT",
+      "published_ts": 1772641431.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "VIKRAM SOLAR LIMITED",
+      "sector": "Technology",
+      "industry": "Solar"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Vikram Solar Bags 378.75 MW High-Efficiency Module Order From INGEL For Gujarat Solar Project - Free Press Journal",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNUE91Ry1EcUI5ZDZpUDJjeEctSmRZQnZUOWR3b2pKa2QxU3poZ3k5VE5hU3RPcUYtWWIzS0VoaGFOd3B4R3dXTnhoUWpidTJNZWIwS05DNDdVdEtMdVB1UWhHMm9RbUdtV0NKZ0VremdKVklBQXNwUWdtQVBPaVZDNmRJcFlOa1dCM0s0eUpkNWJPSHN5YjdBRUV5NlNxZjBnUjJQZml3Q3lvT3FBU2VMWVdMQjdnNFV4TlgzdlhuTkJsZmw5SnU1czc4djQ3Z9IB0wFBVV95cUxQWUhkYWtiLUdWYVg2TDU0V3d4UDNPRU16YW5wbTZCbGVaZU5pZ3NQYXE3a3RzcEpjVmZ5OF9iRlh0RjZuV2M5cFphb2QyZFEtRlJvNF9FNmZvSzFKQkxSbkIxUkRITmZQQlJpRi1ZbFhNQk0xejRpZ3NOWWJWSkV4MlVwNXJyQXhTSmZOc1lmbnU3SlpiUV83OVprSTcwaXllcnN1WFdpSDB5ejJ6Sng1UDNlSkhUMzNsd3NLVDVOOXB3a3h6U043LUJWSnJRdS1fbEFF?oc=5",
+      "published_at": "Wed, 25 Feb 2026 08:00:00 GMT",
+      "published_ts": 1772006400.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "VIKRAM SOLAR LIMITED",
+      "sector": "Technology",
+      "industry": "Solar"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Vikram Solar and 2 Other Stocks in Focus After Receiving New Orders - Trade Brains",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNRWJvX1M2eUlCa2F2cnBTVHZtOEdJcm1hb19NM0ZtUk16eUtKaWFFbTV5UGJHVDItZFNYMkFtYmtFaHZCZmthNEtCVklUQ2ljbThJdEw5NkxQTERpbE1qQ2N1cEZpUGdzZkN5aFBpVzRadWYtTWVUVUs0VVdYcENLUDRSeGxjQ0VXQWQ0VTI2V3FzRnJ4Umc?oc=5",
+      "published_at": "Wed, 25 Feb 2026 08:00:00 GMT",
+      "published_ts": 1772006400.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "VIKRAM SOLAR LIMITED",
+      "sector": "Technology",
+      "industry": "Solar"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Waaree Energies crashes 14%, Vikram Solar slides over 7.5% as 126% solar import duties by US spook investors; key details - Upstox",
+      "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxNa3hQZXJKR1VMbEJVSTlJVjRzXzBwX2s0WS1LMnFKT1RPQVBhUkJ5bV9uUjdySXhJc05Rdnk2eTJjcnk4SGZxTmhIeldNOHVWTFFDaVpldm83MVp6em9aZjE1SXR3QUdNdzVZWEtUQm9vbUdacXFDNjZnSEEtV082WG5yRUN1X212Vjl0LTRpMDFfaTFkMnk4RWRlYVlBbk5VMlQ1dHN6b0hrUU80REhkWEtlV1oyeUhfenBlVEM1QUgyMGRnVDhQZVpuQ29jNHhxQnllZnhKT3d2bzRRSTVGMHF3ZTVqYlBNSmUtYnl4UWRObEFmWlFFUndWaW5EWVE2NTRtcnduOW0zOW50aFJzbXNTOFNMeTNiNTV0d0Fad0NEUQ?oc=5",
+      "published_at": "Tue, 24 Feb 2026 08:00:00 GMT",
+      "published_ts": 1771920000.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "VIKRAM SOLAR LIMITED",
+      "sector": "Technology",
+      "industry": "Solar"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Vikram Solar Signs ₹2,000 Crore Deal With Jupiter International For 2 GW ALMM-Compliant Solar Cells - SolarQuarter",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNZlhOeEhyS3d4emJWSHVYNllMbnd0ZHlTWWlydGdJS3FUSWNBaV9Ubzd5V0ZOUjQ1UmhSQzlSMFNLMzlIRERPb0MwaXpNaG5ETTRvdkUzWm5GQ2pQYnZpT0lHanlndDhyOUNqUDhCSHlzak54d0xaaUhxOHQ5WTFZSWxhb2hIYXBEQmVQeUY2cGdCeGs5WloxeE5PSThLd2dEdXBvakJpMFRSRUJ5WHRHQWo1c2pqeFJMV0lqLTl0dGhNbmU3ZHZISHZkQ1lybFZxUjE2VTNYNGRuZWM?oc=5",
+      "published_at": "Mon, 23 Feb 2026 08:00:00 GMT",
+      "published_ts": 1771833600.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "VIKRAM SOLAR LIMITED",
+      "sector": "Technology",
+      "industry": "Solar"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Vikram Solar share price falls 5%: Two reasons why the stock is in focus on Monday, February 23 - Upstox",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNaC0xWDRYQzNRNWJwMi1DbTl6MzFuOFBLTFBfTWMzNFdIcHdKS1BqcXhfa2FleHRJeEt1OTZsa29wMHNISFlMMXRFbFlLdEZHdnNLOUhvOEY1MS1zbW5acDFWa0RmYkM1Qnh5b3dPS1ZqSUJkZUppV1Byek5RalFBM0xBMVFCbkhDTXJXTEpCbVZCZEI3VEdYYWNLQjN6LU51Wjhuc3lhalY5b3RGb01aUnJ5ellIQlZUX3ozQUFLN1RSRFJWXzZQLTYtSGs2TXp4dFBrdlFGN1lXVW8?oc=5",
+      "published_at": "Sun, 22 Feb 2026 08:00:00 GMT",
+      "published_ts": 1771747200.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "VIKRAM SOLAR LIMITED",
+      "sector": "Technology",
+      "industry": "Solar"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Vikram Solar and 4 other stocks with EBITDA Growth of up to 308% to keep an eye on - Trade Brains",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQ0x2RFhSbkVqN3d3dkM3dXJkV0JWRk9CUFBqWVhXbU9hOWdvR3p4cXNIZlZmMW9SSHVheXNGem1DQjVjMFBKTDg2bG9malY1UV81TE0xS3ZLTFhUR1JCV2JUd1B2WmstckNRSXRjRWY3UGZoX2lQUlJHdU1PdlpoOXlJUl9HZmM3STNmeTh3STgwbFZsVXh4X09lMXZfR0RaMnJPM0wxNUk?oc=5",
+      "published_at": "Fri, 20 Feb 2026 08:00:00 GMT",
+      "published_ts": 1771574400.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "VIKRAM SOLAR LIMITED",
+      "sector": "Technology",
+      "industry": "Solar"
+    }
+  ],
+  "top_macro_news": [
+    {
+      "source": "google_rss_macro",
+      "title": "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRVNOajVzSUJWU3Q5R2toMjVnZVZMNDhLclozWDdNODc1OU1qbVFjYnFTT0Z1SUZaaExuY3FJajFkdWtOWk5kdWplT0J0Yk9RcnlDVnlvQmJZNC1jVDVHZmRhS0Z0X0JiXzFETHRnaUVac1pEMmZfWE9raXFacFpwR1dSaEVST0Ntc2k1czN4emNQVFlWSHE3V1ZhMW80OUFMYmN6dEwtTkRadm44enc?oc=5",
+      "published_at": "Fri, 13 Mar 2026 15:17:26 GMT",
+      "published_ts": 1773415046.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b496280daa4245973989eb39f70a5d&url=https%3a%2f%2fwww.livemint.com%2fmarket%2fstock-market-news%2fus-china-power-shift-global-markets-india-outlook-mirae-asset-swarup-mohanty-11773376870759.html&c=15555016077234823276&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 14:15:00 GMT",
+      "published_ts": 1773411300.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Fed to delay rate cuts as war clouds the outlook",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b496281f32468aaf73328e3b83653f&url=https%3a%2f%2fthink.ing.com%2farticles%2ffed-to-delay-rate-cuts-as-war-clouds-the-outlook%2f&c=127436243108543137&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 13:40:00 GMT",
+      "published_ts": 1773409200.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss_macro",
+      "title": "Bitcoin holds above $71,000, defying rising dollar, oil and U.S. bond yields - CoinDesk",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbHB1NE1GZ1dLTWpvOWNseW5QXy1jbWVHcTYzcXF6NWotU0NHOG1XNEUzcDd0ZTctMW1URXZzSW5RQ1djc1h3a0xOM0k2Tkd5TjRWcE0wUXRwZjg4WktmZ2xDWnpLa0RhR1BsRzlrZlVlVzhONmQ0eW51VXJIWFQ3NFJkd0VXZ2VsUnY4VTBuWjU5LXpxX1BPYUIyaEZKQVdEWUU3a25CY0RvN3NrVW10cFNUTWtxSHdhSWI4?oc=5",
+      "published_at": "Fri, 13 Mar 2026 09:34:10 GMT",
+      "published_ts": 1773394450.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Gold Silver Rate Today Live Updates (13 March 2026): Gold, silver futures fall on MCX as rising crude oil prices dim hopes of early rate cuts",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b496280e5943b99f32515c65c7336f&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2flive-blog%2fgold-rate-silver-price-today-live-updates-mcx-gold-18k-22k-24k-rate-iran-isreal-us-war-latest-news%2fliveblog%2f129534056.cms&c=4108291931945502437&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 06:00:00 GMT",
+      "published_ts": 1773381600.0,
+      "sentiment_score": -1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Markets Today: Sensex Declines 830 Points, Nifty Slips Below 23,650 Amid Iran-US-Israel War",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b496280daa4245973989eb39f70a5d&url=https%3a%2f%2fwww.news18.com%2fbusiness%2fmarkets%2fmarkets-today-sensex-falls-1000-points-in-opening-trade-nifty-below-23600-as-oil-surges-past-100-9956009.html&c=7425380694736114227&mkt=en-in",
+      "published_at": "Thu, 12 Mar 2026 03:39:00 GMT",
+      "published_ts": 1773286740.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Share markets continue to bleed as West Asia tensions dampen sentiment, Sensex over 800 points down",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b496280daa4245973989eb39f70a5d&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fmarkets%2fshare-markets-continue-to-bleed-as-west-asia-tensions-dampen-sentiment-sensex-over-800-points-down%2far-AA1Yt9yX&c=14300386732484515462&mkt=en-in",
+      "published_at": "Thu, 12 Mar 2026 03:04:15 GMT",
+      "published_ts": 1773284655.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Trading Day: Oil and yields up, up, and away",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b496280e5943b99f32515c65c7336f&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2ftrading-day-oil-and-yields-up-up-and-away%2far-AA1YqbzQ&c=11227118164045986945&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 14:08:08 GMT",
+      "published_ts": 1773238088.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss_macro",
+      "title": "Markets Confront the Economic Impact of the Iran Conflict - Natixis CIB | Natixis Corporate & Investment Banking",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOVpkVlFlOG1lbEdUZEM2VU40clhkdUtsN3l6Z3Rkd2g4WTBNMVNKSFBmMmkyT1M0RGwtZGJxN1ItZVVrMEU3UnVfWFJ6UmpZUVppV09ZelhMWHNvZmhtbFk3ajc0UnlpY0dZeW51MGJnSUU3dGhYRGFQaE44NjJVaFFBVWFyVlNhampDdXFic0dCZXZ3YW5ScWUtWQ?oc=5",
+      "published_at": "Wed, 11 Mar 2026 10:55:26 GMT",
+      "published_ts": 1773226526.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "S&P 500 Faces Valuation Pressure as Oil and Yields Rise Together",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b496280e5943b99f32515c65c7336f&url=https%3a%2f%2fwww.investing.com%2fanalysis%2fsp-500-faces-valuation-pressure-as-oil-and-yields-rise-together-200676476&c=11959585435036819535&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 10:53:00 GMT",
+      "published_ts": 1773226380.0,
+      "sentiment_score": -1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    }
+  ],
+  "chart_path": "reports/VIKRAMSOLR_NS_20260313_225701_trend.png",
+  "long_term_chart_path": "reports/VIKRAMSOLR_NS_20260313_225701_long_term.png",
+  "rich_report": "Indian Swing Trading Multi-Agent Report\nIndicator Signal: BUY | Trend: close=184.78, SMA20=191.79, SMA50=209.07. Momentum: MACD=-10.431, Signal=-11.586, Hist=1.155, ROC10=5.48%. Oscillators: RSI14=35.5, StochK/D=53.0/41.1, Williams%R=-47.0. Risk: ATR14=12.46, Volume=4584303 vs VolSMA20=4148937. Momentum Score=53.9/100 | MA=Sell, Trend=Falling, RSI=Near oversold, MACD=Bullish.\nPattern Signal: NO_TRADE | setup=sideways compression (wait for breakout candle), slope=2.0531, breakout_up=False, breakdown=False, bull_engulf=False, bear_engulf=False.\nTrend Signal: SELL | setup=downtrend with bounce near resistance, support slope=-1.356, resistance slope=-1.350, price position=1.53 in channel.\nNews Signal: NO_TRADE | combined sentiment=0.02 (stock=0.00, industry=0.13, macro=-0.08). Stock articles=3 (trusted=0, unrated=3); Industry articles=30 (trusted=0); Macro articles=30 (trusted=0). Sentiment strength=0.13. Inference=Evidence is mixed and lacks actionable company-specific catalysts. While the broader Indian solar sector shows growth potential and policy support, recent reports on Vikram Solar highlight stable debt management rather than aggressive growth. Without clear positive momentum or concrete fundamental triggers specific to the ticker, there is insufficient evidence to justify a directional trade..\nMarket Sentiment: SELL | NIFTY 5D=-2.31%, 10D=-3.42%, 20D=-3.87%, SMA20 gap=-2.4% (below). India VIX=181.30999755859375, 5D chg=+7.2, news sentiment=0.02. Votes: bull=1, bear=4.\nRelative Strength: BUY | stock 10-bar return=11.10%, NIFTY=-2.87%, alpha=13.97%.\nUS Trend Signal: SELL | Global risk-off backdrop. SPX 5D/20D=-2.31%/-3.87%, NDX 5D/20D=4.12%/-22.78%, VIX=6632.19, DXY 5D=14.91%.\nFinancials Signal: NO_TRADE | Fundamentals mixed/neutral. Coverage=54%. ROE=11.26%, Margin=4.08%, RevGrowth=N/A, EarnGrowth=N/A, D/E=0.219, CurrentRatio=N/A, PE=46.981. Quarterly trends: RevQoQ=-7.34%, NIQoQ=8.31%, OCFQoQ=N/A, DebtQoQ=N/A, FCF=N/A, Cash/Debt=0.144. Analyst target=N/A (N/A upside, ? analysts). 52w Hi/Lo=407.950/162.100, position=7.81%.\nMarket Setup Signal: NO_TRADE | Range negotiation. Tape read: 5d=+8.1%, 20d=-21.8%, volume ratio=1.01, momentum=53.9. Support gap=14.0% and resistance gap=18.9%. Trader read: The stock is in a clear structural downtrend with prices below the SMA20 and SMA50. While recent momentum shows a minor MACD crossover and a bounce, it is insufficient to overcome the bearish trend regime. Price remains stuck in compression with no clear breakout catalyst, making the current risk-reward profile unattractive.\nCatalyst Context Signal: NO_TRADE | Deteriorating backdrop. Backdrop read: news sentiment=0.02, analyst upside=None, 52w position=7.8. Core read: Vikram Solar exhibits conflicting signals. While it trades near 52-week lows, suggesting a potential value entry, the company suffers from contracting quarterly revenue and relatively thin profit margins. The absence of clear analyst coverage and missing key liquidity metrics creates an uncertainty profile that fails to meet the threshold for a high-conviction directional trade.\nTrader Intel: NO_TRADE | Wait for structural reversal | Dead-money consolidation avoidance. Thesis: VIKRAMSOLR is stuck in a classic bottoming grind with no institutional sponsorship or fundamental spark. While it sits near its 52-week lows, attempting to catch a falling knife without a breakout catalyst or volume expansion is poor risk management. The stock needs to build a higher base to prove the selling pressure is exhausted. Why now: The stock is mid-range with no clear direction, making it a trap for capital that could be deployed in stronger momentum names. Why not now: The lack of analyst coverage, contracting revenue, and bearish trend alignment make this a low-conviction play that doesn't meet professional trade standards.\nMaster Confluence Committee: BUY=0.151, SELL=0.205, NO_TRADE=0.284. Final=NO_TRADE, confidence=0.472. Support=['pattern', 'news', 'financials', 'market_setup', 'catalyst_context']; Opposing=['technical', 'trend', 'market_sentiment', 'relative_strength', 'us_trend']; Neutral=['pattern', 'news', 'financials', 'market_setup', 'catalyst_context'].\nRisk Plan: size=0 shares, ATR=12.46, stop=N/A, target=N/A.\n**FINAL CONCLUSION**\n- Signal: NO_TRADE\n- Confidence: 0.450\n- Action Bias: Wait / no-trade setup\n- Playbook: Dead-money consolidation avoidance\n- Thesis: VIKRAMSOLR is stuck in a classic bottoming grind with no institutional sponsorship or fundamental spark. While it sits near its 52-week lows, attempting to catch a falling knife without a breakout catalyst or volume expansion is poor risk management. The stock needs to build a higher base to prove the selling pressure is exhausted.\n- When to Act: Wait for a clean breakout above the 200-level with a significant volume surge\n- Execution Style: Observation only\n- Invalidation: New 52-week lows would negate any recovery thesis\n- Expected Holding Duration: 2-6 weeks\n- Context: downtrend with bounce near resistance\n- Risk Flag: Structural downtrend with thin liquidity\n- Stop-loss: N/A\n- Targets: N/A\n- 52w Range: ₹162.10 – ₹407.95\n\nDetailed Agent Reasoning:\n- technical: Signal is BUY with 57.7% confidence. Price at 184.78 remains below SMA20 (191.79) and SMA50 (209.07), reflecting a persistent downtrend. However, positive MACD histogram (1.155) and ROC10 (5.48%) indicate short-term bullish momentum. RSI14 at 35.5 nears oversold territory, suggesting potential exhaustion of recent selling pressure. Volume of 4.58M exceeds the 20-day average of 4.15M, providing modest confirmation for the current bounce.\n- pattern: Signal is NO_TRADE. Price action is currently in sideways compression. Slope is 2.05, indicating a lack of directional conviction. There are no confirming breakout, breakdown, or engulfing patterns identified. The setup remains range-bound, necessitating a confirmed expansion move before initiating a technical trade.\n- trend: Signal is SELL with 77.2% confidence. The structural trend is a established downtrend characterized by a negative slope of -1.353. Price is currently positioned at 1.528 within the channel, indicating a bounce toward resistance levels. Given the consistent downward trajectory of both support and resistance lines, current price action is viewed as a corrective rally within a larger bearish structure.\n- news: Signal is NO_TRADE. Aggregate sentiment score is neutral at 0.02, reflecting an absence of actionable catalysts. While broader Indian solar industry sentiment is slightly positive (0.13), macro headwinds (-0.08) and a lack of company-specific news create a data void. Vikram Solar's current status shows stable debt management but lacks the aggressive growth narrative or specific fundamental triggers required to shift the bias from neutral.\n- market_sentiment: Sentiment is neutral with a low confidence interval due to conflicting signals. Market participants appear to be in a holding pattern, as evidenced by the lack of clear directional conviction in recent price action and the scarcity of high-conviction news. The combination of oversold technicals and a bearish trend keeps sentiment cautious.\n- relative_strength: Relative strength appears weak as the asset continues to trade below its short-term and medium-term moving averages. The price has failed to breach key resistance levels, confirming its lagging status within the broader index context. Downward trend slopes further reinforce its underperformance relative to stable or bullish sector peers.\n- us_trend: Not applicable as the asset, Vikram Solar Limited (VIKRAMSOLR.NS), operates primarily within the Indian market. Broader macro factors influencing the sector are monitored, but there is no direct correlation to US-specific ticker trends.\n- financials: Data is insufficient to generate a comprehensive financial score. However, current reports highlight stable debt management within the company's operations. The lack of detailed quarterly growth metrics or margin expansion data prevents a high-conviction fundamental rating at this time.\n- market_setup: The market setup is currently in a state of consolidation following a prolonged downtrend. The compression pattern suggests a potential breakout or breakdown is imminent, but currently, the setup lacks a trigger. The proximity to support levels (170.09) and resistance (179.7) defines the current trading range for future volatility expectations.\n- catalyst_context: The primary catalyst context is the absence of material company-specific news. Future price discovery will likely depend on sector-wide policy updates or specific Vikram Solar project announcements. Current technical and trend signals are struggling to find a fundamental anchor, reinforcing the wait-and-see approach.\n- confluence: Confluence is weak. While technical indicators suggest a short-term oversold bounce (RSI, MACD), these are contradicted by the structural downtrend (SMA alignment, channel slope). The pattern analysis identifies only sideways compression, and news sentiment is neutral, leading to a fragmented picture that does not support a high-conviction trade.\n- risk: Risk is elevated due to the conflict between short-term momentum and long-term downtrend. Volatility, proxied by an ATR of 12.46, is significant relative to the price. The primary risk is a potential breakdown below the support level of 170.09, which could lead to further liquidation, countered by the risk of missing a trend reversal if the price breaks above resistance.\n\nGemini Master Reasoning:\nSetup\nVIKRAMSOLR is currently trapped in a structural downtrend, trading well below its 20-day and 50-day moving averages. The price action is defined by a low-conviction base-building phase near 52-week lows (162.10). We are observing sideways compression, which is often a precursor to further liquidation if support fails or a slow bleed if institutional participation remains absent.\n\nCatalyst\nThe fundamental backdrop is deteriorating. We are seeing contracting quarterly revenue (-7.3% QoQ) and thin profit margins, with no material news or institutional research to serve as a price-discovery engine. The lack of corporate tailwinds leaves the stock vulnerable to broader market volatility, especially as the NIFTY and global risk sentiment currently favor a defensive posture.\n\nFriction\nThe primary friction is the lack of institutional sponsorship. While the stock has shown a minor momentum flicker, the technical setup is conflicting: the trend is bearish, liquidity is thin, and the stock is hovering in a \"no-man's-land\" where it is too extended for a breakdown short and too weak for a reversal long. Attempting to catch this bottom is essentially gambling on sentiment in a vacuum.\n\nExecution Plan\nExecution style is observation only. My capital is better allocated to names showing relative strength and clear trend alignment.\n- Action: No trade.\n- Invalidation: A breach of the 162.10 level (52-week low) confirms the bearish path.\n- Trigger: If the stock builds a base and prints a clean breakout above 200.00 accompanied by a decisive, multi-day surge in volume, I will re-evaluate for a momentum long. Until that technical clearance occurs, I remain on the sidelines.\n\nVerdict\nNo-trade. The risk-reward profile is unattractive. There is no edge here, only the noise of a dead-money consolidation. Patience is the only viable position.\n\nLLM Token Usage:\n- Input tokens: 14833\n- Output tokens: 2139\n- Total tokens: 16972\n- Estimated cost (USD): 0.0\n\nLONG-TERM OUTLOOK (Based on News, Financials, and Price Data)\n- Stance: LONG_TERM_BEARISH\n- Confidence: 0.750\n- Sector: Unknown\n- Data coverage: 136 daily bars for long-term model.\n- Price trend (1Y/3Y/5Y/10Y): N/A% / N/A% / N/A% / N/A%.\n- Long-run quality: CAGR(3Y)=N/A%, CAGR(5Y)=N/A%, CAGR(10Y)=N/A%,\n  Max Drawdown(5Y)=-56.24603726657234%, Vol=47.876484635668284%.\n- Structural trend: price vs 200DMA=N/A%.\n- Note: N/A metrics indicate insufficient history for that exact horizon, not an implied negative value.\n- News signal: avg sentiment=0.02 across stock/industry/macro streams (3/12/10 items).\n- Fundamental location: 52w position=7.8%, 1Y return=N/A%.\n- Street context: analyst upside=N/A% from N/A analysts.\n- Macro overlay: India sentiment=SELL, US trend=SELL.\n\n--- VALUATION SNAPSHOT ---\n- P/E (trailing): 46.98\n- PEG ratio: N/A\n- Price/Book: 5.29\n- ROE: 11.3%\n- Debt/Equity: 0.22\n- EV/EBITDA: 5.46\n- EV/Revenue: 1.11\n- Book value per share: 34.28\n- Enterprise value: N/A\n- Gross margins: 24.6%\n- Operating margins: 10.4%\n- EBITDA margins: N/A\n- Total revenue: 34,234,530,000\n- Total debt: 2,719,360,000\n- Total cash: 391,570,000\n\n--- QUARTERLY FINANCIAL TRENDS ---\n- Revenue QoQ growth: N/A\n- Net income QoQ growth: N/A\n- Operating cash flow QoQ: N/A\n\n--- DIVIDEND & OWNERSHIP ---\n- Dividend yield: N/A\n- Dividend yield trend: N/A\n- Total dividends (1Y): ₹0.00\n- Institutional ownership: 4.9%\n- Major holders (institutions): N/A%\n\n--- SCORING FACTORS ---\n  → news_sentiment: score=+0.02 × weight=1.00\n  ↓ max_drawdown: score=-0.56 × weight=0.50\n  ↓ volatility: score=-0.48 × weight=0.40\n  ↓ 52w_position: score=-0.84 × weight=0.30\n  ↑ operating_margins: score=+0.10 × weight=0.30\n  ↓ us_macro: score=-1.00 × weight=0.35\n  ↓ india_macro: score=-1.00 × weight=0.35\n\n- Composite score: -0.429\n- Secular Growth Forecast: Vikram Solar exhibits poor technical positioning, trading near 52-week lows. Negative macro signals (India/US), high volatility (47%), and low institutional ownership (4.8%) create significant downside risk. 3-5 Year Secular Forecast: While the solar sector has tailwinds, the firm’s lack of earnings visibility and thin margins suggest it will likely underperform as industry consolidation pressures smaller players.\n",
+  "price_52w": {
+    "high": 407.95,
+    "low": 162.1,
+    "current": 181.31,
+    "position_pct": 7.8,
+    "change_1y_pct": null
+  },
+  "analyst_consensus": {
+    "target_price": null,
+    "target_high": null,
+    "target_low": null,
+    "n_analysts": null,
+    "implied_upside_pct": null
+  },
+  "fundamental_signals": [
+    {
+      "type": "mixed",
+      "text": "Near 52-week low (₹162.10–₹181.31) — historically strong demand zone. Deep oversold bounces common, but confirm volume."
+    },
+    {
+      "type": "bearish",
+      "text": "Revenue contracting QoQ (-7.3% last quarter)."
+    }
+  ],
+  "key_price_levels": [
+    {
+      "label": "Resistance 1",
+      "price": 219.7,
+      "type": "resistance"
+    },
+    {
+      "label": "Resistance 2",
+      "price": 243.22,
+      "type": "resistance"
+    },
+    {
+      "label": "Resistance 3",
+      "price": 254.75,
+      "type": "resistance"
+    },
+    {
+      "label": "Current",
+      "price": 184.78,
+      "type": "current"
+    },
+    {
+      "label": "Support",
+      "price": 162.1,
+      "type": "support"
+    }
+  ],
+  "momentum_score": 53.9,
+  "qualitative_labels": {
+    "moving_averages": "Sell",
+    "trend_channel": "Falling",
+    "rsi": "Near oversold",
+    "macd": "Bullish"
+  },
+  "valuation_snapshot": {
+    "pe_trailing": 46.981058729834466,
+    "peg_ratio": null,
+    "ev_to_ebitda": 5.458,
+    "ev_to_revenue": 1.113,
+    "gross_margins": 0.31324,
+    "operating_margins": 0.15225,
+    "ebitda_margins": 0.20382,
+    "book_value": 87.924,
+    "dividend_yield": null,
+    "enterprise_value": 50542477312,
+    "roe": 0.11258634335730831,
+    "debt_to_equity": 0.2189520197038782,
+    "price_to_book": 5.28942560944701,
+    "total_revenue": 45429559296,
+    "total_debt": 2624640000,
+    "total_cash": 17746489344
+  },
+  "master_reasoning": {
+    "model": "gemini-3.1-flash-lite-preview",
+    "text": "Setup\nVIKRAMSOLR is currently trapped in a structural downtrend, trading well below its 20-day and 50-day moving averages. The price action is defined by a low-conviction base-building phase near 52-week lows (162.10). We are observing sideways compression, which is often a precursor to further liquidation if support fails or a slow bleed if institutional participation remains absent.\n\nCatalyst\nThe fundamental backdrop is deteriorating. We are seeing contracting quarterly revenue (-7.3% QoQ) and thin profit margins, with no material news or institutional research to serve as a price-discovery engine. The lack of corporate tailwinds leaves the stock vulnerable to broader market volatility, especially as the NIFTY and global risk sentiment currently favor a defensive posture.\n\nFriction\nThe primary friction is the lack of institutional sponsorship. While the stock has shown a minor momentum flicker, the technical setup is conflicting: the trend is bearish, liquidity is thin, and the stock is hovering in a \"no-man's-land\" where it is too extended for a breakdown short and too weak for a reversal long. Attempting to catch this bottom is essentially gambling on sentiment in a vacuum.\n\nExecution Plan\nExecution style is observation only. My capital is better allocated to names showing relative strength and clear trend alignment.\n- Action: No trade.\n- Invalidation: A breach of the 162.10 level (52-week low) confirms the bearish path.\n- Trigger: If the stock builds a base and prints a clean breakout above 200.00 accompanied by a decisive, multi-day surge in volume, I will re-evaluate for a momentum long. Until that technical clearance occurs, I remain on the sidelines.\n\nVerdict\nNo-trade. The risk-reward profile is unattractive. There is no edge here, only the noise of a dead-money consolidation. Patience is the only viable position."
+  },
+  "llm_usage": {
+    "calls": [
+      {
+        "name": "News Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2417,
+        "output_tokens": 95,
+        "total_tokens": 2512
+      },
+      {
+        "name": "US Trend Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 427,
+        "output_tokens": 104,
+        "total_tokens": 531
+      },
+      {
+        "name": "Market Setup Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2068,
+        "output_tokens": 99,
+        "total_tokens": 2167
+      },
+      {
+        "name": "Catalyst Context Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2316,
+        "output_tokens": 96,
+        "total_tokens": 2412
+      },
+      {
+        "name": "Trader Intel Agent",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1480,
+        "output_tokens": 273,
+        "total_tokens": 1753
+      },
+      {
+        "name": "Batched Agent Reasoning",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1718,
+        "output_tokens": 949,
+        "total_tokens": 2667
+      },
+      {
+        "name": "Long-Term Outlook Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 727,
+        "output_tokens": 113,
+        "total_tokens": 840
+      },
+      {
+        "name": "Master Reasoning",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 3680,
+        "output_tokens": 410,
+        "total_tokens": 4090
+      }
+    ],
+    "llm_enabled": true,
+    "skipped_calls": 0,
+    "error_calls": 0,
+    "total_input_tokens": 14833,
+    "total_output_tokens": 2139,
+    "total_tokens": 16972,
+    "pricing": {
+      "input_cost_per_1m": 0.0,
+      "output_cost_per_1m": 0.0,
+      "estimated_total_cost_usd": 0.0
+    }
+  }
+}

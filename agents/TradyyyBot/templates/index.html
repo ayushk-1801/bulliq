@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>India Swing Trader</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>India Swing Trading Multi-Agent Studio</h1>
+    <p class="sub">NSE-focused swing pipeline with bar agents (Indicator + Pattern + Trend), robust news intelligence, market sentiment, and relative strength confluence.</p>
+
+    {% if error_message %}
+    <section class="panel error-panel">
+      <h2>Request Error</h2>
+      <p>{{ error_message }}</p>
+    </section>
+    {% endif %}
+
+    <section class="panel">
+      <h2>Swing Analysis (Primary Agent Stack)</h2>
+      <p class="hint">Runs quant-style bar agents from your start date to current time capped at 15:30 IST, and saves full report output (chart and agent diagnostics) to <code>reports/</code>.</p>
+      <form method="post" action="/run-analyze">
+        <label>Stock Symbol (e.g. RELIANCE, TCS, INFY)
+          <input name="stock_symbol" required placeholder="RELIANCE" value="{{ form_data.stock_symbol if form_data else '' }}" />
+        </label>
+        <label>Timeframe
+          <select name="timeframe">
+            <option value="1d" {% if form_data and form_data.timeframe == '1d' %}selected{% endif %}>1d</option>
+            <option value="4h" {% if form_data and form_data.timeframe == '4h' %}selected{% endif %}>4h</option>
+            <option value="1h" {% if form_data and form_data.timeframe == '1h' %}selected{% endif %}>1h</option>
+          </select>
+        </label>
+        <label>Start Date/Time (optional)
+          <input name="start_date" placeholder="2026-03-01 09:15" value="{{ form_data.start_date if form_data else '' }}" />
+        </label>
+        <button type="submit">Run Swing Analysis</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

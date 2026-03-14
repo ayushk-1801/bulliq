@@ -1,0 +1,39 @@
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/history.py:173: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  dt_now = pd.Timestamp.utcnow()
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/history.py:173: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  dt_now = pd.Timestamp.utcnow()
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/history.py:173: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  dt_now = pd.Timestamp.utcnow()
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/history.py:173: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  dt_now = pd.Timestamp.utcnow()
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/history.py:173: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  dt_now = pd.Timestamp.utcnow()
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/history.py:173: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  dt_now = pd.Timestamp.utcnow()
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/history.py:173: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  dt_now = pd.Timestamp.utcnow()
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/history.py:173: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  dt_now = pd.Timestamp.utcnow()
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/quote.py:702: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  start = pd.Timestamp.utcnow().floor("D") - datetime.timedelta(days=365 // 2)
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/quote.py:704: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  end = pd.Timestamp.utcnow().ceil("D")
+/home/ironman/Desktop/ESUMMIT/IndiaSwingTrader/swing_pipeline.py:934: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  report_id = f"{symbol.replace('^', '').replace('.', '_')}_{datetime.utcnow().strftime('%Y%m%d_%H%M%S')}"
+
+DEBUG: fetch_financial_statements called for VIKRAMSOLR.NS
+DEBUG: analyze_financials for VIKRAMSOLR.NS
+DEBUG: raw metrics keys: ['market_cap', 'trailing_pe', 'forward_pe', 'price_to_book', 'debt_to_equity', 'return_on_equity', 'profit_margins', 'operating_margins', 'gross_margins', 'ebitda_margins', 'revenue_growth', 'earnings_growth', 'free_cashflow', 'operating_cashflow', 'current_ratio', 'fifty_two_week_high', 'fifty_two_week_low', 'fifty_two_week_change', 'dividend_yield', 'current_price', 'analyst_target_price', 'analyst_target_high', 'analyst_target_low', 'number_of_analyst_opinions', 'trailing_eps', 'forward_eps', 'beta', 'book_value', 'enterprise_value', 'total_revenue', 'total_debt', 'total_cash', 'peg_ratio', 'sector', 'industry', 'company_name']
+DEBUG: ROE in metrics: None
+DEBUG: PE in metrics: None
+DEBUG: Operating Margins in ext_fund: None
+DEBUG: _build_long_term_outlook for VIKRAMSOLR.NS
+DEBUG: fin_metrics keys: ['market_cap', 'trailing_pe', 'forward_pe', 'price_to_book', 'debt_to_equity', 'return_on_equity', 'profit_margins', 'operating_margins', 'gross_margins', 'ebitda_margins', 'revenue_growth', 'earnings_growth', 'free_cashflow', 'operating_cashflow', 'current_ratio', 'fifty_two_week_high', 'fifty_two_week_low', 'fifty_two_week_change', 'dividend_yield', 'current_price', 'analyst_target_price', 'analyst_target_high', 'analyst_target_low', 'number_of_analyst_opinions', 'trailing_eps', 'forward_eps', 'beta', 'book_value', 'enterprise_value', 'total_revenue', 'total_debt', 'total_cash', 'peg_ratio', 'sector', 'industry', 'company_name']
+DEBUG: ext_fund keys: ['symbol', 'dividend_yield', 'dividend_rate', 'ex_dividend_date', 'payout_ratio', 'held_pct_insiders', 'held_pct_institutions', 'book_value', 'price_to_book', 'return_on_equity', 'debt_to_equity', 'profit_margins', 'enterprise_value', 'enterprise_to_revenue', 'enterprise_to_ebitda', 'gross_margins', 'operating_margins', 'ebitda_margins', 'total_revenue', 'total_debt', 'total_cash', 'peg_ratio', 'trailing_pe', 'forward_pe']
+DEBUG: PE in fin_metrics: None
+DEBUG: ROE in fin_metrics: None
+
+Final Signal for VIKRAMSOLR.NS: NO_TRADE
+Confidence: 0.85
+Report saved to: reports/VIKRAMSOLR_NS_20260313_225318.md
+

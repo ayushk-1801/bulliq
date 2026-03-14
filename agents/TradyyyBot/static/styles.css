@@ -1,0 +1,493 @@
+body {
+  margin: 0;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  background: radial-gradient(circle at 20% 10%, #f8f1ff 0%, #eef3ff 40%, #f7fbff 100%);
+  color: #1f2937;
+}
+
+.container {
+  max-width: 900px;
+  margin: 28px auto;
+  padding: 0 16px;
+}
+
+h1 {
+  margin-bottom: 8px;
+  font-size: 2rem;
+}
+
+.sub {
+  color: #475569;
+}
+
+.hint {
+  color: #64748b;
+  margin-top: 0;
+}
+
+.panel {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  margin-top: 16px;
+  box-shadow: 0 8px 24px rgba(23, 37, 84, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.error-panel {
+  border-color: #fca5a5;
+  background: #fff1f2;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #334155;
+}
+
+input, select, button {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  font-size: 0.95rem;
+}
+
+button {
+  margin-top: 14px;
+  background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
+  color: white;
+  border: 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+pre {
+  white-space: pre-wrap;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.report-image {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+}
+
+.news-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.news-list li {
+  margin-bottom: 8px;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.result-body {
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.16), transparent 26%),
+    radial-gradient(circle at top right, rgba(245, 158, 11, 0.16), transparent 24%),
+    linear-gradient(180deg, #09101c 0%, #121827 55%, #0f172a 100%);
+  color: #e5e7eb;
+}
+
+.trader-container {
+  max-width: 1180px;
+  margin: 32px auto 56px;
+}
+
+.back-dark {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.hero-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(260px, 0.9fr);
+  gap: 20px;
+  padding: 24px;
+  border-radius: 24px;
+  background: linear-gradient(145deg, rgba(15, 23, 42, 0.92), rgba(17, 24, 39, 0.84));
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  box-shadow: 0 28px 70px rgba(2, 8, 23, 0.45);
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: #93c5fd;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.hero-panel h1 {
+  margin: 0;
+  font-size: 2.7rem;
+  color: #f8fafc;
+}
+
+.hero-price {
+  margin: 10px 0 16px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.hero-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.meta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(30, 41, 59, 0.88);
+  color: #cbd5e1;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  font-size: 0.84rem;
+}
+
+.thesis-strip {
+  margin-top: 18px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: linear-gradient(90deg, rgba(30, 64, 175, 0.34), rgba(59, 130, 246, 0.16));
+  border: 1px solid rgba(96, 165, 250, 0.24);
+  color: #dbeafe;
+}
+
+.thesis-strip strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.verdict-card {
+  padding: 20px;
+  border-radius: 22px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  background: rgba(15, 23, 42, 0.85);
+  align-self: start;
+}
+
+.signal-buy {
+  background: linear-gradient(160deg, rgba(20, 83, 45, 0.9), rgba(22, 101, 52, 0.78));
+}
+
+.signal-sell {
+  background: linear-gradient(160deg, rgba(127, 29, 29, 0.92), rgba(153, 27, 27, 0.76));
+}
+
+.signal-no-trade {
+  background: linear-gradient(160deg, rgba(113, 63, 18, 0.92), rgba(120, 53, 15, 0.76));
+}
+
+.verdict-kicker {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.verdict-card h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.verdict-signal {
+  margin: 8px 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.verdict-sub {
+  margin: 0 0 16px;
+  color: rgba(255, 255, 255, 0.86);
+  line-height: 1.5;
+}
+
+.verdict-stat {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.metric-grid,
+.dual-grid,
+.triple-grid {
+  display: grid;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.metric-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.dual-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.triple-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.metric-card,
+.trader-panel,
+.execution-panel {
+  background: rgba(15, 23, 42, 0.82);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  box-shadow: 0 18px 48px rgba(2, 8, 23, 0.28);
+}
+
+.metric-card {
+  border-radius: 18px;
+  padding: 16px;
+}
+
+.metric-label,
+.exec-label,
+.panel-title,
+.metric-note,
+.mini-metrics span,
+.signal-list span,
+.news-source {
+  color: #94a3b8;
+}
+
+.metric-value {
+  margin: 8px 0 4px;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.metric-note {
+  margin: 0;
+  font-size: 0.88rem;
+}
+
+.panel.trader-panel,
+.execution-panel {
+  border-radius: 20px;
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.section-head h2,
+.trader-panel h2,
+.execution-panel h2 {
+  margin: 0 0 10px;
+  color: #f8fafc;
+}
+
+.pill {
+  display: inline-flex;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.pill-buy {
+  background: rgba(22, 163, 74, 0.18);
+  color: #86efac;
+}
+
+.pill-sell {
+  background: rgba(239, 68, 68, 0.18);
+  color: #fca5a5;
+}
+
+.pill-neutral {
+  background: rgba(245, 158, 11, 0.18);
+  color: #fcd34d;
+}
+
+.panel-title {
+  margin: 4px 0 8px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #e2e8f0;
+}
+
+.panel-copy,
+.exec-copy,
+.news-list li,
+.signal-bullet,
+.trade-line,
+.saved-files-panel p {
+  color: #dbe4f0;
+}
+
+.mini-metrics,
+.signal-list,
+.execution-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.mini-metrics {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 16px;
+}
+
+.mini-metrics div,
+.signal-list div {
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(30, 41, 59, 0.72);
+}
+
+.mini-metrics strong,
+.signal-list strong {
+  display: block;
+  margin-top: 4px;
+  color: #f8fafc;
+}
+
+.execution-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 12px;
+}
+
+.execution-grid > div {
+  padding: 14px;
+  border-radius: 16px;
+  background: rgba(30, 41, 59, 0.72);
+}
+
+.trade-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(148, 163, 184, 0.14);
+}
+
+.levels-table {
+  display: grid;
+  gap: 10px;
+}
+
+.level-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 14px;
+}
+
+.level-resistance {
+  background: rgba(127, 29, 29, 0.4);
+}
+
+.level-support {
+  background: rgba(20, 83, 45, 0.38);
+}
+
+.level-current {
+  background: rgba(120, 53, 15, 0.4);
+}
+
+.level-breakdown {
+  background: rgba(91, 33, 182, 0.28);
+}
+
+.signal-bullets {
+  display: grid;
+  gap: 10px;
+}
+
+.signal-bullet {
+  padding: 12px 14px;
+  border-radius: 14px;
+  border-left: 4px solid transparent;
+  background: rgba(30, 41, 59, 0.68);
+}
+
+.signal-bullish {
+  border-left-color: #22c55e;
+}
+
+.signal-bearish {
+  border-left-color: #ef4444;
+}
+
+.signal-mixed {
+  border-left-color: #f59e0b;
+}
+
+.dark-news-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.dark-news-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+.dark-news-list a {
+  color: #93c5fd;
+}
+
+.news-source {
+  display: inline-block;
+  min-width: 90px;
+  text-transform: uppercase;
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+}
+
+.result-body pre,
+.result-body details {
+  background: rgba(15, 23, 42, 0.76);
+  color: #dbe4f0;
+}
+
+.result-body pre {
+  border-color: rgba(148, 163, 184, 0.16);
+}
+
+.result-body details {
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.usage-strip {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 960px) {
+  .hero-panel,
+  .metric-grid,
+  .dual-grid,
+  .triple-grid,
+  .execution-grid {
+    grid-template-columns: 1fr;
+  }
+}

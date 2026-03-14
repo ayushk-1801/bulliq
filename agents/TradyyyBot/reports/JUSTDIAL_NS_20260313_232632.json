@@ -1,0 +1,1683 @@
+{
+  "report_id": "JUSTDIAL_NS_20260313_232632",
+  "symbol": "JUSTDIAL.NS",
+  "timeframe": "1d",
+  "forecast_bars": 3,
+  "start_timestamp": "2025-11-13 15:30:00",
+  "end_timestamp": "2026-03-13 15:30:00",
+  "final_signal": "NO_TRADE",
+  "confidence": 0.65,
+  "confluence_scores": {
+    "buy": 0.119,
+    "sell": 0.23,
+    "no_trade": 0.288
+  },
+  "risk_plan": {
+    "summary": "Risk Plan: size=0 shares, ATR=20.35, stop=N/A, target=N/A.",
+    "reasoning_prompt": "Risk protocol:\n1) Estimate recent volatility using ATR.\n2) Define one-unit risk from ATR multiple and cap portfolio risk near 1% per trade.\n3) Convert risk budget into position size.\n4) Anchor stop to volatility-adjusted invalidation and target to asymmetric reward.\n5) Force size=0 when final signal is NO_TRADE.",
+    "llm_reasoning": "High risk environment. The stock is in a downtrend with poor liquidity (volume significantly below SMA20). ATR of 20.35 indicates elevated volatility relative to price, suggesting that any attempt to trade the current RSI oversold conditions carries significant risk of further drawdown or extended consolidation.",
+    "position_size": 0,
+    "stop_loss": null,
+    "target": null,
+    "risk_reward": "N/A",
+    "detail": {
+      "capital": 100000.0,
+      "risk_budget": 1000.0,
+      "one_risk": 24.415720040457586,
+      "atr": 20.34643336704799
+    }
+  },
+  "final_conclusion": {
+    "signal": "NO_TRADE",
+    "confidence": 0.65,
+    "when_to_buy": "Wait for a successful retest of 508 with a definitive higher-low structure or a high-volume breakout above the 20-day mean.",
+    "expected_holding_duration": "2-6 weeks",
+    "stop_loss": null,
+    "targets": [],
+    "target": null,
+    "analyst_consensus": {
+      "target_price": null,
+      "target_high": null,
+      "target_low": null,
+      "n_analysts": null,
+      "implied_upside_pct": null
+    },
+    "price_52w": {
+      "high": 1048.9,
+      "low": 508.9,
+      "current": 523.05,
+      "position_pct": 2.6,
+      "change_1y_pct": null
+    },
+    "key_price_levels": [
+      {
+        "label": "Resistance 1",
+        "price": 713.4,
+        "type": "resistance"
+      },
+      {
+        "label": "Resistance 2",
+        "price": 746.88,
+        "type": "resistance"
+      },
+      {
+        "label": "Resistance 3",
+        "price": 759.8,
+        "type": "resistance"
+      },
+      {
+        "label": "Current",
+        "price": 523.05,
+        "type": "current"
+      },
+      {
+        "label": "Support",
+        "price": 508.9,
+        "type": "support"
+      }
+    ],
+    "playbook_title": "Avoid Bottom Fishing Falling Knives",
+    "thesis": "Justdial is currently showing classic signs of a value trap. While it sits at a 52-week support zone around 508, the fundamental erosion—marked by a 26% QoQ net income decline—outweighs the technical oversold status. The lack of institutional sponsorship and clear catalysts means any bounce is likely to be met with aggressive selling from trapped holders.",
+    "execution_style": "Patience and observation",
+    "risk_flag": "High volatility in a structural downtrend; risk of breakdown below 500.",
+    "invalidation": "If the price shreds through the 508 level on high volume, the thesis of 'support' is null and void.",
+    "summary": "**FINAL CONCLUSION**\n- Signal: NO_TRADE\n- Confidence: 0.650\n- Action Bias: Wait / no-trade setup\n- Playbook: Avoid Bottom Fishing Falling Knives\n- Thesis: Justdial is currently showing classic signs of a value trap. While it sits at a 52-week support zone around 508, the fundamental erosion—marked by a 26% QoQ net income decline—outweighs the technical oversold status. The lack of institutional sponsorship and clear catalysts means any bounce is likely to be met with aggressive selling from trapped holders.\n- When to Act: Wait for a successful retest of 508 with a definitive higher-low structure or a high-volume breakout above the 20-day mean.\n- Execution Style: Patience and observation\n- Invalidation: If the price shreds through the 508 level on high volume, the thesis of 'support' is null and void.\n- Expected Holding Duration: 2-6 weeks\n- Context: sideways trend channel\n- Risk Flag: High volatility in a structural downtrend; risk of breakdown below 500.\n- Stop-loss: N/A\n- Targets: N/A\n- 52w Range: ₹508.90 – ₹1048.90"
+  },
+  "long_term_outlook": {
+    "stance": "LONG_TERM_BEARISH",
+    "confidence": 0.85,
+    "score": -0.518,
+    "summary": "LONG-TERM OUTLOOK (Based on News, Financials, and Price Data)\n- Stance: LONG_TERM_BEARISH\n- Confidence: 0.850\n- Sector: Unknown\n- Data coverage: 2717 daily bars for long-term model.\n- Price trend (1Y/3Y/5Y/10Y): -39.43025937273627% / -17.590991376512477% / -18.324489716949% / -37.93533221086102%.\n- Long-run quality: CAGR(3Y)=-6.24562063774341%, CAGR(5Y)=-3.967469847032279%, CAGR(10Y)=-4.65795925929039%,\n  Max Drawdown(5Y)=-80.65711648358149%, Vol=49.172636012222505%.\n- Structural trend: price vs 200DMA=-32.79119715733051%.\n- Note: N/A metrics indicate insufficient history for that exact horizon, not an implied negative value.\n- News signal: avg sentiment=0.13 across stock/industry/macro streams (15/12/10 items).\n- Fundamental location: 52w position=2.6%, 1Y return=-39.43025937273627%.\n- Street context: analyst upside=N/A% from N/A analysts.\n- Macro overlay: India sentiment=SELL, US trend=SELL.\n\n--- VALUATION SNAPSHOT ---\n- P/E (trailing): 7.62\n- PEG ratio: N/A\n- Price/Book: 0.97\n- ROE: 12.7%\n- Debt/Equity: 0.02\n- EV/EBITDA: -3.21\n- EV/Revenue: -0.86\n- Book value per share: 541.54\n- Enterprise value: N/A\n- Gross margins: N/A\n- Operating margins: 25.2%\n- EBITDA margins: N/A\n- Total revenue: 11,419,300,000\n- Total debt: 998,400,000\n- Total cash: 103,000,000\n\n--- QUARTERLY FINANCIAL TRENDS ---\n- Revenue QoQ growth: N/A\n- Net income QoQ growth: N/A\n- Operating cash flow QoQ: N/A\n\n--- DIVIDEND & OWNERSHIP ---\n- Dividend yield: 0.8%\n- Dividend yield trend: N/A\n- Total dividends (1Y): ₹0.00\n- Institutional ownership: 12.3%\n- Major holders (institutions): N/A%\n\n--- SCORING FACTORS ---\n  ↑ news_sentiment: score=+0.13 × weight=1.00\n  ↓ return_1y: score=-0.39 × weight=0.90\n  ↓ return_3y: score=-0.18 × weight=0.80\n  ↓ return_5y: score=-0.18 × weight=0.70\n  ↓ cagr_5y: score=-0.40 × weight=0.90\n  ↓ sma200_position: score=-3.28 × weight=0.50\n  ↓ max_drawdown: score=-0.81 × weight=0.50\n  ↓ volatility: score=-0.49 × weight=0.40\n  ↓ 52w_position: score=-0.95 × weight=0.30\n  ↓ 1y_change: score=-0.39 × weight=0.70\n  → dividend_yield: score=+0.08 × weight=0.40\n  ↓ cagr_10y: score=-0.47 × weight=1.00\n  ↑ operating_margins: score=+0.25 × weight=0.30\n  ↓ us_macro: score=-1.00 × weight=0.35\n  ↓ india_macro: score=-1.00 × weight=0.35\n\n- Composite score: -0.518\n- Secular Growth Forecast: JUSTDIAL exhibits structural decay with a 5Y drawdown of 80% and consistent negative CAGR. Trading 32% below its 200DMA with high volatility and poor institutional interest, the stock lacks a recovery catalyst. 3-5 Year Secular Forecast: Continued margin erosion and loss of market relevance as digital competitors dominate, suggesting long-term capital destruction.\n",
+    "llm_reasoning": "JUSTDIAL exhibits structural decay with a 5Y drawdown of 80% and consistent negative CAGR. Trading 32% below its 200DMA with high volatility and poor institutional interest, the stock lacks a recovery catalyst. 3-5 Year Secular Forecast: Continued margin erosion and loss of market relevance as digital competitors dominate, suggesting long-term capital destruction.",
+    "evidence": {
+      "history_bars": 2717,
+      "history_start": "2015-03-16 00:00:00",
+      "history_end": "2026-03-13 00:00:00",
+      "coverage_ratio": 1.0,
+      "sparse_long_term": false,
+      "fundamentals_sparse": false,
+      "news_avg_sentiment": 0.128,
+      "stock_news_count": 15,
+      "industry_news_count": 12,
+      "macro_news_count": 10,
+      "return_1y_pct": -39.43,
+      "return_3y_pct": -17.59,
+      "return_5y_pct": -18.32,
+      "return_10y_pct": -37.94,
+      "cagr_3y_pct": -6.25,
+      "cagr_5y_pct": -3.97,
+      "cagr_10y_pct": -4.66,
+      "price_vs_sma200_pct": -32.79,
+      "max_drawdown_5y_pct": -80.66,
+      "annualized_volatility_pct": 49.17,
+      "position_52w_pct": 2.6,
+      "change_1y_pct": -39.43025937273627,
+      "analyst_upside_pct": null,
+      "analyst_count": null,
+      "india_sentiment_signal": "SELL",
+      "us_trend_signal": "SELL",
+      "dividend_yield": 0.007647452620882694,
+      "dividend_yield_trend": null,
+      "peg_ratio": null,
+      "operating_margins": 0.25231844333715725,
+      "held_pct_institutions": 0.122729994,
+      "institutions_pct": null,
+      "rev_qoq": null,
+      "ni_qoq": null,
+      "ocf_qoq": null,
+      "sector": "Unknown",
+      "scoring_factors": [
+        [
+          "news_sentiment",
+          0.128,
+          1.0
+        ],
+        [
+          "return_1y",
+          -0.394,
+          0.9
+        ],
+        [
+          "return_3y",
+          -0.176,
+          0.8
+        ],
+        [
+          "return_5y",
+          -0.183,
+          0.7
+        ],
+        [
+          "cagr_5y",
+          -0.397,
+          0.9
+        ],
+        [
+          "sma200_position",
+          -3.279,
+          0.5
+        ],
+        [
+          "max_drawdown",
+          -0.807,
+          0.5
+        ],
+        [
+          "volatility",
+          -0.492,
+          0.4
+        ],
+        [
+          "52w_position",
+          -0.948,
+          0.3
+        ],
+        [
+          "1y_change",
+          -0.394,
+          0.7
+        ],
+        [
+          "dividend_yield",
+          0.076,
+          0.4
+        ],
+        [
+          "cagr_10y",
+          -0.466,
+          1.0
+        ],
+        [
+          "operating_margins",
+          0.252,
+          0.3
+        ],
+        [
+          "us_macro",
+          -1.0,
+          0.35
+        ],
+        [
+          "india_macro",
+          -1.0,
+          0.35
+        ]
+      ]
+    }
+  },
+  "agent_outputs": {
+    "technical": {
+      "signal": "SELL",
+      "confidence": 0.7600000000000001,
+      "summary": "Indicator Signal: SELL | Trend: close=523.05, SMA20=572.80, SMA50=646.90. Momentum: MACD=-37.210, Signal=-36.156, Hist=-1.055, ROC10=-9.56%. Oscillators: RSI14=19.5, StochK/D=13.9/16.7, Williams%R=-86.1. Risk: ATR14=20.35, Volume=151233 vs VolSMA20=260469. Momentum Score=19.6/100 | MA=Sell, Trend=Falling, RSI=Oversold, MACD=Bearish.",
+      "reasoning_prompt": "Indicator reasoning protocol:\n1) Evaluate structural trend using close vs SMA20 and SMA20 vs SMA50.\n2) Validate momentum using MACD line/signal/histogram and ROC10 direction.\n3) Check exhaustion/continuation via RSI, Stochastic crossover, and Williams %R zone.\n4) Confirm participation with volume vs 20-bar average.\n5) Penalize high-volatility regimes with ATR% filters and lower confidence.\n6) If cross-indicator alignment is weak or contradictory, return NO_TRADE.",
+      "llm_reasoning": "Strong SELL signal confirmed by 8 bearish points and zero bullish indicators. Price at 523.05 remains significantly below SMA20 (572.80) and SMA50 (646.90). Momentum is negative with MACD (-37.21) below signal line, and RSI at 19.5 indicates deeply oversold conditions without current reversal confirmation. Volume at 151,233 is notably below the 20-day average of 260,469, signaling weak conviction in the current downward trajectory despite price degradation.",
+      "detail": {
+        "bullish_points": 0,
+        "bearish_points": 8,
+        "delta": -8,
+        "rules": {
+          "trend_alignment": false,
+          "macd_alignment": false,
+          "rsi_bias": "bearish",
+          "stoch_alignment": false,
+          "willr_bias": "bearish",
+          "volume_confirmation": false
+        }
+      },
+      "price_levels": {
+        "levels": [
+          {
+            "label": "Resistance 1",
+            "price": 713.4,
+            "type": "resistance"
+          },
+          {
+            "label": "Resistance 2",
+            "price": 746.88,
+            "type": "resistance"
+          },
+          {
+            "label": "Resistance 3",
+            "price": 759.8,
+            "type": "resistance"
+          },
+          {
+            "label": "Current",
+            "price": 523.05,
+            "type": "current"
+          },
+          {
+            "label": "Support",
+            "price": 508.9,
+            "type": "support"
+          }
+        ],
+        "nearest_resistance": 713.4,
+        "nearest_support": 508.9,
+        "resistance_1": 713.4,
+        "resistance_2": 746.88,
+        "resistance_3": 759.8,
+        "support": 508.9,
+        "breakdown_zone": null
+      },
+      "momentum_score": 19.6,
+      "qualitative_labels": {
+        "moving_averages": "Sell",
+        "trend_channel": "Falling",
+        "rsi": "Oversold",
+        "macd": "Bearish"
+      },
+      "price_range": {
+        "high": 788.9,
+        "low": 508.9,
+        "position_pct": 5.1
+      },
+      "metrics": {
+        "close": 523.0499877929688,
+        "rsi14": 19.520553830975473,
+        "macd": -37.210379444230966,
+        "macd_signal": -36.15587724848298,
+        "macd_hist": -1.054502195747986,
+        "sma20": 572.7999938964844,
+        "sma50": 646.8969970703125,
+        "roc10": -9.561682394287862,
+        "atr14": 20.34643336704799,
+        "stoch_k": 13.934014126135093,
+        "stoch_d": 16.690378917239517,
+        "willr14": -86.0659858738649,
+        "volume": 151233.0,
+        "volume_sma20": 260469.0
+      }
+    },
+    "pattern": {
+      "signal": "NO_TRADE",
+      "confidence": 0.4906896457360256,
+      "summary": "Pattern Signal: NO_TRADE | setup=sideways compression (wait for breakout candle), slope=-2.1224, breakout_up=False, breakdown=False, bull_engulf=False, bear_engulf=False.",
+      "reasoning_prompt": "Pattern reasoning protocol:\n1) Detect breakout/breakdown against prior 12-bar range, not single-candle spikes.\n2) Confirm direction with local slope and bar-structure continuation.\n3) Use engulfing patterns as confirmation, not standalone trigger.\n4) Treat flat-slope compression as NO_TRADE until expansion is confirmed.\n5) Down-rank weak breakouts lacking structure confirmation.",
+      "llm_reasoning": "NO_TRADE status assigned due to sideways compression. Current slope of -2.12 does not meet structural requirements for a clean breakout or breakdown. No bullish or bearish engulfing patterns are present to suggest a shift in price behavior. The setup remains in a wait-and-see phase until a decisive breakout candle clears the existing compression range, as current structure lacks sufficient volatility expansion to warrant a position.",
+      "detail": {
+        "setup": "sideways compression (wait for breakout candle)",
+        "slope": -2.1224265358664782,
+        "breakout_up": false,
+        "breakdown": false,
+        "bullish_engulfing": false,
+        "bearish_engulfing": false,
+        "volatility_proxy": 5.591219071739352
+      }
+    },
+    "trend": {
+      "signal": "NO_TRADE",
+      "confidence": 0.4896125430692499,
+      "summary": "Trend Signal: NO_TRADE | setup=sideways trend channel, support slope=-2.540, resistance slope=-2.457, price position=-2.05 in channel.",
+      "reasoning_prompt": "Trend reasoning protocol:\n1) Fit support and resistance trendlines over the visible swing window.\n2) Estimate channel slope (regime direction) and channel width (trend quality).\n3) Locate current price in channel and prefer pullback entries aligned with slope.\n4) If slope is weak/flat, classify as sideways and favor NO_TRADE.\n5) Avoid chasing signals near channel extremes against risk-reward logic.",
+      "llm_reasoning": "NO_TRADE assigned as price is trapped within a sideways trend channel. While the channel slope averages -2.49, the price position at -2.04 relative to the channel indicates consolidation rather than a clear directional trend. With support at 568.2 and resistance at 590.25, the asset is oscillating without establishing a defined trend path, making it inappropriate for trend-following strategies at this juncture.",
+      "detail": {
+        "setup": "sideways trend channel",
+        "slope_avg": -2.4987,
+        "channel_width": 22.0452,
+        "channel_position": -2.0482
+      },
+      "metrics": {
+        "support_slope": -2.5402384080661835,
+        "resistance_slope": -2.4572497270627935,
+        "channel_position": -2.048,
+        "last_support": 568.2,
+        "last_resistance": 590.25
+      }
+    },
+    "news": {
+      "signal": "BUY",
+      "confidence": 0.55,
+      "summary": "News Signal: BUY | combined sentiment=0.13 (stock=0.16, industry=0.19, macro=-0.09). Stock articles=19 (trusted=0, unrated=19); Industry articles=30 (trusted=0); Macro articles=30 (trusted=0). Sentiment strength=0.19. Inference=Recent news highlights Just Dial as a long-term 'buy' candidate with strong projected upside (15-47%). While macroeconomic sentiment is slightly bearish and historical earnings growth has been modest, the specific inclusion of the stock in positive forward-looking market outlooks provides a sufficient directional edge for a moderate buy signal..",
+      "reasoning_prompt": "News reasoning protocol:\n1) Collect company-specific headlines across multiple providers using diversified queries.\n2) Filter spam/listicle/noise domains and low-relevance stories.\n3) Build a global macro stream (rates, inflation, oil, USD, broad risk sentiment).\n4) Build industry/sector thematic stream (demand cycle, market share, regulation, capacity, pricing).\n5) Weight sentiment by source quality, exponential recency decay, and relevance confidence.\n6) Apply content-similarity dedup to remove near-duplicate headlines.\n7) Use LLM to infer final bias from company + industry + macro evidence and return NO_TRADE under conflict.",
+      "llm_reasoning": "BUY signal based on a combined sentiment score of 0.13. Recent analyst coverage identifies Just Dial as a long-term buy candidate with projected upside between 15% and 47%. Despite slightly bearish macro sentiment (-0.09) and modest historical earnings, the positive industry outlook (0.19 sentiment) and specific long-term growth thesis provide sufficient directional bias to override neutral indicators in the short term.",
+      "detail": {
+        "company_context": {
+          "symbol": "JUSTDIAL.NS",
+          "company_name": "Just Dial Limited",
+          "sector": "Communication Services",
+          "industry": "Internet Content & Information",
+          "business_summary": "Just Dial Limited engages in the search engine business in India. The company offers local search, search related, and software services through various platforms, including internet, mobile internet, over the telephone, and text. The company provides JD app, a one-stop solution offering business discovery services, including user-ratings, location-based search, 360-degree images, movies, news, sports, stocks, and augmented reality-based listing finder; JD ratings tool; JD business app to manage business listings; and JD mart, a B2B marketplace for micro, small, and medium enterprises for thei"
+        },
+        "stock_article_count": 19,
+        "industry_article_count": 30,
+        "macro_article_count": 30,
+        "trusted_count": 0,
+        "trusted_industry_count": 0,
+        "unrated_count": 19,
+        "trusted_macro_count": 0,
+        "industry_avg_sentiment": 0.1913658575763937,
+        "sentiment_strength": 0.1913658575763937,
+        "llm_decision_why": "Recent news highlights Just Dial as a long-term 'buy' candidate with strong projected upside (15-47%). While macroeconomic sentiment is slightly bearish and historical earnings growth has been modest, the specific inclusion of the stock in positive forward-looking market outlooks provides a sufficient directional edge for a moderate buy signal."
+      },
+      "top_news": [
+        {
+          "source": "google_rss",
+          "title": "Stocks to buy in 2025 for long term: Zaggle, JustDial among 5 stocks that could give 15-47% return - The Economic Times",
+          "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxQS2ZpRTNpbUpfcUV0MW5jUjZNY0doRmdGTktyRkcySWM0ckd3YzJnTFc4QkdMb1NMdmowRE93MXJUbVl4RFgteGcxU2oxalZ6QlNCVFRWZ3gtOG9Eb21zUGp6eTBycXBYclBtWEw0TGRUamxuT0V1VFpmbVRWVkxSVVgwX2E3V2pkZWk1Y1loVjNKclB5bmR1XzhaaUZYeTVDMko2V3hxcnNYR0NqMzhsQUhzM0dvRmdFYnZpOEFWS3ZXRnZuVVBpVEYycjhValI3eDJaTktFUmdRNWpqdEJYU1dabENqR3JSOU1zODVHVVByNlZvdmRjbi1Qei03ZklmSm5vRkNKSWMzeDNNLTNYM0Z4NXlwSS1MRDVhYTFB?oc=5",
+          "published_at": "Wed, 15 Oct 2025 07:00:00 GMT",
+          "published_ts": 1760511600.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Sensex, Nifty Poised For A Subdued Opening; HCL Tech, RBL Bank, JustDial, Tata Investments, KEC Stocks Are In Focus - Asianet Newsable",
+          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOTVB6OFZuY2ZqMDAzOVB2NnJLSWJOVVB2OVV1SjJRWkRtNlltdUZFd09VUmRJbHhra1d6TmFDdjFlOHhyb3AzbjQ2ZjRXWjFMbk5jd3ZJRUFsVlp6YUUzeGNnY2lYUnBhbmRWeGFlXzVGOExsUmZzQlRLbEVMbFRrRWhmcXh3VVBEdDVwVjZVUmh1TWxBTEV2MjZDQlNlc2FIemRKdDU4dXVLYV9uVHJqemg4Ukk5ZTlJQ1lRWEUtRU5jYi1OMmtvWkVsakZ0cl93YzZiY2F5V3JCNUIxNWxhX3ZZMjF2THFnS2IxMGtqbFNQU1gwOHpkLVNCOWFpdnPSAYQCQVVfeXFMTVZnSUV2bjRob0pVZFM1Qi1ITWQtRjdUTkF2aEwwV2EtN0V0azRaWXJtRWFJdkJDV3FrWmN6S2huU18yTEZCZ1ViMjRWV3JzNHRhdDBHSk5fUTNlcHNOMm9yaTBiTHgwMFlhNDNWT3BsY0pscGdjVk1HWlpBZVZiZ192Wlh2aTZlNzhuREFybEJfaXk1TmJhbVh3OWsxSUhCQncwZlBnbWVzYkZjc0VTS0ZTeW1OM3dBT2J4VVJMMTJaX19hc2cwRnVyc1pWR1JobDNtZnMzNzBGbHpNRkhqT2NSVm9ra2FGT2RCUkl3NlR4eEw1M2FLOTNvNlZVd2NHLVFaMEw?oc=5",
+          "published_at": "Tue, 14 Oct 2025 07:00:00 GMT",
+          "published_ts": 1760425200.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Eternal, Nazara, Swiggy, JustDial, IndiaMart, Info Edge, Nykaa: Q2 preview - Business Today",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOd3owQ25pVEt0Q3VTTWZFNFZBdG52TGJMY1NOOWlGSl9WTURFUXB5TU45ZHZNYVd1SkxrM0NPSnAxQ0dBeHRaX1k0c2w2Y2MtSWRsd28yaFRINnJwZ01xSHlEQjQ4RXhYM3RQeVlQelBLNDdyYzd3YUpRT2N3eHI0WDBTbkRLdEZiNF9Yd2lRVkVqdS1wN3RkaTN0Z0l0c09NVU1GanJiWHBrWTd6d21IMVRyUllmRHNuTFBTRmtjQkFJN0NTNkVLWUU4a05yNUtF0gHWAUFVX3lxTE1KWTg1aElZcjE0LXdPOVN0eXFRVmZ6OHVYZW9wSWNpQ1c4UG1qQTY5TTBzdzJyNTlLQkxCN05UaEV0QWxtRzQtbkU1UHpKLXI5SW11R1BCUm53NUtGeUM3SXdEdWJjbi1OeTRjWjJyMHdLMlBSTVF5alotOThDd2ZNZkJOQ292aHEwalF6MHNBemxvRFgzRG1CWURHLUVVSGprVElFYXV6UGRoUDV4UUhZVXFGa3UzNzIyd3JHeW5HLTBhRVptZHBwYjJSYUc0ZU1JYjI3UUE?oc=5",
+          "published_at": "Thu, 09 Oct 2025 07:00:00 GMT",
+          "published_ts": 1759993200.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Just Dial's (NSE:JUSTDIAL) five-year earnings growth trails the 19% YoY shareholder returns - simplywall.st",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQNFRlWEdra3cyeTZyR0NPdEdkanZRVEk1UUtBUkh0NVZhbHRfN0pVZlI0cGptZXVha0pqaTlsV0p0YXZkdTVJQ2NVT0hiSExid2dpZEZVSFFKRU1QVzFSeUhkWDRERl9ZLUZ3dktrb3NsSGxicWgybWpqNFZQdTVYYnNfV0ZwNTlUaFdsMmdzQTUyaGJkU0pSbGY3eFg1M0F2WjMwVTRLcUQzYi1icnFlNkx1eXg4UkFzWmlLQ2NZZDJRX0JFdEd4ZmVfeEFvSknSAdQBQVVfeXFMUG5pdE9tUU1adEtKZDBzT3pTTTRWWWNSSHlFQWFfbUhGYncyTEhFa2VYSkcyOFZBTVd2RjYzVWM5dlo0MTExM2VsdjNKTzdqbjdTa3BiRjNIbWFjeU02dTFLTjVsT09QNW1ZMDhfdjMwYW0wX09xSmVsSUVsSWR0d1ZvSlYwYWdFN3BiQVM3dVRpdl9rWnhBSDRkMFBkWmE0N3NlSzNzZ0RDbG5KY1lvODVXbUNhN2otVE9YZm1KV0VOZW1TX0lOSTZvTWU5VlgxRkZWTkU?oc=5",
+          "published_at": "Tue, 01 Jul 2025 07:00:00 GMT",
+          "published_ts": 1751353200.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Benign Growth For Just Dial Limited (NSE:JUSTDIAL) Underpins Its Share Price - simplywall.st",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOY2RWRXhRaGFBWExnZVJocnBHR2doLVlhd1kyRDNJVGI5WTNpVk1Zek04SFgtQW1SbzQ1TDgxTzlNVTZhc2JrYlZVYlBqaWR6TDBrZUVzYkgzeGhGMDE4U1ZFbWs2VUFrTkJ4Q2k2bHpFNVRTdWtodzQxejd2RWVJX3gtNjROMVdFTWNGdW0zdnZMWlk2SmdlUEtKdzlERDlRc1lodmRhVkh4MFlpM3NNWjcxYUJaMDlfazV1am8tNFhuY2dXNDlZQXljT3NXd9IB0wFBVV95cUxQclQxRmJwX0xUS2ljOTlKRnpheUtfaXI5djQ0UWp5Y0FNQmtqbXpkekZsU0I3bmowVWd3NHUxb1hNT1FtbzhvT1VFcFZNSTZTZE1ZNFpla0VkWl9vNnI5UDU0QkwtdVhWVFZ3RTJkSExreWdnd1lnMk5DemVTMTdkV3RqU2tqRC1Oc29pb1dGVjJUTGhoUTZPdlFCWFBkNE50ZWR6bkRld1hyeEJIalhROFlBN2Zpa1g4Z0p1c1U5ZElYR19UdF9qdHNYUjV2SmY2b21Z?oc=5",
+          "published_at": "Wed, 16 Apr 2025 07:00:00 GMT",
+          "published_ts": 1744786800.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Are Just Dial Limited's (NSE:JUSTDIAL) Fundamentals Good Enough to Warrant Buying Given The Stock's Recent Weakness? - simplywall.st",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNdGJvM0Z1Z3J6LWh5a2xsSmVhOFk1dDZDcU9rT1N5OElJVUpKUTJYNVZ3WXRDM3o5UGVfLUkxakN3RHhfNlhBdlBhZUhuQVNqLTRFaVM0YXdUQlFYMGZxRTZ6TDNVMjFvenFHamQtUks4XzhwZ2pUZWVISmdhdjc1TFdXXzFBWm9iZDZ4b1d5T2Q1MHBGbURPRkUtVjE0TzVoQl9WaXU5aHl0NEo4emQ1TVB3QXdzTVJNUFVjcWVDa0NXeEt4M1NINmM1SDPSAdIBQVVfeXFMTmdITllZUVNEUUVCaF9JN2MyZ1RMVTk3NTlZeHI2Nkg5UzhBd2pNbXNMeWtxbXhQOGx2Wjh4bEFiQ0ZZQ3NiU09xS0hQcWNHaE1rZXk1SkY4QjVFMzRNa0ZwRmJBNGRtWmRmVzd6VWRMcUxDMHMzZ3N5RHY4N0dBcS1iMTd1R2NCXzJ4bGlVY0RuWDJfLUNBY3hIQlMxN3dpSEdUUXVCSjZEQVd1TDFRN3oxbVZUa3VSTzZvYTR3WnV2Umw1QkFoN1dNbTl6SHlOVmhB?oc=5",
+          "published_at": "Sat, 15 Mar 2025 07:00:00 GMT",
+          "published_ts": 1742022000.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Justdial Shares Plunge Nearly 9% Post Q3 Results - Inc42",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBZbmJOWWV6dl9qMEFLc0I0ZUs4OWN2N1JnSjZkTkhEOG9RZlVndGhWZHMzZTdFRjF1bnMydXI3eV9EMnE4eGdzMFVwd2pzMFZmcUtvQi1HSUEzVEVmVF9mRTFjemF3dzZVZFNRRDhHYzJqZGljOFJiMWlXSQ?oc=5",
+          "published_at": "Mon, 13 Jan 2025 08:00:00 GMT",
+          "published_ts": 1736755200.0,
+          "sentiment_score": -1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Justdial announces ESOPs for employees - HR Katha",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxON2IwaVVQOExIRTc5aWNYcXczR3ZpU0RrblJqbHotZ0RzYnFGZktmRzRvRC1OU0ZyX0NVRlR6RWtDRHkzQ1daY2g1Z3R4QVY0bldxV0lxRUdfYjM3Skh4YzdLNmFoM0J5N1ZfNlpHankyQ3psSHNBZ2plVkRGQ0pUWVFnRS00em51MXhDMWJsQU5mN2F2?oc=5",
+          "published_at": "Tue, 20 Jun 2023 07:00:00 GMT",
+          "published_ts": 1687244400.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Just Dial Ltd (JUSTDIAL) Share Price - Business Today",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQNkZma1luTjE0bmUwNVZNVjgwOFpDanlZYmJDWFFyeDI2ZkZIV1ZwR3R4ZFpMNTVXRFlHOVRxWFhMU0trX0ZCTS1zQlIxaTV6MjAwVG9jZkptSkQzeHN6dFlJdU1UeGxPR2FnZ2U1R0hJY05TcHI2ZTc2RTNZVXpfT1A2SQ?oc=5",
+          "published_at": "Tue, 24 Jan 2023 02:09:12 GMT",
+          "published_ts": 1674526152.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "JustDial share jumps 15% after brokerage firm upgrades stock despite weak earnings - TechStory",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB2UURCV3RGTUhXMXAyc0NiT2tacE1xQlZwUUtEaTh3Ui1kWmxQdlFGTVh6RldUTWNZclRJWDFkekk5Wkd3TnU5MnlVQ2JKNk1oakpqY0dsM2gwNmlVYjRhRHFwTEZuZw?oc=5",
+          "published_at": "Fri, 21 Jan 2022 08:00:00 GMT",
+          "published_ts": 1642752000.0,
+          "sentiment_score": -1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "JustDial Buyback 2020: The End of Yellowpages? - The Indian Wire",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPNVFlaHpGRndUMVp5a0RVT1Y2MjdhZ0Y0cWFNUnZXc2phNV93R0NYY3MwNGR6cnJkOVlmbElQM3pJVEgxRjFZWGRuZlYtOERWT2tKUVFaVmFEOWhEMUFRbEM2SFRuemhKSWVsbENfMGFDY0Z1R2d1SnRZTS10UFN4bW1uY2xNNS0tNm9feXVjWFBkdWI5RXfSAZYBQVVfeXFMTzVRZWh6RkZ3VDFaeWtEVU9WNjI3YWdGNHFhTVJ2V3NqYTVfd0dDWGNzMDRkenJyZDlZZmxJUDN6SVRIMUYxWVhkbmZWLThEVk9rSlFRWlZhRDloRDFBUWxDNkhUbnpoSkllbGxDXzBhQ2NGdUdndUp0WU0tdFBTeG1tbmNsTTUtLTZvX3l1Y1hQZHViOUV3?oc=5",
+          "published_at": "Mon, 03 Aug 2020 07:00:00 GMT",
+          "published_ts": 1596438000.0,
+          "sentiment_score": 2.4,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "JustDial says report about Google buying it is ‘factually incorrect’ - Scroll.in",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYmdsWWVWbm9HNTRjYzRiYW1NOVFIVE5UMHZrU1lzT3loN3VUTXNXN3A4bmZuWmlJSHRNbVAtLVJ4ekUyMWY2WmNuUlVtTy1lMkxOMnNiQ01vY2QwRmhFQmtmYXR2MjNjSkZ4YU1GRWZFV1dzaUNueVlnWGQ3V3hvVG1uYjhMY3piaEJOZk9HbHE2WW9wUTFYRS1VSdIBogFBVV95cUxOWUpFWnFjZElCajlRMHpneGc3UFE5OThmeW0yUllCZDNkVk1VVWs5RTJZMXdOM09uUVRtNzBGQ1RpNFpYamRWUWl4TWRTYXpIWF9oNWY3V0VJenpCUmVuSmFtS2dOZjVTSlhjOG9POEJpaVBRMzhoYV9uVU1YaERqSmxxMnJfWkhhY0Q4Nmd4MkpIRHUwYjRxNlpCVXJRRDQtUVE?oc=5",
+          "published_at": "Fri, 10 Nov 2017 08:00:00 GMT",
+          "published_ts": 1510300800.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "JustDial: See strong revenue share coming from tier 2 cities: VSS Mani, JustDial - The Economic Times",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNZGppQXZsUnJuazZQbVZSUnhkRVpLTXF0TG1URmtRcl95TFRwczZpNDByVllKQnRNXzBQZnhrT0V0M2VNWlhtTmtCZTRTVFhjS2E3UHhTVERlejRrN2ZIZ01CcUYtS29LQXVhVUtzQmd2Q1dxWUlQTExMU1VPQ2JleTBYN3l2aFNlT2VNajFWM25kUTlTZm9zQUtFdFZmLWhRdmRiMjk5bTFyR3M2WnkxMlhZNnNnandWZENSbTI1Q2RNZklwNzZmQ1N3eW0tb2s5ZVEwdkI2OA?oc=5",
+          "published_at": "Mon, 23 Oct 2017 08:30:57 GMT",
+          "published_ts": 1508747457.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Justdial shares surge nearly 7% on share buyback plan - Mint",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPOTc1eGxvdVBfY1hTcE4xaHZQc2xoSV9UZVNpaFU0NU4wZUJ5Ql9od0FMZG8yMFNtRThsYkdRbFR6YXg0b2RXRUhnUG5JVzluSjM1SDloTGR3NVFvckZIckpXQ2hPRm5HMFNXUm9PeXM2YVN6NDdKMFJQUjU1THk5QW5wV0pYVEJnWmJyd1VlSXRKWkYxRjBtRmVqQnA1Rjg1eUxxbkhhQ0UwQ1dZZ0dmdNIBvgFBVV95cUxPMnRnaHlzYkdEX1djVVA5ZU1RZFVUNU5wLUlFdXFWcDJNaHRBQnlyUmlrR0Z3OUFUdno5N0RQaC1kMEp4Si1LZjRFcEI5MEoyUmVzSkJlTGtYSExNLUhvWDFNbmQ4TGVaNk9RNkU1NG9XVzdiMGQ2RmtfaGIxNUJKQlJEWS1PWGVydTJFcHRVa2VGNFpjR011NXZWcW1wUkJhZ2YzRjZMdE94bmJWTUluQ0pBNnRWNy1GeXk5THF3?oc=5",
+          "published_at": "Thu, 20 Jul 2017 07:00:00 GMT",
+          "published_ts": 1500534000.0,
+          "sentiment_score": 4.9,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Deal Flow – 09/02: SBI Life Insurance exits (Sequoia, Nalanda, Fidelity, SAIF Partners backed) Justdial - Capitalmind",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPVVNrdDBuOVQtcWdvc2ViU1RlS0hUc0k3M2dEQk5uQnBYR25FV1NkWU1TRzZPSzcyVE1tTkJlYW96M0VMTDRyVXdnVWNYMmF6N05lTW5hV1pPamR6bEFHamRQcGpGNVpVRDBpTXF1YXRyUWdXdjQ1dDZ3eUduMFFBTFBOQzZSd2d3VlhaNXo1YVV6UG5PZU9pbndHbEdmRFhCUjZJOEdoeThJblhXeVhpY3UzWk8xMmNYLVdFeVM4RzlEb2sySTlQN1lGRTJOdTg?oc=5",
+          "published_at": "Tue, 09 Feb 2016 08:00:00 GMT",
+          "published_ts": 1455004800.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        }
+      ],
+      "top_industry_news": [
+        {
+          "source": "bing_rss_industry",
+          "title": "India’s GDP growth seen moderating to 7.1% in FY27 amid global uncertainties: Crisil Intelligence",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49d11a7b0476188d4678fb9295afb&url=https%3a%2f%2fwww.firstpost.com%2fbusiness%2findias-gdp-growth-seen-moderating-to-7-1-in-fy27-amid-global-uncertainties-crisil-intelligence-13988672.html&c=12434137724427885284&mkt=en-in",
+          "published_at": "Thu, 12 Mar 2026 10:58:00 GMT",
+          "published_ts": 1773313080.0,
+          "sentiment_score": 1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated",
+          "company_name": "Just Dial Limited",
+          "sector": "Communication Services",
+          "industry": "Internet Content & Information"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Telecommunications Services Market Size, Share & Forecast to 2036 - Fact.MR",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE0wVjZvV0pQWURKdUVQaElLdGhkMms4RzQzTlliZnEzX1ROZlAwR1MyX2tBVUQzNUdfOUpwOFdUX3RrVDAxSUh5LUx2elh3LVItN1FxZUNFb1JQVmxzVUhYRVFBSm1xOUwyTVI1WE1PQ0dZQQ?oc=5",
+          "published_at": "Thu, 12 Mar 2026 08:28:55 GMT",
+          "published_ts": 1773304135.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Just Dial Limited",
+          "sector": "Communication Services",
+          "industry": "Internet Content & Information"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Justdial Helps Delhi MSMEs Generate Business Leads - Passionate In Marketing",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPN1kyVmhrcDhfb0I2VEdGWXkyU1hPVDhBSXMtWTljOUk1ZERSNzJxTTZNZHVIYUEzaXpaN3lwMUk3UTV5NUN6d0pGUllWckFHcVotSE5LbHR2NnhGSXd6WDdiaGZmSDRHUjdZLUd5Q0s2X0llR3JDOGgxbWNzQzJ5aHpOZU9Nem5vekxnZUtsRTNEbEJkMm02ZFhlU25JZw?oc=5",
+          "published_at": "Wed, 11 Mar 2026 15:54:17 GMT",
+          "published_ts": 1773244457.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Just Dial Limited",
+          "sector": "Communication Services",
+          "industry": "Internet Content & Information"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Reliance Group: How Does Justdial Hold Cash Nearly Equal to Its Market Cap? - Trade Brains",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQbjA1a1BkVG9PajVkQmhRUnlWbk5wbGR1VDlNeWZvRDZsYnRROV9JdVVyVGtFejY2bWxDdVh3aEMwelhrN2djOHZRYVgzNS1uQVdYSXlJMk5mNXc4c0xsZXprVU1QWkhDR3duRGpJUDk3dlc4UUNLd3N3ZXBhNjQ2LUgzd2tWVHFPa0NVd1lBQVQyclFkVzhpZWczMWlTZw?oc=5",
+          "published_at": "Tue, 10 Feb 2026 08:00:00 GMT",
+          "published_ts": 1770710400.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Just Dial Limited",
+          "sector": "Communication Services",
+          "industry": "Internet Content & Information"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Oracle Projects $45-50 Billion Fundraising for 2026 Cloud and AI Growth - MLQ.ai",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeWlJZnQwVUNWdXlGdHJEY3JnSXR6ajBZcW15TTVYcEFOQ3Rsc25qLU5sN3ZGODZGVDhYYndEODZOUVlaY0lCNl9PRFl0bFc5ODhQTFRXbXYxaWxtdEFNTXZvNVUtbFFjenF3bjBmVGE0eFV6UjVTeEJEWU1BVWZObGJEY2p3eWhLLXNheW9XeFJZQVQwdXc?oc=5",
+          "published_at": "Mon, 02 Feb 2026 08:00:00 GMT",
+          "published_ts": 1770019200.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Just Dial Limited",
+          "sector": "Communication Services",
+          "industry": "Internet Content & Information"
+        },
+        {
+          "source": "bing_rss_industry",
+          "title": "India's internet user base crosses 950 million in 2025: IAMAI report",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49d0fea4e43d4914089762d476739&url=https%3a%2f%2fbrandequity.economictimes.indiatimes.com%2fnews%2fdigital%2findias-internet-user-base-crosses-950-million-in-2025-iamai-report%2f127794708&c=17812197638863207261&mkt=en-in",
+          "published_at": "Fri, 30 Jan 2026 10:57:00 GMT",
+          "published_ts": 1769770620.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated",
+          "company_name": "Just Dial Limited",
+          "sector": "Communication Services",
+          "industry": "Internet Content & Information"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "India’s 7% growth outlook supports markets, but economists flag fiscal, trade, and currency risks - CNBC TV18",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdDFrYWVqUm1VRGNOZjVydDFOVFp1LUltdGNuSC1mRFowU2lnRlNYRTBXeWV0T3oyS2NqUUdPRUlNSFA0UmNSM2FGaTFpV2RUQTU2UURzUWNqeEVtLXg0Q0hvc1d2NzVURnBTaXFMSE5sNFVwdlZCRG1nQzFPVlNiUk44bng1cGNFeVZCb2lsR1oySnI0NUFNTTE5QlV4czV5NDhCeDdlTXNYbEdLUWFmQXppVDFyRXdsaENV0gHAAUFVX3lxTE5lVTBueHJVNk52a1NLNU05aXljclhSbEtjSG0tSURoT1UzVXNIYkhpNzVjcjFVUUpqbXNvNmdtV2puazZLWlFNZGZKdXctMFFaVVc0OXl1WDJpcHJQT1AxTGZKaTV5b2phYlFwWmVfbnh5Uzg3UzZWVG91aEtUbWVzRTNEdHZucGxMWVFPR21fcW5saktFV2ItOVVoZjd0MTExQ1FTSFdBLWs0ZThRbElDZ0JDc2lkVXRrOFU5OEUwaw?oc=5",
+          "published_at": "Thu, 29 Jan 2026 08:00:00 GMT",
+          "published_ts": 1769673600.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Just Dial Limited",
+          "sector": "Communication Services",
+          "industry": "Internet Content & Information"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "5 Stocks That Reported Over 25% Operating Profit Margin in Q3 To Keep On Your Radar - Trade Brains",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONHZkVzA1dG50NmxubWRXZ05BRlB5VDdDWEtfUlk0ZU1wTnR1MC1vY3dIeEd1MC1PZG9ORUFCbm9uT01Tczl2NHNOaU5Fdk0xanhSdi1QUzdQN0tHaDR1RktTZEtxZ3E2SXZEeGh3WjNSZmhiQ2JWRXlzaFpReUJQRWpXQ1F6ZzJ0Z09mSmgwYU5jRFhYZkdVVnZmNmhGQU8zbTllemdRY2ZMUQ?oc=5",
+          "published_at": "Sat, 17 Jan 2026 08:00:00 GMT",
+          "published_ts": 1768636800.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Just Dial Limited",
+          "sector": "Communication Services",
+          "industry": "Internet Content & Information"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Just Dial Limited Beat Analyst Estimates: See What The Consensus Is Forecasting For Next Year - simplywall.st",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQSVBUUzhtREFfUXo3ZmlRay1RbEx5N083RUFJcjRvS19HTl9Xa2x4TWZmSDFGSS1Qb0pHNlExbk1NOWE3UzdISXZzVGdnUDlaQk4yTUk0Z3VtSXlEMVNUelFqaTRmVUd2Ym1GY3pVbDZRSlBuVW1yQ3I4MGdkVnBjUmNxNGt3U1ZTZ1U3MEt1T0ZRYnlKdVBxTDlCUlZvcjRRNWhQS3NQendpcTFIeWZGVUdhVzdpNjRyU1BRaGcyVUFDb0VPS2xqZlN3TkVkUnNv0gHWAUFVX3lxTE1QZVVrZzBRQmJTbnJMbDMzRHhFUk05bzhPVmtrNFJfZEJiTkZWYXdqU3pCYmtyX0Nmb0k2OWtJUHJMV2x1YkJzUEJtemphTXJwZU1YNDZQOUdyZjJUNmltdklCSHFxT1NFdHpQWmdqRzBVTnVURXdSNE5pTVpPMDREOXNaeFVYMGJOREJWYko2WjcwQjVzcHRUc05TZ2dpdXRCMlJQajhlcTlwZ1VFMENKR3lrSTlTN0NvNE9qMU9RV0xJNHhPU3hTTFlHbmVxWE9Hc2pCd1E?oc=5",
+          "published_at": "Fri, 16 Jan 2026 08:00:00 GMT",
+          "published_ts": 1768550400.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Just Dial Limited",
+          "sector": "Communication Services",
+          "industry": "Internet Content & Information"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Just Dial Q3 FY26: Strong Revenue Growth Masks Profit Decline Amid Elevated Other Income - Markets Mojo",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQSTVFbEFITjBTaG9tUDJCUFVlOUVFZUM0ZGpaX2p3TVcwOTRyUjQ1empJaTB6bEljRkZDYmhIOXNNRGlIeWk0TE1paE94YVFEQ2MzaWgxS3dTaThBWkx2OGxLSnZOa2ZHSGdwdncwTlYxYVBIbGlKWHVoTkVWaHQ3aFJETmJIYnZ1UEZBVU5XRmN1R0lYSzVMdWU3eGQtVFpselY2MnJCTENuQ0VLTnBoSDNIM1R6ZW9oODVoaElfNVM2b0s3QU05N2pDbkgwdGg2REZicm9sOVBvTUpt?oc=5",
+          "published_at": "Wed, 14 Jan 2026 08:00:00 GMT",
+          "published_ts": 1768377600.0,
+          "sentiment_score": 2.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Just Dial Limited",
+          "sector": "Communication Services",
+          "industry": "Internet Content & Information"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Q3 Results FY26 This Week: Infosys, RIL, HDFC Bank, Groww Among Companies To Declare Earnings From Jan. 12-17 - NDTV Profit",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPM183Y0tqVVlIdU1EOXBFa2FkT1dNY0xpSnVOdXdSRTFQYjd1UHM1VnZueENYQmMtNVRqR0lCVlFiSW5uR0VTb1F5WE9lT2FVNWRjNFdiRElpUVNqcDBKQ2ZVM281dmhYdzlISU1Fdno5cjNtb2R1R2FiVHF0M2xEQWgwcnRnOVFuUE1uOW1TNlR0VzJnYmgxYm9ta1FsZ9IBpgFBVV95cUxPQTM1N0UyNHNzQ0VUR3FJY0pMTmdGRGxaWktTS2lFYnNTVzl1RWVEU2stT3lmcUNFeTVQUzByY25LN2Vna2J0eXpnczB1RXBVN1M2SklEeGRsdzNUS2R6WXA3NHFEMm9mXy1lY3JMeFpMUmhldXIzN0pHcWxuLXNZVGZHbldJLU5pQmJ5WTVERUxZcGItWGdWYUgwd3JFMmNDeTRINktB?oc=5",
+          "published_at": "Mon, 12 Jan 2026 08:00:00 GMT",
+          "published_ts": 1768204800.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Just Dial Limited",
+          "sector": "Communication Services",
+          "industry": "Internet Content & Information"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Fixed investments continue to be key driver of GDP growth this fiscal: Crisil - Fortune India",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPQ1hkX1BxcTB6QnNKUTdCWVZoOVhMVGNCMHhlNlhYaldjNFlRS0J3bDFaODFkQ0RqZFU0Vmc4ZF93bklSNklaRFJqSWRYalJvVmp2MTFPUkFiWGJUbFh2cmFfNzlrSFNubXY2QU5aYUZqcDBpT2hzNHByelo0MWhGYnd3ckROQVN1UTlDTGw5WENJaG5pMDhGYzVoZndCNnE5Z0JwYkU0eFk3SjVXUmFuSlJ4TGd0OVptb3F5R3h5bHhNdEdk0gHSAUFVX3lxTE9WNW5BNDZfUkpzMG9jeTlRdEJ2aEczbmpVcVhOYm5Wa2RhYTAwcHlvTmJTS3lJR2NSQjM3dTl6MmFvV1NXZlc5QnlCX2ZOZWxPMl9mVjltY0U5TVFWVzNJUUM0UlB0SGNTOFA1RTg2WUxGcVFQYmtiNVkwajhYanBwOHprcDU3c05WdE11Y01mTFM5U1Fyemo5VGg4Q3J5a2JRWXA0blFfcmJHTnhqTTJBVExLdmJMUkczMU9oekI0cjVnOXlRRzVXZmdMeEZqUWNRUQ?oc=5",
+          "published_at": "Thu, 08 Jan 2026 08:00:00 GMT",
+          "published_ts": 1767859200.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Just Dial Limited",
+          "sector": "Communication Services",
+          "industry": "Internet Content & Information"
+        }
+      ],
+      "top_macro_news": [
+        {
+          "source": "google_rss_macro",
+          "title": "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRVNOajVzSUJWU3Q5R2toMjVnZVZMNDhLclozWDdNODc1OU1qbVFjYnFTT0Z1SUZaaExuY3FJajFkdWtOWk5kdWplT0J0Yk9RcnlDVnlvQmJZNC1jVDVHZmRhS0Z0X0JiXzFETHRnaUVac1pEMmZfWE9raXFacFpwR1dSaEVST0Ntc2k1czN4emNQVFlWSHE3V1ZhMW80OUFMYmN6dEwtTkRadm44enc?oc=5",
+          "published_at": "Fri, 13 Mar 2026 15:17:26 GMT",
+          "published_ts": 1773415046.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49d16779b4a12b78fd4ff66fcb1e1&url=https%3a%2f%2fwww.livemint.com%2fmarket%2fstock-market-news%2fus-china-power-shift-global-markets-india-outlook-mirae-asset-swarup-mohanty-11773376870759.html&c=15555016077234823276&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 14:15:00 GMT",
+          "published_ts": 1773411300.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Fed to delay rate cuts as war clouds the outlook",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49d1779614f94800ba32edd5de5c7&url=https%3a%2f%2fthink.ing.com%2farticles%2ffed-to-delay-rate-cuts-as-war-clouds-the-outlook%2f&c=127436243108543137&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 13:40:00 GMT",
+          "published_ts": 1773409200.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss_macro",
+          "title": "Bitcoin holds above $71,000, defying rising dollar, oil and U.S. bond yields - CoinDesk",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbHB1NE1GZ1dLTWpvOWNseW5QXy1jbWVHcTYzcXF6NWotU0NHOG1XNEUzcDd0ZTctMW1URXZzSW5RQ1djc1h3a0xOM0k2Tkd5TjRWcE0wUXRwZjg4WktmZ2xDWnpLa0RhR1BsRzlrZlVlVzhONmQ0eW51VXJIWFQ3NFJkd0VXZ2VsUnY4VTBuWjU5LXpxX1BPYUIyaEZKQVdEWUU3a25CY0RvN3NrVW10cFNUTWtxSHdhSWI4?oc=5",
+          "published_at": "Fri, 13 Mar 2026 09:34:10 GMT",
+          "published_ts": 1773394450.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Gold Silver Rate Today Live Updates (13 March 2026): Gold, silver futures fall on MCX as rising crude oil prices dim hopes of early rate cuts",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49d1739d843c7a48ae93741302b90&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2flive-blog%2fgold-rate-silver-price-today-live-updates-mcx-gold-18k-22k-24k-rate-iran-isreal-us-war-latest-news%2fliveblog%2f129534056.cms&c=4108291931945502437&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 06:00:00 GMT",
+          "published_ts": 1773381600.0,
+          "sentiment_score": -1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Markets Today: Sensex Declines 830 Points, Nifty Slips Below 23,650 Amid Iran-US-Israel War",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49d16779b4a12b78fd4ff66fcb1e1&url=https%3a%2f%2fwww.news18.com%2fbusiness%2fmarkets%2fmarkets-today-sensex-falls-1000-points-in-opening-trade-nifty-below-23600-as-oil-surges-past-100-9956009.html&c=7425380694736114227&mkt=en-in",
+          "published_at": "Thu, 12 Mar 2026 03:39:00 GMT",
+          "published_ts": 1773286740.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Share markets continue to bleed as West Asia tensions dampen sentiment, Sensex over 800 points down",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49d16779b4a12b78fd4ff66fcb1e1&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fmarkets%2fshare-markets-continue-to-bleed-as-west-asia-tensions-dampen-sentiment-sensex-over-800-points-down%2far-AA1Yt9yX&c=14300386732484515462&mkt=en-in",
+          "published_at": "Thu, 12 Mar 2026 03:04:15 GMT",
+          "published_ts": 1773284655.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Trading Day: Oil and yields up, up, and away",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49d1739d843c7a48ae93741302b90&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2ftrading-day-oil-and-yields-up-up-and-away%2far-AA1YqbzQ&c=11227118164045986945&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 14:08:08 GMT",
+          "published_ts": 1773238088.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss_macro",
+          "title": "Markets Confront the Economic Impact of the Iran Conflict - Natixis CIB | Natixis Corporate & Investment Banking",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOVpkVlFlOG1lbEdUZEM2VU40clhkdUtsN3l6Z3Rkd2g4WTBNMVNKSFBmMmkyT1M0RGwtZGJxN1ItZVVrMEU3UnVfWFJ6UmpZUVppV09ZelhMWHNvZmhtbFk3ajc0UnlpY0dZeW51MGJnSUU3dGhYRGFQaE44NjJVaFFBVWFyVlNhampDdXFic0dCZXZ3YW5ScWUtWQ?oc=5",
+          "published_at": "Wed, 11 Mar 2026 10:55:26 GMT",
+          "published_ts": 1773226526.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Oil price spike could push US inflation to 4%, delaying Fed rate cut",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49d1779614f94800ba32edd5de5c7&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2foil-price-spike-could-push-us-inflation-to-4-delaying-fed-rate-cut%2far-AA1Ym49n&c=7065206888862373143&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 03:02:32 GMT",
+          "published_ts": 1773198152.0,
+          "sentiment_score": 1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        }
+      ],
+      "avg_sentiment": 0.1275108176805256,
+      "macro_sentiment": -0.09144483788743896
+    },
+    "market_sentiment": {
+      "signal": "SELL",
+      "confidence": 0.656,
+      "summary": "Market Sentiment: SELL | NIFTY 5D=-2.31%, 10D=-3.42%, 20D=-3.87%, SMA20 gap=-2.4% (below). India VIX=6632.18994140625, 5D chg=-107.8, news sentiment=0.13. Votes: bull=2, bear=3.",
+      "reasoning_prompt": "Market sentiment protocol:\n1) Evaluate NIFTY multi-window momentum (5/10/20-bar returns) for domestic risk appetite.\n2) Check Nifty SMA20 structure — price above 20DMA = constructive, below = cautious.\n3) Evaluate India VIX regime as stress filter (low=constructive, high=defensive).\n4) Factor VIX change rate — rising VIX signals increasing fear even if level is moderate.\n5) Blend with cleaned multi-source news sentiment (stock + macro blend).\n6) Count bullish/bearish votes and avoid directional call under conflict.\n7) Prefer NO_TRADE when index momentum and volatility regime diverge.",
+      "llm_reasoning": "Bearish bias dominates. Oversold technical metrics combined with low participation volume suggest investors are avoiding the stock during the current downtrend. Market participants appear to be waiting for a significant catalyst or technical floor before re-engaging, as evidenced by the lack of buying interest despite deeply depressed RSI levels.",
+      "detail": {
+        "nifty_ret5": -0.02314398424966979,
+        "nifty_ret10": -0.03419373829671979,
+        "nifty_ret20": -0.038731002127090686,
+        "above_sma20": false,
+        "sma_gap_pct": -2.44,
+        "vix_level": 6632.18994140625,
+        "vix_change_5d": -107.83,
+        "news_avg_sentiment": 0.1275108176805256,
+        "bullish_votes": 2,
+        "bearish_votes": 3
+      }
+    },
+    "relative_strength": {
+      "signal": "NO_TRADE",
+      "confidence": 0.6019507546048927,
+      "summary": "Relative Strength: NO_TRADE | stock 10-bar return=-0.10%, NIFTY=-2.11%, alpha=2.02%.",
+      "reasoning_prompt": "Relative-strength protocol:\n1) Compare stock and NIFTY returns over same 10-bar window.\n2) Convert spread into alpha and classify persistent out/under-performance.\n3) Treat marginal alpha as noise and return NO_TRADE.\n4) Use relative strength as confirmation layer, not standalone trigger.",
+      "llm_reasoning": "The asset displays significant weakness, trading near 52-week lows and significantly underperforming moving averages. With an RSI of 19.5, the stock shows exhaustion but lacks the relative strength to initiate a counter-trend bounce. Performance metrics confirm the stock is lagging broader market indices, reflecting current lack of buying interest.",
+      "detail": {
+        "stock_ret10": -0.0009550186451302567,
+        "nifty_ret10": -0.0211262409872226,
+        "alpha": 0.020171222342092343
+      }
+    },
+    "us_trend": {
+      "signal": "SELL",
+      "confidence": 0.85,
+      "summary": "US Trend Signal: SELL | Global risk-off backdrop. SPX 5D/20D=-2.31%/-3.87%, NDX 5D/20D=-1.60%/-2.94%, VIX=27.29, DXY 5D=0.00%.",
+      "reasoning_prompt": "US macro trend protocol:\n1) Evaluate SPX and NDX short/medium returns for global equity risk tone.\n2) Use VIX as stress filter (high VIX weakens risk-on conviction).\n3) Use DXY direction as liquidity/EM risk proxy for Indian equities.\n4) Classify regime as risk-on, risk-off, or mixed.\n5) Use this as contextual bias only; do not override local setup quality.",
+      "llm_reasoning": "Not applicable as this is an Indian equity (JUSTDIAL.NS), though global macro sentiment is currently slightly negative at -0.09, which may act as a minor headwind for localized recovery efforts in the communication services sector.",
+      "detail": {
+        "regime": "Global risk-off backdrop",
+        "llm_decision_why": "Negative short-term (5-day) and medium-term (20-day) returns across SPX and NDX indicate bearish momentum. A VIX level of 27.29 confirms heightened volatility and significant risk-off sentiment in the US equity markets, creating an unfavorable environment for risk-on swing setups in India.",
+        "spx_ret_5": -0.02314398424966979,
+        "spx_ret_20": -0.038731002127090686,
+        "ndx_ret_5": -0.015998480392124925,
+        "ndx_ret_20": -0.02935414548420079,
+        "vix_last": 27.290000915527344,
+        "dxy_ret_5": 0.0,
+        "dxy_ret_20": 0.0
+      }
+    },
+    "financials": {
+      "signal": "BUY",
+      "confidence": 0.748212317322068,
+      "summary": "Financials Signal: BUY | Fundamentals supportive. Coverage=62%. ROE=12.68%, Margin=51.16%, RevGrowth=N/A, EarnGrowth=N/A, D/E=0.022, CurrentRatio=N/A, PE=7.616. Quarterly trends: RevQoQ=2.63%, NIQoQ=-26.13%, OCFQoQ=N/A, DebtQoQ=6.79%, FCF=N/A, Cash/Debt=0.103. Analyst target=N/A (N/A upside, ? analysts). 52w Hi/Lo=1048.900/508.900, position=2.62%.",
+      "reasoning_prompt": "Financial statement reasoning protocol:\n1) Evaluate valuation (PE/PB) relative to profitability and growth quality.\n2) Score profitability and efficiency (ROE, margins).\n3) Validate growth durability using quarterly revenue and net-income trends.\n4) Check balance-sheet resilience (debt trend, liquidity, cash/debt).\n5) Check cash-flow quality (operating CF trend, free cash flow sign).\n6) If fundamentals conflict or are incomplete, default to conservative NO_TRADE bias.",
+      "llm_reasoning": "Financial data confirms a challenging environment. Current price of 523.05 reflects downward pressure. While specific quarterly earnings metrics are not detailed, the technical bearishness is historically consistent with periods of earnings stagnation or compression. The stock requires a fundamental catalyst to bridge the gap between current price and higher valuation targets noted in recent analyst coverage.",
+      "fundamental_signals": [
+        {
+          "type": "mixed",
+          "text": "Near 52-week low (₹508.90–₹523.05) — historically strong demand zone. Deep oversold bounces common, but confirm volume."
+        },
+        {
+          "type": "bearish",
+          "text": "Net income declined sharply QoQ (-26.1%)."
+        }
+      ],
+      "analyst_consensus": {
+        "target_price": null,
+        "target_high": null,
+        "target_low": null,
+        "n_analysts": null,
+        "implied_upside_pct": null
+      },
+      "price_52w": {
+        "high": 1048.9,
+        "low": 508.9,
+        "current": 523.05,
+        "position_pct": 2.6,
+        "change_1y_pct": null
+      },
+      "extended_fundamentals": {
+        "symbol": "JUSTDIAL.NS",
+        "dividend_yield": null,
+        "dividend_rate": null,
+        "ex_dividend_date": 1441843200,
+        "payout_ratio": 0.0,
+        "held_pct_insiders": 0.74157995,
+        "held_pct_institutions": 0.122729994,
+        "book_value": 574.214,
+        "price_to_book": 0.9108973,
+        "return_on_equity": null,
+        "debt_to_equity": 1.946,
+        "profit_margins": 0.4638,
+        "enterprise_value": -10264391680,
+        "enterprise_to_revenue": -0.858,
+        "enterprise_to_ebitda": -3.214,
+        "gross_margins": 0.39084,
+        "operating_margins": 0.27502,
+        "ebitda_margins": 0.26705998,
+        "total_revenue": 11958200320,
+        "total_debt": 950200000,
+        "total_cash": 55697199104,
+        "peg_ratio": null,
+        "trailing_pe": 7.7259974,
+        "forward_pe": 7.833597
+      },
+      "promoter_institutional": {
+        "symbol": "JUSTDIAL.NS",
+        "major_holders": {},
+        "top_institutional": []
+      },
+      "dividends_splits": {
+        "symbol": "JUSTDIAL.NS",
+        "recent_dividends": [
+          {
+            "date": "2014-09-11 00:00:00+05:30",
+            "amount": 2.0
+          },
+          {
+            "date": "2015-09-10 00:00:00+05:30",
+            "amount": 2.0
+          }
+        ],
+        "recent_splits": [],
+        "dividend_yield_trend": null,
+        "total_dividends_1y": 0.0
+      },
+      "metrics": {
+        "market_cap": 44491806731.942505,
+        "trailing_pe": 7.615851888384544,
+        "forward_pe": null,
+        "price_to_book": 0.9658484040365245,
+        "debt_to_equity": 0.02167372191468577,
+        "return_on_equity": 0.12682079670031476,
+        "profit_margins": 0.5115900274097361,
+        "operating_margins": 0.25231844333715725,
+        "gross_margins": null,
+        "ebitda_margins": null,
+        "revenue_growth": null,
+        "earnings_growth": null,
+        "free_cashflow": null,
+        "operating_cashflow": null,
+        "current_ratio": null,
+        "fifty_two_week_high": 1048.9000244140625,
+        "fifty_two_week_low": 508.8999938964844,
+        "fifty_two_week_change": null,
+        "dividend_yield": 0.007647452620882694,
+        "current_price": 523.0499877929688,
+        "analyst_target_price": null,
+        "analyst_target_high": null,
+        "analyst_target_low": null,
+        "number_of_analyst_opinions": null,
+        "trailing_eps": null,
+        "forward_eps": null,
+        "beta": null,
+        "book_value": 541.5446001743242,
+        "enterprise_value": null,
+        "total_revenue": 11419300000.0,
+        "total_debt": 998400000.0,
+        "total_cash": 103000000.0,
+        "peg_ratio": null,
+        "sector": null,
+        "industry": null,
+        "company_name": ""
+      },
+      "detail": {
+        "stance": "Fundamentals supportive",
+        "bull_points": 6,
+        "bear_points": 3,
+        "data_quality": {
+          "coverage_ratio": 0.6153846153846154,
+          "available_fields": 8,
+          "total_fields": 13
+        },
+        "metrics": {
+          "market_cap": 44491806731.942505,
+          "trailing_pe": 7.615851888384544,
+          "forward_pe": null,
+          "price_to_book": 0.9658484040365245,
+          "debt_to_equity": 0.02167372191468577,
+          "return_on_equity": 0.12682079670031476,
+          "profit_margins": 0.5115900274097361,
+          "operating_margins": 0.25231844333715725,
+          "gross_margins": null,
+          "ebitda_margins": null,
+          "revenue_growth": null,
+          "earnings_growth": null,
+          "free_cashflow": null,
+          "operating_cashflow": null,
+          "current_ratio": null,
+          "fifty_two_week_high": 1048.9000244140625,
+          "fifty_two_week_low": 508.8999938964844,
+          "fifty_two_week_change": null,
+          "dividend_yield": 0.007647452620882694,
+          "current_price": 523.0499877929688,
+          "analyst_target_price": null,
+          "analyst_target_high": null,
+          "analyst_target_low": null,
+          "number_of_analyst_opinions": null,
+          "trailing_eps": null,
+          "forward_eps": null,
+          "beta": null,
+          "book_value": 541.5446001743242,
+          "enterprise_value": null,
+          "total_revenue": 11419300000.0,
+          "total_debt": 998400000.0,
+          "total_cash": 103000000.0,
+          "peg_ratio": null,
+          "sector": null,
+          "industry": null,
+          "company_name": ""
+        },
+        "metrics_extended": {
+          "dividend_yield": null,
+          "peg_ratio": null,
+          "operating_margins": 0.27502,
+          "gross_margins": 0.39084,
+          "ev_to_ebitda": -3.214,
+          "held_pct_institutions": 0.122729994
+        },
+        "statement_trends": {
+          "revenue_qoq": 0.026287517625730228,
+          "net_income_qoq": -0.2613216410898841,
+          "operating_cf_qoq": null,
+          "debt_qoq": 0.06792170285592047,
+          "free_cashflow_latest": null,
+          "cash_to_debt": 0.1031650641025641
+        }
+      }
+    },
+    "market_setup": {
+      "signal": "NO_TRADE",
+      "confidence": 0.65,
+      "summary": "Market Setup Signal: NO_TRADE | Support test. Tape read: 5d=-2.2%, 20d=-22.2%, volume ratio=0.89, momentum=19.6. Support gap=2.8% and resistance gap=36.4%. Trader read: The asset is in a deep downtrend, but at an RSI of 19.5, it is technically exhausted and near immediate support at 508.9. While momentum is bearish, the risk of a mean-reversion bounce is high. Selling into extreme oversold conditions offers poor reward-to-risk. I am waiting for a structural stabilization or a failed rally attempt.",
+      "reasoning_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+      "llm_reasoning": "The setup is characterized by technical weakness and a lack of trend clarity. With price at 523.05, the stock is in a high-risk zone where downside momentum remains dominant, but the oversold RSI suggests the potential for a technical snap-back if the sideways compression breaks upward. The low volume environment suggests a lack of institutional accumulation at these levels.",
+      "setup_label": "Support test",
+      "detail": {
+        "recent_return_5d_pct": -2.24,
+        "recent_return_20d_pct": -22.15,
+        "volume_ratio_5d_vs_20d": 0.89,
+        "distance_to_support_pct": 2.78,
+        "distance_to_resistance_pct": 36.39,
+        "momentum_score": 19.6,
+        "buy_votes": 0,
+        "sell_votes": 1
+      }
+    },
+    "catalyst_context": {
+      "signal": "NO_TRADE",
+      "confidence": 0.5,
+      "summary": "Catalyst Context Signal: NO_TRADE | Mixed catalyst tape. Backdrop read: news sentiment=0.13, analyst upside=None, 52w position=2.6. Core read: While Justdial trades at a low PE (7.6x) and near 52-week lows, the fundamental picture is deteriorating with a 26% QoQ decline in net income. The lack of analyst coverage and mixed data points suggest a value trap risk. Without clear growth catalysts or stabilization in earnings, the directional edge is insufficient for a swing trade.",
+      "reasoning_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+      "llm_reasoning": "The primary catalyst is the long-term growth outlook projecting 15-47% upside, which contrasts with the current technical sell-off. Market focus remains on whether this valuation gap will be closed by fundamental earnings delivery or if the current technical breakdown will necessitate a retest of lower support levels before any recovery can manifest.",
+      "catalyst_label": "Mixed catalyst tape",
+      "detail": {
+        "buy_votes": 2,
+        "sell_votes": 2,
+        "avg_sentiment": 0.128,
+        "analyst_upside_pct": null,
+        "position_52w_pct": 2.6,
+        "fundamental_signals": [
+          "Near 52-week low (₹508.90–₹523.05) — historically strong demand zone. Deep oversold bounces common, but confirm volume.",
+          "Net income declined sharply QoQ (-26.1%)."
+        ]
+      }
+    }
+  },
+  "agent_guidance": {
+    "indicator_prompt": "Indicator reasoning protocol:\n1) Evaluate structural trend using close vs SMA20 and SMA20 vs SMA50.\n2) Validate momentum using MACD line/signal/histogram and ROC10 direction.\n3) Check exhaustion/continuation via RSI, Stochastic crossover, and Williams %R zone.\n4) Confirm participation with volume vs 20-bar average.\n5) Penalize high-volatility regimes with ATR% filters and lower confidence.\n6) If cross-indicator alignment is weak or contradictory, return NO_TRADE.",
+    "pattern_prompt": "Pattern reasoning protocol:\n1) Detect breakout/breakdown against prior 12-bar range, not single-candle spikes.\n2) Confirm direction with local slope and bar-structure continuation.\n3) Use engulfing patterns as confirmation, not standalone trigger.\n4) Treat flat-slope compression as NO_TRADE until expansion is confirmed.\n5) Down-rank weak breakouts lacking structure confirmation.",
+    "news_prompt": "News reasoning protocol:\n1) Collect company-specific headlines across multiple providers using diversified queries.\n2) Filter spam/listicle/noise domains and low-relevance stories.\n3) Build a global macro stream (rates, inflation, oil, USD, broad risk sentiment).\n4) Build industry/sector thematic stream (demand cycle, market share, regulation, capacity, pricing).\n5) Weight sentiment by source quality, exponential recency decay, and relevance confidence.\n6) Apply content-similarity dedup to remove near-duplicate headlines.\n7) Use LLM to infer final bias from company + industry + macro evidence and return NO_TRADE under conflict.",
+    "trend_prompt": "Trend reasoning protocol:\n1) Fit support and resistance trendlines over the visible swing window.\n2) Estimate channel slope (regime direction) and channel width (trend quality).\n3) Locate current price in channel and prefer pullback entries aligned with slope.\n4) If slope is weak/flat, classify as sideways and favor NO_TRADE.\n5) Avoid chasing signals near channel extremes against risk-reward logic.",
+    "market_prompt": "Market sentiment protocol:\n1) Evaluate NIFTY multi-window momentum (5/10/20-bar returns) for domestic risk appetite.\n2) Check Nifty SMA20 structure — price above 20DMA = constructive, below = cautious.\n3) Evaluate India VIX regime as stress filter (low=constructive, high=defensive).\n4) Factor VIX change rate — rising VIX signals increasing fear even if level is moderate.\n5) Blend with cleaned multi-source news sentiment (stock + macro blend).\n6) Count bullish/bearish votes and avoid directional call under conflict.\n7) Prefer NO_TRADE when index momentum and volatility regime diverge.",
+    "relative_strength_prompt": "Relative-strength protocol:\n1) Compare stock and NIFTY returns over same 10-bar window.\n2) Convert spread into alpha and classify persistent out/under-performance.\n3) Treat marginal alpha as noise and return NO_TRADE.\n4) Use relative strength as confirmation layer, not standalone trigger.",
+    "us_trend_prompt": "US macro trend protocol:\n1) Evaluate SPX and NDX short/medium returns for global equity risk tone.\n2) Use VIX as stress filter (high VIX weakens risk-on conviction).\n3) Use DXY direction as liquidity/EM risk proxy for Indian equities.\n4) Classify regime as risk-on, risk-off, or mixed.\n5) Use this as contextual bias only; do not override local setup quality.",
+    "financials_prompt": "Financial statement reasoning protocol:\n1) Evaluate valuation (PE/PB) relative to profitability and growth quality.\n2) Score profitability and efficiency (ROE, margins).\n3) Validate growth durability using quarterly revenue and net-income trends.\n4) Check balance-sheet resilience (debt trend, liquidity, cash/debt).\n5) Check cash-flow quality (operating CF trend, free cash flow sign).\n6) If fundamentals conflict or are incomplete, default to conservative NO_TRADE bias.",
+    "market_setup_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+    "catalyst_context_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+    "trader_intel_prompt": "Think like a discretionary Indian swing trader. Judge setup quality, catalyst quality, crowd positioning, and execution patience together. Avoid indicator-threshold language. Prefer NO_TRADE when the idea is merely interesting rather than executable. Use nearby levels, 52-week context, analyst framing, and headline quality to write a trader-grade verdict."
+  },
+  "market_setup": {
+    "signal": "NO_TRADE",
+    "confidence": 0.65,
+    "summary": "Market Setup Signal: NO_TRADE | Support test. Tape read: 5d=-2.2%, 20d=-22.2%, volume ratio=0.89, momentum=19.6. Support gap=2.8% and resistance gap=36.4%. Trader read: The asset is in a deep downtrend, but at an RSI of 19.5, it is technically exhausted and near immediate support at 508.9. While momentum is bearish, the risk of a mean-reversion bounce is high. Selling into extreme oversold conditions offers poor reward-to-risk. I am waiting for a structural stabilization or a failed rally attempt.",
+    "reasoning_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+    "llm_reasoning": "The setup is characterized by technical weakness and a lack of trend clarity. With price at 523.05, the stock is in a high-risk zone where downside momentum remains dominant, but the oversold RSI suggests the potential for a technical snap-back if the sideways compression breaks upward. The low volume environment suggests a lack of institutional accumulation at these levels.",
+    "setup_label": "Support test",
+    "detail": {
+      "recent_return_5d_pct": -2.24,
+      "recent_return_20d_pct": -22.15,
+      "volume_ratio_5d_vs_20d": 0.89,
+      "distance_to_support_pct": 2.78,
+      "distance_to_resistance_pct": 36.39,
+      "momentum_score": 19.6,
+      "buy_votes": 0,
+      "sell_votes": 1
+    }
+  },
+  "catalyst_context": {
+    "signal": "NO_TRADE",
+    "confidence": 0.5,
+    "summary": "Catalyst Context Signal: NO_TRADE | Mixed catalyst tape. Backdrop read: news sentiment=0.13, analyst upside=None, 52w position=2.6. Core read: While Justdial trades at a low PE (7.6x) and near 52-week lows, the fundamental picture is deteriorating with a 26% QoQ decline in net income. The lack of analyst coverage and mixed data points suggest a value trap risk. Without clear growth catalysts or stabilization in earnings, the directional edge is insufficient for a swing trade.",
+    "reasoning_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+    "llm_reasoning": "The primary catalyst is the long-term growth outlook projecting 15-47% upside, which contrasts with the current technical sell-off. Market focus remains on whether this valuation gap will be closed by fundamental earnings delivery or if the current technical breakdown will necessitate a retest of lower support levels before any recovery can manifest.",
+    "catalyst_label": "Mixed catalyst tape",
+    "detail": {
+      "buy_votes": 2,
+      "sell_votes": 2,
+      "avg_sentiment": 0.128,
+      "analyst_upside_pct": null,
+      "position_52w_pct": 2.6,
+      "fundamental_signals": [
+        "Near 52-week low (₹508.90–₹523.05) — historically strong demand zone. Deep oversold bounces common, but confirm volume.",
+        "Net income declined sharply QoQ (-26.1%)."
+      ]
+    }
+  },
+  "trader_intel": {
+    "signal": "NO_TRADE",
+    "confidence": 0.65,
+    "verdict_label": "Value Trap Risk",
+    "playbook_title": "Avoid Bottom Fishing Falling Knives",
+    "thesis": "Justdial is currently showing classic signs of a value trap. While it sits at a 52-week support zone around 508, the fundamental erosion—marked by a 26% QoQ net income decline—outweighs the technical oversold status. The lack of institutional sponsorship and clear catalysts means any bounce is likely to be met with aggressive selling from trapped holders.",
+    "execution_style": "Patience and observation",
+    "risk_flag": "High volatility in a structural downtrend; risk of breakdown below 500.",
+    "entry_trigger": "Wait for a successful retest of 508 with a definitive higher-low structure or a high-volume breakout above the 20-day mean.",
+    "invalidation": "If the price shreds through the 508 level on high volume, the thesis of 'support' is null and void.",
+    "why_now": "The stock is deeply oversold (RSI < 20), making it a prime candidate for a 'dead cat bounce' which is dangerous for short-term swing capital.",
+    "why_not_now": "The trend remains decisively bearish; buying into a collapsing fundamental narrative without a trend-reversal trigger is poor risk management.",
+    "summary": "Trader Intel: NO_TRADE | Value Trap Risk | Avoid Bottom Fishing Falling Knives. Thesis: Justdial is currently showing classic signs of a value trap. While it sits at a 52-week support zone around 508, the fundamental erosion—marked by a 26% QoQ net income decline—outweighs the technical oversold status. The lack of institutional sponsorship and clear catalysts means any bounce is likely to be met with aggressive selling from trapped holders. Why now: The stock is deeply oversold (RSI < 20), making it a prime candidate for a 'dead cat bounce' which is dangerous for short-term swing capital. Why not now: The trend remains decisively bearish; buying into a collapsing fundamental narrative without a trend-reversal trigger is poor risk management.",
+    "reasoning_prompt": "Think like a discretionary Indian swing trader. Judge setup quality, catalyst quality, crowd positioning, and execution patience together. Avoid indicator-threshold language. Prefer NO_TRADE when the idea is merely interesting rather than executable. Use nearby levels, 52-week context, analyst framing, and headline quality to write a trader-grade verdict."
+  },
+  "top_news": [
+    {
+      "source": "google_rss",
+      "title": "Stocks to buy in 2025 for long term: Zaggle, JustDial among 5 stocks that could give 15-47% return - The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxQS2ZpRTNpbUpfcUV0MW5jUjZNY0doRmdGTktyRkcySWM0ckd3YzJnTFc4QkdMb1NMdmowRE93MXJUbVl4RFgteGcxU2oxalZ6QlNCVFRWZ3gtOG9Eb21zUGp6eTBycXBYclBtWEw0TGRUamxuT0V1VFpmbVRWVkxSVVgwX2E3V2pkZWk1Y1loVjNKclB5bmR1XzhaaUZYeTVDMko2V3hxcnNYR0NqMzhsQUhzM0dvRmdFYnZpOEFWS3ZXRnZuVVBpVEYycjhValI3eDJaTktFUmdRNWpqdEJYU1dabENqR3JSOU1zODVHVVByNlZvdmRjbi1Qei03ZklmSm5vRkNKSWMzeDNNLTNYM0Z4NXlwSS1MRDVhYTFB?oc=5",
+      "published_at": "Wed, 15 Oct 2025 07:00:00 GMT",
+      "published_ts": 1760511600.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Sensex, Nifty Poised For A Subdued Opening; HCL Tech, RBL Bank, JustDial, Tata Investments, KEC Stocks Are In Focus - Asianet Newsable",
+      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOTVB6OFZuY2ZqMDAzOVB2NnJLSWJOVVB2OVV1SjJRWkRtNlltdUZFd09VUmRJbHhra1d6TmFDdjFlOHhyb3AzbjQ2ZjRXWjFMbk5jd3ZJRUFsVlp6YUUzeGNnY2lYUnBhbmRWeGFlXzVGOExsUmZzQlRLbEVMbFRrRWhmcXh3VVBEdDVwVjZVUmh1TWxBTEV2MjZDQlNlc2FIemRKdDU4dXVLYV9uVHJqemg4Ukk5ZTlJQ1lRWEUtRU5jYi1OMmtvWkVsakZ0cl93YzZiY2F5V3JCNUIxNWxhX3ZZMjF2THFnS2IxMGtqbFNQU1gwOHpkLVNCOWFpdnPSAYQCQVVfeXFMTVZnSUV2bjRob0pVZFM1Qi1ITWQtRjdUTkF2aEwwV2EtN0V0azRaWXJtRWFJdkJDV3FrWmN6S2huU18yTEZCZ1ViMjRWV3JzNHRhdDBHSk5fUTNlcHNOMm9yaTBiTHgwMFlhNDNWT3BsY0pscGdjVk1HWlpBZVZiZ192Wlh2aTZlNzhuREFybEJfaXk1TmJhbVh3OWsxSUhCQncwZlBnbWVzYkZjc0VTS0ZTeW1OM3dBT2J4VVJMMTJaX19hc2cwRnVyc1pWR1JobDNtZnMzNzBGbHpNRkhqT2NSVm9ra2FGT2RCUkl3NlR4eEw1M2FLOTNvNlZVd2NHLVFaMEw?oc=5",
+      "published_at": "Tue, 14 Oct 2025 07:00:00 GMT",
+      "published_ts": 1760425200.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Eternal, Nazara, Swiggy, JustDial, IndiaMart, Info Edge, Nykaa: Q2 preview - Business Today",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOd3owQ25pVEt0Q3VTTWZFNFZBdG52TGJMY1NOOWlGSl9WTURFUXB5TU45ZHZNYVd1SkxrM0NPSnAxQ0dBeHRaX1k0c2w2Y2MtSWRsd28yaFRINnJwZ01xSHlEQjQ4RXhYM3RQeVlQelBLNDdyYzd3YUpRT2N3eHI0WDBTbkRLdEZiNF9Yd2lRVkVqdS1wN3RkaTN0Z0l0c09NVU1GanJiWHBrWTd6d21IMVRyUllmRHNuTFBTRmtjQkFJN0NTNkVLWUU4a05yNUtF0gHWAUFVX3lxTE1KWTg1aElZcjE0LXdPOVN0eXFRVmZ6OHVYZW9wSWNpQ1c4UG1qQTY5TTBzdzJyNTlLQkxCN05UaEV0QWxtRzQtbkU1UHpKLXI5SW11R1BCUm53NUtGeUM3SXdEdWJjbi1OeTRjWjJyMHdLMlBSTVF5alotOThDd2ZNZkJOQ292aHEwalF6MHNBemxvRFgzRG1CWURHLUVVSGprVElFYXV6UGRoUDV4UUhZVXFGa3UzNzIyd3JHeW5HLTBhRVptZHBwYjJSYUc0ZU1JYjI3UUE?oc=5",
+      "published_at": "Thu, 09 Oct 2025 07:00:00 GMT",
+      "published_ts": 1759993200.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Just Dial's (NSE:JUSTDIAL) five-year earnings growth trails the 19% YoY shareholder returns - simplywall.st",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQNFRlWEdra3cyeTZyR0NPdEdkanZRVEk1UUtBUkh0NVZhbHRfN0pVZlI0cGptZXVha0pqaTlsV0p0YXZkdTVJQ2NVT0hiSExid2dpZEZVSFFKRU1QVzFSeUhkWDRERl9ZLUZ3dktrb3NsSGxicWgybWpqNFZQdTVYYnNfV0ZwNTlUaFdsMmdzQTUyaGJkU0pSbGY3eFg1M0F2WjMwVTRLcUQzYi1icnFlNkx1eXg4UkFzWmlLQ2NZZDJRX0JFdEd4ZmVfeEFvSknSAdQBQVVfeXFMUG5pdE9tUU1adEtKZDBzT3pTTTRWWWNSSHlFQWFfbUhGYncyTEhFa2VYSkcyOFZBTVd2RjYzVWM5dlo0MTExM2VsdjNKTzdqbjdTa3BiRjNIbWFjeU02dTFLTjVsT09QNW1ZMDhfdjMwYW0wX09xSmVsSUVsSWR0d1ZvSlYwYWdFN3BiQVM3dVRpdl9rWnhBSDRkMFBkWmE0N3NlSzNzZ0RDbG5KY1lvODVXbUNhN2otVE9YZm1KV0VOZW1TX0lOSTZvTWU5VlgxRkZWTkU?oc=5",
+      "published_at": "Tue, 01 Jul 2025 07:00:00 GMT",
+      "published_ts": 1751353200.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Benign Growth For Just Dial Limited (NSE:JUSTDIAL) Underpins Its Share Price - simplywall.st",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOY2RWRXhRaGFBWExnZVJocnBHR2doLVlhd1kyRDNJVGI5WTNpVk1Zek04SFgtQW1SbzQ1TDgxTzlNVTZhc2JrYlZVYlBqaWR6TDBrZUVzYkgzeGhGMDE4U1ZFbWs2VUFrTkJ4Q2k2bHpFNVRTdWtodzQxejd2RWVJX3gtNjROMVdFTWNGdW0zdnZMWlk2SmdlUEtKdzlERDlRc1lodmRhVkh4MFlpM3NNWjcxYUJaMDlfazV1am8tNFhuY2dXNDlZQXljT3NXd9IB0wFBVV95cUxQclQxRmJwX0xUS2ljOTlKRnpheUtfaXI5djQ0UWp5Y0FNQmtqbXpkekZsU0I3bmowVWd3NHUxb1hNT1FtbzhvT1VFcFZNSTZTZE1ZNFpla0VkWl9vNnI5UDU0QkwtdVhWVFZ3RTJkSExreWdnd1lnMk5DemVTMTdkV3RqU2tqRC1Oc29pb1dGVjJUTGhoUTZPdlFCWFBkNE50ZWR6bkRld1hyeEJIalhROFlBN2Zpa1g4Z0p1c1U5ZElYR19UdF9qdHNYUjV2SmY2b21Z?oc=5",
+      "published_at": "Wed, 16 Apr 2025 07:00:00 GMT",
+      "published_ts": 1744786800.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Are Just Dial Limited's (NSE:JUSTDIAL) Fundamentals Good Enough to Warrant Buying Given The Stock's Recent Weakness? - simplywall.st",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNdGJvM0Z1Z3J6LWh5a2xsSmVhOFk1dDZDcU9rT1N5OElJVUpKUTJYNVZ3WXRDM3o5UGVfLUkxakN3RHhfNlhBdlBhZUhuQVNqLTRFaVM0YXdUQlFYMGZxRTZ6TDNVMjFvenFHamQtUks4XzhwZ2pUZWVISmdhdjc1TFdXXzFBWm9iZDZ4b1d5T2Q1MHBGbURPRkUtVjE0TzVoQl9WaXU5aHl0NEo4emQ1TVB3QXdzTVJNUFVjcWVDa0NXeEt4M1NINmM1SDPSAdIBQVVfeXFMTmdITllZUVNEUUVCaF9JN2MyZ1RMVTk3NTlZeHI2Nkg5UzhBd2pNbXNMeWtxbXhQOGx2Wjh4bEFiQ0ZZQ3NiU09xS0hQcWNHaE1rZXk1SkY4QjVFMzRNa0ZwRmJBNGRtWmRmVzd6VWRMcUxDMHMzZ3N5RHY4N0dBcS1iMTd1R2NCXzJ4bGlVY0RuWDJfLUNBY3hIQlMxN3dpSEdUUXVCSjZEQVd1TDFRN3oxbVZUa3VSTzZvYTR3WnV2Umw1QkFoN1dNbTl6SHlOVmhB?oc=5",
+      "published_at": "Sat, 15 Mar 2025 07:00:00 GMT",
+      "published_ts": 1742022000.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Justdial Shares Plunge Nearly 9% Post Q3 Results - Inc42",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBZbmJOWWV6dl9qMEFLc0I0ZUs4OWN2N1JnSjZkTkhEOG9RZlVndGhWZHMzZTdFRjF1bnMydXI3eV9EMnE4eGdzMFVwd2pzMFZmcUtvQi1HSUEzVEVmVF9mRTFjemF3dzZVZFNRRDhHYzJqZGljOFJiMWlXSQ?oc=5",
+      "published_at": "Mon, 13 Jan 2025 08:00:00 GMT",
+      "published_ts": 1736755200.0,
+      "sentiment_score": -1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Justdial announces ESOPs for employees - HR Katha",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxON2IwaVVQOExIRTc5aWNYcXczR3ZpU0RrblJqbHotZ0RzYnFGZktmRzRvRC1OU0ZyX0NVRlR6RWtDRHkzQ1daY2g1Z3R4QVY0bldxV0lxRUdfYjM3Skh4YzdLNmFoM0J5N1ZfNlpHankyQ3psSHNBZ2plVkRGQ0pUWVFnRS00em51MXhDMWJsQU5mN2F2?oc=5",
+      "published_at": "Tue, 20 Jun 2023 07:00:00 GMT",
+      "published_ts": 1687244400.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Just Dial Ltd (JUSTDIAL) Share Price - Business Today",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQNkZma1luTjE0bmUwNVZNVjgwOFpDanlZYmJDWFFyeDI2ZkZIV1ZwR3R4ZFpMNTVXRFlHOVRxWFhMU0trX0ZCTS1zQlIxaTV6MjAwVG9jZkptSkQzeHN6dFlJdU1UeGxPR2FnZ2U1R0hJY05TcHI2ZTc2RTNZVXpfT1A2SQ?oc=5",
+      "published_at": "Tue, 24 Jan 2023 02:09:12 GMT",
+      "published_ts": 1674526152.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "JustDial share jumps 15% after brokerage firm upgrades stock despite weak earnings - TechStory",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB2UURCV3RGTUhXMXAyc0NiT2tacE1xQlZwUUtEaTh3Ui1kWmxQdlFGTVh6RldUTWNZclRJWDFkekk5Wkd3TnU5MnlVQ2JKNk1oakpqY0dsM2gwNmlVYjRhRHFwTEZuZw?oc=5",
+      "published_at": "Fri, 21 Jan 2022 08:00:00 GMT",
+      "published_ts": 1642752000.0,
+      "sentiment_score": -1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "JustDial Buyback 2020: The End of Yellowpages? - The Indian Wire",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPNVFlaHpGRndUMVp5a0RVT1Y2MjdhZ0Y0cWFNUnZXc2phNV93R0NYY3MwNGR6cnJkOVlmbElQM3pJVEgxRjFZWGRuZlYtOERWT2tKUVFaVmFEOWhEMUFRbEM2SFRuemhKSWVsbENfMGFDY0Z1R2d1SnRZTS10UFN4bW1uY2xNNS0tNm9feXVjWFBkdWI5RXfSAZYBQVVfeXFMTzVRZWh6RkZ3VDFaeWtEVU9WNjI3YWdGNHFhTVJ2V3NqYTVfd0dDWGNzMDRkenJyZDlZZmxJUDN6SVRIMUYxWVhkbmZWLThEVk9rSlFRWlZhRDloRDFBUWxDNkhUbnpoSkllbGxDXzBhQ2NGdUdndUp0WU0tdFBTeG1tbmNsTTUtLTZvX3l1Y1hQZHViOUV3?oc=5",
+      "published_at": "Mon, 03 Aug 2020 07:00:00 GMT",
+      "published_ts": 1596438000.0,
+      "sentiment_score": 2.4,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "JustDial says report about Google buying it is ‘factually incorrect’ - Scroll.in",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYmdsWWVWbm9HNTRjYzRiYW1NOVFIVE5UMHZrU1lzT3loN3VUTXNXN3A4bmZuWmlJSHRNbVAtLVJ4ekUyMWY2WmNuUlVtTy1lMkxOMnNiQ01vY2QwRmhFQmtmYXR2MjNjSkZ4YU1GRWZFV1dzaUNueVlnWGQ3V3hvVG1uYjhMY3piaEJOZk9HbHE2WW9wUTFYRS1VSdIBogFBVV95cUxOWUpFWnFjZElCajlRMHpneGc3UFE5OThmeW0yUllCZDNkVk1VVWs5RTJZMXdOM09uUVRtNzBGQ1RpNFpYamRWUWl4TWRTYXpIWF9oNWY3V0VJenpCUmVuSmFtS2dOZjVTSlhjOG9POEJpaVBRMzhoYV9uVU1YaERqSmxxMnJfWkhhY0Q4Nmd4MkpIRHUwYjRxNlpCVXJRRDQtUVE?oc=5",
+      "published_at": "Fri, 10 Nov 2017 08:00:00 GMT",
+      "published_ts": 1510300800.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "JustDial: See strong revenue share coming from tier 2 cities: VSS Mani, JustDial - The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNZGppQXZsUnJuazZQbVZSUnhkRVpLTXF0TG1URmtRcl95TFRwczZpNDByVllKQnRNXzBQZnhrT0V0M2VNWlhtTmtCZTRTVFhjS2E3UHhTVERlejRrN2ZIZ01CcUYtS29LQXVhVUtzQmd2Q1dxWUlQTExMU1VPQ2JleTBYN3l2aFNlT2VNajFWM25kUTlTZm9zQUtFdFZmLWhRdmRiMjk5bTFyR3M2WnkxMlhZNnNnandWZENSbTI1Q2RNZklwNzZmQ1N3eW0tb2s5ZVEwdkI2OA?oc=5",
+      "published_at": "Mon, 23 Oct 2017 08:30:57 GMT",
+      "published_ts": 1508747457.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Justdial shares surge nearly 7% on share buyback plan - Mint",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPOTc1eGxvdVBfY1hTcE4xaHZQc2xoSV9UZVNpaFU0NU4wZUJ5Ql9od0FMZG8yMFNtRThsYkdRbFR6YXg0b2RXRUhnUG5JVzluSjM1SDloTGR3NVFvckZIckpXQ2hPRm5HMFNXUm9PeXM2YVN6NDdKMFJQUjU1THk5QW5wV0pYVEJnWmJyd1VlSXRKWkYxRjBtRmVqQnA1Rjg1eUxxbkhhQ0UwQ1dZZ0dmdNIBvgFBVV95cUxPMnRnaHlzYkdEX1djVVA5ZU1RZFVUNU5wLUlFdXFWcDJNaHRBQnlyUmlrR0Z3OUFUdno5N0RQaC1kMEp4Si1LZjRFcEI5MEoyUmVzSkJlTGtYSExNLUhvWDFNbmQ4TGVaNk9RNkU1NG9XVzdiMGQ2RmtfaGIxNUJKQlJEWS1PWGVydTJFcHRVa2VGNFpjR011NXZWcW1wUkJhZ2YzRjZMdE94bmJWTUluQ0pBNnRWNy1GeXk5THF3?oc=5",
+      "published_at": "Thu, 20 Jul 2017 07:00:00 GMT",
+      "published_ts": 1500534000.0,
+      "sentiment_score": 4.9,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Deal Flow – 09/02: SBI Life Insurance exits (Sequoia, Nalanda, Fidelity, SAIF Partners backed) Justdial - Capitalmind",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPVVNrdDBuOVQtcWdvc2ViU1RlS0hUc0k3M2dEQk5uQnBYR25FV1NkWU1TRzZPSzcyVE1tTkJlYW96M0VMTDRyVXdnVWNYMmF6N05lTW5hV1pPamR6bEFHamRQcGpGNVpVRDBpTXF1YXRyUWdXdjQ1dDZ3eUduMFFBTFBOQzZSd2d3VlhaNXo1YVV6UG5PZU9pbndHbEdmRFhCUjZJOEdoeThJblhXeVhpY3UzWk8xMmNYLVdFeVM4RzlEb2sySTlQN1lGRTJOdTg?oc=5",
+      "published_at": "Tue, 09 Feb 2016 08:00:00 GMT",
+      "published_ts": 1455004800.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    }
+  ],
+  "top_industry_news": [
+    {
+      "source": "bing_rss_industry",
+      "title": "India’s GDP growth seen moderating to 7.1% in FY27 amid global uncertainties: Crisil Intelligence",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49d11a7b0476188d4678fb9295afb&url=https%3a%2f%2fwww.firstpost.com%2fbusiness%2findias-gdp-growth-seen-moderating-to-7-1-in-fy27-amid-global-uncertainties-crisil-intelligence-13988672.html&c=12434137724427885284&mkt=en-in",
+      "published_at": "Thu, 12 Mar 2026 10:58:00 GMT",
+      "published_ts": 1773313080.0,
+      "sentiment_score": 1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated",
+      "company_name": "Just Dial Limited",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Telecommunications Services Market Size, Share & Forecast to 2036 - Fact.MR",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE0wVjZvV0pQWURKdUVQaElLdGhkMms4RzQzTlliZnEzX1ROZlAwR1MyX2tBVUQzNUdfOUpwOFdUX3RrVDAxSUh5LUx2elh3LVItN1FxZUNFb1JQVmxzVUhYRVFBSm1xOUwyTVI1WE1PQ0dZQQ?oc=5",
+      "published_at": "Thu, 12 Mar 2026 08:28:55 GMT",
+      "published_ts": 1773304135.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Just Dial Limited",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Justdial Helps Delhi MSMEs Generate Business Leads - Passionate In Marketing",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPN1kyVmhrcDhfb0I2VEdGWXkyU1hPVDhBSXMtWTljOUk1ZERSNzJxTTZNZHVIYUEzaXpaN3lwMUk3UTV5NUN6d0pGUllWckFHcVotSE5LbHR2NnhGSXd6WDdiaGZmSDRHUjdZLUd5Q0s2X0llR3JDOGgxbWNzQzJ5aHpOZU9Nem5vekxnZUtsRTNEbEJkMm02ZFhlU25JZw?oc=5",
+      "published_at": "Wed, 11 Mar 2026 15:54:17 GMT",
+      "published_ts": 1773244457.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Just Dial Limited",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Reliance Group: How Does Justdial Hold Cash Nearly Equal to Its Market Cap? - Trade Brains",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQbjA1a1BkVG9PajVkQmhRUnlWbk5wbGR1VDlNeWZvRDZsYnRROV9JdVVyVGtFejY2bWxDdVh3aEMwelhrN2djOHZRYVgzNS1uQVdYSXlJMk5mNXc4c0xsZXprVU1QWkhDR3duRGpJUDk3dlc4UUNLd3N3ZXBhNjQ2LUgzd2tWVHFPa0NVd1lBQVQyclFkVzhpZWczMWlTZw?oc=5",
+      "published_at": "Tue, 10 Feb 2026 08:00:00 GMT",
+      "published_ts": 1770710400.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Just Dial Limited",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Oracle Projects $45-50 Billion Fundraising for 2026 Cloud and AI Growth - MLQ.ai",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeWlJZnQwVUNWdXlGdHJEY3JnSXR6ajBZcW15TTVYcEFOQ3Rsc25qLU5sN3ZGODZGVDhYYndEODZOUVlaY0lCNl9PRFl0bFc5ODhQTFRXbXYxaWxtdEFNTXZvNVUtbFFjenF3bjBmVGE0eFV6UjVTeEJEWU1BVWZObGJEY2p3eWhLLXNheW9XeFJZQVQwdXc?oc=5",
+      "published_at": "Mon, 02 Feb 2026 08:00:00 GMT",
+      "published_ts": 1770019200.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Just Dial Limited",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information"
+    },
+    {
+      "source": "bing_rss_industry",
+      "title": "India's internet user base crosses 950 million in 2025: IAMAI report",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49d0fea4e43d4914089762d476739&url=https%3a%2f%2fbrandequity.economictimes.indiatimes.com%2fnews%2fdigital%2findias-internet-user-base-crosses-950-million-in-2025-iamai-report%2f127794708&c=17812197638863207261&mkt=en-in",
+      "published_at": "Fri, 30 Jan 2026 10:57:00 GMT",
+      "published_ts": 1769770620.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated",
+      "company_name": "Just Dial Limited",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "India’s 7% growth outlook supports markets, but economists flag fiscal, trade, and currency risks - CNBC TV18",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdDFrYWVqUm1VRGNOZjVydDFOVFp1LUltdGNuSC1mRFowU2lnRlNYRTBXeWV0T3oyS2NqUUdPRUlNSFA0UmNSM2FGaTFpV2RUQTU2UURzUWNqeEVtLXg0Q0hvc1d2NzVURnBTaXFMSE5sNFVwdlZCRG1nQzFPVlNiUk44bng1cGNFeVZCb2lsR1oySnI0NUFNTTE5QlV4czV5NDhCeDdlTXNYbEdLUWFmQXppVDFyRXdsaENV0gHAAUFVX3lxTE5lVTBueHJVNk52a1NLNU05aXljclhSbEtjSG0tSURoT1UzVXNIYkhpNzVjcjFVUUpqbXNvNmdtV2puazZLWlFNZGZKdXctMFFaVVc0OXl1WDJpcHJQT1AxTGZKaTV5b2phYlFwWmVfbnh5Uzg3UzZWVG91aEtUbWVzRTNEdHZucGxMWVFPR21fcW5saktFV2ItOVVoZjd0MTExQ1FTSFdBLWs0ZThRbElDZ0JDc2lkVXRrOFU5OEUwaw?oc=5",
+      "published_at": "Thu, 29 Jan 2026 08:00:00 GMT",
+      "published_ts": 1769673600.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Just Dial Limited",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "5 Stocks That Reported Over 25% Operating Profit Margin in Q3 To Keep On Your Radar - Trade Brains",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONHZkVzA1dG50NmxubWRXZ05BRlB5VDdDWEtfUlk0ZU1wTnR1MC1vY3dIeEd1MC1PZG9ORUFCbm9uT01Tczl2NHNOaU5Fdk0xanhSdi1QUzdQN0tHaDR1RktTZEtxZ3E2SXZEeGh3WjNSZmhiQ2JWRXlzaFpReUJQRWpXQ1F6ZzJ0Z09mSmgwYU5jRFhYZkdVVnZmNmhGQU8zbTllemdRY2ZMUQ?oc=5",
+      "published_at": "Sat, 17 Jan 2026 08:00:00 GMT",
+      "published_ts": 1768636800.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Just Dial Limited",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Just Dial Limited Beat Analyst Estimates: See What The Consensus Is Forecasting For Next Year - simplywall.st",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQSVBUUzhtREFfUXo3ZmlRay1RbEx5N083RUFJcjRvS19HTl9Xa2x4TWZmSDFGSS1Qb0pHNlExbk1NOWE3UzdISXZzVGdnUDlaQk4yTUk0Z3VtSXlEMVNUelFqaTRmVUd2Ym1GY3pVbDZRSlBuVW1yQ3I4MGdkVnBjUmNxNGt3U1ZTZ1U3MEt1T0ZRYnlKdVBxTDlCUlZvcjRRNWhQS3NQendpcTFIeWZGVUdhVzdpNjRyU1BRaGcyVUFDb0VPS2xqZlN3TkVkUnNv0gHWAUFVX3lxTE1QZVVrZzBRQmJTbnJMbDMzRHhFUk05bzhPVmtrNFJfZEJiTkZWYXdqU3pCYmtyX0Nmb0k2OWtJUHJMV2x1YkJzUEJtemphTXJwZU1YNDZQOUdyZjJUNmltdklCSHFxT1NFdHpQWmdqRzBVTnVURXdSNE5pTVpPMDREOXNaeFVYMGJOREJWYko2WjcwQjVzcHRUc05TZ2dpdXRCMlJQajhlcTlwZ1VFMENKR3lrSTlTN0NvNE9qMU9RV0xJNHhPU3hTTFlHbmVxWE9Hc2pCd1E?oc=5",
+      "published_at": "Fri, 16 Jan 2026 08:00:00 GMT",
+      "published_ts": 1768550400.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Just Dial Limited",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Just Dial Q3 FY26: Strong Revenue Growth Masks Profit Decline Amid Elevated Other Income - Markets Mojo",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQSTVFbEFITjBTaG9tUDJCUFVlOUVFZUM0ZGpaX2p3TVcwOTRyUjQ1empJaTB6bEljRkZDYmhIOXNNRGlIeWk0TE1paE94YVFEQ2MzaWgxS3dTaThBWkx2OGxLSnZOa2ZHSGdwdncwTlYxYVBIbGlKWHVoTkVWaHQ3aFJETmJIYnZ1UEZBVU5XRmN1R0lYSzVMdWU3eGQtVFpselY2MnJCTENuQ0VLTnBoSDNIM1R6ZW9oODVoaElfNVM2b0s3QU05N2pDbkgwdGg2REZicm9sOVBvTUpt?oc=5",
+      "published_at": "Wed, 14 Jan 2026 08:00:00 GMT",
+      "published_ts": 1768377600.0,
+      "sentiment_score": 2.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Just Dial Limited",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Q3 Results FY26 This Week: Infosys, RIL, HDFC Bank, Groww Among Companies To Declare Earnings From Jan. 12-17 - NDTV Profit",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPM183Y0tqVVlIdU1EOXBFa2FkT1dNY0xpSnVOdXdSRTFQYjd1UHM1VnZueENYQmMtNVRqR0lCVlFiSW5uR0VTb1F5WE9lT2FVNWRjNFdiRElpUVNqcDBKQ2ZVM281dmhYdzlISU1Fdno5cjNtb2R1R2FiVHF0M2xEQWgwcnRnOVFuUE1uOW1TNlR0VzJnYmgxYm9ta1FsZ9IBpgFBVV95cUxPQTM1N0UyNHNzQ0VUR3FJY0pMTmdGRGxaWktTS2lFYnNTVzl1RWVEU2stT3lmcUNFeTVQUzByY25LN2Vna2J0eXpnczB1RXBVN1M2SklEeGRsdzNUS2R6WXA3NHFEMm9mXy1lY3JMeFpMUmhldXIzN0pHcWxuLXNZVGZHbldJLU5pQmJ5WTVERUxZcGItWGdWYUgwd3JFMmNDeTRINktB?oc=5",
+      "published_at": "Mon, 12 Jan 2026 08:00:00 GMT",
+      "published_ts": 1768204800.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Just Dial Limited",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Fixed investments continue to be key driver of GDP growth this fiscal: Crisil - Fortune India",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPQ1hkX1BxcTB6QnNKUTdCWVZoOVhMVGNCMHhlNlhYaldjNFlRS0J3bDFaODFkQ0RqZFU0Vmc4ZF93bklSNklaRFJqSWRYalJvVmp2MTFPUkFiWGJUbFh2cmFfNzlrSFNubXY2QU5aYUZqcDBpT2hzNHByelo0MWhGYnd3ckROQVN1UTlDTGw5WENJaG5pMDhGYzVoZndCNnE5Z0JwYkU0eFk3SjVXUmFuSlJ4TGd0OVptb3F5R3h5bHhNdEdk0gHSAUFVX3lxTE9WNW5BNDZfUkpzMG9jeTlRdEJ2aEczbmpVcVhOYm5Wa2RhYTAwcHlvTmJTS3lJR2NSQjM3dTl6MmFvV1NXZlc5QnlCX2ZOZWxPMl9mVjltY0U5TVFWVzNJUUM0UlB0SGNTOFA1RTg2WUxGcVFQYmtiNVkwajhYanBwOHprcDU3c05WdE11Y01mTFM5U1Fyemo5VGg4Q3J5a2JRWXA0blFfcmJHTnhqTTJBVExLdmJMUkczMU9oekI0cjVnOXlRRzVXZmdMeEZqUWNRUQ?oc=5",
+      "published_at": "Thu, 08 Jan 2026 08:00:00 GMT",
+      "published_ts": 1767859200.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Just Dial Limited",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information"
+    }
+  ],
+  "top_macro_news": [
+    {
+      "source": "google_rss_macro",
+      "title": "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRVNOajVzSUJWU3Q5R2toMjVnZVZMNDhLclozWDdNODc1OU1qbVFjYnFTT0Z1SUZaaExuY3FJajFkdWtOWk5kdWplT0J0Yk9RcnlDVnlvQmJZNC1jVDVHZmRhS0Z0X0JiXzFETHRnaUVac1pEMmZfWE9raXFacFpwR1dSaEVST0Ntc2k1czN4emNQVFlWSHE3V1ZhMW80OUFMYmN6dEwtTkRadm44enc?oc=5",
+      "published_at": "Fri, 13 Mar 2026 15:17:26 GMT",
+      "published_ts": 1773415046.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49d16779b4a12b78fd4ff66fcb1e1&url=https%3a%2f%2fwww.livemint.com%2fmarket%2fstock-market-news%2fus-china-power-shift-global-markets-india-outlook-mirae-asset-swarup-mohanty-11773376870759.html&c=15555016077234823276&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 14:15:00 GMT",
+      "published_ts": 1773411300.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Fed to delay rate cuts as war clouds the outlook",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49d1779614f94800ba32edd5de5c7&url=https%3a%2f%2fthink.ing.com%2farticles%2ffed-to-delay-rate-cuts-as-war-clouds-the-outlook%2f&c=127436243108543137&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 13:40:00 GMT",
+      "published_ts": 1773409200.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss_macro",
+      "title": "Bitcoin holds above $71,000, defying rising dollar, oil and U.S. bond yields - CoinDesk",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbHB1NE1GZ1dLTWpvOWNseW5QXy1jbWVHcTYzcXF6NWotU0NHOG1XNEUzcDd0ZTctMW1URXZzSW5RQ1djc1h3a0xOM0k2Tkd5TjRWcE0wUXRwZjg4WktmZ2xDWnpLa0RhR1BsRzlrZlVlVzhONmQ0eW51VXJIWFQ3NFJkd0VXZ2VsUnY4VTBuWjU5LXpxX1BPYUIyaEZKQVdEWUU3a25CY0RvN3NrVW10cFNUTWtxSHdhSWI4?oc=5",
+      "published_at": "Fri, 13 Mar 2026 09:34:10 GMT",
+      "published_ts": 1773394450.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Gold Silver Rate Today Live Updates (13 March 2026): Gold, silver futures fall on MCX as rising crude oil prices dim hopes of early rate cuts",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49d1739d843c7a48ae93741302b90&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2flive-blog%2fgold-rate-silver-price-today-live-updates-mcx-gold-18k-22k-24k-rate-iran-isreal-us-war-latest-news%2fliveblog%2f129534056.cms&c=4108291931945502437&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 06:00:00 GMT",
+      "published_ts": 1773381600.0,
+      "sentiment_score": -1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Markets Today: Sensex Declines 830 Points, Nifty Slips Below 23,650 Amid Iran-US-Israel War",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49d16779b4a12b78fd4ff66fcb1e1&url=https%3a%2f%2fwww.news18.com%2fbusiness%2fmarkets%2fmarkets-today-sensex-falls-1000-points-in-opening-trade-nifty-below-23600-as-oil-surges-past-100-9956009.html&c=7425380694736114227&mkt=en-in",
+      "published_at": "Thu, 12 Mar 2026 03:39:00 GMT",
+      "published_ts": 1773286740.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Share markets continue to bleed as West Asia tensions dampen sentiment, Sensex over 800 points down",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49d16779b4a12b78fd4ff66fcb1e1&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fmarkets%2fshare-markets-continue-to-bleed-as-west-asia-tensions-dampen-sentiment-sensex-over-800-points-down%2far-AA1Yt9yX&c=14300386732484515462&mkt=en-in",
+      "published_at": "Thu, 12 Mar 2026 03:04:15 GMT",
+      "published_ts": 1773284655.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Trading Day: Oil and yields up, up, and away",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49d1739d843c7a48ae93741302b90&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2ftrading-day-oil-and-yields-up-up-and-away%2far-AA1YqbzQ&c=11227118164045986945&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 14:08:08 GMT",
+      "published_ts": 1773238088.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss_macro",
+      "title": "Markets Confront the Economic Impact of the Iran Conflict - Natixis CIB | Natixis Corporate & Investment Banking",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOVpkVlFlOG1lbEdUZEM2VU40clhkdUtsN3l6Z3Rkd2g4WTBNMVNKSFBmMmkyT1M0RGwtZGJxN1ItZVVrMEU3UnVfWFJ6UmpZUVppV09ZelhMWHNvZmhtbFk3ajc0UnlpY0dZeW51MGJnSUU3dGhYRGFQaE44NjJVaFFBVWFyVlNhampDdXFic0dCZXZ3YW5ScWUtWQ?oc=5",
+      "published_at": "Wed, 11 Mar 2026 10:55:26 GMT",
+      "published_ts": 1773226526.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Oil price spike could push US inflation to 4%, delaying Fed rate cut",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49d1779614f94800ba32edd5de5c7&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2foil-price-spike-could-push-us-inflation-to-4-delaying-fed-rate-cut%2far-AA1Ym49n&c=7065206888862373143&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 03:02:32 GMT",
+      "published_ts": 1773198152.0,
+      "sentiment_score": 1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    }
+  ],
+  "chart_path": "reports/JUSTDIAL_NS_20260313_232632_trend.png",
+  "long_term_chart_path": "reports/JUSTDIAL_NS_20260313_232632_long_term.png",
+  "rich_report": "Indian Swing Trading Multi-Agent Report\nIndicator Signal: SELL | Trend: close=523.05, SMA20=572.80, SMA50=646.90. Momentum: MACD=-37.210, Signal=-36.156, Hist=-1.055, ROC10=-9.56%. Oscillators: RSI14=19.5, StochK/D=13.9/16.7, Williams%R=-86.1. Risk: ATR14=20.35, Volume=151233 vs VolSMA20=260469. Momentum Score=19.6/100 | MA=Sell, Trend=Falling, RSI=Oversold, MACD=Bearish.\nPattern Signal: NO_TRADE | setup=sideways compression (wait for breakout candle), slope=-2.1224, breakout_up=False, breakdown=False, bull_engulf=False, bear_engulf=False.\nTrend Signal: NO_TRADE | setup=sideways trend channel, support slope=-2.540, resistance slope=-2.457, price position=-2.05 in channel.\nNews Signal: BUY | combined sentiment=0.13 (stock=0.16, industry=0.19, macro=-0.09). Stock articles=19 (trusted=0, unrated=19); Industry articles=30 (trusted=0); Macro articles=30 (trusted=0). Sentiment strength=0.19. Inference=Recent news highlights Just Dial as a long-term 'buy' candidate with strong projected upside (15-47%). While macroeconomic sentiment is slightly bearish and historical earnings growth has been modest, the specific inclusion of the stock in positive forward-looking market outlooks provides a sufficient directional edge for a moderate buy signal..\nMarket Sentiment: SELL | NIFTY 5D=-2.31%, 10D=-3.42%, 20D=-3.87%, SMA20 gap=-2.4% (below). India VIX=6632.18994140625, 5D chg=-107.8, news sentiment=0.13. Votes: bull=2, bear=3.\nRelative Strength: NO_TRADE | stock 10-bar return=-0.10%, NIFTY=-2.11%, alpha=2.02%.\nUS Trend Signal: SELL | Global risk-off backdrop. SPX 5D/20D=-2.31%/-3.87%, NDX 5D/20D=-1.60%/-2.94%, VIX=27.29, DXY 5D=0.00%.\nFinancials Signal: BUY | Fundamentals supportive. Coverage=62%. ROE=12.68%, Margin=51.16%, RevGrowth=N/A, EarnGrowth=N/A, D/E=0.022, CurrentRatio=N/A, PE=7.616. Quarterly trends: RevQoQ=2.63%, NIQoQ=-26.13%, OCFQoQ=N/A, DebtQoQ=6.79%, FCF=N/A, Cash/Debt=0.103. Analyst target=N/A (N/A upside, ? analysts). 52w Hi/Lo=1048.900/508.900, position=2.62%.\nMarket Setup Signal: NO_TRADE | Support test. Tape read: 5d=-2.2%, 20d=-22.2%, volume ratio=0.89, momentum=19.6. Support gap=2.8% and resistance gap=36.4%. Trader read: The asset is in a deep downtrend, but at an RSI of 19.5, it is technically exhausted and near immediate support at 508.9. While momentum is bearish, the risk of a mean-reversion bounce is high. Selling into extreme oversold conditions offers poor reward-to-risk. I am waiting for a structural stabilization or a failed rally attempt.\nCatalyst Context Signal: NO_TRADE | Mixed catalyst tape. Backdrop read: news sentiment=0.13, analyst upside=None, 52w position=2.6. Core read: While Justdial trades at a low PE (7.6x) and near 52-week lows, the fundamental picture is deteriorating with a 26% QoQ decline in net income. The lack of analyst coverage and mixed data points suggest a value trap risk. Without clear growth catalysts or stabilization in earnings, the directional edge is insufficient for a swing trade.\nTrader Intel: NO_TRADE | Value Trap Risk | Avoid Bottom Fishing Falling Knives. Thesis: Justdial is currently showing classic signs of a value trap. While it sits at a 52-week support zone around 508, the fundamental erosion—marked by a 26% QoQ net income decline—outweighs the technical oversold status. The lack of institutional sponsorship and clear catalysts means any bounce is likely to be met with aggressive selling from trapped holders. Why now: The stock is deeply oversold (RSI < 20), making it a prime candidate for a 'dead cat bounce' which is dangerous for short-term swing capital. Why not now: The trend remains decisively bearish; buying into a collapsing fundamental narrative without a trend-reversal trigger is poor risk management.\nMaster Confluence Committee: BUY=0.119, SELL=0.230, NO_TRADE=0.288. Final=NO_TRADE, confidence=0.489. Support=['pattern', 'trend', 'relative_strength', 'market_setup', 'catalyst_context']; Opposing=['technical', 'news', 'market_sentiment', 'us_trend', 'financials']; Neutral=['pattern', 'trend', 'relative_strength', 'market_setup', 'catalyst_context'].\nRisk Plan: size=0 shares, ATR=20.35, stop=N/A, target=N/A.\n**FINAL CONCLUSION**\n- Signal: NO_TRADE\n- Confidence: 0.650\n- Action Bias: Wait / no-trade setup\n- Playbook: Avoid Bottom Fishing Falling Knives\n- Thesis: Justdial is currently showing classic signs of a value trap. While it sits at a 52-week support zone around 508, the fundamental erosion—marked by a 26% QoQ net income decline—outweighs the technical oversold status. The lack of institutional sponsorship and clear catalysts means any bounce is likely to be met with aggressive selling from trapped holders.\n- When to Act: Wait for a successful retest of 508 with a definitive higher-low structure or a high-volume breakout above the 20-day mean.\n- Execution Style: Patience and observation\n- Invalidation: If the price shreds through the 508 level on high volume, the thesis of 'support' is null and void.\n- Expected Holding Duration: 2-6 weeks\n- Context: sideways trend channel\n- Risk Flag: High volatility in a structural downtrend; risk of breakdown below 500.\n- Stop-loss: N/A\n- Targets: N/A\n- 52w Range: ₹508.90 – ₹1048.90\n\nDetailed Agent Reasoning:\n- technical: Strong SELL signal confirmed by 8 bearish points and zero bullish indicators. Price at 523.05 remains significantly below SMA20 (572.80) and SMA50 (646.90). Momentum is negative with MACD (-37.21) below signal line, and RSI at 19.5 indicates deeply oversold conditions without current reversal confirmation. Volume at 151,233 is notably below the 20-day average of 260,469, signaling weak conviction in the current downward trajectory despite price degradation.\n- pattern: NO_TRADE status assigned due to sideways compression. Current slope of -2.12 does not meet structural requirements for a clean breakout or breakdown. No bullish or bearish engulfing patterns are present to suggest a shift in price behavior. The setup remains in a wait-and-see phase until a decisive breakout candle clears the existing compression range, as current structure lacks sufficient volatility expansion to warrant a position.\n- trend: NO_TRADE assigned as price is trapped within a sideways trend channel. While the channel slope averages -2.49, the price position at -2.04 relative to the channel indicates consolidation rather than a clear directional trend. With support at 568.2 and resistance at 590.25, the asset is oscillating without establishing a defined trend path, making it inappropriate for trend-following strategies at this juncture.\n- news: BUY signal based on a combined sentiment score of 0.13. Recent analyst coverage identifies Just Dial as a long-term buy candidate with projected upside between 15% and 47%. Despite slightly bearish macro sentiment (-0.09) and modest historical earnings, the positive industry outlook (0.19 sentiment) and specific long-term growth thesis provide sufficient directional bias to override neutral indicators in the short term.\n- market_sentiment: Bearish bias dominates. Oversold technical metrics combined with low participation volume suggest investors are avoiding the stock during the current downtrend. Market participants appear to be waiting for a significant catalyst or technical floor before re-engaging, as evidenced by the lack of buying interest despite deeply depressed RSI levels.\n- relative_strength: The asset displays significant weakness, trading near 52-week lows and significantly underperforming moving averages. With an RSI of 19.5, the stock shows exhaustion but lacks the relative strength to initiate a counter-trend bounce. Performance metrics confirm the stock is lagging broader market indices, reflecting current lack of buying interest.\n- us_trend: Not applicable as this is an Indian equity (JUSTDIAL.NS), though global macro sentiment is currently slightly negative at -0.09, which may act as a minor headwind for localized recovery efforts in the communication services sector.\n- financials: Financial data confirms a challenging environment. Current price of 523.05 reflects downward pressure. While specific quarterly earnings metrics are not detailed, the technical bearishness is historically consistent with periods of earnings stagnation or compression. The stock requires a fundamental catalyst to bridge the gap between current price and higher valuation targets noted in recent analyst coverage.\n- market_setup: The setup is characterized by technical weakness and a lack of trend clarity. With price at 523.05, the stock is in a high-risk zone where downside momentum remains dominant, but the oversold RSI suggests the potential for a technical snap-back if the sideways compression breaks upward. The low volume environment suggests a lack of institutional accumulation at these levels.\n- catalyst_context: The primary catalyst is the long-term growth outlook projecting 15-47% upside, which contrasts with the current technical sell-off. Market focus remains on whether this valuation gap will be closed by fundamental earnings delivery or if the current technical breakdown will necessitate a retest of lower support levels before any recovery can manifest.\n- confluence: Confluence is currently weak. While news sentiment suggests a long-term buy, technical and trend indicators are overwhelmingly bearish or neutral. The lack of alignment between technical exhaustion and fundamental upside expectations suggests a high probability of further volatility without clear directional confirmation.\n- risk: High risk environment. The stock is in a downtrend with poor liquidity (volume significantly below SMA20). ATR of 20.35 indicates elevated volatility relative to price, suggesting that any attempt to trade the current RSI oversold conditions carries significant risk of further drawdown or extended consolidation.\n\nGemini Master Reasoning:\nSetup\nJustdial is currently testing its 52-week support zone around the 508 level. The asset is in a clear structural downtrend, evidenced by its position significantly below both the 20-day and 50-day moving averages. Volume is weak, measuring at 0.89 of the 20-day SMA, indicating a lack of institutional interest in supporting these price levels.\n\nCatalyst\nThe fundamental backdrop is deteriorating. Despite a low P/E ratio, the company reported a 26% QoQ decline in net income, which undermines the value proposition. While some market sentiment identifies the stock as a potential long-term play, there is no immediate catalyst to drive a reversal. The lack of institutional sponsorship suggests that the current price reflects a true fundamental erosion rather than a temporary dislocation.\n\nFriction\nThe primary friction is the \"value trap\" dynamic. With an RSI of 19.5, the stock is technically oversold, inviting potential \"dead cat bounces.\" However, trading against a dominant bearish trend based solely on oversold conditions is a high-risk endeavor. The high ATR of 20.35 relative to price further suggests that volatility could easily breach support, leading to a breakdown rather than a recovery.\n\nExecution Plan\nAction: No trade.\nSize: 0 shares.\nPatience is the only viable strategy here. I am looking for one of two conditions to potentially shift the bias:\n1. A successful test of 508 followed by a clear, higher-low structure on the daily timeframe.\n2. A definitive high-volume breakout above the 20-day moving average, signaling that buyers are willing to absorb the overhead supply.\nUntil such structure emerges, there is no actionable edge.\n\nVerdict\nAvoid bottom fishing. The risk of the price shredding through the 508 support level is significant, and the current momentum does not support a long entry. Standing aside preserves capital.\n\nLLM Token Usage:\n- Input tokens: 15614\n- Output tokens: 2221\n- Total tokens: 17835\n- Estimated cost (USD): 0.0\n\nLONG-TERM OUTLOOK (Based on News, Financials, and Price Data)\n- Stance: LONG_TERM_BEARISH\n- Confidence: 0.850\n- Sector: Unknown\n- Data coverage: 2717 daily bars for long-term model.\n- Price trend (1Y/3Y/5Y/10Y): -39.43025937273627% / -17.590991376512477% / -18.324489716949% / -37.93533221086102%.\n- Long-run quality: CAGR(3Y)=-6.24562063774341%, CAGR(5Y)=-3.967469847032279%, CAGR(10Y)=-4.65795925929039%,\n  Max Drawdown(5Y)=-80.65711648358149%, Vol=49.172636012222505%.\n- Structural trend: price vs 200DMA=-32.79119715733051%.\n- Note: N/A metrics indicate insufficient history for that exact horizon, not an implied negative value.\n- News signal: avg sentiment=0.13 across stock/industry/macro streams (15/12/10 items).\n- Fundamental location: 52w position=2.6%, 1Y return=-39.43025937273627%.\n- Street context: analyst upside=N/A% from N/A analysts.\n- Macro overlay: India sentiment=SELL, US trend=SELL.\n\n--- VALUATION SNAPSHOT ---\n- P/E (trailing): 7.62\n- PEG ratio: N/A\n- Price/Book: 0.97\n- ROE: 12.7%\n- Debt/Equity: 0.02\n- EV/EBITDA: -3.21\n- EV/Revenue: -0.86\n- Book value per share: 541.54\n- Enterprise value: N/A\n- Gross margins: N/A\n- Operating margins: 25.2%\n- EBITDA margins: N/A\n- Total revenue: 11,419,300,000\n- Total debt: 998,400,000\n- Total cash: 103,000,000\n\n--- QUARTERLY FINANCIAL TRENDS ---\n- Revenue QoQ growth: N/A\n- Net income QoQ growth: N/A\n- Operating cash flow QoQ: N/A\n\n--- DIVIDEND & OWNERSHIP ---\n- Dividend yield: 0.8%\n- Dividend yield trend: N/A\n- Total dividends (1Y): ₹0.00\n- Institutional ownership: 12.3%\n- Major holders (institutions): N/A%\n\n--- SCORING FACTORS ---\n  ↑ news_sentiment: score=+0.13 × weight=1.00\n  ↓ return_1y: score=-0.39 × weight=0.90\n  ↓ return_3y: score=-0.18 × weight=0.80\n  ↓ return_5y: score=-0.18 × weight=0.70\n  ↓ cagr_5y: score=-0.40 × weight=0.90\n  ↓ sma200_position: score=-3.28 × weight=0.50\n  ↓ max_drawdown: score=-0.81 × weight=0.50\n  ↓ volatility: score=-0.49 × weight=0.40\n  ↓ 52w_position: score=-0.95 × weight=0.30\n  ↓ 1y_change: score=-0.39 × weight=0.70\n  → dividend_yield: score=+0.08 × weight=0.40\n  ↓ cagr_10y: score=-0.47 × weight=1.00\n  ↑ operating_margins: score=+0.25 × weight=0.30\n  ↓ us_macro: score=-1.00 × weight=0.35\n  ↓ india_macro: score=-1.00 × weight=0.35\n\n- Composite score: -0.518\n- Secular Growth Forecast: JUSTDIAL exhibits structural decay with a 5Y drawdown of 80% and consistent negative CAGR. Trading 32% below its 200DMA with high volatility and poor institutional interest, the stock lacks a recovery catalyst. 3-5 Year Secular Forecast: Continued margin erosion and loss of market relevance as digital competitors dominate, suggesting long-term capital destruction.\n",
+  "price_52w": {
+    "high": 1048.9,
+    "low": 508.9,
+    "current": 523.05,
+    "position_pct": 2.6,
+    "change_1y_pct": null
+  },
+  "analyst_consensus": {
+    "target_price": null,
+    "target_high": null,
+    "target_low": null,
+    "n_analysts": null,
+    "implied_upside_pct": null
+  },
+  "fundamental_signals": [
+    {
+      "type": "mixed",
+      "text": "Near 52-week low (₹508.90–₹523.05) — historically strong demand zone. Deep oversold bounces common, but confirm volume."
+    },
+    {
+      "type": "bearish",
+      "text": "Net income declined sharply QoQ (-26.1%)."
+    }
+  ],
+  "key_price_levels": [
+    {
+      "label": "Resistance 1",
+      "price": 713.4,
+      "type": "resistance"
+    },
+    {
+      "label": "Resistance 2",
+      "price": 746.88,
+      "type": "resistance"
+    },
+    {
+      "label": "Resistance 3",
+      "price": 759.8,
+      "type": "resistance"
+    },
+    {
+      "label": "Current",
+      "price": 523.05,
+      "type": "current"
+    },
+    {
+      "label": "Support",
+      "price": 508.9,
+      "type": "support"
+    }
+  ],
+  "momentum_score": 19.6,
+  "qualitative_labels": {
+    "moving_averages": "Sell",
+    "trend_channel": "Falling",
+    "rsi": "Oversold",
+    "macd": "Bearish"
+  },
+  "valuation_snapshot": {
+    "pe_trailing": 7.615851888384544,
+    "peg_ratio": null,
+    "ev_to_ebitda": -3.214,
+    "ev_to_revenue": -0.858,
+    "gross_margins": 0.39084,
+    "operating_margins": 0.27502,
+    "ebitda_margins": 0.26705998,
+    "book_value": 574.214,
+    "dividend_yield": 0.007647452620882694,
+    "enterprise_value": -10264391680,
+    "roe": 0.12682079670031476,
+    "debt_to_equity": 0.02167372191468577,
+    "price_to_book": 0.9658484040365245,
+    "total_revenue": 11958200320,
+    "total_debt": 950200000,
+    "total_cash": 55697199104
+  },
+  "master_reasoning": {
+    "model": "gemini-3.1-flash-lite-preview",
+    "text": "Setup\nJustdial is currently testing its 52-week support zone around the 508 level. The asset is in a clear structural downtrend, evidenced by its position significantly below both the 20-day and 50-day moving averages. Volume is weak, measuring at 0.89 of the 20-day SMA, indicating a lack of institutional interest in supporting these price levels.\n\nCatalyst\nThe fundamental backdrop is deteriorating. Despite a low P/E ratio, the company reported a 26% QoQ decline in net income, which undermines the value proposition. While some market sentiment identifies the stock as a potential long-term play, there is no immediate catalyst to drive a reversal. The lack of institutional sponsorship suggests that the current price reflects a true fundamental erosion rather than a temporary dislocation.\n\nFriction\nThe primary friction is the \"value trap\" dynamic. With an RSI of 19.5, the stock is technically oversold, inviting potential \"dead cat bounces.\" However, trading against a dominant bearish trend based solely on oversold conditions is a high-risk endeavor. The high ATR of 20.35 relative to price further suggests that volatility could easily breach support, leading to a breakdown rather than a recovery.\n\nExecution Plan\nAction: No trade.\nSize: 0 shares.\nPatience is the only viable strategy here. I am looking for one of two conditions to potentially shift the bias:\n1. A successful test of 508 followed by a clear, higher-low structure on the daily timeframe.\n2. A definitive high-volume breakout above the 20-day moving average, signaling that buyers are willing to absorb the overhead supply.\nUntil such structure emerges, there is no actionable edge.\n\nVerdict\nAvoid bottom fishing. The risk of the price shredding through the 508 support level is significant, and the current momentum does not support a long entry. Standing aside preserves capital."
+  },
+  "llm_usage": {
+    "calls": [
+      {
+        "name": "News Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2633,
+        "output_tokens": 97,
+        "total_tokens": 2730
+      },
+      {
+        "name": "US Trend Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 399,
+        "output_tokens": 97,
+        "total_tokens": 496
+      },
+      {
+        "name": "Market Setup Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2084,
+        "output_tokens": 115,
+        "total_tokens": 2199
+      },
+      {
+        "name": "Catalyst Context Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2340,
+        "output_tokens": 104,
+        "total_tokens": 2444
+      },
+      {
+        "name": "Trader Intel Agent",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1550,
+        "output_tokens": 329,
+        "total_tokens": 1879
+      },
+      {
+        "name": "Batched Agent Reasoning",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1729,
+        "output_tokens": 963,
+        "total_tokens": 2692
+      },
+      {
+        "name": "Long-Term Outlook Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1003,
+        "output_tokens": 105,
+        "total_tokens": 1108
+      },
+      {
+        "name": "Master Reasoning",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 3876,
+        "output_tokens": 411,
+        "total_tokens": 4287
+      }
+    ],
+    "llm_enabled": true,
+    "skipped_calls": 0,
+    "error_calls": 0,
+    "total_input_tokens": 15614,
+    "total_output_tokens": 2221,
+    "total_tokens": 17835,
+    "pricing": {
+      "input_cost_per_1m": 0.0,
+      "output_cost_per_1m": 0.0,
+      "estimated_total_cost_usd": 0.0
+    }
+  }
+}

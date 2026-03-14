@@ -1,0 +1,72 @@
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/history.py:173: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  dt_now = pd.Timestamp.utcnow()
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/history.py:173: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  dt_now = pd.Timestamp.utcnow()
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/history.py:173: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  dt_now = pd.Timestamp.utcnow()
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/history.py:173: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  dt_now = pd.Timestamp.utcnow()
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/history.py:173: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  dt_now = pd.Timestamp.utcnow()
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/history.py:173: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  dt_now = pd.Timestamp.utcnow()
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/quote.py:149: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  dnow = pd.Timestamp.utcnow().tz_convert(self.timezone).date()
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/quote.py:237: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  shares = self._tkr.get_shares_full(start=pd.Timestamp.utcnow().date()-pd.Timedelta(days=548))
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/base.py:574: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  dt_now = pd.Timestamp.utcnow().tz_convert(tz)
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/quote.py:149: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  dnow = pd.Timestamp.utcnow().tz_convert(self.timezone).date()
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/quote.py:176: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  t = pd.Timestamp.utcnow()
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/fundamentals.py:131: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  end = pd.Timestamp.utcnow().ceil("D")
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/fundamentals.py:131: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  end = pd.Timestamp.utcnow().ceil("D")
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/quote.py:702: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  start = pd.Timestamp.utcnow().floor("D") - datetime.timedelta(days=365 // 2)
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/quote.py:704: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  end = pd.Timestamp.utcnow().ceil("D")
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/fundamentals.py:131: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  end = pd.Timestamp.utcnow().ceil("D")
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/fundamentals.py:131: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  end = pd.Timestamp.utcnow().ceil("D")
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/fundamentals.py:131: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  end = pd.Timestamp.utcnow().ceil("D")
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/history.py:173: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  dt_now = pd.Timestamp.utcnow()
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/quote.py:702: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  start = pd.Timestamp.utcnow().floor("D") - datetime.timedelta(days=365 // 2)
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/quote.py:704: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  end = pd.Timestamp.utcnow().ceil("D")
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/history.py:173: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  dt_now = pd.Timestamp.utcnow()
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/quote.py:702: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  start = pd.Timestamp.utcnow().floor("D") - datetime.timedelta(days=365 // 2)
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/quote.py:704: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  end = pd.Timestamp.utcnow().ceil("D")
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/history.py:173: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  dt_now = pd.Timestamp.utcnow()
+/home/ironman/Desktop/ESUMMIT/IndiaSwingTrader/swing_pipeline.py:934: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  report_id = f"{symbol.replace('^', '').replace('.', '_')}_{datetime.utcnow().strftime('%Y%m%d_%H%M%S')}"
+
+DEBUG: fetch_financial_statements called for VIKRAMSOLR.NS
+DEBUG: Error fetching ticker.info for VIKRAMSOLR.NS: HTTP Error 401: 
+DEBUG: Manually extracted from Income Stmt - Rev: 34234530000.0, NI: 1398310000.0, OpInc: 3558890000.0, EPS: 3.865757
+DEBUG: Manually extracted from Bal Sheet - Debt: 2719360000.0, Equity: 12419890000.0, Assets: 28321510000.0
+DEBUG: analyze_financials for VIKRAMSOLR.NS
+DEBUG: raw metrics keys: ['market_cap', 'trailing_pe', 'forward_pe', 'price_to_book', 'debt_to_equity', 'return_on_equity', 'profit_margins', 'operating_margins', 'gross_margins', 'ebitda_margins', 'revenue_growth', 'earnings_growth', 'free_cashflow', 'operating_cashflow', 'current_ratio', 'fifty_two_week_high', 'fifty_two_week_low', 'fifty_two_week_change', 'dividend_yield', 'current_price', 'analyst_target_price', 'analyst_target_high', 'analyst_target_low', 'number_of_analyst_opinions', 'trailing_eps', 'forward_eps', 'beta', 'book_value', 'enterprise_value', 'total_revenue', 'total_debt', 'total_cash', 'peg_ratio', 'sector', 'industry', 'company_name']
+DEBUG: ROE in metrics: 0.11258634335730831
+DEBUG: PE in metrics: 46.981058729834466
+DEBUG: Operating Margins in ext_fund: 0.15225
+DEBUG: _build_long_term_outlook for VIKRAMSOLR.NS
+DEBUG: fin_metrics keys: ['market_cap', 'trailing_pe', 'forward_pe', 'price_to_book', 'debt_to_equity', 'return_on_equity', 'profit_margins', 'operating_margins', 'gross_margins', 'ebitda_margins', 'revenue_growth', 'earnings_growth', 'free_cashflow', 'operating_cashflow', 'current_ratio', 'fifty_two_week_high', 'fifty_two_week_low', 'fifty_two_week_change', 'dividend_yield', 'current_price', 'analyst_target_price', 'analyst_target_high', 'analyst_target_low', 'number_of_analyst_opinions', 'trailing_eps', 'forward_eps', 'beta', 'book_value', 'enterprise_value', 'total_revenue', 'total_debt', 'total_cash', 'peg_ratio', 'sector', 'industry', 'company_name']
+DEBUG: ext_fund keys: ['symbol', 'dividend_yield', 'dividend_rate', 'ex_dividend_date', 'payout_ratio', 'held_pct_insiders', 'held_pct_institutions', 'book_value', 'price_to_book', 'return_on_equity', 'debt_to_equity', 'profit_margins', 'enterprise_value', 'enterprise_to_revenue', 'enterprise_to_ebitda', 'gross_margins', 'operating_margins', 'ebitda_margins', 'total_revenue', 'total_debt', 'total_cash', 'peg_ratio', 'trailing_pe', 'forward_pe']
+DEBUG: PE in fin_metrics: 46.981058729834466
+DEBUG: ROE in fin_metrics: 0.11258634335730831
+
+Final Signal for VIKRAMSOLR.NS: NO_TRADE
+Confidence: 0.47
+Report saved to: reports/VIKRAMSOLR_NS_20260313_225532.md
+

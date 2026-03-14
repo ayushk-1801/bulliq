@@ -1,0 +1,1640 @@
+{
+  "report_id": "HDFCBANK_NS_20260314_062347",
+  "symbol": "HDFCBANK.NS",
+  "timeframe": "1d",
+  "forecast_bars": 3,
+  "start_timestamp": "2025-11-13 15:30:00",
+  "end_timestamp": "2026-03-13 15:30:00",
+  "final_signal": "NO_TRADE",
+  "confidence": 0.55,
+  "confluence_scores": {
+    "buy": 0.092,
+    "sell": 0.307,
+    "no_trade": 0.242
+  },
+  "risk_plan": {
+    "summary": "Risk Plan: size=0 shares, ATR=19.66, stop=N/A, target=N/A.",
+    "reasoning_prompt": "Risk protocol:\n1) Estimate recent volatility using ATR.\n2) Define one-unit risk from ATR multiple and cap portfolio risk near 1% per trade.\n3) Convert risk budget into position size.\n4) Anchor stop to volatility-adjusted invalidation and target to asymmetric reward.\n5) Force size=0 when final signal is NO_TRADE.",
+    "llm_reasoning": "Risk is elevated due to the extreme oversold nature of the RSI and Williams %R, which could lead to sharp, counter-trend volatility. The ATR of 19.66 indicates a wider trading range than typical, requiring wider stop-loss placements if participating. The primary risk is a 'bear trap' or liquidity-driven snap-back, though current volume confirmation leans against an immediate reversal.",
+    "position_size": 0,
+    "stop_loss": null,
+    "target": null,
+    "risk_reward": "N/A",
+    "detail": {
+      "capital": 100000.0,
+      "risk_budget": 1000.0,
+      "one_risk": 23.592878069196427,
+      "atr": 19.660731724330358
+    }
+  },
+  "final_conclusion": {
+    "signal": "NO_TRADE",
+    "confidence": 0.55,
+    "when_to_buy": "N/A",
+    "expected_holding_duration": "2-6 weeks",
+    "stop_loss": null,
+    "targets": [],
+    "target": null,
+    "analyst_consensus": {
+      "target_price": null,
+      "target_high": null,
+      "target_low": null,
+      "n_analysts": null,
+      "implied_upside_pct": null
+    },
+    "price_52w": {
+      "high": 1020.5,
+      "low": 812.0,
+      "current": 817.0,
+      "position_pct": 2.4,
+      "change_1y_pct": null
+    },
+    "key_price_levels": [
+      {
+        "label": "Resistance 1",
+        "price": 941.45,
+        "type": "resistance"
+      },
+      {
+        "label": "Resistance 2",
+        "price": 996.7,
+        "type": "resistance"
+      },
+      {
+        "label": "Resistance 3",
+        "price": 1009.19,
+        "type": "resistance"
+      },
+      {
+        "label": "Current",
+        "price": 817.0,
+        "type": "current"
+      }
+    ],
+    "playbook_title": "Exhausted Bear, Waiting for Structure",
+    "thesis": "HDFCBANK is currently deep in oversold territory (RSI < 20). Institutional shorts have likely booked partial profits, but there is zero evidence of a structural floor. Buying here is 'catching a falling knife,' while selling here risks getting squeezed on a dead-cat bounce.",
+    "execution_style": "Patience-heavy, waiting for lower timeframe base building.",
+    "risk_flag": "Extreme volatility and oversold momentum",
+    "invalidation": "N/A",
+    "simple_summary": "NO_TRADE: Simple view: Signals are mixed, so capital protection is the priority. Wait for clear breakout or breakdown before taking a new position. Confidence is Low. Entry rule: Wait for a clear breakout/breakdown confirmation.",
+    "simple_explanation": "Simple view: Signals are mixed, so capital protection is the priority. Wait for clear breakout or breakdown before taking a new position.",
+    "beginner_plan": [
+      "Step 1: Direction = NO_TRADE.",
+      "Step 2: Entry trigger = N/A",
+      "Step 3: Stop-loss = ₹803.88 (only after buy trigger confirms)",
+      "Step 4: First target = ₹996.70 (only after buy trigger confirms)",
+      "Step 5: If trigger fails or invalidation happens, exit and wait."
+    ],
+    "normal_person_plan": [
+      "What to do now: Wait, no trade now.",
+      "Entry: Wait for a clear breakout/breakdown confirmation.",
+      "Before market opens: set price alerts on trigger and invalidation levels.",
+      "Stop-loss plan: ₹803.88 (only after buy trigger confirms)",
+      "First target plan: ₹996.70 (only after buy trigger confirms)",
+      "Position sizing: risk only a small amount (around 1% of trading capital).",
+      "If stop-loss is hit after entry, exit immediately. Do not average down."
+    ],
+    "summary": "**FINAL CONCLUSION**\n- Signal: NO_TRADE\n- Confidence: 0.550\n- Action Bias: Wait / no-trade setup\n- Playbook: Exhausted Bear, Waiting for Structure\n- Thesis: HDFCBANK is currently deep in oversold territory (RSI < 20). Institutional shorts have likely booked partial profits, but there is zero evidence of a structural floor. Buying here is 'catching a falling knife,' while selling here risks getting squeezed on a dead-cat bounce.\n- When to Act: N/A\n- Execution Style: Patience-heavy, waiting for lower timeframe base building.\n- Invalidation: N/A\n- Expected Holding Duration: 2-6 weeks\n- Context: sideways trend channel\n- Risk Flag: Extreme volatility and oversold momentum\n- Stop-loss: N/A\n- Targets: N/A\n- 52w Range: ₹812.00 – ₹1020.50\n- Current Price Context: ₹817.00\n- Approx Risk:Reward to first target: N/A\n- Teaching note: prioritize process over prediction. Enter only after trigger confirmation, size by invalidation distance, and review whether the thesis is invalidated before averaging or adding."
+  },
+  "long_term_outlook": {
+    "stance": "LONG_TERM_NEUTRAL",
+    "confidence": 0.55,
+    "score": -0.042,
+    "summary": "LONG-TERM OUTLOOK (Based on News, Financials, and Price Data)\n- Stance: LONG_TERM_NEUTRAL\n- Confidence: 0.550\n- Sector: Unknown\n- Data coverage: 2716 daily bars for long-term model.\n- Price trend (1Y/3Y/5Y/10Y): -2.0762294909872248% / 2.5395563990127545% / 7.467919740562379% / 228.40653413724158%.\n- Long-run quality: CAGR(3Y)=0.8394522801857374%, CAGR(5Y)=1.4508683062823158%, CAGR(10Y)=12.626653221824501%,\n  Max Drawdown(5Y)=-41.054976694257796%, Vol=22.07262611679541%.\n- Structural trend: price vs 200DMA=-15.524134799403%.\n- Note: N/A metrics indicate insufficient history for that exact horizon, not an implied negative value.\n- News signal: avg sentiment=0.01 across stock/industry/macro streams (8/12/10 items).\n- News decomposition: stock=N/A, industry=0.09024166666666666, macro=-0.1002982080744078.\n- Fundamental location: 52w position=2.4%, 1Y return=-2.0762294909872248%.\n- Street context: analyst upside=N/A% from N/A analysts.\n- Macro overlay: India sentiment=SELL, US trend=SELL.\n\n--- VALUATION SNAPSHOT ---\n- P/E (trailing): 18.67\n- PEG ratio: N/A\n- Price/Book: 1.64\n- ROE: 8.8%\n- Debt/Equity: 0.95\n- EV/EBITDA: N/A\n- EV/Revenue: 5.98\n- Book value per share: 498.81\n- Enterprise value: N/A\n- Gross margins: N/A\n- Operating margins: -2.7%\n- EBITDA margins: N/A\n- Total revenue: 2,371,508,200,000\n- Total debt: 7,326,106,100,000\n- Total cash: 3,222,323,100,000\n\n--- QUARTERLY FINANCIAL TRENDS ---\n- Revenue QoQ growth: N/A\n- Net income QoQ growth: N/A\n- Operating cash flow QoQ: N/A\n\n--- DIVIDEND & OWNERSHIP ---\n- Dividend yield: 4.0%\n- Dividend yield trend: rising\n- Total dividends (1Y): ₹13.50\n- Institutional ownership: 55.8%\n- Major holders (institutions): N/A%\n\n--- SCORING FACTORS ---\n  → news_sentiment: score=+0.01 × weight=1.00\n  → return_1y: score=-0.02 × weight=0.90\n  → return_3y: score=+0.03 × weight=0.80\n  → return_5y: score=+0.07 × weight=0.70\n  ↑ cagr_5y: score=+0.15 × weight=0.90\n  ↓ sma200_position: score=-1.55 × weight=0.50\n  ↓ max_drawdown: score=-0.41 × weight=0.50\n  ↓ volatility: score=-0.22 × weight=0.40\n  ↓ 52w_position: score=-0.95 × weight=0.30\n  → 1y_change: score=-0.02 × weight=0.70\n  ↑ dividend_yield: score=+0.40 × weight=0.40\n  ↑ cagr_10y: score=+1.26 × weight=1.00\n  → operating_margins: score=-0.03 × weight=0.90\n  → roe: score=+0.09 × weight=1.00\n  ↓ debt_to_equity: score=-0.48 × weight=0.90\n  → trailing_pe: score=+0.07 × weight=0.50\n  ↑ price_to_book: score=+0.50 × weight=0.50\n  ↓ us_macro: score=-1.00 × weight=0.35\n  ↓ india_macro: score=-1.00 × weight=0.35\n--- DIRECT NEWS EVIDENCE (Top Headlines Used) ---\n- Company 1: HDFCBANK Outlook for the Week (March 09, 2026 – March 13, 2026) - Equitypandit\n- Company 2: HDFC Bank Share Price Today (13 Dec 2025): UPI Downtime, Analyst Targets up to ₹1,225, and What Could Move HDFCBANK Stock Next - TechStock²\n- Company 3: HDFC Bank Share Price Today, 28 November 2025: HDFCBANK Holds Near 52-Week High Amid Heavy Options Action - TechStock²\n- Industry 1: NSE concludes process for selection of intermediaries for proposed IPO - ETLegalWorld.com\n- Industry 2: Daily Current Affairs for UPSC IAS Exam - Sanskriti IAS\n- Industry 3: Top 10 Stocks Held by BlackRock India Fund as of January 2026 - Trade Brains\n- Macro 1: Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView\n- Macro 2: Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty\n- Macro 3: Fed to delay rate cuts as war clouds the outlook\n\n- Composite score: -0.042\n- Secular Growth Forecast: HDFCBANK faces structural headwinds; trading below 200DMA with stagnant 3-5Y CAGR. 'Fed to delay rate cuts' (Macro) is a durable headwind increasing funding costs, while 'UPI Downtime' reports suggest operational friction. 3-5Y Secular: Bull case assumes credit growth recovery; Bear case risks margin compression. Invalidate if margin expansion re-accelerates. Mixed signals warrant waiting for clearer technical support.\n",
+    "llm_reasoning": "HDFCBANK faces structural headwinds; trading below 200DMA with stagnant 3-5Y CAGR. 'Fed to delay rate cuts' (Macro) is a durable headwind increasing funding costs, while 'UPI Downtime' reports suggest operational friction. 3-5Y Secular: Bull case assumes credit growth recovery; Bear case risks margin compression. Invalidate if margin expansion re-accelerates. Mixed signals warrant waiting for clearer technical support.",
+    "evidence": {
+      "history_bars": 2716,
+      "history_start": "2015-03-17 00:00:00",
+      "history_end": "2026-03-13 00:00:00",
+      "coverage_ratio": 1.0,
+      "sparse_long_term": false,
+      "fundamentals_sparse": false,
+      "news_avg_sentiment": 0.008,
+      "news_stock_avg_sentiment": null,
+      "news_industry_avg_sentiment": 0.09,
+      "news_macro_avg_sentiment": -0.1,
+      "stock_news_count": 8,
+      "industry_news_count": 12,
+      "macro_news_count": 10,
+      "headline_preview": [
+        "HDFCBANK Outlook for the Week (March 09, 2026 – March 13, 2026) - Equitypandit",
+        "HDFC Bank Share Price Today (13 Dec 2025): UPI Downtime, Analyst Targets up to ₹1,225, and What Could Move HDFCBANK Stock Next - TechStock²",
+        "HDFC Bank Share Price Today, 28 November 2025: HDFCBANK Holds Near 52-Week High Amid Heavy Options Action - TechStock²",
+        "NSE concludes process for selection of intermediaries for proposed IPO - ETLegalWorld.com",
+        "Daily Current Affairs for UPSC IAS Exam - Sanskriti IAS",
+        "Top 10 Stocks Held by BlackRock India Fund as of January 2026 - Trade Brains",
+        "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+        "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+        "Fed to delay rate cuts as war clouds the outlook"
+      ],
+      "return_1y_pct": -2.08,
+      "return_3y_pct": 2.54,
+      "return_5y_pct": 7.47,
+      "return_10y_pct": 228.41,
+      "cagr_3y_pct": 0.84,
+      "cagr_5y_pct": 1.45,
+      "cagr_10y_pct": 12.63,
+      "price_vs_sma200_pct": -15.52,
+      "max_drawdown_5y_pct": -41.05,
+      "annualized_volatility_pct": 22.07,
+      "position_52w_pct": 2.4,
+      "change_1y_pct": -2.0762294909872248,
+      "analyst_upside_pct": null,
+      "analyst_count": null,
+      "india_sentiment_signal": "SELL",
+      "us_trend_signal": "SELL",
+      "dividend_yield": 0.040085679314565484,
+      "dividend_yield_trend": "rising",
+      "peg_ratio": null,
+      "operating_margins": -0.026544500246720632,
+      "held_pct_institutions": 0.55801,
+      "institutions_pct": null,
+      "rev_qoq": null,
+      "ni_qoq": null,
+      "ocf_qoq": null,
+      "sector": "Unknown",
+      "scoring_factors": [
+        [
+          "news_sentiment",
+          0.008,
+          1.0
+        ],
+        [
+          "return_1y",
+          -0.021,
+          0.9
+        ],
+        [
+          "return_3y",
+          0.025,
+          0.8
+        ],
+        [
+          "return_5y",
+          0.075,
+          0.7
+        ],
+        [
+          "cagr_5y",
+          0.145,
+          0.9
+        ],
+        [
+          "sma200_position",
+          -1.552,
+          0.5
+        ],
+        [
+          "max_drawdown",
+          -0.411,
+          0.5
+        ],
+        [
+          "volatility",
+          -0.221,
+          0.4
+        ],
+        [
+          "52w_position",
+          -0.952,
+          0.3
+        ],
+        [
+          "1y_change",
+          -0.021,
+          0.7
+        ],
+        [
+          "dividend_yield",
+          0.401,
+          0.4
+        ],
+        [
+          "cagr_10y",
+          1.263,
+          1.0
+        ],
+        [
+          "operating_margins",
+          -0.027,
+          0.9
+        ],
+        [
+          "roe",
+          0.088,
+          1.0
+        ],
+        [
+          "debt_to_equity",
+          -0.477,
+          0.9
+        ],
+        [
+          "trailing_pe",
+          0.071,
+          0.5
+        ],
+        [
+          "price_to_book",
+          0.5,
+          0.5
+        ],
+        [
+          "us_macro",
+          -1.0,
+          0.35
+        ],
+        [
+          "india_macro",
+          -1.0,
+          0.35
+        ]
+      ]
+    }
+  },
+  "agent_outputs": {
+    "technical": {
+      "signal": "SELL",
+      "confidence": 0.7600000000000001,
+      "summary": "Indicator Signal: SELL | Trend: close=817.00, SMA20=884.61, SMA50=917.84. Momentum: MACD=-27.213, Signal=-20.885, Hist=-6.328, ROC10=-9.08%. Oscillators: RSI14=19.2, StochK/D=4.3/9.2, Williams%R=-95.7. Risk: ATR14=19.66, Volume=41700464 vs VolSMA20=33449307. Momentum Score=7.2/100 | MA=Sell, Trend=Falling, RSI=Oversold, MACD=Bearish.",
+      "reasoning_prompt": "Indicator reasoning protocol:\n1) Map structural trend using relative price location vs SMA20/50/200 and slope analysis.\n2) Decode momentum quality using MACD histogram acceleration/deceleration and ROC10-ROC20 comparisons.\n3) Assess oscillator behavior (RSI/Stoch/WillR) for range-specific exhaustion vs strong trend continuation.\n4) Verify professional participation via volume-over-average filters and spread analysis.\n5) Filter noise using ATR-based volatility regimes (reduce conviction in 'wide and loose' tape).\n6) Enforce strict confluence: if trend and momentum disagree without a reclaim setup, maintain NO_TRADE posture.",
+      "llm_reasoning": "Price at 817.00 is significantly below both the SMA20 (884.61) and SMA50 (917.84), indicating a strong bearish structure. Momentum is deeply negative with MACD at -27.21 and a declining ROC10 of -9.08%. The RSI14 at 19.2 and Williams %R at -95.7 signal extreme oversold conditions, yet the lack of bullish divergence and elevated volume (41.7M vs 33.4M SMA20) confirm aggressive selling pressure without immediate signs of exhaustion-based reversal.",
+      "detail": {
+        "bullish_points": 0,
+        "bearish_points": 9,
+        "delta": -9,
+        "rules": {
+          "trend_alignment": false,
+          "macd_alignment": false,
+          "rsi_bias": "bearish",
+          "stoch_alignment": false,
+          "willr_bias": "bearish",
+          "volume_confirmation": true
+        }
+      },
+      "price_levels": {
+        "levels": [
+          {
+            "label": "Resistance 1",
+            "price": 941.45,
+            "type": "resistance"
+          },
+          {
+            "label": "Resistance 2",
+            "price": 996.7,
+            "type": "resistance"
+          },
+          {
+            "label": "Resistance 3",
+            "price": 1009.19,
+            "type": "resistance"
+          },
+          {
+            "label": "Current",
+            "price": 817.0,
+            "type": "current"
+          }
+        ],
+        "nearest_resistance": 941.45,
+        "nearest_support": null,
+        "resistance_1": 941.45,
+        "resistance_2": 996.7,
+        "resistance_3": 1009.19,
+        "support": null,
+        "breakdown_zone": null
+      },
+      "momentum_score": 7.2,
+      "qualitative_labels": {
+        "moving_averages": "Sell",
+        "trend_channel": "Falling",
+        "rsi": "Oversold",
+        "macd": "Bearish"
+      },
+      "price_range": {
+        "high": 1017.5,
+        "low": 812.0,
+        "position_pct": 2.4
+      },
+      "metrics": {
+        "close": 817.0,
+        "rsi14": 19.214534020826065,
+        "macd": -27.2126079174526,
+        "macd_signal": -20.88463418006387,
+        "macd_hist": -6.3279737373887315,
+        "sma20": 884.6149993896485,
+        "sma50": 917.8389990234375,
+        "roc10": -9.080789873461747,
+        "atr14": 19.660731724330358,
+        "stoch_k": 4.31220308202503,
+        "stoch_d": 9.200457977578331,
+        "willr14": -95.68779691797496,
+        "volume": 41700464.0,
+        "volume_sma20": 33449306.75
+      }
+    },
+    "pattern": {
+      "signal": "SELL",
+      "confidence": 0.6502747496684155,
+      "summary": "Pattern Signal: SELL | setup=range breakdown with negative slope, slope=-7.5033, breakout_up=False, breakdown=True, bull_engulf=False, bear_engulf=False.",
+      "reasoning_prompt": "Pattern reasoning protocol:\n1) Detect breakout/breakdown against prior 12-bar range, not single-candle spikes.\n2) Confirm direction with local slope and bar-structure continuation.\n3) Use engulfing patterns as confirmation, not standalone trigger.\n4) Treat flat-slope compression as NO_TRADE until expansion is confirmed.\n5) Down-rank weak breakouts lacking structure confirmation.",
+      "llm_reasoning": "The asset displays a clear range breakdown with a negative local slope of -7.50. The lack of bullish engulfing patterns confirms the absence of localized buying interest following the breakdown. The volatility proxy of 18.15 suggests the breakdown is supported by active movement rather than stagnation, validating the SELL signal as a momentum continuation play rather than a failed breakout.",
+      "detail": {
+        "setup": "range breakdown with negative slope",
+        "slope": -7.503334369081412,
+        "breakout_up": false,
+        "breakdown": true,
+        "bullish_engulfing": false,
+        "bearish_engulfing": false,
+        "volatility_proxy": 18.151983861861666
+      }
+    },
+    "trend": {
+      "signal": "NO_TRADE",
+      "confidence": 0.4946767215122349,
+      "summary": "Trend Signal: NO_TRADE | setup=sideways trend channel, support slope=-1.826, resistance slope=-1.766, price position=-2.92 in channel.",
+      "reasoning_prompt": "Trend reasoning protocol:\n1) Fit support and resistance trendlines over the visible swing window.\n2) Estimate channel slope (regime direction) and channel width (trend quality).\n3) Locate current price in channel and prefer pullback entries aligned with slope.\n4) If slope is weak/flat, classify as sideways and favor NO_TRADE.\n5) Avoid chasing signals near channel extremes against risk-reward logic.",
+      "llm_reasoning": "The trend analysis indicates a sideways trend channel with a negative slope averaging -1.80. Current price positioning at -2.92 relative to the channel indicates the price is testing or operating outside the established support-resistance bounds (866.64 - 883.66). The failure to maintain the channel and the persistent downward slope support a cautious stance, favoring NO_TRADE until the price stabilizes within the defined channel structure.",
+      "detail": {
+        "setup": "sideways trend channel",
+        "slope_avg": -1.7957,
+        "channel_width": 17.0137,
+        "channel_position": -2.9179
+      },
+      "metrics": {
+        "support_slope": -1.8258535522819361,
+        "resistance_slope": -1.7655553227797522,
+        "channel_position": -2.918,
+        "last_support": 866.64,
+        "last_resistance": 883.66
+      }
+    },
+    "news": {
+      "signal": "NO_TRADE",
+      "confidence": 0.4,
+      "summary": "News Signal: NO_TRADE | combined sentiment=0.01 (stock=0.00, industry=0.09, macro=-0.10). Stock articles=8 (trusted=0, unrated=8); Industry articles=30 (trusted=0); Macro articles=30 (trusted=0). Sentiment strength=0.09. Inference=The available news for HDFC Bank is outdated, with no significant recent catalysts or company-specific developments. While industry sentiment is slightly positive, macro sentiment is leaning negative. Given the absence of actionable, high-trust, or recent information to suggest a clear directional edge, a neutral stance is most appropriate..",
+      "reasoning_prompt": "News reasoning protocol:\n1) Collect company-specific headlines across multiple providers using diversified queries.\n2) Filter spam/listicle/noise domains and low-relevance stories.\n3) Build a global macro stream (rates, inflation, oil, USD, broad risk sentiment).\n4) Build industry/sector thematic stream (demand cycle, market share, regulation, capacity, pricing).\n5) Weight sentiment by source quality, exponential recency decay, and relevance confidence.\n6) Apply content-similarity dedup to remove near-duplicate headlines.\n7) Use LLM to infer final bias from company + industry + macro evidence and return NO_TRADE under conflict.",
+      "llm_reasoning": "Aggregate news sentiment is neutral at 0.01, derived from flat stock-specific sentiment (0.00), slight industry optimism (0.09), and offsetting macro-economic concerns (-0.10). With 38 total articles lacking high-trust sources, there is no actionable catalyst. The absence of specific, recent company developments warrants a neutral position, as current price action is primarily driven by technical momentum rather than news-based fundamentals.",
+      "detail": {
+        "company_context": {
+          "symbol": "HDFCBANK.NS",
+          "company_name": "HDFC Bank Limited",
+          "sector": "Financial Services",
+          "industry": "Banks - Regional",
+          "business_summary": "HDFC Bank Limited provides banking and financial products and services to individuals and businesses in India, Bahrain, Hong Kong, Singapore, and Dubai. The company operates through Treasury, Retail Banking, Wholesale Banking, Other Banking Business, Insurance Business, and Other segments. It offers savings, salary, current, rural, public provident fund, pension, and demat accounts; fixed and recurring deposits; and safe deposit lockers, as well as offshore accounts and deposits, and overdrafts against fixed deposits. The company also provides personal, home, car, two-wheeler, business, doctor"
+        },
+        "stock_article_count": 8,
+        "industry_article_count": 30,
+        "macro_article_count": 30,
+        "trusted_count": 0,
+        "trusted_industry_count": 0,
+        "unrated_count": 8,
+        "trusted_macro_count": 0,
+        "industry_avg_sentiment": 0.09024166666666666,
+        "sentiment_strength": 0.09024166666666666,
+        "llm_decision_why": "The available news for HDFC Bank is outdated, with no significant recent catalysts or company-specific developments. While industry sentiment is slightly positive, macro sentiment is leaning negative. Given the absence of actionable, high-trust, or recent information to suggest a clear directional edge, a neutral stance is most appropriate."
+      },
+      "top_news": [
+        {
+          "source": "google_rss",
+          "title": "HDFCBANK Outlook for the Week (March 09, 2026 – March 13, 2026) - Equitypandit",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5aN1hUNVlDOTVoMVpJZ2lrQ2ZhdmhQTnUzakVpNWRCQ0Z1eXVFZnNJYy1zSlBqNFJEMlpJbFhMV01tYWFocXY0UUtaUU5ocm9jNTV4RllWbGp5MlZhaTYyeXB1RDFSU2t6NW93?oc=5",
+          "published_at": "Fri, 06 Mar 2026 08:00:00 GMT",
+          "published_ts": 1772784000.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "HDFC Bank Share Price Today (13 Dec 2025): UPI Downtime, Analyst Targets up to ₹1,225, and What Could Move HDFCBANK Stock Next - TechStock²",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQQW9sanZxZXZxdkRraEhrcFdrR29FWHl2WUZhTmE5MDl2WVpRMDJmZ0ZKNlFvWEVKTGtvRE9jMWJaRzRTVGFvdVYwSFRxRXl0UF9faktoYVhWc0FmNURMcUx1RVpaTHhWa0lfWjZ2cnpwOUtPV2NIekZwUm9tTmsyVXVpSzFreGgweXBYYzVMQVZlY2ZfX1hiR3dEbDUzS2xXNXhVejMxcVUzOU42Z09MUnFoMlRMVWRFMUhVODJYT3VGSTJidnpXRm5JUFNNZDVnMC16Z3pPZ3JUMFFHOXZrTzk0MA?oc=5",
+          "published_at": "Sat, 13 Dec 2025 08:00:00 GMT",
+          "published_ts": 1765612800.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "HDFC Bank Share Price Today, 28 November 2025: HDFCBANK Holds Near 52-Week High Amid Heavy Options Action - TechStock²",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPTHI2ZThQdDZXOE5qczRpWW5yX2w5U0FLTDZSbUc5b0pmZWxmUnlNZXRpbXdmSHNlQmlyS2lFWXBXZVAwMnhDczhWMEhPSE96SWNsV2xQbWV0bnBveEgzYmtYZzZBNEJtLTkzckVXZGpYcUFWMTlDWXlvVmJFb3Eyc2NibElyVXpORTRYN25xcjNaN2FuV1FlZWRjNWhVLUROc2RCdEZRVkF3Q2t6dkNCUGlmTXI3ZHg1UXRGcUIzUlo3Zw?oc=5",
+          "published_at": "Fri, 28 Nov 2025 08:00:00 GMT",
+          "published_ts": 1764316800.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "HDFCBANK Share Price | HDFC Bank Ltd. Stock Analysis & Recommendation - Markets Mojo",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1PN0MtME5mLU95WElTbGEyQ0oxeElnTk81bFFab1B6dnpnQS1ZdUh3eW03N3BndWNtTFJWemxhel9RQU9tRWMzT2ZGNjFINTlBSDRnMjlSLWVUNEpvZzNUOGlzV2tYOERjMkl5TUpvOA?oc=5",
+          "published_at": "Wed, 14 Feb 2024 09:25:50 GMT",
+          "published_ts": 1707902750.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "HDFCBANK Share Price Today - HDFC Bank Stock Analysis - Equitypandit",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9LZVg1cm1jb3dkRnhXa3VKLUNTalI5UE0xUU5JMkF1cGZNQW0tVUhra1pwb2lZV2FsNnVycmpFWFAyejVFV2lMdjNrQU5UUS0xY3k1eXZ0anh2OWtHcVE?oc=5",
+          "published_at": "Mon, 10 Jul 2023 16:17:41 GMT",
+          "published_ts": 1689005861.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "HDFC Bank Share Price Today - Live HDFCBANK Stock Price for NSE/BSE - Upstox",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA0S2ZRV3lOV2xBN0dYbkw0eFVYeUh1XzdGRWVmdzlXQVJISlJwRnF3ZzR1SzBZY283VUhieFFjTTRxT2llLXJLdUVKdTRsWDdKTVVLOGJpWUFBdXFYbm5CTzJUMEtxOEJfa2hzZTU5N2tURXM?oc=5",
+          "published_at": "Tue, 22 Mar 2022 02:10:13 GMT",
+          "published_ts": 1647915013.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Price to earnings ratio of HDFC Bank Limited – NSE:HDFCBANK - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTzYyTm5DUE01M2JKWHNqeW81SWpKelNiNHZBRTdrQ185WVloeFdOQnVncGxWSVRsVjg1bTdmLXluRjNoeS1DbkNmT2R6WmZYaTFnOW9IS3BRNXN6dU1CVmlnUThqY3d4a291RzMtSnlGeWtIcU9SbXdGS1FpcUNlVF9uRHdqd2QtNE9melE5RHF6bXRsQ1UwOHZtblFTdw?oc=5",
+          "published_at": "Sat, 09 Oct 2021 16:06:11 GMT",
+          "published_ts": 1633795571.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "HDFC Bank Stock Price and Chart — NSE:HDFCBANK - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5LNjh5NXhLYlJVSlJRdUZwTV9lcVFwMWdjNlpxaTd5TGRobS03Q0JCM2JsbXZQb0UzRl9lcFBXVWlRSUhPcmdpY0pCbW5WdE4wMnlCVlpHVWNrcVU4WVE?oc=5",
+          "published_at": "Fri, 21 Jul 2017 08:13:24 GMT",
+          "published_ts": 1500624804.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        }
+      ],
+      "top_industry_news": [
+        {
+          "source": "google_rss_industry",
+          "title": "NSE concludes process for selection of intermediaries for proposed IPO - ETLegalWorld.com",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNZHpVN2lfVFQ3V1dWaFBmMzBKUzVKU0tsOFhGZzZXWF9jaHJLWE43UFh1alFhRmp4ZkpiY3dpTGlDempYbDhHbVoyanlVM1JVR2Z3V3pnNUFQbHhLVHN2UVJuWlRXRDk0VDFwNEM5Wmxrb0c4eU4zX0E5TURhT0RRV1Fiak5BTlRrNUFBS1pHYjRFSTQzWE1ndG5IWmEtTE1GRWN0djA1Y0tKZXhjUjg3alB3SnVrcnBZdFF6WVZLekotejlwU3dReVNrTWNpZ0xjQlZGTnhxQTN0eEFQZzN4RdIB5gFBVV95cUxOZUtmbEdJUUU4TnE0YmhOaTdDN0IwYUdES091MkVrSm9TUWttOW1Na01Ld0J1YmZmakh0aDBHTTNlaEUzaHNLLW95UVN1UU5vc1RpVnUzRVlRdHZXeEpNZjYwTlVuS1RHOElScHFjMXk3ZGxVX1dtSDF6VzBPQzZGN1VXc2NFM1hLMEpLanN0NjBIekdvQ0dJNVMxVzZSSHlYeGZDdFJ3X3NiTldwS0lOb29vZzNJVjRvT3Rqbnd5Sl9pNTVPcFAydm5tb2s2RzhmQ2FzZjV4ZGN1OWZMcFBESjZ4bFk3QQ?oc=5",
+          "published_at": "Thu, 12 Mar 2026 13:48:15 GMT",
+          "published_ts": 1773323295.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "HDFC Bank Limited",
+          "sector": "Financial Services",
+          "industry": "Banks - Regional"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Daily Current Affairs for UPSC IAS Exam - Sanskriti IAS",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBlbEFHMmVLN2JYWk52UEw4dGJXVEh4b0paSnI1cnNGOWJTa1ZRLWl1NnBGVnlVLWZqc0NNeHhta3pmcnZVdzc5SGVsMVJhQXdYQzhTYTVDWl84V2JWZ05rSWZObXVxLVpISUxKNXYyM2Y?oc=5",
+          "published_at": "Tue, 10 Mar 2026 09:46:18 GMT",
+          "published_ts": 1773135978.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "HDFC Bank Limited",
+          "sector": "Financial Services",
+          "industry": "Banks - Regional"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Top 10 Stocks Held by BlackRock India Fund as of January 2026 - Trade Brains",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNQUUta0djTWwzVGxLMXpWMEQ2N3JsRHN4WUw4bDY5b2tkQVIxVF9obl8xRHktMFJEelRtSmtzRzhpQ0tuMmJabXhhRG1iTHRBX1dDbEZsNE8wd2pBMk9qSWVaa2xyTUZDcUZBb0hrci11TjBQOXdwMHZFY29mV0cwek1RbDczNGVvOFhfdVdn?oc=5",
+          "published_at": "Sun, 15 Feb 2026 08:00:00 GMT",
+          "published_ts": 1771142400.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "HDFC Bank Limited",
+          "sector": "Financial Services",
+          "industry": "Banks - Regional"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "HDFC Asset Management Company Limited (NSE:HDFCAMC) surges 3.7%; public companies who own 52% shares profited along with institutions - simplywall.st",
+          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPdGxLVzNTNzEtWENpcER5TkZmZ3ZwNEZnUkYtWVpUald6MEh5eFdXU18tTkNobTJoRnhHVm9FTjhjYTEwcXdvSndjdDc4eHEwNnZWaTFiamIyd3RaOFZHNnNJSFUwNjMyUEhVeWZqMjZwSnRzTm1VR0lsblZEVVluV2ZkVTFoUVZ4TGVXTkgxWXFoZkRLMnFuWXlTaDJTREpuSkJxb1ZLWmFJaVdqZVgyYjNaSEV1MEhHR1Bud3BYVlJVcGZDNW03MG52UmJ3elE1SlRJNUpHbnQ3emtZSFYwRkdBY1ZyeE16WndmS01CdHZRYWfSAfgBQVVfeXFMTlY0UGJzNFRUNC12MlhwZXhBQjRpR2VOdkxzcTVBZWxPODhpaFNpMWtjQXlEMFVibjByQ3d2TWF1bVlvcFM4elRNSlljSG9nYy1nYzA1OE9nS1FWQTFKeWJFb0N2R1dnb2VLV1pZQldqMXhNdDhmeVAwRjNiOS02SndJT2NfYTZXc18waHQ1OW5iNmRJWHRkQld0OEpVQTAybng2MzFkSDhJTkZybExXb2VOcGI1a0lIOXEzQ3QzQTR1Um9MczhBb2pLYWpZY2hDS1lHaXZXQTBDNkh0WU9HR0RqQzUxNHJ6Y3hISHhnekRTNThCYmVIOHY?oc=5",
+          "published_at": "Thu, 12 Feb 2026 08:00:00 GMT",
+          "published_ts": 1770883200.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "HDFC Bank Limited",
+          "sector": "Financial Services",
+          "industry": "Banks - Regional"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "What Makes HDFC Bank (HDB) a Worthy Investment? - Insider Monkey",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQSW51eGVFZy00QUJNRXpjSWs4Z3V2ZHFjUmdDVXctZFNlMW5NNlljMVpyZUlGX2l6TjNPU1dtRGRZZFgzS0JGZkdBaHdrRmUxNndnMVBhbW5pMW5QTFpXM0ZnaTZYRURac19UeVllcTBLQVVaS1dIWW13bWUwT1ViWXFiRHdXWnE1ZEZtbzNaSFIwUdIBmgFBVV95cUxOWGRsZ2xyemJKMUFmSjNCWjNEOW1HQWhLdk1NYlplaDZYeW1tWkVtN0dpOUZLc1BqZ0EwUWJMb2dqUnFsNzc5UVpEQ3BnUWw4eWt3YTRLRUg1cmZtUHR0dUgtVW5pUEdDSXEzeG1HS3gyRGdoV243SHNxZHNlVC1ka3Z5NG9lRjFwYWlkM2VxVVYxWW9zVDNPTGxn?oc=5",
+          "published_at": "Wed, 28 Jan 2026 08:00:00 GMT",
+          "published_ts": 1769587200.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "HDFC Bank Limited",
+          "sector": "Financial Services",
+          "industry": "Banks - Regional"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Hudson Edge Investment Partners Inc. Boosts Stock Position in HDFC Bank Limited $HDB - MarketBeat",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPUHVISGZxZXBpLWRpMGFYb0tKeHpDNHc5NkxjUjZRQ0xJM1ltUUt6TUd6eFFKbFpObFZqcE5XeVR3OFJ1dFBpQ2VyMGxXaFRiNUZTMVpkY1lnN0d3T2JqYWc1TDllRVlvWE5uckI4OGtJR0FVLU5jU1BTdzVsZDkwQ2RjTWZIdHdIUXlEM3g2N3ZESWpQUERDbmtpYUx3RVJVYmUxbjBhNExfTHlxX1g5UDdCUFlldk11R1VXdU9OQkIyVVJBLXRMVW9qMEJFS29XRm5aaGJ3OXRJcFk?oc=5",
+          "published_at": "Thu, 22 Jan 2026 08:00:00 GMT",
+          "published_ts": 1769068800.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "HDFC Bank Limited",
+          "sector": "Financial Services",
+          "industry": "Banks - Regional"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "HDFC Bank Share Price Flat After Q3 Results | Stock Market Today Update - Samco",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQVElaaWpheU5wb0dIRFVtYUJFV2tWM0FqQ1NWZ2VIYWRCdEV4bEUxUlllR1dfWHVvNDRGZF9aaGxCcUhGTFhBR0ZLaU1mVjNsVVRVamxUZlRFZzVPb0UybWFmcjhuNnMyanlUb1ozNWhUZ3NtYmlndXQyUFZOZ1pHRkF6Y3Y1VnUwa2tMLXlNUkN0clEwYnFCc050N1NpQlZJdHF3T3FrZFMwei1IdGI2LWQzQTZDczBtYkJ5a3JlaFB4Vm05bDZTVWRqcVJXUQ?oc=5",
+          "published_at": "Mon, 19 Jan 2026 08:00:00 GMT",
+          "published_ts": 1768809600.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "HDFC Bank Limited",
+          "sector": "Financial Services",
+          "industry": "Banks - Regional"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Earnings call transcript: HDFC Bank Q3 2025 sees steady EPS, minor revenue miss - Investing.com",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNV05DTGRPRzYyb2o0MndlWmFCNWduMW80R1RJR0ozaWJPc0lTYXBCbGdNUjMyekdySUoxSm1QRDBjNGxZYUphdWYyclRVaUdZb1NEZ2ZUWU41XzAwcnZSRG5rUG54NzB2OThhOVowRXZkbU5WMDRQVFhNZnR4TnVBX0lGSkFERnAxMndKTFdpQ3FRZkkxT0dFNHJsQkZxajEzUWd6NTgxcUw3WlMxNnRVRWhlWWFZSWRqZDBUdDB4ZTBLejZKd3FnTDBGODVVQQ?oc=5",
+          "published_at": "Mon, 19 Jan 2026 08:00:00 GMT",
+          "published_ts": 1768809600.0,
+          "sentiment_score": -1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "HDFC Bank Limited",
+          "sector": "Financial Services",
+          "industry": "Banks - Regional"
+        },
+        {
+          "source": "bing_rss_industry",
+          "title": "Positive biz outlook nudges banks to hire for sales growth",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fed562cf4034b587eb9f948f11aa&url=https%3a%2f%2fwww.rediff.com%2fbusiness%2freport%2fpositive-biz-outlook-nudges-banks-to-hire-for-sales-growth%2f20260116.htm&c=8709186322404384614&mkt=en-in",
+          "published_at": "Fri, 16 Jan 2026 09:53:00 GMT",
+          "published_ts": 1768557180.0,
+          "sentiment_score": 2.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated",
+          "company_name": "HDFC Bank Limited",
+          "sector": "Financial Services",
+          "industry": "Banks - Regional"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "India economic outlook, January 2026 - Deloitte",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPbVNEUF9teW9VSlNOTVBOOXNjbVkybkFnOTVDNkljbWpGTld4Z1BhS243VUhJcHJqMjh3UWJDRkQwYlhTam9fMzQwTTRuejFnMlJrUjNteUVmZE5LeUc4ODVPRHhFYVlQNGU4S3RwX1dKc01XTTB4VTR0STVNbVVMN0F5WndKRnNiSlpUcUlCV2pIY2ZiVUdBb09XMA?oc=5",
+          "published_at": "Thu, 15 Jan 2026 08:00:00 GMT",
+          "published_ts": 1768464000.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "HDFC Bank Limited",
+          "sector": "Financial Services",
+          "industry": "Banks - Regional"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "VBL, HDFC Bank, and 3 Other Stocks in Which Govt. of Singapore Reduced Stake in Q3 - Trade Brains",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPamNrZlJmVHJLVGhYUTBvRTQyb2dtdExmTU5CYmFvU0k4NGJkdVRWOS0xYUd3OERRTzlKdWpXX2NHWGN0MnRtZVpFUXJBYWd5YmFUeWtCZEdWYlY2QVZtOTdBQk44TnNtNnZIWERKSHIwd3lFQ25KMldremwzYzlwZWRDVHFKOWpRaWZ0Z2NfaUVVWGdfLTNwNHdvNndUQ2dPQ0RCQ05n?oc=5",
+          "published_at": "Wed, 14 Jan 2026 08:00:00 GMT",
+          "published_ts": 1768377600.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "HDFC Bank Limited",
+          "sector": "Financial Services",
+          "industry": "Banks - Regional"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Are HDFC Bank shares trading at a discount compared to ICICI Bank? Here’s what CLSA says - Trade Brains",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNZzB1cVVpckNGLWdBZFlHRGxZUTVLYkxHd1lPSkhPSENUQkxoRjZjQlpSX0w5LXN2QldraTN5T1lZQUVwblFGZmx0SlkyU1lydmFDdUhuampYYzZwZXBuM1VLOEFEZEZiSkpsbjVLeWhHUXVkbTdjYWo2OXRmNWRYOE55eWw4V0RCcl91SXVJVFJfRWlINXB2NnNWWXpZQTd2UnhxVUpqVlo4UEtvRTFZ?oc=5",
+          "published_at": "Tue, 13 Jan 2026 08:00:00 GMT",
+          "published_ts": 1768291200.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "HDFC Bank Limited",
+          "sector": "Financial Services",
+          "industry": "Banks - Regional"
+        }
+      ],
+      "top_macro_news": [
+        {
+          "source": "google_rss_macro",
+          "title": "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRVNOajVzSUJWU3Q5R2toMjVnZVZMNDhLclozWDdNODc1OU1qbVFjYnFTT0Z1SUZaaExuY3FJajFkdWtOWk5kdWplT0J0Yk9RcnlDVnlvQmJZNC1jVDVHZmRhS0Z0X0JiXzFETHRnaUVac1pEMmZfWE9raXFacFpwR1dSaEVST0Ntc2k1czN4emNQVFlWSHE3V1ZhMW80OUFMYmN6dEwtTkRadm44enc?oc=5",
+          "published_at": "Fri, 13 Mar 2026 15:17:26 GMT",
+          "published_ts": 1773415046.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fedea72f4bea9b92cda6df8f1b31&url=https%3a%2f%2fwww.livemint.com%2fmarket%2fstock-market-news%2fus-china-power-shift-global-markets-india-outlook-mirae-asset-swarup-mohanty-11773376870759.html&c=15555016077234823276&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 14:15:00 GMT",
+          "published_ts": 1773411300.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Fed to delay rate cuts as war clouds the outlook",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fede96c244c5947412185cf405f2&url=https%3a%2f%2fthink.ing.com%2farticles%2ffed-to-delay-rate-cuts-as-war-clouds-the-outlook%2f&c=127436243108543137&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 13:40:00 GMT",
+          "published_ts": 1773409200.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss_macro",
+          "title": "BTC defies rising dollar, oil and yields, holds above $71,000 as macro pressures mount - CoinDesk",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbHB1NE1GZ1dLTWpvOWNseW5QXy1jbWVHcTYzcXF6NWotU0NHOG1XNEUzcDd0ZTctMW1URXZzSW5RQ1djc1h3a0xOM0k2Tkd5TjRWcE0wUXRwZjg4WktmZ2xDWnpLa0RhR1BsRzlrZlVlVzhONmQ0eW51VXJIWFQ3NFJkd0VXZ2VsUnY4VTBuWjU5LXpxX1BPYUIyaEZKQVdEWUU3a25CY0RvN3NrVW10cFNUTWtxSHdhSWI4?oc=5",
+          "published_at": "Fri, 13 Mar 2026 09:34:10 GMT",
+          "published_ts": 1773394450.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Gold Silver Rate Today Live Updates (13 March 2026): Gold, silver futures fall on MCX as rising crude oil prices dim hopes of early rate cuts",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fedeed7c46bd864bed4e70c19f77&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2flive-blog%2fgold-rate-silver-price-today-live-updates-mcx-gold-18k-22k-24k-rate-iran-isreal-us-war-latest-news%2fliveblog%2f129534056.cms&c=4108291931945502437&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 06:00:00 GMT",
+          "published_ts": 1773381600.0,
+          "sentiment_score": -1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Markets Today: Sensex Declines 830 Points, Nifty Slips Below 23,650 Amid Iran-US-Israel War",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fedea72f4bea9b92cda6df8f1b31&url=https%3a%2f%2fwww.news18.com%2fbusiness%2fmarkets%2fmarkets-today-sensex-falls-1000-points-in-opening-trade-nifty-below-23600-as-oil-surges-past-100-9956009.html&c=7425380694736114227&mkt=en-in",
+          "published_at": "Thu, 12 Mar 2026 03:39:00 GMT",
+          "published_ts": 1773286740.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Trading Day: Oil and yields up, up, and away",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fedeed7c46bd864bed4e70c19f77&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2ftrading-day-oil-and-yields-up-up-and-away%2far-AA1YqbzQ&c=11227118164045986945&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 14:08:08 GMT",
+          "published_ts": 1773238088.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss_macro",
+          "title": "Markets Confront the Economic Impact of the Iran Conflict - Natixis CIB | Natixis Corporate & Investment Banking",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOVpkVlFlOG1lbEdUZEM2VU40clhkdUtsN3l6Z3Rkd2g4WTBNMVNKSFBmMmkyT1M0RGwtZGJxN1ItZVVrMEU3UnVfWFJ6UmpZUVppV09ZelhMWHNvZmhtbFk3ajc0UnlpY0dZeW51MGJnSUU3dGhYRGFQaE44NjJVaFFBVWFyVlNhampDdXFic0dCZXZ3YW5ScWUtWQ?oc=5",
+          "published_at": "Wed, 11 Mar 2026 10:55:26 GMT",
+          "published_ts": 1773226526.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "S&P 500 Faces Valuation Pressure as Oil and Yields Rise Together",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fedeed7c46bd864bed4e70c19f77&url=https%3a%2f%2fwww.investing.com%2fanalysis%2fsp-500-faces-valuation-pressure-as-oil-and-yields-rise-together-200676476&c=11959585435036819535&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 10:53:00 GMT",
+          "published_ts": 1773226380.0,
+          "sentiment_score": -1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Oil price spike could push US inflation to 4%, delaying Fed rate cut",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fede96c244c5947412185cf405f2&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2foil-price-spike-could-push-us-inflation-to-4-delaying-fed-rate-cut%2far-AA1Ym49n&c=7065206888862373143&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 03:02:32 GMT",
+          "published_ts": 1773198152.0,
+          "sentiment_score": 1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        }
+      ],
+      "avg_sentiment": 0.008216971294017342,
+      "macro_sentiment": -0.1002982080744078
+    },
+    "market_sentiment": {
+      "signal": "SELL",
+      "confidence": 0.656,
+      "summary": "Market Sentiment: SELL | NIFTY 5D=-5.31%, 10D=-9.20%, 20D=-10.29%, SMA20 gap=-7.1% (below). India VIX=817.0, 5D chg=-40.0, news sentiment=0.01. Votes: bull=2, bear=3.",
+      "reasoning_prompt": "Market sentiment protocol:\n1) Evaluate NIFTY multi-window momentum (5/10/20-bar returns) for domestic risk appetite.\n2) Check Nifty SMA20 structure — price above 20DMA = constructive, below = cautious.\n3) Evaluate India VIX regime as stress filter (low=constructive, high=defensive).\n4) Factor VIX change rate — rising VIX signals increasing fear even if level is moderate.\n5) Blend with cleaned multi-source news sentiment (stock + macro blend).\n6) Count bullish/bearish votes and avoid directional call under conflict.\n7) Prefer NO_TRADE when index momentum and volatility regime diverge.",
+      "llm_reasoning": "Sentiment is heavily bearish, driven by persistent selling volume exceeding the 20-day average by 24.6%. The combination of deep oversold technical indicators and a negative price slope suggests a capitulation-style phase. There is currently no evidence of institutional accumulation to counter the prevailing bearish flow, keeping sentiment strictly aligned with the negative trend.",
+      "detail": {
+        "nifty_ret5": -0.05314215692931257,
+        "nifty_ret10": -0.09199092034048106,
+        "nifty_ret20": -0.1029208782735801,
+        "above_sma20": false,
+        "sma_gap_pct": -7.12,
+        "vix_level": 817.0,
+        "vix_change_5d": -40.05,
+        "news_avg_sentiment": 0.008216971294017342,
+        "bullish_votes": 2,
+        "bearish_votes": 3
+      }
+    },
+    "relative_strength": {
+      "signal": "NO_TRADE",
+      "confidence": 0.5042295099779689,
+      "summary": "Relative Strength: NO_TRADE | stock 10-bar return=-5.95%, NIFTY=-5.43%, alpha=-0.52%.",
+      "reasoning_prompt": "Relative-strength protocol:\n1) Compare stock and NIFTY returns over same 10-bar window.\n2) Convert spread into alpha and classify persistent out/under-performance.\n3) Treat marginal alpha as noise and return NO_TRADE.\n4) Use relative strength as confirmation layer, not standalone trigger.",
+      "llm_reasoning": "The asset is exhibiting significant weakness, evidenced by a 9.08% decline in the 10-day rate of change. Being positioned well below key moving averages and maintaining a negative channel slope suggests the stock is currently underperforming the broader market benchmarks, which typically hold their primary moving averages during consolidation phases.",
+      "detail": {
+        "stock_ret10": -0.059460108170609205,
+        "nifty_ret10": -0.05430446235268882,
+        "alpha": -0.0051556458179203846
+      }
+    },
+    "us_trend": {
+      "signal": "SELL",
+      "confidence": 0.95,
+      "summary": "US Trend Signal: SELL | Global risk-off backdrop. SPX 5D/20D=-1.60%/-2.94%, NDX 5D/20D=-4.67%/-11.25%, VIX=817.00, DXY 5D=-7.80%.",
+      "reasoning_prompt": "US macro trend protocol:\n1) Evaluate SPX and NDX short/medium returns for global equity risk tone.\n2) Use VIX as stress filter (high VIX weakens risk-on conviction).\n3) Use DXY direction as liquidity/EM risk proxy for Indian equities.\n4) Classify regime as risk-on, risk-off, or mixed.\n5) Use this as contextual bias only; do not override local setup quality.",
+      "llm_reasoning": "The macro environment reflects neutral to slightly negative sentiment, which serves as a headwind for high-beta financial stocks. While the broader industry shows marginal positive sentiment, the negative macro overlay contributes to the lack of conviction for a long position, reinforcing the bearish technical pressure observed in the price action.",
+      "detail": {
+        "regime": "Global risk-off backdrop",
+        "llm_decision_why": "The macro regime is highly risk-off. SPX and NDX demonstrate consistent negative momentum across short and medium horizons, with NDX showing severe structural weakness. The VIX is at an extreme, panic-level reading, indicating severe market distress. Despite a recent minor pullback in DXY, the overall evidence points toward systemic volatility and liquidation pressure, favoring a SELL bias.",
+        "spx_ret_5": -0.015998480392124925,
+        "spx_ret_20": -0.02935414548420079,
+        "ndx_ret_5": -0.04673004884592957,
+        "ndx_ret_20": -0.11253527952789577,
+        "vix_last": 817.0,
+        "dxy_ret_5": -0.07799251457821688,
+        "dxy_ret_20": 0.30595585651314683
+      }
+    },
+    "financials": {
+      "signal": "BUY",
+      "confidence": 0.8615384615384616,
+      "summary": "Financials Signal: BUY | Fundamentals supportive. Coverage=62%. ROE=8.77%, Margin=28.40%, RevGrowth=N/A, EarnGrowth=N/A, D/E=0.954, CurrentRatio=N/A, PE=18.669. Quarterly trends: RevQoQ=-10.45%, NIQoQ=5.62%, OCFQoQ=N/A, DebtQoQ=-18.15%, FCF=N/A, Cash/Debt=0.358. Analyst target=N/A (N/A upside, ? analysts). 52w Hi/Lo=1020.500/812.000, position=2.40%.",
+      "reasoning_prompt": "Financial statement reasoning protocol:\n1) Evaluate valuation (PE/PB) relative to profitability and growth quality.\n2) Score profitability and efficiency (ROE, margins).\n3) Validate growth durability using quarterly revenue and net-income trends.\n4) Check balance-sheet resilience (debt trend, liquidity, cash/debt).\n5) Check cash-flow quality (operating CF trend, free cash flow sign).\n6) If fundamentals conflict or are incomplete, default to conservative NO_TRADE bias.",
+      "llm_reasoning": "Financial metrics highlight a high-volume breakdown environment. With volume at 41,700,464 exceeding the 20-day SMA of 33,449,307, the selling pressure is confirmed by institutional participation. The ATR of 19.66 denotes a regime of elevated volatility, suggesting that while the price is technically oversold, the market risk remains high, limiting the predictability of immediate mean reversion.",
+      "fundamental_signals": [
+        {
+          "type": "mixed",
+          "text": "Near 52-week low (₹812.00–₹817.00) — historically strong demand zone. Deep oversold bounces common, but confirm volume."
+        },
+        {
+          "type": "bearish",
+          "text": "Revenue contracting QoQ (-10.4% last quarter)."
+        }
+      ],
+      "analyst_consensus": {
+        "target_price": null,
+        "target_high": null,
+        "target_low": null,
+        "n_analysts": null,
+        "implied_upside_pct": null
+      },
+      "price_52w": {
+        "high": 1020.5,
+        "low": 812.0,
+        "current": 817.0,
+        "position_pct": 2.4,
+        "change_1y_pct": null
+      },
+      "extended_fundamentals": {
+        "symbol": "HDFCBANK.NS",
+        "dividend_yield": 1.35,
+        "dividend_rate": 11.0,
+        "ex_dividend_date": 1753401600,
+        "payout_ratio": 0.2176,
+        "held_pct_insiders": 0.0015700001,
+        "held_pct_institutions": 0.55801,
+        "book_value": 367.242,
+        "price_to_book": 2.2246912,
+        "return_on_equity": 0.14015001,
+        "debt_to_equity": null,
+        "profit_margins": 0.26187,
+        "enterprise_value": 17020593635328,
+        "enterprise_to_revenue": 5.982,
+        "enterprise_to_ebitda": null,
+        "gross_margins": 0.0,
+        "operating_margins": 0.34794998,
+        "ebitda_margins": 0.0,
+        "total_revenue": 2845330898944,
+        "total_debt": 6158335082496,
+        "total_cash": 1922102460416,
+        "peg_ratio": null,
+        "trailing_pe": 18.216276,
+        "forward_pe": 14.641578
+      },
+      "promoter_institutional": {
+        "symbol": "HDFCBANK.NS",
+        "major_holders": {},
+        "top_institutional": [
+          {
+            "Date Reported": "2022-06-30T00:00:00",
+            "Holder": "Legato Capital Management LLC",
+            "pctHeld": 0.0,
+            "Shares": 33709,
+            "Value": 27540253,
+            "pctChange": -0.36180001
+          }
+        ]
+      },
+      "dividends_splits": {
+        "symbol": "HDFCBANK.NS",
+        "recent_dividends": [
+          {
+            "date": "2019-06-20 00:00:00+05:30",
+            "amount": 3.75
+          },
+          {
+            "date": "2019-08-01 00:00:00+05:30",
+            "amount": 1.25
+          },
+          {
+            "date": "2021-06-29 00:00:00+05:30",
+            "amount": 3.25
+          },
+          {
+            "date": "2022-05-12 00:00:00+05:30",
+            "amount": 7.75
+          },
+          {
+            "date": "2023-05-16 00:00:00+05:30",
+            "amount": 9.5
+          },
+          {
+            "date": "2024-05-10 00:00:00+05:30",
+            "amount": 9.75
+          },
+          {
+            "date": "2025-06-27 00:00:00+05:30",
+            "amount": 11.0
+          },
+          {
+            "date": "2025-07-25 00:00:00+05:30",
+            "amount": 2.5
+          }
+        ],
+        "recent_splits": [
+          {
+            "date": "2011-07-14 00:00:00+05:30",
+            "ratio": 5.0
+          },
+          {
+            "date": "2019-09-19 00:00:00+05:30",
+            "ratio": 2.0
+          },
+          {
+            "date": "2025-08-26 00:00:00+05:30",
+            "ratio": 2.0
+          }
+        ],
+        "dividend_yield_trend": "rising",
+        "total_dividends_1y": 13.5
+      },
+      "metrics": {
+        "market_cap": 12573860772271.0,
+        "trailing_pe": 18.669199432688504,
+        "forward_pe": null,
+        "price_to_book": 1.6378844140313096,
+        "debt_to_equity": 0.9543063355044986,
+        "return_on_equity": 0.08773190408815736,
+        "profit_margins": 0.28399998785582947,
+        "operating_margins": -0.026544500246720632,
+        "gross_margins": null,
+        "ebitda_margins": null,
+        "revenue_growth": null,
+        "earnings_growth": null,
+        "free_cashflow": null,
+        "operating_cashflow": null,
+        "current_ratio": null,
+        "fifty_two_week_high": 1020.5,
+        "fifty_two_week_low": 812.0,
+        "fifty_two_week_change": null,
+        "dividend_yield": 0.040085679314565484,
+        "current_price": 817.0,
+        "analyst_target_price": null,
+        "analyst_target_high": null,
+        "analyst_target_low": null,
+        "number_of_analyst_opinions": null,
+        "trailing_eps": null,
+        "forward_eps": null,
+        "beta": null,
+        "book_value": 498.81419775472773,
+        "enterprise_value": null,
+        "total_revenue": 2371508200000.0,
+        "total_debt": 7326106100000.0,
+        "total_cash": 3222323100000.0,
+        "peg_ratio": null,
+        "sector": null,
+        "industry": null,
+        "company_name": ""
+      },
+      "detail": {
+        "stance": "Fundamentals supportive",
+        "bull_points": 8,
+        "bear_points": 1,
+        "data_quality": {
+          "coverage_ratio": 0.6153846153846154,
+          "available_fields": 8,
+          "total_fields": 13
+        },
+        "metrics": {
+          "market_cap": 12573860772271.0,
+          "trailing_pe": 18.669199432688504,
+          "forward_pe": null,
+          "price_to_book": 1.6378844140313096,
+          "debt_to_equity": 0.9543063355044986,
+          "return_on_equity": 0.08773190408815736,
+          "profit_margins": 0.28399998785582947,
+          "operating_margins": -0.026544500246720632,
+          "gross_margins": null,
+          "ebitda_margins": null,
+          "revenue_growth": null,
+          "earnings_growth": null,
+          "free_cashflow": null,
+          "operating_cashflow": null,
+          "current_ratio": null,
+          "fifty_two_week_high": 1020.5,
+          "fifty_two_week_low": 812.0,
+          "fifty_two_week_change": null,
+          "dividend_yield": 0.040085679314565484,
+          "current_price": 817.0,
+          "analyst_target_price": null,
+          "analyst_target_high": null,
+          "analyst_target_low": null,
+          "number_of_analyst_opinions": null,
+          "trailing_eps": null,
+          "forward_eps": null,
+          "beta": null,
+          "book_value": 498.81419775472773,
+          "enterprise_value": null,
+          "total_revenue": 2371508200000.0,
+          "total_debt": 7326106100000.0,
+          "total_cash": 3222323100000.0,
+          "peg_ratio": null,
+          "sector": null,
+          "industry": null,
+          "company_name": ""
+        },
+        "metrics_extended": {
+          "dividend_yield": 1.35,
+          "peg_ratio": null,
+          "operating_margins": 0.34794998,
+          "gross_margins": 0.0,
+          "ev_to_ebitda": null,
+          "held_pct_institutions": 0.55801
+        },
+        "statement_trends": {
+          "revenue_qoq": -0.10449962746268882,
+          "net_income_qoq": 0.05615696536061421,
+          "operating_cf_qoq": null,
+          "debt_qoq": -0.18153954936579475,
+          "free_cashflow_latest": null,
+          "cash_to_debt": 0.3579189377224946
+        }
+      }
+    },
+    "market_setup": {
+      "signal": "NO_TRADE",
+      "confidence": 0.55,
+      "summary": "Market Setup Signal: NO_TRADE | Early bearish alignment. Tape read: 5d=-4.7%, 20d=-11.3%, volume ratio=1.31, momentum=7.2. Support gap=N/A and resistance gap=15.2%. Trader read: Despite a strong bearish trend and breakdown, the RSI at 19.2 and Williams %R at -95.7 indicate extreme oversold conditions. Entering a short here carries significant mean-reversion risk. With no clear structural support to gauge risk/reward and momentum at exhaustion levels, the prudent move is to wait for a counter-trend bounce to establish a better short entry.",
+      "reasoning_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+      "llm_reasoning": "The setup is a high-conviction breakdown below the 866.64 support level. With price at 817.00, it is currently in a momentum-driven sell-off phase. The confluence of volume, RSI, and MACD suggests that market participants are currently prioritizing liquidity exit, making the technical setup a clear bearish continuation model.",
+      "setup_label": "Early bearish alignment",
+      "detail": {
+        "recent_return_5d_pct": -4.67,
+        "recent_return_20d_pct": -11.25,
+        "volume_ratio_5d_vs_20d": 1.31,
+        "distance_to_support_pct": null,
+        "distance_to_resistance_pct": 15.23,
+        "momentum_score": 7.2,
+        "buy_votes": 0,
+        "sell_votes": 2
+      }
+    },
+    "catalyst_context": {
+      "signal": "NO_TRADE",
+      "confidence": 0.5,
+      "summary": "Catalyst Context Signal: NO_TRADE | Mixed catalyst tape. Backdrop read: news sentiment=0.01, analyst upside=None, 52w position=2.4. Core read: Mixed catalyst tape. Buy votes=1, sell votes=2, news sentiment=0.01.",
+      "reasoning_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+      "llm_reasoning": "There are no immediate fundamental catalysts driving the current price action. The movement is technical in nature, fueled by momentum indicators and volume-based selling. Without upcoming earnings or regulatory news to provide a pivot point, the technical trend is expected to dictate the immediate near-term trajectory.",
+      "catalyst_label": "Mixed catalyst tape",
+      "detail": {
+        "buy_votes": 1,
+        "sell_votes": 2,
+        "avg_sentiment": 0.008,
+        "analyst_upside_pct": null,
+        "position_52w_pct": 2.4,
+        "fundamental_signals": [
+          "Near 52-week low (₹812.00–₹817.00) — historically strong demand zone. Deep oversold bounces common, but confirm volume.",
+          "Revenue contracting QoQ (-10.4% last quarter)."
+        ]
+      }
+    }
+  },
+  "agent_guidance": {
+    "indicator_prompt": "Indicator reasoning protocol:\n1) Map structural trend using relative price location vs SMA20/50/200 and slope analysis.\n2) Decode momentum quality using MACD histogram acceleration/deceleration and ROC10-ROC20 comparisons.\n3) Assess oscillator behavior (RSI/Stoch/WillR) for range-specific exhaustion vs strong trend continuation.\n4) Verify professional participation via volume-over-average filters and spread analysis.\n5) Filter noise using ATR-based volatility regimes (reduce conviction in 'wide and loose' tape).\n6) Enforce strict confluence: if trend and momentum disagree without a reclaim setup, maintain NO_TRADE posture.",
+    "pattern_prompt": "Pattern reasoning protocol:\n1) Detect breakout/breakdown against prior 12-bar range, not single-candle spikes.\n2) Confirm direction with local slope and bar-structure continuation.\n3) Use engulfing patterns as confirmation, not standalone trigger.\n4) Treat flat-slope compression as NO_TRADE until expansion is confirmed.\n5) Down-rank weak breakouts lacking structure confirmation.",
+    "news_prompt": "News reasoning protocol:\n1) Collect company-specific headlines across multiple providers using diversified queries.\n2) Filter spam/listicle/noise domains and low-relevance stories.\n3) Build a global macro stream (rates, inflation, oil, USD, broad risk sentiment).\n4) Build industry/sector thematic stream (demand cycle, market share, regulation, capacity, pricing).\n5) Weight sentiment by source quality, exponential recency decay, and relevance confidence.\n6) Apply content-similarity dedup to remove near-duplicate headlines.\n7) Use LLM to infer final bias from company + industry + macro evidence and return NO_TRADE under conflict.",
+    "trend_prompt": "Trend reasoning protocol:\n1) Fit support and resistance trendlines over the visible swing window.\n2) Estimate channel slope (regime direction) and channel width (trend quality).\n3) Locate current price in channel and prefer pullback entries aligned with slope.\n4) If slope is weak/flat, classify as sideways and favor NO_TRADE.\n5) Avoid chasing signals near channel extremes against risk-reward logic.",
+    "market_prompt": "Market sentiment protocol:\n1) Evaluate NIFTY multi-window momentum (5/10/20-bar returns) for domestic risk appetite.\n2) Check Nifty SMA20 structure — price above 20DMA = constructive, below = cautious.\n3) Evaluate India VIX regime as stress filter (low=constructive, high=defensive).\n4) Factor VIX change rate — rising VIX signals increasing fear even if level is moderate.\n5) Blend with cleaned multi-source news sentiment (stock + macro blend).\n6) Count bullish/bearish votes and avoid directional call under conflict.\n7) Prefer NO_TRADE when index momentum and volatility regime diverge.",
+    "relative_strength_prompt": "Relative-strength protocol:\n1) Compare stock and NIFTY returns over same 10-bar window.\n2) Convert spread into alpha and classify persistent out/under-performance.\n3) Treat marginal alpha as noise and return NO_TRADE.\n4) Use relative strength as confirmation layer, not standalone trigger.",
+    "us_trend_prompt": "US macro trend protocol:\n1) Evaluate SPX and NDX short/medium returns for global equity risk tone.\n2) Use VIX as stress filter (high VIX weakens risk-on conviction).\n3) Use DXY direction as liquidity/EM risk proxy for Indian equities.\n4) Classify regime as risk-on, risk-off, or mixed.\n5) Use this as contextual bias only; do not override local setup quality.",
+    "financials_prompt": "Financial statement reasoning protocol:\n1) Evaluate valuation (PE/PB) relative to profitability and growth quality.\n2) Score profitability and efficiency (ROE, margins).\n3) Validate growth durability using quarterly revenue and net-income trends.\n4) Check balance-sheet resilience (debt trend, liquidity, cash/debt).\n5) Check cash-flow quality (operating CF trend, free cash flow sign).\n6) If fundamentals conflict or are incomplete, default to conservative NO_TRADE bias.",
+    "market_setup_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+    "catalyst_context_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+    "trader_intel_prompt": "Think like a battle-hardened Indian discretionary trader and teacher. Judge structural setup quality, sector leadership, institutional flow cues (FII/DII logic), crowd positioning, and execution patience. Reference specific Indian market nuances like Nifty/BankNifty confluence when relevant. Avoid basic indicator-threshold language. Output should be concise but instructive: explain why setup quality is high/low, where edge comes from, and what invalidates the idea. Also provide 1-2 risky intraday scalp ideas with exact trigger and invalidation only when tape is volatile enough; otherwise state why not. Prefer NO_TRADE when the idea is merely 'interesting' rather than high-probability and actionable."
+  },
+  "market_setup": {
+    "signal": "NO_TRADE",
+    "confidence": 0.55,
+    "summary": "Market Setup Signal: NO_TRADE | Early bearish alignment. Tape read: 5d=-4.7%, 20d=-11.3%, volume ratio=1.31, momentum=7.2. Support gap=N/A and resistance gap=15.2%. Trader read: Despite a strong bearish trend and breakdown, the RSI at 19.2 and Williams %R at -95.7 indicate extreme oversold conditions. Entering a short here carries significant mean-reversion risk. With no clear structural support to gauge risk/reward and momentum at exhaustion levels, the prudent move is to wait for a counter-trend bounce to establish a better short entry.",
+    "reasoning_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+    "llm_reasoning": "The setup is a high-conviction breakdown below the 866.64 support level. With price at 817.00, it is currently in a momentum-driven sell-off phase. The confluence of volume, RSI, and MACD suggests that market participants are currently prioritizing liquidity exit, making the technical setup a clear bearish continuation model.",
+    "setup_label": "Early bearish alignment",
+    "detail": {
+      "recent_return_5d_pct": -4.67,
+      "recent_return_20d_pct": -11.25,
+      "volume_ratio_5d_vs_20d": 1.31,
+      "distance_to_support_pct": null,
+      "distance_to_resistance_pct": 15.23,
+      "momentum_score": 7.2,
+      "buy_votes": 0,
+      "sell_votes": 2
+    }
+  },
+  "catalyst_context": {
+    "signal": "NO_TRADE",
+    "confidence": 0.5,
+    "summary": "Catalyst Context Signal: NO_TRADE | Mixed catalyst tape. Backdrop read: news sentiment=0.01, analyst upside=None, 52w position=2.4. Core read: Mixed catalyst tape. Buy votes=1, sell votes=2, news sentiment=0.01.",
+    "reasoning_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+    "llm_reasoning": "There are no immediate fundamental catalysts driving the current price action. The movement is technical in nature, fueled by momentum indicators and volume-based selling. Without upcoming earnings or regulatory news to provide a pivot point, the technical trend is expected to dictate the immediate near-term trajectory.",
+    "catalyst_label": "Mixed catalyst tape",
+    "detail": {
+      "buy_votes": 1,
+      "sell_votes": 2,
+      "avg_sentiment": 0.008,
+      "analyst_upside_pct": null,
+      "position_52w_pct": 2.4,
+      "fundamental_signals": [
+        "Near 52-week low (₹812.00–₹817.00) — historically strong demand zone. Deep oversold bounces common, but confirm volume.",
+        "Revenue contracting QoQ (-10.4% last quarter)."
+      ]
+    }
+  },
+  "trader_intel": {
+    "signal": "NO_TRADE",
+    "confidence": 0.55,
+    "verdict_label": "Mean-reversion Trap",
+    "playbook_title": "Exhausted Bear, Waiting for Structure",
+    "thesis": "HDFCBANK is currently deep in oversold territory (RSI < 20). Institutional shorts have likely booked partial profits, but there is zero evidence of a structural floor. Buying here is 'catching a falling knife,' while selling here risks getting squeezed on a dead-cat bounce.",
+    "execution_style": "Patience-heavy, waiting for lower timeframe base building.",
+    "risk_flag": "Extreme volatility and oversold momentum",
+    "entry_trigger": "N/A",
+    "invalidation": "N/A",
+    "why_now": "Market is pricing in extreme negativity; risk-reward is currently neutral due to the high probability of a reflexive bounce that lacks follow-through.",
+    "why_not_now": "Momentum oscillators are at exhaustion levels; chasing shorts here is a losing game; waiting for a 'lower high' to re-enter with institutional flow.",
+    "risky_intraday_play": "Risky intraday recommendation: SELL. Levels are unclear; trade only on strong breakout or breakdown with volume.",
+    "risky_prediction": {
+      "signal": "SELL",
+      "confidence": 0.63,
+      "text": "Risky intraday recommendation: SELL. Levels are unclear; trade only on strong breakout or breakdown with volume."
+    },
+    "summary": "Trader Intel: NO_TRADE | Mean-reversion Trap | Exhausted Bear, Waiting for Structure. Thesis: HDFCBANK is currently deep in oversold territory (RSI < 20). Institutional shorts have likely booked partial profits, but there is zero evidence of a structural floor. Buying here is 'catching a falling knife,' while selling here risks getting squeezed on a dead-cat bounce. Why now: Market is pricing in extreme negativity; risk-reward is currently neutral due to the high probability of a reflexive bounce that lacks follow-through. Why not now: Momentum oscillators are at exhaustion levels; chasing shorts here is a losing game; waiting for a 'lower high' to re-enter with institutional flow.",
+    "intraday_execution_easy": [
+      "Treat this as high risk; use smaller position size.",
+      "Enter only on trigger, never in the middle of range.",
+      "Keep fixed stop-loss from the start.",
+      "Exit quickly if momentum stalls."
+    ],
+    "intraday_easy_one_liner": "Intraday simple rule: no clear edge now, so skip trade and wait for strong breakout with volume.",
+    "reasoning_prompt": "Think like a battle-hardened Indian discretionary trader and teacher. Judge structural setup quality, sector leadership, institutional flow cues (FII/DII logic), crowd positioning, and execution patience. Reference specific Indian market nuances like Nifty/BankNifty confluence when relevant. Avoid basic indicator-threshold language. Output should be concise but instructive: explain why setup quality is high/low, where edge comes from, and what invalidates the idea. Also provide 1-2 risky intraday scalp ideas with exact trigger and invalidation only when tape is volatile enough; otherwise state why not. Prefer NO_TRADE when the idea is merely 'interesting' rather than high-probability and actionable."
+  },
+  "risky_intraday_play": "Risky intraday recommendation: SELL. Levels are unclear; trade only on strong breakout or breakdown with volume.",
+  "top_news": [
+    {
+      "source": "google_rss",
+      "title": "HDFCBANK Outlook for the Week (March 09, 2026 – March 13, 2026) - Equitypandit",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5aN1hUNVlDOTVoMVpJZ2lrQ2ZhdmhQTnUzakVpNWRCQ0Z1eXVFZnNJYy1zSlBqNFJEMlpJbFhMV01tYWFocXY0UUtaUU5ocm9jNTV4RllWbGp5MlZhaTYyeXB1RDFSU2t6NW93?oc=5",
+      "published_at": "Fri, 06 Mar 2026 08:00:00 GMT",
+      "published_ts": 1772784000.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "HDFC Bank Share Price Today (13 Dec 2025): UPI Downtime, Analyst Targets up to ₹1,225, and What Could Move HDFCBANK Stock Next - TechStock²",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQQW9sanZxZXZxdkRraEhrcFdrR29FWHl2WUZhTmE5MDl2WVpRMDJmZ0ZKNlFvWEVKTGtvRE9jMWJaRzRTVGFvdVYwSFRxRXl0UF9faktoYVhWc0FmNURMcUx1RVpaTHhWa0lfWjZ2cnpwOUtPV2NIekZwUm9tTmsyVXVpSzFreGgweXBYYzVMQVZlY2ZfX1hiR3dEbDUzS2xXNXhVejMxcVUzOU42Z09MUnFoMlRMVWRFMUhVODJYT3VGSTJidnpXRm5JUFNNZDVnMC16Z3pPZ3JUMFFHOXZrTzk0MA?oc=5",
+      "published_at": "Sat, 13 Dec 2025 08:00:00 GMT",
+      "published_ts": 1765612800.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "HDFC Bank Share Price Today, 28 November 2025: HDFCBANK Holds Near 52-Week High Amid Heavy Options Action - TechStock²",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPTHI2ZThQdDZXOE5qczRpWW5yX2w5U0FLTDZSbUc5b0pmZWxmUnlNZXRpbXdmSHNlQmlyS2lFWXBXZVAwMnhDczhWMEhPSE96SWNsV2xQbWV0bnBveEgzYmtYZzZBNEJtLTkzckVXZGpYcUFWMTlDWXlvVmJFb3Eyc2NibElyVXpORTRYN25xcjNaN2FuV1FlZWRjNWhVLUROc2RCdEZRVkF3Q2t6dkNCUGlmTXI3ZHg1UXRGcUIzUlo3Zw?oc=5",
+      "published_at": "Fri, 28 Nov 2025 08:00:00 GMT",
+      "published_ts": 1764316800.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "HDFCBANK Share Price | HDFC Bank Ltd. Stock Analysis & Recommendation - Markets Mojo",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1PN0MtME5mLU95WElTbGEyQ0oxeElnTk81bFFab1B6dnpnQS1ZdUh3eW03N3BndWNtTFJWemxhel9RQU9tRWMzT2ZGNjFINTlBSDRnMjlSLWVUNEpvZzNUOGlzV2tYOERjMkl5TUpvOA?oc=5",
+      "published_at": "Wed, 14 Feb 2024 09:25:50 GMT",
+      "published_ts": 1707902750.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "HDFCBANK Share Price Today - HDFC Bank Stock Analysis - Equitypandit",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9LZVg1cm1jb3dkRnhXa3VKLUNTalI5UE0xUU5JMkF1cGZNQW0tVUhra1pwb2lZV2FsNnVycmpFWFAyejVFV2lMdjNrQU5UUS0xY3k1eXZ0anh2OWtHcVE?oc=5",
+      "published_at": "Mon, 10 Jul 2023 16:17:41 GMT",
+      "published_ts": 1689005861.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "HDFC Bank Share Price Today - Live HDFCBANK Stock Price for NSE/BSE - Upstox",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA0S2ZRV3lOV2xBN0dYbkw0eFVYeUh1XzdGRWVmdzlXQVJISlJwRnF3ZzR1SzBZY283VUhieFFjTTRxT2llLXJLdUVKdTRsWDdKTVVLOGJpWUFBdXFYbm5CTzJUMEtxOEJfa2hzZTU5N2tURXM?oc=5",
+      "published_at": "Tue, 22 Mar 2022 02:10:13 GMT",
+      "published_ts": 1647915013.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Price to earnings ratio of HDFC Bank Limited – NSE:HDFCBANK - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTzYyTm5DUE01M2JKWHNqeW81SWpKelNiNHZBRTdrQ185WVloeFdOQnVncGxWSVRsVjg1bTdmLXluRjNoeS1DbkNmT2R6WmZYaTFnOW9IS3BRNXN6dU1CVmlnUThqY3d4a291RzMtSnlGeWtIcU9SbXdGS1FpcUNlVF9uRHdqd2QtNE9melE5RHF6bXRsQ1UwOHZtblFTdw?oc=5",
+      "published_at": "Sat, 09 Oct 2021 16:06:11 GMT",
+      "published_ts": 1633795571.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "HDFC Bank Stock Price and Chart — NSE:HDFCBANK - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5LNjh5NXhLYlJVSlJRdUZwTV9lcVFwMWdjNlpxaTd5TGRobS03Q0JCM2JsbXZQb0UzRl9lcFBXVWlRSUhPcmdpY0pCbW5WdE4wMnlCVlpHVWNrcVU4WVE?oc=5",
+      "published_at": "Fri, 21 Jul 2017 08:13:24 GMT",
+      "published_ts": 1500624804.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    }
+  ],
+  "top_industry_news": [
+    {
+      "source": "google_rss_industry",
+      "title": "NSE concludes process for selection of intermediaries for proposed IPO - ETLegalWorld.com",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNZHpVN2lfVFQ3V1dWaFBmMzBKUzVKU0tsOFhGZzZXWF9jaHJLWE43UFh1alFhRmp4ZkpiY3dpTGlDempYbDhHbVoyanlVM1JVR2Z3V3pnNUFQbHhLVHN2UVJuWlRXRDk0VDFwNEM5Wmxrb0c4eU4zX0E5TURhT0RRV1Fiak5BTlRrNUFBS1pHYjRFSTQzWE1ndG5IWmEtTE1GRWN0djA1Y0tKZXhjUjg3alB3SnVrcnBZdFF6WVZLekotejlwU3dReVNrTWNpZ0xjQlZGTnhxQTN0eEFQZzN4RdIB5gFBVV95cUxOZUtmbEdJUUU4TnE0YmhOaTdDN0IwYUdES091MkVrSm9TUWttOW1Na01Ld0J1YmZmakh0aDBHTTNlaEUzaHNLLW95UVN1UU5vc1RpVnUzRVlRdHZXeEpNZjYwTlVuS1RHOElScHFjMXk3ZGxVX1dtSDF6VzBPQzZGN1VXc2NFM1hLMEpLanN0NjBIekdvQ0dJNVMxVzZSSHlYeGZDdFJ3X3NiTldwS0lOb29vZzNJVjRvT3Rqbnd5Sl9pNTVPcFAydm5tb2s2RzhmQ2FzZjV4ZGN1OWZMcFBESjZ4bFk3QQ?oc=5",
+      "published_at": "Thu, 12 Mar 2026 13:48:15 GMT",
+      "published_ts": 1773323295.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "HDFC Bank Limited",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Daily Current Affairs for UPSC IAS Exam - Sanskriti IAS",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBlbEFHMmVLN2JYWk52UEw4dGJXVEh4b0paSnI1cnNGOWJTa1ZRLWl1NnBGVnlVLWZqc0NNeHhta3pmcnZVdzc5SGVsMVJhQXdYQzhTYTVDWl84V2JWZ05rSWZObXVxLVpISUxKNXYyM2Y?oc=5",
+      "published_at": "Tue, 10 Mar 2026 09:46:18 GMT",
+      "published_ts": 1773135978.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "HDFC Bank Limited",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Top 10 Stocks Held by BlackRock India Fund as of January 2026 - Trade Brains",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNQUUta0djTWwzVGxLMXpWMEQ2N3JsRHN4WUw4bDY5b2tkQVIxVF9obl8xRHktMFJEelRtSmtzRzhpQ0tuMmJabXhhRG1iTHRBX1dDbEZsNE8wd2pBMk9qSWVaa2xyTUZDcUZBb0hrci11TjBQOXdwMHZFY29mV0cwek1RbDczNGVvOFhfdVdn?oc=5",
+      "published_at": "Sun, 15 Feb 2026 08:00:00 GMT",
+      "published_ts": 1771142400.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "HDFC Bank Limited",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "HDFC Asset Management Company Limited (NSE:HDFCAMC) surges 3.7%; public companies who own 52% shares profited along with institutions - simplywall.st",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPdGxLVzNTNzEtWENpcER5TkZmZ3ZwNEZnUkYtWVpUald6MEh5eFdXU18tTkNobTJoRnhHVm9FTjhjYTEwcXdvSndjdDc4eHEwNnZWaTFiamIyd3RaOFZHNnNJSFUwNjMyUEhVeWZqMjZwSnRzTm1VR0lsblZEVVluV2ZkVTFoUVZ4TGVXTkgxWXFoZkRLMnFuWXlTaDJTREpuSkJxb1ZLWmFJaVdqZVgyYjNaSEV1MEhHR1Bud3BYVlJVcGZDNW03MG52UmJ3elE1SlRJNUpHbnQ3emtZSFYwRkdBY1ZyeE16WndmS01CdHZRYWfSAfgBQVVfeXFMTlY0UGJzNFRUNC12MlhwZXhBQjRpR2VOdkxzcTVBZWxPODhpaFNpMWtjQXlEMFVibjByQ3d2TWF1bVlvcFM4elRNSlljSG9nYy1nYzA1OE9nS1FWQTFKeWJFb0N2R1dnb2VLV1pZQldqMXhNdDhmeVAwRjNiOS02SndJT2NfYTZXc18waHQ1OW5iNmRJWHRkQld0OEpVQTAybng2MzFkSDhJTkZybExXb2VOcGI1a0lIOXEzQ3QzQTR1Um9MczhBb2pLYWpZY2hDS1lHaXZXQTBDNkh0WU9HR0RqQzUxNHJ6Y3hISHhnekRTNThCYmVIOHY?oc=5",
+      "published_at": "Thu, 12 Feb 2026 08:00:00 GMT",
+      "published_ts": 1770883200.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "HDFC Bank Limited",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "What Makes HDFC Bank (HDB) a Worthy Investment? - Insider Monkey",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQSW51eGVFZy00QUJNRXpjSWs4Z3V2ZHFjUmdDVXctZFNlMW5NNlljMVpyZUlGX2l6TjNPU1dtRGRZZFgzS0JGZkdBaHdrRmUxNndnMVBhbW5pMW5QTFpXM0ZnaTZYRURac19UeVllcTBLQVVaS1dIWW13bWUwT1ViWXFiRHdXWnE1ZEZtbzNaSFIwUdIBmgFBVV95cUxOWGRsZ2xyemJKMUFmSjNCWjNEOW1HQWhLdk1NYlplaDZYeW1tWkVtN0dpOUZLc1BqZ0EwUWJMb2dqUnFsNzc5UVpEQ3BnUWw4eWt3YTRLRUg1cmZtUHR0dUgtVW5pUEdDSXEzeG1HS3gyRGdoV243SHNxZHNlVC1ka3Z5NG9lRjFwYWlkM2VxVVYxWW9zVDNPTGxn?oc=5",
+      "published_at": "Wed, 28 Jan 2026 08:00:00 GMT",
+      "published_ts": 1769587200.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "HDFC Bank Limited",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Hudson Edge Investment Partners Inc. Boosts Stock Position in HDFC Bank Limited $HDB - MarketBeat",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPUHVISGZxZXBpLWRpMGFYb0tKeHpDNHc5NkxjUjZRQ0xJM1ltUUt6TUd6eFFKbFpObFZqcE5XeVR3OFJ1dFBpQ2VyMGxXaFRiNUZTMVpkY1lnN0d3T2JqYWc1TDllRVlvWE5uckI4OGtJR0FVLU5jU1BTdzVsZDkwQ2RjTWZIdHdIUXlEM3g2N3ZESWpQUERDbmtpYUx3RVJVYmUxbjBhNExfTHlxX1g5UDdCUFlldk11R1VXdU9OQkIyVVJBLXRMVW9qMEJFS29XRm5aaGJ3OXRJcFk?oc=5",
+      "published_at": "Thu, 22 Jan 2026 08:00:00 GMT",
+      "published_ts": 1769068800.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "HDFC Bank Limited",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "HDFC Bank Share Price Flat After Q3 Results | Stock Market Today Update - Samco",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQVElaaWpheU5wb0dIRFVtYUJFV2tWM0FqQ1NWZ2VIYWRCdEV4bEUxUlllR1dfWHVvNDRGZF9aaGxCcUhGTFhBR0ZLaU1mVjNsVVRVamxUZlRFZzVPb0UybWFmcjhuNnMyanlUb1ozNWhUZ3NtYmlndXQyUFZOZ1pHRkF6Y3Y1VnUwa2tMLXlNUkN0clEwYnFCc050N1NpQlZJdHF3T3FrZFMwei1IdGI2LWQzQTZDczBtYkJ5a3JlaFB4Vm05bDZTVWRqcVJXUQ?oc=5",
+      "published_at": "Mon, 19 Jan 2026 08:00:00 GMT",
+      "published_ts": 1768809600.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "HDFC Bank Limited",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Earnings call transcript: HDFC Bank Q3 2025 sees steady EPS, minor revenue miss - Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNV05DTGRPRzYyb2o0MndlWmFCNWduMW80R1RJR0ozaWJPc0lTYXBCbGdNUjMyekdySUoxSm1QRDBjNGxZYUphdWYyclRVaUdZb1NEZ2ZUWU41XzAwcnZSRG5rUG54NzB2OThhOVowRXZkbU5WMDRQVFhNZnR4TnVBX0lGSkFERnAxMndKTFdpQ3FRZkkxT0dFNHJsQkZxajEzUWd6NTgxcUw3WlMxNnRVRWhlWWFZSWRqZDBUdDB4ZTBLejZKd3FnTDBGODVVQQ?oc=5",
+      "published_at": "Mon, 19 Jan 2026 08:00:00 GMT",
+      "published_ts": 1768809600.0,
+      "sentiment_score": -1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "HDFC Bank Limited",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional"
+    },
+    {
+      "source": "bing_rss_industry",
+      "title": "Positive biz outlook nudges banks to hire for sales growth",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fed562cf4034b587eb9f948f11aa&url=https%3a%2f%2fwww.rediff.com%2fbusiness%2freport%2fpositive-biz-outlook-nudges-banks-to-hire-for-sales-growth%2f20260116.htm&c=8709186322404384614&mkt=en-in",
+      "published_at": "Fri, 16 Jan 2026 09:53:00 GMT",
+      "published_ts": 1768557180.0,
+      "sentiment_score": 2.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated",
+      "company_name": "HDFC Bank Limited",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "India economic outlook, January 2026 - Deloitte",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPbVNEUF9teW9VSlNOTVBOOXNjbVkybkFnOTVDNkljbWpGTld4Z1BhS243VUhJcHJqMjh3UWJDRkQwYlhTam9fMzQwTTRuejFnMlJrUjNteUVmZE5LeUc4ODVPRHhFYVlQNGU4S3RwX1dKc01XTTB4VTR0STVNbVVMN0F5WndKRnNiSlpUcUlCV2pIY2ZiVUdBb09XMA?oc=5",
+      "published_at": "Thu, 15 Jan 2026 08:00:00 GMT",
+      "published_ts": 1768464000.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "HDFC Bank Limited",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "VBL, HDFC Bank, and 3 Other Stocks in Which Govt. of Singapore Reduced Stake in Q3 - Trade Brains",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPamNrZlJmVHJLVGhYUTBvRTQyb2dtdExmTU5CYmFvU0k4NGJkdVRWOS0xYUd3OERRTzlKdWpXX2NHWGN0MnRtZVpFUXJBYWd5YmFUeWtCZEdWYlY2QVZtOTdBQk44TnNtNnZIWERKSHIwd3lFQ25KMldremwzYzlwZWRDVHFKOWpRaWZ0Z2NfaUVVWGdfLTNwNHdvNndUQ2dPQ0RCQ05n?oc=5",
+      "published_at": "Wed, 14 Jan 2026 08:00:00 GMT",
+      "published_ts": 1768377600.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "HDFC Bank Limited",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Are HDFC Bank shares trading at a discount compared to ICICI Bank? Here’s what CLSA says - Trade Brains",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNZzB1cVVpckNGLWdBZFlHRGxZUTVLYkxHd1lPSkhPSENUQkxoRjZjQlpSX0w5LXN2QldraTN5T1lZQUVwblFGZmx0SlkyU1lydmFDdUhuampYYzZwZXBuM1VLOEFEZEZiSkpsbjVLeWhHUXVkbTdjYWo2OXRmNWRYOE55eWw4V0RCcl91SXVJVFJfRWlINXB2NnNWWXpZQTd2UnhxVUpqVlo4UEtvRTFZ?oc=5",
+      "published_at": "Tue, 13 Jan 2026 08:00:00 GMT",
+      "published_ts": 1768291200.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "HDFC Bank Limited",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional"
+    }
+  ],
+  "top_macro_news": [
+    {
+      "source": "google_rss_macro",
+      "title": "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRVNOajVzSUJWU3Q5R2toMjVnZVZMNDhLclozWDdNODc1OU1qbVFjYnFTT0Z1SUZaaExuY3FJajFkdWtOWk5kdWplT0J0Yk9RcnlDVnlvQmJZNC1jVDVHZmRhS0Z0X0JiXzFETHRnaUVac1pEMmZfWE9raXFacFpwR1dSaEVST0Ntc2k1czN4emNQVFlWSHE3V1ZhMW80OUFMYmN6dEwtTkRadm44enc?oc=5",
+      "published_at": "Fri, 13 Mar 2026 15:17:26 GMT",
+      "published_ts": 1773415046.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fedea72f4bea9b92cda6df8f1b31&url=https%3a%2f%2fwww.livemint.com%2fmarket%2fstock-market-news%2fus-china-power-shift-global-markets-india-outlook-mirae-asset-swarup-mohanty-11773376870759.html&c=15555016077234823276&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 14:15:00 GMT",
+      "published_ts": 1773411300.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Fed to delay rate cuts as war clouds the outlook",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fede96c244c5947412185cf405f2&url=https%3a%2f%2fthink.ing.com%2farticles%2ffed-to-delay-rate-cuts-as-war-clouds-the-outlook%2f&c=127436243108543137&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 13:40:00 GMT",
+      "published_ts": 1773409200.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss_macro",
+      "title": "BTC defies rising dollar, oil and yields, holds above $71,000 as macro pressures mount - CoinDesk",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbHB1NE1GZ1dLTWpvOWNseW5QXy1jbWVHcTYzcXF6NWotU0NHOG1XNEUzcDd0ZTctMW1URXZzSW5RQ1djc1h3a0xOM0k2Tkd5TjRWcE0wUXRwZjg4WktmZ2xDWnpLa0RhR1BsRzlrZlVlVzhONmQ0eW51VXJIWFQ3NFJkd0VXZ2VsUnY4VTBuWjU5LXpxX1BPYUIyaEZKQVdEWUU3a25CY0RvN3NrVW10cFNUTWtxSHdhSWI4?oc=5",
+      "published_at": "Fri, 13 Mar 2026 09:34:10 GMT",
+      "published_ts": 1773394450.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Gold Silver Rate Today Live Updates (13 March 2026): Gold, silver futures fall on MCX as rising crude oil prices dim hopes of early rate cuts",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fedeed7c46bd864bed4e70c19f77&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2flive-blog%2fgold-rate-silver-price-today-live-updates-mcx-gold-18k-22k-24k-rate-iran-isreal-us-war-latest-news%2fliveblog%2f129534056.cms&c=4108291931945502437&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 06:00:00 GMT",
+      "published_ts": 1773381600.0,
+      "sentiment_score": -1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Markets Today: Sensex Declines 830 Points, Nifty Slips Below 23,650 Amid Iran-US-Israel War",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fedea72f4bea9b92cda6df8f1b31&url=https%3a%2f%2fwww.news18.com%2fbusiness%2fmarkets%2fmarkets-today-sensex-falls-1000-points-in-opening-trade-nifty-below-23600-as-oil-surges-past-100-9956009.html&c=7425380694736114227&mkt=en-in",
+      "published_at": "Thu, 12 Mar 2026 03:39:00 GMT",
+      "published_ts": 1773286740.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Trading Day: Oil and yields up, up, and away",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fedeed7c46bd864bed4e70c19f77&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2ftrading-day-oil-and-yields-up-up-and-away%2far-AA1YqbzQ&c=11227118164045986945&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 14:08:08 GMT",
+      "published_ts": 1773238088.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss_macro",
+      "title": "Markets Confront the Economic Impact of the Iran Conflict - Natixis CIB | Natixis Corporate & Investment Banking",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOVpkVlFlOG1lbEdUZEM2VU40clhkdUtsN3l6Z3Rkd2g4WTBNMVNKSFBmMmkyT1M0RGwtZGJxN1ItZVVrMEU3UnVfWFJ6UmpZUVppV09ZelhMWHNvZmhtbFk3ajc0UnlpY0dZeW51MGJnSUU3dGhYRGFQaE44NjJVaFFBVWFyVlNhampDdXFic0dCZXZ3YW5ScWUtWQ?oc=5",
+      "published_at": "Wed, 11 Mar 2026 10:55:26 GMT",
+      "published_ts": 1773226526.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "S&P 500 Faces Valuation Pressure as Oil and Yields Rise Together",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fedeed7c46bd864bed4e70c19f77&url=https%3a%2f%2fwww.investing.com%2fanalysis%2fsp-500-faces-valuation-pressure-as-oil-and-yields-rise-together-200676476&c=11959585435036819535&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 10:53:00 GMT",
+      "published_ts": 1773226380.0,
+      "sentiment_score": -1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Oil price spike could push US inflation to 4%, delaying Fed rate cut",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fede96c244c5947412185cf405f2&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2foil-price-spike-could-push-us-inflation-to-4-delaying-fed-rate-cut%2far-AA1Ym49n&c=7065206888862373143&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 03:02:32 GMT",
+      "published_ts": 1773198152.0,
+      "sentiment_score": 1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    }
+  ],
+  "chart_path": "reports/HDFCBANK_NS_20260314_062347_trend.png",
+  "long_term_chart_path": "reports/HDFCBANK_NS_20260314_062347_long_term.png",
+  "rich_report": "Indian Swing Trading Multi-Agent Report\nIndicator Signal: SELL | Trend: close=817.00, SMA20=884.61, SMA50=917.84. Momentum: MACD=-27.213, Signal=-20.885, Hist=-6.328, ROC10=-9.08%. Oscillators: RSI14=19.2, StochK/D=4.3/9.2, Williams%R=-95.7. Risk: ATR14=19.66, Volume=41700464 vs VolSMA20=33449307. Momentum Score=7.2/100 | MA=Sell, Trend=Falling, RSI=Oversold, MACD=Bearish.\nPattern Signal: SELL | setup=range breakdown with negative slope, slope=-7.5033, breakout_up=False, breakdown=True, bull_engulf=False, bear_engulf=False.\nTrend Signal: NO_TRADE | setup=sideways trend channel, support slope=-1.826, resistance slope=-1.766, price position=-2.92 in channel.\nNews Signal: NO_TRADE | combined sentiment=0.01 (stock=0.00, industry=0.09, macro=-0.10). Stock articles=8 (trusted=0, unrated=8); Industry articles=30 (trusted=0); Macro articles=30 (trusted=0). Sentiment strength=0.09. Inference=The available news for HDFC Bank is outdated, with no significant recent catalysts or company-specific developments. While industry sentiment is slightly positive, macro sentiment is leaning negative. Given the absence of actionable, high-trust, or recent information to suggest a clear directional edge, a neutral stance is most appropriate..\nMarket Sentiment: SELL | NIFTY 5D=-5.31%, 10D=-9.20%, 20D=-10.29%, SMA20 gap=-7.1% (below). India VIX=817.0, 5D chg=-40.0, news sentiment=0.01. Votes: bull=2, bear=3.\nRelative Strength: NO_TRADE | stock 10-bar return=-5.95%, NIFTY=-5.43%, alpha=-0.52%.\nUS Trend Signal: SELL | Global risk-off backdrop. SPX 5D/20D=-1.60%/-2.94%, NDX 5D/20D=-4.67%/-11.25%, VIX=817.00, DXY 5D=-7.80%.\nFinancials Signal: BUY | Fundamentals supportive. Coverage=62%. ROE=8.77%, Margin=28.40%, RevGrowth=N/A, EarnGrowth=N/A, D/E=0.954, CurrentRatio=N/A, PE=18.669. Quarterly trends: RevQoQ=-10.45%, NIQoQ=5.62%, OCFQoQ=N/A, DebtQoQ=-18.15%, FCF=N/A, Cash/Debt=0.358. Analyst target=N/A (N/A upside, ? analysts). 52w Hi/Lo=1020.500/812.000, position=2.40%.\nMarket Setup Signal: NO_TRADE | Early bearish alignment. Tape read: 5d=-4.7%, 20d=-11.3%, volume ratio=1.31, momentum=7.2. Support gap=N/A and resistance gap=15.2%. Trader read: Despite a strong bearish trend and breakdown, the RSI at 19.2 and Williams %R at -95.7 indicate extreme oversold conditions. Entering a short here carries significant mean-reversion risk. With no clear structural support to gauge risk/reward and momentum at exhaustion levels, the prudent move is to wait for a counter-trend bounce to establish a better short entry.\nCatalyst Context Signal: NO_TRADE | Mixed catalyst tape. Backdrop read: news sentiment=0.01, analyst upside=None, 52w position=2.4. Core read: Mixed catalyst tape. Buy votes=1, sell votes=2, news sentiment=0.01.\nTrader Intel: NO_TRADE | Mean-reversion Trap | Exhausted Bear, Waiting for Structure. Thesis: HDFCBANK is currently deep in oversold territory (RSI < 20). Institutional shorts have likely booked partial profits, but there is zero evidence of a structural floor. Buying here is 'catching a falling knife,' while selling here risks getting squeezed on a dead-cat bounce. Why now: Market is pricing in extreme negativity; risk-reward is currently neutral due to the high probability of a reflexive bounce that lacks follow-through. Why not now: Momentum oscillators are at exhaustion levels; chasing shorts here is a losing game; waiting for a 'lower high' to re-enter with institutional flow.\nMaster Confluence Committee: BUY=0.092, SELL=0.307, NO_TRADE=0.242. Final=SELL, confidence=0.717. Support=['technical', 'pattern', 'market_sentiment', 'us_trend']; Opposing=['financials']; Neutral=['trend', 'news', 'relative_strength', 'market_setup', 'catalyst_context'].\nRisk Plan: size=0 shares, ATR=19.66, stop=N/A, target=N/A.\n**FINAL CONCLUSION**\n- Signal: NO_TRADE\n- Confidence: 0.550\n- Action Bias: Wait / no-trade setup\n- Playbook: Exhausted Bear, Waiting for Structure\n- Thesis: HDFCBANK is currently deep in oversold territory (RSI < 20). Institutional shorts have likely booked partial profits, but there is zero evidence of a structural floor. Buying here is 'catching a falling knife,' while selling here risks getting squeezed on a dead-cat bounce.\n- When to Act: N/A\n- Execution Style: Patience-heavy, waiting for lower timeframe base building.\n- Invalidation: N/A\n- Expected Holding Duration: 2-6 weeks\n- Context: sideways trend channel\n- Risk Flag: Extreme volatility and oversold momentum\n- Stop-loss: N/A\n- Targets: N/A\n- 52w Range: ₹812.00 – ₹1020.50\n- Current Price Context: ₹817.00\n- Approx Risk:Reward to first target: N/A\n- Teaching note: prioritize process over prediction. Enter only after trigger confirmation, size by invalidation distance, and review whether the thesis is invalidated before averaging or adding.\n\nDetailed Agent Reasoning:\n- technical: Price at 817.00 is significantly below both the SMA20 (884.61) and SMA50 (917.84), indicating a strong bearish structure. Momentum is deeply negative with MACD at -27.21 and a declining ROC10 of -9.08%. The RSI14 at 19.2 and Williams %R at -95.7 signal extreme oversold conditions, yet the lack of bullish divergence and elevated volume (41.7M vs 33.4M SMA20) confirm aggressive selling pressure without immediate signs of exhaustion-based reversal.\n- pattern: The asset displays a clear range breakdown with a negative local slope of -7.50. The lack of bullish engulfing patterns confirms the absence of localized buying interest following the breakdown. The volatility proxy of 18.15 suggests the breakdown is supported by active movement rather than stagnation, validating the SELL signal as a momentum continuation play rather than a failed breakout.\n- trend: The trend analysis indicates a sideways trend channel with a negative slope averaging -1.80. Current price positioning at -2.92 relative to the channel indicates the price is testing or operating outside the established support-resistance bounds (866.64 - 883.66). The failure to maintain the channel and the persistent downward slope support a cautious stance, favoring NO_TRADE until the price stabilizes within the defined channel structure.\n- news: Aggregate news sentiment is neutral at 0.01, derived from flat stock-specific sentiment (0.00), slight industry optimism (0.09), and offsetting macro-economic concerns (-0.10). With 38 total articles lacking high-trust sources, there is no actionable catalyst. The absence of specific, recent company developments warrants a neutral position, as current price action is primarily driven by technical momentum rather than news-based fundamentals.\n- market_sentiment: Sentiment is heavily bearish, driven by persistent selling volume exceeding the 20-day average by 24.6%. The combination of deep oversold technical indicators and a negative price slope suggests a capitulation-style phase. There is currently no evidence of institutional accumulation to counter the prevailing bearish flow, keeping sentiment strictly aligned with the negative trend.\n- relative_strength: The asset is exhibiting significant weakness, evidenced by a 9.08% decline in the 10-day rate of change. Being positioned well below key moving averages and maintaining a negative channel slope suggests the stock is currently underperforming the broader market benchmarks, which typically hold their primary moving averages during consolidation phases.\n- us_trend: The macro environment reflects neutral to slightly negative sentiment, which serves as a headwind for high-beta financial stocks. While the broader industry shows marginal positive sentiment, the negative macro overlay contributes to the lack of conviction for a long position, reinforcing the bearish technical pressure observed in the price action.\n- financials: Financial metrics highlight a high-volume breakdown environment. With volume at 41,700,464 exceeding the 20-day SMA of 33,449,307, the selling pressure is confirmed by institutional participation. The ATR of 19.66 denotes a regime of elevated volatility, suggesting that while the price is technically oversold, the market risk remains high, limiting the predictability of immediate mean reversion.\n- market_setup: The setup is a high-conviction breakdown below the 866.64 support level. With price at 817.00, it is currently in a momentum-driven sell-off phase. The confluence of volume, RSI, and MACD suggests that market participants are currently prioritizing liquidity exit, making the technical setup a clear bearish continuation model.\n- catalyst_context: There are no immediate fundamental catalysts driving the current price action. The movement is technical in nature, fueled by momentum indicators and volume-based selling. Without upcoming earnings or regulatory news to provide a pivot point, the technical trend is expected to dictate the immediate near-term trajectory.\n- confluence: Confluence is high for a bearish outlook, supported by price positioning beneath moving averages, a confirmed range breakdown, and elevated volume confirming the downward move. Although the RSI is at 19.2, suggesting potential for a bounce, the lack of positive divergence or pattern-based support justifies maintaining the SELL signal until momentum stabilizes.\n- risk: Risk is elevated due to the extreme oversold nature of the RSI and Williams %R, which could lead to sharp, counter-trend volatility. The ATR of 19.66 indicates a wider trading range than typical, requiring wider stop-loss placements if participating. The primary risk is a 'bear trap' or liquidity-driven snap-back, though current volume confirmation leans against an immediate reversal.\n\nGemini Master Reasoning:\nSetup\nHDFCBANK is currently displaying a textbook \"Exhausted Bear\" profile. The stock is trading at 817.00, essentially pinned near its 52-week lows. While the trend is undeniably bearish—evidenced by price trading well below the 20-day and 50-day moving averages—we are currently in a momentum trap. The confluence of an RSI below 20 and Williams %R nearing -96 confirms that the selling is climactic. In this market, when a stock enters such an extreme oversold state, the technical edge for continued aggressive selling vanishes because the risk of a sharp, news-driven or liquidity-driven mean-reversion bounce outweighs the potential for further downside.\n\nCatalyst\nThere is a profound lack of directional catalysts. We are looking at a \"mixed catalyst tape\" where the fundamental backdrop is noisy and lacking high-conviction institutional signals. While some financial metrics suggest value, the recent 10.4% QoQ revenue contraction creates enough uncertainty to deter long-term institutional accumulation for now. We are trading based on price action alone, and without a fundamental shift or a clear structural pivot, we lack the \"why\" required to deploy capital.\n\nFriction\nThe primary friction is the conflict between momentum and structure. The market is currently rewarding the shorts, but we are at a point where the \"crowd\" is already positioned for the move. Trying to force a short entry now puts you on the wrong side of a potential violent snap-back. Conversely, buying for a rebound is \"catching a falling knife\" because there is no base-building structure to protect the entry. Patience is the only way to minimize this friction.\n\nExecution Plan\nMy instruction to you is: NO_TRADE. Do not attempt to bottom-fish or chase the breakdown. \nIf we see price consolidate and form a clear base on the lower timeframe over the next 5-10 sessions, then we can re-evaluate. \nIf the price breaks below 812.00 with sustained high volume and fails to recover within 48 hours, we may look for a tactical short on a retest of that broken level as resistance. Until one of these structural shifts occurs, the plan remains empty.\n\nRisk Protocol\nBecause our signal is NO_TRADE, our position size is strictly 0 shares. The ATR is 19.66, which is high for this name; if we were to trade this, a stop-loss would need to be wide to account for volatility, which would shrink our position sizing to negligible levels. Never risk more than 1% of your total trading capital. In a volatile environment like this, capital preservation is the most important trade you will make all month.\n\nTeaching Notes\nProcess must always outweigh prediction. Amateurs want to predict where the stock will go next; professionals wait for the market to reveal its intent through structure. When a stock is at extreme levels, the market is telling you that the \"easy money\" has already been made. Your edge in the Indian market comes from avoiding the noise and waiting for the \"institutional footprint\"—usually a breakout or a successful test of support with volume backing it up. \n\nVerdict\nConfidence is 0.55. We are sitting on the sidelines. The risk of a dead-cat bounce makes shorting dangerous, and the lack of a bottoming structure makes buying foolish. Keep this on your watchlist, set your price alerts, and protect your capital for a cleaner setup.\n\nLLM Token Usage:\n- Input tokens: 13963\n- Output tokens: 2508\n- Total tokens: 16471\n- Estimated cost (USD): 0.0\n\nLONG-TERM OUTLOOK (Based on News, Financials, and Price Data)\n- Stance: LONG_TERM_NEUTRAL\n- Confidence: 0.550\n- Sector: Unknown\n- Data coverage: 2716 daily bars for long-term model.\n- Price trend (1Y/3Y/5Y/10Y): -2.0762294909872248% / 2.5395563990127545% / 7.467919740562379% / 228.40653413724158%.\n- Long-run quality: CAGR(3Y)=0.8394522801857374%, CAGR(5Y)=1.4508683062823158%, CAGR(10Y)=12.626653221824501%,\n  Max Drawdown(5Y)=-41.054976694257796%, Vol=22.07262611679541%.\n- Structural trend: price vs 200DMA=-15.524134799403%.\n- Note: N/A metrics indicate insufficient history for that exact horizon, not an implied negative value.\n- News signal: avg sentiment=0.01 across stock/industry/macro streams (8/12/10 items).\n- News decomposition: stock=N/A, industry=0.09024166666666666, macro=-0.1002982080744078.\n- Fundamental location: 52w position=2.4%, 1Y return=-2.0762294909872248%.\n- Street context: analyst upside=N/A% from N/A analysts.\n- Macro overlay: India sentiment=SELL, US trend=SELL.\n\n--- VALUATION SNAPSHOT ---\n- P/E (trailing): 18.67\n- PEG ratio: N/A\n- Price/Book: 1.64\n- ROE: 8.8%\n- Debt/Equity: 0.95\n- EV/EBITDA: N/A\n- EV/Revenue: 5.98\n- Book value per share: 498.81\n- Enterprise value: N/A\n- Gross margins: N/A\n- Operating margins: -2.7%\n- EBITDA margins: N/A\n- Total revenue: 2,371,508,200,000\n- Total debt: 7,326,106,100,000\n- Total cash: 3,222,323,100,000\n\n--- QUARTERLY FINANCIAL TRENDS ---\n- Revenue QoQ growth: N/A\n- Net income QoQ growth: N/A\n- Operating cash flow QoQ: N/A\n\n--- DIVIDEND & OWNERSHIP ---\n- Dividend yield: 4.0%\n- Dividend yield trend: rising\n- Total dividends (1Y): ₹13.50\n- Institutional ownership: 55.8%\n- Major holders (institutions): N/A%\n\n--- SCORING FACTORS ---\n  → news_sentiment: score=+0.01 × weight=1.00\n  → return_1y: score=-0.02 × weight=0.90\n  → return_3y: score=+0.03 × weight=0.80\n  → return_5y: score=+0.07 × weight=0.70\n  ↑ cagr_5y: score=+0.15 × weight=0.90\n  ↓ sma200_position: score=-1.55 × weight=0.50\n  ↓ max_drawdown: score=-0.41 × weight=0.50\n  ↓ volatility: score=-0.22 × weight=0.40\n  ↓ 52w_position: score=-0.95 × weight=0.30\n  → 1y_change: score=-0.02 × weight=0.70\n  ↑ dividend_yield: score=+0.40 × weight=0.40\n  ↑ cagr_10y: score=+1.26 × weight=1.00\n  → operating_margins: score=-0.03 × weight=0.90\n  → roe: score=+0.09 × weight=1.00\n  ↓ debt_to_equity: score=-0.48 × weight=0.90\n  → trailing_pe: score=+0.07 × weight=0.50\n  ↑ price_to_book: score=+0.50 × weight=0.50\n  ↓ us_macro: score=-1.00 × weight=0.35\n  ↓ india_macro: score=-1.00 × weight=0.35\n--- DIRECT NEWS EVIDENCE (Top Headlines Used) ---\n- Company 1: HDFCBANK Outlook for the Week (March 09, 2026 – March 13, 2026) - Equitypandit\n- Company 2: HDFC Bank Share Price Today (13 Dec 2025): UPI Downtime, Analyst Targets up to ₹1,225, and What Could Move HDFCBANK Stock Next - TechStock²\n- Company 3: HDFC Bank Share Price Today, 28 November 2025: HDFCBANK Holds Near 52-Week High Amid Heavy Options Action - TechStock²\n- Industry 1: NSE concludes process for selection of intermediaries for proposed IPO - ETLegalWorld.com\n- Industry 2: Daily Current Affairs for UPSC IAS Exam - Sanskriti IAS\n- Industry 3: Top 10 Stocks Held by BlackRock India Fund as of January 2026 - Trade Brains\n- Macro 1: Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView\n- Macro 2: Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty\n- Macro 3: Fed to delay rate cuts as war clouds the outlook\n\n- Composite score: -0.042\n- Secular Growth Forecast: HDFCBANK faces structural headwinds; trading below 200DMA with stagnant 3-5Y CAGR. 'Fed to delay rate cuts' (Macro) is a durable headwind increasing funding costs, while 'UPI Downtime' reports suggest operational friction. 3-5Y Secular: Bull case assumes credit growth recovery; Bear case risks margin compression. Invalidate if margin expansion re-accelerates. Mixed signals warrant waiting for clearer technical support.\n",
+  "price_52w": {
+    "high": 1020.5,
+    "low": 812.0,
+    "current": 817.0,
+    "position_pct": 2.4,
+    "change_1y_pct": null
+  },
+  "analyst_consensus": {
+    "target_price": null,
+    "target_high": null,
+    "target_low": null,
+    "n_analysts": null,
+    "implied_upside_pct": null
+  },
+  "fundamental_signals": [
+    {
+      "type": "mixed",
+      "text": "Near 52-week low (₹812.00–₹817.00) — historically strong demand zone. Deep oversold bounces common, but confirm volume."
+    },
+    {
+      "type": "bearish",
+      "text": "Revenue contracting QoQ (-10.4% last quarter)."
+    }
+  ],
+  "key_price_levels": [
+    {
+      "label": "Resistance 1",
+      "price": 941.45,
+      "type": "resistance"
+    },
+    {
+      "label": "Resistance 2",
+      "price": 996.7,
+      "type": "resistance"
+    },
+    {
+      "label": "Resistance 3",
+      "price": 1009.19,
+      "type": "resistance"
+    },
+    {
+      "label": "Current",
+      "price": 817.0,
+      "type": "current"
+    }
+  ],
+  "momentum_score": 7.2,
+  "qualitative_labels": {
+    "moving_averages": "Sell",
+    "trend_channel": "Falling",
+    "rsi": "Oversold",
+    "macd": "Bearish"
+  },
+  "valuation_snapshot": {
+    "pe_trailing": 18.669199432688504,
+    "peg_ratio": null,
+    "ev_to_ebitda": null,
+    "ev_to_revenue": 5.982,
+    "gross_margins": null,
+    "operating_margins": 0.34794998,
+    "ebitda_margins": null,
+    "book_value": 367.242,
+    "dividend_yield": 1.35,
+    "enterprise_value": 17020593635328,
+    "roe": 0.08773190408815736,
+    "debt_to_equity": 0.9543063355044986,
+    "price_to_book": 1.6378844140313096,
+    "total_revenue": 2845330898944,
+    "total_debt": 6158335082496,
+    "total_cash": 1922102460416
+  },
+  "master_reasoning": {
+    "model": "gemini-3.1-flash-lite-preview",
+    "text": "Setup\nHDFCBANK is currently displaying a textbook \"Exhausted Bear\" profile. The stock is trading at 817.00, essentially pinned near its 52-week lows. While the trend is undeniably bearish—evidenced by price trading well below the 20-day and 50-day moving averages—we are currently in a momentum trap. The confluence of an RSI below 20 and Williams %R nearing -96 confirms that the selling is climactic. In this market, when a stock enters such an extreme oversold state, the technical edge for continued aggressive selling vanishes because the risk of a sharp, news-driven or liquidity-driven mean-reversion bounce outweighs the potential for further downside.\n\nCatalyst\nThere is a profound lack of directional catalysts. We are looking at a \"mixed catalyst tape\" where the fundamental backdrop is noisy and lacking high-conviction institutional signals. While some financial metrics suggest value, the recent 10.4% QoQ revenue contraction creates enough uncertainty to deter long-term institutional accumulation for now. We are trading based on price action alone, and without a fundamental shift or a clear structural pivot, we lack the \"why\" required to deploy capital.\n\nFriction\nThe primary friction is the conflict between momentum and structure. The market is currently rewarding the shorts, but we are at a point where the \"crowd\" is already positioned for the move. Trying to force a short entry now puts you on the wrong side of a potential violent snap-back. Conversely, buying for a rebound is \"catching a falling knife\" because there is no base-building structure to protect the entry. Patience is the only way to minimize this friction.\n\nExecution Plan\nMy instruction to you is: NO_TRADE. Do not attempt to bottom-fish or chase the breakdown. \nIf we see price consolidate and form a clear base on the lower timeframe over the next 5-10 sessions, then we can re-evaluate. \nIf the price breaks below 812.00 with sustained high volume and fails to recover within 48 hours, we may look for a tactical short on a retest of that broken level as resistance. Until one of these structural shifts occurs, the plan remains empty.\n\nRisk Protocol\nBecause our signal is NO_TRADE, our position size is strictly 0 shares. The ATR is 19.66, which is high for this name; if we were to trade this, a stop-loss would need to be wide to account for volatility, which would shrink our position sizing to negligible levels. Never risk more than 1% of your total trading capital. In a volatile environment like this, capital preservation is the most important trade you will make all month.\n\nTeaching Notes\nProcess must always outweigh prediction. Amateurs want to predict where the stock will go next; professionals wait for the market to reveal its intent through structure. When a stock is at extreme levels, the market is telling you that the \"easy money\" has already been made. Your edge in the Indian market comes from avoiding the noise and waiting for the \"institutional footprint\"—usually a breakout or a successful test of support with volume backing it up. \n\nVerdict\nConfidence is 0.55. We are sitting on the sidelines. The risk of a dead-cat bounce makes shorting dangerous, and the lack of a bottoming structure makes buying foolish. Keep this on your watchlist, set your price alerts, and protect your capital for a cleaner setup."
+  },
+  "llm_usage": {
+    "calls": [
+      {
+        "name": "News Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2390,
+        "output_tokens": 95,
+        "total_tokens": 2485
+      },
+      {
+        "name": "US Trend Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 420,
+        "output_tokens": 103,
+        "total_tokens": 523
+      },
+      {
+        "name": "Catalyst Context Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "error",
+        "reason": "Object of type Timestamp is not JSON serializable",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_tokens": 0
+      },
+      {
+        "name": "Market Setup Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2042,
+        "output_tokens": 109,
+        "total_tokens": 2151
+      },
+      {
+        "name": "Trader Intel Agent",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1614,
+        "output_tokens": 300,
+        "total_tokens": 1914
+      },
+      {
+        "name": "Batched Agent Reasoning",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1718,
+        "output_tokens": 1047,
+        "total_tokens": 2765
+      },
+      {
+        "name": "Long-Term Outlook Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1632,
+        "output_tokens": 123,
+        "total_tokens": 1755
+      },
+      {
+        "name": "Master Reasoning",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 4147,
+        "output_tokens": 731,
+        "total_tokens": 4878
+      }
+    ],
+    "llm_enabled": true,
+    "skipped_calls": 0,
+    "error_calls": 1,
+    "total_input_tokens": 13963,
+    "total_output_tokens": 2508,
+    "total_tokens": 16471,
+    "pricing": {
+      "input_cost_per_1m": 0.0,
+      "output_cost_per_1m": 0.0,
+      "estimated_total_cost_usd": 0.0
+    }
+  }
+}

@@ -1,0 +1,131 @@
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/quote.py:702: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  start = pd.Timestamp.utcnow().floor("D") - datetime.timedelta(days=365 // 2)
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/quote.py:704: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  end = pd.Timestamp.utcnow().ceil("D")
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/fundamentals.py:131: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  end = pd.Timestamp.utcnow().ceil("D")
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/fundamentals.py:131: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  end = pd.Timestamp.utcnow().ceil("D")
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/fundamentals.py:131: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  end = pd.Timestamp.utcnow().ceil("D")
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/fundamentals.py:131: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  end = pd.Timestamp.utcnow().ceil("D")
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/quote.py:702: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  start = pd.Timestamp.utcnow().floor("D") - datetime.timedelta(days=365 // 2)
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/quote.py:704: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  end = pd.Timestamp.utcnow().ceil("D")
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/fundamentals.py:131: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  end = pd.Timestamp.utcnow().ceil("D")
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/fundamentals.py:131: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  end = pd.Timestamp.utcnow().ceil("D")
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/fundamentals.py:131: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  end = pd.Timestamp.utcnow().ceil("D")
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/fundamentals.py:131: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  end = pd.Timestamp.utcnow().ceil("D")
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/quote.py:702: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  start = pd.Timestamp.utcnow().floor("D") - datetime.timedelta(days=365 // 2)
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/quote.py:704: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  end = pd.Timestamp.utcnow().ceil("D")
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/fundamentals.py:131: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  end = pd.Timestamp.utcnow().ceil("D")
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/fundamentals.py:131: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  end = pd.Timestamp.utcnow().ceil("D")
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/fundamentals.py:131: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  end = pd.Timestamp.utcnow().ceil("D")
+/home/ironman/miniconda3/envs/grandaisat/lib/python3.12/site-packages/yfinance/scrapers/fundamentals.py:131: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  end = pd.Timestamp.utcnow().ceil("D")
+
+
+========================================
+DEBUGGING: TATACONSUM.NS
+========================================
+
+[INFO]
+  currentPrice: 1083.6
+  regularMarketPrice: 1083.6
+  marketCap: 1072284958720
+  trailingPE: 73.16678
+  forwardPE: 52.644848
+  trailingEps: 14.81
+  returnOnEquity: None
+  debtToEquity: 11.869
+  totalRevenue: 194650292224
+  grossMargins: 0.40847
+  operatingMargins: 0.10982
+  ebitdaMargins: 0.13590999
+
+[FAST_INFO]
+  market_cap: None
+  last_price: None
+
+[STATEMENTS AVAILABILITY]
+  financials: True
+  quarterly_financials: True
+  balance_sheet: True
+  quarterly_balance_sheet: True
+
+[FINANCIALS INDEX (LATEST)]
+['Tax Effect Of Unusual Items', 'Tax Rate For Calcs', 'Normalized EBITDA', 'Total Unusual Items', 'Total Unusual Items Excluding Goodwill', 'Net Income From Continuing Operation Net Minority Interest', 'Reconciled Depreciation', 'Reconciled Cost Of Revenue', 'EBITDA', 'EBIT', 'Net Interest Income', 'Interest Expense', 'Interest Income', 'Normalized Income', 'Net Income From Continuing And Discontinued Operation', 'Total Expenses', 'Rent Expense Supplemental', 'Diluted Average Shares', 'Basic Average Shares', 'Diluted EPS', 'Basic EPS', 'Diluted NI Availto Com Stockholders', 'Net Income Common Stockholders', 'Otherunder Preferred Stock Dividend', 'Net Income', 'Minority Interests', 'Net Income Including Noncontrolling Interests', 'Net Income Continuous Operations', 'Tax Provision', 'Pretax Income', 'Other Non Operating Income Expenses', 'Special Income Charges', 'Other Special Charges', 'Write Off', 'Restructuring And Mergern Acquisition', 'Net Non Operating Interest Income Expense', 'Total Other Finance Cost', 'Interest Expense Non Operating', 'Interest Income Non Operating', 'Operating Income', 'Operating Expense', 'Other Operating Expenses', 'Depreciation And Amortization In Income Statement', 'Amortization', 'Depreciation Income Statement', 'Selling General And Administration', 'Selling And Marketing Expense', 'General And Administrative Expense', 'Rent And Landing Fees', 'Gross Profit', 'Cost Of Revenue', 'Total Revenue', 'Operating Revenue']
+
+========================================
+DEBUGGING: VIKRAMSOLR.NS
+========================================
+
+[INFO]
+  currentPrice: 181.31
+  regularMarketPrice: 181.31
+  marketCap: 65694085120
+  trailingPE: 14.5747595
+  forwardPE: 10.832658
+  trailingEps: 12.44
+  returnOnEquity: None
+  debtToEquity: 8.898
+  totalRevenue: 45429559296
+  grossMargins: 0.31324
+  operatingMargins: 0.15225
+  ebitdaMargins: 0.20382
+
+[FAST_INFO]
+  market_cap: None
+  last_price: None
+
+[STATEMENTS AVAILABILITY]
+  financials: True
+  quarterly_financials: True
+  balance_sheet: True
+  quarterly_balance_sheet: True
+
+[FINANCIALS INDEX (LATEST)]
+['Tax Effect Of Unusual Items', 'Tax Rate For Calcs', 'Normalized EBITDA', 'Total Unusual Items', 'Total Unusual Items Excluding Goodwill', 'Net Income From Continuing Operation Net Minority Interest', 'Reconciled Depreciation', 'Reconciled Cost Of Revenue', 'EBITDA', 'EBIT', 'Net Interest Income', 'Interest Expense', 'Interest Income', 'Normalized Income', 'Net Income From Continuing And Discontinued Operation', 'Total Expenses', 'Rent Expense Supplemental', 'Diluted Average Shares', 'Basic Average Shares', 'Diluted EPS', 'Basic EPS', 'Diluted NI Availto Com Stockholders', 'Net Income Common Stockholders', 'Otherunder Preferred Stock Dividend', 'Net Income', 'Net Income Including Noncontrolling Interests', 'Net Income Continuous Operations', 'Tax Provision', 'Pretax Income', 'Other Non Operating Income Expenses', 'Special Income Charges', 'Other Special Charges', 'Write Off', 'Net Non Operating Interest Income Expense', 'Total Other Finance Cost', 'Interest Expense Non Operating', 'Interest Income Non Operating', 'Operating Income', 'Operating Expense', 'Other Operating Expenses', 'Depreciation And Amortization In Income Statement', 'Amortization', 'Depreciation Income Statement', 'Selling General And Administration', 'Selling And Marketing Expense', 'General And Administrative Expense', 'Rent And Landing Fees', 'Gross Profit', 'Cost Of Revenue', 'Total Revenue', 'Operating Revenue']
+
+========================================
+DEBUGGING: RELIANCE.NS
+========================================
+
+[INFO]
+  currentPrice: 1380.7
+  regularMarketPrice: 1380.7
+  marketCap: 18684284239872
+  trailingPE: 22.435814
+  forwardPE: 21.064888
+  trailingEps: 61.54
+  returnOnEquity: None
+  debtToEquity: 35.651
+  totalRevenue: 10245479858176
+  grossMargins: 0.35777
+  operatingMargins: 0.11852
+  ebitdaMargins: 0.16441
+
+[FAST_INFO]
+  market_cap: None
+  last_price: None
+
+[STATEMENTS AVAILABILITY]
+  financials: True
+  quarterly_financials: True
+  balance_sheet: True
+  quarterly_balance_sheet: True
+
+[FINANCIALS INDEX (LATEST)]
+['Tax Effect Of Unusual Items', 'Tax Rate For Calcs', 'Normalized EBITDA', 'Total Unusual Items', 'Total Unusual Items Excluding Goodwill', 'Net Income From Continuing Operation Net Minority Interest', 'Reconciled Depreciation', 'Reconciled Cost Of Revenue', 'EBITDA', 'EBIT', 'Net Interest Income', 'Interest Expense', 'Interest Income', 'Normalized Income', 'Net Income From Continuing And Discontinued Operation', 'Total Expenses', 'Rent Expense Supplemental', 'Diluted Average Shares', 'Basic Average Shares', 'Diluted EPS', 'Basic EPS', 'Diluted NI Availto Com Stockholders', 'Net Income Common Stockholders', 'Otherunder Preferred Stock Dividend', 'Net Income', 'Minority Interests', 'Net Income Including Noncontrolling Interests', 'Net Income Discontinuous Operations', 'Net Income Continuous Operations', 'Tax Provision', 'Pretax Income', 'Other Non Operating Income Expenses', 'Special Income Charges', 'Other Special Charges', 'Write Off', 'Net Non Operating Interest Income Expense', 'Total Other Finance Cost', 'Interest Expense Non Operating', 'Interest Income Non Operating', 'Operating Income', 'Operating Expense', 'Other Operating Expenses', 'Selling General And Administration', 'Selling And Marketing Expense', 'General And Administrative Expense', 'Rent And Landing Fees', 'Gross Profit', 'Cost Of Revenue', 'Total Revenue', 'Operating Revenue']
+

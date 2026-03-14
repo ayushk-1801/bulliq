@@ -1,0 +1,1786 @@
+{
+  "report_id": "TCS_NS_20260314_062210",
+  "symbol": "TCS.NS",
+  "timeframe": "1d",
+  "forecast_bars": 3,
+  "start_timestamp": "2025-11-13 15:30:00",
+  "end_timestamp": "2026-03-13 15:30:00",
+  "final_signal": "NO_TRADE",
+  "confidence": 0.35,
+  "confluence_scores": {
+    "buy": 0.14,
+    "sell": 0.372,
+    "no_trade": 0.199
+  },
+  "risk_plan": {
+    "summary": "Risk Plan: size=0 shares, ATR=60.05, stop=N/A, target=N/A.",
+    "reasoning_prompt": "Risk protocol:\n1) Estimate recent volatility using ATR.\n2) Define one-unit risk from ATR multiple and cap portfolio risk near 1% per trade.\n3) Convert risk budget into position size.\n4) Anchor stop to volatility-adjusted invalidation and target to asymmetric reward.\n5) Force size=0 when final signal is NO_TRADE.",
+    "llm_reasoning": "Risk is high, characterized by extreme oversold conditions (RSI 17.5, Williams %R -95.6) which could trigger sharp, volatile counter-trend rallies. However, the consistent bearish slope and negative MACD signal imply that any upward move faces heavy overhead resistance at the SMA20 (2601.78). Position sizing should remain conservative given the high ATR (60.05).",
+    "position_size": 0,
+    "stop_loss": null,
+    "target": null,
+    "risk_reward": "N/A",
+    "detail": {
+      "capital": 100000.0,
+      "risk_budget": 1000.0,
+      "one_risk": 72.05995396205357,
+      "atr": 60.049961635044646
+    }
+  },
+  "final_conclusion": {
+    "signal": "NO_TRADE",
+    "confidence": 0.35,
+    "when_to_buy": "Only post-stabilization: Break of the 1-hour consolidation range with confirmed volume expansion.",
+    "expected_holding_duration": "2-6 weeks",
+    "stop_loss": null,
+    "targets": [],
+    "target": null,
+    "analyst_consensus": {
+      "target_price": null,
+      "target_high": null,
+      "target_low": null,
+      "n_analysts": null,
+      "implied_upside_pct": null
+    },
+    "price_52w": {
+      "high": 3710.0,
+      "low": 2397.0,
+      "current": 2410.5,
+      "position_pct": 1.0,
+      "change_1y_pct": null
+    },
+    "key_price_levels": [
+      {
+        "label": "Resistance 1",
+        "price": 2688.6,
+        "type": "resistance"
+      },
+      {
+        "label": "Resistance 2",
+        "price": 3123.22,
+        "type": "resistance"
+      },
+      {
+        "label": "Resistance 3",
+        "price": 3215.55,
+        "type": "resistance"
+      },
+      {
+        "label": "Current",
+        "price": 2410.5,
+        "type": "current"
+      }
+    ],
+    "playbook_title": "Mean Reversion vs. Momentum Fade",
+    "thesis": "TCS is at a technical dead-end. The sharp oversold condition (RSI < 20) triggers a 'value' reflex, but institutional flow is clearly exiting IT services due to structural margin compression. FIIs are heavy on the sell side; trying to catch a falling knife without a base formation is gambling, not trading.",
+    "execution_style": "Patience. Waiting for the 'first higher low' on the 1h timeframe.",
+    "risk_flag": "Extreme volatility; potential for a stop-run before any meaningful bottoming.",
+    "invalidation": "Fresh lower low below current support level voids any long bias; further breakdown confirms institutional capitulation.",
+    "simple_summary": "NO_TRADE: Simple view: Signals are mixed, so capital protection is the priority. Wait for clear breakout or breakdown before taking a new position. Confidence is Low. Entry rule: Wait for a clear breakout/breakdown confirmation.",
+    "simple_explanation": "Simple view: Signals are mixed, so capital protection is the priority. Wait for clear breakout or breakdown before taking a new position.",
+    "beginner_plan": [
+      "Step 1: Direction = NO_TRADE.",
+      "Step 2: Entry trigger = Only post-stabilization: Break of the 1-hour consolidation range with confirmed volume expansion.",
+      "Step 3: Stop-loss = ₹2373.03 (only after buy trigger confirms)",
+      "Step 4: First target = ₹3123.22 (only after buy trigger confirms)",
+      "Step 5: If trigger fails or invalidation happens, exit and wait."
+    ],
+    "normal_person_plan": [
+      "What to do now: Wait, no trade now.",
+      "Entry: Wait for a clear breakout/breakdown confirmation.",
+      "Before market opens: set price alerts on trigger and invalidation levels.",
+      "Stop-loss plan: ₹2373.03 (only after buy trigger confirms)",
+      "First target plan: ₹3123.22 (only after buy trigger confirms)",
+      "Position sizing: risk only a small amount (around 1% of trading capital).",
+      "If stop-loss is hit after entry, exit immediately. Do not average down."
+    ],
+    "summary": "**FINAL CONCLUSION**\n- Signal: NO_TRADE\n- Confidence: 0.350\n- Action Bias: Wait / no-trade setup\n- Playbook: Mean Reversion vs. Momentum Fade\n- Thesis: TCS is at a technical dead-end. The sharp oversold condition (RSI < 20) triggers a 'value' reflex, but institutional flow is clearly exiting IT services due to structural margin compression. FIIs are heavy on the sell side; trying to catch a falling knife without a base formation is gambling, not trading.\n- When to Act: Only post-stabilization: Break of the 1-hour consolidation range with confirmed volume expansion.\n- Execution Style: Patience. Waiting for the 'first higher low' on the 1h timeframe.\n- Invalidation: Fresh lower low below current support level voids any long bias; further breakdown confirms institutional capitulation.\n- Expected Holding Duration: 2-6 weeks\n- Context: sideways trend channel\n- Risk Flag: Extreme volatility; potential for a stop-run before any meaningful bottoming.\n- Stop-loss: N/A\n- Targets: N/A\n- 52w Range: ₹2397.00 – ₹3710.00\n- Current Price Context: ₹2410.50\n- Approx Risk:Reward to first target: N/A\n- Teaching note: prioritize process over prediction. Enter only after trigger confirmation, size by invalidation distance, and review whether the thesis is invalidated before averaging or adding."
+  },
+  "long_term_outlook": {
+    "stance": "LONG_TERM_NEUTRAL",
+    "confidence": 0.65,
+    "score": -0.122,
+    "summary": "LONG-TERM OUTLOOK (Based on News, Financials, and Price Data)\n- Stance: LONG_TERM_NEUTRAL\n- Confidence: 0.650\n- Sector: Unknown\n- Data coverage: 2716 daily bars for long-term model.\n- Price trend (1Y/3Y/5Y/10Y): -30.75842167704126% / -25.13748112023001% / -14.685896700321987% / 150.6986702004586%.\n- Long-run quality: CAGR(3Y)=-9.199519819952041%, CAGR(5Y)=-3.1266839820148995%, CAGR(10Y)=9.626412722070054%,\n  Max Drawdown(5Y)=-44.0924852034954%, Vol=23.32772840690404%.\n- Structural trend: price vs 200DMA=-21.120285241229332%.\n- Note: N/A metrics indicate insufficient history for that exact horizon, not an implied negative value.\n- News signal: avg sentiment=0.00 across stock/industry/macro streams (15/12/10 items).\n- News decomposition: stock=N/A, industry=0.12248870504377367, macro=-0.0781416056282926.\n- Fundamental location: 52w position=1.0%, 1Y return=-30.75842167704126%.\n- Street context: analyst upside=N/A% from N/A analysts.\n- Macro overlay: India sentiment=SELL, US trend=SELL.\n\n--- VALUATION SNAPSHOT ---\n- P/E (trailing): 17.96\n- PEG ratio: N/A\n- Price/Book: 9.20\n- ROE: 51.2%\n- Debt/Equity: 0.10\n- EV/EBITDA: 12.13\n- EV/Revenue: 3.17\n- Book value per share: 261.90\n- Enterprise value: N/A\n- Gross margins: 42.9%\n- Operating margins: 24.4%\n- EBITDA margins: N/A\n- Total revenue: 2,553,240,000,000\n- Total debt: 93,920,000,000\n- Total cash: 83,310,000,000\n\n--- QUARTERLY FINANCIAL TRENDS ---\n- Revenue QoQ growth: N/A\n- Net income QoQ growth: N/A\n- Operating cash flow QoQ: N/A\n\n--- DIVIDEND & OWNERSHIP ---\n- Dividend yield: 4.5%\n- Dividend yield trend: falling\n- Total dividends (1Y): ₹109.00\n- Institutional ownership: 17.0%\n- Major holders (institutions): N/A%\n\n--- SCORING FACTORS ---\n  → news_sentiment: score=+0.00 × weight=1.00\n  ↓ return_1y: score=-0.31 × weight=0.90\n  ↓ return_3y: score=-0.25 × weight=0.80\n  ↓ return_5y: score=-0.15 × weight=0.70\n  ↓ cagr_5y: score=-0.31 × weight=0.90\n  ↓ sma200_position: score=-2.11 × weight=0.50\n  ↓ max_drawdown: score=-0.44 × weight=0.50\n  ↓ volatility: score=-0.23 × weight=0.40\n  ↓ 52w_position: score=-0.98 × weight=0.30\n  ↓ 1y_change: score=-0.31 × weight=0.70\n  ↑ dividend_yield: score=+0.45 × weight=0.40\n  ↑ cagr_10y: score=+0.96 × weight=1.00\n  ↑ operating_margins: score=+0.24 × weight=0.90\n  ↑ roe: score=+0.51 × weight=1.00\n  ↑ gross_margins: score=+0.43 × weight=0.70\n  → debt_to_equity: score=-0.05 × weight=0.90\n  ↑ trailing_pe: score=+0.11 × weight=0.50\n  ↓ price_to_book: score=-0.73 × weight=0.50\n  ↓ us_macro: score=-1.00 × weight=0.35\n  ↓ india_macro: score=-1.00 × weight=0.35\n--- DIRECT NEWS EVIDENCE (Top Headlines Used) ---\n- Company 1: TCS, Infosys among 6 Sensex stocks that hit 52-week lows; slip up to 18% in a month - The Economic Times\n- Company 2: TCS, Eternal, Tech Mahindra, HDFC Bank, Varun Beverages shares oversold on charts; do you own any?\n- Company 3: Stock market crash: HDFC Bank, IRCTC, TCS, RVNL, HUL among 296 stocks that hit 52-week low as NIFTY50 trade below 23,700 - Upstox\n- Industry 1: Union Budget FY 2026-27: A Push for India’s Services Exports - PIB\n- Industry 2: Segment Analysis and Major Growth Areas in the Regulatory Reporting Solutions Market - openPR.com\n- Industry 3: IT Sector: Kotak flags higher Gen AI disruption risk, cuts fair value – TCS, Infosys among top picks - The Financial Express\n- Macro 1: Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView\n- Macro 2: Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty\n- Macro 3: Fed to delay rate cuts as war clouds the outlook\n\n- Composite score: -0.122\n- Secular Growth Forecast: Trend is deeply bearish (52-week lows, -30% 1Y return). While fundamentals (margins, ROE) are strong, GenAI disruption cited by Kotak is a durable threat. Secular forecast: 3-5Y recovery hinges on AI integration; base case is stagnant growth, bull case is pivot success, bear case is margin erosion. Macro headwinds (delayed rate cuts) confirm stay-aside.\n",
+    "llm_reasoning": "Trend is deeply bearish (52-week lows, -30% 1Y return). While fundamentals (margins, ROE) are strong, GenAI disruption cited by Kotak is a durable threat. Secular forecast: 3-5Y recovery hinges on AI integration; base case is stagnant growth, bull case is pivot success, bear case is margin erosion. Macro headwinds (delayed rate cuts) confirm stay-aside.",
+    "evidence": {
+      "history_bars": 2716,
+      "history_start": "2015-03-17 00:00:00",
+      "history_end": "2026-03-13 00:00:00",
+      "coverage_ratio": 1.0,
+      "sparse_long_term": false,
+      "fundamentals_sparse": false,
+      "news_avg_sentiment": 0.0,
+      "news_stock_avg_sentiment": null,
+      "news_industry_avg_sentiment": 0.122,
+      "news_macro_avg_sentiment": -0.078,
+      "stock_news_count": 15,
+      "industry_news_count": 12,
+      "macro_news_count": 10,
+      "headline_preview": [
+        "TCS, Infosys among 6 Sensex stocks that hit 52-week lows; slip up to 18% in a month - The Economic Times",
+        "TCS, Eternal, Tech Mahindra, HDFC Bank, Varun Beverages shares oversold on charts; do you own any?",
+        "Stock market crash: HDFC Bank, IRCTC, TCS, RVNL, HUL among 296 stocks that hit 52-week low as NIFTY50 trade below 23,700 - Upstox",
+        "Union Budget FY 2026-27: A Push for India’s Services Exports - PIB",
+        "Segment Analysis and Major Growth Areas in the Regulatory Reporting Solutions Market - openPR.com",
+        "IT Sector: Kotak flags higher Gen AI disruption risk, cuts fair value – TCS, Infosys among top picks - The Financial Express",
+        "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+        "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+        "Fed to delay rate cuts as war clouds the outlook"
+      ],
+      "return_1y_pct": -30.76,
+      "return_3y_pct": -25.14,
+      "return_5y_pct": -14.69,
+      "return_10y_pct": 150.7,
+      "cagr_3y_pct": -9.2,
+      "cagr_5y_pct": -3.13,
+      "cagr_10y_pct": 9.63,
+      "price_vs_sma200_pct": -21.12,
+      "max_drawdown_5y_pct": -44.09,
+      "annualized_volatility_pct": 23.33,
+      "position_52w_pct": 1.0,
+      "change_1y_pct": -30.75842167704126,
+      "analyst_upside_pct": null,
+      "analyst_count": null,
+      "india_sentiment_signal": "SELL",
+      "us_trend_signal": "SELL",
+      "dividend_yield": 0.045218834266749636,
+      "dividend_yield_trend": "falling",
+      "peg_ratio": null,
+      "operating_margins": 0.24397628111732544,
+      "held_pct_institutions": 0.17026,
+      "institutions_pct": null,
+      "rev_qoq": null,
+      "ni_qoq": null,
+      "ocf_qoq": null,
+      "sector": "Unknown",
+      "scoring_factors": [
+        [
+          "news_sentiment",
+          0.0,
+          1.0
+        ],
+        [
+          "return_1y",
+          -0.308,
+          0.9
+        ],
+        [
+          "return_3y",
+          -0.251,
+          0.8
+        ],
+        [
+          "return_5y",
+          -0.147,
+          0.7
+        ],
+        [
+          "cagr_5y",
+          -0.313,
+          0.9
+        ],
+        [
+          "sma200_position",
+          -2.112,
+          0.5
+        ],
+        [
+          "max_drawdown",
+          -0.441,
+          0.5
+        ],
+        [
+          "volatility",
+          -0.233,
+          0.4
+        ],
+        [
+          "52w_position",
+          -0.98,
+          0.3
+        ],
+        [
+          "1y_change",
+          -0.308,
+          0.7
+        ],
+        [
+          "dividend_yield",
+          0.452,
+          0.4
+        ],
+        [
+          "cagr_10y",
+          0.963,
+          1.0
+        ],
+        [
+          "operating_margins",
+          0.244,
+          0.9
+        ],
+        [
+          "roe",
+          0.512,
+          1.0
+        ],
+        [
+          "gross_margins",
+          0.429,
+          0.7
+        ],
+        [
+          "debt_to_equity",
+          -0.05,
+          0.9
+        ],
+        [
+          "trailing_pe",
+          0.113,
+          0.5
+        ],
+        [
+          "price_to_book",
+          -0.728,
+          0.5
+        ],
+        [
+          "us_macro",
+          -1.0,
+          0.35
+        ],
+        [
+          "india_macro",
+          -1.0,
+          0.35
+        ]
+      ]
+    }
+  },
+  "agent_outputs": {
+    "technical": {
+      "signal": "SELL",
+      "confidence": 0.8400000000000001,
+      "summary": "Indicator Signal: SELL | Trend: close=2410.50, SMA20=2601.78, SMA50=2908.10. Momentum: MACD=-129.951, Signal=-124.541, Hist=-5.410, ROC10=-8.96%. Oscillators: RSI14=17.5, StochK/D=4.4/2.8, Williams%R=-95.6. Risk: ATR14=60.05, Volume=2466488 vs VolSMA20=4057195. Momentum Score=15.7/100 | MA=Sell, Trend=Falling, RSI=Oversold, MACD=Bearish.",
+      "reasoning_prompt": "Indicator reasoning protocol:\n1) Map structural trend using relative price location vs SMA20/50/200 and slope analysis.\n2) Decode momentum quality using MACD histogram acceleration/deceleration and ROC10-ROC20 comparisons.\n3) Assess oscillator behavior (RSI/Stoch/WillR) for range-specific exhaustion vs strong trend continuation.\n4) Verify professional participation via volume-over-average filters and spread analysis.\n5) Filter noise using ATR-based volatility regimes (reduce conviction in 'wide and loose' tape).\n6) Enforce strict confluence: if trend and momentum disagree without a reclaim setup, maintain NO_TRADE posture.",
+      "llm_reasoning": "Signal is SELL. Price at 2410.50 is significantly below the SMA20 (2601.78) and SMA50 (2908.10), confirming a bearish structure. Momentum is weak with a negative MACD (-129.95) and histogram (-5.41). RSI at 17.5 indicates deep oversold conditions, while Williams %R (-95.6) suggests extreme selling pressure. Low volume (2.46M vs 4.05M SMA20) suggests lack of conviction in the current bounce, favoring continued bearish dominance.",
+      "detail": {
+        "bullish_points": 0,
+        "bearish_points": 7,
+        "delta": -7,
+        "rules": {
+          "trend_alignment": false,
+          "macd_alignment": false,
+          "rsi_bias": "bearish",
+          "stoch_alignment": true,
+          "willr_bias": "bearish",
+          "volume_confirmation": false
+        }
+      },
+      "price_levels": {
+        "levels": [
+          {
+            "label": "Resistance 1",
+            "price": 2688.6,
+            "type": "resistance"
+          },
+          {
+            "label": "Resistance 2",
+            "price": 3123.22,
+            "type": "resistance"
+          },
+          {
+            "label": "Resistance 3",
+            "price": 3215.55,
+            "type": "resistance"
+          },
+          {
+            "label": "Current",
+            "price": 2410.5,
+            "type": "current"
+          }
+        ],
+        "nearest_resistance": 2688.6,
+        "nearest_support": null,
+        "resistance_1": 2688.6,
+        "resistance_2": 3123.22,
+        "resistance_3": 3215.55,
+        "support": null,
+        "breakdown_zone": null
+      },
+      "momentum_score": 15.7,
+      "qualitative_labels": {
+        "moving_averages": "Sell",
+        "trend_channel": "Falling",
+        "rsi": "Oversold",
+        "macd": "Bearish"
+      },
+      "price_range": {
+        "high": 3350.0,
+        "low": 2397.0,
+        "position_pct": 1.4
+      },
+      "metrics": {
+        "close": 2410.5,
+        "rsi14": 17.465189645486106,
+        "macd": -129.95124645554324,
+        "macd_signal": -124.54101518632109,
+        "macd_hist": -5.410231269222152,
+        "sma20": 2601.77998046875,
+        "sma50": 2908.1016064453124,
+        "roc10": -8.958717209134292,
+        "atr14": 60.049961635044646,
+        "stoch_k": 4.397394136807818,
+        "stoch_d": 2.816184076969776,
+        "willr14": -95.60260586319218,
+        "volume": 2466488.0,
+        "volume_sma20": 4057194.75
+      }
+    },
+    "pattern": {
+      "signal": "SELL",
+      "confidence": 0.643586710183723,
+      "summary": "Pattern Signal: SELL | setup=range breakdown with negative slope, slope=-24.7370, breakout_up=False, breakdown=True, bull_engulf=False, bear_engulf=False.",
+      "reasoning_prompt": "Pattern reasoning protocol:\n1) Detect breakout/breakdown against prior 12-bar range, not single-candle spikes.\n2) Confirm direction with local slope and bar-structure continuation.\n3) Use engulfing patterns as confirmation, not standalone trigger.\n4) Treat flat-slope compression as NO_TRADE until expansion is confirmed.\n5) Down-rank weak breakouts lacking structure confirmation.",
+      "llm_reasoning": "Signal is SELL. The structure shows a clear range breakdown with a negative slope of -24.74. The absence of bullish engulfing patterns confirms a lack of immediate reversal strength. The setup represents a clean breach of previous support levels, supporting a continuation of the bearish trend within the current volatility regime.",
+      "detail": {
+        "setup": "range breakdown with negative slope",
+        "slope": -24.736973248106022,
+        "breakout_up": false,
+        "breakdown": true,
+        "bullish_engulfing": false,
+        "bearish_engulfing": false,
+        "volatility_proxy": 57.328142337124994
+      }
+    },
+    "trend": {
+      "signal": "NO_TRADE",
+      "confidence": 0.5099940352239025,
+      "summary": "Trend Signal: NO_TRADE | setup=sideways trend channel, support slope=-7.316, resistance slope=-6.916, price position=-3.68 in channel.",
+      "reasoning_prompt": "Trend reasoning protocol:\n1) Fit support and resistance trendlines over the visible swing window.\n2) Estimate channel slope (regime direction) and channel width (trend quality).\n3) Locate current price in channel and prefer pullback entries aligned with slope.\n4) If slope is weak/flat, classify as sideways and favor NO_TRADE.\n5) Avoid chasing signals near channel extremes against risk-reward logic.",
+      "llm_reasoning": "Signal is NO_TRADE. The asset is caught in a sideways trend channel with a channel width of 71.55. Both support (-7.32) and resistance (-6.92) slopes are negative but near-flat, indicating a lack of directional conviction. With the price position at -3.68 within the channel, the trend lacks the necessary velocity to trigger a high-confidence entry.",
+      "detail": {
+        "setup": "sideways trend channel",
+        "slope_avg": -7.1162,
+        "channel_width": 71.5474,
+        "channel_position": -3.6806
+      },
+      "metrics": {
+        "support_slope": -7.316262059139549,
+        "resistance_slope": -6.9162372564511525,
+        "channel_position": -3.681,
+        "last_support": 2673.83,
+        "last_resistance": 2745.38
+      }
+    },
+    "news": {
+      "signal": "SELL",
+      "confidence": 0.75,
+      "summary": "News Signal: SELL | combined sentiment=0.00 (stock=-0.04, industry=0.12, macro=-0.08). Stock articles=29 (trusted=0, unrated=29); Industry articles=30 (trusted=0); Macro articles=30 (trusted=0). Sentiment strength=0.12. Inference=TCS is facing significant technical pressure, with reports of 52-week lows and analysts forecasting further declines. Market sentiment is heavily impacted by a broader equity market crash. While some charts label the stock as 'oversold,' the prevailing trend remains strongly bearish with negative price momentum and ongoing market value erosion..",
+      "reasoning_prompt": "News reasoning protocol:\n1) Collect company-specific headlines across multiple providers using diversified queries.\n2) Filter spam/listicle/noise domains and low-relevance stories.\n3) Build a global macro stream (rates, inflation, oil, USD, broad risk sentiment).\n4) Build industry/sector thematic stream (demand cycle, market share, regulation, capacity, pricing).\n5) Weight sentiment by source quality, exponential recency decay, and relevance confidence.\n6) Apply content-similarity dedup to remove near-duplicate headlines.\n7) Use LLM to infer final bias from company + industry + macro evidence and return NO_TRADE under conflict.",
+      "llm_reasoning": "Signal is SELL. Combined sentiment is neutral-to-bearish at 0.00, driven by weak macro (-0.08) and stock-specific (-0.04) sentiment. Media reports highlight 52-week lows and persistent analyst forecasts for further decline. The news flow confirms that TCS is suffering from broad market equity crashes and industry-wide technical pressure, reinforcing the bearish outlook.",
+      "detail": {
+        "company_context": {
+          "symbol": "TCS.NS",
+          "company_name": "Tata Consultancy Services Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services",
+          "business_summary": "Tata Consultancy Services Limited provides information technology (IT) and IT enabled services in the Americas, Europe, India, and internationally. The company provides TCS ADD, a suite of AI powered life sciences platforms; TCS BaNCS, a financial services platform; TCS BFSI Platforms, a cloud-native, as-a-service digital ecosystem for insurers and financial firms; TCS Chroma, a cloud-based human resource management system platform; TCS Customer Intelligence & Insights, an AI-driven customer analytics and real-time CDP solution; TCS ERP on Cloud, an SAP platform as a service; ignio, a cognitiv"
+        },
+        "stock_article_count": 29,
+        "industry_article_count": 30,
+        "macro_article_count": 30,
+        "trusted_count": 0,
+        "trusted_industry_count": 0,
+        "unrated_count": 29,
+        "trusted_macro_count": 0,
+        "industry_avg_sentiment": 0.12248870504377367,
+        "sentiment_strength": 0.12248870504377367,
+        "llm_decision_why": "TCS is facing significant technical pressure, with reports of 52-week lows and analysts forecasting further declines. Market sentiment is heavily impacted by a broader equity market crash. While some charts label the stock as 'oversold,' the prevailing trend remains strongly bearish with negative price momentum and ongoing market value erosion."
+      },
+      "top_news": [
+        {
+          "source": "google_rss",
+          "title": "TCS, Infosys among 6 Sensex stocks that hit 52-week lows; slip up to 18% in a month - The Economic Times",
+          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOZEtvQ2JhQ0JaQUZwT0J1VDRyRktBaWxTYTdVLUNTaGFmcW0wR2psQVJ3R1NyN3ZlNjFVOXlmeEZiczA2T1ZCVkoxaGFKRnBHRFo2VHd3cXVFNUV6SlptVUlGN3h3b001QVB2TWlTV3FTRHdCejBMNTdVSzVsd1RXWE1OZ19SNS1qZnBuVDdxVGFzakdZUUJSaURoMEFyTk9mSmpFTGYxQWVtNkVYWHhlSHVJeDZkYWd6bnJOQ2lKTmxiT3dzUURGelhDOGxvV05zSUZ2VXM2U1J2MUJuZ3R5VUQ3NlY0cm11Z3B0NG9rWFM4OWNRWVg4RTJqLXY?oc=5",
+          "published_at": "Fri, 13 Mar 2026 10:56:45 GMT",
+          "published_ts": 1773399405.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss",
+          "title": "TCS, Eternal, Tech Mahindra, HDFC Bank, Varun Beverages shares oversold on charts; do you own any?",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe6bbede4ccf8529988c1ba6fecf&url=https%3a%2f%2fwww.businesstoday.in%2fmarkets%2fstocks%2fstory%2ftcs-eternal-tech-mahindra-hdfc-bank-varun-beverages-shares-oversold-on-charts-do-you-own-any-520450-2026-03-13&c=10146583764546605972&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 00:09:00 GMT",
+          "published_ts": 1773360540.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Stock market crash: HDFC Bank, IRCTC, TCS, RVNL, HUL among 296 stocks that hit 52-week low as NIFTY50 trade below 23,700 - Upstox",
+          "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPM2xsN2J2T0Utcnhsakk3UmJEMTllWmZtMnJpQUhWNzJlenFPNDRxaXpjYWx5Tk0xSWY3dzk1eDlZWDF1YlgwNEVTNHZldEEyX18zWV9oQ2JXNVlOYWp3MVVvXzlpa0VYaEVzNVBmZGpwU0hHOUJ1ZUgtRlVFQVMzNE0xV1lPMGJwYkFsQThHMzZKX3RqYVZPS2hqY1VsQmQtUWltRDVJdzBTb29iMjV0clEta2F6Sm1kcEtSaTB6aU5VNWtmUGRYanJ4RnZ3SWdyOEZBOUJLNkhkSzhRT1JjUUFHX05VdUxaaHROZFdwVVBhMnh4VEMxWTQyT1JXczQyUGxaVjhEc1NrN0VTOEE?oc=5",
+          "published_at": "Thu, 12 Mar 2026 06:17:11 GMT",
+          "published_ts": 1773296231.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "TCS, HUL, Ashok Leyland, 2 more stocks may fall up to 14%: Tech analyst - Business Standard",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPZmVuRExmbEdEcHlUU296WTNzUExMQlg0bGxwM2ZUelJucnFrUDFoOUNBSjA0RkRudTF1TXpzVUtYOVhGYTZ5b2QyelAwQUhzcmF3cWhUeUJmUTYtQUxTRE5vTV9GaVdkZkY2b0pFLUJ6LXRIenpnMDJxc3plc1NEcDZnMHROc2YxbHc5Y1YzTDY5TzZtbHplTThoQnlLZHdqcHN2SmJqNURRcWNLdGxmekU1NmFvSXpUSTZPMVFDNkFLam8xUG5xcjFUTkhRaG50Yy1V0gHYAUFVX3lxTFA3RldYOExzQmwtWWhqWmNENDdsdFJjN2JHd3hWQlNEUndUYVM2QlVXNllTWGhVd25tYXRVYllITDc2c2Rfa3o2QkNjYk1KbkR3QTBSd3FOLS1aTXRmV29SN000bG9oNGphVjR4d1BUa3l5amhCeVctQ2NSVFBzNG42aGJ2TmlDdkxvaVFfWEpnQ2hQVF9hR3JFLUxBb3oxU25xOEdPeGJaWm9zM1N3bWNmMEdqaFByVDZnLVgtZ1M0TDJMRkNYdDNrblZ5NDczTldYdUIzWlV3Sw?oc=5",
+          "published_at": "Thu, 12 Mar 2026 04:52:21 GMT",
+          "published_ts": 1773291141.0,
+          "sentiment_score": -1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Stock market crash: TCS, IRCTC, Tata Technologies among 140 stocks that hit 52-week low on NSE - Upstox",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNNGpPeWRYaXJCLWFwWi1NY1lqSmowVVg4OTJsNXJzRzZJMndBSmNTWWJtTFpFbkxPQUMySDZkaVhtcnlnZlVaUG42REhzRFNRUE93Ni0tVkdncWhadkdOaHhwYWxLLXdSZzBiYVZneVFpSDhQeUx6VWtnY2lxYXhKNWVBMDNCTHNXaE94ZHkxNXRJeHpZUTNJOHhZR2xkZV9jQzI2RmhQcmw5QVpSZ3dJLVlpQlNTNXI0R1QzZVh4M01fTFBNWk8yVWp6YVNpVzRwNk9pWmJJRGVGN0hpcXpUbFJNTzA?oc=5",
+          "published_at": "Wed, 11 Mar 2026 10:03:18 GMT",
+          "published_ts": 1773223398.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "TCS sees $100-billion market value erosion since 2021. What lies ahead? - The Economic Times",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNallqQXlEV2RpZFpsdHBhN1FlbnRpOC1BWDJXcGdwSGxnLTQ4WDBCVkF6SmFxRXZtbGU2TjBJZWZPay1zRjFlNnVhZXFpV2dJbkQ3Vk1xclJaZk5sNXFNTF9YVjgtZmZwdndOU3RRRW9uR3VYMkljcks1d0tneVk0UVBJUjM5ZUdubHFjZmViTElSYWJ1ZDlnenNXaF8wZnRIaThqZnNtdVY1ZjJrTXdkODdFZ3BTbWRrNDlvVDNERTVXellULWx5Yk9tbUxwUDQwaVIzSW1qQjBGZ9IB3wFBVV95cUxNOGpodGduZ3BzdFZBN082QkF6QjJsMVh3WDJCVXBMWi1tRWY2X2piTW8yak1WRmRWSGFjV00taVlJbUpxLXkxVTBudzVPY0dYTFhRSkpsN2tUaEpKTFduUkR6czFQMENUdDhSZzVGMWhhWVR4SWY1TmdCWUxJcVBqeXlZMnZzX1hjdUpsMFpITE43UlR2RFBGSlZTdmtiS0dERUtEeklVSGo5bGdiRm04al9iRTVtcWpEajRvak00S2JFYXc5QlRwM1ZQTUZTSHdwcnpJLUdOTTFlMGVUc0ZF?oc=5",
+          "published_at": "Wed, 11 Mar 2026 09:03:51 GMT",
+          "published_ts": 1773219831.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Coforge to TCS: Why Nuvama has a ‘Buy’ on all Top-10 tech stocks - The Financial Express",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNY205cFUxSXhzUXVFcHVnY1RLXzdpSXYyNkJLN1J6Tzl4OWg4QlNibi1kN2xlX21WQTNwU0c3ZHc3bmU0SE5JWmJPSEpIMkR0bXh1LWNmMXREU0hVWExPU2hGWDJBVlNqQlB5bnVlSGFqdVlCenFIRGZSQS1nbkZoZzU2a0ZiLU53RkRFZ0xwS1NmN25jTy04ZHpfNEdrX0licE5MZGtoSkNoT2d3VHJ5TlpGc9IBugFBVV95cUxQY3RYWmtIa0dNTTZBV3pmTndlYWlpSjBDU0hVdU93QWN5cVJOZTVCb0prTmltTzFZX0F0dGhORzY3LXZkV0h3Z1laRl9YblE5Nmp0b3ZQNnViMmhrQ2ptODZVLTN6cTZUTWVMczdQeTJzM3A4ZFZMcjR0MXRNQW1zenE5b0l3aDZoOHJQbW8zWC1haDhPdjM1cTNjWFIxVno1UGc5bnFFYWtjMVZQQU5PZkxPbkY5SW52NlE?oc=5",
+          "published_at": "Wed, 11 Mar 2026 06:40:15 GMT",
+          "published_ts": 1773211215.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "IT sector valuations highly attractive after 21% YTD slump; Coforge, Infosys, TCS among top IT stocks to buy: Nuvama - Mint",
+          "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxObzlkRVRnYjBqMmR3YU5yN2MtMUhfR0FPVkgzU1VNTk1RSk9yVjJVa2xUMUxfbmVoeThEblZxcExtVnB0NGdGbTYyVUtyZDlYdWZiaWN4UnhwUFRDMGdRUjc5RGtlNUdfTnVkaXROTUVwSk9XUHdPcHVKaFZ1dGI0cHN1eVJZRmZ1UDZuaTNDVl9vcVVxZmVMMkFWWWFidHVvQmJMYkNZM2NZVzY3TEhyRkpwT2E2Q3dwX245YlFHTXRGNDlNVF9FTFpqRUNOd3ZvWWtGYkJDcXJSbnJQLUhSQmcwSWV6MUVnOVR5bEtiZWpTWmZPOGRjMC1JSzVSWklNUWRyUGs3d0U4WFJzMFHSAZMCQVVfeXFMTkg3RDZYWEI5RnlwODVTcTg1SnlaaDJFc2c5a0lJVnRvUnM1elY0aVpBNG11aXh4c001Q194R2o3VGFGS3ROczJTQmxEZFp0dmdPM1BWZk5HS1R3ZDhEbFE3X2dhVENNdE81UkFUZUtBRHVLUDhkdVNSOTNBQzNRSEtobkY3M3NCQUpOOUM1Q1hVbFROVjFtcW5VaUpwdWdnNmhBa1p6YmlXTTRqUDdzcWZDY3lJd0NoNHZLODVUUnJvSXdzZ2haNGlYcDU1ajNjUU5NQ3hJVTlZZC1qZDU5VFFUUFM1TEJxU21ueEFNR29hOGV4RkVIMWZwMUY0M3NNTUFRWl9VQUdYRjFfbzdMaEFTTVk?oc=5",
+          "published_at": "Wed, 11 Mar 2026 05:51:58 GMT",
+          "published_ts": 1773208318.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss",
+          "title": "TCS Share Price Live Updates: TCS Stock Price Decline",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe6bbede4ccf8529988c1ba6fecf&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2fstock-liveblog%2ftcs-share-price-today-live-11-mar-2026%2fliveblog%2f129434883.cms&c=813095306170969553&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 05:03:00 GMT",
+          "published_ts": 1773205380.0,
+          "sentiment_score": -1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Tata Group Stock: Can TCS Lead India’s AI Data Center Boom as Demand Surges? - Trade Brains",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNSFVTMGJVTWhYcUJFWm9HOXU0T2ZKYWY5OHlPellhTzRDT1pmX3JneVNkMmc0bmdieHhrZU9vX3dhUG91TWZiQ1gxTDhCQmEyWlRRdFUtUV9qd1JMZ202dnRmWDBacjlBdzhsWkhhcTZZaDJJSXdtTWxsTU50bW42WWN1ZW1HU0xqSUJMY3ZYYkZoa2FXTlowTjN2S1FQZw?oc=5",
+          "published_at": "Tue, 10 Mar 2026 13:30:00 GMT",
+          "published_ts": 1773149400.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "TCS stock at lowest level since October 2020, tanks 17% in 1 month - Business Standard",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOTEtpSFlTUmtuY0lwUndWNVZUaUFGYzE4TTk0YmJSQ3NmUEsxajZjOHY5RFFQdEtSS1R0Z2UzUlF0SURJakE2c1VOZFZkeHBvQngySnNEdEVxYnloZ2lkMHRhSXczOE5RdVhCeDc5LXhZQkhNSlBXMXdHd1lvWDF3M3hoczVFNE5yazMyZm1namJhU180TmQxWkZzT2pVU083QUJuLVRqUDlCSlVuVG8yaUZtSS02X0pMY2VJdUMwVTlXMzRGMjkzangyY9IB0AFBVV95cUxQM3ZvRDM0WnpiQnhWd2Z4R2hrM250UmZyc0gxYkpYdFl2dU9yRFk2cS15MWdRQzhEc00yM0g3RTkwMDZBSXRKbDNqeXlBb3dWVGlaLWgyRUs5TjZvSmdXOWxVWVY0aXl0ckxPemFweXNCT1VESVRoVUdMTVQ3VFdWbWlNLXJiMnkyR1ZnOUdxekxicDlxRzJWRFV1TVhraFNuVXFPdk1jWS13SEpURDhITVNzVEp2RGV1Mlk2SVV0NnhKazQta3dLNmVqMFJEVTZw?oc=5",
+          "published_at": "Tue, 10 Mar 2026 08:44:52 GMT",
+          "published_ts": 1773132292.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss",
+          "title": "From HDFC Bank to TCS— 875 stocks touch their 52-week lows today; investors lose ₹12 lakh crore in just 2 sessions",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe6bbede4ccf8529988c1ba6fecf&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fmarkets%2ffrom-hdfc-bank-to-tcs-875-stocks-touch-their-52-week-lows-today-investors-lose-12-lakh-crore-in-just-2-sessions%2far-AA1XP431&c=4563630404356943219&mkt=en-in",
+          "published_at": "Mon, 09 Mar 2026 15:38:00 GMT",
+          "published_ts": 1773070680.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss",
+          "title": "Sensex stocks: HDFC Bank, TCS, Asian Paints, IndiGo, Trent hit 52-week lows",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe6bbede4ccf8529988c1ba6fecf&url=https%3a%2f%2fwww.business-standard.com%2fmarkets%2fnews%2fsensex-stocks-hdfc-bank-tcs-asian-paints-indigo-trent-hit-52-week-lows-126030900281_1.html&c=18436700086805446485&mkt=en-in",
+          "published_at": "Sun, 08 Mar 2026 22:41:00 GMT",
+          "published_ts": 1773009660.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss",
+          "title": "TCS CEO on the ‘AI worry and anxiety’ that has wiped billions from stock markets globally, says: It is a …",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe6bbede4ccf8529988c1ba6fecf&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fgeneral%2ftcs-ceo-on-the-ai-worry-and-anxiety-that-has-wiped-billions-from-stock-markets-globally-says-it-is-a%2far-AA1XK8IW&c=11605519381903205678&mkt=en-in",
+          "published_at": "Sat, 07 Mar 2026 18:57:00 GMT",
+          "published_ts": 1772909820.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss",
+          "title": "TCS shares in focus after CEO says IT major in advanced talks for more AI data centres in India",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe6bbede4ccf8529988c1ba6fecf&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fgeneral%2ftcs-shares-in-focus-after-ceo-says-it-major-in-advanced-talks-for-more-ai-data-centres-in-india%2far-AA1XD65s&c=5206993633066331775&mkt=en-in",
+          "published_at": "Thu, 05 Mar 2026 20:18:43 GMT",
+          "published_ts": 1772741923.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        }
+      ],
+      "top_industry_news": [
+        {
+          "source": "google_rss_industry",
+          "title": "Union Budget FY 2026-27: A Push for India’s Services Exports - PIB",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1DNGc5d2QyTHQwR2psbThGZmJQeEJ2bFNvdlhpMnNLaUVMNkcxeEpwU1RKbWNTMkIwa2lqeGE0UE5XLWxJWEJBUldpeTV2VlVVanAzMUZjaXEzb0lyazVGUnZyc2E3STRl?oc=5",
+          "published_at": "Sat, 14 Mar 2026 04:04:00 GMT",
+          "published_ts": 1773461040.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tata Consultancy Services Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Segment Analysis and Major Growth Areas in the Regulatory Reporting Solutions Market - openPR.com",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNzlIOXBCUkNIS05zeXpHbG1DaVdvWW8ybXRFN3VpMFAzQnZONHJEM3RlZy16ZHYzR0VJOXhQbnNQbl9zZkRuQ2dsaUw3VXNROGt2SWVrNTFRRWNZN3VpeEhLQ2NHQjJjbjBCOG5Za2FUTUhnby1aZkFUdS1aRFJ3VXAzUVo1TmFWaFViMTJlN096NmF6MEQxbw?oc=5",
+          "published_at": "Thu, 12 Mar 2026 06:23:19 GMT",
+          "published_ts": 1773296599.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tata Consultancy Services Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "IT Sector: Kotak flags higher Gen AI disruption risk, cuts fair value – TCS, Infosys among top picks - The Financial Express",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOVlFMemx3c0Vnc3lERERGZDJabXBDc3JHd2F4WEszdE9PMFNQMFBtZzFLYW9QVHVoclhaMzl5dGJJamdWTDZyZ09Eb2xIeWxvQmE2LWNPNlhzQWlRZ1BvNXY4UFBmXzZiTWpheXEwcDhDcVROMnl0c3pBRUpZS0wzMXU2V0hZdnphRWRxOTdEV1FzWkp0WFBMbi1JUEVYR3lDbG1kY0ZaT2tsNXV5ejVQdUdfcWhYa09ZVTh4dGhzakJIU2lNc2NwdlJZNE5PcDZaOVhBTklEZ3dpd0lX0gHjAUFVX3lxTFBhbXl1MG5xX04zSVdQbm1iaGYzd0JUeVo5cUxTbFc4bWxPc0ExYWZXVW04Ylp6VnlETzEtZ0U4T1JfTk9VQ3g1SVNNSGZJSUJKNFpwU3Z5b25CWC1CRGdicWE4dWhoaWZLcEUxaVUzaTJ4bGZNSHdEVHFUM0gtbXVfalFTMXl4dVZGSFlNdmUxY0tCaEFrV3RzMnJZenQ2MFd6dU5EV0IxTVVlUVdQNFRBb2FXc2FaN0VpeGZuZm1JSzBTZlgwT2c5VFdJcFhLdEFzdE5HUmxHbmtqeEo0bjBFcUFF?oc=5",
+          "published_at": "Wed, 11 Mar 2026 06:38:30 GMT",
+          "published_ts": 1773211110.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tata Consultancy Services Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Emerging Growth Patterns Driving Rapid Expansion in the Anti-Money Laundering Market - openPR.com",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPQ3Bjd2xKTzN5RWtoNy1wR3JkRXlheTUzRW5TaGI2blIyS0g4cjBFeUhEQTVYa25XbjBFY3ZfQUZVa0pBSWdicmVRektTeDBsZk4zTFNma3Vka2lJZmZxSjM4Tlkwc0FscS03d09OMFVhTHpwcThhYm5LS1ZDalM0Y1BYQVlKMml0N1lsRk44djA?oc=5",
+          "published_at": "Wed, 11 Mar 2026 04:48:10 GMT",
+          "published_ts": 1773204490.0,
+          "sentiment_score": 2.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tata Consultancy Services Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Market Trend Insights: The Impact of Recent Developments on the Financial Process Outsourcing Market - openPR.com",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNaFp1YTcyWUczWUQxeW04UlpwOWw3Z1c0d2kyMTJkNmVXVGwwdHFHMzdYeG9ZU2psNzJuemV5SjJPN0ZuNl82VUNTUklkNm15eUFxLXB4SGtXRUlzb2ctSlRpZjJvMUpXQmtsU1FfdVBBdDlWYXAzNHMxXzZOZUVDSUR3NV9PckY4QVRPTDVhLVNtUjFQSjA5NjRR?oc=5",
+          "published_at": "Wed, 11 Mar 2026 04:33:55 GMT",
+          "published_ts": 1773203635.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tata Consultancy Services Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services"
+        },
+        {
+          "source": "bing_rss_industry",
+          "title": "India strongly positioned as the next global platform for consumer technology: Nothing co-founder",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe7aea1a4c65a26191bd3ef67297&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2ftopstories%2findia-strongly-positioned-as-the-next-global-platform-for-consumer-technology-nothing-co-founder%2far-AA1XOtsQ&c=9634019043024314443&mkt=en-in",
+          "published_at": "Mon, 09 Mar 2026 04:07:00 GMT",
+          "published_ts": 1773029220.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated",
+          "company_name": "Tata Consultancy Services Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "AI Engineering Market Size & Share | Industry Report, 2033 - Grand View Research",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNNi15al9zZThfSUhkU29WYjNhcjlkQzJYYUF0c0FEZXpURVEzLVIyREZKcjZsTVY3cGRIYU5QVlhXMy1SRmcxMmVlbmpSSXV0Wi1uNHFLa0doZjNoRlNfSHhodEZwOUVtYmU0V2UxSWU5RS01dFJZMlhUbW5sbGlGeGp2eDNld0U?oc=5",
+          "published_at": "Fri, 06 Mar 2026 10:43:25 GMT",
+          "published_ts": 1772793805.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tata Consultancy Services Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Mphasis, Infosys, Wipro, LTIMindtree, TCS & HCLTech Share Price Fall | Stock Market Today IT News - Samco",
+          "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxNM0tqMGl0UUVLTWRLd19sZFVyZzRDQjd3azFJQ0JnLURuZ0s4T3ZkZ2wyUmF2ZnN2UlUtTEZja09mcjBuX2RnU2R1Rm14VGdMVlhWelRxRmd4WV9BVFZDMUlGOEhkbW5OZzdPNkZhWTR3LVl1dEJtZXJ3cXBqNzMyTmFidGphQTNwX1NqazlDZkl1d0RPeGRWRVNfWW95VmZlZVQwUTNoNEh2SUE0Z0xwSXcxRURldmZvNVFRNUtvd0VWdXRzVXVUbkZIcWI2cEVuM3dGeHBwTWc0ajRrcDBWSXpZX29xOGloU1FzamxFdGpKbnV5NFdTMk5XUHhDN3V1ajRVVF95ZEs2bnRsYzRUWDg4VHRleUJTalow?oc=5",
+          "published_at": "Mon, 23 Feb 2026 08:49:11 GMT",
+          "published_ts": 1771836551.0,
+          "sentiment_score": -1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tata Consultancy Services Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "India E KYC Market to Unlock Strong Revenue Growth: Latest - openPR.com",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOeGthbC1tU0V0SXA0RFNaUVk1VGNJbG5HVG1iVlU1VU9WQVZnUTJOaURZZVdqeE0xclpjc2h0WGhaN0pIR1VWalBSN2NIdHJnaFlyNDlwYzgxUjY1a05qRXRPV1RVMC0taXpZS0hkX3hzWUNYWl9uN3FXRWV4YnJkTlpkRVUwRFpDRWpiNTNRd0RXOV8wMWxsMw?oc=5",
+          "published_at": "Fri, 13 Feb 2026 08:00:00 GMT",
+          "published_ts": 1770969600.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tata Consultancy Services Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "TCS Share Price Hits 52-Week Low, Slips Below ₹10 Lakh Crore Amid IT Selloff | Stock Market Today - Samco",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQdFlyaFNPSmh0Vnh2UTRWX3pJSXpOQkFZTWthX1g4UTl5RXFVZUtsakdVRGU4YUl3cnpLekVUNXo1bzI3NFo2TjdxQUpqNkdWVHRzYVRscUpUOXdMSzFTdnVqTVBidnVYeDVPcXJWSmh2dmtVUmlLYVRMMWwzTld6VkNNRjhnZmFXRE1XTm4zOTNKX0VHQnZWTjRYa1JRR084dF9kZU80VVBGTExPaFFHQUFGc3Uxa05FUTBKQkp5VFhZZWc1UmlqTA?oc=5",
+          "published_at": "Thu, 12 Feb 2026 08:00:00 GMT",
+          "published_ts": 1770883200.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tata Consultancy Services Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services"
+        },
+        {
+          "source": "bing_rss_industry",
+          "title": "Budget 2026 signals India doubling down on its position as global tech services leader, IT industry says",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe77411a48aeaeb055864f3a63ad&url=https%3a%2f%2fwww.moneycontrol.com%2fnews%2fbusiness%2finformation-technology%2fbudget-2026-signals-india-doubling-down-on-its-position-as-global-tech-services-leader-it-industry-says-13803923.html&c=1729403532280256247&mkt=en-in",
+          "published_at": "Sun, 01 Feb 2026 12:18:00 GMT",
+          "published_ts": 1769948280.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated",
+          "company_name": "Tata Consultancy Services Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Technology at the heart of India’s economic outlook: What the economic survey 2025–26 means for the technology industry - Express Computer",
+          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPUjAzSmtUc01DX1U2eE1yTDVyWjdZS3JPcWhoVFQtSUFsRVc0U0RMa0hfUk5lT2hYWmlZdC01ZXB1Z1FjZGhKQkF1NEZFazUwcmhydTBucXYxNG0xRVotdWJTSDRLOTl6Y2k4RVFQR3ljZnRGTWFpZGF5NnJ1R2g2TlJJRWxuOHFkcWMyN2lqMmNwTXFkeWRZR0JaQUtHWGRFNlFlSTJfUWJzMk84SWFwQnVLQVl5THBMM1g5TGlTaVpQbkVPb3c5Z1NhRkVlUm1feEFDaXZqNlFuWkxpSm9mbVFJbUJfZ0FuYWVEOXVMUXlfZ0RNMWRkYjdKRTnSAYICQVVfeXFMTTlISjRLSWV4NUY3Rk4tM3RyckF3bWxIMTVpdkU2WTdaTTJEM3YyTGF2SUprQmdDSzRwLWtEeTVlaldydFB1b2I3Y1dTTWtTbHJlWEhwMkRwemhUNzhuWXFHYVlSOEEzdE1HNTQ2b1RfWXZsdE0wQmkzSlhpNHZsa2pfWDBycXlJNFJGV0lpZzhhU3hJaXpOUHpwLTllcExRLWYxRzgwS25FZ054NTc0UXpUbENkREpvNjU3eTJCTlh0dXFvNGJuWjdLYTJ4Vk5YSHozRTdWenJVa0R4THl1YXc3SHJmTmxranlRVUtaNk1hNTBNclpZSDUyQ1hCeWgwMnh3?oc=5",
+          "published_at": "Fri, 30 Jan 2026 08:00:00 GMT",
+          "published_ts": 1769760000.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tata Consultancy Services Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services"
+        }
+      ],
+      "top_macro_news": [
+        {
+          "source": "google_rss_macro",
+          "title": "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRVNOajVzSUJWU3Q5R2toMjVnZVZMNDhLclozWDdNODc1OU1qbVFjYnFTT0Z1SUZaaExuY3FJajFkdWtOWk5kdWplT0J0Yk9RcnlDVnlvQmJZNC1jVDVHZmRhS0Z0X0JiXzFETHRnaUVac1pEMmZfWE9raXFacFpwR1dSaEVST0Ntc2k1czN4emNQVFlWSHE3V1ZhMW80OUFMYmN6dEwtTkRadm44enc?oc=5",
+          "published_at": "Fri, 13 Mar 2026 15:17:26 GMT",
+          "published_ts": 1773415046.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe7ddf7541408a3b40f9e667b94f&url=https%3a%2f%2fwww.livemint.com%2fmarket%2fstock-market-news%2fus-china-power-shift-global-markets-india-outlook-mirae-asset-swarup-mohanty-11773376870759.html&c=15555016077234823276&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 14:15:00 GMT",
+          "published_ts": 1773411300.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Fed to delay rate cuts as war clouds the outlook",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe7d624b4a9b8f0c9da7b0006f1f&url=https%3a%2f%2fthink.ing.com%2farticles%2ffed-to-delay-rate-cuts-as-war-clouds-the-outlook%2f&c=127436243108543137&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 13:40:00 GMT",
+          "published_ts": 1773409200.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss_macro",
+          "title": "BTC defies rising dollar, oil and yields, holds above $71,000 as macro pressures mount - CoinDesk",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbHB1NE1GZ1dLTWpvOWNseW5QXy1jbWVHcTYzcXF6NWotU0NHOG1XNEUzcDd0ZTctMW1URXZzSW5RQ1djc1h3a0xOM0k2Tkd5TjRWcE0wUXRwZjg4WktmZ2xDWnpLa0RhR1BsRzlrZlVlVzhONmQ0eW51VXJIWFQ3NFJkd0VXZ2VsUnY4VTBuWjU5LXpxX1BPYUIyaEZKQVdEWUU3a25CY0RvN3NrVW10cFNUTWtxSHdhSWI4?oc=5",
+          "published_at": "Fri, 13 Mar 2026 09:34:10 GMT",
+          "published_ts": 1773394450.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Gold Silver Rate Today Live Updates (13 March 2026): Gold, silver futures fall on MCX as rising crude oil prices dim hopes of early rate cuts",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe7ec67e4a7f9baeb35d87d1de18&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2flive-blog%2fgold-rate-silver-price-today-live-updates-mcx-gold-18k-22k-24k-rate-iran-isreal-us-war-latest-news%2fliveblog%2f129534056.cms&c=4108291931945502437&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 06:00:00 GMT",
+          "published_ts": 1773381600.0,
+          "sentiment_score": -1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Markets Today: Sensex Declines 830 Points, Nifty Slips Below 23,650 Amid Iran-US-Israel War",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe7ddf7541408a3b40f9e667b94f&url=https%3a%2f%2fwww.news18.com%2fbusiness%2fmarkets%2fmarkets-today-sensex-falls-1000-points-in-opening-trade-nifty-below-23600-as-oil-surges-past-100-9956009.html&c=7425380694736114227&mkt=en-in",
+          "published_at": "Thu, 12 Mar 2026 03:39:00 GMT",
+          "published_ts": 1773286740.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Trading Day: Oil and yields up, up, and away",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe7ec67e4a7f9baeb35d87d1de18&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2ftrading-day-oil-and-yields-up-up-and-away%2far-AA1YqbzQ&c=11227118164045986945&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 14:08:08 GMT",
+          "published_ts": 1773238088.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss_macro",
+          "title": "Markets Confront the Economic Impact of the Iran Conflict - Natixis CIB | Natixis Corporate & Investment Banking",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOVpkVlFlOG1lbEdUZEM2VU40clhkdUtsN3l6Z3Rkd2g4WTBNMVNKSFBmMmkyT1M0RGwtZGJxN1ItZVVrMEU3UnVfWFJ6UmpZUVppV09ZelhMWHNvZmhtbFk3ajc0UnlpY0dZeW51MGJnSUU3dGhYRGFQaE44NjJVaFFBVWFyVlNhampDdXFic0dCZXZ3YW5ScWUtWQ?oc=5",
+          "published_at": "Wed, 11 Mar 2026 10:55:26 GMT",
+          "published_ts": 1773226526.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "S&P 500 Faces Valuation Pressure as Oil and Yields Rise Together",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe7ec67e4a7f9baeb35d87d1de18&url=https%3a%2f%2fwww.investing.com%2fanalysis%2fsp-500-faces-valuation-pressure-as-oil-and-yields-rise-together-200676476&c=11959585435036819535&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 10:53:00 GMT",
+          "published_ts": 1773226380.0,
+          "sentiment_score": -1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Oil price spike could push US inflation to 4%, delaying Fed rate cut",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe7d624b4a9b8f0c9da7b0006f1f&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2foil-price-spike-could-push-us-inflation-to-4-delaying-fed-rate-cut%2far-AA1Ym49n&c=7065206888862373143&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 03:02:32 GMT",
+          "published_ts": 1773198152.0,
+          "sentiment_score": 1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        }
+      ],
+      "avg_sentiment": 6.261559629830091e-05,
+      "macro_sentiment": -0.0781416056282926
+    },
+    "market_sentiment": {
+      "signal": "SELL",
+      "confidence": 0.656,
+      "summary": "Market Sentiment: SELL | NIFTY 5D=-5.31%, 10D=-9.20%, 20D=-10.29%, SMA20 gap=-7.1% (below). India VIX=2410.5, 5D chg=-147.1, news sentiment=0.00. Votes: bull=2, bear=3.",
+      "reasoning_prompt": "Market sentiment protocol:\n1) Evaluate NIFTY multi-window momentum (5/10/20-bar returns) for domestic risk appetite.\n2) Check Nifty SMA20 structure — price above 20DMA = constructive, below = cautious.\n3) Evaluate India VIX regime as stress filter (low=constructive, high=defensive).\n4) Factor VIX change rate — rising VIX signals increasing fear even if level is moderate.\n5) Blend with cleaned multi-source news sentiment (stock + macro blend).\n6) Count bullish/bearish votes and avoid directional call under conflict.\n7) Prefer NO_TRADE when index momentum and volatility regime diverge.",
+      "llm_reasoning": "Market sentiment remains distinctly bearish as the stock trades near recent lows, aligning with broader macroeconomic uncertainty. The heavy volume of unrated articles emphasizing downside risk suggests institutional caution and retail fear. The sentiment is currently dominated by negative momentum, making any near-term upside appear as a corrective rally rather than a fundamental trend reversal.",
+      "detail": {
+        "nifty_ret5": -0.05314215692931257,
+        "nifty_ret10": -0.09199092034048106,
+        "nifty_ret20": -0.1029208782735801,
+        "above_sma20": false,
+        "sma_gap_pct": -7.12,
+        "vix_level": 2410.5,
+        "vix_change_5d": -147.1,
+        "news_avg_sentiment": 6.261559629830091e-05,
+        "bullish_votes": 2,
+        "bearish_votes": 3
+      }
+    },
+    "relative_strength": {
+      "signal": "NO_TRADE",
+      "confidence": 0.5560837710498117,
+      "summary": "Relative Strength: NO_TRADE | stock 10-bar return=-6.85%, NIFTY=-5.43%, alpha=-1.42%.",
+      "reasoning_prompt": "Relative-strength protocol:\n1) Compare stock and NIFTY returns over same 10-bar window.\n2) Convert spread into alpha and classify persistent out/under-performance.\n3) Treat marginal alpha as noise and return NO_TRADE.\n4) Use relative strength as confirmation layer, not standalone trigger.",
+      "llm_reasoning": "Relative strength is currently weak as price performance consistently underperforms its short-term and long-term moving averages. The steep negative ROC10 of -8.96% indicates that the asset is shedding value at an accelerated rate compared to the broader market, confirming its status as a laggard in the current technology sector environment.",
+      "detail": {
+        "stock_ret10": -0.06851381307779736,
+        "nifty_ret10": -0.05430446235268882,
+        "alpha": -0.014209350725108538
+      }
+    },
+    "us_trend": {
+      "signal": "SELL",
+      "confidence": 0.95,
+      "summary": "US Trend Signal: SELL | Global risk-off backdrop. SPX 5D/20D=-5.75%/-12.35%, NDX 5D/20D=-5.75%/-12.35%, VIX=6632.19, DXY 5D=-7.80%.",
+      "reasoning_prompt": "US macro trend protocol:\n1) Evaluate SPX and NDX short/medium returns for global equity risk tone.\n2) Use VIX as stress filter (high VIX weakens risk-on conviction).\n3) Use DXY direction as liquidity/EM risk proxy for Indian equities.\n4) Classify regime as risk-on, risk-off, or mixed.\n5) Use this as contextual bias only; do not override local setup quality.",
+      "llm_reasoning": "US trend factors are contributing to global market instability, as negative macro sentiment persists in the news feed. Higher interest rate expectations and broader equity market erosion weigh heavily on IT services companies like TCS. This macro context acts as a constant headwind, preventing the stock from establishing a bottom despite being technically oversold.",
+      "detail": {
+        "regime": "Global risk-off backdrop",
+        "llm_decision_why": "SPX and NDX demonstrate significant negative returns over short and medium horizons (5-day and 20-day). The extremely elevated VIX (6632) indicates extreme market volatility and severe risk-off sentiment. DXY strength over the 20-day horizon further confirms a flight to safety, signaling a strongly bearish macro regime unsuitable for risk-on swing trading.",
+        "spx_ret_5": -0.05751489366576523,
+        "spx_ret_20": -0.12348644980074408,
+        "ndx_ret_5": -0.05751489366576523,
+        "ndx_ret_20": -0.12348644980074408,
+        "vix_last": 6632.18994140625,
+        "dxy_ret_5": -0.07799251457821688,
+        "dxy_ret_20": 0.30595585651314683
+      }
+    },
+    "financials": {
+      "signal": "BUY",
+      "confidence": 0.8769230769230769,
+      "summary": "Financials Signal: BUY | Fundamentals supportive. Coverage=77%. ROE=51.24%, Margin=19.02%, RevGrowth=N/A, EarnGrowth=N/A, D/E=0.099, CurrentRatio=N/A, PE=17.963. Quarterly trends: RevQoQ=5.75%, NIQoQ=-16.48%, OCFQoQ=2.91%, DebtQoQ=2.32%, FCF=110.61B, Cash/Debt=0.669. Analyst target=N/A (N/A upside, ? analysts). 52w Hi/Lo=3710.000/2397.000, position=1.03%.",
+      "reasoning_prompt": "Financial statement reasoning protocol:\n1) Evaluate valuation (PE/PB) relative to profitability and growth quality.\n2) Score profitability and efficiency (ROE, margins).\n3) Validate growth durability using quarterly revenue and net-income trends.\n4) Check balance-sheet resilience (debt trend, liquidity, cash/debt).\n5) Check cash-flow quality (operating CF trend, free cash flow sign).\n6) If fundamentals conflict or are incomplete, default to conservative NO_TRADE bias.",
+      "llm_reasoning": "Financial metrics reveal significant underperformance: price (2410.50) is well below the SMA20 (2601.78) and SMA50 (2908.10). The volatility (ATR14=60.05) remains high relative to the stock's current price, indicating substantial downside risk. Despite deep RSI readings (17.47) and negative momentum, the lack of volume confirmation (2.46M vs 4.05M) implies that the asset is currently unsupported by meaningful capital inflow.",
+      "fundamental_signals": [
+        {
+          "type": "mixed",
+          "text": "Near 52-week low (₹2397.00–₹2410.50) — historically strong demand zone. Deep oversold bounces common, but confirm volume."
+        },
+        {
+          "type": "bullish",
+          "text": "Revenue growing QoQ (5.8% last quarter)."
+        },
+        {
+          "type": "bearish",
+          "text": "Net income declined sharply QoQ (-16.5%)."
+        }
+      ],
+      "analyst_consensus": {
+        "target_price": null,
+        "target_high": null,
+        "target_low": null,
+        "n_analysts": null,
+        "implied_upside_pct": null
+      },
+      "price_52w": {
+        "high": 3710.0,
+        "low": 2397.0,
+        "current": 2410.5,
+        "position_pct": 1.0,
+        "change_1y_pct": null
+      },
+      "extended_fundamentals": {
+        "symbol": "TCS.NS",
+        "dividend_yield": 2.61,
+        "dividend_rate": 63.0,
+        "ex_dividend_date": 1768521600,
+        "payout_ratio": 0.4701,
+        "held_pct_insiders": 0.71789,
+        "held_pct_institutions": 0.17026,
+        "book_value": 313.727,
+        "price_to_book": 7.683432,
+        "return_on_equity": 0.42635,
+        "debt_to_equity": 9.444,
+        "profit_margins": 0.18295999,
+        "enterprise_value": 8272910221312,
+        "enterprise_to_revenue": 3.172,
+        "enterprise_to_ebitda": 12.129,
+        "gross_margins": 0.3968,
+        "operating_margins": 0.25179002,
+        "ebitda_margins": 0.26153,
+        "total_revenue": 2608020062208,
+        "total_debt": 108210003968,
+        "total_cash": 567430021120,
+        "peg_ratio": null,
+        "trailing_pe": 18.282139,
+        "forward_pe": 15.694179
+      },
+      "promoter_institutional": {
+        "symbol": "TCS.NS",
+        "major_holders": {},
+        "top_institutional": []
+      },
+      "dividends_splits": {
+        "symbol": "TCS.NS",
+        "recent_dividends": [
+          {
+            "date": "2024-05-16 00:00:00+05:30",
+            "amount": 28.0
+          },
+          {
+            "date": "2024-07-19 00:00:00+05:30",
+            "amount": 10.0
+          },
+          {
+            "date": "2024-10-18 00:00:00+05:30",
+            "amount": 10.0
+          },
+          {
+            "date": "2025-01-17 00:00:00+05:30",
+            "amount": 76.0
+          },
+          {
+            "date": "2025-06-04 00:00:00+05:30",
+            "amount": 30.0
+          },
+          {
+            "date": "2025-07-16 00:00:00+05:30",
+            "amount": 11.0
+          },
+          {
+            "date": "2025-10-15 00:00:00+05:30",
+            "amount": 11.0
+          },
+          {
+            "date": "2026-01-16 00:00:00+05:30",
+            "amount": 57.0
+          }
+        ],
+        "recent_splits": [
+          {
+            "date": "2006-07-28 00:00:00+05:30",
+            "ratio": 2.0
+          },
+          {
+            "date": "2009-06-16 00:00:00+05:30",
+            "ratio": 2.0
+          },
+          {
+            "date": "2018-05-31 00:00:00+05:30",
+            "ratio": 2.0
+          }
+        ],
+        "dividend_yield_trend": "falling",
+        "total_dividends_1y": 109.0
+      },
+      "metrics": {
+        "market_cap": 8721399964549.5,
+        "trailing_pe": 17.962638692870676,
+        "forward_pe": null,
+        "price_to_book": 9.204060919149711,
+        "debt_to_equity": 0.09911773396935286,
+        "return_on_equity": 0.5124002701675884,
+        "profit_margins": 0.1901623035828986,
+        "operating_margins": 0.24397628111732544,
+        "gross_margins": 0.4294190910372703,
+        "ebitda_margins": null,
+        "revenue_growth": null,
+        "earnings_growth": null,
+        "free_cashflow": null,
+        "operating_cashflow": null,
+        "current_ratio": null,
+        "fifty_two_week_high": 3710.0,
+        "fifty_two_week_low": 2397.0,
+        "fifty_two_week_change": null,
+        "dividend_yield": 0.045218834266749636,
+        "current_price": 2410.5,
+        "analyst_target_price": null,
+        "analyst_target_high": null,
+        "analyst_target_low": null,
+        "number_of_analyst_opinions": null,
+        "trailing_eps": null,
+        "forward_eps": null,
+        "beta": null,
+        "book_value": 261.89526787950535,
+        "enterprise_value": null,
+        "total_revenue": 2553240000000.0,
+        "total_debt": 93920000000.0,
+        "total_cash": 83310000000.0,
+        "peg_ratio": null,
+        "sector": null,
+        "industry": null,
+        "company_name": ""
+      },
+      "detail": {
+        "stance": "Fundamentals supportive",
+        "bull_points": 10,
+        "bear_points": 1,
+        "data_quality": {
+          "coverage_ratio": 0.7692307692307693,
+          "available_fields": 10,
+          "total_fields": 13
+        },
+        "metrics": {
+          "market_cap": 8721399964549.5,
+          "trailing_pe": 17.962638692870676,
+          "forward_pe": null,
+          "price_to_book": 9.204060919149711,
+          "debt_to_equity": 0.09911773396935286,
+          "return_on_equity": 0.5124002701675884,
+          "profit_margins": 0.1901623035828986,
+          "operating_margins": 0.24397628111732544,
+          "gross_margins": 0.4294190910372703,
+          "ebitda_margins": null,
+          "revenue_growth": null,
+          "earnings_growth": null,
+          "free_cashflow": null,
+          "operating_cashflow": null,
+          "current_ratio": null,
+          "fifty_two_week_high": 3710.0,
+          "fifty_two_week_low": 2397.0,
+          "fifty_two_week_change": null,
+          "dividend_yield": 0.045218834266749636,
+          "current_price": 2410.5,
+          "analyst_target_price": null,
+          "analyst_target_high": null,
+          "analyst_target_low": null,
+          "number_of_analyst_opinions": null,
+          "trailing_eps": null,
+          "forward_eps": null,
+          "beta": null,
+          "book_value": 261.89526787950535,
+          "enterprise_value": null,
+          "total_revenue": 2553240000000.0,
+          "total_debt": 93920000000.0,
+          "total_cash": 83310000000.0,
+          "peg_ratio": null,
+          "sector": null,
+          "industry": null,
+          "company_name": ""
+        },
+        "metrics_extended": {
+          "dividend_yield": 2.61,
+          "peg_ratio": null,
+          "operating_margins": 0.25179002,
+          "gross_margins": 0.3968,
+          "ev_to_ebitda": 12.129,
+          "held_pct_institutions": 0.17026
+        },
+        "statement_trends": {
+          "revenue_qoq": 0.05753739930955115,
+          "net_income_qoq": -0.16481191222570535,
+          "operating_cf_qoq": 0.02909687446036946,
+          "debt_qoq": 0.02321124361158433,
+          "free_cashflow_latest": 110610000000.0,
+          "cash_to_debt": 0.6693028095733611
+        }
+      }
+    },
+    "market_setup": {
+      "signal": "NO_TRADE",
+      "confidence": 0.65,
+      "summary": "Market Setup Signal: NO_TRADE | Early bearish alignment. Tape read: 5d=-5.8%, 20d=-12.3%, volume ratio=0.78, momentum=15.7. Support gap=N/A and resistance gap=11.5%. Trader read: The asset is severely oversold (RSI 17.5, Williams%R -95.6) and trading near the absolute range low. While the structural trend is bearish, the risk of a snap-back rally or mean reversion is high at these levels. Shorting here lacks a favorable reward-to-risk setup. Wait for a bounce and rejection or stabilization before re-engaging.",
+      "reasoning_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+      "llm_reasoning": "The market setup is bearish, defined by a breakdown from the recent range. Technical indicators are at extreme levels, which typically signal a potential pivot; however, the lack of volume and negative slope of the trend channel suggest that the path of least resistance remains downward. Investors are awaiting a catalyst or a stabilization of volume before considering a reversal.",
+      "setup_label": "Early bearish alignment",
+      "detail": {
+        "recent_return_5d_pct": -5.75,
+        "recent_return_20d_pct": -12.35,
+        "volume_ratio_5d_vs_20d": 0.78,
+        "distance_to_support_pct": null,
+        "distance_to_resistance_pct": 11.54,
+        "momentum_score": 15.7,
+        "buy_votes": 0,
+        "sell_votes": 2
+      }
+    },
+    "catalyst_context": {
+      "signal": "BUY",
+      "confidence": 0.65,
+      "summary": "Catalyst Context Signal: BUY | Mixed catalyst tape. Backdrop read: news sentiment=0.00, analyst upside=None, 52w position=1.0. Core read: TCS is trading at a critical support zone near its 52-week low, offering an attractive entry for a mean-reversion play. High ROE (51%) and low leverage provide fundamental safety. While recent net income contraction is a headwind, the valuation (17.9x PE) is compelling for a quality leader at a technical floor.",
+      "reasoning_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+      "llm_reasoning": "The primary catalyst is the persistent negative macro environment combined with specific reports of 52-week lows. The absence of positive fundamental news or sector-specific tailwinds leaves the technical breakdown unchallenged. Current volatility and the downtrend in the channel suggest that the market is discounting further valuation contraction.",
+      "catalyst_label": "Mixed catalyst tape",
+      "detail": {
+        "buy_votes": 1,
+        "sell_votes": 3,
+        "avg_sentiment": 0.0,
+        "analyst_upside_pct": null,
+        "position_52w_pct": 1.0,
+        "fundamental_signals": [
+          "Near 52-week low (₹2397.00–₹2410.50) — historically strong demand zone. Deep oversold bounces common, but confirm volume.",
+          "Revenue growing QoQ (5.8% last quarter).",
+          "Net income declined sharply QoQ (-16.5%)."
+        ]
+      }
+    }
+  },
+  "agent_guidance": {
+    "indicator_prompt": "Indicator reasoning protocol:\n1) Map structural trend using relative price location vs SMA20/50/200 and slope analysis.\n2) Decode momentum quality using MACD histogram acceleration/deceleration and ROC10-ROC20 comparisons.\n3) Assess oscillator behavior (RSI/Stoch/WillR) for range-specific exhaustion vs strong trend continuation.\n4) Verify professional participation via volume-over-average filters and spread analysis.\n5) Filter noise using ATR-based volatility regimes (reduce conviction in 'wide and loose' tape).\n6) Enforce strict confluence: if trend and momentum disagree without a reclaim setup, maintain NO_TRADE posture.",
+    "pattern_prompt": "Pattern reasoning protocol:\n1) Detect breakout/breakdown against prior 12-bar range, not single-candle spikes.\n2) Confirm direction with local slope and bar-structure continuation.\n3) Use engulfing patterns as confirmation, not standalone trigger.\n4) Treat flat-slope compression as NO_TRADE until expansion is confirmed.\n5) Down-rank weak breakouts lacking structure confirmation.",
+    "news_prompt": "News reasoning protocol:\n1) Collect company-specific headlines across multiple providers using diversified queries.\n2) Filter spam/listicle/noise domains and low-relevance stories.\n3) Build a global macro stream (rates, inflation, oil, USD, broad risk sentiment).\n4) Build industry/sector thematic stream (demand cycle, market share, regulation, capacity, pricing).\n5) Weight sentiment by source quality, exponential recency decay, and relevance confidence.\n6) Apply content-similarity dedup to remove near-duplicate headlines.\n7) Use LLM to infer final bias from company + industry + macro evidence and return NO_TRADE under conflict.",
+    "trend_prompt": "Trend reasoning protocol:\n1) Fit support and resistance trendlines over the visible swing window.\n2) Estimate channel slope (regime direction) and channel width (trend quality).\n3) Locate current price in channel and prefer pullback entries aligned with slope.\n4) If slope is weak/flat, classify as sideways and favor NO_TRADE.\n5) Avoid chasing signals near channel extremes against risk-reward logic.",
+    "market_prompt": "Market sentiment protocol:\n1) Evaluate NIFTY multi-window momentum (5/10/20-bar returns) for domestic risk appetite.\n2) Check Nifty SMA20 structure — price above 20DMA = constructive, below = cautious.\n3) Evaluate India VIX regime as stress filter (low=constructive, high=defensive).\n4) Factor VIX change rate — rising VIX signals increasing fear even if level is moderate.\n5) Blend with cleaned multi-source news sentiment (stock + macro blend).\n6) Count bullish/bearish votes and avoid directional call under conflict.\n7) Prefer NO_TRADE when index momentum and volatility regime diverge.",
+    "relative_strength_prompt": "Relative-strength protocol:\n1) Compare stock and NIFTY returns over same 10-bar window.\n2) Convert spread into alpha and classify persistent out/under-performance.\n3) Treat marginal alpha as noise and return NO_TRADE.\n4) Use relative strength as confirmation layer, not standalone trigger.",
+    "us_trend_prompt": "US macro trend protocol:\n1) Evaluate SPX and NDX short/medium returns for global equity risk tone.\n2) Use VIX as stress filter (high VIX weakens risk-on conviction).\n3) Use DXY direction as liquidity/EM risk proxy for Indian equities.\n4) Classify regime as risk-on, risk-off, or mixed.\n5) Use this as contextual bias only; do not override local setup quality.",
+    "financials_prompt": "Financial statement reasoning protocol:\n1) Evaluate valuation (PE/PB) relative to profitability and growth quality.\n2) Score profitability and efficiency (ROE, margins).\n3) Validate growth durability using quarterly revenue and net-income trends.\n4) Check balance-sheet resilience (debt trend, liquidity, cash/debt).\n5) Check cash-flow quality (operating CF trend, free cash flow sign).\n6) If fundamentals conflict or are incomplete, default to conservative NO_TRADE bias.",
+    "market_setup_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+    "catalyst_context_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+    "trader_intel_prompt": "Think like a battle-hardened Indian discretionary trader and teacher. Judge structural setup quality, sector leadership, institutional flow cues (FII/DII logic), crowd positioning, and execution patience. Reference specific Indian market nuances like Nifty/BankNifty confluence when relevant. Avoid basic indicator-threshold language. Output should be concise but instructive: explain why setup quality is high/low, where edge comes from, and what invalidates the idea. Also provide 1-2 risky intraday scalp ideas with exact trigger and invalidation only when tape is volatile enough; otherwise state why not. Prefer NO_TRADE when the idea is merely 'interesting' rather than high-probability and actionable."
+  },
+  "market_setup": {
+    "signal": "NO_TRADE",
+    "confidence": 0.65,
+    "summary": "Market Setup Signal: NO_TRADE | Early bearish alignment. Tape read: 5d=-5.8%, 20d=-12.3%, volume ratio=0.78, momentum=15.7. Support gap=N/A and resistance gap=11.5%. Trader read: The asset is severely oversold (RSI 17.5, Williams%R -95.6) and trading near the absolute range low. While the structural trend is bearish, the risk of a snap-back rally or mean reversion is high at these levels. Shorting here lacks a favorable reward-to-risk setup. Wait for a bounce and rejection or stabilization before re-engaging.",
+    "reasoning_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+    "llm_reasoning": "The market setup is bearish, defined by a breakdown from the recent range. Technical indicators are at extreme levels, which typically signal a potential pivot; however, the lack of volume and negative slope of the trend channel suggest that the path of least resistance remains downward. Investors are awaiting a catalyst or a stabilization of volume before considering a reversal.",
+    "setup_label": "Early bearish alignment",
+    "detail": {
+      "recent_return_5d_pct": -5.75,
+      "recent_return_20d_pct": -12.35,
+      "volume_ratio_5d_vs_20d": 0.78,
+      "distance_to_support_pct": null,
+      "distance_to_resistance_pct": 11.54,
+      "momentum_score": 15.7,
+      "buy_votes": 0,
+      "sell_votes": 2
+    }
+  },
+  "catalyst_context": {
+    "signal": "BUY",
+    "confidence": 0.65,
+    "summary": "Catalyst Context Signal: BUY | Mixed catalyst tape. Backdrop read: news sentiment=0.00, analyst upside=None, 52w position=1.0. Core read: TCS is trading at a critical support zone near its 52-week low, offering an attractive entry for a mean-reversion play. High ROE (51%) and low leverage provide fundamental safety. While recent net income contraction is a headwind, the valuation (17.9x PE) is compelling for a quality leader at a technical floor.",
+    "reasoning_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+    "llm_reasoning": "The primary catalyst is the persistent negative macro environment combined with specific reports of 52-week lows. The absence of positive fundamental news or sector-specific tailwinds leaves the technical breakdown unchallenged. Current volatility and the downtrend in the channel suggest that the market is discounting further valuation contraction.",
+    "catalyst_label": "Mixed catalyst tape",
+    "detail": {
+      "buy_votes": 1,
+      "sell_votes": 3,
+      "avg_sentiment": 0.0,
+      "analyst_upside_pct": null,
+      "position_52w_pct": 1.0,
+      "fundamental_signals": [
+        "Near 52-week low (₹2397.00–₹2410.50) — historically strong demand zone. Deep oversold bounces common, but confirm volume.",
+        "Revenue growing QoQ (5.8% last quarter).",
+        "Net income declined sharply QoQ (-16.5%)."
+      ]
+    }
+  },
+  "trader_intel": {
+    "signal": "NO_TRADE",
+    "confidence": 0.35,
+    "verdict_label": "Oversold Trap/Value Vacuum",
+    "playbook_title": "Mean Reversion vs. Momentum Fade",
+    "thesis": "TCS is at a technical dead-end. The sharp oversold condition (RSI < 20) triggers a 'value' reflex, but institutional flow is clearly exiting IT services due to structural margin compression. FIIs are heavy on the sell side; trying to catch a falling knife without a base formation is gambling, not trading.",
+    "execution_style": "Patience. Waiting for the 'first higher low' on the 1h timeframe.",
+    "risk_flag": "Extreme volatility; potential for a stop-run before any meaningful bottoming.",
+    "entry_trigger": "Only post-stabilization: Break of the 1-hour consolidation range with confirmed volume expansion.",
+    "invalidation": "Fresh lower low below current support level voids any long bias; further breakdown confirms institutional capitulation.",
+    "why_now": "The stock is statistically extended from the mean, but technical structure is broken. We have no 'conviction' buy signal from DIIs yet.",
+    "why_not_now": "The momentum is purely downside. Selling into this level is poor R:R (support is too close), and buying is trying to bet against the current tape trend.",
+    "risky_intraday_play": "Risky intraday recommendation: SELL. Levels are unclear; trade only on strong breakout or breakdown with volume.",
+    "risky_prediction": {
+      "signal": "SELL",
+      "confidence": 0.58,
+      "text": "Risky intraday recommendation: SELL. Levels are unclear; trade only on strong breakout or breakdown with volume."
+    },
+    "summary": "Trader Intel: NO_TRADE | Oversold Trap/Value Vacuum | Mean Reversion vs. Momentum Fade. Thesis: TCS is at a technical dead-end. The sharp oversold condition (RSI < 20) triggers a 'value' reflex, but institutional flow is clearly exiting IT services due to structural margin compression. FIIs are heavy on the sell side; trying to catch a falling knife without a base formation is gambling, not trading. Why now: The stock is statistically extended from the mean, but technical structure is broken. We have no 'conviction' buy signal from DIIs yet. Why not now: The momentum is purely downside. Selling into this level is poor R:R (support is too close), and buying is trying to bet against the current tape trend.",
+    "intraday_execution_easy": [
+      "Treat this as high risk; use smaller position size.",
+      "Enter only on trigger, never in the middle of range.",
+      "Keep fixed stop-loss from the start.",
+      "Exit quickly if momentum stalls."
+    ],
+    "intraday_easy_one_liner": "Intraday simple rule: no clear edge now, so skip trade and wait for strong breakout with volume.",
+    "reasoning_prompt": "Think like a battle-hardened Indian discretionary trader and teacher. Judge structural setup quality, sector leadership, institutional flow cues (FII/DII logic), crowd positioning, and execution patience. Reference specific Indian market nuances like Nifty/BankNifty confluence when relevant. Avoid basic indicator-threshold language. Output should be concise but instructive: explain why setup quality is high/low, where edge comes from, and what invalidates the idea. Also provide 1-2 risky intraday scalp ideas with exact trigger and invalidation only when tape is volatile enough; otherwise state why not. Prefer NO_TRADE when the idea is merely 'interesting' rather than high-probability and actionable."
+  },
+  "risky_intraday_play": "Risky intraday recommendation: SELL. Levels are unclear; trade only on strong breakout or breakdown with volume.",
+  "top_news": [
+    {
+      "source": "google_rss",
+      "title": "TCS, Infosys among 6 Sensex stocks that hit 52-week lows; slip up to 18% in a month - The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOZEtvQ2JhQ0JaQUZwT0J1VDRyRktBaWxTYTdVLUNTaGFmcW0wR2psQVJ3R1NyN3ZlNjFVOXlmeEZiczA2T1ZCVkoxaGFKRnBHRFo2VHd3cXVFNUV6SlptVUlGN3h3b001QVB2TWlTV3FTRHdCejBMNTdVSzVsd1RXWE1OZ19SNS1qZnBuVDdxVGFzakdZUUJSaURoMEFyTk9mSmpFTGYxQWVtNkVYWHhlSHVJeDZkYWd6bnJOQ2lKTmxiT3dzUURGelhDOGxvV05zSUZ2VXM2U1J2MUJuZ3R5VUQ3NlY0cm11Z3B0NG9rWFM4OWNRWVg4RTJqLXY?oc=5",
+      "published_at": "Fri, 13 Mar 2026 10:56:45 GMT",
+      "published_ts": 1773399405.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss",
+      "title": "TCS, Eternal, Tech Mahindra, HDFC Bank, Varun Beverages shares oversold on charts; do you own any?",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe6bbede4ccf8529988c1ba6fecf&url=https%3a%2f%2fwww.businesstoday.in%2fmarkets%2fstocks%2fstory%2ftcs-eternal-tech-mahindra-hdfc-bank-varun-beverages-shares-oversold-on-charts-do-you-own-any-520450-2026-03-13&c=10146583764546605972&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 00:09:00 GMT",
+      "published_ts": 1773360540.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Stock market crash: HDFC Bank, IRCTC, TCS, RVNL, HUL among 296 stocks that hit 52-week low as NIFTY50 trade below 23,700 - Upstox",
+      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPM2xsN2J2T0Utcnhsakk3UmJEMTllWmZtMnJpQUhWNzJlenFPNDRxaXpjYWx5Tk0xSWY3dzk1eDlZWDF1YlgwNEVTNHZldEEyX18zWV9oQ2JXNVlOYWp3MVVvXzlpa0VYaEVzNVBmZGpwU0hHOUJ1ZUgtRlVFQVMzNE0xV1lPMGJwYkFsQThHMzZKX3RqYVZPS2hqY1VsQmQtUWltRDVJdzBTb29iMjV0clEta2F6Sm1kcEtSaTB6aU5VNWtmUGRYanJ4RnZ3SWdyOEZBOUJLNkhkSzhRT1JjUUFHX05VdUxaaHROZFdwVVBhMnh4VEMxWTQyT1JXczQyUGxaVjhEc1NrN0VTOEE?oc=5",
+      "published_at": "Thu, 12 Mar 2026 06:17:11 GMT",
+      "published_ts": 1773296231.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "TCS, HUL, Ashok Leyland, 2 more stocks may fall up to 14%: Tech analyst - Business Standard",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPZmVuRExmbEdEcHlUU296WTNzUExMQlg0bGxwM2ZUelJucnFrUDFoOUNBSjA0RkRudTF1TXpzVUtYOVhGYTZ5b2QyelAwQUhzcmF3cWhUeUJmUTYtQUxTRE5vTV9GaVdkZkY2b0pFLUJ6LXRIenpnMDJxc3plc1NEcDZnMHROc2YxbHc5Y1YzTDY5TzZtbHplTThoQnlLZHdqcHN2SmJqNURRcWNLdGxmekU1NmFvSXpUSTZPMVFDNkFLam8xUG5xcjFUTkhRaG50Yy1V0gHYAUFVX3lxTFA3RldYOExzQmwtWWhqWmNENDdsdFJjN2JHd3hWQlNEUndUYVM2QlVXNllTWGhVd25tYXRVYllITDc2c2Rfa3o2QkNjYk1KbkR3QTBSd3FOLS1aTXRmV29SN000bG9oNGphVjR4d1BUa3l5amhCeVctQ2NSVFBzNG42aGJ2TmlDdkxvaVFfWEpnQ2hQVF9hR3JFLUxBb3oxU25xOEdPeGJaWm9zM1N3bWNmMEdqaFByVDZnLVgtZ1M0TDJMRkNYdDNrblZ5NDczTldYdUIzWlV3Sw?oc=5",
+      "published_at": "Thu, 12 Mar 2026 04:52:21 GMT",
+      "published_ts": 1773291141.0,
+      "sentiment_score": -1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Stock market crash: TCS, IRCTC, Tata Technologies among 140 stocks that hit 52-week low on NSE - Upstox",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNNGpPeWRYaXJCLWFwWi1NY1lqSmowVVg4OTJsNXJzRzZJMndBSmNTWWJtTFpFbkxPQUMySDZkaVhtcnlnZlVaUG42REhzRFNRUE93Ni0tVkdncWhadkdOaHhwYWxLLXdSZzBiYVZneVFpSDhQeUx6VWtnY2lxYXhKNWVBMDNCTHNXaE94ZHkxNXRJeHpZUTNJOHhZR2xkZV9jQzI2RmhQcmw5QVpSZ3dJLVlpQlNTNXI0R1QzZVh4M01fTFBNWk8yVWp6YVNpVzRwNk9pWmJJRGVGN0hpcXpUbFJNTzA?oc=5",
+      "published_at": "Wed, 11 Mar 2026 10:03:18 GMT",
+      "published_ts": 1773223398.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "TCS sees $100-billion market value erosion since 2021. What lies ahead? - The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNallqQXlEV2RpZFpsdHBhN1FlbnRpOC1BWDJXcGdwSGxnLTQ4WDBCVkF6SmFxRXZtbGU2TjBJZWZPay1zRjFlNnVhZXFpV2dJbkQ3Vk1xclJaZk5sNXFNTF9YVjgtZmZwdndOU3RRRW9uR3VYMkljcks1d0tneVk0UVBJUjM5ZUdubHFjZmViTElSYWJ1ZDlnenNXaF8wZnRIaThqZnNtdVY1ZjJrTXdkODdFZ3BTbWRrNDlvVDNERTVXellULWx5Yk9tbUxwUDQwaVIzSW1qQjBGZ9IB3wFBVV95cUxNOGpodGduZ3BzdFZBN082QkF6QjJsMVh3WDJCVXBMWi1tRWY2X2piTW8yak1WRmRWSGFjV00taVlJbUpxLXkxVTBudzVPY0dYTFhRSkpsN2tUaEpKTFduUkR6czFQMENUdDhSZzVGMWhhWVR4SWY1TmdCWUxJcVBqeXlZMnZzX1hjdUpsMFpITE43UlR2RFBGSlZTdmtiS0dERUtEeklVSGo5bGdiRm04al9iRTVtcWpEajRvak00S2JFYXc5QlRwM1ZQTUZTSHdwcnpJLUdOTTFlMGVUc0ZF?oc=5",
+      "published_at": "Wed, 11 Mar 2026 09:03:51 GMT",
+      "published_ts": 1773219831.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Coforge to TCS: Why Nuvama has a ‘Buy’ on all Top-10 tech stocks - The Financial Express",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNY205cFUxSXhzUXVFcHVnY1RLXzdpSXYyNkJLN1J6Tzl4OWg4QlNibi1kN2xlX21WQTNwU0c3ZHc3bmU0SE5JWmJPSEpIMkR0bXh1LWNmMXREU0hVWExPU2hGWDJBVlNqQlB5bnVlSGFqdVlCenFIRGZSQS1nbkZoZzU2a0ZiLU53RkRFZ0xwS1NmN25jTy04ZHpfNEdrX0licE5MZGtoSkNoT2d3VHJ5TlpGc9IBugFBVV95cUxQY3RYWmtIa0dNTTZBV3pmTndlYWlpSjBDU0hVdU93QWN5cVJOZTVCb0prTmltTzFZX0F0dGhORzY3LXZkV0h3Z1laRl9YblE5Nmp0b3ZQNnViMmhrQ2ptODZVLTN6cTZUTWVMczdQeTJzM3A4ZFZMcjR0MXRNQW1zenE5b0l3aDZoOHJQbW8zWC1haDhPdjM1cTNjWFIxVno1UGc5bnFFYWtjMVZQQU5PZkxPbkY5SW52NlE?oc=5",
+      "published_at": "Wed, 11 Mar 2026 06:40:15 GMT",
+      "published_ts": 1773211215.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "IT sector valuations highly attractive after 21% YTD slump; Coforge, Infosys, TCS among top IT stocks to buy: Nuvama - Mint",
+      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxObzlkRVRnYjBqMmR3YU5yN2MtMUhfR0FPVkgzU1VNTk1RSk9yVjJVa2xUMUxfbmVoeThEblZxcExtVnB0NGdGbTYyVUtyZDlYdWZiaWN4UnhwUFRDMGdRUjc5RGtlNUdfTnVkaXROTUVwSk9XUHdPcHVKaFZ1dGI0cHN1eVJZRmZ1UDZuaTNDVl9vcVVxZmVMMkFWWWFidHVvQmJMYkNZM2NZVzY3TEhyRkpwT2E2Q3dwX245YlFHTXRGNDlNVF9FTFpqRUNOd3ZvWWtGYkJDcXJSbnJQLUhSQmcwSWV6MUVnOVR5bEtiZWpTWmZPOGRjMC1JSzVSWklNUWRyUGs3d0U4WFJzMFHSAZMCQVVfeXFMTkg3RDZYWEI5RnlwODVTcTg1SnlaaDJFc2c5a0lJVnRvUnM1elY0aVpBNG11aXh4c001Q194R2o3VGFGS3ROczJTQmxEZFp0dmdPM1BWZk5HS1R3ZDhEbFE3X2dhVENNdE81UkFUZUtBRHVLUDhkdVNSOTNBQzNRSEtobkY3M3NCQUpOOUM1Q1hVbFROVjFtcW5VaUpwdWdnNmhBa1p6YmlXTTRqUDdzcWZDY3lJd0NoNHZLODVUUnJvSXdzZ2haNGlYcDU1ajNjUU5NQ3hJVTlZZC1qZDU5VFFUUFM1TEJxU21ueEFNR29hOGV4RkVIMWZwMUY0M3NNTUFRWl9VQUdYRjFfbzdMaEFTTVk?oc=5",
+      "published_at": "Wed, 11 Mar 2026 05:51:58 GMT",
+      "published_ts": 1773208318.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss",
+      "title": "TCS Share Price Live Updates: TCS Stock Price Decline",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe6bbede4ccf8529988c1ba6fecf&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2fstock-liveblog%2ftcs-share-price-today-live-11-mar-2026%2fliveblog%2f129434883.cms&c=813095306170969553&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 05:03:00 GMT",
+      "published_ts": 1773205380.0,
+      "sentiment_score": -1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Tata Group Stock: Can TCS Lead India’s AI Data Center Boom as Demand Surges? - Trade Brains",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNSFVTMGJVTWhYcUJFWm9HOXU0T2ZKYWY5OHlPellhTzRDT1pmX3JneVNkMmc0bmdieHhrZU9vX3dhUG91TWZiQ1gxTDhCQmEyWlRRdFUtUV9qd1JMZ202dnRmWDBacjlBdzhsWkhhcTZZaDJJSXdtTWxsTU50bW42WWN1ZW1HU0xqSUJMY3ZYYkZoa2FXTlowTjN2S1FQZw?oc=5",
+      "published_at": "Tue, 10 Mar 2026 13:30:00 GMT",
+      "published_ts": 1773149400.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "TCS stock at lowest level since October 2020, tanks 17% in 1 month - Business Standard",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOTEtpSFlTUmtuY0lwUndWNVZUaUFGYzE4TTk0YmJSQ3NmUEsxajZjOHY5RFFQdEtSS1R0Z2UzUlF0SURJakE2c1VOZFZkeHBvQngySnNEdEVxYnloZ2lkMHRhSXczOE5RdVhCeDc5LXhZQkhNSlBXMXdHd1lvWDF3M3hoczVFNE5yazMyZm1namJhU180TmQxWkZzT2pVU083QUJuLVRqUDlCSlVuVG8yaUZtSS02X0pMY2VJdUMwVTlXMzRGMjkzangyY9IB0AFBVV95cUxQM3ZvRDM0WnpiQnhWd2Z4R2hrM250UmZyc0gxYkpYdFl2dU9yRFk2cS15MWdRQzhEc00yM0g3RTkwMDZBSXRKbDNqeXlBb3dWVGlaLWgyRUs5TjZvSmdXOWxVWVY0aXl0ckxPemFweXNCT1VESVRoVUdMTVQ3VFdWbWlNLXJiMnkyR1ZnOUdxekxicDlxRzJWRFV1TVhraFNuVXFPdk1jWS13SEpURDhITVNzVEp2RGV1Mlk2SVV0NnhKazQta3dLNmVqMFJEVTZw?oc=5",
+      "published_at": "Tue, 10 Mar 2026 08:44:52 GMT",
+      "published_ts": 1773132292.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss",
+      "title": "From HDFC Bank to TCS— 875 stocks touch their 52-week lows today; investors lose ₹12 lakh crore in just 2 sessions",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe6bbede4ccf8529988c1ba6fecf&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fmarkets%2ffrom-hdfc-bank-to-tcs-875-stocks-touch-their-52-week-lows-today-investors-lose-12-lakh-crore-in-just-2-sessions%2far-AA1XP431&c=4563630404356943219&mkt=en-in",
+      "published_at": "Mon, 09 Mar 2026 15:38:00 GMT",
+      "published_ts": 1773070680.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss",
+      "title": "Sensex stocks: HDFC Bank, TCS, Asian Paints, IndiGo, Trent hit 52-week lows",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe6bbede4ccf8529988c1ba6fecf&url=https%3a%2f%2fwww.business-standard.com%2fmarkets%2fnews%2fsensex-stocks-hdfc-bank-tcs-asian-paints-indigo-trent-hit-52-week-lows-126030900281_1.html&c=18436700086805446485&mkt=en-in",
+      "published_at": "Sun, 08 Mar 2026 22:41:00 GMT",
+      "published_ts": 1773009660.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss",
+      "title": "TCS CEO on the ‘AI worry and anxiety’ that has wiped billions from stock markets globally, says: It is a …",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe6bbede4ccf8529988c1ba6fecf&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fgeneral%2ftcs-ceo-on-the-ai-worry-and-anxiety-that-has-wiped-billions-from-stock-markets-globally-says-it-is-a%2far-AA1XK8IW&c=11605519381903205678&mkt=en-in",
+      "published_at": "Sat, 07 Mar 2026 18:57:00 GMT",
+      "published_ts": 1772909820.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss",
+      "title": "TCS shares in focus after CEO says IT major in advanced talks for more AI data centres in India",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe6bbede4ccf8529988c1ba6fecf&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fgeneral%2ftcs-shares-in-focus-after-ceo-says-it-major-in-advanced-talks-for-more-ai-data-centres-in-india%2far-AA1XD65s&c=5206993633066331775&mkt=en-in",
+      "published_at": "Thu, 05 Mar 2026 20:18:43 GMT",
+      "published_ts": 1772741923.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    }
+  ],
+  "top_industry_news": [
+    {
+      "source": "google_rss_industry",
+      "title": "Union Budget FY 2026-27: A Push for India’s Services Exports - PIB",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1DNGc5d2QyTHQwR2psbThGZmJQeEJ2bFNvdlhpMnNLaUVMNkcxeEpwU1RKbWNTMkIwa2lqeGE0UE5XLWxJWEJBUldpeTV2VlVVanAzMUZjaXEzb0lyazVGUnZyc2E3STRl?oc=5",
+      "published_at": "Sat, 14 Mar 2026 04:04:00 GMT",
+      "published_ts": 1773461040.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tata Consultancy Services Limited",
+      "sector": "Technology",
+      "industry": "Information Technology Services"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Segment Analysis and Major Growth Areas in the Regulatory Reporting Solutions Market - openPR.com",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNzlIOXBCUkNIS05zeXpHbG1DaVdvWW8ybXRFN3VpMFAzQnZONHJEM3RlZy16ZHYzR0VJOXhQbnNQbl9zZkRuQ2dsaUw3VXNROGt2SWVrNTFRRWNZN3VpeEhLQ2NHQjJjbjBCOG5Za2FUTUhnby1aZkFUdS1aRFJ3VXAzUVo1TmFWaFViMTJlN096NmF6MEQxbw?oc=5",
+      "published_at": "Thu, 12 Mar 2026 06:23:19 GMT",
+      "published_ts": 1773296599.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tata Consultancy Services Limited",
+      "sector": "Technology",
+      "industry": "Information Technology Services"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "IT Sector: Kotak flags higher Gen AI disruption risk, cuts fair value – TCS, Infosys among top picks - The Financial Express",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOVlFMemx3c0Vnc3lERERGZDJabXBDc3JHd2F4WEszdE9PMFNQMFBtZzFLYW9QVHVoclhaMzl5dGJJamdWTDZyZ09Eb2xIeWxvQmE2LWNPNlhzQWlRZ1BvNXY4UFBmXzZiTWpheXEwcDhDcVROMnl0c3pBRUpZS0wzMXU2V0hZdnphRWRxOTdEV1FzWkp0WFBMbi1JUEVYR3lDbG1kY0ZaT2tsNXV5ejVQdUdfcWhYa09ZVTh4dGhzakJIU2lNc2NwdlJZNE5PcDZaOVhBTklEZ3dpd0lX0gHjAUFVX3lxTFBhbXl1MG5xX04zSVdQbm1iaGYzd0JUeVo5cUxTbFc4bWxPc0ExYWZXVW04Ylp6VnlETzEtZ0U4T1JfTk9VQ3g1SVNNSGZJSUJKNFpwU3Z5b25CWC1CRGdicWE4dWhoaWZLcEUxaVUzaTJ4bGZNSHdEVHFUM0gtbXVfalFTMXl4dVZGSFlNdmUxY0tCaEFrV3RzMnJZenQ2MFd6dU5EV0IxTVVlUVdQNFRBb2FXc2FaN0VpeGZuZm1JSzBTZlgwT2c5VFdJcFhLdEFzdE5HUmxHbmtqeEo0bjBFcUFF?oc=5",
+      "published_at": "Wed, 11 Mar 2026 06:38:30 GMT",
+      "published_ts": 1773211110.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tata Consultancy Services Limited",
+      "sector": "Technology",
+      "industry": "Information Technology Services"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Emerging Growth Patterns Driving Rapid Expansion in the Anti-Money Laundering Market - openPR.com",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPQ3Bjd2xKTzN5RWtoNy1wR3JkRXlheTUzRW5TaGI2blIyS0g4cjBFeUhEQTVYa25XbjBFY3ZfQUZVa0pBSWdicmVRektTeDBsZk4zTFNma3Vka2lJZmZxSjM4Tlkwc0FscS03d09OMFVhTHpwcThhYm5LS1ZDalM0Y1BYQVlKMml0N1lsRk44djA?oc=5",
+      "published_at": "Wed, 11 Mar 2026 04:48:10 GMT",
+      "published_ts": 1773204490.0,
+      "sentiment_score": 2.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tata Consultancy Services Limited",
+      "sector": "Technology",
+      "industry": "Information Technology Services"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Market Trend Insights: The Impact of Recent Developments on the Financial Process Outsourcing Market - openPR.com",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNaFp1YTcyWUczWUQxeW04UlpwOWw3Z1c0d2kyMTJkNmVXVGwwdHFHMzdYeG9ZU2psNzJuemV5SjJPN0ZuNl82VUNTUklkNm15eUFxLXB4SGtXRUlzb2ctSlRpZjJvMUpXQmtsU1FfdVBBdDlWYXAzNHMxXzZOZUVDSUR3NV9PckY4QVRPTDVhLVNtUjFQSjA5NjRR?oc=5",
+      "published_at": "Wed, 11 Mar 2026 04:33:55 GMT",
+      "published_ts": 1773203635.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tata Consultancy Services Limited",
+      "sector": "Technology",
+      "industry": "Information Technology Services"
+    },
+    {
+      "source": "bing_rss_industry",
+      "title": "India strongly positioned as the next global platform for consumer technology: Nothing co-founder",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe7aea1a4c65a26191bd3ef67297&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2ftopstories%2findia-strongly-positioned-as-the-next-global-platform-for-consumer-technology-nothing-co-founder%2far-AA1XOtsQ&c=9634019043024314443&mkt=en-in",
+      "published_at": "Mon, 09 Mar 2026 04:07:00 GMT",
+      "published_ts": 1773029220.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated",
+      "company_name": "Tata Consultancy Services Limited",
+      "sector": "Technology",
+      "industry": "Information Technology Services"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "AI Engineering Market Size & Share | Industry Report, 2033 - Grand View Research",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNNi15al9zZThfSUhkU29WYjNhcjlkQzJYYUF0c0FEZXpURVEzLVIyREZKcjZsTVY3cGRIYU5QVlhXMy1SRmcxMmVlbmpSSXV0Wi1uNHFLa0doZjNoRlNfSHhodEZwOUVtYmU0V2UxSWU5RS01dFJZMlhUbW5sbGlGeGp2eDNld0U?oc=5",
+      "published_at": "Fri, 06 Mar 2026 10:43:25 GMT",
+      "published_ts": 1772793805.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tata Consultancy Services Limited",
+      "sector": "Technology",
+      "industry": "Information Technology Services"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Mphasis, Infosys, Wipro, LTIMindtree, TCS & HCLTech Share Price Fall | Stock Market Today IT News - Samco",
+      "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxNM0tqMGl0UUVLTWRLd19sZFVyZzRDQjd3azFJQ0JnLURuZ0s4T3ZkZ2wyUmF2ZnN2UlUtTEZja09mcjBuX2RnU2R1Rm14VGdMVlhWelRxRmd4WV9BVFZDMUlGOEhkbW5OZzdPNkZhWTR3LVl1dEJtZXJ3cXBqNzMyTmFidGphQTNwX1NqazlDZkl1d0RPeGRWRVNfWW95VmZlZVQwUTNoNEh2SUE0Z0xwSXcxRURldmZvNVFRNUtvd0VWdXRzVXVUbkZIcWI2cEVuM3dGeHBwTWc0ajRrcDBWSXpZX29xOGloU1FzamxFdGpKbnV5NFdTMk5XUHhDN3V1ajRVVF95ZEs2bnRsYzRUWDg4VHRleUJTalow?oc=5",
+      "published_at": "Mon, 23 Feb 2026 08:49:11 GMT",
+      "published_ts": 1771836551.0,
+      "sentiment_score": -1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tata Consultancy Services Limited",
+      "sector": "Technology",
+      "industry": "Information Technology Services"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "India E KYC Market to Unlock Strong Revenue Growth: Latest - openPR.com",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOeGthbC1tU0V0SXA0RFNaUVk1VGNJbG5HVG1iVlU1VU9WQVZnUTJOaURZZVdqeE0xclpjc2h0WGhaN0pIR1VWalBSN2NIdHJnaFlyNDlwYzgxUjY1a05qRXRPV1RVMC0taXpZS0hkX3hzWUNYWl9uN3FXRWV4YnJkTlpkRVUwRFpDRWpiNTNRd0RXOV8wMWxsMw?oc=5",
+      "published_at": "Fri, 13 Feb 2026 08:00:00 GMT",
+      "published_ts": 1770969600.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tata Consultancy Services Limited",
+      "sector": "Technology",
+      "industry": "Information Technology Services"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "TCS Share Price Hits 52-Week Low, Slips Below ₹10 Lakh Crore Amid IT Selloff | Stock Market Today - Samco",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQdFlyaFNPSmh0Vnh2UTRWX3pJSXpOQkFZTWthX1g4UTl5RXFVZUtsakdVRGU4YUl3cnpLekVUNXo1bzI3NFo2TjdxQUpqNkdWVHRzYVRscUpUOXdMSzFTdnVqTVBidnVYeDVPcXJWSmh2dmtVUmlLYVRMMWwzTld6VkNNRjhnZmFXRE1XTm4zOTNKX0VHQnZWTjRYa1JRR084dF9kZU80VVBGTExPaFFHQUFGc3Uxa05FUTBKQkp5VFhZZWc1UmlqTA?oc=5",
+      "published_at": "Thu, 12 Feb 2026 08:00:00 GMT",
+      "published_ts": 1770883200.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tata Consultancy Services Limited",
+      "sector": "Technology",
+      "industry": "Information Technology Services"
+    },
+    {
+      "source": "bing_rss_industry",
+      "title": "Budget 2026 signals India doubling down on its position as global tech services leader, IT industry says",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe77411a48aeaeb055864f3a63ad&url=https%3a%2f%2fwww.moneycontrol.com%2fnews%2fbusiness%2finformation-technology%2fbudget-2026-signals-india-doubling-down-on-its-position-as-global-tech-services-leader-it-industry-says-13803923.html&c=1729403532280256247&mkt=en-in",
+      "published_at": "Sun, 01 Feb 2026 12:18:00 GMT",
+      "published_ts": 1769948280.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated",
+      "company_name": "Tata Consultancy Services Limited",
+      "sector": "Technology",
+      "industry": "Information Technology Services"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Technology at the heart of India’s economic outlook: What the economic survey 2025–26 means for the technology industry - Express Computer",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPUjAzSmtUc01DX1U2eE1yTDVyWjdZS3JPcWhoVFQtSUFsRVc0U0RMa0hfUk5lT2hYWmlZdC01ZXB1Z1FjZGhKQkF1NEZFazUwcmhydTBucXYxNG0xRVotdWJTSDRLOTl6Y2k4RVFQR3ljZnRGTWFpZGF5NnJ1R2g2TlJJRWxuOHFkcWMyN2lqMmNwTXFkeWRZR0JaQUtHWGRFNlFlSTJfUWJzMk84SWFwQnVLQVl5THBMM1g5TGlTaVpQbkVPb3c5Z1NhRkVlUm1feEFDaXZqNlFuWkxpSm9mbVFJbUJfZ0FuYWVEOXVMUXlfZ0RNMWRkYjdKRTnSAYICQVVfeXFMTTlISjRLSWV4NUY3Rk4tM3RyckF3bWxIMTVpdkU2WTdaTTJEM3YyTGF2SUprQmdDSzRwLWtEeTVlaldydFB1b2I3Y1dTTWtTbHJlWEhwMkRwemhUNzhuWXFHYVlSOEEzdE1HNTQ2b1RfWXZsdE0wQmkzSlhpNHZsa2pfWDBycXlJNFJGV0lpZzhhU3hJaXpOUHpwLTllcExRLWYxRzgwS25FZ054NTc0UXpUbENkREpvNjU3eTJCTlh0dXFvNGJuWjdLYTJ4Vk5YSHozRTdWenJVa0R4THl1YXc3SHJmTmxranlRVUtaNk1hNTBNclpZSDUyQ1hCeWgwMnh3?oc=5",
+      "published_at": "Fri, 30 Jan 2026 08:00:00 GMT",
+      "published_ts": 1769760000.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tata Consultancy Services Limited",
+      "sector": "Technology",
+      "industry": "Information Technology Services"
+    }
+  ],
+  "top_macro_news": [
+    {
+      "source": "google_rss_macro",
+      "title": "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRVNOajVzSUJWU3Q5R2toMjVnZVZMNDhLclozWDdNODc1OU1qbVFjYnFTT0Z1SUZaaExuY3FJajFkdWtOWk5kdWplT0J0Yk9RcnlDVnlvQmJZNC1jVDVHZmRhS0Z0X0JiXzFETHRnaUVac1pEMmZfWE9raXFacFpwR1dSaEVST0Ntc2k1czN4emNQVFlWSHE3V1ZhMW80OUFMYmN6dEwtTkRadm44enc?oc=5",
+      "published_at": "Fri, 13 Mar 2026 15:17:26 GMT",
+      "published_ts": 1773415046.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe7ddf7541408a3b40f9e667b94f&url=https%3a%2f%2fwww.livemint.com%2fmarket%2fstock-market-news%2fus-china-power-shift-global-markets-india-outlook-mirae-asset-swarup-mohanty-11773376870759.html&c=15555016077234823276&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 14:15:00 GMT",
+      "published_ts": 1773411300.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Fed to delay rate cuts as war clouds the outlook",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe7d624b4a9b8f0c9da7b0006f1f&url=https%3a%2f%2fthink.ing.com%2farticles%2ffed-to-delay-rate-cuts-as-war-clouds-the-outlook%2f&c=127436243108543137&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 13:40:00 GMT",
+      "published_ts": 1773409200.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss_macro",
+      "title": "BTC defies rising dollar, oil and yields, holds above $71,000 as macro pressures mount - CoinDesk",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbHB1NE1GZ1dLTWpvOWNseW5QXy1jbWVHcTYzcXF6NWotU0NHOG1XNEUzcDd0ZTctMW1URXZzSW5RQ1djc1h3a0xOM0k2Tkd5TjRWcE0wUXRwZjg4WktmZ2xDWnpLa0RhR1BsRzlrZlVlVzhONmQ0eW51VXJIWFQ3NFJkd0VXZ2VsUnY4VTBuWjU5LXpxX1BPYUIyaEZKQVdEWUU3a25CY0RvN3NrVW10cFNUTWtxSHdhSWI4?oc=5",
+      "published_at": "Fri, 13 Mar 2026 09:34:10 GMT",
+      "published_ts": 1773394450.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Gold Silver Rate Today Live Updates (13 March 2026): Gold, silver futures fall on MCX as rising crude oil prices dim hopes of early rate cuts",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe7ec67e4a7f9baeb35d87d1de18&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2flive-blog%2fgold-rate-silver-price-today-live-updates-mcx-gold-18k-22k-24k-rate-iran-isreal-us-war-latest-news%2fliveblog%2f129534056.cms&c=4108291931945502437&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 06:00:00 GMT",
+      "published_ts": 1773381600.0,
+      "sentiment_score": -1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Markets Today: Sensex Declines 830 Points, Nifty Slips Below 23,650 Amid Iran-US-Israel War",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe7ddf7541408a3b40f9e667b94f&url=https%3a%2f%2fwww.news18.com%2fbusiness%2fmarkets%2fmarkets-today-sensex-falls-1000-points-in-opening-trade-nifty-below-23600-as-oil-surges-past-100-9956009.html&c=7425380694736114227&mkt=en-in",
+      "published_at": "Thu, 12 Mar 2026 03:39:00 GMT",
+      "published_ts": 1773286740.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Trading Day: Oil and yields up, up, and away",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe7ec67e4a7f9baeb35d87d1de18&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2ftrading-day-oil-and-yields-up-up-and-away%2far-AA1YqbzQ&c=11227118164045986945&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 14:08:08 GMT",
+      "published_ts": 1773238088.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss_macro",
+      "title": "Markets Confront the Economic Impact of the Iran Conflict - Natixis CIB | Natixis Corporate & Investment Banking",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOVpkVlFlOG1lbEdUZEM2VU40clhkdUtsN3l6Z3Rkd2g4WTBNMVNKSFBmMmkyT1M0RGwtZGJxN1ItZVVrMEU3UnVfWFJ6UmpZUVppV09ZelhMWHNvZmhtbFk3ajc0UnlpY0dZeW51MGJnSUU3dGhYRGFQaE44NjJVaFFBVWFyVlNhampDdXFic0dCZXZ3YW5ScWUtWQ?oc=5",
+      "published_at": "Wed, 11 Mar 2026 10:55:26 GMT",
+      "published_ts": 1773226526.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "S&P 500 Faces Valuation Pressure as Oil and Yields Rise Together",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe7ec67e4a7f9baeb35d87d1de18&url=https%3a%2f%2fwww.investing.com%2fanalysis%2fsp-500-faces-valuation-pressure-as-oil-and-yields-rise-together-200676476&c=11959585435036819535&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 10:53:00 GMT",
+      "published_ts": 1773226380.0,
+      "sentiment_score": -1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Oil price spike could push US inflation to 4%, delaying Fed rate cut",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4fe7d624b4a9b8f0c9da7b0006f1f&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2foil-price-spike-could-push-us-inflation-to-4-delaying-fed-rate-cut%2far-AA1Ym49n&c=7065206888862373143&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 03:02:32 GMT",
+      "published_ts": 1773198152.0,
+      "sentiment_score": 1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    }
+  ],
+  "chart_path": "reports/TCS_NS_20260314_062210_trend.png",
+  "long_term_chart_path": "reports/TCS_NS_20260314_062210_long_term.png",
+  "rich_report": "Indian Swing Trading Multi-Agent Report\nIndicator Signal: SELL | Trend: close=2410.50, SMA20=2601.78, SMA50=2908.10. Momentum: MACD=-129.951, Signal=-124.541, Hist=-5.410, ROC10=-8.96%. Oscillators: RSI14=17.5, StochK/D=4.4/2.8, Williams%R=-95.6. Risk: ATR14=60.05, Volume=2466488 vs VolSMA20=4057195. Momentum Score=15.7/100 | MA=Sell, Trend=Falling, RSI=Oversold, MACD=Bearish.\nPattern Signal: SELL | setup=range breakdown with negative slope, slope=-24.7370, breakout_up=False, breakdown=True, bull_engulf=False, bear_engulf=False.\nTrend Signal: NO_TRADE | setup=sideways trend channel, support slope=-7.316, resistance slope=-6.916, price position=-3.68 in channel.\nNews Signal: SELL | combined sentiment=0.00 (stock=-0.04, industry=0.12, macro=-0.08). Stock articles=29 (trusted=0, unrated=29); Industry articles=30 (trusted=0); Macro articles=30 (trusted=0). Sentiment strength=0.12. Inference=TCS is facing significant technical pressure, with reports of 52-week lows and analysts forecasting further declines. Market sentiment is heavily impacted by a broader equity market crash. While some charts label the stock as 'oversold,' the prevailing trend remains strongly bearish with negative price momentum and ongoing market value erosion..\nMarket Sentiment: SELL | NIFTY 5D=-5.31%, 10D=-9.20%, 20D=-10.29%, SMA20 gap=-7.1% (below). India VIX=2410.5, 5D chg=-147.1, news sentiment=0.00. Votes: bull=2, bear=3.\nRelative Strength: NO_TRADE | stock 10-bar return=-6.85%, NIFTY=-5.43%, alpha=-1.42%.\nUS Trend Signal: SELL | Global risk-off backdrop. SPX 5D/20D=-5.75%/-12.35%, NDX 5D/20D=-5.75%/-12.35%, VIX=6632.19, DXY 5D=-7.80%.\nFinancials Signal: BUY | Fundamentals supportive. Coverage=77%. ROE=51.24%, Margin=19.02%, RevGrowth=N/A, EarnGrowth=N/A, D/E=0.099, CurrentRatio=N/A, PE=17.963. Quarterly trends: RevQoQ=5.75%, NIQoQ=-16.48%, OCFQoQ=2.91%, DebtQoQ=2.32%, FCF=110.61B, Cash/Debt=0.669. Analyst target=N/A (N/A upside, ? analysts). 52w Hi/Lo=3710.000/2397.000, position=1.03%.\nMarket Setup Signal: NO_TRADE | Early bearish alignment. Tape read: 5d=-5.8%, 20d=-12.3%, volume ratio=0.78, momentum=15.7. Support gap=N/A and resistance gap=11.5%. Trader read: The asset is severely oversold (RSI 17.5, Williams%R -95.6) and trading near the absolute range low. While the structural trend is bearish, the risk of a snap-back rally or mean reversion is high at these levels. Shorting here lacks a favorable reward-to-risk setup. Wait for a bounce and rejection or stabilization before re-engaging.\nCatalyst Context Signal: BUY | Mixed catalyst tape. Backdrop read: news sentiment=0.00, analyst upside=None, 52w position=1.0. Core read: TCS is trading at a critical support zone near its 52-week low, offering an attractive entry for a mean-reversion play. High ROE (51%) and low leverage provide fundamental safety. While recent net income contraction is a headwind, the valuation (17.9x PE) is compelling for a quality leader at a technical floor.\nTrader Intel: NO_TRADE | Oversold Trap/Value Vacuum | Mean Reversion vs. Momentum Fade. Thesis: TCS is at a technical dead-end. The sharp oversold condition (RSI < 20) triggers a 'value' reflex, but institutional flow is clearly exiting IT services due to structural margin compression. FIIs are heavy on the sell side; trying to catch a falling knife without a base formation is gambling, not trading. Why now: The stock is statistically extended from the mean, but technical structure is broken. We have no 'conviction' buy signal from DIIs yet. Why not now: The momentum is purely downside. Selling into this level is poor R:R (support is too close), and buying is trying to bet against the current tape trend.\nMaster Confluence Committee: BUY=0.140, SELL=0.372, NO_TRADE=0.199. Final=SELL, confidence=0.713. Support=['technical', 'pattern', 'news', 'market_sentiment', 'us_trend']; Opposing=['financials', 'catalyst_context']; Neutral=['trend', 'relative_strength', 'market_setup'].\nRisk Plan: size=0 shares, ATR=60.05, stop=N/A, target=N/A.\n**FINAL CONCLUSION**\n- Signal: NO_TRADE\n- Confidence: 0.350\n- Action Bias: Wait / no-trade setup\n- Playbook: Mean Reversion vs. Momentum Fade\n- Thesis: TCS is at a technical dead-end. The sharp oversold condition (RSI < 20) triggers a 'value' reflex, but institutional flow is clearly exiting IT services due to structural margin compression. FIIs are heavy on the sell side; trying to catch a falling knife without a base formation is gambling, not trading.\n- When to Act: Only post-stabilization: Break of the 1-hour consolidation range with confirmed volume expansion.\n- Execution Style: Patience. Waiting for the 'first higher low' on the 1h timeframe.\n- Invalidation: Fresh lower low below current support level voids any long bias; further breakdown confirms institutional capitulation.\n- Expected Holding Duration: 2-6 weeks\n- Context: sideways trend channel\n- Risk Flag: Extreme volatility; potential for a stop-run before any meaningful bottoming.\n- Stop-loss: N/A\n- Targets: N/A\n- 52w Range: ₹2397.00 – ₹3710.00\n- Current Price Context: ₹2410.50\n- Approx Risk:Reward to first target: N/A\n- Teaching note: prioritize process over prediction. Enter only after trigger confirmation, size by invalidation distance, and review whether the thesis is invalidated before averaging or adding.\n\nDetailed Agent Reasoning:\n- technical: Signal is SELL. Price at 2410.50 is significantly below the SMA20 (2601.78) and SMA50 (2908.10), confirming a bearish structure. Momentum is weak with a negative MACD (-129.95) and histogram (-5.41). RSI at 17.5 indicates deep oversold conditions, while Williams %R (-95.6) suggests extreme selling pressure. Low volume (2.46M vs 4.05M SMA20) suggests lack of conviction in the current bounce, favoring continued bearish dominance.\n- pattern: Signal is SELL. The structure shows a clear range breakdown with a negative slope of -24.74. The absence of bullish engulfing patterns confirms a lack of immediate reversal strength. The setup represents a clean breach of previous support levels, supporting a continuation of the bearish trend within the current volatility regime.\n- trend: Signal is NO_TRADE. The asset is caught in a sideways trend channel with a channel width of 71.55. Both support (-7.32) and resistance (-6.92) slopes are negative but near-flat, indicating a lack of directional conviction. With the price position at -3.68 within the channel, the trend lacks the necessary velocity to trigger a high-confidence entry.\n- news: Signal is SELL. Combined sentiment is neutral-to-bearish at 0.00, driven by weak macro (-0.08) and stock-specific (-0.04) sentiment. Media reports highlight 52-week lows and persistent analyst forecasts for further decline. The news flow confirms that TCS is suffering from broad market equity crashes and industry-wide technical pressure, reinforcing the bearish outlook.\n- market_sentiment: Market sentiment remains distinctly bearish as the stock trades near recent lows, aligning with broader macroeconomic uncertainty. The heavy volume of unrated articles emphasizing downside risk suggests institutional caution and retail fear. The sentiment is currently dominated by negative momentum, making any near-term upside appear as a corrective rally rather than a fundamental trend reversal.\n- relative_strength: Relative strength is currently weak as price performance consistently underperforms its short-term and long-term moving averages. The steep negative ROC10 of -8.96% indicates that the asset is shedding value at an accelerated rate compared to the broader market, confirming its status as a laggard in the current technology sector environment.\n- us_trend: US trend factors are contributing to global market instability, as negative macro sentiment persists in the news feed. Higher interest rate expectations and broader equity market erosion weigh heavily on IT services companies like TCS. This macro context acts as a constant headwind, preventing the stock from establishing a bottom despite being technically oversold.\n- financials: Financial metrics reveal significant underperformance: price (2410.50) is well below the SMA20 (2601.78) and SMA50 (2908.10). The volatility (ATR14=60.05) remains high relative to the stock's current price, indicating substantial downside risk. Despite deep RSI readings (17.47) and negative momentum, the lack of volume confirmation (2.46M vs 4.05M) implies that the asset is currently unsupported by meaningful capital inflow.\n- market_setup: The market setup is bearish, defined by a breakdown from the recent range. Technical indicators are at extreme levels, which typically signal a potential pivot; however, the lack of volume and negative slope of the trend channel suggest that the path of least resistance remains downward. Investors are awaiting a catalyst or a stabilization of volume before considering a reversal.\n- catalyst_context: The primary catalyst is the persistent negative macro environment combined with specific reports of 52-week lows. The absence of positive fundamental news or sector-specific tailwinds leaves the technical breakdown unchallenged. Current volatility and the downtrend in the channel suggest that the market is discounting further valuation contraction.\n- confluence: Confluence is achieved on the SELL signal via alignment between the technical breakdown, the negative price slope, and the negative macroeconomic sentiment. While oscillators are oversold, the lack of volume and the failure to hold moving averages outweigh the potential for a mean-reversion trade. The bearish trend is reinforced across technical and news-based filters.\n- risk: Risk is high, characterized by extreme oversold conditions (RSI 17.5, Williams %R -95.6) which could trigger sharp, volatile counter-trend rallies. However, the consistent bearish slope and negative MACD signal imply that any upward move faces heavy overhead resistance at the SMA20 (2601.78). Position sizing should remain conservative given the high ATR (60.05).\n\nGemini Master Reasoning:\nSetup\nTCS is currently exhibiting a textbook oversold profile, with an RSI of 17.5 and Williams %R at -95.6. While these metrics scream value to the inexperienced, they are currently trap-indicators. We are observing a range breakdown on the daily timeframe with a negative slope. The stock is pinned near its 52-week low of 2397.00. This is not a structural floor; it is a point of capitulation. There is zero evidence of institutional accumulation, and the volume ratio (0.78) confirms that buyers are absent even at these depressed levels.\n\nCatalyst\nThe narrative is bifurcated. Fundamentally, TCS remains a quality leader with a 51% ROE and manageable leverage. However, the price action is dominated by institutional outflow from the IT sector due to structural margin compression. We have no positive earnings surprise or sector-specific tailwind to justify a reversal. The \"buy\" signal in the financials is purely valuation-based, which is a dangerous trap in a momentum-fade environment. Until we see a shift in the FII flow or a specific fundamental catalyst that changes the margin outlook, price will continue to follow the path of least resistance: downward.\n\nFriction\nThe primary friction is the conflict between extreme statistical exhaustion and aggressive bearish momentum. We are currently \"fighting the tape.\" The SMA20 at 2601.78 acts as a heavy overhead resistance ceiling. Any attempt to rally will be met with selling pressure from trapped longs looking to exit at breakeven. Furthermore, the volatility (ATR of 60.05) is significantly elevated, meaning that even a small position size will result in wide price swings that can easily trigger stops before a genuine trend reversal.\n\nExecution Plan\nMy current stance is NO_TRADE. Do not attempt to catch this falling knife. My plan is to exercise strict patience:\nIf price exhibits a confirmed breakout above the 1-hour consolidation range on high volume, only then will I consider a long position.\nIf the price fails to hold the current support and prints a fresh lower low, I will confirm that the bearish thesis remains intact and continue to stay sidelined.\n\nRisk Protocol\nBecause the final signal is NO_TRADE, my position size is exactly zero. In a normal environment, I would anchor my risk to 1% of capital, but given the current volatility (ATR 60.05), any entry would require an wide, expensive stop-loss. Without a clear stabilization pattern, the reward-to-risk ratio is statistically unfavorable. My invalidation condition is a breach of the current support; any price action below the recent lows confirms institutional capitulation and makes any long position untenable.\n\nTeaching Notes\nDeveloping traders often confuse \"low price\" with \"cheap.\" TCS is not cheap; it is simply lower than it was yesterday. Always prioritize the market tape over your own interpretation of valuation. Institutional money moves markets, and right now, that money is fleeing IT services. Do not try to be the hero who picks the bottom. A true trend change is a process, not an event. Wait for the market to give you a higher low on the hourly chart. If the signal is not screaming, do not force the trade. Protecting your capital is the most important trade you make.\n\nVerdict\nNO_TRADE. The edge is insufficient. The risk of a stop-run or a continuation of the bearish slide outweighs any potential mean-reversion gains. Keep your cash, wait for a base to form, and stay disciplined.\n\nLLM Token Usage:\n- Input tokens: 17001\n- Output tokens: 2684\n- Total tokens: 19685\n- Estimated cost (USD): 0.0\n\nLONG-TERM OUTLOOK (Based on News, Financials, and Price Data)\n- Stance: LONG_TERM_NEUTRAL\n- Confidence: 0.650\n- Sector: Unknown\n- Data coverage: 2716 daily bars for long-term model.\n- Price trend (1Y/3Y/5Y/10Y): -30.75842167704126% / -25.13748112023001% / -14.685896700321987% / 150.6986702004586%.\n- Long-run quality: CAGR(3Y)=-9.199519819952041%, CAGR(5Y)=-3.1266839820148995%, CAGR(10Y)=9.626412722070054%,\n  Max Drawdown(5Y)=-44.0924852034954%, Vol=23.32772840690404%.\n- Structural trend: price vs 200DMA=-21.120285241229332%.\n- Note: N/A metrics indicate insufficient history for that exact horizon, not an implied negative value.\n- News signal: avg sentiment=0.00 across stock/industry/macro streams (15/12/10 items).\n- News decomposition: stock=N/A, industry=0.12248870504377367, macro=-0.0781416056282926.\n- Fundamental location: 52w position=1.0%, 1Y return=-30.75842167704126%.\n- Street context: analyst upside=N/A% from N/A analysts.\n- Macro overlay: India sentiment=SELL, US trend=SELL.\n\n--- VALUATION SNAPSHOT ---\n- P/E (trailing): 17.96\n- PEG ratio: N/A\n- Price/Book: 9.20\n- ROE: 51.2%\n- Debt/Equity: 0.10\n- EV/EBITDA: 12.13\n- EV/Revenue: 3.17\n- Book value per share: 261.90\n- Enterprise value: N/A\n- Gross margins: 42.9%\n- Operating margins: 24.4%\n- EBITDA margins: N/A\n- Total revenue: 2,553,240,000,000\n- Total debt: 93,920,000,000\n- Total cash: 83,310,000,000\n\n--- QUARTERLY FINANCIAL TRENDS ---\n- Revenue QoQ growth: N/A\n- Net income QoQ growth: N/A\n- Operating cash flow QoQ: N/A\n\n--- DIVIDEND & OWNERSHIP ---\n- Dividend yield: 4.5%\n- Dividend yield trend: falling\n- Total dividends (1Y): ₹109.00\n- Institutional ownership: 17.0%\n- Major holders (institutions): N/A%\n\n--- SCORING FACTORS ---\n  → news_sentiment: score=+0.00 × weight=1.00\n  ↓ return_1y: score=-0.31 × weight=0.90\n  ↓ return_3y: score=-0.25 × weight=0.80\n  ↓ return_5y: score=-0.15 × weight=0.70\n  ↓ cagr_5y: score=-0.31 × weight=0.90\n  ↓ sma200_position: score=-2.11 × weight=0.50\n  ↓ max_drawdown: score=-0.44 × weight=0.50\n  ↓ volatility: score=-0.23 × weight=0.40\n  ↓ 52w_position: score=-0.98 × weight=0.30\n  ↓ 1y_change: score=-0.31 × weight=0.70\n  ↑ dividend_yield: score=+0.45 × weight=0.40\n  ↑ cagr_10y: score=+0.96 × weight=1.00\n  ↑ operating_margins: score=+0.24 × weight=0.90\n  ↑ roe: score=+0.51 × weight=1.00\n  ↑ gross_margins: score=+0.43 × weight=0.70\n  → debt_to_equity: score=-0.05 × weight=0.90\n  ↑ trailing_pe: score=+0.11 × weight=0.50\n  ↓ price_to_book: score=-0.73 × weight=0.50\n  ↓ us_macro: score=-1.00 × weight=0.35\n  ↓ india_macro: score=-1.00 × weight=0.35\n--- DIRECT NEWS EVIDENCE (Top Headlines Used) ---\n- Company 1: TCS, Infosys among 6 Sensex stocks that hit 52-week lows; slip up to 18% in a month - The Economic Times\n- Company 2: TCS, Eternal, Tech Mahindra, HDFC Bank, Varun Beverages shares oversold on charts; do you own any?\n- Company 3: Stock market crash: HDFC Bank, IRCTC, TCS, RVNL, HUL among 296 stocks that hit 52-week low as NIFTY50 trade below 23,700 - Upstox\n- Industry 1: Union Budget FY 2026-27: A Push for India’s Services Exports - PIB\n- Industry 2: Segment Analysis and Major Growth Areas in the Regulatory Reporting Solutions Market - openPR.com\n- Industry 3: IT Sector: Kotak flags higher Gen AI disruption risk, cuts fair value – TCS, Infosys among top picks - The Financial Express\n- Macro 1: Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView\n- Macro 2: Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty\n- Macro 3: Fed to delay rate cuts as war clouds the outlook\n\n- Composite score: -0.122\n- Secular Growth Forecast: Trend is deeply bearish (52-week lows, -30% 1Y return). While fundamentals (margins, ROE) are strong, GenAI disruption cited by Kotak is a durable threat. Secular forecast: 3-5Y recovery hinges on AI integration; base case is stagnant growth, bull case is pivot success, bear case is margin erosion. Macro headwinds (delayed rate cuts) confirm stay-aside.\n",
+  "price_52w": {
+    "high": 3710.0,
+    "low": 2397.0,
+    "current": 2410.5,
+    "position_pct": 1.0,
+    "change_1y_pct": null
+  },
+  "analyst_consensus": {
+    "target_price": null,
+    "target_high": null,
+    "target_low": null,
+    "n_analysts": null,
+    "implied_upside_pct": null
+  },
+  "fundamental_signals": [
+    {
+      "type": "mixed",
+      "text": "Near 52-week low (₹2397.00–₹2410.50) — historically strong demand zone. Deep oversold bounces common, but confirm volume."
+    },
+    {
+      "type": "bullish",
+      "text": "Revenue growing QoQ (5.8% last quarter)."
+    },
+    {
+      "type": "bearish",
+      "text": "Net income declined sharply QoQ (-16.5%)."
+    }
+  ],
+  "key_price_levels": [
+    {
+      "label": "Resistance 1",
+      "price": 2688.6,
+      "type": "resistance"
+    },
+    {
+      "label": "Resistance 2",
+      "price": 3123.22,
+      "type": "resistance"
+    },
+    {
+      "label": "Resistance 3",
+      "price": 3215.55,
+      "type": "resistance"
+    },
+    {
+      "label": "Current",
+      "price": 2410.5,
+      "type": "current"
+    }
+  ],
+  "momentum_score": 15.7,
+  "qualitative_labels": {
+    "moving_averages": "Sell",
+    "trend_channel": "Falling",
+    "rsi": "Oversold",
+    "macd": "Bearish"
+  },
+  "valuation_snapshot": {
+    "pe_trailing": 17.962638692870676,
+    "peg_ratio": null,
+    "ev_to_ebitda": 12.129,
+    "ev_to_revenue": 3.172,
+    "gross_margins": 0.3968,
+    "operating_margins": 0.25179002,
+    "ebitda_margins": 0.26153,
+    "book_value": 313.727,
+    "dividend_yield": 2.61,
+    "enterprise_value": 8272910221312,
+    "roe": 0.5124002701675884,
+    "debt_to_equity": 0.09911773396935286,
+    "price_to_book": 9.204060919149711,
+    "total_revenue": 2608020062208,
+    "total_debt": 108210003968,
+    "total_cash": 567430021120
+  },
+  "master_reasoning": {
+    "model": "gemini-3.1-flash-lite-preview",
+    "text": "Setup\nTCS is currently exhibiting a textbook oversold profile, with an RSI of 17.5 and Williams %R at -95.6. While these metrics scream value to the inexperienced, they are currently trap-indicators. We are observing a range breakdown on the daily timeframe with a negative slope. The stock is pinned near its 52-week low of 2397.00. This is not a structural floor; it is a point of capitulation. There is zero evidence of institutional accumulation, and the volume ratio (0.78) confirms that buyers are absent even at these depressed levels.\n\nCatalyst\nThe narrative is bifurcated. Fundamentally, TCS remains a quality leader with a 51% ROE and manageable leverage. However, the price action is dominated by institutional outflow from the IT sector due to structural margin compression. We have no positive earnings surprise or sector-specific tailwind to justify a reversal. The \"buy\" signal in the financials is purely valuation-based, which is a dangerous trap in a momentum-fade environment. Until we see a shift in the FII flow or a specific fundamental catalyst that changes the margin outlook, price will continue to follow the path of least resistance: downward.\n\nFriction\nThe primary friction is the conflict between extreme statistical exhaustion and aggressive bearish momentum. We are currently \"fighting the tape.\" The SMA20 at 2601.78 acts as a heavy overhead resistance ceiling. Any attempt to rally will be met with selling pressure from trapped longs looking to exit at breakeven. Furthermore, the volatility (ATR of 60.05) is significantly elevated, meaning that even a small position size will result in wide price swings that can easily trigger stops before a genuine trend reversal.\n\nExecution Plan\nMy current stance is NO_TRADE. Do not attempt to catch this falling knife. My plan is to exercise strict patience:\nIf price exhibits a confirmed breakout above the 1-hour consolidation range on high volume, only then will I consider a long position.\nIf the price fails to hold the current support and prints a fresh lower low, I will confirm that the bearish thesis remains intact and continue to stay sidelined.\n\nRisk Protocol\nBecause the final signal is NO_TRADE, my position size is exactly zero. In a normal environment, I would anchor my risk to 1% of capital, but given the current volatility (ATR 60.05), any entry would require an wide, expensive stop-loss. Without a clear stabilization pattern, the reward-to-risk ratio is statistically unfavorable. My invalidation condition is a breach of the current support; any price action below the recent lows confirms institutional capitulation and makes any long position untenable.\n\nTeaching Notes\nDeveloping traders often confuse \"low price\" with \"cheap.\" TCS is not cheap; it is simply lower than it was yesterday. Always prioritize the market tape over your own interpretation of valuation. Institutional money moves markets, and right now, that money is fleeing IT services. Do not try to be the hero who picks the bottom. A true trend change is a process, not an event. Wait for the market to give you a higher low on the hourly chart. If the signal is not screaming, do not force the trade. Protecting your capital is the most important trade you make.\n\nVerdict\nNO_TRADE. The edge is insufficient. The risk of a stop-run or a continuation of the bearish slide outweighs any potential mean-reversion gains. Keep your cash, wait for a base to form, and stay disciplined."
+  },
+  "llm_usage": {
+    "calls": [
+      {
+        "name": "News Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2550,
+        "output_tokens": 90,
+        "total_tokens": 2640
+      },
+      {
+        "name": "US Trend Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 429,
+        "output_tokens": 107,
+        "total_tokens": 536
+      },
+      {
+        "name": "Market Setup Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2054,
+        "output_tokens": 113,
+        "total_tokens": 2167
+      },
+      {
+        "name": "Catalyst Context Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2463,
+        "output_tokens": 103,
+        "total_tokens": 2566
+      },
+      {
+        "name": "Trader Intel Agent",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1619,
+        "output_tokens": 364,
+        "total_tokens": 1983
+      },
+      {
+        "name": "Batched Agent Reasoning",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1718,
+        "output_tokens": 1046,
+        "total_tokens": 2764
+      },
+      {
+        "name": "Long-Term Outlook Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1667,
+        "output_tokens": 122,
+        "total_tokens": 1789
+      },
+      {
+        "name": "Master Reasoning",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 4501,
+        "output_tokens": 739,
+        "total_tokens": 5240
+      }
+    ],
+    "llm_enabled": true,
+    "skipped_calls": 0,
+    "error_calls": 0,
+    "total_input_tokens": 17001,
+    "total_output_tokens": 2684,
+    "total_tokens": 19685,
+    "pricing": {
+      "input_cost_per_1m": 0.0,
+      "output_cost_per_1m": 0.0,
+      "estimated_total_cost_usd": 0.0
+    }
+  }
+}

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swing Result</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+
+<body class="result-body">
+  <main class="container trader-container">
+    <a href="/" class="back back-dark">Back</a>
+
+    <section class="hero-panel">
+      <div class="hero-copy">
+        <p class="eyebrow">{{ result.symbol }} · {{ result.timeframe }} swing map</p>
+        <h1>Trader Dashboard</h1>
+        <p class="hero-price">
+          {% if result.price_52w and result.price_52w.current %}
+          ₹{{ result.price_52w.current }}
+          {% else %}
+          {{ result.symbol }}
+          {% endif %}
+        </p>
+        <div class="hero-meta-row">
+          <span class="meta-pill">From {{ result.start_timestamp }}</span>
+          <span class="meta-pill">To {{ result.end_timestamp }}</span>
+          <span class="meta-pill">Confluence B {{ result.confluence_scores.buy }} / S {{ result.confluence_scores.sell
+            }}</span>
+        </div>
+        {% if result.trader_intel and result.trader_intel.thesis %}
+        <div class="thesis-strip">
+          <strong>{{ result.trader_intel.playbook_title or 'Trader read' }}</strong>
+          <span>{{ result.trader_intel.thesis }}</span>
+        </div>
+        {% endif %}
+      </div>
+
+      <aside
+        class="verdict-card {% if result.final_signal == 'BUY' %}signal-buy{% elif result.final_signal == 'SELL' %}signal-sell{% else %}signal-no-trade{% endif %}">
+        <p class="verdict-kicker">Swing verdict</p>
+        <h2>{{ result.trader_intel.verdict_label if result.trader_intel else result.final_signal }}</h2>
+        <p class="verdict-signal">{{ result.final_signal }}</p>
+        <p class="verdict-sub">{{ result.trader_intel.why_now if result.trader_intel else
+          result.final_conclusion.playbook_title }}</p>
+        <div class="verdict-stat">Confidence {{ result.confidence }}</div>
+      </aside>
+    </section>
+
+    <section class="metric-grid">
+      <article class="metric-card">
+        <p class="metric-label">Momentum score</p>
+        <p class="metric-value">{{ result.momentum_score if result.momentum_score is not none else 'N/A' }}</p>
+        <p class="metric-note">Tape quality</p>
+      </article>
+      <article class="metric-card">
+        <p class="metric-label">52-week position</p>
+        <p class="metric-value">{{ result.price_52w.position_pct if result.price_52w else 'N/A' }}%</p>
+        <p class="metric-note">Location in range</p>
+      </article>
+      <article class="metric-card">
+        <p class="metric-label">Analyst upside</p>
+        <p class="metric-value">
+          {% if result.analyst_consensus and result.analyst_consensus.implied_upside_pct is not none %}
+          {{ result.analyst_consensus.implied_upside_pct }}%
+          {% else %}
+          N/A
+          {% endif %}
+        </p>
+        <p class="metric-note">Street framing</p>
+      </article>
+      <article class="metric-card">
+        <p class="metric-label">Holding window</p>
+        <p class="metric-value">{{ result.final_conclusion.expected_holding_duration if result.final_conclusion else
+          'N/A' }}</p>
+        <p class="metric-note">Execution horizon</p>
+      </article>
+    </section>
+
+    <section class="dual-grid">
+      <article class="panel trader-panel">
+        <div class="section-head">
+          <h2>Market Setup Agent</h2>
+          <span
+            class="pill {% if result.market_setup.signal == 'BUY' %}pill-buy{% elif result.market_setup.signal == 'SELL' %}pill-sell{% else %}pill-neutral{% endif %}">
+            {{ result.market_setup.signal }} · {{ result.market_setup.confidence }}
+          </span>
+        </div>
+        <p class="panel-title">{{ result.market_setup.setup_label }}</p>
+        <p class="panel-copy">{{ result.market_setup.summary }}</p>
+        <div class="mini-metrics">
+          <div><span>5d return</span><strong>{{ result.market_setup.detail.recent_return_5d_pct }}%</strong></div>
+          <div><span>20d return</span><strong>{{ result.market_setup.detail.recent_return_20d_pct }}%</strong></div>
+          <div><span>Volume ratio</span><strong>{{ result.market_setup.detail.volume_ratio_5d_vs_20d }}</strong></div>
+          <div><span>Support gap</span><strong>{{ result.market_setup.detail.distance_to_support_pct if
+              result.market_setup.detail.distance_to_support_pct is not none else 'N/A' }}%</strong></div>
+        </div>
+      </article>
+
+      <article class="panel trader-panel">
+        <div class="section-head">
+          <h2>Catalyst Context Agent</h2>
+          <span
+            class="pill {% if result.catalyst_context.signal == 'BUY' %}pill-buy{% elif result.catalyst_context.signal == 'SELL' %}pill-sell{% else %}pill-neutral{% endif %}">
+            {{ result.catalyst_context.signal }} · {{ result.catalyst_context.confidence }}
+          </span>
+        </div>
+        <p class="panel-title">{{ result.catalyst_context.catalyst_label }}</p>
+        <p class="panel-copy">{{ result.catalyst_context.summary }}</p>
+        <div class="mini-metrics">
+          <div><span>News tone</span><strong>{{ result.catalyst_context.detail.avg_sentiment }}</strong></div>
+          <div><span>Analyst upside</span><strong>{{ result.catalyst_context.detail.analyst_upside_pct if
+              result.catalyst_context.detail.analyst_upside_pct is not none else 'N/A' }}</strong></div>
+          <div><span>52w position</span><strong>{{ result.catalyst_context.detail.position_52w_pct if
+              result.catalyst_context.detail.position_52w_pct is not none else 'N/A' }}</strong></div>
+          <div><span>Votes</span><strong>B {{ result.catalyst_context.detail.buy_votes }} / S {{
+              result.catalyst_context.detail.sell_votes }}</strong></div>
+        </div>
+      </article>
+    </section>
+
+    {% if result.final_conclusion %}
+    <section class="panel execution-panel">
+      <div class="section-head">
+        <h2>Execution Plan</h2>
+        <span
+          class="pill {% if result.final_conclusion.signal == 'BUY' %}pill-buy{% elif result.final_conclusion.signal == 'SELL' %}pill-sell{% else %}pill-neutral{% endif %}">
+          {{ result.final_conclusion.signal }}
+        </span>
+      </div>
+
+      {% if result.final_conclusion.simple_summary %}
+      <div style="margin-bottom: 0.9rem; padding: 0.85rem; border: 1px solid rgba(255,255,255,0.18); border-radius: 8px; background: rgba(255,255,255,0.03);">
+        <p class="exec-label" style="margin-bottom: 0.3rem;">Quick summary (normal person)</p>
+        <p class="exec-copy" style="margin: 0; font-size: 1rem;">{{ result.final_conclusion.simple_summary }}</p>
+      </div>
+      {% endif %}
+
+      {% if result.final_conclusion.normal_person_plan %}
+      <div style="margin-bottom: 0.9rem;">
+        <p class="exec-label" style="margin-bottom: 0.35rem;">How to perform this swing trade</p>
+        <ul class="news-list dark-news-list" style="margin-top: 0.25rem;">
+          {% for step in result.final_conclusion.normal_person_plan %}
+          <li><span>{{ step }}</span></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
+      <div class="execution-grid">
+        <div>
+          <p class="exec-label">When to act</p>
+          <p class="exec-copy">{{ result.final_conclusion.when_to_buy }}</p>
+        </div>
+        <div>
+          <p class="exec-label">Execution style</p>
+          <p class="exec-copy">{{ result.final_conclusion.execution_style or (result.trader_intel.execution_style if
+            result.trader_intel else 'N/A') }}</p>
+        </div>
+        <div>
+          <p class="exec-label">Invalidation</p>
+          <p class="exec-copy">{{ result.final_conclusion.invalidation or (result.trader_intel.invalidation if
+            result.trader_intel else 'N/A') }}</p>
+        </div>
+        <div>
+          <p class="exec-label">Risk flag</p>
+          <p class="exec-copy">{{ result.final_conclusion.risk_flag or (result.trader_intel.risk_flag if
+            result.trader_intel else 'N/A') }}</p>
+        </div>
+      </div>
+      <div class="trade-line">
+        {% if result.final_conclusion.stop_loss %}
+        <span>Stop ₹{{ result.final_conclusion.stop_loss }}</span>
+        {% endif %}
+        {% if result.final_conclusion.targets %}
+        <span>Targets {% for t in result.final_conclusion.targets %}₹{{ t }}{% if not loop.last %} → {% endif %}{%
+          endfor %}</span>
+        {% elif result.final_conclusion.target %}
+        <span>Target ₹{{ result.final_conclusion.target }}</span>
+        {% endif %}
+      </div>
+
+      {% if result.final_conclusion.simple_explanation %}
+      <div style="margin-top: 0.9rem; padding: 0.75rem; border: 1px solid rgba(255,255,255,0.12); border-radius: 8px;">
+        <p class="exec-label" style="margin-bottom: 0.35rem;">Simple explanation</p>
+        <p class="exec-copy" style="margin: 0;">{{ result.final_conclusion.simple_explanation }}</p>
+      </div>
+      {% endif %}
+
+      {% if result.final_conclusion.beginner_plan %}
+      <div style="margin-top: 0.9rem;">
+        <p class="exec-label" style="margin-bottom: 0.35rem;">Beginner plan (step-by-step)</p>
+        <ul class="news-list dark-news-list" style="margin-top: 0.25rem;">
+          {% for step in result.final_conclusion.beginner_plan %}
+          <li><span>{{ step }}</span></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </section>
+    {% endif %}
+
+    {% if result.trader_intel and result.trader_intel.risky_prediction %}
+    <section class="panel execution-panel" style="border-left: 4px solid #db4437; background: rgba(219, 68, 55, 0.05);">
+      <div class="section-head">
+        <h2 style="color: #ff8a80;">⚡ Risky Intraday Recommendation</h2>
+        <span class="pill {% if result.trader_intel.risky_prediction.signal == 'BUY' %}pill-buy{% elif result.trader_intel.risky_prediction.signal == 'SELL' %}pill-sell{% else %}pill-neutral{% endif %}">
+          {{ result.trader_intel.risky_prediction.signal }} · {{ result.trader_intel.risky_prediction.confidence }}
+        </span>
+      </div>
+
+      {% if result.trader_intel.intraday_easy_one_liner %}
+      <div style="margin-bottom: 0.65rem; padding: 0.65rem; border: 1px solid rgba(255,255,255,0.16); border-radius: 8px; background: rgba(255,255,255,0.03);">
+        <p class="exec-label" style="margin-bottom: 0.25rem; color: #ffccbc;">Quick intraday rule</p>
+        <p class="exec-copy" style="margin: 0; color: #ffccbc;">{{ result.trader_intel.intraday_easy_one_liner }}</p>
+      </div>
+      {% endif %}
+
+      <p class="panel-copy" style="font-size: 1.05rem; font-weight: 600; color: #ffab91;">{{ result.trader_intel.risky_prediction.text }}</p>
+
+      <p style="font-size: 0.85rem; color: #999; margin-top: 0.5rem;">WARNING: This is a high-alpha, high-risk scalping
+        setup. Not suitable for swing capital. Use strict intraday stops.</p>
+    </section>
+    {% endif %}
+
+    <section class="dual-grid">
+      {% if result.key_price_levels %}
+      <article class="panel trader-panel">
+        <h2>Key Price Levels</h2>
+        <div class="levels-table">
+          {% for lvl in result.key_price_levels %}
+          <div class="level-row level-{{ lvl.type }}">
+            <span>{{ lvl.label }}</span>
+            <strong>₹{{ lvl.price }}</strong>
+          </div>
+          {% endfor %}
+        </div>
+      </article>
+      {% endif %}
+
+      <article class="panel trader-panel">
+        <h2>Technical and Fundamental Signals</h2>
+        <div class="signal-list">
+          {% if result.qualitative_labels %}
+          {% if result.qualitative_labels.moving_averages %}<div><span>Moving averages</span><strong>{{
+              result.qualitative_labels.moving_averages }}</strong></div>{% endif %}
+          {% if result.qualitative_labels.trend_channel %}<div><span>Trend channel</span><strong>{{
+              result.qualitative_labels.trend_channel }}</strong></div>{% endif %}
+          {% if result.qualitative_labels.rsi %}<div><span>RSI</span><strong>{{ result.qualitative_labels.rsi
+              }}</strong></div>{% endif %}
+          {% if result.qualitative_labels.macd %}<div><span>MACD</span><strong>{{ result.qualitative_labels.macd
+              }}</strong></div>{% endif %}
+          {% if result.qualitative_labels.beta %}<div><span>Beta</span><strong>{{ result.qualitative_labels.beta
+              }}</strong></div>{% endif %}
+          {% endif %}
+          {% if result.analyst_consensus and result.analyst_consensus.target_price %}
+          <div><span>Analyst target</span><strong>₹{{ result.analyst_consensus.target_price }}</strong></div>
+          {% endif %}
+          {% if result.price_52w and result.price_52w.change_1y_pct is not none %}
+          <div><span>1-year return</span><strong>{{ result.price_52w.change_1y_pct }}%</strong></div>
+          {% endif %}
+        </div>
+      </article>
+    </section>
+
+    {% if result.fundamental_signals %}
+    <section class="panel trader-panel">
+      <h2>Fundamental Signals</h2>
+      <div class="signal-bullets">
+        {% for sig in result.fundamental_signals %}
+        <div class="signal-bullet signal-{{ sig.type }}">{{ sig.text }}</div>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
+    {% if result.chart_path %}
+    <section class="panel trader-panel">
+      <div class="section-head">
+        <h2>Trend Chart</h2>
+        <span class="meta-pill">{{ result.chart_path.split('/')[-1] }}</span>
+      </div>
+      <img class="report-image" src="/reports/{{ result.chart_path.split('/')[-1] }}" alt="Trend chart" />
+    </section>
+    {% endif %}
+
+    <section class="triple-grid">
+      {% if result.top_news %}
+      <article class="panel trader-panel">
+        <h2>Company News</h2>
+        <ul class="news-list dark-news-list">
+          {% for n in result.top_news %}
+          <li>
+            <span class="news-source">{{ n.source }}</span>
+            <span>{{ n.title }}</span>
+            {% if n.url %}<a href="{{ n.url }}" target="_blank" rel="noopener noreferrer">open</a>{% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </article>
+      {% endif %}
+
+      {% if result.top_industry_news %}
+      <article class="panel trader-panel">
+        <h2>Industry News</h2>
+        <ul class="news-list dark-news-list">
+          {% for n in result.top_industry_news %}
+          <li>
+            <span class="news-source">{{ n.source }}</span>
+            <span>{{ n.title }}</span>
+            {% if n.url %}<a href="{{ n.url }}" target="_blank" rel="noopener noreferrer">open</a>{% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </article>
+      {% endif %}
+
+      {% if result.top_macro_news %}
+      <article class="panel trader-panel">
+        <h2>Macro News</h2>
+        <ul class="news-list dark-news-list">
+          {% for n in result.top_macro_news %}
+          <li>
+            <span class="news-source">{{ n.source }}</span>
+            <span>{{ n.title }}</span>
+            {% if n.url %}<a href="{{ n.url }}" target="_blank" rel="noopener noreferrer">open</a>{% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </article>
+      {% endif %}
+    </section>
+
+    {% if result.master_reasoning %}
+    <section class="panel trader-panel">
+      <div class="section-head">
+        <h2>Master Desk Note</h2>
+        <span class="meta-pill">{{ result.master_reasoning.model }}</span>
+      </div>
+      <pre>{{ result.master_reasoning.text }}</pre>
+    </section>
+    {% endif %}
+
+    {% if result.llm_usage %}
+    <section class="panel trader-panel">
+      <h2>LLM Usage</h2>
+      <div class="mini-metrics usage-strip">
+        <div><span>Input</span><strong>{{ result.llm_usage.total_input_tokens }}</strong></div>
+        <div><span>Output</span><strong>{{ result.llm_usage.total_output_tokens }}</strong></div>
+        <div><span>Total</span><strong>{{ result.llm_usage.total_tokens }}</strong></div>
+        <div><span>Cost USD</span><strong>{{ result.llm_usage.pricing.estimated_total_cost_usd }}</strong></div>
+      </div>
+      <details>
+        <summary>LLM call log</summary>
+        <pre>{{ result.llm_usage.calls | tojson(indent=2) }}</pre>
+      </details>
+    </section>
+    {% endif %}
+
+    <section class="panel trader-panel">
+      <details>
+        <summary>Reasoning prompts</summary>
+        <pre>{{ result.agent_guidance | tojson(indent=2) }}</pre>
+      </details>
+    </section>
+
+    <section class="panel trader-panel">
+      <details>
+        <summary>Agent outputs</summary>
+        <pre>{{ result.agent_outputs | tojson(indent=2) }}</pre>
+      </details>
+    </section>
+
+    <section class="panel trader-panel">
+      <details>
+        <summary>Full raw report</summary>
+        <pre>{{ result.rich_report }}</pre>
+      </details>
+    </section>
+
+    {% if result.long_term_outlook %}
+    <section class="panel trader-panel" style="border-top: 3px solid #1a73e8;">
+      <div class="section-head">
+        <h2>📊 Secular & Long-Term Outlook</h2>
+        <span
+          class="pill {% if result.long_term_outlook.stance == 'LONG_TERM_BULLISH' %}pill-buy{% elif result.long_term_outlook.stance == 'LONG_TERM_BEARISH' %}pill-sell{% else %}pill-neutral{% endif %}">
+          {{ result.long_term_outlook.stance }} · {{ result.long_term_outlook.confidence }}
+        </span>
+      </div>
+
+      {% if result.long_term_chart_path %}
+      <div style="margin: 1rem 0;">
+        <h3 style="margin-bottom: 0.5rem; color: #ccc; font-size: 0.95rem;">Extremely Long-Term Price Trend (10+ Years)
+        </h3>
+        <img class="report-image" src="/reports/{{ result.long_term_chart_path.split('/')[-1] }}"
+          alt="Long-term trend chart" style="width: 100%; border-radius: 8px;" />
+      </div>
+      {% endif %}
+
+      <div class="dual-grid" style="grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem;">
+        <div class="metric-card"
+          style="padding: 1rem; background: rgba(26, 115, 232, 0.05); border: 1px solid rgba(26, 115, 232, 0.2);">
+          <h3 style="color: #90caf9; font-size: 0.9rem; margin-top: 0;">Secular Growth Forecast</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 0; color: #eee;">
+            {{ result.long_term_outlook.llm_reasoning if result.long_term_outlook.llm_reasoning else 'Refer to master
+            reasoning for secular outlook.' }}
+          </p>
+        </div>
+        <div class="metric-card" style="padding: 1rem;">
+          <h3 style="color: #90caf9; font-size: 0.9rem; margin-top: 0;">Multi-Decade Quality</h3>
+          <div class="mini-metrics" style="grid-template-columns: 1fr; gap: 0.4rem;">
+            <div><span>10Y Return</span><strong>{{ result.long_term_outlook.evidence.return_10y_pct if
+                result.long_term_outlook.evidence.return_10y_pct is not none else 'N/A' }}%</strong></div>
+            <div><span>10Y CAGR</span><strong>{{ result.long_term_outlook.evidence.cagr_10y_pct if
+                result.long_term_outlook.evidence.cagr_10y_pct is not none else 'N/A' }}%</strong></div>
+            <div><span>5Y CAGR</span><strong>{{ result.long_term_outlook.evidence.cagr_5y_pct if
+                result.long_term_outlook.evidence.cagr_5y_pct is not none else 'N/A' }}%</strong></div>
+          </div>
+        </div>
+      </div>
+
+      {% if result.long_term_outlook.evidence %}
+      <h3 style="margin: 1.5rem 0 0.5rem; color: #90caf9; font-size: 1rem;">Historical Performance & Volatility</h3>
+      <div class="mini-metrics">
+        <div><span>1Y Return</span><strong>{{ result.long_term_outlook.evidence.return_1y_pct if
+            result.long_term_outlook.evidence.return_1y_pct is not none else 'N/A' }}%</strong></div>
+        <div><span>3Y Return</span><strong>{{ result.long_term_outlook.evidence.return_3y_pct if
+            result.long_term_outlook.evidence.return_3y_pct is not none else 'N/A' }}%</strong></div>
+        <div><span>5Y Return</span><strong>{{ result.long_term_outlook.evidence.return_5y_pct if
+            result.long_term_outlook.evidence.return_5y_pct is not none else 'N/A' }}%</strong></div>
+        <div><span>Price vs 200DMA</span><strong>{{ result.long_term_outlook.evidence.price_vs_sma200_pct if
+            result.long_term_outlook.evidence.price_vs_sma200_pct is not none else 'N/A' }}%</strong></div>
+        <div><span>Max Drawdown (5Y)</span><strong>{{ result.long_term_outlook.evidence.max_drawdown_5y_pct if
+            result.long_term_outlook.evidence.max_drawdown_5y_pct is not none else 'N/A' }}%</strong></div>
+        <div><span>Volatility (Annl)</span><strong>{{ result.long_term_outlook.evidence.annualized_volatility_pct if
+            result.long_term_outlook.evidence.annualized_volatility_pct is not none else 'N/A' }}%</strong></div>
+      </div>
+      {% endif %}
+
+      {% if result.valuation_snapshot %}
+      <h3 style="margin: 1.5rem 0 0.5rem; color: #90caf9; font-size: 1rem;">💰 Fundamental Valuation Card</h3>
+      <div class="mini-metrics">
+        <div><span>P/E (Trailing)</span><strong>{{ '%.2f'|format(result.valuation_snapshot.pe_trailing) if
+            result.valuation_snapshot.pe_trailing is not none else 'N/A' }}</strong></div>
+        <div><span>PEG Ratio</span><strong>{{ '%.2f'|format(result.valuation_snapshot.peg_ratio) if
+            result.valuation_snapshot.peg_ratio is not none else 'N/A' }}</strong></div>
+        <div><span>Price/Book</span><strong>{{ '%.2f'|format(result.valuation_snapshot.price_to_book) if
+            result.valuation_snapshot.price_to_book is not none else 'N/A' }}</strong></div>
+        <div><span>ROE</span><strong>{{ '%.1f%%'|format(result.valuation_snapshot.roe * 100) if
+            result.valuation_snapshot.roe is not none else 'N/A' }}</strong></div>
+        <div><span>Debt/Equity</span><strong>{{ '%.2f'|format(result.valuation_snapshot.debt_to_equity) if
+            result.valuation_snapshot.debt_to_equity is not none else 'N/A' }}</strong></div>
+        <div><span>EV/EBITDA</span><strong>{{ '%.2f'|format(result.valuation_snapshot.ev_to_ebitda) if
+            result.valuation_snapshot.ev_to_ebitda is not none else 'N/A' }}</strong></div>
+        <div><span>EV/Revenue</span><strong>{{ '%.2f'|format(result.valuation_snapshot.ev_to_revenue) if
+            result.valuation_snapshot.ev_to_revenue is not none else 'N/A' }}</strong></div>
+        <div><span>Operating Margin</span><strong>{{ '%.1f%%'|format(result.valuation_snapshot.operating_margins * 100)
+            if result.valuation_snapshot.operating_margins is not none else 'N/A' }}</strong></div>
+        <div><span>Dividend Yield</span><strong>{{ '%.2f%%'|format(result.valuation_snapshot.dividend_yield * 100) if
+            result.valuation_snapshot.dividend_yield is not none else 'N/A' }}</strong></div>
+      </div>
+      {% endif %}
+
+      {% if result.long_term_outlook.evidence %}
+      <h3 style="margin: 1.5rem 0 0.5rem; color: #90caf9; font-size: 1rem;">🏛️ Ownership & News Signal</h3>
+      <div class="mini-metrics">
+        <div><span>Inst. Ownership</span><strong>{{
+            '%.1f%%'|format(result.long_term_outlook.evidence.held_pct_institutions * 100) if
+            result.long_term_outlook.evidence.held_pct_institutions is not none else 'N/A' }}</strong></div>
+        <div><span>Dividend Trend</span><strong>{{ result.long_term_outlook.evidence.dividend_yield_trend or 'Stable'
+            }}</strong></div>
+        <div><span>News Sentiment</span><strong>{{ result.long_term_outlook.evidence.news_avg_sentiment }}</strong>
+        </div>
+        <div><span>Macro Alert</span><strong>{{ result.long_term_outlook.evidence.india_sentiment_signal }} / {{
+            result.long_term_outlook.evidence.us_trend_signal }}</strong></div>
+      </div>
+
+      <details style="margin-top: 1.5rem;">
+        <summary style="cursor: pointer; color: #90caf9; font-weight: bold;">🔍 Factor Scoring Explorer</summary>
+        <div
+          style="margin-top: 0.5rem; font-family: monospace; font-size: 0.82rem; line-height: 2.0; padding: 1rem; background: rgba(0,0,0,0.2); border-radius: 4px;">
+          {% for factor in result.long_term_outlook.evidence.scoring_factors %}
+          <div style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+            {% if factor[1] > 0.1 %}🟢{% elif factor[1] < -0.1 %}🔴{% else %}⚪{% endif %} <strong
+              style="display:inline-block; width: 140px;">{{ factor[0] }}</strong>
+              <span>Weight: {{ '%.2f'|format(factor[2]) }} | Score: {{ '%+.2f'|format(factor[1]) }}</span>
+          </div>
+          {% endfor %}
+        </div>
+      </details>
+      {% endif %}
+
+      <details style="margin-top: 1rem;">
+        <summary style="cursor: pointer; color: #90caf9;">Full Detailed Desk Summary</summary>
+        <pre
+          style="margin-top: 0.5rem; white-space: pre-wrap; font-size: 0.85rem;">{{ result.long_term_outlook.summary }}</pre>
+      </details>
+    </section>
+    {% endif %}
+
+    <section class="panel trader-panel saved-files-panel">
+      <h2>Saved Files</h2>
+      <p>{{ result.saved_files.json }}</p>
+      <p>{{ result.saved_files.markdown }}</p>
+    </section>
+  </main>
+</body>
+
+</html>

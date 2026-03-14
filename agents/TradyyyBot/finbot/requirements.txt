@@ -1,0 +1,21 @@
+# Core
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+python-multipart==0.0.9
+
+# LLM
+groq==0.4.2
+
+# WhatsApp
+twilio==9.2.3
+
+# Finance Data — ORDER MATTERS: curl_cffi first so yfinance uses it
+curl_cffi>=0.7.0
+yfinance>=0.2.40
+requests==2.32.3
+
+# Environment
+python-dotenv==1.0.1
+
+# Optional: Gemini fallback
+# google-generativeai==0.7.2

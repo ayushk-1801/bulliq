@@ -1,0 +1,1483 @@
+{
+  "report_id": "TATACONSUM_NS_20260313_225234",
+  "symbol": "TATACONSUM.NS",
+  "timeframe": "1d",
+  "forecast_bars": 3,
+  "start_timestamp": "2025-11-13 15:30:00",
+  "end_timestamp": "2026-03-13 15:30:00",
+  "final_signal": "NO_TRADE",
+  "confidence": 0.45,
+  "confluence_scores": {
+    "buy": 0.039,
+    "sell": 0.304,
+    "no_trade": 0.307
+  },
+  "risk_plan": {
+    "summary": "Risk Plan: size=0 shares, ATR=26.68, stop=N/A, target=N/A.",
+    "reasoning_prompt": "Risk protocol:\n1) Estimate recent volatility using ATR.\n2) Define one-unit risk from ATR multiple and cap portfolio risk near 1% per trade.\n3) Convert risk budget into position size.\n4) Anchor stop to volatility-adjusted invalidation and target to asymmetric reward.\n5) Force size=0 when final signal is NO_TRADE.",
+    "llm_reasoning": "Risk is high due to the elevated volatility proxy (21.00) and the ATR of 26.68. The current price position is near technical support, meaning any further breakdown could trigger stop-losses and accelerate the move. The primary risk is a potential 'oversold' bounce given the RSI of 30.36, which may lead to mean reversion if buying interest enters at current discount levels.",
+    "position_size": 0,
+    "stop_loss": null,
+    "target": null,
+    "risk_reward": "N/A",
+    "detail": {
+      "capital": 100000.0,
+      "risk_budget": 1000.0,
+      "one_risk": 32.01428571428571,
+      "atr": 26.678571428571427
+    }
+  },
+  "final_conclusion": {
+    "signal": "NO_TRADE",
+    "confidence": 0.45,
+    "when_to_buy": "Wait for a structural low or a consolidation base to form after this flush; do not chase the downside.",
+    "expected_holding_duration": "2-6 weeks",
+    "stop_loss": null,
+    "targets": [],
+    "target": null,
+    "analyst_consensus": {
+      "target_price": null,
+      "target_high": null,
+      "target_low": null,
+      "n_analysts": null,
+      "implied_upside_pct": null
+    },
+    "price_52w": {
+      "high": null,
+      "low": null,
+      "current": 21.52,
+      "position_pct": null,
+      "change_1y_pct": null
+    },
+    "key_price_levels": [
+      {
+        "label": "Resistance 1",
+        "price": 1180.98,
+        "type": "resistance"
+      },
+      {
+        "label": "Resistance 2",
+        "price": 1201.74,
+        "type": "resistance"
+      },
+      {
+        "label": "Resistance 3",
+        "price": 1220.9,
+        "type": "resistance"
+      },
+      {
+        "label": "Current",
+        "price": 1083.6,
+        "type": "current"
+      }
+    ],
+    "playbook_title": "Fading the Climax Sell-off",
+    "thesis": "The stock is experiencing a high-volume capitulation event, putting it in a liquidity trap. While the trend is clearly broken, shorting into an oversold RSI on massive volume is a sucker's bet prone to sharp dead-cat bounces.",
+    "execution_style": "Patience and observation",
+    "risk_flag": "High volatility/Oversold conditions",
+    "invalidation": "If the price forcefully reclaims the nearest significant breakdown level, the bearish thesis is invalidated.",
+    "summary": "**FINAL CONCLUSION**\n- Signal: NO_TRADE\n- Confidence: 0.450\n- Action Bias: Wait / no-trade setup\n- Playbook: Fading the Climax Sell-off\n- Thesis: The stock is experiencing a high-volume capitulation event, putting it in a liquidity trap. While the trend is clearly broken, shorting into an oversold RSI on massive volume is a sucker's bet prone to sharp dead-cat bounces.\n- When to Act: Wait for a structural low or a consolidation base to form after this flush; do not chase the downside.\n- Execution Style: Patience and observation\n- Invalidation: If the price forcefully reclaims the nearest significant breakdown level, the bearish thesis is invalidated.\n- Expected Holding Duration: 2-6 weeks\n- Context: sideways trend channel\n- Risk Flag: High volatility/Oversold conditions\n- Stop-loss: N/A\n- Targets: N/A\n- 52w Range: N/A – N/A"
+  },
+  "long_term_outlook": {
+    "stance": "LONG_TERM_NEUTRAL",
+    "confidence": 0.55,
+    "score": 0.403,
+    "summary": "LONG-TERM OUTLOOK (Based on News, Financials, and Price Data)\n- Stance: LONG_TERM_NEUTRAL\n- Confidence: 0.550\n- Sector: Unknown\n- Data coverage: 3698 daily bars for long-term model.\n- Price trend (1Y/3Y/5Y/10Y): 13.092934089167452% / 49.2048159154475% / 81.47714283903544% / 641.1764693603614%.\n- Long-run quality: CAGR(3Y)=14.268786078251328%, CAGR(5Y)=12.658609505298646%, CAGR(10Y)=22.177761058615154%,\n  Max Drawdown(5Y)=-44.81964696853416%, Vol=30.65210383799692%.\n- Structural trend: price vs 200DMA=-4.0181146602553675%.\n- Note: N/A metrics indicate insufficient history for that exact horizon, not an implied negative value.\n- News signal: avg sentiment=0.09 across stock/industry/macro streams (6/12/10 items).\n- Fundamental location: 52w position=52.5996629217263%, 1Y return=13.092934089167452%.\n- Street context: analyst upside=N/A% from N/A analysts.\n- Macro overlay: India sentiment=SELL, US trend=SELL.\n\n--- VALUATION SNAPSHOT ---\n- P/E (trailing): N/A\n- PEG ratio: N/A\n- Price/Book: N/A\n- ROE: N/A\n- Debt/Equity: N/A\n- EV/EBITDA: N/A\n- EV/Revenue: N/A\n- Book value per share: N/A\n- Enterprise value: N/A\n- Gross margins: N/A\n- Operating margins: N/A\n- EBITDA margins: N/A\n- Total revenue: N/A\n- Total debt: N/A\n- Total cash: N/A\n\n--- QUARTERLY FINANCIAL TRENDS ---\n- Revenue QoQ growth: N/A\n- Net income QoQ growth: N/A\n- Operating cash flow QoQ: N/A\n\n--- DIVIDEND & OWNERSHIP ---\n- Dividend yield: N/A\n- Dividend yield trend: rising\n- Total dividends (1Y): ₹8.25\n- Institutional ownership: N/A\n- Major holders (institutions): N/A%\n\n--- SCORING FACTORS ---\n  → news_sentiment: score=+0.09 × weight=1.00\n  ↑ return_1y: score=+0.13 × weight=0.90\n  ↑ return_3y: score=+0.49 × weight=0.80\n  ↑ return_5y: score=+0.81 × weight=0.70\n  ↑ cagr_5y: score=+1.27 × weight=0.90\n  ↓ sma200_position: score=-0.40 × weight=0.50\n  ↓ max_drawdown: score=-0.45 × weight=0.50\n  ↓ volatility: score=-0.31 × weight=0.40\n  → 52w_position: score=+0.05 × weight=0.30\n  ↑ 1y_change: score=+0.13 × weight=0.70\n  ↑ cagr_10y: score=+2.22 × weight=1.00\n  ↓ us_macro: score=-1.00 × weight=0.35\n  ↓ india_macro: score=-1.00 × weight=0.35\n\n- Composite score: 0.403\n- Secular Growth Forecast: The stock demonstrates solid multi-year CAGR, but faces technical weakness being below the 200DMA and high volatility. Macro indicators for India are currently signaling a sell, creating significant headwinds. Without clear valuation metrics or earnings momentum data, the risk-reward profile is not sufficiently compelling to warrant a long-term position at this juncture.\n",
+    "llm_reasoning": "The stock demonstrates solid multi-year CAGR, but faces technical weakness being below the 200DMA and high volatility. Macro indicators for India are currently signaling a sell, creating significant headwinds. Without clear valuation metrics or earnings momentum data, the risk-reward profile is not sufficiently compelling to warrant a long-term position at this juncture.",
+    "evidence": {
+      "history_bars": 3698,
+      "history_start": "2011-03-17 00:00:00",
+      "history_end": "2026-03-13 00:00:00",
+      "coverage_ratio": 1.0,
+      "sparse_long_term": false,
+      "fundamentals_sparse": false,
+      "news_avg_sentiment": 0.087,
+      "stock_news_count": 6,
+      "industry_news_count": 12,
+      "macro_news_count": 10,
+      "return_1y_pct": 13.09,
+      "return_3y_pct": 49.2,
+      "return_5y_pct": 81.48,
+      "return_10y_pct": 641.18,
+      "cagr_3y_pct": 14.27,
+      "cagr_5y_pct": 12.66,
+      "cagr_10y_pct": 22.18,
+      "price_vs_sma200_pct": -4.02,
+      "max_drawdown_5y_pct": -44.82,
+      "annualized_volatility_pct": 30.65,
+      "position_52w_pct": 52.5996629217263,
+      "change_1y_pct": 13.092934089167452,
+      "analyst_upside_pct": null,
+      "analyst_count": null,
+      "india_sentiment_signal": "SELL",
+      "us_trend_signal": "SELL",
+      "dividend_yield": null,
+      "dividend_yield_trend": "rising",
+      "peg_ratio": null,
+      "operating_margins": null,
+      "held_pct_institutions": null,
+      "institutions_pct": null,
+      "rev_qoq": null,
+      "ni_qoq": null,
+      "ocf_qoq": null,
+      "sector": "Unknown",
+      "scoring_factors": [
+        [
+          "news_sentiment",
+          0.087,
+          1.0
+        ],
+        [
+          "return_1y",
+          0.131,
+          0.9
+        ],
+        [
+          "return_3y",
+          0.492,
+          0.8
+        ],
+        [
+          "return_5y",
+          0.815,
+          0.7
+        ],
+        [
+          "cagr_5y",
+          1.266,
+          0.9
+        ],
+        [
+          "sma200_position",
+          -0.402,
+          0.5
+        ],
+        [
+          "max_drawdown",
+          -0.448,
+          0.5
+        ],
+        [
+          "volatility",
+          -0.307,
+          0.4
+        ],
+        [
+          "52w_position",
+          0.052,
+          0.3
+        ],
+        [
+          "1y_change",
+          0.131,
+          0.7
+        ],
+        [
+          "cagr_10y",
+          2.218,
+          1.0
+        ],
+        [
+          "us_macro",
+          -1.0,
+          0.35
+        ],
+        [
+          "india_macro",
+          -1.0,
+          0.35
+        ]
+      ]
+    }
+  },
+  "agent_outputs": {
+    "technical": {
+      "signal": "SELL",
+      "confidence": 0.8400000000000001,
+      "summary": "Indicator Signal: SELL | Trend: close=1083.60, SMA20=1130.86, SMA50=1152.90. Momentum: MACD=-21.170, Signal=-13.737, Hist=-7.434, ROC10=-6.55%. Oscillators: RSI14=30.4, StochK/D=26.0/11.2, Williams%R=-74.0. Risk: ATR14=26.68, Volume=2855618 vs VolSMA20=1014248. Momentum Score=22.0/100 | MA=Sell, Trend=Falling, RSI=Near oversold, MACD=Bearish.",
+      "reasoning_prompt": "Indicator reasoning protocol:\n1) Evaluate structural trend using close vs SMA20 and SMA20 vs SMA50.\n2) Validate momentum using MACD line/signal/histogram and ROC10 direction.\n3) Check exhaustion/continuation via RSI, Stochastic crossover, and Williams %R zone.\n4) Confirm participation with volume vs 20-bar average.\n5) Penalize high-volatility regimes with ATR% filters and lower confidence.\n6) If cross-indicator alignment is weak or contradictory, return NO_TRADE.",
+      "llm_reasoning": "Strong sell signal (0.84 confidence) driven by price at 1083.60, falling below SMA20 (1130.86) and SMA50 (1152.90). MACD is deeply bearish at -21.17 with a negative histogram. RSI at 30.36 indicates proximity to oversold territory. Significant volume surge (2.85M vs 1.01M SMA20) confirms distribution, supported by a -6.55% 10-day ROC. All technical indicators align with a bearish structural breakdown.",
+      "detail": {
+        "bullish_points": 0,
+        "bearish_points": 8,
+        "delta": -8,
+        "rules": {
+          "trend_alignment": false,
+          "macd_alignment": false,
+          "rsi_bias": "bearish",
+          "stoch_alignment": true,
+          "willr_bias": "bearish",
+          "volume_confirmation": true
+        }
+      },
+      "price_levels": {
+        "levels": [
+          {
+            "label": "Resistance 1",
+            "price": 1180.98,
+            "type": "resistance"
+          },
+          {
+            "label": "Resistance 2",
+            "price": 1201.74,
+            "type": "resistance"
+          },
+          {
+            "label": "Resistance 3",
+            "price": 1220.9,
+            "type": "resistance"
+          },
+          {
+            "label": "Current",
+            "price": 1083.6,
+            "type": "current"
+          }
+        ],
+        "nearest_resistance": 1180.98,
+        "nearest_support": null,
+        "resistance_1": 1180.98,
+        "resistance_2": 1201.74,
+        "resistance_3": 1220.9,
+        "support": null,
+        "breakdown_zone": null
+      },
+      "momentum_score": 22.0,
+      "qualitative_labels": {
+        "moving_averages": "Sell",
+        "trend_channel": "Falling",
+        "rsi": "Near oversold",
+        "macd": "Bearish"
+      },
+      "price_range": {
+        "high": 1220.9,
+        "low": 1048.0,
+        "position_pct": 20.6
+      },
+      "metrics": {
+        "close": 1083.5999755859375,
+        "rsi14": 30.35714167758232,
+        "macd": -21.170420499135844,
+        "macd_signal": -13.736690836490432,
+        "macd_hist": -7.433729662645412,
+        "sma20": 1130.864990234375,
+        "sma50": 1152.8999975585937,
+        "roc10": -6.5459270732266095,
+        "atr14": 26.678571428571427,
+        "stoch_k": 25.985383639370436,
+        "stoch_d": 11.187780336879065,
+        "willr14": -74.01461636062956,
+        "volume": 2855618.0,
+        "volume_sma20": 1014247.8
+      }
+    },
+    "pattern": {
+      "signal": "SELL",
+      "confidence": 0.5739534794011703,
+      "summary": "Pattern Signal: SELL | setup=gradual lower-high structure, slope=-7.5600, breakout_up=False, breakdown=False, bull_engulf=True, bear_engulf=False.",
+      "reasoning_prompt": "Pattern reasoning protocol:\n1) Detect breakout/breakdown against prior 12-bar range, not single-candle spikes.\n2) Confirm direction with local slope and bar-structure continuation.\n3) Use engulfing patterns as confirmation, not standalone trigger.\n4) Treat flat-slope compression as NO_TRADE until expansion is confirmed.\n5) Down-rank weak breakouts lacking structure confirmation.",
+      "llm_reasoning": "Pattern signals a sell with a gradual lower-high structure and a negative slope of -7.56. Despite a bull engulfing candle, the lack of a formal breakout and the consistent lower-high formation suggest the setup is bearish. The pattern lacks clear reversal expansion, and the negative slope confirms selling pressure persists, maintaining a cautious stance despite isolated bullish candlestick patterns.",
+      "detail": {
+        "setup": "gradual lower-high structure",
+        "slope": -7.559994969223429,
+        "breakout_up": false,
+        "breakdown": false,
+        "bullish_engulfing": true,
+        "bearish_engulfing": false,
+        "volatility_proxy": 20.998594417135262
+      }
+    },
+    "trend": {
+      "signal": "NO_TRADE",
+      "confidence": 0.5569975952391175,
+      "summary": "Trend Signal: NO_TRADE | setup=sideways trend channel, support slope=-0.625, resistance slope=-0.552, price position=-1.36 in channel.",
+      "reasoning_prompt": "Trend reasoning protocol:\n1) Fit support and resistance trendlines over the visible swing window.\n2) Estimate channel slope (regime direction) and channel width (trend quality).\n3) Locate current price in channel and prefer pullback entries aligned with slope.\n4) If slope is weak/flat, classify as sideways and favor NO_TRADE.\n5) Avoid chasing signals near channel extremes against risk-reward logic.",
+      "llm_reasoning": "Trend analysis remains in a NO_TRADE zone with a 0.55 confidence level. The security exhibits a sideways trend channel with a neutral-negative slope (-0.59 average). Price position at -1.36 relative to the channel suggests it is testing the lower boundaries of support (1120.9). Due to the lack of clear directional trending movement and the flat channel slopes, no high-conviction trade is supported.",
+      "detail": {
+        "setup": "sideways trend channel",
+        "slope_avg": -0.5882,
+        "channel_width": 27.3471,
+        "channel_position": -1.3641
+      },
+      "metrics": {
+        "support_slope": -0.6247333164722907,
+        "resistance_slope": -0.5516249218413855,
+        "channel_position": -1.364,
+        "last_support": 1120.9,
+        "last_resistance": 1148.25
+      }
+    },
+    "news": {
+      "signal": "BUY",
+      "confidence": 0.55,
+      "summary": "News Signal: BUY | combined sentiment=0.09 (stock=0.11, industry=0.15, macro=-0.08). Stock articles=6 (trusted=0, unrated=6); Industry articles=30 (trusted=0); Macro articles=30 (trusted=0). Sentiment strength=0.15. Inference=Recent analysis highlights a healthy balance sheet, supporting the positive sentiment trend. While financial ambiguity and institutional dominance present mixed long-term signals, the most recent update is optimistic. The sector shows moderate positive momentum, providing a slight directional edge for a BUY position based on the favorable health of the company's financials..",
+      "reasoning_prompt": "News reasoning protocol:\n1) Collect company-specific headlines across multiple providers using diversified queries.\n2) Filter spam/listicle/noise domains and low-relevance stories.\n3) Build a global macro stream (rates, inflation, oil, USD, broad risk sentiment).\n4) Build industry/sector thematic stream (demand cycle, market share, regulation, capacity, pricing).\n5) Weight sentiment by source quality, exponential recency decay, and relevance confidence.\n6) Apply content-similarity dedup to remove near-duplicate headlines.\n7) Use LLM to infer final bias from company + industry + macro evidence and return NO_TRADE under conflict.",
+      "llm_reasoning": "News sentiment is net positive at 0.09, driven by an optimistic outlook on the company's balance sheet. Industry sentiment is moderate (0.15), countering a slightly negative macro environment (-0.08). While institutional noise exists, the specific focus on healthy financial fundamentals provides a slight bullish edge, though the overall signal confidence remains low (0.55) due to the lack of high-authority, trusted sources in the current news set.",
+      "detail": {
+        "company_context": {
+          "symbol": "TATACONSUM.NS",
+          "company_name": "Tata Consumer Products Limited",
+          "sector": "Consumer Defensive",
+          "industry": "Packaged Foods",
+          "business_summary": "Tata Consumer Products Limited, together with its subsidiaries, produces, distributes, and trades in food products in India, the United States, the United Kingdom, and internationally. It operates through Branded Business and Non Branded Business segments. The company provides tea, coffee products, salt, mineral water, food ingredients, sweeteners, ready to cook and ready to eat options, breakfast cereals, snacks, mini meals, pulses, spices, instant noodles, blended masalas, Chinese sauces, pizza and pasta sauces, pasta sauce masala, ginger garlic paste, and dry fruits. It also offers health s"
+        },
+        "stock_article_count": 6,
+        "industry_article_count": 30,
+        "macro_article_count": 30,
+        "trusted_count": 0,
+        "trusted_industry_count": 0,
+        "unrated_count": 6,
+        "trusted_macro_count": 0,
+        "industry_avg_sentiment": 0.154,
+        "sentiment_strength": 0.154,
+        "llm_decision_why": "Recent analysis highlights a healthy balance sheet, supporting the positive sentiment trend. While financial ambiguity and institutional dominance present mixed long-term signals, the most recent update is optimistic. The sector shows moderate positive momentum, providing a slight directional edge for a BUY position based on the favorable health of the company's financials."
+      },
+      "top_news": [
+        {
+          "source": "google_rss",
+          "title": "Tata Consumer Products (NSE:TATACONSUM) Has A Pretty Healthy Balance Sheet - simplywall.st",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPM25tNGcxSlN0ejdVSlZhQjBhV3ZLSXJXY1Bma2xjcWctdm9NRTNyUEZuVnhpVFVteG9CaWpjdmpqdDFsUHNubXg2OTREcnRvSXFLT3JOR2N1Y0RidGZ4SDE5U2F1Y0tyM2hLS1dMNGhabjNHZmRQQnVheUVYOTN3bEg5TGJmNE4xU3FrYk1nUG5oZVFSZ05BbnpjS1luQ3dYNnUxTEY0YUdyeksteV9fZUY4N3pEVU03S2VOZXRkcDZrLV9ITUx5Y1hGanRRUkRra0kzQ3B4UTZISWFJZUMtaERqMWpHVDR6SnF2Smg5X2cyVUFFUTYw0gH8AUFVX3lxTE9yYVZsMkpWTVd0WnhBOHlzOWo5bHhVcS1ZNnZuOUZVazZ3U2VsUE1OelRiNHUwY2t1bnF6ODZUSzhyR2pGODFycXl1eWRLN01XQkV6VFowMURnd0VuNE00eFROeVNSWU9QMFI4Q3pXa0h2TGNza1gzVWFJanV5YWJRUno0VWZNNmpWVGdHQWpMeENydEdKZFRJT2pKQ2Q5V3NCWHZFR0hXa2VsTTZvWjZOQXdHODU0eWxkaUVjWHZuNFlGcUNiS1BfOVMxdHhBSWliSEFTNzhpQjFfazJRWHlmSTh6UW1fSGZ1V1QzNm50QlFoVEJhdW9uaHNVSg?oc=5",
+          "published_at": "Sat, 17 Jan 2026 08:00:00 GMT",
+          "published_ts": 1768636800.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "With 68% ownership of the shares, Tata Consumer Products Limited (NSE:TATACONSUM) is heavily dominated by institutional owners - simplywall.st",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNaGhUSXpfMkdseXRvM00zdTJRYnR1RGVMdTF2dzhSSnZsNUYwR1o2SWFjcWw5aG9nOGE0N21VVTR5dEctbV8xand1anFteFRBc2Rib0ZqX2ZCWkd6ZUc3TDl6MS1fekg2cU82UVBwTVAwQjF5UlBFVkVlMmlyVWhTTGhpTmlhd3dSOHU0X0VlWENqTnRHUVZOSDdDSGQ2aUNEOHY5a1lfZTlUNEVqcmJpZXVHSjFOZk50YkN5d3JBZTJNV0QweU1LRkRGZ3ZlQ3dUZFhYYnhuUWpCdU9DZUVvbGcyMjQwMjg4QWdnYm1nMTdYOUtYUmdz0gH8AUFVX3lxTE5sUEFNZGMtNU1SZDJITDZBck1VZXZpRzJtNTBnT0RnZ09lSHV1djRyVk42dC1RQWZGS21Ndmt0M1B3bnJ5ZnRpUThzcVdXaVJUcVZmUmtQRFU2eVdTTlN3MTk5dlhONk9pRERfS3BXM2p6d2FRQ0d0N2FiaWthX3RtVmxFenJMSEY0TmRiSDVTalFTdVJFaU54OXVUYzZRSXV3RlE0ODFFM3RibmEtblpxb1k0Y3hHMUwzMlBKZUZxZGprSlFXVDhpbU9yN1dyb21kNnk3Wm1MdjJEWjZKbXpDa0xTNFlaZDVMLXlBa3lxTkR4QldyUUlPcU9YTQ?oc=5",
+          "published_at": "Wed, 29 Oct 2025 07:00:00 GMT",
+          "published_ts": 1761721200.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Tata Consumer Products Limited's (NSE:TATACONSUM) Stock Is Rallying But Financials Look Ambiguous: Will The Momentum Continue? - simplywall.st",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNd2x3VGV1eXZWcVdWQTNsazZtYk9aYmxDcTNnY3FpQ1JfTTJhNWhWM05GSDFkazlGVmtQa1BMZnlRRWp3V0w4S2lMOGVIdk9oT0V1OEV1cDkwV1V1WWR6bmMtd2J6cktVekF4cWpoR3VGZ0MtRXhOUl9oOVRUODVwbjN4RHc3Y2N2TThuWlVFODJQSXJ0dmxIZXVzWDJpTTcwb0RkVy1ad1cyZTdidFZzOUdUVGxiZ1Y0bk1zZzhWWDVldk9ldk5UX2VCSUwwMW5qUzM4dll1aDlrRzAxUmNkVHhuNGNfOWZoOVkzLXNuRnJaUENPSlVr0gH8AUFVX3lxTFBnNWc1R3pma0huOUJjV3Vydk9LRmNfR09FV2R6RGw2eFQ0NzBKUm96VzdxV0prMzhKWUE3VkR3MUwwMmVLSlNjU0hmMGxFNW9mM1daa1h0WkpJRVYxdzhjNVIyMHJ4VzlYQTBXbngtYUJRYXg4aUUyUEFUa2dOVU1RNDJ0a3NZd0htRU8wVDBkeFFkMkRjRkdaUWJUVGNoNjJuakJwZkFXeFptZUlqai1SYW0xdWtEWmZLd0FzUDdQOWRlOEZGUW92QldWdE9GUXZzYUU4N1huZHVnZnZKTEpJT2dnOUJ4bERkTDhLSnlOei1HYlMwVWxWdUNfdQ?oc=5",
+          "published_at": "Sun, 05 Oct 2025 07:00:00 GMT",
+          "published_ts": 1759647600.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "TATACONSUM Share Price | Tata Consumer Products Ltd Stock Analysis & Recommendation - Markets Mojo",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9OMnhhVXBuYjhEUTQxVTJ3VFI0QTJ2ZFYyeW5iWjVFdkdXU295amFqVENaMW9CM1ExNkdheVRDMHpUb3lZNFRRdmxkR2tfb1pVUEYwZl9ld2dKRkswTnZXaV9UcVNLOUh3V0RhUE03MGpBZV9i?oc=5",
+          "published_at": "Tue, 03 Jun 2025 12:54:45 GMT",
+          "published_ts": 1748955285.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Tata Consumer Products Ltd (TATACONSUM) Share Price - Business Today",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQd01WemFZRXBUN3ZSTEItbDlheUVqcXJSX05FclJDNFJWYzEyd0luYm1IQlRfRGxiU0FiUDVvUUhaTXh4YU5WM1BpRGxLaUFUc3Bib3ZhbmZydEVCQ1cyZFk1eWtGNVRFVjdPQ28tWEZzdE4wMTFYWW5XWFpUSk1kbWV4Y3k4VGhNeHFEQk96Sk1zUXRxZWpv?oc=5",
+          "published_at": "Wed, 25 Jan 2023 03:00:23 GMT",
+          "published_ts": 1674615623.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "TATACONSUM Stock Price and Chart — NSE:TATACONSUM - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1HRjY0OXRldk1QUmozTlZrZmMyUGQ2NGgxZkFpRF92TDJJM0VmUEhXTnJLVlN0X3h4MXdiU1p1dXVVc3hUdXR2dkpJRFpLSVh1S2pVNVZFX0VoZXFta05sRg?oc=5",
+          "published_at": "Sun, 01 Mar 2020 08:57:44 GMT",
+          "published_ts": 1583053064.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        }
+      ],
+      "top_industry_news": [
+        {
+          "source": "google_rss_industry",
+          "title": "Safe Products, Confident Consumers: Strengthening Food Safety in India - orfonline.org",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbG1DZE1GX1dwb3dIdzJfVmp5MTJ1M2RNZUZhVUNhMGdfdUpreHVlOTg4T0dBOHI1ZGhzTW9lTndGMDBvNHpYcU9NNkFwNDJ0Unh6blFWWUVDTmNJejhBbktGS1pKM3BjRTJycTZaaUl0WEw1bnVJQ21waFFRYTFGLU9NYnBtdUdFUnQySVlYc3B2LXR2cDJtZ1pUTWRWTnRoLWJvXzhmTkdFdms?oc=5",
+          "published_at": "Fri, 13 Mar 2026 07:12:54 GMT",
+          "published_ts": 1773385974.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tata Consumer Products Limited",
+          "sector": "Consumer Defensive",
+          "industry": "Packaged Foods"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Food Starch Manufacturing Plant Cost 2026: Industry Overview and Profitability Assessment - openPR.com",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQX1d3UHdfNjgyMXZLdXFuUGNWamYzc0ZfbXAtVWM4SUN6ektKOWdCa1N0LThEcXNQQUlPVjU5eW1BLWNSWTFYZ3NDZDBOSzFaQXBTa3lYWWpkd0hRS0ZSbjhNUjYyRmhjQm42NkJQdUYtS3ZDWGRUYzllUy01Nk9EandtTHQ1SFZMQUwtLVg0QUhnSXU4QVlHY2hCYw?oc=5",
+          "published_at": "Tue, 10 Mar 2026 04:35:18 GMT",
+          "published_ts": 1773117318.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tata Consumer Products Limited",
+          "sector": "Consumer Defensive",
+          "industry": "Packaged Foods"
+        },
+        {
+          "source": "bing_rss_industry",
+          "title": "7 reasons why Citi is bullish on this recently listed FMCG play – Sees 35% upside potential",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b495153cd3413e915674c5fd4c9737&url=https%3a%2f%2fwww.financialexpress.com%2fmarket%2f7-reasons-why-citi-is-bullish-on-this-recently-listed-fmcg-play-sees-35-upside-potential-4167178%2f&c=3199182871060559272&mkt=en-in",
+          "published_at": "Mon, 09 Mar 2026 04:49:00 GMT",
+          "published_ts": 1773031740.0,
+          "sentiment_score": 2.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated",
+          "company_name": "Tata Consumer Products Limited",
+          "sector": "Consumer Defensive",
+          "industry": "Packaged Foods"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "The Best Healthcare Stocks to Buy - Morningstar",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE53Ulc0MVRkanRrTk40aHM3OVZvMGVnbjZsNlBIdldiTGhNSW50Q2Vkel9nbVlTWks5SWVvSUMxTVM5YTR5a0FuMDV5WEhQSnRUUG1pTTZYbmJUcWhaSS1yaFZMZG5kZmxBaU5oUkZn?oc=5",
+          "published_at": "Thu, 05 Mar 2026 08:00:00 GMT",
+          "published_ts": 1772697600.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tata Consumer Products Limited",
+          "sector": "Consumer Defensive",
+          "industry": "Packaged Foods"
+        },
+        {
+          "source": "bing_rss_industry",
+          "title": "Survey Shows India’s Consumer Sentiment Strengthened By Jobs Outlook",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4951864864ea99618f0cd98a30bfb&url=https%3a%2f%2fwww.businessworld.in%2farticle%2fsurvey-shows-india-s-consumer-sentiment-strengthened-by-jobs-outlook-591352&c=9752808741496016381&mkt=en-in",
+          "published_at": "Thu, 29 Jan 2026 16:00:00 GMT",
+          "published_ts": 1769702400.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated",
+          "company_name": "Tata Consumer Products Limited",
+          "sector": "Consumer Defensive",
+          "industry": "Packaged Foods"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Nifty Gainers Today: NTPC Share to UltraTech-10 stocks in action in a falling market, see the list - Asianet Newsable",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWEdEMlo1eXhWelJIanVvcHN4MWUxbVZTZC1CQVJYZmJ6MzljMlpLcGROWUd6RW5XQl94UXVKSG1qWnh1Wlc2aGJFZUo1clM3ZTVOd0txUE56TjRiX0EzejcwT1l2Z0l1MUowampJSEpGVW1BcXhFRGkwMTVSbmY0X1R2cWJfenFvclBxcnJsZXJaUHRvRVRadDVrTEhmVnBxdi1rNGUwT2hSNFgzbnNwSjhYb3hFMU9WbmtkMW5qY0QzOEE1Nnlz0gHMAUFVX3lxTFBKWFFSV0ZmUmJWb19BX0dWVGVNcGVMTDhpQ0dRYlNfSlRiNkZYSG1MM2lVeWJhTWNJaGk5a3o2dVpOdmdDUkVyaFFFZVhmaE1oR3Zpb2VtN1pHYk84M1BrWjB4dFppNVJuZ3dWZjVfT29uUTgzaVFNWUxDX3FuRVhTUkFjcVFTS0J4Tjd5UjhLVU1RYXo0alhwWHVuSEhfNkU4NWVZVTQxM1VKam1LRjlEMHZnZWlIQjF6cjJMcE01STBlZUxPNUlUS3JieA?oc=5",
+          "published_at": "Tue, 20 Jan 2026 08:00:00 GMT",
+          "published_ts": 1768896000.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tata Consumer Products Limited",
+          "sector": "Consumer Defensive",
+          "industry": "Packaged Foods"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "4 Stocks in snacking sector to see strong growth ahead according to Motilal Oswal - Trade Brains",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQWYzazRHanQ3Y3RTbUxIeDM2SEs4ekcxWlRZSHFJWVB2Z0s0QTlYZVN2aGZlR2Jma0FBQVpNbjhaaHlVY2h5WXlraEtiTTg1WFl4X2lZSmpMaXo4ejZLSVo4QmVwV0dBaDdvQVJvVUNHYnhMZVhxMDlvZkhSbEc2UUFMSFhtRmtDQ182bVZSdmtLZ1dsLUJjbW9rZkxqeW1idGZfYXVuNW4?oc=5",
+          "published_at": "Fri, 16 Jan 2026 08:00:00 GMT",
+          "published_ts": 1768550400.0,
+          "sentiment_score": 2.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tata Consumer Products Limited",
+          "sector": "Consumer Defensive",
+          "industry": "Packaged Foods"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Tata Consumer and 5 other stocks in which promoters increase their stake; Are you holding any? - Trade Brains",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTWVfWm5KNjJDdHE5dU40bFFwQUI1M056dEJBRVhCT3FJN0xqRld0VjVrR3JXUFFHRHZrTXFHaG53OWFKSS1tZmZMdS1PRkdKdFdnenNsU2NzQmZXQlhXaHRnbTROSmNqeFBCRjl3OE9rMElQSHhLTHljUGdjNmZZb2U1LTY2YTl2T1RNV1hxZWd5aEkyUEkxOXcxU0phWjN5dFJGd1dLSVYxSmJiV3RlVXVwOFpQNDA?oc=5",
+          "published_at": "Thu, 15 Jan 2026 08:00:00 GMT",
+          "published_ts": 1768464000.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tata Consumer Products Limited",
+          "sector": "Consumer Defensive",
+          "industry": "Packaged Foods"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "FMCG stocks in India are reviving after muted 2025, setting up a selective recovery in 2026 - Trade Brains",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWjlHbC1QSnI1bE95UmNwUEdsWE14ZkwxWS1XRUNuQjdaY0duUUlMVXlGekkxSjlhVVc5NlFtZFM4d01rWmRLaENqMzNETGM1cVk0aEVZNWN0cGZoZ0RZVFZCUkpkdmdCTGcxTHhtOHRFZEVhZkxWWUR4Mm8ySWpmdXFPd1dwVmptUHlMdHNRdW84VE9Xb1lGaW41MjZuRGc4cTlTNnFjX2xPUXNsQ1ItMWVwMlY?oc=5",
+          "published_at": "Tue, 06 Jan 2026 08:00:00 GMT",
+          "published_ts": 1767686400.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tata Consumer Products Limited",
+          "sector": "Consumer Defensive",
+          "industry": "Packaged Foods"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Legumes Market Size, Share & Growth Report by 2034 - Straits Research",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1iU3c0Y01kYVZvUzNLeWpjNlVaeVRhRmRGSUpOV0J2NlhQQjdxS1BINmlhalVyYmt4bW1qZFhtdGtjaW5FZVRFRDN5aUQ5SlZDejFIYUlIM05YYnV1dmc?oc=5",
+          "published_at": "Fri, 02 Jan 2026 06:45:06 GMT",
+          "published_ts": 1767336306.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tata Consumer Products Limited",
+          "sector": "Consumer Defensive",
+          "industry": "Packaged Foods"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Big guys are putting their money where your mouth is - The Economic Times",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOTHlVS0YtV0tJRGs3YnFVaDhObV9KZUd1MEw4TXZ4MzJQU3VrOWhzcHF0eW0yS19fRWV2X3R5MFhqbG8yVi1ucl9ORmxoQU1CSjBiczRxcnM1S2ZqQXJoYkdEZUhhZ1dmdmhoLVE5MW1Rb1Y3TTc1aThIb25FQnhxMVVUUzh3Q0dnRVdfTGVlR0h3RkI0SnBURnA4VFdyLXhkUFJVaU9mWm1uUE5VMVhhbmpqTl80bC1DV0dZcHI0N3JJTnNNSWdRZWNzY0NxZmPSAdQBQVVfeXFMTlJsLW9qdVAzYTFyREN2VDFvdEZVY2NCbFBOU0lzc0NlSE45LUVsc1BWZWtLTVc0N0xBTVA0Z3BPTTBTbm5FQUZrRzdxdzd2NG5PSHJvU2g0S3RrT2lrUk1kTnRGMWFMY0plQTd4OUlmWXIyT0EyMjJGUUhjTFJ2alp6bGFTcmRka1BVUzFxTDMyMFpIZVN0SG5SUXZhV1FQQmFJd2gtb2RpR3Q5WTRMMGMyRGtzcEFnbnY5RFpUWV91b2VxZnNNMmpnY1cyMkJ2UHBMZWo?oc=5",
+          "published_at": "Mon, 15 Dec 2025 08:00:00 GMT",
+          "published_ts": 1765785600.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tata Consumer Products Limited",
+          "sector": "Consumer Defensive",
+          "industry": "Packaged Foods"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Starbucks CEO Brian Niccol says India is one of its fastest-growing markets, will double down on growth plans - CNBC TV18 - LinkedIn",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSEZSQkI3d3NIcjh1OV9xN1gxX3pISVhMVmdXcEJOaHAzR2NjUnE2VWlvTDl0UUFXbmw3X3pVUFpNQ3B4SVlSdmFEOHVwQktKVUkyUkwxNkNWV2JxNXZrTGlBaGNMYkF4MnllaDRoMGJ3cWtCNzEweWdxNkRwd3p4SExfczFBT1FEVWpaTjd4VFJmelNIa3ZqZUJ1M0QxdmNYdG1CZFJsQmtzc1VNSzJRc3VpVWV0dw?oc=5",
+          "published_at": "Wed, 19 Nov 2025 08:00:00 GMT",
+          "published_ts": 1763539200.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tata Consumer Products Limited",
+          "sector": "Consumer Defensive",
+          "industry": "Packaged Foods"
+        }
+      ],
+      "top_macro_news": [
+        {
+          "source": "google_rss_macro",
+          "title": "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRVNOajVzSUJWU3Q5R2toMjVnZVZMNDhLclozWDdNODc1OU1qbVFjYnFTT0Z1SUZaaExuY3FJajFkdWtOWk5kdWplT0J0Yk9RcnlDVnlvQmJZNC1jVDVHZmRhS0Z0X0JiXzFETHRnaUVac1pEMmZfWE9raXFacFpwR1dSaEVST0Ntc2k1czN4emNQVFlWSHE3V1ZhMW80OUFMYmN6dEwtTkRadm44enc?oc=5",
+          "published_at": "Fri, 13 Mar 2026 15:17:26 GMT",
+          "published_ts": 1773415046.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4951d9372412a82c2dffde85d4c1d&url=https%3a%2f%2fwww.livemint.com%2fmarket%2fstock-market-news%2fus-china-power-shift-global-markets-india-outlook-mirae-asset-swarup-mohanty-11773376870759.html&c=15555016077234823276&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 14:15:00 GMT",
+          "published_ts": 1773411300.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Fed to delay rate cuts as war clouds the outlook",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4951d831d4e7fba8afbafbffe429b&url=https%3a%2f%2fthink.ing.com%2farticles%2ffed-to-delay-rate-cuts-as-war-clouds-the-outlook%2f&c=127436243108543137&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 13:40:00 GMT",
+          "published_ts": 1773409200.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss_macro",
+          "title": "Bitcoin holds above $71,000, defying rising dollar, oil and U.S. bond yields - CoinDesk",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbHB1NE1GZ1dLTWpvOWNseW5QXy1jbWVHcTYzcXF6NWotU0NHOG1XNEUzcDd0ZTctMW1URXZzSW5RQ1djc1h3a0xOM0k2Tkd5TjRWcE0wUXRwZjg4WktmZ2xDWnpLa0RhR1BsRzlrZlVlVzhONmQ0eW51VXJIWFQ3NFJkd0VXZ2VsUnY4VTBuWjU5LXpxX1BPYUIyaEZKQVdEWUU3a25CY0RvN3NrVW10cFNUTWtxSHdhSWI4?oc=5",
+          "published_at": "Fri, 13 Mar 2026 09:34:10 GMT",
+          "published_ts": 1773394450.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Gold Silver Rate Today Live Updates (13 March 2026): Gold, silver futures fall on MCX as rising crude oil prices dim hopes of early rate cuts",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4951e8c8f463595037a3e3e996f3b&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2flive-blog%2fgold-rate-silver-price-today-live-updates-mcx-gold-18k-22k-24k-rate-iran-isreal-us-war-latest-news%2fliveblog%2f129534056.cms&c=4108291931945502437&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 06:00:00 GMT",
+          "published_ts": 1773381600.0,
+          "sentiment_score": -1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Markets Today: Sensex Declines 830 Points, Nifty Slips Below 23,650 Amid Iran-US-Israel War",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4951d9372412a82c2dffde85d4c1d&url=https%3a%2f%2fwww.news18.com%2fbusiness%2fmarkets%2fmarkets-today-sensex-falls-1000-points-in-opening-trade-nifty-below-23600-as-oil-surges-past-100-9956009.html&c=7425380694736114227&mkt=en-in",
+          "published_at": "Thu, 12 Mar 2026 03:39:00 GMT",
+          "published_ts": 1773286740.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Share markets continue to bleed as West Asia tensions dampen sentiment, Sensex over 800 points down",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4951d9372412a82c2dffde85d4c1d&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fmarkets%2fshare-markets-continue-to-bleed-as-west-asia-tensions-dampen-sentiment-sensex-over-800-points-down%2far-AA1Yt9yX&c=14300386732484515462&mkt=en-in",
+          "published_at": "Thu, 12 Mar 2026 03:04:15 GMT",
+          "published_ts": 1773284655.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Trading Day: Oil and yields up, up, and away",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4951e8c8f463595037a3e3e996f3b&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2ftrading-day-oil-and-yields-up-up-and-away%2far-AA1YqbzQ&c=11227118164045986945&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 14:08:08 GMT",
+          "published_ts": 1773238088.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss_macro",
+          "title": "Markets Confront the Economic Impact of the Iran Conflict - Natixis CIB | Natixis Corporate & Investment Banking",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOVpkVlFlOG1lbEdUZEM2VU40clhkdUtsN3l6Z3Rkd2g4WTBNMVNKSFBmMmkyT1M0RGwtZGJxN1ItZVVrMEU3UnVfWFJ6UmpZUVppV09ZelhMWHNvZmhtbFk3ajc0UnlpY0dZeW51MGJnSUU3dGhYRGFQaE44NjJVaFFBVWFyVlNhampDdXFic0dCZXZ3YW5ScWUtWQ?oc=5",
+          "published_at": "Wed, 11 Mar 2026 10:55:26 GMT",
+          "published_ts": 1773226526.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "S&P 500 Faces Valuation Pressure as Oil and Yields Rise Together",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4951e8c8f463595037a3e3e996f3b&url=https%3a%2f%2fwww.investing.com%2fanalysis%2fsp-500-faces-valuation-pressure-as-oil-and-yields-rise-together-200676476&c=11959585435036819535&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 10:53:00 GMT",
+          "published_ts": 1773226380.0,
+          "sentiment_score": -1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        }
+      ],
+      "avg_sentiment": 0.08722766478487368,
+      "macro_sentiment": -0.08119265812819412
+    },
+    "market_sentiment": {
+      "signal": "SELL",
+      "confidence": 0.656,
+      "summary": "Market Sentiment: SELL | NIFTY 5D=-2.96%, 10D=-6.55%, 20D=-5.72%, SMA20 gap=-4.2% (below). India VIX=6672.6201171875, 5D chg=-158.1, news sentiment=0.09. Votes: bull=2, bear=3.",
+      "reasoning_prompt": "Market sentiment protocol:\n1) Evaluate NIFTY multi-window momentum (5/10/20-bar returns) for domestic risk appetite.\n2) Check Nifty SMA20 structure — price above 20DMA = constructive, below = cautious.\n3) Evaluate India VIX regime as stress filter (low=constructive, high=defensive).\n4) Factor VIX change rate — rising VIX signals increasing fear even if level is moderate.\n5) Blend with cleaned multi-source news sentiment (stock + macro blend).\n6) Count bullish/bearish votes and avoid directional call under conflict.\n7) Prefer NO_TRADE when index momentum and volatility regime diverge.",
+      "llm_reasoning": "Sentiment is currently bearish, as evidenced by the technical and pattern agents signaling a sell. The high volume relative to the SMA20 (2.85M vs 1.01M) confirms that institutional participants are actively selling into the recent decline. The sentiment lacks conviction from the macro side, but the price-action data strongly points to a prevailing risk-off mood among market participants.",
+      "detail": {
+        "nifty_ret5": -0.02964088567497658,
+        "nifty_ret10": -0.0654592707322661,
+        "nifty_ret20": -0.05716529230915646,
+        "above_sma20": false,
+        "sma_gap_pct": -4.18,
+        "vix_level": 6672.6201171875,
+        "vix_change_5d": -158.09,
+        "news_avg_sentiment": 0.08722766478487368,
+        "bullish_votes": 2,
+        "bearish_votes": 3
+      }
+    },
+    "relative_strength": {
+      "signal": "NO_TRADE",
+      "confidence": 0.44,
+      "summary": "Relative Strength: NO_TRADE | stock 10-bar return=-2.43%, NIFTY=-2.43%, alpha=0.00%.",
+      "reasoning_prompt": "Relative-strength protocol:\n1) Compare stock and NIFTY returns over same 10-bar window.\n2) Convert spread into alpha and classify persistent out/under-performance.\n3) Treat marginal alpha as noise and return NO_TRADE.\n4) Use relative strength as confirmation layer, not standalone trigger.",
+      "llm_reasoning": "The stock demonstrates significant weakness relative to its own moving averages. With price at 1083.60, it trades substantially below the 20-day (1130.86) and 50-day (1152.90) averages. A 10-day ROC of -6.55% indicates underperformance. The RSI of 30.36 reflects that momentum is lagging compared to the broader index, placing the asset in a clear state of relative distribution.",
+      "detail": {
+        "stock_ret10": -0.024311183678673465,
+        "nifty_ret10": -0.024311183678673465,
+        "alpha": 0.0
+      }
+    },
+    "us_trend": {
+      "signal": "SELL",
+      "confidence": 0.85,
+      "summary": "US Trend Signal: SELL | Global risk-off backdrop. SPX 5D/20D=-2.96%/-5.72%, NDX 5D/20D=-2.31%/-3.87%, VIX=1083.60, DXY 5D=14.91%.",
+      "reasoning_prompt": "US macro trend protocol:\n1) Evaluate SPX and NDX short/medium returns for global equity risk tone.\n2) Use VIX as stress filter (high VIX weakens risk-on conviction).\n3) Use DXY direction as liquidity/EM risk proxy for Indian equities.\n4) Classify regime as risk-on, risk-off, or mixed.\n5) Use this as contextual bias only; do not override local setup quality.",
+      "llm_reasoning": "Not applicable to this specific asset, as the ticker TATACONSUM.NS operates within the Indian market. Macro-analysis reflects a general -0.08 sentiment score, indicating that broader economic headwinds in the Consumer Defensive sector are impacting performance, though the primary driver remains local technical and volume-based selling pressure.",
+      "detail": {
+        "regime": "Global risk-off backdrop",
+        "llm_decision_why": "SPX and NDX demonstrate consistent downward momentum across short-to-medium horizons. The anomalous VIX level indicates extreme market distress and instability. Concurrently, the DXY shows a sustained upward trend, signaling a flight to safety and liquidity tightening. This macroeconomic environment is definitively risk-off.",
+        "spx_ret_5": -0.02964088567497658,
+        "spx_ret_20": -0.05716529230915646,
+        "ndx_ret_5": -0.02314398424966979,
+        "ndx_ret_20": -0.038731002127090686,
+        "vix_last": 1083.5999755859375,
+        "dxy_ret_5": 0.14905267012746704,
+        "dxy_ret_20": 0.5461757226825255
+      }
+    },
+    "financials": {
+      "signal": "NO_TRADE",
+      "confidence": 0.44,
+      "summary": "Financials Signal: NO_TRADE | Fundamentals mixed/neutral. Coverage=0%. ROE=N/A, Margin=N/A, RevGrowth=N/A, EarnGrowth=N/A, D/E=N/A, CurrentRatio=N/A, PE=N/A. Quarterly trends: RevQoQ=N/A, NIQoQ=N/A, OCFQoQ=N/A, DebtQoQ=N/A, FCF=N/A, Cash/Debt=N/A. Analyst target=N/A (N/A upside, ? analysts). 52w Hi/Lo=N/A/N/A, position=N/A.",
+      "reasoning_prompt": "Financial statement reasoning protocol:\n1) Evaluate valuation (PE/PB) relative to profitability and growth quality.\n2) Score profitability and efficiency (ROE, margins).\n3) Validate growth durability using quarterly revenue and net-income trends.\n4) Check balance-sheet resilience (debt trend, liquidity, cash/debt).\n5) Check cash-flow quality (operating CF trend, free cash flow sign).\n6) If fundamentals conflict or are incomplete, default to conservative NO_TRADE bias.",
+      "llm_reasoning": "Financials demonstrate a healthy balance sheet, which serves as the primary support for the bullish news sentiment. While specific earnings growth metrics were not provided in the input, the qualitative assessment of financial health acts as a buffer against aggressive downside. This foundational strength prevents a more negative sentiment outlook despite the current bearish technical price action.",
+      "fundamental_signals": [],
+      "analyst_consensus": {
+        "target_price": null,
+        "target_high": null,
+        "target_low": null,
+        "n_analysts": null,
+        "implied_upside_pct": null
+      },
+      "price_52w": {
+        "high": null,
+        "low": null,
+        "current": 21.52,
+        "position_pct": null,
+        "change_1y_pct": null
+      },
+      "extended_fundamentals": {
+        "symbol": "TATACONSUM.NS",
+        "dividend_yield": null,
+        "dividend_rate": null,
+        "ex_dividend_date": null,
+        "payout_ratio": null,
+        "held_pct_insiders": null,
+        "held_pct_institutions": null,
+        "book_value": null,
+        "price_to_book": null,
+        "return_on_equity": null,
+        "debt_to_equity": null,
+        "profit_margins": null,
+        "enterprise_value": null,
+        "enterprise_to_revenue": null,
+        "enterprise_to_ebitda": null,
+        "gross_margins": null,
+        "operating_margins": null,
+        "ebitda_margins": null,
+        "total_revenue": null,
+        "total_debt": null,
+        "total_cash": null,
+        "peg_ratio": null,
+        "trailing_pe": null,
+        "forward_pe": null
+      },
+      "promoter_institutional": {
+        "symbol": "TATACONSUM.NS",
+        "major_holders": {},
+        "top_institutional": []
+      },
+      "dividends_splits": {
+        "symbol": "TATACONSUM.NS",
+        "recent_dividends": [
+          {
+            "date": "2018-06-20 00:00:00+05:30",
+            "amount": 2.469307
+          },
+          {
+            "date": "2019-05-24 00:00:00+05:30",
+            "amount": 2.469307
+          },
+          {
+            "date": "2020-06-18 00:00:00+05:30",
+            "amount": 2.666852
+          },
+          {
+            "date": "2021-06-10 00:00:00+05:30",
+            "amount": 4.000278
+          },
+          {
+            "date": "2022-06-09 00:00:00+05:30",
+            "amount": 5.975724
+          },
+          {
+            "date": "2023-05-19 00:00:00+05:30",
+            "amount": 8.346259
+          },
+          {
+            "date": "2024-05-24 00:00:00+05:30",
+            "amount": 7.654853
+          },
+          {
+            "date": "2025-05-29 00:00:00+05:30",
+            "amount": 8.25
+          }
+        ],
+        "recent_splits": [
+          {
+            "date": "2010-06-30 00:00:00+05:30",
+            "ratio": 10.0
+          }
+        ],
+        "dividend_yield_trend": "rising",
+        "total_dividends_1y": 8.25
+      },
+      "metrics": {
+        "market_cap": null,
+        "trailing_pe": null,
+        "forward_pe": null,
+        "price_to_book": null,
+        "debt_to_equity": null,
+        "return_on_equity": null,
+        "profit_margins": null,
+        "operating_margins": null,
+        "gross_margins": null,
+        "ebitda_margins": null,
+        "revenue_growth": null,
+        "earnings_growth": null,
+        "free_cashflow": null,
+        "operating_cashflow": null,
+        "current_ratio": null,
+        "fifty_two_week_high": null,
+        "fifty_two_week_low": null,
+        "fifty_two_week_change": null,
+        "dividend_yield": null,
+        "current_price": 21.520000457763672,
+        "analyst_target_price": null,
+        "analyst_target_high": null,
+        "analyst_target_low": null,
+        "number_of_analyst_opinions": null,
+        "trailing_eps": null,
+        "forward_eps": null,
+        "beta": null,
+        "book_value": null,
+        "enterprise_value": null,
+        "total_revenue": null,
+        "total_debt": null,
+        "total_cash": null,
+        "peg_ratio": null,
+        "sector": null,
+        "industry": null,
+        "company_name": ""
+      },
+      "detail": {
+        "stance": "Fundamentals mixed/neutral",
+        "bull_points": 0,
+        "bear_points": 0,
+        "data_quality": {
+          "coverage_ratio": 0.0,
+          "available_fields": 0,
+          "total_fields": 13
+        },
+        "metrics": {
+          "market_cap": null,
+          "trailing_pe": null,
+          "forward_pe": null,
+          "price_to_book": null,
+          "debt_to_equity": null,
+          "return_on_equity": null,
+          "profit_margins": null,
+          "operating_margins": null,
+          "gross_margins": null,
+          "ebitda_margins": null,
+          "revenue_growth": null,
+          "earnings_growth": null,
+          "free_cashflow": null,
+          "operating_cashflow": null,
+          "current_ratio": null,
+          "fifty_two_week_high": null,
+          "fifty_two_week_low": null,
+          "fifty_two_week_change": null,
+          "dividend_yield": null,
+          "current_price": 21.520000457763672,
+          "analyst_target_price": null,
+          "analyst_target_high": null,
+          "analyst_target_low": null,
+          "number_of_analyst_opinions": null,
+          "trailing_eps": null,
+          "forward_eps": null,
+          "beta": null,
+          "book_value": null,
+          "enterprise_value": null,
+          "total_revenue": null,
+          "total_debt": null,
+          "total_cash": null,
+          "peg_ratio": null,
+          "sector": null,
+          "industry": null,
+          "company_name": ""
+        },
+        "metrics_extended": {
+          "dividend_yield": null,
+          "peg_ratio": null,
+          "operating_margins": null,
+          "gross_margins": null,
+          "ev_to_ebitda": null,
+          "held_pct_institutions": null
+        },
+        "statement_trends": {
+          "revenue_qoq": null,
+          "net_income_qoq": null,
+          "operating_cf_qoq": null,
+          "debt_qoq": null,
+          "free_cashflow_latest": null,
+          "cash_to_debt": null
+        }
+      }
+    },
+    "market_setup": {
+      "signal": "NO_TRADE",
+      "confidence": 0.65,
+      "summary": "Market Setup Signal: NO_TRADE | Early bearish alignment. Tape read: 5d=-3.0%, 20d=-5.7%, volume ratio=1.39, momentum=22.0. Support gap=N/A and resistance gap=9.0%. Trader read: The trend is clearly bearish, but the RSI (30.4) is approaching oversold territory and the stock is seeing a massive volume surge (volume ratio 1.39) on a move that has already extended significantly. Chasing a breakdown here offers poor risk-reward, as the price is prone to an imminent mean-reversion bounce.",
+      "reasoning_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+      "llm_reasoning": "The market setup is characterized by a high-volume decline towards support levels near 1120.9. Current price at 1083.60 reflects a rejection of the recent support, suggesting that the structural downtrend is currently dominating the range. The combination of high volume and negative price momentum indicates that the current technical setup is primed for continued volatility rather than an immediate reversal.",
+      "setup_label": "Early bearish alignment",
+      "detail": {
+        "recent_return_5d_pct": -2.96,
+        "recent_return_20d_pct": -5.72,
+        "volume_ratio_5d_vs_20d": 1.39,
+        "distance_to_support_pct": null,
+        "distance_to_resistance_pct": 8.99,
+        "momentum_score": 22.0,
+        "buy_votes": 0,
+        "sell_votes": 2
+      }
+    },
+    "catalyst_context": {
+      "signal": "NO_TRADE",
+      "confidence": 0.9,
+      "summary": "Catalyst Context Signal: NO_TRADE | Mixed catalyst tape. Backdrop read: news sentiment=0.09, analyst upside=None, 52w position=None. Core read: The provided data is critically insufficient. Almost all fundamental metrics (ROE, PE, margins, growth, debt) are missing, and the ticker appears to be misidentified or data-deprived (price $21.52 vs. actual market reality for Tata Consumer). Without reliable, verifiable financial context or sector performance, a swing trade entry carries unacceptable risk.",
+      "reasoning_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+      "llm_reasoning": "The primary catalyst is the persistent negative momentum and volume-heavy selling reflected in the technicals. The company's underlying financial stability acts as a mild counter-catalyst, providing a floor for valuation, but the current lack of positive macro or industry-wide breakout news leaves the stock vulnerable to technical selling until it finds a firmer base above the 1080 level.",
+      "catalyst_label": "Mixed catalyst tape",
+      "detail": {
+        "buy_votes": 1,
+        "sell_votes": 2,
+        "avg_sentiment": 0.087,
+        "analyst_upside_pct": null,
+        "position_52w_pct": null,
+        "fundamental_signals": []
+      }
+    }
+  },
+  "agent_guidance": {
+    "indicator_prompt": "Indicator reasoning protocol:\n1) Evaluate structural trend using close vs SMA20 and SMA20 vs SMA50.\n2) Validate momentum using MACD line/signal/histogram and ROC10 direction.\n3) Check exhaustion/continuation via RSI, Stochastic crossover, and Williams %R zone.\n4) Confirm participation with volume vs 20-bar average.\n5) Penalize high-volatility regimes with ATR% filters and lower confidence.\n6) If cross-indicator alignment is weak or contradictory, return NO_TRADE.",
+    "pattern_prompt": "Pattern reasoning protocol:\n1) Detect breakout/breakdown against prior 12-bar range, not single-candle spikes.\n2) Confirm direction with local slope and bar-structure continuation.\n3) Use engulfing patterns as confirmation, not standalone trigger.\n4) Treat flat-slope compression as NO_TRADE until expansion is confirmed.\n5) Down-rank weak breakouts lacking structure confirmation.",
+    "news_prompt": "News reasoning protocol:\n1) Collect company-specific headlines across multiple providers using diversified queries.\n2) Filter spam/listicle/noise domains and low-relevance stories.\n3) Build a global macro stream (rates, inflation, oil, USD, broad risk sentiment).\n4) Build industry/sector thematic stream (demand cycle, market share, regulation, capacity, pricing).\n5) Weight sentiment by source quality, exponential recency decay, and relevance confidence.\n6) Apply content-similarity dedup to remove near-duplicate headlines.\n7) Use LLM to infer final bias from company + industry + macro evidence and return NO_TRADE under conflict.",
+    "trend_prompt": "Trend reasoning protocol:\n1) Fit support and resistance trendlines over the visible swing window.\n2) Estimate channel slope (regime direction) and channel width (trend quality).\n3) Locate current price in channel and prefer pullback entries aligned with slope.\n4) If slope is weak/flat, classify as sideways and favor NO_TRADE.\n5) Avoid chasing signals near channel extremes against risk-reward logic.",
+    "market_prompt": "Market sentiment protocol:\n1) Evaluate NIFTY multi-window momentum (5/10/20-bar returns) for domestic risk appetite.\n2) Check Nifty SMA20 structure — price above 20DMA = constructive, below = cautious.\n3) Evaluate India VIX regime as stress filter (low=constructive, high=defensive).\n4) Factor VIX change rate — rising VIX signals increasing fear even if level is moderate.\n5) Blend with cleaned multi-source news sentiment (stock + macro blend).\n6) Count bullish/bearish votes and avoid directional call under conflict.\n7) Prefer NO_TRADE when index momentum and volatility regime diverge.",
+    "relative_strength_prompt": "Relative-strength protocol:\n1) Compare stock and NIFTY returns over same 10-bar window.\n2) Convert spread into alpha and classify persistent out/under-performance.\n3) Treat marginal alpha as noise and return NO_TRADE.\n4) Use relative strength as confirmation layer, not standalone trigger.",
+    "us_trend_prompt": "US macro trend protocol:\n1) Evaluate SPX and NDX short/medium returns for global equity risk tone.\n2) Use VIX as stress filter (high VIX weakens risk-on conviction).\n3) Use DXY direction as liquidity/EM risk proxy for Indian equities.\n4) Classify regime as risk-on, risk-off, or mixed.\n5) Use this as contextual bias only; do not override local setup quality.",
+    "financials_prompt": "Financial statement reasoning protocol:\n1) Evaluate valuation (PE/PB) relative to profitability and growth quality.\n2) Score profitability and efficiency (ROE, margins).\n3) Validate growth durability using quarterly revenue and net-income trends.\n4) Check balance-sheet resilience (debt trend, liquidity, cash/debt).\n5) Check cash-flow quality (operating CF trend, free cash flow sign).\n6) If fundamentals conflict or are incomplete, default to conservative NO_TRADE bias.",
+    "market_setup_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+    "catalyst_context_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+    "trader_intel_prompt": "Think like a discretionary Indian swing trader. Judge setup quality, catalyst quality, crowd positioning, and execution patience together. Avoid indicator-threshold language. Prefer NO_TRADE when the idea is merely interesting rather than executable. Use nearby levels, 52-week context, analyst framing, and headline quality to write a trader-grade verdict."
+  },
+  "market_setup": {
+    "signal": "NO_TRADE",
+    "confidence": 0.65,
+    "summary": "Market Setup Signal: NO_TRADE | Early bearish alignment. Tape read: 5d=-3.0%, 20d=-5.7%, volume ratio=1.39, momentum=22.0. Support gap=N/A and resistance gap=9.0%. Trader read: The trend is clearly bearish, but the RSI (30.4) is approaching oversold territory and the stock is seeing a massive volume surge (volume ratio 1.39) on a move that has already extended significantly. Chasing a breakdown here offers poor risk-reward, as the price is prone to an imminent mean-reversion bounce.",
+    "reasoning_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+    "llm_reasoning": "The market setup is characterized by a high-volume decline towards support levels near 1120.9. Current price at 1083.60 reflects a rejection of the recent support, suggesting that the structural downtrend is currently dominating the range. The combination of high volume and negative price momentum indicates that the current technical setup is primed for continued volatility rather than an immediate reversal.",
+    "setup_label": "Early bearish alignment",
+    "detail": {
+      "recent_return_5d_pct": -2.96,
+      "recent_return_20d_pct": -5.72,
+      "volume_ratio_5d_vs_20d": 1.39,
+      "distance_to_support_pct": null,
+      "distance_to_resistance_pct": 8.99,
+      "momentum_score": 22.0,
+      "buy_votes": 0,
+      "sell_votes": 2
+    }
+  },
+  "catalyst_context": {
+    "signal": "NO_TRADE",
+    "confidence": 0.9,
+    "summary": "Catalyst Context Signal: NO_TRADE | Mixed catalyst tape. Backdrop read: news sentiment=0.09, analyst upside=None, 52w position=None. Core read: The provided data is critically insufficient. Almost all fundamental metrics (ROE, PE, margins, growth, debt) are missing, and the ticker appears to be misidentified or data-deprived (price $21.52 vs. actual market reality for Tata Consumer). Without reliable, verifiable financial context or sector performance, a swing trade entry carries unacceptable risk.",
+    "reasoning_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+    "llm_reasoning": "The primary catalyst is the persistent negative momentum and volume-heavy selling reflected in the technicals. The company's underlying financial stability acts as a mild counter-catalyst, providing a floor for valuation, but the current lack of positive macro or industry-wide breakout news leaves the stock vulnerable to technical selling until it finds a firmer base above the 1080 level.",
+    "catalyst_label": "Mixed catalyst tape",
+    "detail": {
+      "buy_votes": 1,
+      "sell_votes": 2,
+      "avg_sentiment": 0.087,
+      "analyst_upside_pct": null,
+      "position_52w_pct": null,
+      "fundamental_signals": []
+    }
+  },
+  "trader_intel": {
+    "signal": "NO_TRADE",
+    "confidence": 0.45,
+    "verdict_label": "Wait for Mean Reversion or Stabilization",
+    "playbook_title": "Fading the Climax Sell-off",
+    "thesis": "The stock is experiencing a high-volume capitulation event, putting it in a liquidity trap. While the trend is clearly broken, shorting into an oversold RSI on massive volume is a sucker's bet prone to sharp dead-cat bounces.",
+    "execution_style": "Patience and observation",
+    "risk_flag": "High volatility/Oversold conditions",
+    "entry_trigger": "Wait for a structural low or a consolidation base to form after this flush; do not chase the downside.",
+    "invalidation": "If the price forcefully reclaims the nearest significant breakdown level, the bearish thesis is invalidated.",
+    "why_now": "The combination of heavy volume and technical oversold levels creates a high risk of a counter-trend move that could trap aggressive shorts.",
+    "why_not_now": "The risk-reward is currently skewed against the bear; catching a falling knife in a high-volume panic rarely yields a clean exit point.",
+    "summary": "Trader Intel: NO_TRADE | Wait for Mean Reversion or Stabilization | Fading the Climax Sell-off. Thesis: The stock is experiencing a high-volume capitulation event, putting it in a liquidity trap. While the trend is clearly broken, shorting into an oversold RSI on massive volume is a sucker's bet prone to sharp dead-cat bounces. Why now: The combination of heavy volume and technical oversold levels creates a high risk of a counter-trend move that could trap aggressive shorts. Why not now: The risk-reward is currently skewed against the bear; catching a falling knife in a high-volume panic rarely yields a clean exit point.",
+    "reasoning_prompt": "Think like a discretionary Indian swing trader. Judge setup quality, catalyst quality, crowd positioning, and execution patience together. Avoid indicator-threshold language. Prefer NO_TRADE when the idea is merely interesting rather than executable. Use nearby levels, 52-week context, analyst framing, and headline quality to write a trader-grade verdict."
+  },
+  "top_news": [
+    {
+      "source": "google_rss",
+      "title": "Tata Consumer Products (NSE:TATACONSUM) Has A Pretty Healthy Balance Sheet - simplywall.st",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPM25tNGcxSlN0ejdVSlZhQjBhV3ZLSXJXY1Bma2xjcWctdm9NRTNyUEZuVnhpVFVteG9CaWpjdmpqdDFsUHNubXg2OTREcnRvSXFLT3JOR2N1Y0RidGZ4SDE5U2F1Y0tyM2hLS1dMNGhabjNHZmRQQnVheUVYOTN3bEg5TGJmNE4xU3FrYk1nUG5oZVFSZ05BbnpjS1luQ3dYNnUxTEY0YUdyeksteV9fZUY4N3pEVU03S2VOZXRkcDZrLV9ITUx5Y1hGanRRUkRra0kzQ3B4UTZISWFJZUMtaERqMWpHVDR6SnF2Smg5X2cyVUFFUTYw0gH8AUFVX3lxTE9yYVZsMkpWTVd0WnhBOHlzOWo5bHhVcS1ZNnZuOUZVazZ3U2VsUE1OelRiNHUwY2t1bnF6ODZUSzhyR2pGODFycXl1eWRLN01XQkV6VFowMURnd0VuNE00eFROeVNSWU9QMFI4Q3pXa0h2TGNza1gzVWFJanV5YWJRUno0VWZNNmpWVGdHQWpMeENydEdKZFRJT2pKQ2Q5V3NCWHZFR0hXa2VsTTZvWjZOQXdHODU0eWxkaUVjWHZuNFlGcUNiS1BfOVMxdHhBSWliSEFTNzhpQjFfazJRWHlmSTh6UW1fSGZ1V1QzNm50QlFoVEJhdW9uaHNVSg?oc=5",
+      "published_at": "Sat, 17 Jan 2026 08:00:00 GMT",
+      "published_ts": 1768636800.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "With 68% ownership of the shares, Tata Consumer Products Limited (NSE:TATACONSUM) is heavily dominated by institutional owners - simplywall.st",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNaGhUSXpfMkdseXRvM00zdTJRYnR1RGVMdTF2dzhSSnZsNUYwR1o2SWFjcWw5aG9nOGE0N21VVTR5dEctbV8xand1anFteFRBc2Rib0ZqX2ZCWkd6ZUc3TDl6MS1fekg2cU82UVBwTVAwQjF5UlBFVkVlMmlyVWhTTGhpTmlhd3dSOHU0X0VlWENqTnRHUVZOSDdDSGQ2aUNEOHY5a1lfZTlUNEVqcmJpZXVHSjFOZk50YkN5d3JBZTJNV0QweU1LRkRGZ3ZlQ3dUZFhYYnhuUWpCdU9DZUVvbGcyMjQwMjg4QWdnYm1nMTdYOUtYUmdz0gH8AUFVX3lxTE5sUEFNZGMtNU1SZDJITDZBck1VZXZpRzJtNTBnT0RnZ09lSHV1djRyVk42dC1RQWZGS21Ndmt0M1B3bnJ5ZnRpUThzcVdXaVJUcVZmUmtQRFU2eVdTTlN3MTk5dlhONk9pRERfS3BXM2p6d2FRQ0d0N2FiaWthX3RtVmxFenJMSEY0TmRiSDVTalFTdVJFaU54OXVUYzZRSXV3RlE0ODFFM3RibmEtblpxb1k0Y3hHMUwzMlBKZUZxZGprSlFXVDhpbU9yN1dyb21kNnk3Wm1MdjJEWjZKbXpDa0xTNFlaZDVMLXlBa3lxTkR4QldyUUlPcU9YTQ?oc=5",
+      "published_at": "Wed, 29 Oct 2025 07:00:00 GMT",
+      "published_ts": 1761721200.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Tata Consumer Products Limited's (NSE:TATACONSUM) Stock Is Rallying But Financials Look Ambiguous: Will The Momentum Continue? - simplywall.st",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNd2x3VGV1eXZWcVdWQTNsazZtYk9aYmxDcTNnY3FpQ1JfTTJhNWhWM05GSDFkazlGVmtQa1BMZnlRRWp3V0w4S2lMOGVIdk9oT0V1OEV1cDkwV1V1WWR6bmMtd2J6cktVekF4cWpoR3VGZ0MtRXhOUl9oOVRUODVwbjN4RHc3Y2N2TThuWlVFODJQSXJ0dmxIZXVzWDJpTTcwb0RkVy1ad1cyZTdidFZzOUdUVGxiZ1Y0bk1zZzhWWDVldk9ldk5UX2VCSUwwMW5qUzM4dll1aDlrRzAxUmNkVHhuNGNfOWZoOVkzLXNuRnJaUENPSlVr0gH8AUFVX3lxTFBnNWc1R3pma0huOUJjV3Vydk9LRmNfR09FV2R6RGw2eFQ0NzBKUm96VzdxV0prMzhKWUE3VkR3MUwwMmVLSlNjU0hmMGxFNW9mM1daa1h0WkpJRVYxdzhjNVIyMHJ4VzlYQTBXbngtYUJRYXg4aUUyUEFUa2dOVU1RNDJ0a3NZd0htRU8wVDBkeFFkMkRjRkdaUWJUVGNoNjJuakJwZkFXeFptZUlqai1SYW0xdWtEWmZLd0FzUDdQOWRlOEZGUW92QldWdE9GUXZzYUU4N1huZHVnZnZKTEpJT2dnOUJ4bERkTDhLSnlOei1HYlMwVWxWdUNfdQ?oc=5",
+      "published_at": "Sun, 05 Oct 2025 07:00:00 GMT",
+      "published_ts": 1759647600.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "TATACONSUM Share Price | Tata Consumer Products Ltd Stock Analysis & Recommendation - Markets Mojo",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9OMnhhVXBuYjhEUTQxVTJ3VFI0QTJ2ZFYyeW5iWjVFdkdXU295amFqVENaMW9CM1ExNkdheVRDMHpUb3lZNFRRdmxkR2tfb1pVUEYwZl9ld2dKRkswTnZXaV9UcVNLOUh3V0RhUE03MGpBZV9i?oc=5",
+      "published_at": "Tue, 03 Jun 2025 12:54:45 GMT",
+      "published_ts": 1748955285.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Tata Consumer Products Ltd (TATACONSUM) Share Price - Business Today",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQd01WemFZRXBUN3ZSTEItbDlheUVqcXJSX05FclJDNFJWYzEyd0luYm1IQlRfRGxiU0FiUDVvUUhaTXh4YU5WM1BpRGxLaUFUc3Bib3ZhbmZydEVCQ1cyZFk1eWtGNVRFVjdPQ28tWEZzdE4wMTFYWW5XWFpUSk1kbWV4Y3k4VGhNeHFEQk96Sk1zUXRxZWpv?oc=5",
+      "published_at": "Wed, 25 Jan 2023 03:00:23 GMT",
+      "published_ts": 1674615623.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "TATACONSUM Stock Price and Chart — NSE:TATACONSUM - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1HRjY0OXRldk1QUmozTlZrZmMyUGQ2NGgxZkFpRF92TDJJM0VmUEhXTnJLVlN0X3h4MXdiU1p1dXVVc3hUdXR2dkpJRFpLSVh1S2pVNVZFX0VoZXFta05sRg?oc=5",
+      "published_at": "Sun, 01 Mar 2020 08:57:44 GMT",
+      "published_ts": 1583053064.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    }
+  ],
+  "top_industry_news": [
+    {
+      "source": "google_rss_industry",
+      "title": "Safe Products, Confident Consumers: Strengthening Food Safety in India - orfonline.org",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbG1DZE1GX1dwb3dIdzJfVmp5MTJ1M2RNZUZhVUNhMGdfdUpreHVlOTg4T0dBOHI1ZGhzTW9lTndGMDBvNHpYcU9NNkFwNDJ0Unh6blFWWUVDTmNJejhBbktGS1pKM3BjRTJycTZaaUl0WEw1bnVJQ21waFFRYTFGLU9NYnBtdUdFUnQySVlYc3B2LXR2cDJtZ1pUTWRWTnRoLWJvXzhmTkdFdms?oc=5",
+      "published_at": "Fri, 13 Mar 2026 07:12:54 GMT",
+      "published_ts": 1773385974.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tata Consumer Products Limited",
+      "sector": "Consumer Defensive",
+      "industry": "Packaged Foods"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Food Starch Manufacturing Plant Cost 2026: Industry Overview and Profitability Assessment - openPR.com",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQX1d3UHdfNjgyMXZLdXFuUGNWamYzc0ZfbXAtVWM4SUN6ektKOWdCa1N0LThEcXNQQUlPVjU5eW1BLWNSWTFYZ3NDZDBOSzFaQXBTa3lYWWpkd0hRS0ZSbjhNUjYyRmhjQm42NkJQdUYtS3ZDWGRUYzllUy01Nk9EandtTHQ1SFZMQUwtLVg0QUhnSXU4QVlHY2hCYw?oc=5",
+      "published_at": "Tue, 10 Mar 2026 04:35:18 GMT",
+      "published_ts": 1773117318.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tata Consumer Products Limited",
+      "sector": "Consumer Defensive",
+      "industry": "Packaged Foods"
+    },
+    {
+      "source": "bing_rss_industry",
+      "title": "7 reasons why Citi is bullish on this recently listed FMCG play – Sees 35% upside potential",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b495153cd3413e915674c5fd4c9737&url=https%3a%2f%2fwww.financialexpress.com%2fmarket%2f7-reasons-why-citi-is-bullish-on-this-recently-listed-fmcg-play-sees-35-upside-potential-4167178%2f&c=3199182871060559272&mkt=en-in",
+      "published_at": "Mon, 09 Mar 2026 04:49:00 GMT",
+      "published_ts": 1773031740.0,
+      "sentiment_score": 2.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated",
+      "company_name": "Tata Consumer Products Limited",
+      "sector": "Consumer Defensive",
+      "industry": "Packaged Foods"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "The Best Healthcare Stocks to Buy - Morningstar",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE53Ulc0MVRkanRrTk40aHM3OVZvMGVnbjZsNlBIdldiTGhNSW50Q2Vkel9nbVlTWks5SWVvSUMxTVM5YTR5a0FuMDV5WEhQSnRUUG1pTTZYbmJUcWhaSS1yaFZMZG5kZmxBaU5oUkZn?oc=5",
+      "published_at": "Thu, 05 Mar 2026 08:00:00 GMT",
+      "published_ts": 1772697600.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tata Consumer Products Limited",
+      "sector": "Consumer Defensive",
+      "industry": "Packaged Foods"
+    },
+    {
+      "source": "bing_rss_industry",
+      "title": "Survey Shows India’s Consumer Sentiment Strengthened By Jobs Outlook",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4951864864ea99618f0cd98a30bfb&url=https%3a%2f%2fwww.businessworld.in%2farticle%2fsurvey-shows-india-s-consumer-sentiment-strengthened-by-jobs-outlook-591352&c=9752808741496016381&mkt=en-in",
+      "published_at": "Thu, 29 Jan 2026 16:00:00 GMT",
+      "published_ts": 1769702400.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated",
+      "company_name": "Tata Consumer Products Limited",
+      "sector": "Consumer Defensive",
+      "industry": "Packaged Foods"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Nifty Gainers Today: NTPC Share to UltraTech-10 stocks in action in a falling market, see the list - Asianet Newsable",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWEdEMlo1eXhWelJIanVvcHN4MWUxbVZTZC1CQVJYZmJ6MzljMlpLcGROWUd6RW5XQl94UXVKSG1qWnh1Wlc2aGJFZUo1clM3ZTVOd0txUE56TjRiX0EzejcwT1l2Z0l1MUowampJSEpGVW1BcXhFRGkwMTVSbmY0X1R2cWJfenFvclBxcnJsZXJaUHRvRVRadDVrTEhmVnBxdi1rNGUwT2hSNFgzbnNwSjhYb3hFMU9WbmtkMW5qY0QzOEE1Nnlz0gHMAUFVX3lxTFBKWFFSV0ZmUmJWb19BX0dWVGVNcGVMTDhpQ0dRYlNfSlRiNkZYSG1MM2lVeWJhTWNJaGk5a3o2dVpOdmdDUkVyaFFFZVhmaE1oR3Zpb2VtN1pHYk84M1BrWjB4dFppNVJuZ3dWZjVfT29uUTgzaVFNWUxDX3FuRVhTUkFjcVFTS0J4Tjd5UjhLVU1RYXo0alhwWHVuSEhfNkU4NWVZVTQxM1VKam1LRjlEMHZnZWlIQjF6cjJMcE01STBlZUxPNUlUS3JieA?oc=5",
+      "published_at": "Tue, 20 Jan 2026 08:00:00 GMT",
+      "published_ts": 1768896000.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tata Consumer Products Limited",
+      "sector": "Consumer Defensive",
+      "industry": "Packaged Foods"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "4 Stocks in snacking sector to see strong growth ahead according to Motilal Oswal - Trade Brains",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQWYzazRHanQ3Y3RTbUxIeDM2SEs4ekcxWlRZSHFJWVB2Z0s0QTlYZVN2aGZlR2Jma0FBQVpNbjhaaHlVY2h5WXlraEtiTTg1WFl4X2lZSmpMaXo4ejZLSVo4QmVwV0dBaDdvQVJvVUNHYnhMZVhxMDlvZkhSbEc2UUFMSFhtRmtDQ182bVZSdmtLZ1dsLUJjbW9rZkxqeW1idGZfYXVuNW4?oc=5",
+      "published_at": "Fri, 16 Jan 2026 08:00:00 GMT",
+      "published_ts": 1768550400.0,
+      "sentiment_score": 2.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tata Consumer Products Limited",
+      "sector": "Consumer Defensive",
+      "industry": "Packaged Foods"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Tata Consumer and 5 other stocks in which promoters increase their stake; Are you holding any? - Trade Brains",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTWVfWm5KNjJDdHE5dU40bFFwQUI1M056dEJBRVhCT3FJN0xqRld0VjVrR3JXUFFHRHZrTXFHaG53OWFKSS1tZmZMdS1PRkdKdFdnenNsU2NzQmZXQlhXaHRnbTROSmNqeFBCRjl3OE9rMElQSHhLTHljUGdjNmZZb2U1LTY2YTl2T1RNV1hxZWd5aEkyUEkxOXcxU0phWjN5dFJGd1dLSVYxSmJiV3RlVXVwOFpQNDA?oc=5",
+      "published_at": "Thu, 15 Jan 2026 08:00:00 GMT",
+      "published_ts": 1768464000.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tata Consumer Products Limited",
+      "sector": "Consumer Defensive",
+      "industry": "Packaged Foods"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "FMCG stocks in India are reviving after muted 2025, setting up a selective recovery in 2026 - Trade Brains",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWjlHbC1QSnI1bE95UmNwUEdsWE14ZkwxWS1XRUNuQjdaY0duUUlMVXlGekkxSjlhVVc5NlFtZFM4d01rWmRLaENqMzNETGM1cVk0aEVZNWN0cGZoZ0RZVFZCUkpkdmdCTGcxTHhtOHRFZEVhZkxWWUR4Mm8ySWpmdXFPd1dwVmptUHlMdHNRdW84VE9Xb1lGaW41MjZuRGc4cTlTNnFjX2xPUXNsQ1ItMWVwMlY?oc=5",
+      "published_at": "Tue, 06 Jan 2026 08:00:00 GMT",
+      "published_ts": 1767686400.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tata Consumer Products Limited",
+      "sector": "Consumer Defensive",
+      "industry": "Packaged Foods"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Legumes Market Size, Share & Growth Report by 2034 - Straits Research",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1iU3c0Y01kYVZvUzNLeWpjNlVaeVRhRmRGSUpOV0J2NlhQQjdxS1BINmlhalVyYmt4bW1qZFhtdGtjaW5FZVRFRDN5aUQ5SlZDejFIYUlIM05YYnV1dmc?oc=5",
+      "published_at": "Fri, 02 Jan 2026 06:45:06 GMT",
+      "published_ts": 1767336306.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tata Consumer Products Limited",
+      "sector": "Consumer Defensive",
+      "industry": "Packaged Foods"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Big guys are putting their money where your mouth is - The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOTHlVS0YtV0tJRGs3YnFVaDhObV9KZUd1MEw4TXZ4MzJQU3VrOWhzcHF0eW0yS19fRWV2X3R5MFhqbG8yVi1ucl9ORmxoQU1CSjBiczRxcnM1S2ZqQXJoYkdEZUhhZ1dmdmhoLVE5MW1Rb1Y3TTc1aThIb25FQnhxMVVUUzh3Q0dnRVdfTGVlR0h3RkI0SnBURnA4VFdyLXhkUFJVaU9mWm1uUE5VMVhhbmpqTl80bC1DV0dZcHI0N3JJTnNNSWdRZWNzY0NxZmPSAdQBQVVfeXFMTlJsLW9qdVAzYTFyREN2VDFvdEZVY2NCbFBOU0lzc0NlSE45LUVsc1BWZWtLTVc0N0xBTVA0Z3BPTTBTbm5FQUZrRzdxdzd2NG5PSHJvU2g0S3RrT2lrUk1kTnRGMWFMY0plQTd4OUlmWXIyT0EyMjJGUUhjTFJ2alp6bGFTcmRka1BVUzFxTDMyMFpIZVN0SG5SUXZhV1FQQmFJd2gtb2RpR3Q5WTRMMGMyRGtzcEFnbnY5RFpUWV91b2VxZnNNMmpnY1cyMkJ2UHBMZWo?oc=5",
+      "published_at": "Mon, 15 Dec 2025 08:00:00 GMT",
+      "published_ts": 1765785600.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tata Consumer Products Limited",
+      "sector": "Consumer Defensive",
+      "industry": "Packaged Foods"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Starbucks CEO Brian Niccol says India is one of its fastest-growing markets, will double down on growth plans - CNBC TV18 - LinkedIn",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSEZSQkI3d3NIcjh1OV9xN1gxX3pISVhMVmdXcEJOaHAzR2NjUnE2VWlvTDl0UUFXbmw3X3pVUFpNQ3B4SVlSdmFEOHVwQktKVUkyUkwxNkNWV2JxNXZrTGlBaGNMYkF4MnllaDRoMGJ3cWtCNzEweWdxNkRwd3p4SExfczFBT1FEVWpaTjd4VFJmelNIa3ZqZUJ1M0QxdmNYdG1CZFJsQmtzc1VNSzJRc3VpVWV0dw?oc=5",
+      "published_at": "Wed, 19 Nov 2025 08:00:00 GMT",
+      "published_ts": 1763539200.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tata Consumer Products Limited",
+      "sector": "Consumer Defensive",
+      "industry": "Packaged Foods"
+    }
+  ],
+  "top_macro_news": [
+    {
+      "source": "google_rss_macro",
+      "title": "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRVNOajVzSUJWU3Q5R2toMjVnZVZMNDhLclozWDdNODc1OU1qbVFjYnFTT0Z1SUZaaExuY3FJajFkdWtOWk5kdWplT0J0Yk9RcnlDVnlvQmJZNC1jVDVHZmRhS0Z0X0JiXzFETHRnaUVac1pEMmZfWE9raXFacFpwR1dSaEVST0Ntc2k1czN4emNQVFlWSHE3V1ZhMW80OUFMYmN6dEwtTkRadm44enc?oc=5",
+      "published_at": "Fri, 13 Mar 2026 15:17:26 GMT",
+      "published_ts": 1773415046.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4951d9372412a82c2dffde85d4c1d&url=https%3a%2f%2fwww.livemint.com%2fmarket%2fstock-market-news%2fus-china-power-shift-global-markets-india-outlook-mirae-asset-swarup-mohanty-11773376870759.html&c=15555016077234823276&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 14:15:00 GMT",
+      "published_ts": 1773411300.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Fed to delay rate cuts as war clouds the outlook",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4951d831d4e7fba8afbafbffe429b&url=https%3a%2f%2fthink.ing.com%2farticles%2ffed-to-delay-rate-cuts-as-war-clouds-the-outlook%2f&c=127436243108543137&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 13:40:00 GMT",
+      "published_ts": 1773409200.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss_macro",
+      "title": "Bitcoin holds above $71,000, defying rising dollar, oil and U.S. bond yields - CoinDesk",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbHB1NE1GZ1dLTWpvOWNseW5QXy1jbWVHcTYzcXF6NWotU0NHOG1XNEUzcDd0ZTctMW1URXZzSW5RQ1djc1h3a0xOM0k2Tkd5TjRWcE0wUXRwZjg4WktmZ2xDWnpLa0RhR1BsRzlrZlVlVzhONmQ0eW51VXJIWFQ3NFJkd0VXZ2VsUnY4VTBuWjU5LXpxX1BPYUIyaEZKQVdEWUU3a25CY0RvN3NrVW10cFNUTWtxSHdhSWI4?oc=5",
+      "published_at": "Fri, 13 Mar 2026 09:34:10 GMT",
+      "published_ts": 1773394450.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Gold Silver Rate Today Live Updates (13 March 2026): Gold, silver futures fall on MCX as rising crude oil prices dim hopes of early rate cuts",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4951e8c8f463595037a3e3e996f3b&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2flive-blog%2fgold-rate-silver-price-today-live-updates-mcx-gold-18k-22k-24k-rate-iran-isreal-us-war-latest-news%2fliveblog%2f129534056.cms&c=4108291931945502437&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 06:00:00 GMT",
+      "published_ts": 1773381600.0,
+      "sentiment_score": -1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Markets Today: Sensex Declines 830 Points, Nifty Slips Below 23,650 Amid Iran-US-Israel War",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4951d9372412a82c2dffde85d4c1d&url=https%3a%2f%2fwww.news18.com%2fbusiness%2fmarkets%2fmarkets-today-sensex-falls-1000-points-in-opening-trade-nifty-below-23600-as-oil-surges-past-100-9956009.html&c=7425380694736114227&mkt=en-in",
+      "published_at": "Thu, 12 Mar 2026 03:39:00 GMT",
+      "published_ts": 1773286740.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Share markets continue to bleed as West Asia tensions dampen sentiment, Sensex over 800 points down",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4951d9372412a82c2dffde85d4c1d&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fmarkets%2fshare-markets-continue-to-bleed-as-west-asia-tensions-dampen-sentiment-sensex-over-800-points-down%2far-AA1Yt9yX&c=14300386732484515462&mkt=en-in",
+      "published_at": "Thu, 12 Mar 2026 03:04:15 GMT",
+      "published_ts": 1773284655.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Trading Day: Oil and yields up, up, and away",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4951e8c8f463595037a3e3e996f3b&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2ftrading-day-oil-and-yields-up-up-and-away%2far-AA1YqbzQ&c=11227118164045986945&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 14:08:08 GMT",
+      "published_ts": 1773238088.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss_macro",
+      "title": "Markets Confront the Economic Impact of the Iran Conflict - Natixis CIB | Natixis Corporate & Investment Banking",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOVpkVlFlOG1lbEdUZEM2VU40clhkdUtsN3l6Z3Rkd2g4WTBNMVNKSFBmMmkyT1M0RGwtZGJxN1ItZVVrMEU3UnVfWFJ6UmpZUVppV09ZelhMWHNvZmhtbFk3ajc0UnlpY0dZeW51MGJnSUU3dGhYRGFQaE44NjJVaFFBVWFyVlNhampDdXFic0dCZXZ3YW5ScWUtWQ?oc=5",
+      "published_at": "Wed, 11 Mar 2026 10:55:26 GMT",
+      "published_ts": 1773226526.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "S&P 500 Faces Valuation Pressure as Oil and Yields Rise Together",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4951e8c8f463595037a3e3e996f3b&url=https%3a%2f%2fwww.investing.com%2fanalysis%2fsp-500-faces-valuation-pressure-as-oil-and-yields-rise-together-200676476&c=11959585435036819535&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 10:53:00 GMT",
+      "published_ts": 1773226380.0,
+      "sentiment_score": -1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    }
+  ],
+  "chart_path": "reports/TATACONSUM_NS_20260313_225234_trend.png",
+  "long_term_chart_path": "reports/TATACONSUM_NS_20260313_225234_long_term.png",
+  "rich_report": "Indian Swing Trading Multi-Agent Report\nIndicator Signal: SELL | Trend: close=1083.60, SMA20=1130.86, SMA50=1152.90. Momentum: MACD=-21.170, Signal=-13.737, Hist=-7.434, ROC10=-6.55%. Oscillators: RSI14=30.4, StochK/D=26.0/11.2, Williams%R=-74.0. Risk: ATR14=26.68, Volume=2855618 vs VolSMA20=1014248. Momentum Score=22.0/100 | MA=Sell, Trend=Falling, RSI=Near oversold, MACD=Bearish.\nPattern Signal: SELL | setup=gradual lower-high structure, slope=-7.5600, breakout_up=False, breakdown=False, bull_engulf=True, bear_engulf=False.\nTrend Signal: NO_TRADE | setup=sideways trend channel, support slope=-0.625, resistance slope=-0.552, price position=-1.36 in channel.\nNews Signal: BUY | combined sentiment=0.09 (stock=0.11, industry=0.15, macro=-0.08). Stock articles=6 (trusted=0, unrated=6); Industry articles=30 (trusted=0); Macro articles=30 (trusted=0). Sentiment strength=0.15. Inference=Recent analysis highlights a healthy balance sheet, supporting the positive sentiment trend. While financial ambiguity and institutional dominance present mixed long-term signals, the most recent update is optimistic. The sector shows moderate positive momentum, providing a slight directional edge for a BUY position based on the favorable health of the company's financials..\nMarket Sentiment: SELL | NIFTY 5D=-2.96%, 10D=-6.55%, 20D=-5.72%, SMA20 gap=-4.2% (below). India VIX=6672.6201171875, 5D chg=-158.1, news sentiment=0.09. Votes: bull=2, bear=3.\nRelative Strength: NO_TRADE | stock 10-bar return=-2.43%, NIFTY=-2.43%, alpha=0.00%.\nUS Trend Signal: SELL | Global risk-off backdrop. SPX 5D/20D=-2.96%/-5.72%, NDX 5D/20D=-2.31%/-3.87%, VIX=1083.60, DXY 5D=14.91%.\nFinancials Signal: NO_TRADE | Fundamentals mixed/neutral. Coverage=0%. ROE=N/A, Margin=N/A, RevGrowth=N/A, EarnGrowth=N/A, D/E=N/A, CurrentRatio=N/A, PE=N/A. Quarterly trends: RevQoQ=N/A, NIQoQ=N/A, OCFQoQ=N/A, DebtQoQ=N/A, FCF=N/A, Cash/Debt=N/A. Analyst target=N/A (N/A upside, ? analysts). 52w Hi/Lo=N/A/N/A, position=N/A.\nMarket Setup Signal: NO_TRADE | Early bearish alignment. Tape read: 5d=-3.0%, 20d=-5.7%, volume ratio=1.39, momentum=22.0. Support gap=N/A and resistance gap=9.0%. Trader read: The trend is clearly bearish, but the RSI (30.4) is approaching oversold territory and the stock is seeing a massive volume surge (volume ratio 1.39) on a move that has already extended significantly. Chasing a breakdown here offers poor risk-reward, as the price is prone to an imminent mean-reversion bounce.\nCatalyst Context Signal: NO_TRADE | Mixed catalyst tape. Backdrop read: news sentiment=0.09, analyst upside=None, 52w position=None. Core read: The provided data is critically insufficient. Almost all fundamental metrics (ROE, PE, margins, growth, debt) are missing, and the ticker appears to be misidentified or data-deprived (price $21.52 vs. actual market reality for Tata Consumer). Without reliable, verifiable financial context or sector performance, a swing trade entry carries unacceptable risk.\nTrader Intel: NO_TRADE | Wait for Mean Reversion or Stabilization | Fading the Climax Sell-off. Thesis: The stock is experiencing a high-volume capitulation event, putting it in a liquidity trap. While the trend is clearly broken, shorting into an oversold RSI on massive volume is a sucker's bet prone to sharp dead-cat bounces. Why now: The combination of heavy volume and technical oversold levels creates a high risk of a counter-trend move that could trap aggressive shorts. Why not now: The risk-reward is currently skewed against the bear; catching a falling knife in a high-volume panic rarely yields a clean exit point.\nMaster Confluence Committee: BUY=0.039, SELL=0.304, NO_TRADE=0.307. Final=SELL, confidence=0.781. Support=['technical', 'pattern', 'market_sentiment', 'us_trend']; Opposing=['news']; Neutral=['trend', 'relative_strength', 'financials', 'market_setup', 'catalyst_context'].\nRisk Plan: size=0 shares, ATR=26.68, stop=N/A, target=N/A.\n**FINAL CONCLUSION**\n- Signal: NO_TRADE\n- Confidence: 0.450\n- Action Bias: Wait / no-trade setup\n- Playbook: Fading the Climax Sell-off\n- Thesis: The stock is experiencing a high-volume capitulation event, putting it in a liquidity trap. While the trend is clearly broken, shorting into an oversold RSI on massive volume is a sucker's bet prone to sharp dead-cat bounces.\n- When to Act: Wait for a structural low or a consolidation base to form after this flush; do not chase the downside.\n- Execution Style: Patience and observation\n- Invalidation: If the price forcefully reclaims the nearest significant breakdown level, the bearish thesis is invalidated.\n- Expected Holding Duration: 2-6 weeks\n- Context: sideways trend channel\n- Risk Flag: High volatility/Oversold conditions\n- Stop-loss: N/A\n- Targets: N/A\n- 52w Range: N/A – N/A\n\nDetailed Agent Reasoning:\n- technical: Strong sell signal (0.84 confidence) driven by price at 1083.60, falling below SMA20 (1130.86) and SMA50 (1152.90). MACD is deeply bearish at -21.17 with a negative histogram. RSI at 30.36 indicates proximity to oversold territory. Significant volume surge (2.85M vs 1.01M SMA20) confirms distribution, supported by a -6.55% 10-day ROC. All technical indicators align with a bearish structural breakdown.\n- pattern: Pattern signals a sell with a gradual lower-high structure and a negative slope of -7.56. Despite a bull engulfing candle, the lack of a formal breakout and the consistent lower-high formation suggest the setup is bearish. The pattern lacks clear reversal expansion, and the negative slope confirms selling pressure persists, maintaining a cautious stance despite isolated bullish candlestick patterns.\n- trend: Trend analysis remains in a NO_TRADE zone with a 0.55 confidence level. The security exhibits a sideways trend channel with a neutral-negative slope (-0.59 average). Price position at -1.36 relative to the channel suggests it is testing the lower boundaries of support (1120.9). Due to the lack of clear directional trending movement and the flat channel slopes, no high-conviction trade is supported.\n- news: News sentiment is net positive at 0.09, driven by an optimistic outlook on the company's balance sheet. Industry sentiment is moderate (0.15), countering a slightly negative macro environment (-0.08). While institutional noise exists, the specific focus on healthy financial fundamentals provides a slight bullish edge, though the overall signal confidence remains low (0.55) due to the lack of high-authority, trusted sources in the current news set.\n- market_sentiment: Sentiment is currently bearish, as evidenced by the technical and pattern agents signaling a sell. The high volume relative to the SMA20 (2.85M vs 1.01M) confirms that institutional participants are actively selling into the recent decline. The sentiment lacks conviction from the macro side, but the price-action data strongly points to a prevailing risk-off mood among market participants.\n- relative_strength: The stock demonstrates significant weakness relative to its own moving averages. With price at 1083.60, it trades substantially below the 20-day (1130.86) and 50-day (1152.90) averages. A 10-day ROC of -6.55% indicates underperformance. The RSI of 30.36 reflects that momentum is lagging compared to the broader index, placing the asset in a clear state of relative distribution.\n- us_trend: Not applicable to this specific asset, as the ticker TATACONSUM.NS operates within the Indian market. Macro-analysis reflects a general -0.08 sentiment score, indicating that broader economic headwinds in the Consumer Defensive sector are impacting performance, though the primary driver remains local technical and volume-based selling pressure.\n- financials: Financials demonstrate a healthy balance sheet, which serves as the primary support for the bullish news sentiment. While specific earnings growth metrics were not provided in the input, the qualitative assessment of financial health acts as a buffer against aggressive downside. This foundational strength prevents a more negative sentiment outlook despite the current bearish technical price action.\n- market_setup: The market setup is characterized by a high-volume decline towards support levels near 1120.9. Current price at 1083.60 reflects a rejection of the recent support, suggesting that the structural downtrend is currently dominating the range. The combination of high volume and negative price momentum indicates that the current technical setup is primed for continued volatility rather than an immediate reversal.\n- catalyst_context: The primary catalyst is the persistent negative momentum and volume-heavy selling reflected in the technicals. The company's underlying financial stability acts as a mild counter-catalyst, providing a floor for valuation, but the current lack of positive macro or industry-wide breakout news leaves the stock vulnerable to technical selling until it finds a firmer base above the 1080 level.\n- confluence: Confluence is weak. Technicals and patterns are bearish, supported by high volume, while news sentiment remains cautiously optimistic due to balance sheet health. The discrepancy between price-action metrics and fundamental health signals causes this lack of alignment. Without a breakout above the 1130 SMA20 resistance, the bearish technical bias is likely to prevail despite the positive financial outlook.\n- risk: Risk is high due to the elevated volatility proxy (21.00) and the ATR of 26.68. The current price position is near technical support, meaning any further breakdown could trigger stop-losses and accelerate the move. The primary risk is a potential 'oversold' bounce given the RSI of 30.36, which may lead to mean reversion if buying interest enters at current discount levels.\n\nGemini Master Reasoning:\nSetup\nTATACONSUM.NS is in a state of high-volume capitulation. The technicals show a clear bearish trend with price trading below both the 20-day and 50-day SMAs. However, with the RSI at 30.4 and a volume surge (ratio 1.39x), the stock is deep in an oversold liquidity trap. The current price structure is extended, and we are witnessing late-stage momentum that often precedes a violent mean-reversion bounce.\n\nCatalyst\nThe catalyst environment is noisy and unreliable. Fundamental data coverage is thin, and the available ticker information presents a conflict between technical price action and general market sentiment. Without a clear fundamental anchor or sector-specific tailwind, the price action is driven purely by short-term technical selling, which lacks the stability required for a high-conviction swing.\n\nFriction\nThe primary friction is the inverse risk-reward profile. Shorting here is a classic \"sucker's bet\"; attempting to chase the breakdown into a deeply oversold RSI invites the risk of being trapped by a sharp, indiscriminate dead-cat bounce. Furthermore, the volatility (ATR 26.68) is elevated, making stops difficult to place without inviting a premature shakeout.\n\nExecution Plan\n- Signal: NO_TRADE.\n- Position Size: 0 shares.\n- Strategy: Patience and observation.\n- Invalidation: If the stock forcefully reclaims the nearest significant breakdown level, the current bearish setup is fully invalidated.\n- Requirement: Wait for the panic to subside. I need to see a structural low or a defined consolidation base form. I will look for a volume dry-up to confirm that the selling pressure has exhausted before considering any long-side mean reversion or structural reversal.\n\nVerdict\nDo not chase this. The edge is weak, and the volatility is too high for a constructive entry. We are moving to the sidelines until the chart provides a clean, volatility-adjusted base. Any attempt to engage now is purely speculative and against the risk management protocol. Wait for a clear bottoming formation.\n\nLLM Token Usage:\n- Input tokens: 14868\n- Output tokens: 2309\n- Total tokens: 17177\n- Estimated cost (USD): 0.0\n\nLONG-TERM OUTLOOK (Based on News, Financials, and Price Data)\n- Stance: LONG_TERM_NEUTRAL\n- Confidence: 0.550\n- Sector: Unknown\n- Data coverage: 3698 daily bars for long-term model.\n- Price trend (1Y/3Y/5Y/10Y): 13.092934089167452% / 49.2048159154475% / 81.47714283903544% / 641.1764693603614%.\n- Long-run quality: CAGR(3Y)=14.268786078251328%, CAGR(5Y)=12.658609505298646%, CAGR(10Y)=22.177761058615154%,\n  Max Drawdown(5Y)=-44.81964696853416%, Vol=30.65210383799692%.\n- Structural trend: price vs 200DMA=-4.0181146602553675%.\n- Note: N/A metrics indicate insufficient history for that exact horizon, not an implied negative value.\n- News signal: avg sentiment=0.09 across stock/industry/macro streams (6/12/10 items).\n- Fundamental location: 52w position=52.5996629217263%, 1Y return=13.092934089167452%.\n- Street context: analyst upside=N/A% from N/A analysts.\n- Macro overlay: India sentiment=SELL, US trend=SELL.\n\n--- VALUATION SNAPSHOT ---\n- P/E (trailing): N/A\n- PEG ratio: N/A\n- Price/Book: N/A\n- ROE: N/A\n- Debt/Equity: N/A\n- EV/EBITDA: N/A\n- EV/Revenue: N/A\n- Book value per share: N/A\n- Enterprise value: N/A\n- Gross margins: N/A\n- Operating margins: N/A\n- EBITDA margins: N/A\n- Total revenue: N/A\n- Total debt: N/A\n- Total cash: N/A\n\n--- QUARTERLY FINANCIAL TRENDS ---\n- Revenue QoQ growth: N/A\n- Net income QoQ growth: N/A\n- Operating cash flow QoQ: N/A\n\n--- DIVIDEND & OWNERSHIP ---\n- Dividend yield: N/A\n- Dividend yield trend: rising\n- Total dividends (1Y): ₹8.25\n- Institutional ownership: N/A\n- Major holders (institutions): N/A%\n\n--- SCORING FACTORS ---\n  → news_sentiment: score=+0.09 × weight=1.00\n  ↑ return_1y: score=+0.13 × weight=0.90\n  ↑ return_3y: score=+0.49 × weight=0.80\n  ↑ return_5y: score=+0.81 × weight=0.70\n  ↑ cagr_5y: score=+1.27 × weight=0.90\n  ↓ sma200_position: score=-0.40 × weight=0.50\n  ↓ max_drawdown: score=-0.45 × weight=0.50\n  ↓ volatility: score=-0.31 × weight=0.40\n  → 52w_position: score=+0.05 × weight=0.30\n  ↑ 1y_change: score=+0.13 × weight=0.70\n  ↑ cagr_10y: score=+2.22 × weight=1.00\n  ↓ us_macro: score=-1.00 × weight=0.35\n  ↓ india_macro: score=-1.00 × weight=0.35\n\n- Composite score: 0.403\n- Secular Growth Forecast: The stock demonstrates solid multi-year CAGR, but faces technical weakness being below the 200DMA and high volatility. Macro indicators for India are currently signaling a sell, creating significant headwinds. Without clear valuation metrics or earnings momentum data, the risk-reward profile is not sufficiently compelling to warrant a long-term position at this juncture.\n",
+  "price_52w": {
+    "high": null,
+    "low": null,
+    "current": 21.52,
+    "position_pct": null,
+    "change_1y_pct": null
+  },
+  "analyst_consensus": {
+    "target_price": null,
+    "target_high": null,
+    "target_low": null,
+    "n_analysts": null,
+    "implied_upside_pct": null
+  },
+  "fundamental_signals": [],
+  "key_price_levels": [
+    {
+      "label": "Resistance 1",
+      "price": 1180.98,
+      "type": "resistance"
+    },
+    {
+      "label": "Resistance 2",
+      "price": 1201.74,
+      "type": "resistance"
+    },
+    {
+      "label": "Resistance 3",
+      "price": 1220.9,
+      "type": "resistance"
+    },
+    {
+      "label": "Current",
+      "price": 1083.6,
+      "type": "current"
+    }
+  ],
+  "momentum_score": 22.0,
+  "qualitative_labels": {
+    "moving_averages": "Sell",
+    "trend_channel": "Falling",
+    "rsi": "Near oversold",
+    "macd": "Bearish"
+  },
+  "valuation_snapshot": {
+    "pe_trailing": null,
+    "peg_ratio": null,
+    "ev_to_ebitda": null,
+    "ev_to_revenue": null,
+    "gross_margins": null,
+    "operating_margins": null,
+    "ebitda_margins": null,
+    "book_value": null,
+    "dividend_yield": null,
+    "enterprise_value": null,
+    "roe": null,
+    "debt_to_equity": null,
+    "price_to_book": null,
+    "total_revenue": null,
+    "total_debt": null,
+    "total_cash": null
+  },
+  "master_reasoning": {
+    "model": "gemini-3.1-flash-lite-preview",
+    "text": "Setup\nTATACONSUM.NS is in a state of high-volume capitulation. The technicals show a clear bearish trend with price trading below both the 20-day and 50-day SMAs. However, with the RSI at 30.4 and a volume surge (ratio 1.39x), the stock is deep in an oversold liquidity trap. The current price structure is extended, and we are witnessing late-stage momentum that often precedes a violent mean-reversion bounce.\n\nCatalyst\nThe catalyst environment is noisy and unreliable. Fundamental data coverage is thin, and the available ticker information presents a conflict between technical price action and general market sentiment. Without a clear fundamental anchor or sector-specific tailwind, the price action is driven purely by short-term technical selling, which lacks the stability required for a high-conviction swing.\n\nFriction\nThe primary friction is the inverse risk-reward profile. Shorting here is a classic \"sucker's bet\"; attempting to chase the breakdown into a deeply oversold RSI invites the risk of being trapped by a sharp, indiscriminate dead-cat bounce. Furthermore, the volatility (ATR 26.68) is elevated, making stops difficult to place without inviting a premature shakeout.\n\nExecution Plan\n- Signal: NO_TRADE.\n- Position Size: 0 shares.\n- Strategy: Patience and observation.\n- Invalidation: If the stock forcefully reclaims the nearest significant breakdown level, the current bearish setup is fully invalidated.\n- Requirement: Wait for the panic to subside. I need to see a structural low or a defined consolidation base form. I will look for a volume dry-up to confirm that the selling pressure has exhausted before considering any long-side mean reversion or structural reversal.\n\nVerdict\nDo not chase this. The edge is weak, and the volatility is too high for a constructive entry. We are moving to the sidelines until the chart provides a clean, volatility-adjusted base. Any attempt to engage now is purely speculative and against the risk management protocol. Wait for a clear bottoming formation."
+  },
+  "llm_usage": {
+    "calls": [
+      {
+        "name": "News Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2625,
+        "output_tokens": 95,
+        "total_tokens": 2720
+      },
+      {
+        "name": "US Trend Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 430,
+        "output_tokens": 87,
+        "total_tokens": 517
+      },
+      {
+        "name": "Market Setup Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2100,
+        "output_tokens": 107,
+        "total_tokens": 2207
+      },
+      {
+        "name": "Catalyst Context Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2016,
+        "output_tokens": 102,
+        "total_tokens": 2118
+      },
+      {
+        "name": "Trader Intel Agent",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1487,
+        "output_tokens": 270,
+        "total_tokens": 1757
+      },
+      {
+        "name": "Batched Agent Reasoning",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1732,
+        "output_tokens": 1114,
+        "total_tokens": 2846
+      },
+      {
+        "name": "Long-Term Outlook Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 932,
+        "output_tokens": 98,
+        "total_tokens": 1030
+      },
+      {
+        "name": "Master Reasoning",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 3546,
+        "output_tokens": 436,
+        "total_tokens": 3982
+      }
+    ],
+    "llm_enabled": true,
+    "skipped_calls": 0,
+    "error_calls": 0,
+    "total_input_tokens": 14868,
+    "total_output_tokens": 2309,
+    "total_tokens": 17177,
+    "pricing": {
+      "input_cost_per_1m": 0.0,
+      "output_cost_per_1m": 0.0,
+      "estimated_total_cost_usd": 0.0
+    }
+  }
+}

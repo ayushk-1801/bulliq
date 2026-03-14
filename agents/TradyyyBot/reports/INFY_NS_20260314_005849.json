@@ -1,0 +1,1779 @@
+{
+  "report_id": "INFY_NS_20260314_005849",
+  "symbol": "INFY.NS",
+  "timeframe": "1d",
+  "forecast_bars": 3,
+  "start_timestamp": "2025-11-13 15:30:00",
+  "end_timestamp": "2026-03-13 15:30:00",
+  "final_signal": "NO_TRADE",
+  "confidence": 0.35,
+  "confluence_scores": {
+    "buy": 0.086,
+    "sell": 0.24,
+    "no_trade": 0.292
+  },
+  "risk_plan": {
+    "summary": "Risk Plan: size=0 shares, ATR=34.13, stop=N/A, target=N/A.",
+    "reasoning_prompt": "Risk protocol:\n1) Estimate recent volatility using ATR.\n2) Define one-unit risk from ATR multiple and cap portfolio risk near 1% per trade.\n3) Convert risk budget into position size.\n4) Anchor stop to volatility-adjusted invalidation and target to asymmetric reward.\n5) Force size=0 when final signal is NO_TRADE.",
+    "llm_reasoning": "Risk is high due to extreme RSI levels (25.2), which invite potential mean-reversion spikes. The ATR of 34.13 indicates elevated volatility, meaning stop-losses must be set wide to avoid noise, potentially deteriorating the risk-reward ratio. Given the low volume, any sudden influx of liquidity could lead to significant slippage or whipsaw movement, rendering short positions vulnerable to rapid reversals.",
+    "position_size": 0,
+    "stop_loss": null,
+    "target": null,
+    "risk_reward": "N/A",
+    "detail": {
+      "capital": 100000.0,
+      "risk_budget": 1000.0,
+      "one_risk": 40.95426897321428,
+      "atr": 34.12855747767857
+    }
+  },
+  "final_conclusion": {
+    "signal": "NO_TRADE",
+    "confidence": 0.35,
+    "when_to_buy": "Price must reclaim the 10-day VWAP on a 15-minute chart with a volume spike > 1.5x average.",
+    "expected_holding_duration": "2-6 weeks",
+    "stop_loss": null,
+    "targets": [],
+    "target": null,
+    "analyst_consensus": {
+      "target_price": null,
+      "target_high": null,
+      "target_low": null,
+      "n_analysts": null,
+      "implied_upside_pct": null
+    },
+    "price_52w": {
+      "high": 1728.0,
+      "low": 1242.6,
+      "current": 1248.3,
+      "position_pct": 1.2,
+      "change_1y_pct": null
+    },
+    "key_price_levels": [
+      {
+        "label": "Resistance 1",
+        "price": 1331.1,
+        "type": "resistance"
+      },
+      {
+        "label": "Resistance 2",
+        "price": 1585.0,
+        "type": "resistance"
+      },
+      {
+        "label": "Resistance 3",
+        "price": 1638.05,
+        "type": "resistance"
+      },
+      {
+        "label": "Current",
+        "price": 1248.3,
+        "type": "current"
+      }
+    ],
+    "playbook_title": "Bottom-fishing avoidance in IT laggards",
+    "thesis": "INFY is in a 'dead zone'. Institutional flow is absent as evidenced by the low volume ratio, meaning any price action is currently retail-driven volatility. We are at a critical support level, but until we see a 'shakeout' candle (lower wick) or a high-volume capitulation, any buy is just catching a falling knife.",
+    "execution_style": "Passive observer; waiting for a trend-reversal pattern",
+    "risk_flag": "High - Vicious mean reversion bounces occur without volume support, leading to immediate traps.",
+    "invalidation": "Fresh breakdown below the ₹1240 level with sustained volume confirming the structural drift.",
+    "simple_summary": "NO_TRADE: Simple view: Signals are mixed, so capital protection is the priority. Wait for clear breakout or breakdown before taking a new position. Confidence is Low. Entry rule: Wait for a clear breakout/breakdown confirmation.",
+    "simple_explanation": "Simple view: Signals are mixed, so capital protection is the priority. Wait for clear breakout or breakdown before taking a new position.",
+    "beginner_plan": [
+      "Step 1: Direction = NO_TRADE.",
+      "Step 2: Entry trigger = Price must reclaim the 10-day VWAP on a 15-minute chart with a volume spike > 1.5x average.",
+      "Step 3: Stop-loss = ₹1230.17 (only after buy trigger confirms)",
+      "Step 4: First target = ₹1585.00 (only after buy trigger confirms)",
+      "Step 5: If trigger fails or invalidation happens, exit and wait."
+    ],
+    "normal_person_plan": [
+      "What to do now: Wait, no trade now.",
+      "Entry: Wait for a clear breakout/breakdown confirmation.",
+      "Before market opens: set price alerts on trigger and invalidation levels.",
+      "Stop-loss plan: ₹1230.17 (only after buy trigger confirms)",
+      "First target plan: ₹1585.00 (only after buy trigger confirms)",
+      "Position sizing: risk only a small amount (around 1% of trading capital).",
+      "If stop-loss is hit after entry, exit immediately. Do not average down."
+    ],
+    "summary": "**FINAL CONCLUSION**\n- Signal: NO_TRADE\n- Confidence: 0.350\n- Action Bias: Wait / no-trade setup\n- Playbook: Bottom-fishing avoidance in IT laggards\n- Thesis: INFY is in a 'dead zone'. Institutional flow is absent as evidenced by the low volume ratio, meaning any price action is currently retail-driven volatility. We are at a critical support level, but until we see a 'shakeout' candle (lower wick) or a high-volume capitulation, any buy is just catching a falling knife.\n- When to Act: Price must reclaim the 10-day VWAP on a 15-minute chart with a volume spike > 1.5x average.\n- Execution Style: Passive observer; waiting for a trend-reversal pattern\n- Invalidation: Fresh breakdown below the ₹1240 level with sustained volume confirming the structural drift.\n- Expected Holding Duration: 2-6 weeks\n- Context: sideways trend channel\n- Risk Flag: High - Vicious mean reversion bounces occur without volume support, leading to immediate traps.\n- Stop-loss: N/A\n- Targets: N/A\n- 52w Range: ₹1242.60 – ₹1728.00\n- Current Price Context: ₹1248.30\n- Approx Risk:Reward to first target: N/A\n- Teaching note: prioritize process over prediction. Enter only after trigger confirmation, size by invalidation distance, and review whether the thesis is invalidated before averaging or adding."
+  },
+  "long_term_outlook": {
+    "stance": "LONG_TERM_BULLISH",
+    "confidence": 0.65,
+    "score": -0.062,
+    "summary": "LONG-TERM OUTLOOK (Based on News, Financials, and Price Data)\n- Stance: LONG_TERM_BULLISH\n- Confidence: 0.650\n- Sector: Unknown\n- Data coverage: 2716 daily bars for long-term model.\n- Price trend (1Y/3Y/5Y/10Y): -25.095861733791914% / -14.061260952361742% / 8.780360361855365% / 195.88018183508186%.\n- Long-run quality: CAGR(3Y)=-4.925731558141544%, CAGR(5Y)=1.6974582523581194%, CAGR(10Y)=11.458087739040046%,\n  Max Drawdown(5Y)=-36.549813338935685%, Vol=26.501752404097033%.\n- Structural trend: price vs 200DMA=-17.577246822481474%.\n- Note: N/A metrics indicate insufficient history for that exact horizon, not an implied negative value.\n- News signal: avg sentiment=0.20 across stock/industry/macro streams (15/12/10 items).\n- News decomposition: stock=N/A, industry=0.162925, macro=-0.059287007015714134.\n- Fundamental location: 52w position=1.2%, 1Y return=-25.095861733791914%.\n- Street context: analyst upside=N/A% from N/A analysts.\n- Macro overlay: India sentiment=NO_TRADE, US trend=SELL.\n\n--- VALUATION SNAPSHOT ---\n- P/E (trailing): 1599.47\n- PEG ratio: N/A\n- Price/Book: 450.79\n- ROE: 28.2%\n- Debt/Equity: 0.09\n- EV/EBITDA: 1152.44\n- EV/Revenue: 254.36\n- Book value per share: 2.77\n- Enterprise value: N/A\n- Gross margins: 30.5%\n- Operating margins: 21.1%\n- EBITDA margins: N/A\n- Total revenue: 19,277,000,000\n- Total debt: 962,000,000\n- Total cash: 2,861,000,000\n\n--- QUARTERLY FINANCIAL TRENDS ---\n- Revenue QoQ growth: N/A\n- Net income QoQ growth: N/A\n- Operating cash flow QoQ: N/A\n\n--- DIVIDEND & OWNERSHIP ---\n- Dividend yield: 7.5%\n- Dividend yield trend: rising\n- Total dividends (1Y): ₹45.00\n- Institutional ownership: 49.2%\n- Major holders (institutions): N/A%\n\n--- SCORING FACTORS ---\n  ↑ news_sentiment: score=+0.20 × weight=1.00\n  ↓ return_1y: score=-0.25 × weight=0.90\n  ↓ return_3y: score=-0.14 × weight=0.80\n  → return_5y: score=+0.09 × weight=0.70\n  ↑ cagr_5y: score=+0.17 × weight=0.90\n  ↓ sma200_position: score=-1.76 × weight=0.50\n  ↓ max_drawdown: score=-0.37 × weight=0.50\n  ↓ volatility: score=-0.27 × weight=0.40\n  ↓ 52w_position: score=-0.98 × weight=0.30\n  ↓ 1y_change: score=-0.25 × weight=0.70\n  ↑ dividend_yield: score=+0.75 × weight=0.40\n  ↑ cagr_10y: score=+1.15 × weight=1.00\n  ↑ operating_margins: score=+0.21 × weight=0.90\n  ↑ roe: score=+0.28 × weight=1.00\n  ↑ gross_margins: score=+0.30 × weight=0.70\n  → debt_to_equity: score=-0.04 × weight=0.90\n  ↓ trailing_pe: score=-0.99 × weight=0.50\n  ↓ price_to_book: score=-0.99 × weight=0.50\n  ↓ us_macro: score=-1.00 × weight=0.35\n--- DIRECT NEWS EVIDENCE (Top Headlines Used) ---\n- Company 1: Top stocks in news: Infy, AEL, Waaree, IndiGo, BoB, HindZinc, AB Capital, SEDEMAC, Polycab - Business Today\n- Company 2: Infy share price: AI boon or bane for Infosys? What's ahead after Anthropic collaboration - MSN\n- Company 3: Infosys Limited (INFY) Collaborates With Anthropic - Finviz\n- Industry 1: Global Green Hydrogen Prices Signal Major Energy Shift in 2026 - openPR.com\n- Industry 2: Infosys Expands MInfosys Expands Mohali Development Center, Creates 3,000 Jobs - PSU Connect\n- Industry 3: Infosys Vs TCS: Which IT Company Has More Potential to Utilize the $400 Billion AI Opportunity? - Trade Brains\n- Macro 1: Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView\n- Macro 2: Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty\n- Macro 3: Fed to delay rate cuts as war clouds the outlook\n\n- Composite score: -0.062\n- Secular Growth Forecast: Core drivers: Anthropic AI collaboration and Mohali expansion. Risks: Fed rate delay and sector-wide volatility. Evidence for secular thesis remains intact via strong margins and rising dividend yield. 3-5 Year Forecast: Base: 12-15% CAGR via AI-led enterprise modernization; Bull: 20%+ via market share gains in global digital transformation; Bear: 5% stagnation if AI integration fails.\n",
+    "llm_reasoning": "Core drivers: Anthropic AI collaboration and Mohali expansion. Risks: Fed rate delay and sector-wide volatility. Evidence for secular thesis remains intact via strong margins and rising dividend yield. 3-5 Year Forecast: Base: 12-15% CAGR via AI-led enterprise modernization; Bull: 20%+ via market share gains in global digital transformation; Bear: 5% stagnation if AI integration fails.",
+    "evidence": {
+      "history_bars": 2716,
+      "history_start": "2015-03-17 00:00:00",
+      "history_end": "2026-03-13 00:00:00",
+      "coverage_ratio": 1.0,
+      "sparse_long_term": false,
+      "fundamentals_sparse": false,
+      "news_avg_sentiment": 0.201,
+      "news_stock_avg_sentiment": null,
+      "news_industry_avg_sentiment": 0.163,
+      "news_macro_avg_sentiment": -0.059,
+      "stock_news_count": 15,
+      "industry_news_count": 12,
+      "macro_news_count": 10,
+      "headline_preview": [
+        "Top stocks in news: Infy, AEL, Waaree, IndiGo, BoB, HindZinc, AB Capital, SEDEMAC, Polycab - Business Today",
+        "Infy share price: AI boon or bane for Infosys? What's ahead after Anthropic collaboration - MSN",
+        "Infosys Limited (INFY) Collaborates With Anthropic - Finviz",
+        "Global Green Hydrogen Prices Signal Major Energy Shift in 2026 - openPR.com",
+        "Infosys Expands MInfosys Expands Mohali Development Center, Creates 3,000 Jobs - PSU Connect",
+        "Infosys Vs TCS: Which IT Company Has More Potential to Utilize the $400 Billion AI Opportunity? - Trade Brains",
+        "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+        "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+        "Fed to delay rate cuts as war clouds the outlook"
+      ],
+      "return_1y_pct": -25.1,
+      "return_3y_pct": -14.06,
+      "return_5y_pct": 8.78,
+      "return_10y_pct": 195.88,
+      "cagr_3y_pct": -4.93,
+      "cagr_5y_pct": 1.7,
+      "cagr_10y_pct": 11.46,
+      "price_vs_sma200_pct": -17.58,
+      "max_drawdown_5y_pct": -36.55,
+      "annualized_volatility_pct": 26.5,
+      "position_52w_pct": 1.2,
+      "change_1y_pct": -25.095861733791914,
+      "analyst_upside_pct": null,
+      "analyst_count": null,
+      "india_sentiment_signal": "NO_TRADE",
+      "us_trend_signal": "SELL",
+      "dividend_yield": 0.07530240833383368,
+      "dividend_yield_trend": "rising",
+      "peg_ratio": null,
+      "operating_margins": 0.21149556466255123,
+      "held_pct_institutions": 0.49207002,
+      "institutions_pct": null,
+      "rev_qoq": null,
+      "ni_qoq": null,
+      "ocf_qoq": null,
+      "sector": "Unknown",
+      "scoring_factors": [
+        [
+          "news_sentiment",
+          0.201,
+          1.0
+        ],
+        [
+          "return_1y",
+          -0.251,
+          0.9
+        ],
+        [
+          "return_3y",
+          -0.141,
+          0.8
+        ],
+        [
+          "return_5y",
+          0.088,
+          0.7
+        ],
+        [
+          "cagr_5y",
+          0.17,
+          0.9
+        ],
+        [
+          "sma200_position",
+          -1.758,
+          0.5
+        ],
+        [
+          "max_drawdown",
+          -0.365,
+          0.5
+        ],
+        [
+          "volatility",
+          -0.265,
+          0.4
+        ],
+        [
+          "52w_position",
+          -0.976,
+          0.3
+        ],
+        [
+          "1y_change",
+          -0.251,
+          0.7
+        ],
+        [
+          "dividend_yield",
+          0.753,
+          0.4
+        ],
+        [
+          "cagr_10y",
+          1.146,
+          1.0
+        ],
+        [
+          "operating_margins",
+          0.211,
+          0.9
+        ],
+        [
+          "roe",
+          0.282,
+          1.0
+        ],
+        [
+          "gross_margins",
+          0.305,
+          0.7
+        ],
+        [
+          "debt_to_equity",
+          -0.043,
+          0.9
+        ],
+        [
+          "trailing_pe",
+          -0.987,
+          0.5
+        ],
+        [
+          "price_to_book",
+          -0.994,
+          0.5
+        ],
+        [
+          "us_macro",
+          -1.0,
+          0.35
+        ]
+      ]
+    }
+  },
+  "agent_outputs": {
+    "technical": {
+      "signal": "SELL",
+      "confidence": 0.68,
+      "summary": "Indicator Signal: SELL | Trend: close=1248.30, SMA20=1315.85, SMA50=1488.73. Momentum: MACD=-62.148, Signal=-66.387, Hist=4.239, ROC10=-3.16%. Oscillators: RSI14=25.2, StochK/D=5.2/7.1, Williams%R=-94.8. Risk: ATR14=34.13, Volume=7365621 vs VolSMA20=15584073. Momentum Score=25.0/100 | MA=Sell, Trend=Falling, RSI=Oversold, MACD=Bullish.",
+      "reasoning_prompt": "Indicator reasoning protocol:\n1) Map structural trend using relative price location vs SMA20/50/200 and slope analysis.\n2) Decode momentum quality using MACD histogram acceleration/deceleration and ROC10-ROC20 comparisons.\n3) Assess oscillator behavior (RSI/Stoch/WillR) for range-specific exhaustion vs strong trend continuation.\n4) Verify professional participation via volume-over-average filters and spread analysis.\n5) Filter noise using ATR-based volatility regimes (reduce conviction in 'wide and loose' tape).\n6) Enforce strict confluence: if trend and momentum disagree without a reclaim setup, maintain NO_TRADE posture.",
+      "llm_reasoning": "Signal is SELL with 0.68 confidence. Price at 1248.30 remains significantly below SMA20 (1315.85) and SMA50 (1488.73), confirming a bearish trend. RSI at 25.2 indicates deep oversold territory, yet momentum is weak (MACD -62.15). Volume at 7,365,621 is only 47% of the 20-day average (15,584,073), suggesting a lack of institutional conviction for a reversal despite the oversold state.",
+      "detail": {
+        "bullish_points": 2,
+        "bearish_points": 6,
+        "delta": -4,
+        "rules": {
+          "trend_alignment": false,
+          "macd_alignment": true,
+          "rsi_bias": "bearish",
+          "stoch_alignment": false,
+          "willr_bias": "bearish",
+          "volume_confirmation": false
+        }
+      },
+      "price_levels": {
+        "levels": [
+          {
+            "label": "Resistance 1",
+            "price": 1331.1,
+            "type": "resistance"
+          },
+          {
+            "label": "Resistance 2",
+            "price": 1585.0,
+            "type": "resistance"
+          },
+          {
+            "label": "Resistance 3",
+            "price": 1638.05,
+            "type": "resistance"
+          },
+          {
+            "label": "Current",
+            "price": 1248.3,
+            "type": "current"
+          }
+        ],
+        "nearest_resistance": 1331.1,
+        "nearest_support": null,
+        "resistance_1": 1331.1,
+        "resistance_2": 1585.0,
+        "resistance_3": 1638.05,
+        "support": null,
+        "breakdown_zone": null
+      },
+      "momentum_score": 25.0,
+      "qualitative_labels": {
+        "moving_averages": "Sell",
+        "trend_channel": "Falling",
+        "rsi": "Oversold",
+        "macd": "Bullish"
+      },
+      "price_range": {
+        "high": 1728.0,
+        "low": 1242.6,
+        "position_pct": 1.2
+      },
+      "metrics": {
+        "close": 1248.300048828125,
+        "rsi14": 25.200940086782566,
+        "macd": -62.1477995418586,
+        "macd_signal": -66.38669932109254,
+        "macd_hist": 4.2388997792339325,
+        "sma20": 1315.854998779297,
+        "sma50": 1488.7300048828124,
+        "roc10": -3.164993214685896,
+        "atr14": 34.12855747767857,
+        "stoch_k": 5.210303446198136,
+        "stoch_d": 7.115703608415682,
+        "willr14": -94.78969655380186,
+        "volume": 7365621.0,
+        "volume_sma20": 15584073.3
+      }
+    },
+    "pattern": {
+      "signal": "SELL",
+      "confidence": 0.6560367911804015,
+      "summary": "Pattern Signal: SELL | setup=range breakdown with negative slope, slope=-4.8933, breakout_up=False, breakdown=True, bull_engulf=False, bear_engulf=False.",
+      "reasoning_prompt": "Pattern reasoning protocol:\n1) Detect breakout/breakdown against prior 12-bar range, not single-candle spikes.\n2) Confirm direction with local slope and bar-structure continuation.\n3) Use engulfing patterns as confirmation, not standalone trigger.\n4) Treat flat-slope compression as NO_TRADE until expansion is confirmed.\n5) Down-rank weak breakouts lacking structure confirmation.",
+      "llm_reasoning": "Signal is SELL with 0.65 confidence. The security exhibits a clear range breakdown with a negative slope of -4.89. The structure fails to show bullish engulfing patterns to signal exhaustion, confirming the bearish continuation. The breakdown is supported by price structure rather than isolated spikes, reinforcing the downward bias.",
+      "detail": {
+        "setup": "range breakdown with negative slope",
+        "slope": -4.89332904237685,
+        "breakout_up": false,
+        "breakdown": true,
+        "bullish_engulfing": false,
+        "bearish_engulfing": false,
+        "volatility_proxy": 23.069719769980356
+      }
+    },
+    "trend": {
+      "signal": "NO_TRADE",
+      "confidence": 0.5190030847384861,
+      "summary": "Trend Signal: NO_TRADE | setup=sideways trend channel, support slope=-3.437, resistance slope=-3.263, price position=-3.21 in channel.",
+      "reasoning_prompt": "Trend reasoning protocol:\n1) Fit support and resistance trendlines over the visible swing window.\n2) Estimate channel slope (regime direction) and channel width (trend quality).\n3) Locate current price in channel and prefer pullback entries aligned with slope.\n4) If slope is weak/flat, classify as sideways and favor NO_TRADE.\n5) Avoid chasing signals near channel extremes against risk-reward logic.",
+      "llm_reasoning": "Signal is NO_TRADE with 0.51 confidence. Price is caught in a sideways trend channel with an average slope of -3.35 and channel width of 38.45. Current position (-3.21) relative to channel boundaries indicates an inability to sustain directional momentum. Neutral stance is maintained as the channel slope is too weak to confirm a definitive trend regime.",
+      "detail": {
+        "setup": "sideways trend channel",
+        "slope_avg": -3.3498,
+        "channel_width": 38.4474,
+        "channel_position": -3.2064
+      },
+      "metrics": {
+        "support_slope": -3.4370052660912767,
+        "resistance_slope": -3.2625707963319885,
+        "channel_position": -3.206,
+        "last_support": 1371.58,
+        "last_resistance": 1410.03
+      }
+    },
+    "news": {
+      "signal": "NO_TRADE",
+      "confidence": 0.55,
+      "summary": "News Signal: NO_TRADE | combined sentiment=0.20 (stock=0.30, industry=0.16, macro=-0.06). Stock articles=18 (trusted=0, unrated=18); Industry articles=30 (trusted=0); Macro articles=30 (trusted=0). Sentiment strength=0.30. Inference=Evidence is mixed. While Infosys has positive fundamental catalysts like its Anthropic collaboration for AI, the broader sector is struggling, as evidenced by recent sharp declines in the Nifty IT index and 52-week lows for major players. Given the lack of clear directional momentum and conflicting sector-wide headwinds, a neutral stance is advised..",
+      "reasoning_prompt": "News reasoning protocol:\n1) Collect company-specific headlines across multiple providers using diversified queries.\n2) Filter spam/listicle/noise domains and low-relevance stories.\n3) Build a global macro stream (rates, inflation, oil, USD, broad risk sentiment).\n4) Build industry/sector thematic stream (demand cycle, market share, regulation, capacity, pricing).\n5) Weight sentiment by source quality, exponential recency decay, and relevance confidence.\n6) Apply content-similarity dedup to remove near-duplicate headlines.\n7) Use LLM to infer final bias from company + industry + macro evidence and return NO_TRADE under conflict.",
+      "llm_reasoning": "Signal is NO_TRADE with 0.55 confidence. Sentiment is mixed at 0.20, balancing company-specific positives like the Anthropic AI collaboration against broad sector headwinds. With 18 stock-specific and 60 total industry/macro articles lacking high-trust sources, evidence is inconclusive. Conflict between micro-level AI initiatives and negative Nifty IT index trends necessitates a neutral posture.",
+      "detail": {
+        "company_context": {
+          "symbol": "INFY.NS",
+          "company_name": "Infosys Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services",
+          "business_summary": "Infosys Limited, together with its subsidiaries, provides consulting, technology, outsourcing, and digital services in North America, Europe, India, Switzerland, and internationally. It provides digital marketing and digital workplace, digital commerce, digital experience and interactions, and metaverse; data analytics and AI, applied AI, generative AI, and sustainability; blockchain, engineering, and Internet of Things; enterprise agile DevOps, API economy and microservices, application modernization, cloud, digital process automation, digital supply chain, Microsoft business application and "
+        },
+        "stock_article_count": 18,
+        "industry_article_count": 30,
+        "macro_article_count": 30,
+        "trusted_count": 0,
+        "trusted_industry_count": 0,
+        "unrated_count": 18,
+        "trusted_macro_count": 0,
+        "industry_avg_sentiment": 0.162925,
+        "sentiment_strength": 0.3010777777777778,
+        "llm_decision_why": "Evidence is mixed. While Infosys has positive fundamental catalysts like its Anthropic collaboration for AI, the broader sector is struggling, as evidenced by recent sharp declines in the Nifty IT index and 52-week lows for major players. Given the lack of clear directional momentum and conflicting sector-wide headwinds, a neutral stance is advised."
+      },
+      "top_news": [
+        {
+          "source": "google_rss",
+          "title": "Top stocks in news: Infy, AEL, Waaree, IndiGo, BoB, HindZinc, AB Capital, SEDEMAC, Polycab - Business Today",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPclVxZ1EzRTZtTzlfTXkxVVpoVVo4aTRaVHBRcVBDSG1aMEliMTVibVRCOGZDYkR0WU9saUU0aU1vdkRzZng1bTZZdG15c0NWVGRGOHZkUlYyckd3UnRpRmtha0prS2NUaG50eHVCLU1zS19pYnd5OEQzNVBJT2hmcVVLS25iQVFxTzBuV0p5TEUzYlNPSkxUMzNPamJEc3lhMWxtak8tc2x3RmMwUUdGd3I5WlNELUZYekRkRnBiZWd6ZVMxOW1YOGpxUlM5bmRoZTByUDlRdGNvd3pQdElmcE1zQdIB6AFBVV95cUxOaG41NVd6QWU1UVdZbFdPdUlzOG1wZjBvNmRHRFZPNUhnRmh3b19qT0hXaFkxTU1sOThpNlQtVE1FN3dJSlFZRDVQeXk5M1R6am9jdEZiZ3cyNG8ybEZkbFlHaENFa1Z1MDRSQVpSQ3NPTlYwQ3A5WEN1ak9mRTh3LWpwTG5GOUZsd1RhRlF3UE9MbDBMNnB3VkRfUFA5YzBWSDJvTnFBdUlqY1FoS0tsNkc1QkNqeVEzNUlleFAwM0M4OG1ZM3I5RHZyTnRZQURsMllsSVg5Q1lEcWFHUExMOURzTU82dkdo?oc=5",
+          "published_at": "Wed, 11 Mar 2026 02:15:53 GMT",
+          "published_ts": 1773195353.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Infy share price: AI boon or bane for Infosys? What's ahead after Anthropic collaboration - MSN",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNeVFBUUk1Vi1TZGRFUGJ5WV9zSFdaNDlYaEFfNGt4Nm9lU2pxbG14Vlh4S2U4QmI5czVJNldQekxJWWZlRmVLR3pvc212N3JLeU0xdXpnQlFXV0V6cUhtaGtFb3QtZGl4YjBmOU5UUTNVd200b3JIWEVqdGhvQmNQVkt0ZEU2VFd6dU1GQVBIQ003b3FPa19xWDZCcWlRaERLX3hsZjFYSWdwZWF0bmgzQ1diSm1YaFdFN1U5eXhNN2s5TFpPWm53UXpFbWdjVTltdUpRRjZuZlhyUQ?oc=5",
+          "published_at": "Sat, 07 Mar 2026 12:12:20 GMT",
+          "published_ts": 1772885540.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Infosys Limited (INFY) Collaborates With Anthropic - Finviz",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNUzFLTDJXTU9hdEhfbkU5WXpKeVBuTUd1U0VPQko5RVNGdjAtWGY4U3Y2bHV3OG5XWWpvdERkaHVOanFOT2dPYXBFSTgtYjREbHd3VVk3TGo0VURxaFdxR0g5QldwM2JUTl9ERWMzUllnaGlNb3k4VEhLMWw5eDJxV3JJdVpRUQ?oc=5",
+          "published_at": "Sun, 22 Feb 2026 08:00:00 GMT",
+          "published_ts": 1771747200.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Top stocks in news: Infy, AEL, Eternal, BHEL, Dabur, Hexaware, Ola Electric, Tata Steel - Business Today",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxObGJtUU4wVzEwbFVBcEp1TUJCZUF6cnZ4UWxxeFdrajJKT2oxUHZGQ2FDa2cxT2dNbDBOUWlGVkJmZXQ4Rk0xak9CR2p6WjFjM0JxRFZGSEZUY1lfaG1BTGFRdlBRb1hpOVlVSzNzTzZEbzJ5Y2lMaUpPRHNyaUt5ZlN1Q2xVeFFxYUNrNDdZcFM3MTFSNDRKZlB2YnZ6eFVkZGxLZkliZkM3dGt4MV93VXVPY0J3WV9zUU9JWFpObDd5Z1d5UnlCTE9BdGJVNEtiTFFCSWw4RDZYRldNMmVhZ9IB5gFBVV95cUxOUTlsSC11TTJTemFNdU1iMWR4WVBxTFgxajEtRWVPNFhpVXJ4OWF2M2hmeWVUd2w1cG5zY2NfZXRWQWliSjB6OHkzSDl1Ty1YQmZfZ2V6eFFtWXA5amlsU3FFcVBmNTdBN1NLWThTVDdBcEJGTGtiYklraUIySUoxVldfRnFuZkFzdHZIMVZ1RUN6UmNVeXVpcFltWi02S3lHa0I5SXhqVVFqRzhGc243cFdwb1hJZDJlLW5GVFJTeVM5NVVoSk5pVS1KUkRPdEFSWEhQV0s5bjJjdU9DLVdnX190NEZydw?oc=5",
+          "published_at": "Wed, 18 Feb 2026 08:00:00 GMT",
+          "published_ts": 1771401600.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss",
+          "title": "Nifty IT index tanks 10% in 2 days; TCS, Infy, Wipro slump to 52-week lows",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b2a5264c422f9be22c9f24d03c71&url=https%3a%2f%2fwww.business-standard.com%2fmarkets%2fnews%2ftech-stocks-sell-off-nifty-it-index-tanks-10-in-2-days-tcs-infosys-wipro-slump-to-52-week-lows-126021300467_1.html&c=14085422156593563758&mkt=en-in",
+          "published_at": "Thu, 12 Feb 2026 20:40:00 GMT",
+          "published_ts": 1770928800.0,
+          "sentiment_score": -1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Top stocks in news: Infy, Vedanta, ONGC, Bajaj Finance, HZL, Marico, RVNL, Shadowfax, BEL - Business Today",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQcTV1TG9nbGV3ZmN1d254d1RSb3dzMlZyZ0dFdDg4NGJURjhHSy1HQm9mTlNXMjhRdnROclJmT0o5bUdYT21HTng0WWpsSTBOYVdSMFVGM0JYdXUwTFJhOWNRdGFRX0VnQkdhUTI5MDVKbld4Wm5hUXliX2d5UmEzb21tcm95ODJ6Z2prNDdPOFF3OXVqTU1zRWlXNG5NbXUzZ3RhZUVuQUt4bzB6ZnBTTDNOV20tc1ZSS2FpdXNBamR6OHZGU0JlLTIweUxsTUV6S1NpR2xnS2lDNXh6clF5QUlB0gHnAUFVX3lxTFBSZE9UanFpZkJ2MEszLTVOdG9mdjUzQUtReVFNb0hhN3dkeGxySVVLdVhMVDBvMmN3Y1JWY3lTSUxZWHhENUd4TGpzcXdlWHFNT1N3b0VmQWNWVENMUzJROG9zd2FYbnRkcjZqXzBKMUd0WkVBaUlvcng3VTVRbXRBWFR6aGxSSlVuQXZIYjI2UHB1TzFORXFRMlpIR1JVQzlmNkFydHA1N3E2WUFpam5Ka1N4Mlktc2Q2SDZUNl84VnZVVTcyVVVzWTA4WHdhX29Zcm9rbDk3OWpOSmN2RWhtMDlQSGtMSQ?oc=5",
+          "published_at": "Wed, 28 Jan 2026 08:00:00 GMT",
+          "published_ts": 1769587200.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Earnings revival to boost Indian equities in CY26; SBI, Infy top MOFSL bets - Business Standard",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOTkZrQkJ1SEplSHN4V1lrX0NUWk9yZlhQZWY4R1RJOHBoNXF0TEhHTFR2ZlFoODhTcXhNUURzOFp1Z1luR1cxT203aFNpdTltSEp2TkNabndHYjV2WFlGcVltTHJ6VU54YmRwS3BrN21Od3ZneWZTMDJFSTAyX2lzSEIwZGw1ZEg1R3lLNWo1TDh3SHJmS3g0UTJObFZVQnVNa3RBelhwcEQzNzBZZ0ItZjBQUUVmYTdMQUR3ZHcyMkhaMThNemtvNnZYMDhMSDlZOWZQWlhn0gHbAUFVX3lxTFBueUtYQ01TeHhHNk1zQnpLVkZOSW9hT0EydVRqdFZxSnd1UTVQUzJ3OUJsd3ZSMGtyX2cxUU9wZ25oV2MySWw5UFVjQ3MwQWh2LXFaUTBKQWZoaklkaXJUa3VtZG5xUHhrSVQ5bVR2U1JrRG55aXYycjNiejhRQy1VemtNeWdmZnBWLVRQN1lCeHZxaEVuVS1YN05tMWVqZ0dwaUNBNVA1b0t6aVF2Y09Iam9pV3BkYTU2T0stLWtVQlR6bV9kVklUVGNDQnExcjE4SUVxbUhaOWVuMA?oc=5",
+          "published_at": "Fri, 02 Jan 2026 08:00:00 GMT",
+          "published_ts": 1767340800.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Infosys Share Price Today (23 Dec 2025): INFY Stock Dips on BSE After ADR Whiplash, Buyback Completion, and Fresh Q3 Results Catalyst - TechStock²",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPNWR6SmJwcWhUSU1KZkppZXhjYkRTbjVpM3lCajh2WkJjTllib01rajFMUHI0Vl80ZzFKWW5scFpMTTRkS19vVGFrem9RbS1ZSm4yVi1ueXVrRlV4czBma2diV3I0QTQ0RmV3a1J0b2VfZGlfeUxtYi1HQ19KS25aUnk2MGdiWkdJMjA3VzNTS3RSOWpjcHAtZ3pEamtaUEtfMzhmeUwzWHRpWTBNOWZIWUphTmN5cXFfR2JKYW81aVphUXdKSHVtanpSR1FYWi1RdS03Y2pvWnN6Q1RsdWdCZEYzdw?oc=5",
+          "published_at": "Tue, 23 Dec 2025 08:00:00 GMT",
+          "published_ts": 1766476800.0,
+          "sentiment_score": 2.4,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Infosys Share Price Today (Dec 22, 2025): INFY Stock Jumps After Wild ADR Spike; McCamish Settlement, Buyback and Analyst Targets in Focus - TechStock²",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNLWFxSUItN0JHUVBjSW41TjNDeF8zOERNbko2UGhmV0w3MUhwOU5UYXZ5VXR6RkZxTHV2b20zaXBEbHVFYjBLSHRSMGJWeGR5VmFCZDY5MklIMmswT2R1MEFNMjlMT0NyRVFhRUFjNVZDcVJ3N3VNVjlIUy1aNHE2b3BMd0I5QW5UY1pjRnVaV2tGTmdfa21VOFRaakpvRXplVzBsVDZ3QlFvOG1LZW5NVWNGUXBCa2dTWnpicndTWmEzU2N0VXRXTlBVVU1JdjRobFg3WHlMTUZNQkNiRjY1QXZxSm5tUDZF?oc=5",
+          "published_at": "Mon, 22 Dec 2025 08:00:00 GMT",
+          "published_ts": 1766390400.0,
+          "sentiment_score": 2.4,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Infosys Stock News Today (Dec 21, 2025): INFY’s “Mystery” ADR Spike, Company Clarification, and Analyst Forecasts Ahead of Q3 Results - TechStock²",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQMEZrU1MzYkN1WHd0VXA3SEJOTUVQNHhDSDRvTFp6V1l2VHRyREU0TlVQdTJBNk9LRk96dHJWWXNPdUdwc3k5S1ByMEtRQ05CNm9kMWFtYV8zSHgySEZXSjNLajFySUhVdTVXdmJjbGxmX0p4a1NFTE5lbVk4VlBteGdYVGw2R1RBTlFrRzhReWNMSkdLMEp2YW9DeGdWSHBkM2JCT1BBMGRVZkdkUzducm5VMVZFS3BuY2RkdFdRLVByYURpVTVfTFZBWWJHR0RxZjBBNVZpVUlaeWp0bFE?oc=5",
+          "published_at": "Sun, 21 Dec 2025 08:00:00 GMT",
+          "published_ts": 1766304000.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Infosys Limited Stock (NSE: INFY, NYSE: INFY): What Triggered the Sudden ADR Spike, Latest News, Analyst Targets, and the Road to Q3 FY26 - TechStock²",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNNDUxY0hxbFlvV291SnQ3U18tYUpYel9JS2FXYTJKdVZOZ2dhakY4aXVCeUctMHE1U0w0Q2RycmFjU2JURnMzRzZ0RWFHU0QzX2hwak5iOU9tUmU0N3dsWmV1VGVoYzB0YWtQRTFMZTVoWVNDeXZqc2hlSDJhSS1TV2NBU3F5T1JJN2VjUnBNQ2UzNlpINU80cFVGMW9VLW9ZekZJcmIzc0xhQlctNGwzbFVIZ3JQMXJfWHBBVkR3SGxhejYtTWlaLUlBRV9JUXJUa0luVVEyejNOTmhKOHVtblhRUQ?oc=5",
+          "published_at": "Sat, 20 Dec 2025 08:00:00 GMT",
+          "published_ts": 1766217600.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Infosys Stock (INFY) News Today: Buyback Completed, Promoter Sale, Analyst Targets and What Investors Watch Next (Dec. 13, 2025) - TechStock²",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPTDl2ZWdIZkRKWW1SMWhmN3BmTTdHMFU2Qzd5cmNLajBKZ01ZUmhPZ2JjRnJrYVJiNFEzTG9FR3dxSUVBY2VELXI5V213UTV3VjU5SzZ6c2w5NnJ0WTFjS1diQlI3RVpvcFdPZ19vaGROSDFHTlc2WlBMOE9rNkcwNWpfNHVQOGZSVUxtN2w5R1loTHNzanB5N3NGVWVTdHYzeFpXdk91cWVTSk54NW14UmQtX2pLNXFrX0N5SmxEOFJPZDRteFExY2tXcnBoYWlMcWhkRjZjTQ?oc=5",
+          "published_at": "Sat, 13 Dec 2025 08:00:00 GMT",
+          "published_ts": 1765612800.0,
+          "sentiment_score": 2.4,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Here's Why Infosys (INFY) is a Strong Momentum Stock - Nasdaq",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVDhNazEyX2Rsc1ByOVRYNTB1OFA4bUtXUEg2U3E4ZnZxbW04cWZTMkMxXzBmeXZEZk1USjdBeEIwWnJpeG5GUlp5dXFMZTlFMWVRNmctSVRXQXRrdzZvQUdNSXZTT25WZ1BXVVBpZ1lUN0cwWWZjNmJ6SEJfcF94QnN3?oc=5",
+          "published_at": "Wed, 10 Dec 2025 08:00:00 GMT",
+          "published_ts": 1765353600.0,
+          "sentiment_score": 2.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Infosys Share Price Today, 8 December 2025: Q2 FY26 Results, ₹18,000-Crore Buyback and Analyst Targets for INFY Stock - TechStock²",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOSVc3clNvakpKUThzN1kxMmN5X1k4V0J5a0tGYkpHSldLUkE0MV9ERldXdEtuOTVrNVhuTjUyODVXUnJMeVY5MXJvUkpKWXpHV3hsRnR6Q281OF9KZlhDaHUwOGFHc2REakdTOWpyMjdNSVNxeG11YWxKcW5mM2VGYzdnUEZiemdTREF5c2t2QXBXS1JBRVp5RGgteHlOYUZEZ1lmajg3ZWVOQ0dwUk82c004OVh4eU5ZRTBkOFNuNTJQemg0Y3l6NXEwSklnVHk4X2pOOS1JdHF1QQ?oc=5",
+          "published_at": "Mon, 08 Dec 2025 08:00:00 GMT",
+          "published_ts": 1765180800.0,
+          "sentiment_score": 2.4,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "IT stocks set for AI-led revival; Infy, HCL among Motilal Oswal's top bets - Business Standard",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPN29vSElrYWtpZjVWVkZJem5WY0tCSXQtVlhFaEEwcXZKX0N0WEdqNGZCT2lHU09jUllMNXhWMTczcXdCdWYwZ0I0Rm9kWXcwWjJDWlp5Rkt6aE5RQ3BSVkJYbEVyZGtBaV9ZSG54cTJGVXY3b2dqc2RiaWE3U09qcGZDWXJ1cnoxOVNnR3RrOHpjR0ZYaWZVYTc5Z2lYdlJMTlRSSlloNzdxZGF0Y1hZY0ZxanRBN2tyc0thZ19LOXJPMjY3WDBHRDJTaV9wTUQxVWtoZ3hqNmt0V1VaR2ZERNIB5gFBVV95cUxPZjRRb21wR3ZDYkEtWHd2UGRxbXJLWUxSMmFCQ3dDV0NRNUZBeDk2TkUxaExPRjdVUWxoV25VRTNHbjlDS2QxQWZOSTNvUERNUklSOUk2MmxUSFQ4a29BUTU0UmJqUzFTd2E1NzUwVTcwc2tYZHh3c0NiazVnYTBkU2NfbnN6U0VCWFQzLVphOVkxLWxpWEdSVmdXdndSYmF6dXo4Q205Yi1lOElsUFZZN3FoLVpJUmxSV1UxMzQxTGJYaV9SdHRwMkVQU0c4eHA5X0tZOENkSmkxNU9kTVNmRGJzdGN3QQ?oc=5",
+          "published_at": "Tue, 25 Nov 2025 08:00:00 GMT",
+          "published_ts": 1764057600.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        }
+      ],
+      "top_industry_news": [
+        {
+          "source": "google_rss_industry",
+          "title": "Global Green Hydrogen Prices Signal Major Energy Shift in 2026 - openPR.com",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPakxXNldORjl2dWl0bERPZGpQQUI4dEZHbWFkTDFCNERWMUk2REFwZWRhLVFGeGtQcFN2a3hNQ245OGNVVllqQ21kNUxTc0sxUlM3TC1lSk0zTHZEWlUwMWJ1SGpkSGN2SHVYU0hfRWRDN2toQmVCdmI3ZUZYUW16cjdPX2tNUGhzMENWYW85YVhEc1M4RHV1MVVsYmU0TXc?oc=5",
+          "published_at": "Fri, 13 Mar 2026 09:33:54 GMT",
+          "published_ts": 1773394434.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Infosys Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Infosys Expands MInfosys Expands Mohali Development Center, Creates 3,000 Jobs - PSU Connect",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOclZvZ3BIMVdFbmtuc0sxU0JuQ1RDVGhiODNkMWZDQUNTdkpmWGhvdmkwZXl3ODZfQ2dpeC1zRGpBeXc1bURGN19xVEtjQ1dWMEprbnlmNndyLXBLYlRLR3JxT1gxX2d4SGNneWR4NTUtX2hPdWd4Smd0S2ZXWEVOWWVGc3lsVFByMHlaOU1rM0lEVFJ0UEpnVF9VVFhpZTRsSHc?oc=5",
+          "published_at": "Thu, 12 Mar 2026 06:37:00 GMT",
+          "published_ts": 1773297420.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Infosys Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Infosys Vs TCS: Which IT Company Has More Potential to Utilize the $400 Billion AI Opportunity? - Trade Brains",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNXzE4VmxoQU9lNVRMckVyMmtMbnluVVQxMWF5dlZhR29YVEJfNjhHaHlJT2cwdWZlM0ZWSDBaQWZ5NGJld1BMdXdfYll5Y1FRYTZhNjlaTUtIYlM1QzVjYlVaUEgydEJ5ZXpWaHVGUWktZmhRWW1XUU4xQWFFamdlLTJsNGhhX2NjWkJQbmZzaHJjMU5uNGFCWVkyWDJUNUZyaXkzT2IweXRFMkFldFF0djhpZG14UEU?oc=5",
+          "published_at": "Wed, 11 Mar 2026 05:33:00 GMT",
+          "published_ts": 1773207180.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Infosys Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services"
+        },
+        {
+          "source": "bing_rss_industry",
+          "title": "India strongly positioned as the next global platform for consumer technology: Nothing co-founder",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b2b206c5492284d9a672eff18c3a&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2ftopstories%2findia-strongly-positioned-as-the-next-global-platform-for-consumer-technology-nothing-co-founder%2far-AA1XOtsQ&c=9634019043024314443&mkt=en-in",
+          "published_at": "Mon, 09 Mar 2026 04:07:00 GMT",
+          "published_ts": 1773029220.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated",
+          "company_name": "Infosys Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "L&T: Rs 3.8 trillion order book Vs Middle East crisis – Why Motilal Oswal sees 16% upside - The Financial Express",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPRU92d2hDT0MzYnk4NkJJbG9RZjFvTVpvei1DN1J4WXNja0MwdVNmSjdoZml3VV9SdHR0bXdVLUE4M29LU2NFc2JMNGQ4U2FmY2Q0NkRITnJuTGRIa1RnVGEwa0Z5U0xvOV93cnZiR0tKNnN4cnFDRzVBYTBVUm9hOUE2UGo0WWZEeGdEeWk4aDh6TlNPa0VDRS1SaHpHZ1JBeWNWdjRtenN1a0laVER0cVh5Y0FlMnczajR3dG1VbmtZUkYzQlhRNnpHUWZCdWVDVWfSAdgBQVVfeXFMUF95LUptbkVWU0xzMzE3UWJsVWc4TXV6OFdpb1hXM2ktd3JuM2ZmcE94aVB0aThrQXlRRXU2dUZqR01NNlg2c0laQjJDUU5tSnZLd012cS1BRHpMQk5mYXlmM0tVcjJmMllHdE1LTklDNEQ2OFp3QU1zU1Q3VGZXNlJObUVXemVMSlk3ZEhrU2ZfaFlfOGlHTmdoWWJZdE5lcmRKLWg5YzctejAyT05ONXJVZFczRWx6ZDZ3QXptVDQ4WXFkVDY0Zk5zR1EwMkRJVDBjVkg2c1JC?oc=5",
+          "published_at": "Thu, 05 Mar 2026 04:41:22 GMT",
+          "published_ts": 1772685682.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Infosys Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Here’s What Boosted Infosys Limited (INFY) in Q4 - Insider Monkey",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNS2U2ZF9ManVyRjFaWFBBRXdCZ0xmd19WR0w2RloyelZ1bDNtMjROaFVtSHFXWmRNUFB4anpkYmJkZFZyeWstaVh5S0g3a0JQSWw4RXdQYUpuWEkwRXpLUzVOR3hNSTlOUUJUN0oxd2htdFpUUzlEb2VTcTFGcjZORVZGZEl5NlJZcmVCYUxBY0dNYjDSAZsBQVVfeXFMTnJzQlpPSWJ6alFCR09jR1lkU0lSamU0MmlfOHRXRjAySHdGVm9ZNzh4cktpN3Z6Q0dOVEpJcVdGNk1TdHNJOFM3YUh1SGFuTkQxaDdCUWVKcjZNb2JCSGRRUmNLNHdQS0s0eUVDVzFlb19Tblk4akF1OTI3RXY1V0xWWmVBZUlOMjhyYVZCakIxVy1pTWxOb0RXRDg?oc=5",
+          "published_at": "Thu, 12 Feb 2026 08:00:00 GMT",
+          "published_ts": 1770883200.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Infosys Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Infosys Limited (NSE:INFY) Stock's Been Sliding But Fundamentals Look Decent: Will The Market Correct The Share Price In The Future? - simplywall.st",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPVGQ5R3Bpcy1CeXFfX3E0aW5tWXd0R3ZTbHAzQVdXUkI4Vl9rMkZ1TFQzNHdlME1MN084YmUzUkNMS2JrbnJObTM2dVlHdFFCVFRrUklaYm5hN1BYNWFRXzloUmdwM2tZN1NkNTgzRjcxb09BTmxJdFQ3elI4UFJTWVl0dW5GSXE3RXk2aXVmZTVETkYyNjdkWFJHNENhV3NSOVkxQUstZUxjY0EtdDJ5MndYWS11S3lqUlF0ZGJVLWVVRXhzRHc0dnRNanjSAdIBQVVfeXFMUE5DaXBSRTlWM3JaVFc3dDZqMmhhR3VQWF9sVXgyTU03TldWelV5N0dPaU51VDVzRGU3VjZFb2ZZbnp2SXJ1LU56MGVqTno1MTlBYnZVZHJSa29aTExLVC03WGNuZDB6Z2pEdks3U0pOZGdXRlNzbEFjQm91bE1WQVNrQUdldUxFRERCSXNNc19mM1VYazJaeFdsRXZnMnFEQlNValcyOVU0d2Z3Qy1Xb0ZjMlhkNmZSNGpWOFE4a1RrdzZ4X1gwNFRacVprUzdDVzBR?oc=5",
+          "published_at": "Sun, 08 Feb 2026 08:00:00 GMT",
+          "published_ts": 1770537600.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Infosys Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services"
+        },
+        {
+          "source": "bing_rss_industry",
+          "title": "Budget 2026 signals India doubling down on its position as global tech services leader, IT industry says",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b2afe16e41399b39f649bd0724a1&url=https%3a%2f%2fwww.moneycontrol.com%2fnews%2fbusiness%2finformation-technology%2fbudget-2026-signals-india-doubling-down-on-its-position-as-global-tech-services-leader-it-industry-says-13803923.html&c=1729403532280256247&mkt=en-in",
+          "published_at": "Sun, 01 Feb 2026 12:18:00 GMT",
+          "published_ts": 1769948280.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated",
+          "company_name": "Infosys Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "India EU Free Trade Agreement and its impact on Indian markets and companies - ICICI Direct",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPbFhTdWljcXVJRFpWYUl0MmFzRmx5YmdlMXNjanNRS0pFdGNwMzF1TzMzMGd0cGlPREpFU3JaZEhIM0VsY3cxSmpHNkU3LTlmaG1JT09JVmJGSlo5T3RwRTJuME1TTFJZTW9Ha3N5V2Jfc05KZlprcndtbkJKUnB4cUk4aVYxcnAzZTNJSmNQdlRJSndlS1hKQkF0M0ZyRkxpRkp0eHRGWXRDVm82MTlrTjlZTDE3Z0wzdDlsck1lNThrZUZ3OXc?oc=5",
+          "published_at": "Wed, 28 Jan 2026 08:00:00 GMT",
+          "published_ts": 1769587200.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Infosys Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Infosys Limited Just Missed Earnings - But Analysts Have Updated Their Models - simplywall.st",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNMy1Vb2VLeXFUSkFwdWlyQ2ZZY0N0V0o0blJHdXJlSnM2bXNsVkNLdFpLZ3E1dzlWTDJiX0tudWk3V1NRbUNaLXlsUXo4Q0VMQ251Vm9HOTI1UVZEWmFLZkxFU09seGljSFJfQXNhMmRVa3ZISU5XY21zTHJhVzhHS21UbHVYbGFrNkptc19Ga1RJZEJmTzJZRVVFSjJjVFBzWmVnbnRuS1F1UGcySXEzSjFRWVNDOFNhcmEyOEpSa2p2RXNUUkhrYlpB0gHPAUFVX3lxTE9EbVpNSTVnLXdjOGJXN2ZRa2Rlb0ptVTNkRHQ3MWJpYUdLTy00bWxUVmtYNVRvcHhsaEljYktndkI5Tjh2SFZKVGhaelNvSEx2ZFFocGhlMVdQTTNOc1NoMVRxUUNwSDhtMlo5ZENJOC1USnh2VS1uM0gzN190VFN6TG54Y1o2MHBMZXNQancwUUFRZWtLZXNaUnBTVkFwRUQ3ZE91UlE4V2d1cnJfNC1Rd3NvbzhjRFRPXzk0VU1Tb0FlUi1SZHVjSndmeTdlYw?oc=5",
+          "published_at": "Sat, 17 Jan 2026 08:00:00 GMT",
+          "published_ts": 1768636800.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Infosys Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Infosys Reports 2% Decline in Q3 Profit, Raises Revenue Outlook - India News Network",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQ1pzUjBzczMzX1JhR1VrT0pFX0pTdUszRWVVdlRVeDhiWEdmZHltdHNUNjN4SGNRMk0zbWQzZTJMcktEbG9sSEtHN0F1c2VyejgtaXBKQzdmRWxkUWNESmNHc1BwVlV5VHpFYkhHMkxTNWtkb0U2VmNiOVE0enFkMmJJNndjREZFREp2NFE3U29iNTJVbE1MNVZ0R1Q3TTFLNUozN2V3?oc=5",
+          "published_at": "Thu, 15 Jan 2026 08:00:00 GMT",
+          "published_ts": 1768464000.0,
+          "sentiment_score": -1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Infosys Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Infosys (INFY) Soars 10.45% on Strong Revenue Outlook, PT Hike - Finviz",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOemNLUlRvUE5KUUc5WWFqQTh5am5GcXhZSk9lZDgxN1QweUZ4MVhwQk9GSE8wT2o4YWNLMTVJajNyWHh5QXR5OGZpa0ZjczE2U211SzNBSWRzNVA3V2RuMGIyZENqQVBkNWFVaGNZak9mRktVY3lFYjl0eWlscXNQclFKNmw5bHZWZWt3VmEtTHRmdw?oc=5",
+          "published_at": "Thu, 15 Jan 2026 08:00:00 GMT",
+          "published_ts": 1768464000.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Infosys Limited",
+          "sector": "Technology",
+          "industry": "Information Technology Services"
+        }
+      ],
+      "top_macro_news": [
+        {
+          "source": "google_rss_macro",
+          "title": "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRVNOajVzSUJWU3Q5R2toMjVnZVZMNDhLclozWDdNODc1OU1qbVFjYnFTT0Z1SUZaaExuY3FJajFkdWtOWk5kdWplT0J0Yk9RcnlDVnlvQmJZNC1jVDVHZmRhS0Z0X0JiXzFETHRnaUVac1pEMmZfWE9raXFacFpwR1dSaEVST0Ntc2k1czN4emNQVFlWSHE3V1ZhMW80OUFMYmN6dEwtTkRadm44enc?oc=5",
+          "published_at": "Fri, 13 Mar 2026 15:17:26 GMT",
+          "published_ts": 1773415046.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b2b774e241f19a2197ebe299571a&url=https%3a%2f%2fwww.livemint.com%2fmarket%2fstock-market-news%2fus-china-power-shift-global-markets-india-outlook-mirae-asset-swarup-mohanty-11773376870759.html&c=15555016077234823276&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 14:15:00 GMT",
+          "published_ts": 1773411300.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Fed to delay rate cuts as war clouds the outlook",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b2b7d6ad4f4fb16290dd70f5e610&url=https%3a%2f%2fthink.ing.com%2farticles%2ffed-to-delay-rate-cuts-as-war-clouds-the-outlook%2f&c=127436243108543137&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 13:40:00 GMT",
+          "published_ts": 1773409200.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss_macro",
+          "title": "BTC defies rising dollar, oil and yields, holds above $71,000 as macro pressures mount - CoinDesk",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbHB1NE1GZ1dLTWpvOWNseW5QXy1jbWVHcTYzcXF6NWotU0NHOG1XNEUzcDd0ZTctMW1URXZzSW5RQ1djc1h3a0xOM0k2Tkd5TjRWcE0wUXRwZjg4WktmZ2xDWnpLa0RhR1BsRzlrZlVlVzhONmQ0eW51VXJIWFQ3NFJkd0VXZ2VsUnY4VTBuWjU5LXpxX1BPYUIyaEZKQVdEWUU3a25CY0RvN3NrVW10cFNUTWtxSHdhSWI4?oc=5",
+          "published_at": "Fri, 13 Mar 2026 09:34:10 GMT",
+          "published_ts": 1773394450.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Gold Silver Rate Today Live Updates (13 March 2026): Gold, silver futures fall on MCX as rising crude oil prices dim hopes of early rate cuts",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b2b7738345ca9a602f23085b4160&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2flive-blog%2fgold-rate-silver-price-today-live-updates-mcx-gold-18k-22k-24k-rate-iran-isreal-us-war-latest-news%2fliveblog%2f129534056.cms&c=4108291931945502437&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 06:00:00 GMT",
+          "published_ts": 1773381600.0,
+          "sentiment_score": -1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Markets Today: Sensex Declines 830 Points, Nifty Slips Below 23,650 Amid Iran-US-Israel War",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b2b774e241f19a2197ebe299571a&url=https%3a%2f%2fwww.news18.com%2fbusiness%2fmarkets%2fmarkets-today-sensex-falls-1000-points-in-opening-trade-nifty-below-23600-as-oil-surges-past-100-9956009.html&c=7425380694736114227&mkt=en-in",
+          "published_at": "Thu, 12 Mar 2026 03:39:00 GMT",
+          "published_ts": 1773286740.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Share markets continue to bleed as West Asia tensions dampen sentiment, Sensex over 800 points down",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b2b774e241f19a2197ebe299571a&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fmarkets%2fshare-markets-continue-to-bleed-as-west-asia-tensions-dampen-sentiment-sensex-over-800-points-down%2far-AA1Yt9yX&c=14300386732484515462&mkt=en-in",
+          "published_at": "Thu, 12 Mar 2026 03:04:15 GMT",
+          "published_ts": 1773284655.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Trading Day: Oil and yields up, up, and away",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b2b7738345ca9a602f23085b4160&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2ftrading-day-oil-and-yields-up-up-and-away%2far-AA1YqbzQ&c=11227118164045986945&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 14:08:08 GMT",
+          "published_ts": 1773238088.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss_macro",
+          "title": "Markets Confront the Economic Impact of the Iran Conflict - Natixis CIB | Natixis Corporate & Investment Banking",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOVpkVlFlOG1lbEdUZEM2VU40clhkdUtsN3l6Z3Rkd2g4WTBNMVNKSFBmMmkyT1M0RGwtZGJxN1ItZVVrMEU3UnVfWFJ6UmpZUVppV09ZelhMWHNvZmhtbFk3ajc0UnlpY0dZeW51MGJnSUU3dGhYRGFQaE44NjJVaFFBVWFyVlNhampDdXFic0dCZXZ3YW5ScWUtWQ?oc=5",
+          "published_at": "Wed, 11 Mar 2026 10:55:26 GMT",
+          "published_ts": 1773226526.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "S&P 500 Faces Valuation Pressure as Oil and Yields Rise Together",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b2b7738345ca9a602f23085b4160&url=https%3a%2f%2fwww.investing.com%2fanalysis%2fsp-500-faces-valuation-pressure-as-oil-and-yields-rise-together-200676476&c=11959585435036819535&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 10:53:00 GMT",
+          "published_ts": 1773226380.0,
+          "sentiment_score": -1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        }
+      ],
+      "avg_sentiment": 0.20113298658510637,
+      "macro_sentiment": -0.059287007015714134
+    },
+    "market_sentiment": {
+      "signal": "NO_TRADE",
+      "confidence": 0.63,
+      "summary": "Market Sentiment: NO_TRADE | NIFTY 5D=-4.59%, 10D=-3.16%, 20D=-9.94%, SMA20 gap=-5.1% (below). India VIX=1248.300048828125, 5D chg=-60.1, news sentiment=0.20. Votes: bull=2, bear=2.",
+      "reasoning_prompt": "Market sentiment protocol:\n1) Evaluate NIFTY multi-window momentum (5/10/20-bar returns) for domestic risk appetite.\n2) Check Nifty SMA20 structure — price above 20DMA = constructive, below = cautious.\n3) Evaluate India VIX regime as stress filter (low=constructive, high=defensive).\n4) Factor VIX change rate — rising VIX signals increasing fear even if level is moderate.\n5) Blend with cleaned multi-source news sentiment (stock + macro blend).\n6) Count bullish/bearish votes and avoid directional call under conflict.\n7) Prefer NO_TRADE when index momentum and volatility regime diverge.",
+      "llm_reasoning": "Market sentiment is bearish given the oversold RSI of 25.2 and consistent trading below key moving averages. The lack of volume participation (approx 50% of 20-day SMA) indicates that sellers are currently unopposed by meaningful buying pressure, though the extreme proximity to structural support floors prevents a high-conviction short entry until further volatility confirms the breakdown.",
+      "detail": {
+        "nifty_ret5": -0.045933945631690065,
+        "nifty_ret10": -0.03164993214685896,
+        "nifty_ret20": -0.0993506141211219,
+        "above_sma20": false,
+        "sma_gap_pct": -5.13,
+        "vix_level": 1248.300048828125,
+        "vix_change_5d": -60.1,
+        "news_avg_sentiment": 0.20113298658510637,
+        "bullish_votes": 2,
+        "bearish_votes": 2
+      }
+    },
+    "relative_strength": {
+      "signal": "NO_TRADE",
+      "confidence": 0.44,
+      "summary": "Relative Strength: NO_TRADE | stock 10-bar return=-4.52%, NIFTY=-4.52%, alpha=0.00%.",
+      "reasoning_prompt": "Relative-strength protocol:\n1) Compare stock and NIFTY returns over same 10-bar window.\n2) Convert spread into alpha and classify persistent out/under-performance.\n3) Treat marginal alpha as noise and return NO_TRADE.\n4) Use relative strength as confirmation layer, not standalone trigger.",
+      "llm_reasoning": "The asset displays weak relative strength, evidenced by the price trading significantly below both the 20-day and 50-day moving averages. The ROC10 of -3.16% confirms the asset is underperforming. With a volume-to-SMA20 ratio of 0.47, the asset is failing to attract the necessary capital to reclaim its moving averages, signaling clear underperformance against broader market benchmarks.",
+      "detail": {
+        "stock_ret10": -0.04520420260235525,
+        "nifty_ret10": -0.04520420260235525,
+        "alpha": 0.0
+      }
+    },
+    "us_trend": {
+      "signal": "SELL",
+      "confidence": 0.85,
+      "summary": "US Trend Signal: SELL | Global risk-off backdrop. SPX 5D/20D=-4.59%/-9.94%, NDX 5D/20D=-4.59%/-9.94%, VIX=27.29, DXY 5D=0.00%.",
+      "reasoning_prompt": "US macro trend protocol:\n1) Evaluate SPX and NDX short/medium returns for global equity risk tone.\n2) Use VIX as stress filter (high VIX weakens risk-on conviction).\n3) Use DXY direction as liquidity/EM risk proxy for Indian equities.\n4) Classify regime as risk-on, risk-off, or mixed.\n5) Use this as contextual bias only; do not override local setup quality.",
+      "llm_reasoning": "The US-listed ADR or comparable sector trend mirrors the domestic weakness, as evidenced by consistent price degradation below SMA20 (1315.85) and SMA50 (1488.73). Macro-level headwinds affecting global IT services remain the primary pressure point, with the negative sentiment score (-0.06) in the macro segment suggesting that US-based institutional flows remain cautious regarding global technology consulting services.",
+      "detail": {
+        "regime": "Global risk-off backdrop",
+        "llm_decision_why": "SPX and NDX show significant short-to-medium term weakness (-4.6% to -9.9% 20-day returns). The VIX at 27.29 indicates elevated market stress and high volatility. With negative momentum across major indices and a risk-off environment, the directional edge strongly favors a bearish stance.",
+        "spx_ret_5": -0.045933945631690065,
+        "spx_ret_20": -0.0993506141211219,
+        "ndx_ret_5": -0.045933945631690065,
+        "ndx_ret_20": -0.0993506141211219,
+        "vix_last": 27.290000915527344,
+        "dxy_ret_5": 0.0,
+        "dxy_ret_20": 0.0
+      }
+    },
+    "financials": {
+      "signal": "BUY",
+      "confidence": 0.7996592832898641,
+      "summary": "Financials Signal: BUY | Fundamentals supportive. Coverage=77%. ROE=28.18%, Margin=16.38%, RevGrowth=N/A, EarnGrowth=N/A, D/E=0.086, CurrentRatio=N/A, PE=1599.471. Quarterly trends: RevQoQ=0.45%, NIQoQ=-10.97%, OCFQoQ=-16.85%, DebtQoQ=-0.81%, FCF=915.00M, Cash/Debt=2.266. Analyst target=N/A (N/A upside, ? analysts). 52w Hi/Lo=1728.000/1242.600, position=1.17%.",
+      "reasoning_prompt": "Financial statement reasoning protocol:\n1) Evaluate valuation (PE/PB) relative to profitability and growth quality.\n2) Score profitability and efficiency (ROE, margins).\n3) Validate growth durability using quarterly revenue and net-income trends.\n4) Check balance-sheet resilience (debt trend, liquidity, cash/debt).\n5) Check cash-flow quality (operating CF trend, free cash flow sign).\n6) If fundamentals conflict or are incomplete, default to conservative NO_TRADE bias.",
+      "llm_reasoning": "Financial data confirms a bearish fundamental backdrop. While Infosys maintains core service contracts, the price at 1248.30 is pressured by current momentum metrics (MACD -62.15). The volatility regime, measured by ATR14 of 34.13, alongside falling moving averages, suggests that current market pricing is discounting the near-term earnings outlook, confirming the technical breakdown as the primary driver for current valuation levels.",
+      "fundamental_signals": [
+        {
+          "type": "mixed",
+          "text": "Near 52-week low (₹1242.60–₹1248.30) — historically strong demand zone. Deep oversold bounces common, but confirm volume."
+        },
+        {
+          "type": "bearish",
+          "text": "Net income declined sharply QoQ (-11.0%)."
+        }
+      ],
+      "analyst_consensus": {
+        "target_price": null,
+        "target_high": null,
+        "target_low": null,
+        "n_analysts": null,
+        "implied_upside_pct": null
+      },
+      "price_52w": {
+        "high": 1728.0,
+        "low": 1242.6,
+        "current": 1248.3,
+        "position_pct": 1.2,
+        "change_1y_pct": null
+      },
+      "extended_fundamentals": {
+        "symbol": "INFY.NS",
+        "dividend_yield": 3.56,
+        "dividend_rate": 45.0,
+        "ex_dividend_date": 1761523200,
+        "payout_ratio": 0.6717,
+        "held_pct_insiders": 0.16068001,
+        "held_pct_institutions": 0.49207002,
+        "book_value": 210.82779,
+        "price_to_book": 5.9209466,
+        "return_on_equity": 0.32683,
+        "debt_to_equity": 10.531,
+        "profit_margins": 0.16153999,
+        "enterprise_value": 5048273731584,
+        "enterprise_to_revenue": 254.36,
+        "enterprise_to_ebitda": 1152.442,
+        "gross_margins": 0.29354998,
+        "operating_margins": 0.18023,
+        "ebitda_margins": 0.22071,
+        "total_revenue": 19847000064,
+        "total_debt": 978000000,
+        "total_cash": 2984999936,
+        "peg_ratio": null,
+        "trailing_pe": 17.88908,
+        "forward_pe": 16.356747
+      },
+      "promoter_institutional": {
+        "symbol": "INFY.NS",
+        "major_holders": {},
+        "top_institutional": []
+      },
+      "dividends_splits": {
+        "symbol": "INFY.NS",
+        "recent_dividends": [
+          {
+            "date": "2022-05-31 00:00:00+05:30",
+            "amount": 16.0
+          },
+          {
+            "date": "2022-10-27 00:00:00+05:30",
+            "amount": 16.5
+          },
+          {
+            "date": "2023-06-02 00:00:00+05:30",
+            "amount": 17.5
+          },
+          {
+            "date": "2023-10-25 00:00:00+05:30",
+            "amount": 18.0
+          },
+          {
+            "date": "2024-05-31 00:00:00+05:30",
+            "amount": 28.0
+          },
+          {
+            "date": "2024-10-29 00:00:00+05:30",
+            "amount": 21.0
+          },
+          {
+            "date": "2025-05-30 00:00:00+05:30",
+            "amount": 22.0
+          },
+          {
+            "date": "2025-10-27 00:00:00+05:30",
+            "amount": 23.0
+          }
+        ],
+        "recent_splits": [
+          {
+            "date": "2004-07-01 00:00:00+05:30",
+            "ratio": 4.0
+          },
+          {
+            "date": "2006-07-13 00:00:00+05:30",
+            "ratio": 2.0
+          },
+          {
+            "date": "2014-12-02 00:00:00+05:30",
+            "ratio": 2.0
+          },
+          {
+            "date": "2015-06-15 00:00:00+05:30",
+            "ratio": 2.0
+          },
+          {
+            "date": "2018-09-04 00:00:00+05:30",
+            "ratio": 2.0
+          }
+        ],
+        "dividend_yield_trend": "rising",
+        "total_dividends_1y": 45.0
+      },
+      "metrics": {
+        "market_cap": 5051129669953.752,
+        "trailing_pe": 1599.4710797826954,
+        "forward_pe": null,
+        "price_to_book": 450.79247389145485,
+        "debt_to_equity": 0.08585452922802321,
+        "return_on_equity": 0.2818384649709951,
+        "profit_margins": 0.16382217149971467,
+        "operating_margins": 0.21149556466255123,
+        "gross_margins": 0.3046117134408881,
+        "ebitda_margins": null,
+        "revenue_growth": null,
+        "earnings_growth": null,
+        "free_cashflow": null,
+        "operating_cashflow": null,
+        "current_ratio": null,
+        "fifty_two_week_high": 1728.0,
+        "fifty_two_week_low": 1242.5999755859375,
+        "fifty_two_week_change": null,
+        "dividend_yield": 0.07530240833383368,
+        "current_price": 1248.300048828125,
+        "analyst_target_price": null,
+        "analyst_target_high": null,
+        "analyst_target_low": null,
+        "number_of_analyst_opinions": null,
+        "trailing_eps": null,
+        "forward_eps": null,
+        "beta": null,
+        "book_value": 2.7691235349432652,
+        "enterprise_value": null,
+        "total_revenue": 19277000000.0,
+        "total_debt": 962000000.0,
+        "total_cash": 2861000000.0,
+        "peg_ratio": null,
+        "sector": null,
+        "industry": null,
+        "company_name": ""
+      },
+      "detail": {
+        "stance": "Fundamentals supportive",
+        "bull_points": 8,
+        "bear_points": 4,
+        "data_quality": {
+          "coverage_ratio": 0.7692307692307693,
+          "available_fields": 10,
+          "total_fields": 13
+        },
+        "metrics": {
+          "market_cap": 5051129669953.752,
+          "trailing_pe": 1599.4710797826954,
+          "forward_pe": null,
+          "price_to_book": 450.79247389145485,
+          "debt_to_equity": 0.08585452922802321,
+          "return_on_equity": 0.2818384649709951,
+          "profit_margins": 0.16382217149971467,
+          "operating_margins": 0.21149556466255123,
+          "gross_margins": 0.3046117134408881,
+          "ebitda_margins": null,
+          "revenue_growth": null,
+          "earnings_growth": null,
+          "free_cashflow": null,
+          "operating_cashflow": null,
+          "current_ratio": null,
+          "fifty_two_week_high": 1728.0,
+          "fifty_two_week_low": 1242.5999755859375,
+          "fifty_two_week_change": null,
+          "dividend_yield": 0.07530240833383368,
+          "current_price": 1248.300048828125,
+          "analyst_target_price": null,
+          "analyst_target_high": null,
+          "analyst_target_low": null,
+          "number_of_analyst_opinions": null,
+          "trailing_eps": null,
+          "forward_eps": null,
+          "beta": null,
+          "book_value": 2.7691235349432652,
+          "enterprise_value": null,
+          "total_revenue": 19277000000.0,
+          "total_debt": 962000000.0,
+          "total_cash": 2861000000.0,
+          "peg_ratio": null,
+          "sector": null,
+          "industry": null,
+          "company_name": ""
+        },
+        "metrics_extended": {
+          "dividend_yield": 3.56,
+          "peg_ratio": null,
+          "operating_margins": 0.18023,
+          "gross_margins": 0.29354998,
+          "ev_to_ebitda": 1152.442,
+          "held_pct_institutions": 0.49207002
+        },
+        "statement_trends": {
+          "revenue_qoq": 0.004531126871552438,
+          "net_income_qoq": -0.10965435041716332,
+          "operating_cf_qoq": -0.1685393258426966,
+          "debt_qoq": -0.008113590263691739,
+          "free_cashflow_latest": 915000000.0,
+          "cash_to_debt": 2.2658486707566463
+        }
+      }
+    },
+    "market_setup": {
+      "signal": "NO_TRADE",
+      "confidence": 0.55,
+      "summary": "Market Setup Signal: NO_TRADE | Early bearish alignment. Tape read: 5d=-4.6%, 20d=-9.9%, volume ratio=0.55, momentum=25.0. Support gap=N/A and resistance gap=6.6%. Trader read: The asset is deeply oversold (RSI 25, Williams %R -95), creating high risk for a mean-reversion bounce. While the trend is bearish, volume is significantly below average (0.55 ratio), suggesting a lack of institutional conviction for a breakdown. Chasing shorts here offers poor risk-reward; waiting for a stabilization or a failed rally is preferred.",
+      "reasoning_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+      "llm_reasoning": "The setup is a range breakdown with negative slope (-4.89). Price action is currently trapped in a narrow, decaying channel. Lack of volume confirmation (7.36M vs 15.58M average) suggests that current levels are likely to see low liquidity swings. The confluence of a bearish MACD and negative slope dictates a defensive posture, as the technicals favor the downside but market conditions lack the momentum for immediate, high-conviction breakout entry.",
+      "setup_label": "Early bearish alignment",
+      "detail": {
+        "recent_return_5d_pct": -4.59,
+        "recent_return_20d_pct": -9.94,
+        "volume_ratio_5d_vs_20d": 0.55,
+        "distance_to_support_pct": null,
+        "distance_to_resistance_pct": 6.63,
+        "momentum_score": 25.0,
+        "buy_votes": 0,
+        "sell_votes": 2
+      }
+    },
+    "catalyst_context": {
+      "signal": "NO_TRADE",
+      "confidence": 0.45,
+      "summary": "Catalyst Context Signal: NO_TRADE | Positive headlines, incomplete confirmation. Backdrop read: news sentiment=0.20, analyst upside=None, 52w position=1.2. Core read: The stock is testing critical 52-week support at ₹1242, which often invites technical buying. However, the fundamental picture is conflicted, with sharp QoQ declines in net income and operating cash flow. The high valuation discrepancy and lack of clear growth momentum make a decisive directional call speculative at this junction.",
+      "reasoning_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+      "llm_reasoning": "The primary catalyst is the conflict between company-specific AI infrastructure updates and broad sector contraction. The Anthropic collaboration acts as a potential positive, but is currently neutralized by the industry-wide struggle reflected in the Nifty IT index. Short-term price action is dominated by institutional apathy (low volume) rather than news-driven volatility, preventing a trade trigger.",
+      "catalyst_label": "Positive headlines, incomplete confirmation",
+      "detail": {
+        "buy_votes": 1,
+        "sell_votes": 1,
+        "avg_sentiment": 0.201,
+        "analyst_upside_pct": null,
+        "position_52w_pct": 1.2,
+        "fundamental_signals": [
+          "Near 52-week low (₹1242.60–₹1248.30) — historically strong demand zone. Deep oversold bounces common, but confirm volume.",
+          "Net income declined sharply QoQ (-11.0%)."
+        ]
+      }
+    }
+  },
+  "agent_guidance": {
+    "indicator_prompt": "Indicator reasoning protocol:\n1) Map structural trend using relative price location vs SMA20/50/200 and slope analysis.\n2) Decode momentum quality using MACD histogram acceleration/deceleration and ROC10-ROC20 comparisons.\n3) Assess oscillator behavior (RSI/Stoch/WillR) for range-specific exhaustion vs strong trend continuation.\n4) Verify professional participation via volume-over-average filters and spread analysis.\n5) Filter noise using ATR-based volatility regimes (reduce conviction in 'wide and loose' tape).\n6) Enforce strict confluence: if trend and momentum disagree without a reclaim setup, maintain NO_TRADE posture.",
+    "pattern_prompt": "Pattern reasoning protocol:\n1) Detect breakout/breakdown against prior 12-bar range, not single-candle spikes.\n2) Confirm direction with local slope and bar-structure continuation.\n3) Use engulfing patterns as confirmation, not standalone trigger.\n4) Treat flat-slope compression as NO_TRADE until expansion is confirmed.\n5) Down-rank weak breakouts lacking structure confirmation.",
+    "news_prompt": "News reasoning protocol:\n1) Collect company-specific headlines across multiple providers using diversified queries.\n2) Filter spam/listicle/noise domains and low-relevance stories.\n3) Build a global macro stream (rates, inflation, oil, USD, broad risk sentiment).\n4) Build industry/sector thematic stream (demand cycle, market share, regulation, capacity, pricing).\n5) Weight sentiment by source quality, exponential recency decay, and relevance confidence.\n6) Apply content-similarity dedup to remove near-duplicate headlines.\n7) Use LLM to infer final bias from company + industry + macro evidence and return NO_TRADE under conflict.",
+    "trend_prompt": "Trend reasoning protocol:\n1) Fit support and resistance trendlines over the visible swing window.\n2) Estimate channel slope (regime direction) and channel width (trend quality).\n3) Locate current price in channel and prefer pullback entries aligned with slope.\n4) If slope is weak/flat, classify as sideways and favor NO_TRADE.\n5) Avoid chasing signals near channel extremes against risk-reward logic.",
+    "market_prompt": "Market sentiment protocol:\n1) Evaluate NIFTY multi-window momentum (5/10/20-bar returns) for domestic risk appetite.\n2) Check Nifty SMA20 structure — price above 20DMA = constructive, below = cautious.\n3) Evaluate India VIX regime as stress filter (low=constructive, high=defensive).\n4) Factor VIX change rate — rising VIX signals increasing fear even if level is moderate.\n5) Blend with cleaned multi-source news sentiment (stock + macro blend).\n6) Count bullish/bearish votes and avoid directional call under conflict.\n7) Prefer NO_TRADE when index momentum and volatility regime diverge.",
+    "relative_strength_prompt": "Relative-strength protocol:\n1) Compare stock and NIFTY returns over same 10-bar window.\n2) Convert spread into alpha and classify persistent out/under-performance.\n3) Treat marginal alpha as noise and return NO_TRADE.\n4) Use relative strength as confirmation layer, not standalone trigger.",
+    "us_trend_prompt": "US macro trend protocol:\n1) Evaluate SPX and NDX short/medium returns for global equity risk tone.\n2) Use VIX as stress filter (high VIX weakens risk-on conviction).\n3) Use DXY direction as liquidity/EM risk proxy for Indian equities.\n4) Classify regime as risk-on, risk-off, or mixed.\n5) Use this as contextual bias only; do not override local setup quality.",
+    "financials_prompt": "Financial statement reasoning protocol:\n1) Evaluate valuation (PE/PB) relative to profitability and growth quality.\n2) Score profitability and efficiency (ROE, margins).\n3) Validate growth durability using quarterly revenue and net-income trends.\n4) Check balance-sheet resilience (debt trend, liquidity, cash/debt).\n5) Check cash-flow quality (operating CF trend, free cash flow sign).\n6) If fundamentals conflict or are incomplete, default to conservative NO_TRADE bias.",
+    "market_setup_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+    "catalyst_context_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+    "trader_intel_prompt": "Think like a battle-hardened Indian discretionary trader and teacher. Judge structural setup quality, sector leadership, institutional flow cues (FII/DII logic), crowd positioning, and execution patience. Reference specific Indian market nuances like Nifty/BankNifty confluence when relevant. Avoid basic indicator-threshold language. Output should be concise but instructive: explain why setup quality is high/low, where edge comes from, and what invalidates the idea. Also provide 1-2 risky intraday scalp ideas with exact trigger and invalidation only when tape is volatile enough; otherwise state why not. Prefer NO_TRADE when the idea is merely 'interesting' rather than high-probability and actionable."
+  },
+  "market_setup": {
+    "signal": "NO_TRADE",
+    "confidence": 0.55,
+    "summary": "Market Setup Signal: NO_TRADE | Early bearish alignment. Tape read: 5d=-4.6%, 20d=-9.9%, volume ratio=0.55, momentum=25.0. Support gap=N/A and resistance gap=6.6%. Trader read: The asset is deeply oversold (RSI 25, Williams %R -95), creating high risk for a mean-reversion bounce. While the trend is bearish, volume is significantly below average (0.55 ratio), suggesting a lack of institutional conviction for a breakdown. Chasing shorts here offers poor risk-reward; waiting for a stabilization or a failed rally is preferred.",
+    "reasoning_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+    "llm_reasoning": "The setup is a range breakdown with negative slope (-4.89). Price action is currently trapped in a narrow, decaying channel. Lack of volume confirmation (7.36M vs 15.58M average) suggests that current levels are likely to see low liquidity swings. The confluence of a bearish MACD and negative slope dictates a defensive posture, as the technicals favor the downside but market conditions lack the momentum for immediate, high-conviction breakout entry.",
+    "setup_label": "Early bearish alignment",
+    "detail": {
+      "recent_return_5d_pct": -4.59,
+      "recent_return_20d_pct": -9.94,
+      "volume_ratio_5d_vs_20d": 0.55,
+      "distance_to_support_pct": null,
+      "distance_to_resistance_pct": 6.63,
+      "momentum_score": 25.0,
+      "buy_votes": 0,
+      "sell_votes": 2
+    }
+  },
+  "catalyst_context": {
+    "signal": "NO_TRADE",
+    "confidence": 0.45,
+    "summary": "Catalyst Context Signal: NO_TRADE | Positive headlines, incomplete confirmation. Backdrop read: news sentiment=0.20, analyst upside=None, 52w position=1.2. Core read: The stock is testing critical 52-week support at ₹1242, which often invites technical buying. However, the fundamental picture is conflicted, with sharp QoQ declines in net income and operating cash flow. The high valuation discrepancy and lack of clear growth momentum make a decisive directional call speculative at this junction.",
+    "reasoning_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+    "llm_reasoning": "The primary catalyst is the conflict between company-specific AI infrastructure updates and broad sector contraction. The Anthropic collaboration acts as a potential positive, but is currently neutralized by the industry-wide struggle reflected in the Nifty IT index. Short-term price action is dominated by institutional apathy (low volume) rather than news-driven volatility, preventing a trade trigger.",
+    "catalyst_label": "Positive headlines, incomplete confirmation",
+    "detail": {
+      "buy_votes": 1,
+      "sell_votes": 1,
+      "avg_sentiment": 0.201,
+      "analyst_upside_pct": null,
+      "position_52w_pct": 1.2,
+      "fundamental_signals": [
+        "Near 52-week low (₹1242.60–₹1248.30) — historically strong demand zone. Deep oversold bounces common, but confirm volume.",
+        "Net income declined sharply QoQ (-11.0%)."
+      ]
+    }
+  },
+  "trader_intel": {
+    "signal": "NO_TRADE",
+    "confidence": 0.35,
+    "verdict_label": "Wait for structural washout",
+    "playbook_title": "Bottom-fishing avoidance in IT laggards",
+    "thesis": "INFY is in a 'dead zone'. Institutional flow is absent as evidenced by the low volume ratio, meaning any price action is currently retail-driven volatility. We are at a critical support level, but until we see a 'shakeout' candle (lower wick) or a high-volume capitulation, any buy is just catching a falling knife.",
+    "execution_style": "Passive observer; waiting for a trend-reversal pattern",
+    "risk_flag": "High - Vicious mean reversion bounces occur without volume support, leading to immediate traps.",
+    "entry_trigger": "Price must reclaim the 10-day VWAP on a 15-minute chart with a volume spike > 1.5x average.",
+    "invalidation": "Fresh breakdown below the ₹1240 level with sustained volume confirming the structural drift.",
+    "why_now": "The stock is deeply oversold, making shorting dangerous, but the lack of institutional conviction makes buying a low-probability gamble.",
+    "why_not_now": "The Nifty IT index lacks sector leadership right now; there is no positive delta from the broader market to drag this ticker upward.",
+    "risky_intraday_play": "Risky intraday recommendation: BUY. Levels are unclear; trade only on strong breakout or breakdown with volume.",
+    "risky_prediction": {
+      "signal": "BUY",
+      "confidence": 0.58,
+      "text": "Risky intraday recommendation: BUY. Levels are unclear; trade only on strong breakout or breakdown with volume."
+    },
+    "summary": "Trader Intel: NO_TRADE | Wait for structural washout | Bottom-fishing avoidance in IT laggards. Thesis: INFY is in a 'dead zone'. Institutional flow is absent as evidenced by the low volume ratio, meaning any price action is currently retail-driven volatility. We are at a critical support level, but until we see a 'shakeout' candle (lower wick) or a high-volume capitulation, any buy is just catching a falling knife. Why now: The stock is deeply oversold, making shorting dangerous, but the lack of institutional conviction makes buying a low-probability gamble. Why not now: The Nifty IT index lacks sector leadership right now; there is no positive delta from the broader market to drag this ticker upward.",
+    "intraday_execution_easy": [
+      "Treat this as high risk; use smaller position size.",
+      "Enter only on trigger, never in the middle of range.",
+      "Keep fixed stop-loss from the start.",
+      "Exit quickly if momentum stalls."
+    ],
+    "intraday_easy_one_liner": "Intraday simple rule: no clear edge now, so skip trade and wait for strong breakout with volume.",
+    "reasoning_prompt": "Think like a battle-hardened Indian discretionary trader and teacher. Judge structural setup quality, sector leadership, institutional flow cues (FII/DII logic), crowd positioning, and execution patience. Reference specific Indian market nuances like Nifty/BankNifty confluence when relevant. Avoid basic indicator-threshold language. Output should be concise but instructive: explain why setup quality is high/low, where edge comes from, and what invalidates the idea. Also provide 1-2 risky intraday scalp ideas with exact trigger and invalidation only when tape is volatile enough; otherwise state why not. Prefer NO_TRADE when the idea is merely 'interesting' rather than high-probability and actionable."
+  },
+  "risky_intraday_play": "Risky intraday recommendation: BUY. Levels are unclear; trade only on strong breakout or breakdown with volume.",
+  "top_news": [
+    {
+      "source": "google_rss",
+      "title": "Top stocks in news: Infy, AEL, Waaree, IndiGo, BoB, HindZinc, AB Capital, SEDEMAC, Polycab - Business Today",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPclVxZ1EzRTZtTzlfTXkxVVpoVVo4aTRaVHBRcVBDSG1aMEliMTVibVRCOGZDYkR0WU9saUU0aU1vdkRzZng1bTZZdG15c0NWVGRGOHZkUlYyckd3UnRpRmtha0prS2NUaG50eHVCLU1zS19pYnd5OEQzNVBJT2hmcVVLS25iQVFxTzBuV0p5TEUzYlNPSkxUMzNPamJEc3lhMWxtak8tc2x3RmMwUUdGd3I5WlNELUZYekRkRnBiZWd6ZVMxOW1YOGpxUlM5bmRoZTByUDlRdGNvd3pQdElmcE1zQdIB6AFBVV95cUxOaG41NVd6QWU1UVdZbFdPdUlzOG1wZjBvNmRHRFZPNUhnRmh3b19qT0hXaFkxTU1sOThpNlQtVE1FN3dJSlFZRDVQeXk5M1R6am9jdEZiZ3cyNG8ybEZkbFlHaENFa1Z1MDRSQVpSQ3NPTlYwQ3A5WEN1ak9mRTh3LWpwTG5GOUZsd1RhRlF3UE9MbDBMNnB3VkRfUFA5YzBWSDJvTnFBdUlqY1FoS0tsNkc1QkNqeVEzNUlleFAwM0M4OG1ZM3I5RHZyTnRZQURsMllsSVg5Q1lEcWFHUExMOURzTU82dkdo?oc=5",
+      "published_at": "Wed, 11 Mar 2026 02:15:53 GMT",
+      "published_ts": 1773195353.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Infy share price: AI boon or bane for Infosys? What's ahead after Anthropic collaboration - MSN",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNeVFBUUk1Vi1TZGRFUGJ5WV9zSFdaNDlYaEFfNGt4Nm9lU2pxbG14Vlh4S2U4QmI5czVJNldQekxJWWZlRmVLR3pvc212N3JLeU0xdXpnQlFXV0V6cUhtaGtFb3QtZGl4YjBmOU5UUTNVd200b3JIWEVqdGhvQmNQVkt0ZEU2VFd6dU1GQVBIQ003b3FPa19xWDZCcWlRaERLX3hsZjFYSWdwZWF0bmgzQ1diSm1YaFdFN1U5eXhNN2s5TFpPWm53UXpFbWdjVTltdUpRRjZuZlhyUQ?oc=5",
+      "published_at": "Sat, 07 Mar 2026 12:12:20 GMT",
+      "published_ts": 1772885540.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Infosys Limited (INFY) Collaborates With Anthropic - Finviz",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNUzFLTDJXTU9hdEhfbkU5WXpKeVBuTUd1U0VPQko5RVNGdjAtWGY4U3Y2bHV3OG5XWWpvdERkaHVOanFOT2dPYXBFSTgtYjREbHd3VVk3TGo0VURxaFdxR0g5QldwM2JUTl9ERWMzUllnaGlNb3k4VEhLMWw5eDJxV3JJdVpRUQ?oc=5",
+      "published_at": "Sun, 22 Feb 2026 08:00:00 GMT",
+      "published_ts": 1771747200.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Top stocks in news: Infy, AEL, Eternal, BHEL, Dabur, Hexaware, Ola Electric, Tata Steel - Business Today",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxObGJtUU4wVzEwbFVBcEp1TUJCZUF6cnZ4UWxxeFdrajJKT2oxUHZGQ2FDa2cxT2dNbDBOUWlGVkJmZXQ4Rk0xak9CR2p6WjFjM0JxRFZGSEZUY1lfaG1BTGFRdlBRb1hpOVlVSzNzTzZEbzJ5Y2lMaUpPRHNyaUt5ZlN1Q2xVeFFxYUNrNDdZcFM3MTFSNDRKZlB2YnZ6eFVkZGxLZkliZkM3dGt4MV93VXVPY0J3WV9zUU9JWFpObDd5Z1d5UnlCTE9BdGJVNEtiTFFCSWw4RDZYRldNMmVhZ9IB5gFBVV95cUxOUTlsSC11TTJTemFNdU1iMWR4WVBxTFgxajEtRWVPNFhpVXJ4OWF2M2hmeWVUd2w1cG5zY2NfZXRWQWliSjB6OHkzSDl1Ty1YQmZfZ2V6eFFtWXA5amlsU3FFcVBmNTdBN1NLWThTVDdBcEJGTGtiYklraUIySUoxVldfRnFuZkFzdHZIMVZ1RUN6UmNVeXVpcFltWi02S3lHa0I5SXhqVVFqRzhGc243cFdwb1hJZDJlLW5GVFJTeVM5NVVoSk5pVS1KUkRPdEFSWEhQV0s5bjJjdU9DLVdnX190NEZydw?oc=5",
+      "published_at": "Wed, 18 Feb 2026 08:00:00 GMT",
+      "published_ts": 1771401600.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss",
+      "title": "Nifty IT index tanks 10% in 2 days; TCS, Infy, Wipro slump to 52-week lows",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b2a5264c422f9be22c9f24d03c71&url=https%3a%2f%2fwww.business-standard.com%2fmarkets%2fnews%2ftech-stocks-sell-off-nifty-it-index-tanks-10-in-2-days-tcs-infosys-wipro-slump-to-52-week-lows-126021300467_1.html&c=14085422156593563758&mkt=en-in",
+      "published_at": "Thu, 12 Feb 2026 20:40:00 GMT",
+      "published_ts": 1770928800.0,
+      "sentiment_score": -1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Top stocks in news: Infy, Vedanta, ONGC, Bajaj Finance, HZL, Marico, RVNL, Shadowfax, BEL - Business Today",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQcTV1TG9nbGV3ZmN1d254d1RSb3dzMlZyZ0dFdDg4NGJURjhHSy1HQm9mTlNXMjhRdnROclJmT0o5bUdYT21HTng0WWpsSTBOYVdSMFVGM0JYdXUwTFJhOWNRdGFRX0VnQkdhUTI5MDVKbld4Wm5hUXliX2d5UmEzb21tcm95ODJ6Z2prNDdPOFF3OXVqTU1zRWlXNG5NbXUzZ3RhZUVuQUt4bzB6ZnBTTDNOV20tc1ZSS2FpdXNBamR6OHZGU0JlLTIweUxsTUV6S1NpR2xnS2lDNXh6clF5QUlB0gHnAUFVX3lxTFBSZE9UanFpZkJ2MEszLTVOdG9mdjUzQUtReVFNb0hhN3dkeGxySVVLdVhMVDBvMmN3Y1JWY3lTSUxZWHhENUd4TGpzcXdlWHFNT1N3b0VmQWNWVENMUzJROG9zd2FYbnRkcjZqXzBKMUd0WkVBaUlvcng3VTVRbXRBWFR6aGxSSlVuQXZIYjI2UHB1TzFORXFRMlpIR1JVQzlmNkFydHA1N3E2WUFpam5Ka1N4Mlktc2Q2SDZUNl84VnZVVTcyVVVzWTA4WHdhX29Zcm9rbDk3OWpOSmN2RWhtMDlQSGtMSQ?oc=5",
+      "published_at": "Wed, 28 Jan 2026 08:00:00 GMT",
+      "published_ts": 1769587200.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Earnings revival to boost Indian equities in CY26; SBI, Infy top MOFSL bets - Business Standard",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOTkZrQkJ1SEplSHN4V1lrX0NUWk9yZlhQZWY4R1RJOHBoNXF0TEhHTFR2ZlFoODhTcXhNUURzOFp1Z1luR1cxT203aFNpdTltSEp2TkNabndHYjV2WFlGcVltTHJ6VU54YmRwS3BrN21Od3ZneWZTMDJFSTAyX2lzSEIwZGw1ZEg1R3lLNWo1TDh3SHJmS3g0UTJObFZVQnVNa3RBelhwcEQzNzBZZ0ItZjBQUUVmYTdMQUR3ZHcyMkhaMThNemtvNnZYMDhMSDlZOWZQWlhn0gHbAUFVX3lxTFBueUtYQ01TeHhHNk1zQnpLVkZOSW9hT0EydVRqdFZxSnd1UTVQUzJ3OUJsd3ZSMGtyX2cxUU9wZ25oV2MySWw5UFVjQ3MwQWh2LXFaUTBKQWZoaklkaXJUa3VtZG5xUHhrSVQ5bVR2U1JrRG55aXYycjNiejhRQy1VemtNeWdmZnBWLVRQN1lCeHZxaEVuVS1YN05tMWVqZ0dwaUNBNVA1b0t6aVF2Y09Iam9pV3BkYTU2T0stLWtVQlR6bV9kVklUVGNDQnExcjE4SUVxbUhaOWVuMA?oc=5",
+      "published_at": "Fri, 02 Jan 2026 08:00:00 GMT",
+      "published_ts": 1767340800.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Infosys Share Price Today (23 Dec 2025): INFY Stock Dips on BSE After ADR Whiplash, Buyback Completion, and Fresh Q3 Results Catalyst - TechStock²",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPNWR6SmJwcWhUSU1KZkppZXhjYkRTbjVpM3lCajh2WkJjTllib01rajFMUHI0Vl80ZzFKWW5scFpMTTRkS19vVGFrem9RbS1ZSm4yVi1ueXVrRlV4czBma2diV3I0QTQ0RmV3a1J0b2VfZGlfeUxtYi1HQ19KS25aUnk2MGdiWkdJMjA3VzNTS3RSOWpjcHAtZ3pEamtaUEtfMzhmeUwzWHRpWTBNOWZIWUphTmN5cXFfR2JKYW81aVphUXdKSHVtanpSR1FYWi1RdS03Y2pvWnN6Q1RsdWdCZEYzdw?oc=5",
+      "published_at": "Tue, 23 Dec 2025 08:00:00 GMT",
+      "published_ts": 1766476800.0,
+      "sentiment_score": 2.4,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Infosys Share Price Today (Dec 22, 2025): INFY Stock Jumps After Wild ADR Spike; McCamish Settlement, Buyback and Analyst Targets in Focus - TechStock²",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNLWFxSUItN0JHUVBjSW41TjNDeF8zOERNbko2UGhmV0w3MUhwOU5UYXZ5VXR6RkZxTHV2b20zaXBEbHVFYjBLSHRSMGJWeGR5VmFCZDY5MklIMmswT2R1MEFNMjlMT0NyRVFhRUFjNVZDcVJ3N3VNVjlIUy1aNHE2b3BMd0I5QW5UY1pjRnVaV2tGTmdfa21VOFRaakpvRXplVzBsVDZ3QlFvOG1LZW5NVWNGUXBCa2dTWnpicndTWmEzU2N0VXRXTlBVVU1JdjRobFg3WHlMTUZNQkNiRjY1QXZxSm5tUDZF?oc=5",
+      "published_at": "Mon, 22 Dec 2025 08:00:00 GMT",
+      "published_ts": 1766390400.0,
+      "sentiment_score": 2.4,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Infosys Stock News Today (Dec 21, 2025): INFY’s “Mystery” ADR Spike, Company Clarification, and Analyst Forecasts Ahead of Q3 Results - TechStock²",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQMEZrU1MzYkN1WHd0VXA3SEJOTUVQNHhDSDRvTFp6V1l2VHRyREU0TlVQdTJBNk9LRk96dHJWWXNPdUdwc3k5S1ByMEtRQ05CNm9kMWFtYV8zSHgySEZXSjNLajFySUhVdTVXdmJjbGxmX0p4a1NFTE5lbVk4VlBteGdYVGw2R1RBTlFrRzhReWNMSkdLMEp2YW9DeGdWSHBkM2JCT1BBMGRVZkdkUzducm5VMVZFS3BuY2RkdFdRLVByYURpVTVfTFZBWWJHR0RxZjBBNVZpVUlaeWp0bFE?oc=5",
+      "published_at": "Sun, 21 Dec 2025 08:00:00 GMT",
+      "published_ts": 1766304000.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Infosys Limited Stock (NSE: INFY, NYSE: INFY): What Triggered the Sudden ADR Spike, Latest News, Analyst Targets, and the Road to Q3 FY26 - TechStock²",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNNDUxY0hxbFlvV291SnQ3U18tYUpYel9JS2FXYTJKdVZOZ2dhakY4aXVCeUctMHE1U0w0Q2RycmFjU2JURnMzRzZ0RWFHU0QzX2hwak5iOU9tUmU0N3dsWmV1VGVoYzB0YWtQRTFMZTVoWVNDeXZqc2hlSDJhSS1TV2NBU3F5T1JJN2VjUnBNQ2UzNlpINU80cFVGMW9VLW9ZekZJcmIzc0xhQlctNGwzbFVIZ3JQMXJfWHBBVkR3SGxhejYtTWlaLUlBRV9JUXJUa0luVVEyejNOTmhKOHVtblhRUQ?oc=5",
+      "published_at": "Sat, 20 Dec 2025 08:00:00 GMT",
+      "published_ts": 1766217600.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Infosys Stock (INFY) News Today: Buyback Completed, Promoter Sale, Analyst Targets and What Investors Watch Next (Dec. 13, 2025) - TechStock²",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPTDl2ZWdIZkRKWW1SMWhmN3BmTTdHMFU2Qzd5cmNLajBKZ01ZUmhPZ2JjRnJrYVJiNFEzTG9FR3dxSUVBY2VELXI5V213UTV3VjU5SzZ6c2w5NnJ0WTFjS1diQlI3RVpvcFdPZ19vaGROSDFHTlc2WlBMOE9rNkcwNWpfNHVQOGZSVUxtN2w5R1loTHNzanB5N3NGVWVTdHYzeFpXdk91cWVTSk54NW14UmQtX2pLNXFrX0N5SmxEOFJPZDRteFExY2tXcnBoYWlMcWhkRjZjTQ?oc=5",
+      "published_at": "Sat, 13 Dec 2025 08:00:00 GMT",
+      "published_ts": 1765612800.0,
+      "sentiment_score": 2.4,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Here's Why Infosys (INFY) is a Strong Momentum Stock - Nasdaq",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVDhNazEyX2Rsc1ByOVRYNTB1OFA4bUtXUEg2U3E4ZnZxbW04cWZTMkMxXzBmeXZEZk1USjdBeEIwWnJpeG5GUlp5dXFMZTlFMWVRNmctSVRXQXRrdzZvQUdNSXZTT25WZ1BXVVBpZ1lUN0cwWWZjNmJ6SEJfcF94QnN3?oc=5",
+      "published_at": "Wed, 10 Dec 2025 08:00:00 GMT",
+      "published_ts": 1765353600.0,
+      "sentiment_score": 2.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Infosys Share Price Today, 8 December 2025: Q2 FY26 Results, ₹18,000-Crore Buyback and Analyst Targets for INFY Stock - TechStock²",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOSVc3clNvakpKUThzN1kxMmN5X1k4V0J5a0tGYkpHSldLUkE0MV9ERldXdEtuOTVrNVhuTjUyODVXUnJMeVY5MXJvUkpKWXpHV3hsRnR6Q281OF9KZlhDaHUwOGFHc2REakdTOWpyMjdNSVNxeG11YWxKcW5mM2VGYzdnUEZiemdTREF5c2t2QXBXS1JBRVp5RGgteHlOYUZEZ1lmajg3ZWVOQ0dwUk82c004OVh4eU5ZRTBkOFNuNTJQemg0Y3l6NXEwSklnVHk4X2pOOS1JdHF1QQ?oc=5",
+      "published_at": "Mon, 08 Dec 2025 08:00:00 GMT",
+      "published_ts": 1765180800.0,
+      "sentiment_score": 2.4,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "IT stocks set for AI-led revival; Infy, HCL among Motilal Oswal's top bets - Business Standard",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPN29vSElrYWtpZjVWVkZJem5WY0tCSXQtVlhFaEEwcXZKX0N0WEdqNGZCT2lHU09jUllMNXhWMTczcXdCdWYwZ0I0Rm9kWXcwWjJDWlp5Rkt6aE5RQ3BSVkJYbEVyZGtBaV9ZSG54cTJGVXY3b2dqc2RiaWE3U09qcGZDWXJ1cnoxOVNnR3RrOHpjR0ZYaWZVYTc5Z2lYdlJMTlRSSlloNzdxZGF0Y1hZY0ZxanRBN2tyc0thZ19LOXJPMjY3WDBHRDJTaV9wTUQxVWtoZ3hqNmt0V1VaR2ZERNIB5gFBVV95cUxPZjRRb21wR3ZDYkEtWHd2UGRxbXJLWUxSMmFCQ3dDV0NRNUZBeDk2TkUxaExPRjdVUWxoV25VRTNHbjlDS2QxQWZOSTNvUERNUklSOUk2MmxUSFQ4a29BUTU0UmJqUzFTd2E1NzUwVTcwc2tYZHh3c0NiazVnYTBkU2NfbnN6U0VCWFQzLVphOVkxLWxpWEdSVmdXdndSYmF6dXo4Q205Yi1lOElsUFZZN3FoLVpJUmxSV1UxMzQxTGJYaV9SdHRwMkVQU0c4eHA5X0tZOENkSmkxNU9kTVNmRGJzdGN3QQ?oc=5",
+      "published_at": "Tue, 25 Nov 2025 08:00:00 GMT",
+      "published_ts": 1764057600.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    }
+  ],
+  "top_industry_news": [
+    {
+      "source": "google_rss_industry",
+      "title": "Global Green Hydrogen Prices Signal Major Energy Shift in 2026 - openPR.com",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPakxXNldORjl2dWl0bERPZGpQQUI4dEZHbWFkTDFCNERWMUk2REFwZWRhLVFGeGtQcFN2a3hNQ245OGNVVllqQ21kNUxTc0sxUlM3TC1lSk0zTHZEWlUwMWJ1SGpkSGN2SHVYU0hfRWRDN2toQmVCdmI3ZUZYUW16cjdPX2tNUGhzMENWYW85YVhEc1M4RHV1MVVsYmU0TXc?oc=5",
+      "published_at": "Fri, 13 Mar 2026 09:33:54 GMT",
+      "published_ts": 1773394434.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Infosys Limited",
+      "sector": "Technology",
+      "industry": "Information Technology Services"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Infosys Expands MInfosys Expands Mohali Development Center, Creates 3,000 Jobs - PSU Connect",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOclZvZ3BIMVdFbmtuc0sxU0JuQ1RDVGhiODNkMWZDQUNTdkpmWGhvdmkwZXl3ODZfQ2dpeC1zRGpBeXc1bURGN19xVEtjQ1dWMEprbnlmNndyLXBLYlRLR3JxT1gxX2d4SGNneWR4NTUtX2hPdWd4Smd0S2ZXWEVOWWVGc3lsVFByMHlaOU1rM0lEVFJ0UEpnVF9VVFhpZTRsSHc?oc=5",
+      "published_at": "Thu, 12 Mar 2026 06:37:00 GMT",
+      "published_ts": 1773297420.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Infosys Limited",
+      "sector": "Technology",
+      "industry": "Information Technology Services"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Infosys Vs TCS: Which IT Company Has More Potential to Utilize the $400 Billion AI Opportunity? - Trade Brains",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNXzE4VmxoQU9lNVRMckVyMmtMbnluVVQxMWF5dlZhR29YVEJfNjhHaHlJT2cwdWZlM0ZWSDBaQWZ5NGJld1BMdXdfYll5Y1FRYTZhNjlaTUtIYlM1QzVjYlVaUEgydEJ5ZXpWaHVGUWktZmhRWW1XUU4xQWFFamdlLTJsNGhhX2NjWkJQbmZzaHJjMU5uNGFCWVkyWDJUNUZyaXkzT2IweXRFMkFldFF0djhpZG14UEU?oc=5",
+      "published_at": "Wed, 11 Mar 2026 05:33:00 GMT",
+      "published_ts": 1773207180.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Infosys Limited",
+      "sector": "Technology",
+      "industry": "Information Technology Services"
+    },
+    {
+      "source": "bing_rss_industry",
+      "title": "India strongly positioned as the next global platform for consumer technology: Nothing co-founder",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b2b206c5492284d9a672eff18c3a&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2ftopstories%2findia-strongly-positioned-as-the-next-global-platform-for-consumer-technology-nothing-co-founder%2far-AA1XOtsQ&c=9634019043024314443&mkt=en-in",
+      "published_at": "Mon, 09 Mar 2026 04:07:00 GMT",
+      "published_ts": 1773029220.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated",
+      "company_name": "Infosys Limited",
+      "sector": "Technology",
+      "industry": "Information Technology Services"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "L&T: Rs 3.8 trillion order book Vs Middle East crisis – Why Motilal Oswal sees 16% upside - The Financial Express",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPRU92d2hDT0MzYnk4NkJJbG9RZjFvTVpvei1DN1J4WXNja0MwdVNmSjdoZml3VV9SdHR0bXdVLUE4M29LU2NFc2JMNGQ4U2FmY2Q0NkRITnJuTGRIa1RnVGEwa0Z5U0xvOV93cnZiR0tKNnN4cnFDRzVBYTBVUm9hOUE2UGo0WWZEeGdEeWk4aDh6TlNPa0VDRS1SaHpHZ1JBeWNWdjRtenN1a0laVER0cVh5Y0FlMnczajR3dG1VbmtZUkYzQlhRNnpHUWZCdWVDVWfSAdgBQVVfeXFMUF95LUptbkVWU0xzMzE3UWJsVWc4TXV6OFdpb1hXM2ktd3JuM2ZmcE94aVB0aThrQXlRRXU2dUZqR01NNlg2c0laQjJDUU5tSnZLd012cS1BRHpMQk5mYXlmM0tVcjJmMllHdE1LTklDNEQ2OFp3QU1zU1Q3VGZXNlJObUVXemVMSlk3ZEhrU2ZfaFlfOGlHTmdoWWJZdE5lcmRKLWg5YzctejAyT05ONXJVZFczRWx6ZDZ3QXptVDQ4WXFkVDY0Zk5zR1EwMkRJVDBjVkg2c1JC?oc=5",
+      "published_at": "Thu, 05 Mar 2026 04:41:22 GMT",
+      "published_ts": 1772685682.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Infosys Limited",
+      "sector": "Technology",
+      "industry": "Information Technology Services"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Here’s What Boosted Infosys Limited (INFY) in Q4 - Insider Monkey",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNS2U2ZF9ManVyRjFaWFBBRXdCZ0xmd19WR0w2RloyelZ1bDNtMjROaFVtSHFXWmRNUFB4anpkYmJkZFZyeWstaVh5S0g3a0JQSWw4RXdQYUpuWEkwRXpLUzVOR3hNSTlOUUJUN0oxd2htdFpUUzlEb2VTcTFGcjZORVZGZEl5NlJZcmVCYUxBY0dNYjDSAZsBQVVfeXFMTnJzQlpPSWJ6alFCR09jR1lkU0lSamU0MmlfOHRXRjAySHdGVm9ZNzh4cktpN3Z6Q0dOVEpJcVdGNk1TdHNJOFM3YUh1SGFuTkQxaDdCUWVKcjZNb2JCSGRRUmNLNHdQS0s0eUVDVzFlb19Tblk4akF1OTI3RXY1V0xWWmVBZUlOMjhyYVZCakIxVy1pTWxOb0RXRDg?oc=5",
+      "published_at": "Thu, 12 Feb 2026 08:00:00 GMT",
+      "published_ts": 1770883200.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Infosys Limited",
+      "sector": "Technology",
+      "industry": "Information Technology Services"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Infosys Limited (NSE:INFY) Stock's Been Sliding But Fundamentals Look Decent: Will The Market Correct The Share Price In The Future? - simplywall.st",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPVGQ5R3Bpcy1CeXFfX3E0aW5tWXd0R3ZTbHAzQVdXUkI4Vl9rMkZ1TFQzNHdlME1MN084YmUzUkNMS2JrbnJObTM2dVlHdFFCVFRrUklaYm5hN1BYNWFRXzloUmdwM2tZN1NkNTgzRjcxb09BTmxJdFQ3elI4UFJTWVl0dW5GSXE3RXk2aXVmZTVETkYyNjdkWFJHNENhV3NSOVkxQUstZUxjY0EtdDJ5MndYWS11S3lqUlF0ZGJVLWVVRXhzRHc0dnRNanjSAdIBQVVfeXFMUE5DaXBSRTlWM3JaVFc3dDZqMmhhR3VQWF9sVXgyTU03TldWelV5N0dPaU51VDVzRGU3VjZFb2ZZbnp2SXJ1LU56MGVqTno1MTlBYnZVZHJSa29aTExLVC03WGNuZDB6Z2pEdks3U0pOZGdXRlNzbEFjQm91bE1WQVNrQUdldUxFRERCSXNNc19mM1VYazJaeFdsRXZnMnFEQlNValcyOVU0d2Z3Qy1Xb0ZjMlhkNmZSNGpWOFE4a1RrdzZ4X1gwNFRacVprUzdDVzBR?oc=5",
+      "published_at": "Sun, 08 Feb 2026 08:00:00 GMT",
+      "published_ts": 1770537600.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Infosys Limited",
+      "sector": "Technology",
+      "industry": "Information Technology Services"
+    },
+    {
+      "source": "bing_rss_industry",
+      "title": "Budget 2026 signals India doubling down on its position as global tech services leader, IT industry says",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b2afe16e41399b39f649bd0724a1&url=https%3a%2f%2fwww.moneycontrol.com%2fnews%2fbusiness%2finformation-technology%2fbudget-2026-signals-india-doubling-down-on-its-position-as-global-tech-services-leader-it-industry-says-13803923.html&c=1729403532280256247&mkt=en-in",
+      "published_at": "Sun, 01 Feb 2026 12:18:00 GMT",
+      "published_ts": 1769948280.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated",
+      "company_name": "Infosys Limited",
+      "sector": "Technology",
+      "industry": "Information Technology Services"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "India EU Free Trade Agreement and its impact on Indian markets and companies - ICICI Direct",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPbFhTdWljcXVJRFpWYUl0MmFzRmx5YmdlMXNjanNRS0pFdGNwMzF1TzMzMGd0cGlPREpFU3JaZEhIM0VsY3cxSmpHNkU3LTlmaG1JT09JVmJGSlo5T3RwRTJuME1TTFJZTW9Ha3N5V2Jfc05KZlprcndtbkJKUnB4cUk4aVYxcnAzZTNJSmNQdlRJSndlS1hKQkF0M0ZyRkxpRkp0eHRGWXRDVm82MTlrTjlZTDE3Z0wzdDlsck1lNThrZUZ3OXc?oc=5",
+      "published_at": "Wed, 28 Jan 2026 08:00:00 GMT",
+      "published_ts": 1769587200.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Infosys Limited",
+      "sector": "Technology",
+      "industry": "Information Technology Services"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Infosys Limited Just Missed Earnings - But Analysts Have Updated Their Models - simplywall.st",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNMy1Vb2VLeXFUSkFwdWlyQ2ZZY0N0V0o0blJHdXJlSnM2bXNsVkNLdFpLZ3E1dzlWTDJiX0tudWk3V1NRbUNaLXlsUXo4Q0VMQ251Vm9HOTI1UVZEWmFLZkxFU09seGljSFJfQXNhMmRVa3ZISU5XY21zTHJhVzhHS21UbHVYbGFrNkptc19Ga1RJZEJmTzJZRVVFSjJjVFBzWmVnbnRuS1F1UGcySXEzSjFRWVNDOFNhcmEyOEpSa2p2RXNUUkhrYlpB0gHPAUFVX3lxTE9EbVpNSTVnLXdjOGJXN2ZRa2Rlb0ptVTNkRHQ3MWJpYUdLTy00bWxUVmtYNVRvcHhsaEljYktndkI5Tjh2SFZKVGhaelNvSEx2ZFFocGhlMVdQTTNOc1NoMVRxUUNwSDhtMlo5ZENJOC1USnh2VS1uM0gzN190VFN6TG54Y1o2MHBMZXNQancwUUFRZWtLZXNaUnBTVkFwRUQ3ZE91UlE4V2d1cnJfNC1Rd3NvbzhjRFRPXzk0VU1Tb0FlUi1SZHVjSndmeTdlYw?oc=5",
+      "published_at": "Sat, 17 Jan 2026 08:00:00 GMT",
+      "published_ts": 1768636800.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Infosys Limited",
+      "sector": "Technology",
+      "industry": "Information Technology Services"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Infosys Reports 2% Decline in Q3 Profit, Raises Revenue Outlook - India News Network",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQ1pzUjBzczMzX1JhR1VrT0pFX0pTdUszRWVVdlRVeDhiWEdmZHltdHNUNjN4SGNRMk0zbWQzZTJMcktEbG9sSEtHN0F1c2VyejgtaXBKQzdmRWxkUWNESmNHc1BwVlV5VHpFYkhHMkxTNWtkb0U2VmNiOVE0enFkMmJJNndjREZFREp2NFE3U29iNTJVbE1MNVZ0R1Q3TTFLNUozN2V3?oc=5",
+      "published_at": "Thu, 15 Jan 2026 08:00:00 GMT",
+      "published_ts": 1768464000.0,
+      "sentiment_score": -1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Infosys Limited",
+      "sector": "Technology",
+      "industry": "Information Technology Services"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Infosys (INFY) Soars 10.45% on Strong Revenue Outlook, PT Hike - Finviz",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOemNLUlRvUE5KUUc5WWFqQTh5am5GcXhZSk9lZDgxN1QweUZ4MVhwQk9GSE8wT2o4YWNLMTVJajNyWHh5QXR5OGZpa0ZjczE2U211SzNBSWRzNVA3V2RuMGIyZENqQVBkNWFVaGNZak9mRktVY3lFYjl0eWlscXNQclFKNmw5bHZWZWt3VmEtTHRmdw?oc=5",
+      "published_at": "Thu, 15 Jan 2026 08:00:00 GMT",
+      "published_ts": 1768464000.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Infosys Limited",
+      "sector": "Technology",
+      "industry": "Information Technology Services"
+    }
+  ],
+  "top_macro_news": [
+    {
+      "source": "google_rss_macro",
+      "title": "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRVNOajVzSUJWU3Q5R2toMjVnZVZMNDhLclozWDdNODc1OU1qbVFjYnFTT0Z1SUZaaExuY3FJajFkdWtOWk5kdWplT0J0Yk9RcnlDVnlvQmJZNC1jVDVHZmRhS0Z0X0JiXzFETHRnaUVac1pEMmZfWE9raXFacFpwR1dSaEVST0Ntc2k1czN4emNQVFlWSHE3V1ZhMW80OUFMYmN6dEwtTkRadm44enc?oc=5",
+      "published_at": "Fri, 13 Mar 2026 15:17:26 GMT",
+      "published_ts": 1773415046.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b2b774e241f19a2197ebe299571a&url=https%3a%2f%2fwww.livemint.com%2fmarket%2fstock-market-news%2fus-china-power-shift-global-markets-india-outlook-mirae-asset-swarup-mohanty-11773376870759.html&c=15555016077234823276&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 14:15:00 GMT",
+      "published_ts": 1773411300.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Fed to delay rate cuts as war clouds the outlook",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b2b7d6ad4f4fb16290dd70f5e610&url=https%3a%2f%2fthink.ing.com%2farticles%2ffed-to-delay-rate-cuts-as-war-clouds-the-outlook%2f&c=127436243108543137&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 13:40:00 GMT",
+      "published_ts": 1773409200.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss_macro",
+      "title": "BTC defies rising dollar, oil and yields, holds above $71,000 as macro pressures mount - CoinDesk",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbHB1NE1GZ1dLTWpvOWNseW5QXy1jbWVHcTYzcXF6NWotU0NHOG1XNEUzcDd0ZTctMW1URXZzSW5RQ1djc1h3a0xOM0k2Tkd5TjRWcE0wUXRwZjg4WktmZ2xDWnpLa0RhR1BsRzlrZlVlVzhONmQ0eW51VXJIWFQ3NFJkd0VXZ2VsUnY4VTBuWjU5LXpxX1BPYUIyaEZKQVdEWUU3a25CY0RvN3NrVW10cFNUTWtxSHdhSWI4?oc=5",
+      "published_at": "Fri, 13 Mar 2026 09:34:10 GMT",
+      "published_ts": 1773394450.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Gold Silver Rate Today Live Updates (13 March 2026): Gold, silver futures fall on MCX as rising crude oil prices dim hopes of early rate cuts",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b2b7738345ca9a602f23085b4160&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2flive-blog%2fgold-rate-silver-price-today-live-updates-mcx-gold-18k-22k-24k-rate-iran-isreal-us-war-latest-news%2fliveblog%2f129534056.cms&c=4108291931945502437&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 06:00:00 GMT",
+      "published_ts": 1773381600.0,
+      "sentiment_score": -1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Markets Today: Sensex Declines 830 Points, Nifty Slips Below 23,650 Amid Iran-US-Israel War",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b2b774e241f19a2197ebe299571a&url=https%3a%2f%2fwww.news18.com%2fbusiness%2fmarkets%2fmarkets-today-sensex-falls-1000-points-in-opening-trade-nifty-below-23600-as-oil-surges-past-100-9956009.html&c=7425380694736114227&mkt=en-in",
+      "published_at": "Thu, 12 Mar 2026 03:39:00 GMT",
+      "published_ts": 1773286740.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Share markets continue to bleed as West Asia tensions dampen sentiment, Sensex over 800 points down",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b2b774e241f19a2197ebe299571a&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fmarkets%2fshare-markets-continue-to-bleed-as-west-asia-tensions-dampen-sentiment-sensex-over-800-points-down%2far-AA1Yt9yX&c=14300386732484515462&mkt=en-in",
+      "published_at": "Thu, 12 Mar 2026 03:04:15 GMT",
+      "published_ts": 1773284655.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Trading Day: Oil and yields up, up, and away",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b2b7738345ca9a602f23085b4160&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2ftrading-day-oil-and-yields-up-up-and-away%2far-AA1YqbzQ&c=11227118164045986945&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 14:08:08 GMT",
+      "published_ts": 1773238088.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss_macro",
+      "title": "Markets Confront the Economic Impact of the Iran Conflict - Natixis CIB | Natixis Corporate & Investment Banking",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOVpkVlFlOG1lbEdUZEM2VU40clhkdUtsN3l6Z3Rkd2g4WTBNMVNKSFBmMmkyT1M0RGwtZGJxN1ItZVVrMEU3UnVfWFJ6UmpZUVppV09ZelhMWHNvZmhtbFk3ajc0UnlpY0dZeW51MGJnSUU3dGhYRGFQaE44NjJVaFFBVWFyVlNhampDdXFic0dCZXZ3YW5ScWUtWQ?oc=5",
+      "published_at": "Wed, 11 Mar 2026 10:55:26 GMT",
+      "published_ts": 1773226526.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "S&P 500 Faces Valuation Pressure as Oil and Yields Rise Together",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b2b7738345ca9a602f23085b4160&url=https%3a%2f%2fwww.investing.com%2fanalysis%2fsp-500-faces-valuation-pressure-as-oil-and-yields-rise-together-200676476&c=11959585435036819535&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 10:53:00 GMT",
+      "published_ts": 1773226380.0,
+      "sentiment_score": -1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    }
+  ],
+  "chart_path": "reports/INFY_NS_20260314_005849_trend.png",
+  "long_term_chart_path": "reports/INFY_NS_20260314_005849_long_term.png",
+  "rich_report": "Indian Swing Trading Multi-Agent Report\nIndicator Signal: SELL | Trend: close=1248.30, SMA20=1315.85, SMA50=1488.73. Momentum: MACD=-62.148, Signal=-66.387, Hist=4.239, ROC10=-3.16%. Oscillators: RSI14=25.2, StochK/D=5.2/7.1, Williams%R=-94.8. Risk: ATR14=34.13, Volume=7365621 vs VolSMA20=15584073. Momentum Score=25.0/100 | MA=Sell, Trend=Falling, RSI=Oversold, MACD=Bullish.\nPattern Signal: SELL | setup=range breakdown with negative slope, slope=-4.8933, breakout_up=False, breakdown=True, bull_engulf=False, bear_engulf=False.\nTrend Signal: NO_TRADE | setup=sideways trend channel, support slope=-3.437, resistance slope=-3.263, price position=-3.21 in channel.\nNews Signal: NO_TRADE | combined sentiment=0.20 (stock=0.30, industry=0.16, macro=-0.06). Stock articles=18 (trusted=0, unrated=18); Industry articles=30 (trusted=0); Macro articles=30 (trusted=0). Sentiment strength=0.30. Inference=Evidence is mixed. While Infosys has positive fundamental catalysts like its Anthropic collaboration for AI, the broader sector is struggling, as evidenced by recent sharp declines in the Nifty IT index and 52-week lows for major players. Given the lack of clear directional momentum and conflicting sector-wide headwinds, a neutral stance is advised..\nMarket Sentiment: NO_TRADE | NIFTY 5D=-4.59%, 10D=-3.16%, 20D=-9.94%, SMA20 gap=-5.1% (below). India VIX=1248.300048828125, 5D chg=-60.1, news sentiment=0.20. Votes: bull=2, bear=2.\nRelative Strength: NO_TRADE | stock 10-bar return=-4.52%, NIFTY=-4.52%, alpha=0.00%.\nUS Trend Signal: SELL | Global risk-off backdrop. SPX 5D/20D=-4.59%/-9.94%, NDX 5D/20D=-4.59%/-9.94%, VIX=27.29, DXY 5D=0.00%.\nFinancials Signal: BUY | Fundamentals supportive. Coverage=77%. ROE=28.18%, Margin=16.38%, RevGrowth=N/A, EarnGrowth=N/A, D/E=0.086, CurrentRatio=N/A, PE=1599.471. Quarterly trends: RevQoQ=0.45%, NIQoQ=-10.97%, OCFQoQ=-16.85%, DebtQoQ=-0.81%, FCF=915.00M, Cash/Debt=2.266. Analyst target=N/A (N/A upside, ? analysts). 52w Hi/Lo=1728.000/1242.600, position=1.17%.\nMarket Setup Signal: NO_TRADE | Early bearish alignment. Tape read: 5d=-4.6%, 20d=-9.9%, volume ratio=0.55, momentum=25.0. Support gap=N/A and resistance gap=6.6%. Trader read: The asset is deeply oversold (RSI 25, Williams %R -95), creating high risk for a mean-reversion bounce. While the trend is bearish, volume is significantly below average (0.55 ratio), suggesting a lack of institutional conviction for a breakdown. Chasing shorts here offers poor risk-reward; waiting for a stabilization or a failed rally is preferred.\nCatalyst Context Signal: NO_TRADE | Positive headlines, incomplete confirmation. Backdrop read: news sentiment=0.20, analyst upside=None, 52w position=1.2. Core read: The stock is testing critical 52-week support at ₹1242, which often invites technical buying. However, the fundamental picture is conflicted, with sharp QoQ declines in net income and operating cash flow. The high valuation discrepancy and lack of clear growth momentum make a decisive directional call speculative at this junction.\nTrader Intel: NO_TRADE | Wait for structural washout | Bottom-fishing avoidance in IT laggards. Thesis: INFY is in a 'dead zone'. Institutional flow is absent as evidenced by the low volume ratio, meaning any price action is currently retail-driven volatility. We are at a critical support level, but until we see a 'shakeout' candle (lower wick) or a high-volume capitulation, any buy is just catching a falling knife. Why now: The stock is deeply oversold, making shorting dangerous, but the lack of institutional conviction makes buying a low-probability gamble. Why not now: The Nifty IT index lacks sector leadership right now; there is no positive delta from the broader market to drag this ticker upward.\nMaster Confluence Committee: BUY=0.086, SELL=0.240, NO_TRADE=0.292. Final=SELL, confidence=0.676. Support=['technical', 'pattern', 'us_trend']; Opposing=['financials']; Neutral=['trend', 'news', 'market_sentiment', 'relative_strength', 'market_setup', 'catalyst_context'].\nRisk Plan: size=0 shares, ATR=34.13, stop=N/A, target=N/A.\n**FINAL CONCLUSION**\n- Signal: NO_TRADE\n- Confidence: 0.350\n- Action Bias: Wait / no-trade setup\n- Playbook: Bottom-fishing avoidance in IT laggards\n- Thesis: INFY is in a 'dead zone'. Institutional flow is absent as evidenced by the low volume ratio, meaning any price action is currently retail-driven volatility. We are at a critical support level, but until we see a 'shakeout' candle (lower wick) or a high-volume capitulation, any buy is just catching a falling knife.\n- When to Act: Price must reclaim the 10-day VWAP on a 15-minute chart with a volume spike > 1.5x average.\n- Execution Style: Passive observer; waiting for a trend-reversal pattern\n- Invalidation: Fresh breakdown below the ₹1240 level with sustained volume confirming the structural drift.\n- Expected Holding Duration: 2-6 weeks\n- Context: sideways trend channel\n- Risk Flag: High - Vicious mean reversion bounces occur without volume support, leading to immediate traps.\n- Stop-loss: N/A\n- Targets: N/A\n- 52w Range: ₹1242.60 – ₹1728.00\n- Current Price Context: ₹1248.30\n- Approx Risk:Reward to first target: N/A\n- Teaching note: prioritize process over prediction. Enter only after trigger confirmation, size by invalidation distance, and review whether the thesis is invalidated before averaging or adding.\n\nDetailed Agent Reasoning:\n- technical: Signal is SELL with 0.68 confidence. Price at 1248.30 remains significantly below SMA20 (1315.85) and SMA50 (1488.73), confirming a bearish trend. RSI at 25.2 indicates deep oversold territory, yet momentum is weak (MACD -62.15). Volume at 7,365,621 is only 47% of the 20-day average (15,584,073), suggesting a lack of institutional conviction for a reversal despite the oversold state.\n- pattern: Signal is SELL with 0.65 confidence. The security exhibits a clear range breakdown with a negative slope of -4.89. The structure fails to show bullish engulfing patterns to signal exhaustion, confirming the bearish continuation. The breakdown is supported by price structure rather than isolated spikes, reinforcing the downward bias.\n- trend: Signal is NO_TRADE with 0.51 confidence. Price is caught in a sideways trend channel with an average slope of -3.35 and channel width of 38.45. Current position (-3.21) relative to channel boundaries indicates an inability to sustain directional momentum. Neutral stance is maintained as the channel slope is too weak to confirm a definitive trend regime.\n- news: Signal is NO_TRADE with 0.55 confidence. Sentiment is mixed at 0.20, balancing company-specific positives like the Anthropic AI collaboration against broad sector headwinds. With 18 stock-specific and 60 total industry/macro articles lacking high-trust sources, evidence is inconclusive. Conflict between micro-level AI initiatives and negative Nifty IT index trends necessitates a neutral posture.\n- market_sentiment: Market sentiment is bearish given the oversold RSI of 25.2 and consistent trading below key moving averages. The lack of volume participation (approx 50% of 20-day SMA) indicates that sellers are currently unopposed by meaningful buying pressure, though the extreme proximity to structural support floors prevents a high-conviction short entry until further volatility confirms the breakdown.\n- relative_strength: The asset displays weak relative strength, evidenced by the price trading significantly below both the 20-day and 50-day moving averages. The ROC10 of -3.16% confirms the asset is underperforming. With a volume-to-SMA20 ratio of 0.47, the asset is failing to attract the necessary capital to reclaim its moving averages, signaling clear underperformance against broader market benchmarks.\n- us_trend: The US-listed ADR or comparable sector trend mirrors the domestic weakness, as evidenced by consistent price degradation below SMA20 (1315.85) and SMA50 (1488.73). Macro-level headwinds affecting global IT services remain the primary pressure point, with the negative sentiment score (-0.06) in the macro segment suggesting that US-based institutional flows remain cautious regarding global technology consulting services.\n- financials: Financial data confirms a bearish fundamental backdrop. While Infosys maintains core service contracts, the price at 1248.30 is pressured by current momentum metrics (MACD -62.15). The volatility regime, measured by ATR14 of 34.13, alongside falling moving averages, suggests that current market pricing is discounting the near-term earnings outlook, confirming the technical breakdown as the primary driver for current valuation levels.\n- market_setup: The setup is a range breakdown with negative slope (-4.89). Price action is currently trapped in a narrow, decaying channel. Lack of volume confirmation (7.36M vs 15.58M average) suggests that current levels are likely to see low liquidity swings. The confluence of a bearish MACD and negative slope dictates a defensive posture, as the technicals favor the downside but market conditions lack the momentum for immediate, high-conviction breakout entry.\n- catalyst_context: The primary catalyst is the conflict between company-specific AI infrastructure updates and broad sector contraction. The Anthropic collaboration acts as a potential positive, but is currently neutralized by the industry-wide struggle reflected in the Nifty IT index. Short-term price action is dominated by institutional apathy (low volume) rather than news-driven volatility, preventing a trade trigger.\n- confluence: Confluence is weak due to conflicting signals between momentum and trend. While the technical breakdown (SMA, MACD, pattern) is bearish, the oversold RSI (25.2) and the sideways nature of the channel suggest that the market is in a consolidation phase. Without a reclaim of the 1315 SMA20 level or increased volume to confirm the breakdown, there is no high-probability setup available.\n- risk: Risk is high due to extreme RSI levels (25.2), which invite potential mean-reversion spikes. The ATR of 34.13 indicates elevated volatility, meaning stop-losses must be set wide to avoid noise, potentially deteriorating the risk-reward ratio. Given the low volume, any sudden influx of liquidity could lead to significant slippage or whipsaw movement, rendering short positions vulnerable to rapid reversals.\n\nGemini Master Reasoning:\nSetup\nThe asset is currently oscillating within a decaying sideways channel, hovering precariously near the 52-week support level of ₹1242.60. Technically, the stock is deeply oversold, with an RSI of 25.2 and Williams %R at -94.8. However, looking at the tape, the volume ratio sits at 0.55—barely half of the 20-day average. This low-volume profile at a critical structural support is a classic \"dead zone.\" There is no institutional participation, meaning the current price action is merely retail-driven noise, which makes any attempt to pick a bottom a high-probability trap.\n\nCatalyst\nThe narrative is fundamentally fractured. We see positive headlines regarding AI infrastructure and the Anthropic collaboration, yet these are completely neutralized by the macro headwinds facing the Nifty IT index. Furthermore, internal financials are deteriorating, specifically the QoQ net income decline of 11%. When you have a fundamental story that conflicts with the technical reality of a bearish trend, the only prudent move is to stay on the sidelines. We lack a catalyst that brings the big money back into the fold.\n\nFriction\nThe primary friction is the lack of institutional conviction. We are seeing a structural drift without the volume \"washout\" that typically marks a genuine bottom. Because the volatility (ATR of 34.13) remains elevated, any aggressive entry would force a wide stop-loss, causing your risk-to-reward ratio to collapse. Without a surge in volume, we are essentially trying to guess where the bottom is in a falling market—a task that is consistently unprofitable for retail traders.\n\nExecution Plan\nWe are currently in a passive observation phase. Do not initiate any long or short positions at this price level. If you feel the urge to trade, you must wait for a clean structural break. \nIf the price reclaims the 10-day VWAP on a 15-minute chart with a volume spike exceeding 1.5x the average, we may consider a tactical long. \nHowever, if the price makes a clean, high-volume breakdown below ₹1240, the structural support is officially broken, and any long thesis must be abandoned immediately.\n\nRisk Protocol\nOur current position size is zero. The risk budget for a trade of this nature, if a valid setup were to materialize, would be 1% of the total trading capital. Given the high volatility, the stop-loss must be anchored to the technical invalidation point rather than an arbitrary percentage. If the trade entry conditions are not met perfectly, we do not participate. We do not scale into losing positions or attempt to \"average down\" at lower prices; that is the fastest way to lose your equity in a declining trend.\n\nTeaching Notes\nIn this business, your most important tool is the ability to do nothing. Developing traders often fall into the trap of believing they must always be \"in\" a stock. In a weak market, the highest-conviction trade is often the one you choose not to take. Focus on the distinction between volatility and momentum. A low-volume bounce is not a reversal; it is a liquidity vacuum that will likely be filled by further selling. Prioritize process over the prediction of a bounce.\n\nVerdict\nNO_TRADE. The edge is weak and the market context is too noisy. We are waiting for a clear capitulation or a definitive trend-reversal pattern backed by institutional volume. Until the 10-day VWAP is reclaimed with conviction, keep your capital protected.\n\nLLM Token Usage:\n- Input tokens: 16969\n- Output tokens: 2765\n- Total tokens: 19734\n- Estimated cost (USD): 0.0\n\nLONG-TERM OUTLOOK (Based on News, Financials, and Price Data)\n- Stance: LONG_TERM_BULLISH\n- Confidence: 0.650\n- Sector: Unknown\n- Data coverage: 2716 daily bars for long-term model.\n- Price trend (1Y/3Y/5Y/10Y): -25.095861733791914% / -14.061260952361742% / 8.780360361855365% / 195.88018183508186%.\n- Long-run quality: CAGR(3Y)=-4.925731558141544%, CAGR(5Y)=1.6974582523581194%, CAGR(10Y)=11.458087739040046%,\n  Max Drawdown(5Y)=-36.549813338935685%, Vol=26.501752404097033%.\n- Structural trend: price vs 200DMA=-17.577246822481474%.\n- Note: N/A metrics indicate insufficient history for that exact horizon, not an implied negative value.\n- News signal: avg sentiment=0.20 across stock/industry/macro streams (15/12/10 items).\n- News decomposition: stock=N/A, industry=0.162925, macro=-0.059287007015714134.\n- Fundamental location: 52w position=1.2%, 1Y return=-25.095861733791914%.\n- Street context: analyst upside=N/A% from N/A analysts.\n- Macro overlay: India sentiment=NO_TRADE, US trend=SELL.\n\n--- VALUATION SNAPSHOT ---\n- P/E (trailing): 1599.47\n- PEG ratio: N/A\n- Price/Book: 450.79\n- ROE: 28.2%\n- Debt/Equity: 0.09\n- EV/EBITDA: 1152.44\n- EV/Revenue: 254.36\n- Book value per share: 2.77\n- Enterprise value: N/A\n- Gross margins: 30.5%\n- Operating margins: 21.1%\n- EBITDA margins: N/A\n- Total revenue: 19,277,000,000\n- Total debt: 962,000,000\n- Total cash: 2,861,000,000\n\n--- QUARTERLY FINANCIAL TRENDS ---\n- Revenue QoQ growth: N/A\n- Net income QoQ growth: N/A\n- Operating cash flow QoQ: N/A\n\n--- DIVIDEND & OWNERSHIP ---\n- Dividend yield: 7.5%\n- Dividend yield trend: rising\n- Total dividends (1Y): ₹45.00\n- Institutional ownership: 49.2%\n- Major holders (institutions): N/A%\n\n--- SCORING FACTORS ---\n  ↑ news_sentiment: score=+0.20 × weight=1.00\n  ↓ return_1y: score=-0.25 × weight=0.90\n  ↓ return_3y: score=-0.14 × weight=0.80\n  → return_5y: score=+0.09 × weight=0.70\n  ↑ cagr_5y: score=+0.17 × weight=0.90\n  ↓ sma200_position: score=-1.76 × weight=0.50\n  ↓ max_drawdown: score=-0.37 × weight=0.50\n  ↓ volatility: score=-0.27 × weight=0.40\n  ↓ 52w_position: score=-0.98 × weight=0.30\n  ↓ 1y_change: score=-0.25 × weight=0.70\n  ↑ dividend_yield: score=+0.75 × weight=0.40\n  ↑ cagr_10y: score=+1.15 × weight=1.00\n  ↑ operating_margins: score=+0.21 × weight=0.90\n  ↑ roe: score=+0.28 × weight=1.00\n  ↑ gross_margins: score=+0.30 × weight=0.70\n  → debt_to_equity: score=-0.04 × weight=0.90\n  ↓ trailing_pe: score=-0.99 × weight=0.50\n  ↓ price_to_book: score=-0.99 × weight=0.50\n  ↓ us_macro: score=-1.00 × weight=0.35\n--- DIRECT NEWS EVIDENCE (Top Headlines Used) ---\n- Company 1: Top stocks in news: Infy, AEL, Waaree, IndiGo, BoB, HindZinc, AB Capital, SEDEMAC, Polycab - Business Today\n- Company 2: Infy share price: AI boon or bane for Infosys? What's ahead after Anthropic collaboration - MSN\n- Company 3: Infosys Limited (INFY) Collaborates With Anthropic - Finviz\n- Industry 1: Global Green Hydrogen Prices Signal Major Energy Shift in 2026 - openPR.com\n- Industry 2: Infosys Expands MInfosys Expands Mohali Development Center, Creates 3,000 Jobs - PSU Connect\n- Industry 3: Infosys Vs TCS: Which IT Company Has More Potential to Utilize the $400 Billion AI Opportunity? - Trade Brains\n- Macro 1: Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView\n- Macro 2: Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty\n- Macro 3: Fed to delay rate cuts as war clouds the outlook\n\n- Composite score: -0.062\n- Secular Growth Forecast: Core drivers: Anthropic AI collaboration and Mohali expansion. Risks: Fed rate delay and sector-wide volatility. Evidence for secular thesis remains intact via strong margins and rising dividend yield. 3-5 Year Forecast: Base: 12-15% CAGR via AI-led enterprise modernization; Bull: 20%+ via market share gains in global digital transformation; Bear: 5% stagnation if AI integration fails.\n",
+  "price_52w": {
+    "high": 1728.0,
+    "low": 1242.6,
+    "current": 1248.3,
+    "position_pct": 1.2,
+    "change_1y_pct": null
+  },
+  "analyst_consensus": {
+    "target_price": null,
+    "target_high": null,
+    "target_low": null,
+    "n_analysts": null,
+    "implied_upside_pct": null
+  },
+  "fundamental_signals": [
+    {
+      "type": "mixed",
+      "text": "Near 52-week low (₹1242.60–₹1248.30) — historically strong demand zone. Deep oversold bounces common, but confirm volume."
+    },
+    {
+      "type": "bearish",
+      "text": "Net income declined sharply QoQ (-11.0%)."
+    }
+  ],
+  "key_price_levels": [
+    {
+      "label": "Resistance 1",
+      "price": 1331.1,
+      "type": "resistance"
+    },
+    {
+      "label": "Resistance 2",
+      "price": 1585.0,
+      "type": "resistance"
+    },
+    {
+      "label": "Resistance 3",
+      "price": 1638.05,
+      "type": "resistance"
+    },
+    {
+      "label": "Current",
+      "price": 1248.3,
+      "type": "current"
+    }
+  ],
+  "momentum_score": 25.0,
+  "qualitative_labels": {
+    "moving_averages": "Sell",
+    "trend_channel": "Falling",
+    "rsi": "Oversold",
+    "macd": "Bullish"
+  },
+  "valuation_snapshot": {
+    "pe_trailing": 1599.4710797826954,
+    "peg_ratio": null,
+    "ev_to_ebitda": 1152.442,
+    "ev_to_revenue": 254.36,
+    "gross_margins": 0.29354998,
+    "operating_margins": 0.18023,
+    "ebitda_margins": 0.22071,
+    "book_value": 210.82779,
+    "dividend_yield": 3.56,
+    "enterprise_value": 5048273731584,
+    "roe": 0.2818384649709951,
+    "debt_to_equity": 0.08585452922802321,
+    "price_to_book": 450.79247389145485,
+    "total_revenue": 19847000064,
+    "total_debt": 978000000,
+    "total_cash": 2984999936
+  },
+  "master_reasoning": {
+    "model": "gemini-3.1-flash-lite-preview",
+    "text": "Setup\nThe asset is currently oscillating within a decaying sideways channel, hovering precariously near the 52-week support level of ₹1242.60. Technically, the stock is deeply oversold, with an RSI of 25.2 and Williams %R at -94.8. However, looking at the tape, the volume ratio sits at 0.55—barely half of the 20-day average. This low-volume profile at a critical structural support is a classic \"dead zone.\" There is no institutional participation, meaning the current price action is merely retail-driven noise, which makes any attempt to pick a bottom a high-probability trap.\n\nCatalyst\nThe narrative is fundamentally fractured. We see positive headlines regarding AI infrastructure and the Anthropic collaboration, yet these are completely neutralized by the macro headwinds facing the Nifty IT index. Furthermore, internal financials are deteriorating, specifically the QoQ net income decline of 11%. When you have a fundamental story that conflicts with the technical reality of a bearish trend, the only prudent move is to stay on the sidelines. We lack a catalyst that brings the big money back into the fold.\n\nFriction\nThe primary friction is the lack of institutional conviction. We are seeing a structural drift without the volume \"washout\" that typically marks a genuine bottom. Because the volatility (ATR of 34.13) remains elevated, any aggressive entry would force a wide stop-loss, causing your risk-to-reward ratio to collapse. Without a surge in volume, we are essentially trying to guess where the bottom is in a falling market—a task that is consistently unprofitable for retail traders.\n\nExecution Plan\nWe are currently in a passive observation phase. Do not initiate any long or short positions at this price level. If you feel the urge to trade, you must wait for a clean structural break. \nIf the price reclaims the 10-day VWAP on a 15-minute chart with a volume spike exceeding 1.5x the average, we may consider a tactical long. \nHowever, if the price makes a clean, high-volume breakdown below ₹1240, the structural support is officially broken, and any long thesis must be abandoned immediately.\n\nRisk Protocol\nOur current position size is zero. The risk budget for a trade of this nature, if a valid setup were to materialize, would be 1% of the total trading capital. Given the high volatility, the stop-loss must be anchored to the technical invalidation point rather than an arbitrary percentage. If the trade entry conditions are not met perfectly, we do not participate. We do not scale into losing positions or attempt to \"average down\" at lower prices; that is the fastest way to lose your equity in a declining trend.\n\nTeaching Notes\nIn this business, your most important tool is the ability to do nothing. Developing traders often fall into the trap of believing they must always be \"in\" a stock. In a weak market, the highest-conviction trade is often the one you choose not to take. Focus on the distinction between volatility and momentum. A low-volume bounce is not a reversal; it is a liquidity vacuum that will likely be filled by further selling. Prioritize process over the prediction of a bounce.\n\nVerdict\nNO_TRADE. The edge is weak and the market context is too noisy. We are waiting for a clear capitulation or a definitive trend-reversal pattern backed by institutional volume. Until the 10-day VWAP is reclaimed with conviction, keep your capital protected."
+  },
+  "llm_usage": {
+    "calls": [
+      {
+        "name": "News Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2584,
+        "output_tokens": 103,
+        "total_tokens": 2687
+      },
+      {
+        "name": "US Trend Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 396,
+        "output_tokens": 100,
+        "total_tokens": 496
+      },
+      {
+        "name": "Catalyst Context Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2516,
+        "output_tokens": 100,
+        "total_tokens": 2616
+      },
+      {
+        "name": "Market Setup Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2047,
+        "output_tokens": 110,
+        "total_tokens": 2157
+      },
+      {
+        "name": "Trader Intel Agent",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1559,
+        "output_tokens": 356,
+        "total_tokens": 1915
+      },
+      {
+        "name": "Batched Agent Reasoning",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1722,
+        "output_tokens": 1139,
+        "total_tokens": 2861
+      },
+      {
+        "name": "Long-Term Outlook Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1626,
+        "output_tokens": 115,
+        "total_tokens": 1741
+      },
+      {
+        "name": "Master Reasoning",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 4519,
+        "output_tokens": 742,
+        "total_tokens": 5261
+      }
+    ],
+    "llm_enabled": true,
+    "skipped_calls": 0,
+    "error_calls": 0,
+    "total_input_tokens": 16969,
+    "total_output_tokens": 2765,
+    "total_tokens": 19734,
+    "pricing": {
+      "input_cost_per_1m": 0.0,
+      "output_cost_per_1m": 0.0,
+      "estimated_total_cost_usd": 0.0
+    }
+  }
+}

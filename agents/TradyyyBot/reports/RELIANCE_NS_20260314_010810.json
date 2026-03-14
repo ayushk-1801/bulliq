@@ -1,0 +1,1810 @@
+{
+  "report_id": "RELIANCE_NS_20260314_010810",
+  "symbol": "RELIANCE.NS",
+  "timeframe": "1d",
+  "forecast_bars": 3,
+  "start_timestamp": "2025-11-13 15:30:00",
+  "end_timestamp": "2026-03-13 15:30:00",
+  "final_signal": "NO_TRADE",
+  "confidence": 0.35,
+  "confluence_scores": {
+    "buy": 0.192,
+    "sell": 0.108,
+    "no_trade": 0.333
+  },
+  "risk_plan": {
+    "summary": "Risk Plan: size=0 shares, ATR=36.38, stop=N/A, target=N/A.",
+    "reasoning_prompt": "Risk protocol:\n1) Estimate recent volatility using ATR.\n2) Define one-unit risk from ATR multiple and cap portfolio risk near 1% per trade.\n3) Convert risk budget into position size.\n4) Anchor stop to volatility-adjusted invalidation and target to asymmetric reward.\n5) Force size=0 when final signal is NO_TRADE.",
+    "llm_reasoning": "Risk is elevated due to the sideways compression. The ATR14 of 36.38 indicates moderate volatility, meaning any breakout could be sharp. The risk of a 'false breakout' is high given the lack of structural alignment. Maintain a tight stop-loss below the recent support of 1367.33 if long, as a breakdown here could lead to a rapid move lower within the channel.",
+    "position_size": 0,
+    "stop_loss": null,
+    "target": null,
+    "risk_reward": "N/A",
+    "detail": {
+      "capital": 100000.0,
+      "risk_budget": 1000.0,
+      "one_risk": 43.65431082589286,
+      "atr": 36.378592354910715
+    }
+  },
+  "final_conclusion": {
+    "signal": "NO_TRADE",
+    "confidence": 0.35,
+    "when_to_buy": "Wait for a sustained 15-minute close above 1445 with expanding volume for long, or a flush below 1400 for short.",
+    "expected_holding_duration": "2-6 weeks",
+    "stop_loss": null,
+    "targets": [],
+    "target": null,
+    "analyst_consensus": {
+      "target_price": null,
+      "target_high": null,
+      "target_low": null,
+      "n_analysts": null,
+      "implied_upside_pct": null
+    },
+    "price_52w": {
+      "high": 1611.8,
+      "low": 1114.85,
+      "current": 1380.7,
+      "position_pct": 53.5,
+      "change_1y_pct": null
+    },
+    "key_price_levels": [
+      {
+        "label": "Resistance 1",
+        "price": 1441.75,
+        "type": "resistance"
+      },
+      {
+        "label": "Resistance 2",
+        "price": 1473.0,
+        "type": "resistance"
+      },
+      {
+        "label": "Resistance 3",
+        "price": 1489.5,
+        "type": "resistance"
+      },
+      {
+        "label": "Current",
+        "price": 1392.2,
+        "type": "current"
+      },
+      {
+        "label": "Support",
+        "price": 1368.0,
+        "type": "support"
+      },
+      {
+        "label": "Breakdown Zone",
+        "price": 1335.5,
+        "type": "breakdown"
+      }
+    ],
+    "playbook_title": "Capital Preservation in Compression",
+    "thesis": "Reliance is caught in a classic 'grind' phase. Institutional interest is currently muted, evidenced by the lackluster volume profile relative to the 20-day average. We are sitting in the middle of a 1400-1450 liquidity vacuum. Without a Nifty trend-day setup, RIL lacks the beta to break out of this coil.",
+    "execution_style": "Observation-only",
+    "risk_flag": "High chop risk; potential for whipsaws.",
+    "invalidation": "A reversal back inside the current range after a breakout attempt.",
+    "simple_summary": "NO_TRADE: Simple view: Signals are mixed, so capital protection is the priority. Wait for clear breakout or breakdown before taking a new position. Confidence is Low. Entry rule: Wait. Buy trigger above ₹1441.75; avoid if price falls below ₹1368.00.",
+    "simple_explanation": "Simple view: Signals are mixed, so capital protection is the priority. Wait for clear breakout or breakdown before taking a new position.",
+    "beginner_plan": [
+      "Step 1: Direction = NO_TRADE.",
+      "Step 2: Entry trigger = Wait for a sustained 15-minute close above 1445 with expanding volume for long, or a flush below 1400 for short.",
+      "Step 3: Stop-loss = ₹1354.32 (only after buy trigger confirms)",
+      "Step 4: First target = ₹1473.00 (only after buy trigger confirms)",
+      "Step 5: If trigger fails or invalidation happens, exit and wait."
+    ],
+    "normal_person_plan": [
+      "What to do now: Wait, no trade now.",
+      "Entry: Wait. Buy trigger above ₹1441.75; avoid if price falls below ₹1368.00.",
+      "Before market opens: set price alerts on trigger and invalidation levels.",
+      "Stop-loss plan: ₹1354.32 (only after buy trigger confirms)",
+      "First target plan: ₹1473.00 (only after buy trigger confirms)",
+      "Position sizing: risk only a small amount (around 1% of trading capital).",
+      "If stop-loss is hit after entry, exit immediately. Do not average down."
+    ],
+    "summary": "**FINAL CONCLUSION**\n- Signal: NO_TRADE\n- Confidence: 0.350\n- Action Bias: Wait / no-trade setup\n- Playbook: Capital Preservation in Compression\n- Thesis: Reliance is caught in a classic 'grind' phase. Institutional interest is currently muted, evidenced by the lackluster volume profile relative to the 20-day average. We are sitting in the middle of a 1400-1450 liquidity vacuum. Without a Nifty trend-day setup, RIL lacks the beta to break out of this coil.\n- When to Act: Wait for a sustained 15-minute close above 1445 with expanding volume for long, or a flush below 1400 for short.\n- Execution Style: Observation-only\n- Invalidation: A reversal back inside the current range after a breakout attempt.\n- Expected Holding Duration: 2-6 weeks\n- Context: sideways trend channel\n- Risk Flag: High chop risk; potential for whipsaws.\n- Stop-loss: N/A\n- Targets: N/A\n- 52w Range: ₹1114.85 – ₹1611.80\n- Current Price Context: ₹1392.20\n- Approx Risk:Reward to first target: N/A\n- Teaching note: prioritize process over prediction. Enter only after trigger confirmation, size by invalidation distance, and review whether the thesis is invalidated before averaging or adding."
+  },
+  "long_term_outlook": {
+    "stance": "LONG_TERM_BULLISH",
+    "confidence": 0.65,
+    "score": 0.215,
+    "summary": "LONG-TERM OUTLOOK (Based on News, Financials, and Price Data)\n- Stance: LONG_TERM_BULLISH\n- Confidence: 0.650\n- Sector: Unknown\n- Data coverage: 2716 daily bars for long-term model.\n- Price trend (1Y/3Y/5Y/10Y): 18.897604878127595% / 25.501482041634493% / 59.603173142662456% / 539.6243541659364%.\n- Long-run quality: CAGR(3Y)=7.865596995138424%, CAGR(5Y)=9.80150789901424%, CAGR(10Y)=20.39057789554921%,\n  Max Drawdown(5Y)=-45.08836043596871%, Vol=27.058056162845702%.\n- Structural trend: price vs 200DMA=-3.846308034510504%.\n- Note: N/A metrics indicate insufficient history for that exact horizon, not an implied negative value.\n- News signal: avg sentiment=0.06 across stock/industry/macro streams (15/12/10 items).\n- News decomposition: stock=N/A, industry=0.12030093616234758, macro=-0.05922169735868038.\n- Fundamental location: 52w position=53.5%, 1Y return=18.897604878127595%.\n- Street context: analyst upside=N/A% from N/A analysts.\n- Macro overlay: India sentiment=SELL, US trend=SELL.\n\n--- VALUATION SNAPSHOT ---\n- P/E (trailing): 26.83\n- PEG ratio: N/A\n- Price/Book: 2.22\n- ROE: 8.3%\n- Debt/Equity: 0.44\n- EV/EBITDA: 13.02\n- EV/Revenue: 2.14\n- Book value per share: 623.09\n- Enterprise value: N/A\n- Gross margins: 25.1%\n- Operating margins: 11.7%\n- EBITDA margins: N/A\n- Total revenue: 9,646,930,000,000\n- Total debt: 3,695,750,000,000\n- Total cash: 1,006,450,000,000\n\n--- QUARTERLY FINANCIAL TRENDS ---\n- Revenue QoQ growth: N/A\n- Net income QoQ growth: N/A\n- Operating cash flow QoQ: N/A\n\n--- DIVIDEND & OWNERSHIP ---\n- Dividend yield: 1.4%\n- Dividend yield trend: rising\n- Total dividends (1Y): ₹5.50\n- Institutional ownership: 28.0%\n- Major holders (institutions): N/A%\n\n--- SCORING FACTORS ---\n  → news_sentiment: score=+0.06 × weight=1.00\n  ↑ return_1y: score=+0.19 × weight=0.90\n  ↑ return_3y: score=+0.26 × weight=0.80\n  ↑ return_5y: score=+0.60 × weight=0.70\n  ↑ cagr_5y: score=+0.98 × weight=0.90\n  ↓ sma200_position: score=-0.38 × weight=0.50\n  ↓ max_drawdown: score=-0.45 × weight=0.50\n  ↓ volatility: score=-0.27 × weight=0.40\n  → 52w_position: score=+0.07 × weight=0.30\n  ↑ 1y_change: score=+0.19 × weight=0.70\n  ↑ dividend_yield: score=+0.14 × weight=0.40\n  ↑ cagr_10y: score=+2.04 × weight=1.00\n  ↑ operating_margins: score=+0.12 × weight=0.90\n  → roe: score=+0.08 × weight=1.00\n  ↑ gross_margins: score=+0.25 × weight=0.70\n  ↓ debt_to_equity: score=-0.22 × weight=0.90\n  ↓ trailing_pe: score=-0.25 × weight=0.50\n  ↑ price_to_book: score=+0.13 × weight=0.50\n  ↓ us_macro: score=-1.00 × weight=0.35\n  ↓ india_macro: score=-1.00 × weight=0.35\n--- DIRECT NEWS EVIDENCE (Top Headlines Used) ---\n- Company 1: Not Reliance, Not Adani: These 4 fertiliser stocks are India’s real green hydrogen plays - The Financial Express\n- Company 2: Not Adani Solar, Not Reliance — 3 solar stocks with up to 50% upside potential; Do you own any? - The Financial Express\n- Company 3: Reliance share price gains as US-Iran war continues to fuel oil price rally; experts see strong refining tailwinds - Mint\n- Industry 1: Buy the fear? Indian markets delivered strong returns after past wars even as Middle East tensions roil stocks - MSN\n- Industry 2: Fitch ratings raise India’s GDP growth forecast to 7.5% for FY26, sees Oil at $70 in 2026 - Mathrubhumi English\n- Industry 3: Prolonged Middle East conflict, crude above $100 may strain India’s external sector: Standard Chartered\n- Macro 1: Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView\n- Macro 2: Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty\n- Macro 3: Fed to delay rate cuts as war clouds the outlook\n\n- Composite score: 0.215\n- Secular Growth Forecast: Reliance benefits from structural refining tailwinds (Mint) and India’s GDP growth (Fitch). While oil volatility is a risk, RIL's diversified O2C/Retail/Digital model provides resilience. 3-5 Year Secular Forecast: Base case is sustained CAGR driven by energy transition. Bull case: Green hydrogen dominance. Bear case: Prolonged geopolitical crude shocks. Invalidation: Sustained margin compression below 10%.\n",
+    "llm_reasoning": "Reliance benefits from structural refining tailwinds (Mint) and India’s GDP growth (Fitch). While oil volatility is a risk, RIL's diversified O2C/Retail/Digital model provides resilience. 3-5 Year Secular Forecast: Base case is sustained CAGR driven by energy transition. Bull case: Green hydrogen dominance. Bear case: Prolonged geopolitical crude shocks. Invalidation: Sustained margin compression below 10%.",
+    "evidence": {
+      "history_bars": 2716,
+      "history_start": "2015-03-16 00:00:00",
+      "history_end": "2026-03-12 00:00:00",
+      "coverage_ratio": 1.0,
+      "sparse_long_term": false,
+      "fundamentals_sparse": false,
+      "news_avg_sentiment": 0.059,
+      "news_stock_avg_sentiment": null,
+      "news_industry_avg_sentiment": 0.12,
+      "news_macro_avg_sentiment": -0.059,
+      "stock_news_count": 15,
+      "industry_news_count": 12,
+      "macro_news_count": 10,
+      "headline_preview": [
+        "Not Reliance, Not Adani: These 4 fertiliser stocks are India’s real green hydrogen plays - The Financial Express",
+        "Not Adani Solar, Not Reliance — 3 solar stocks with up to 50% upside potential; Do you own any? - The Financial Express",
+        "Reliance share price gains as US-Iran war continues to fuel oil price rally; experts see strong refining tailwinds - Mint",
+        "Buy the fear? Indian markets delivered strong returns after past wars even as Middle East tensions roil stocks - MSN",
+        "Fitch ratings raise India’s GDP growth forecast to 7.5% for FY26, sees Oil at $70 in 2026 - Mathrubhumi English",
+        "Prolonged Middle East conflict, crude above $100 may strain India’s external sector: Standard Chartered",
+        "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+        "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+        "Fed to delay rate cuts as war clouds the outlook"
+      ],
+      "return_1y_pct": 18.9,
+      "return_3y_pct": 25.5,
+      "return_5y_pct": 59.6,
+      "return_10y_pct": 539.62,
+      "cagr_3y_pct": 7.87,
+      "cagr_5y_pct": 9.8,
+      "cagr_10y_pct": 20.39,
+      "price_vs_sma200_pct": -3.85,
+      "max_drawdown_5y_pct": -45.09,
+      "annualized_volatility_pct": 27.06,
+      "position_52w_pct": 53.5,
+      "change_1y_pct": 18.897604878127595,
+      "analyst_upside_pct": null,
+      "analyst_count": null,
+      "india_sentiment_signal": "SELL",
+      "us_trend_signal": "SELL",
+      "dividend_yield": 0.01376113614248604,
+      "dividend_yield_trend": "rising",
+      "peg_ratio": null,
+      "operating_margins": 0.1165780201577082,
+      "held_pct_institutions": 0.27985,
+      "institutions_pct": null,
+      "rev_qoq": null,
+      "ni_qoq": null,
+      "ocf_qoq": null,
+      "sector": "Unknown",
+      "scoring_factors": [
+        [
+          "news_sentiment",
+          0.059,
+          1.0
+        ],
+        [
+          "return_1y",
+          0.189,
+          0.9
+        ],
+        [
+          "return_3y",
+          0.255,
+          0.8
+        ],
+        [
+          "return_5y",
+          0.596,
+          0.7
+        ],
+        [
+          "cagr_5y",
+          0.98,
+          0.9
+        ],
+        [
+          "sma200_position",
+          -0.385,
+          0.5
+        ],
+        [
+          "max_drawdown",
+          -0.451,
+          0.5
+        ],
+        [
+          "volatility",
+          -0.271,
+          0.4
+        ],
+        [
+          "52w_position",
+          0.07,
+          0.3
+        ],
+        [
+          "1y_change",
+          0.189,
+          0.7
+        ],
+        [
+          "dividend_yield",
+          0.138,
+          0.4
+        ],
+        [
+          "cagr_10y",
+          2.039,
+          1.0
+        ],
+        [
+          "operating_margins",
+          0.117,
+          0.9
+        ],
+        [
+          "roe",
+          0.083,
+          1.0
+        ],
+        [
+          "gross_margins",
+          0.251,
+          0.7
+        ],
+        [
+          "debt_to_equity",
+          -0.219,
+          0.9
+        ],
+        [
+          "trailing_pe",
+          -0.254,
+          0.5
+        ],
+        [
+          "price_to_book",
+          0.128,
+          0.5
+        ],
+        [
+          "us_macro",
+          -1.0,
+          0.35
+        ],
+        [
+          "india_macro",
+          -1.0,
+          0.35
+        ]
+      ]
+    }
+  },
+  "agent_outputs": {
+    "technical": {
+      "signal": "NO_TRADE",
+      "confidence": 0.52,
+      "summary": "Indicator Signal: NO_TRADE | Trend: close=1392.20, SMA20=1408.36, SMA50=1437.69. Momentum: MACD=-13.001, Signal=-14.490, Hist=1.489, ROC10=-0.45%. Oscillators: RSI14=46.3, StochK/D=63.8/66.6, Williams%R=-36.2. Risk: ATR14=36.38, Volume=20939959 vs VolSMA20=15552919. Momentum Score=55.7/100 | MA=Sell, Trend=Falling, RSI=Neutral, MACD=Bullish.",
+      "reasoning_prompt": "Indicator reasoning protocol:\n1) Map structural trend using relative price location vs SMA20/50/200 and slope analysis.\n2) Decode momentum quality using MACD histogram acceleration/deceleration and ROC10-ROC20 comparisons.\n3) Assess oscillator behavior (RSI/Stoch/WillR) for range-specific exhaustion vs strong trend continuation.\n4) Verify professional participation via volume-over-average filters and spread analysis.\n5) Filter noise using ATR-based volatility regimes (reduce conviction in 'wide and loose' tape).\n6) Enforce strict confluence: if trend and momentum disagree without a reclaim setup, maintain NO_TRADE posture.",
+      "llm_reasoning": "Indicator signals NO_TRADE. Price at 1392.20 remains below SMA20 (1408.36) and SMA50 (1437.69), confirming a bearish medium-term trend. While MACD shows a minor bullish histogram expansion (1.489), the RSI at 46.3 is neutral, and ROC10 is negative (-0.45%). The volume of 20,939,959 exceeds the SMA20 of 15,552,919, indicating active participation, but the lack of alignment between moving averages and momentum oscillators precludes a high-conviction setup.",
+      "detail": {
+        "bullish_points": 3,
+        "bearish_points": 3,
+        "delta": 0,
+        "rules": {
+          "trend_alignment": false,
+          "macd_alignment": true,
+          "rsi_bias": "neutral",
+          "stoch_alignment": false,
+          "willr_bias": "bullish",
+          "volume_confirmation": true
+        }
+      },
+      "price_levels": {
+        "levels": [
+          {
+            "label": "Resistance 1",
+            "price": 1441.75,
+            "type": "resistance"
+          },
+          {
+            "label": "Resistance 2",
+            "price": 1473.0,
+            "type": "resistance"
+          },
+          {
+            "label": "Resistance 3",
+            "price": 1489.5,
+            "type": "resistance"
+          },
+          {
+            "label": "Current",
+            "price": 1392.2,
+            "type": "current"
+          },
+          {
+            "label": "Support",
+            "price": 1368.0,
+            "type": "support"
+          },
+          {
+            "label": "Breakdown Zone",
+            "price": 1335.5,
+            "type": "breakdown"
+          }
+        ],
+        "nearest_resistance": 1441.75,
+        "nearest_support": 1368.0,
+        "resistance_1": 1441.75,
+        "resistance_2": 1473.0,
+        "resistance_3": 1489.5,
+        "support": 1368.0,
+        "breakdown_zone": 1335.5
+      },
+      "momentum_score": 55.7,
+      "qualitative_labels": {
+        "moving_averages": "Sell",
+        "trend_channel": "Falling",
+        "rsi": "Neutral",
+        "macd": "Bullish"
+      },
+      "price_range": {
+        "high": 1611.8,
+        "low": 1307.0,
+        "position_pct": 28.0
+      },
+      "metrics": {
+        "close": 1392.199951171875,
+        "rsi14": 46.3112940688986,
+        "macd": -13.00147927166222,
+        "macd_signal": -14.490234896655284,
+        "macd_hist": 1.4887556249930647,
+        "sma20": 1408.360009765625,
+        "sma50": 1437.6900048828124,
+        "roc10": -0.45048615145691917,
+        "atr14": 36.378592354910715,
+        "stoch_k": 63.82018814372659,
+        "stoch_d": 66.61653330281082,
+        "willr14": -36.17981185627341,
+        "volume": 20939959.0,
+        "volume_sma20": 15552919.0
+      }
+    },
+    "pattern": {
+      "signal": "NO_TRADE",
+      "confidence": 0.488947395159181,
+      "summary": "Pattern Signal: NO_TRADE | setup=sideways compression (wait for breakout candle), slope=2.1158, breakout_up=False, breakdown=False, bull_engulf=False, bear_engulf=False.",
+      "reasoning_prompt": "Pattern reasoning protocol:\n1) Detect breakout/breakdown against prior 12-bar range, not single-candle spikes.\n2) Confirm direction with local slope and bar-structure continuation.\n3) Use engulfing patterns as confirmation, not standalone trigger.\n4) Treat flat-slope compression as NO_TRADE until expansion is confirmed.\n5) Down-rank weak breakouts lacking structure confirmation.",
+      "llm_reasoning": "The price action is currently in sideways compression with a slope of 2.11. No breakout or breakdown triggers are present, and there are no bullish or bearish engulfing candles to provide structure validation. Given the lack of a clear directional expansion from the current range, the pattern signal remains NO_TRADE, requiring a breakout candle to confirm the next directional impulse.",
+      "detail": {
+        "setup": "sideways compression (wait for breakout candle)",
+        "slope": 2.1157507694128848,
+        "breakout_up": false,
+        "breakdown": false,
+        "bullish_engulfing": false,
+        "bearish_engulfing": false,
+        "volatility_proxy": 12.456563103727328
+      }
+    },
+    "trend": {
+      "signal": "NO_TRADE",
+      "confidence": 0.5283513506381514,
+      "summary": "Trend Signal: NO_TRADE | setup=sideways trend channel, support slope=-2.467, resistance slope=-2.253, price position=0.72 in channel.",
+      "reasoning_prompt": "Trend reasoning protocol:\n1) Fit support and resistance trendlines over the visible swing window.\n2) Estimate channel slope (regime direction) and channel width (trend quality).\n3) Locate current price in channel and prefer pullback entries aligned with slope.\n4) If slope is weak/flat, classify as sideways and favor NO_TRADE.\n5) Avoid chasing signals near channel extremes against risk-reward logic.",
+      "llm_reasoning": "The security is trading within a sideways trend channel, currently positioned at 0.72 of the channel width (support at 1367.33, resistance at 1401.77). With both support and resistance slopes trending negatively (-2.46 and -2.25 respectively) and an average slope of -2.36, the environment is stagnant. The price location within the channel lacks the necessary setup to suggest a high-probability breakout or reversal.",
+      "detail": {
+        "setup": "sideways trend channel",
+        "slope_avg": -2.3599,
+        "channel_width": 34.4455,
+        "channel_position": 0.7221
+      },
+      "metrics": {
+        "support_slope": -2.467316684632423,
+        "resistance_slope": -2.2525417538785297,
+        "channel_position": 0.722,
+        "last_support": 1367.33,
+        "last_resistance": 1401.77
+      }
+    },
+    "news": {
+      "signal": "BUY",
+      "confidence": 0.65,
+      "summary": "News Signal: BUY | combined sentiment=0.06 (stock=0.06, industry=0.12, macro=-0.06). Stock articles=24 (trusted=0, unrated=24); Industry articles=29 (trusted=0); Macro articles=30 (trusted=0). Sentiment strength=0.12. Inference=Reliance Industries is benefiting from strong refining tailwinds due to geopolitical volatility (US-Iran tensions) driving oil prices. Recent market data shows active buying interest in the stock, supporting Nifty/Sensex recovery. While some analysts favor smaller green hydrogen plays, the core refining business remains a significant profit driver amid favorable macro conditions..",
+      "reasoning_prompt": "News reasoning protocol:\n1) Collect company-specific headlines across multiple providers using diversified queries.\n2) Filter spam/listicle/noise domains and low-relevance stories.\n3) Build a global macro stream (rates, inflation, oil, USD, broad risk sentiment).\n4) Build industry/sector thematic stream (demand cycle, market share, regulation, capacity, pricing).\n5) Weight sentiment by source quality, exponential recency decay, and relevance confidence.\n6) Apply content-similarity dedup to remove near-duplicate headlines.\n7) Use LLM to infer final bias from company + industry + macro evidence and return NO_TRADE under conflict.",
+      "llm_reasoning": "News sentiment is net positive (0.06), driven primarily by favorable refining margins and geopolitical tailwinds. Reliance Industries is supported by oil price volatility, acting as a profit driver. Although macro sentiment is slightly negative (-0.06), the industry-specific tailwinds provide enough conviction for a BUY signal, suggesting institutional interest in the core energy business remains robust despite broader market indecision.",
+      "detail": {
+        "company_context": {
+          "symbol": "RELIANCE.NS",
+          "company_name": "Reliance Industries Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing",
+          "business_summary": "Reliance Industries Limited engages in the hydrocarbon exploration and production, oil and chemicals, retail, and digital service businesses worldwide. It operates through Oil to Chemicals, Oil and Gas, Retail, Digital Services, and Others segments. The company offers refining and marketing products, including liquefied petroleum gas, propylene, naphtha, gasoline, jet/aviation turbine fuel, kerosine oil, diesel, sulphur, and petroleum coke. It also provides polymers, including high-density and low-density polyethylene (PE), linear low-density PE, homopolymer, random and impact copolymer, and p"
+        },
+        "stock_article_count": 24,
+        "industry_article_count": 29,
+        "macro_article_count": 30,
+        "trusted_count": 0,
+        "trusted_industry_count": 0,
+        "unrated_count": 24,
+        "trusted_macro_count": 0,
+        "industry_avg_sentiment": 0.12030093616234758,
+        "sentiment_strength": 0.12030093616234758,
+        "llm_decision_why": "Reliance Industries is benefiting from strong refining tailwinds due to geopolitical volatility (US-Iran tensions) driving oil prices. Recent market data shows active buying interest in the stock, supporting Nifty/Sensex recovery. While some analysts favor smaller green hydrogen plays, the core refining business remains a significant profit driver amid favorable macro conditions."
+      },
+      "top_news": [
+        {
+          "source": "google_rss",
+          "title": "Not Reliance, Not Adani: These 4 fertiliser stocks are India’s real green hydrogen plays - The Financial Express",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQVjRxOElSRkRuVU5yZktUdTljUXl5T1ZSLVNkWlhkTzJhSWF1MmxBZkFkc0tlZkl6Q215b2V1Zk9PcEYtd3N3QllVSVBDQkw3REJuMzNkREZOZnNucFhJY0pYYWt3TUJTY2pHd3NWdllJYnotZkY0ZktERUU4QVFfNEdtRmxad2tNMmE3M3hnNnl4cnA0YlRQS0E5SzViNzI3RzY3RmZjNHkyTy1HSUFKZm41eUs5TXVyeG1RYXpKbnN3Ukh2c1kyT1k1WGlHUDVsOXF1RHB5dDNiUGF3b19LVllFNNIB6gFBVV95cUxQdmR0NW1PUTBMVFhBY0x1cDhraEhIRmVKVHRPcnpWLWlJcHFqM1lhbkVlakhWZE1OdHI1dlFLcml0eHYyZ2JMVW1lbGFtRXpXODVzLUZMdW9UYnR5djhDNUtTTFI0ejdISnpjQnZBanJES2lFWVJEZFY1aXdDbjJtWDlMOVJWUGxrTl9fbllacnV1ZFl1RWNXVGZHYmFJY0VGcC00S1ZvMlJhOXFwcVdsY21uUXdIYWJjalA2S3FROThGb01xSmVWbDU0YTAzWEhYeWdOMzhRVURBYkFXaWxIY1haSW5iZmE4SUE?oc=5",
+          "published_at": "Sat, 14 Mar 2026 00:00:00 GMT",
+          "published_ts": 1773446400.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Not Adani Solar, Not Reliance — 3 solar stocks with up to 50% upside potential; Do you own any? - The Financial Express",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPcHJwazFPZE5UMFlnV2o1c0dXY2M0akZmd3d1VXB4ekpQZF83UW5MRHlHS1BkRnBXcjJRQkpId0tzMHlHQ09qVFZiMXdsb3dvb09Wb1FVTDBSZFphWW5QMEJkZ2xrVTB6RWRNX0RnUXh0TUhIV0FHaEk2Q01Nbm13MEZETDd5Q3hDS2RqaklUUm0zTHZQRXVvVXhqcFZyWFlFU1VlcGFMUnlRR3JEMVYxYWpEZENPcHRGUm5GRVFDakZqZnFoSFI4al84d2R6UUdsLXJ6bl9NaTl2MWlLVWfSAeQBQVVfeXFMTU5IeXBrb2RrR2tjaENqMEx0LUtkT1JoN09LT3hpRVpqTGxmal9UZ01sdUhwQzMwclBoaWdZWUFNb3oyXzUyYkhEelU1T2FaREhLMzlDR1BDVmY1MHd1T2RTNHFLQ3gtRldHaUN3TjJLMlh5TTNYbXZxQkQzZWF6UFZZQW56OE5iSW5tMmZhTUxSZmVaSEtvNU93QVhsdzNlN09lSnJKX2FoVWZnOG5ibE1vNDdZcm0wV05tU1UyVVB6TE0zWWFOclpZWV9TcnRUYUF3RlpiV2pfa09IWVlMb1pUTW9T?oc=5",
+          "published_at": "Fri, 13 Mar 2026 12:45:52 GMT",
+          "published_ts": 1773405952.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Reliance share price gains as US-Iran war continues to fuel oil price rally; experts see strong refining tailwinds - Mint",
+          "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNdWp5WnVSZEhJTjluelN4VjFCMXpyM3BVSHZHdXpxVEpWMGZ0M2Z3MURhVHFNeWlTbjlMWTl2VWdQbnZidUllSUthMXM2Z1ppOXIxWGtPN2xFOWNfV19vODFkS0pnQWIwTkJCVVM0ZzlodXBKM19nQnVIcmR4MHk3YWlSdHI0RTUzS20xZXJwMmhRNEVkXzdYWmRTLU1fazRZT0hKbVh6RFBEckR4TVRYQjNmQnFuNUdkZ25hUE5uWlVacDI5RVpMc2VfNjd3RlVkVS1UYUdWNHhFTzlLUTB5Vms1OXNPX2VwbWRzZWJhcUZMc3pDTENUdlU0N0gxMDFBS1NSUFRyb2psaDNPRjNYWdIBlgJBVV95cUxNbFNBN2Z6a2tHUVljaktwbl9YUWZRX3hXbFBXZDRyeWRBZlZBTVRNMHZkd1YwUUFBa0YxMnltQ3RyVXFub0VrTTdNeGtTMzhVVk5iZ1lrVXBUUGtKakZfNWw5UjM5SmxNbEhkMmdzRFNoWDBveWN0NVZGS0xkTndfdDZ6T0pmYWs2TnFjalpnclQ1Q3dScVQzd3VKVlp4MGJQdXViLW9VbTdkWFlvZV8zdzJLMzFxNWhLLUk2OEFtVFEwaDFFTFg2QTA1eF9tV3FwWW5rRWJNUXFiZDhyRFJ6TktFUTJvbi1OeFBYZjV3eHdrUDN2RmFGa0VHMU9EWnpuNGVIdVRVX1ZfQXFubHBLTWR4U29DQQ?oc=5",
+          "published_at": "Fri, 13 Mar 2026 05:42:06 GMT",
+          "published_ts": 1773380526.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "SENSEX, NIFTY50 recover from lower levels led by buying in Reliance Industries, Coal India - Upstox",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPekd4anNXaTRYR0JhNERVSFRuSzE4OUZlYmlHX194VENNdGtJTU9PVEFsYVFBejJ1RENrbEs3My1CbV8wS1FmeFpsMHdoVlFhYmxtY1BycHNhS3djNkdWLUkxN1hidVMwOTdmX1ZRRWVhejl0X2dNMHNRaFgtQnNLLS1MSHl2WlNrSm94eGRwVGFLVEFPSTlFd0kwLWlSQi1ua0VPTW8xYWdGR2IwZ0dMUWxITjJicDVSMWpqNVgtaUNrYWFhVlBhc0RLbVN1TmNSNXhfTDBiV3R3em0yMWF2SzdB?oc=5",
+          "published_at": "Thu, 12 Mar 2026 05:48:11 GMT",
+          "published_ts": 1773294491.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Reliance remains mum even as Donald Trump announces ‘historic' U.S. refinery deal - The Hindu",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQWGtPT1dUdEJRdEdDT0xfUTgzbmUweEtTZ0ZMWlNjQ1pmMVdmRHVYNVhYWmNCZXZIMXd3LUtVcUZwbFJ5ZXRrc1hYdGFVanpLUTJkN0I0ZGJrcUQ0SEEyV0hoM1luNGtESV80UjVUVFJQRTBPS0xSa3AwUm1jdkdnWkYyWF9tZmZ6LU0zcW5TOTM1R0VuN2ZZNjUwV05LRTBwZU1ZR1BFZk40SEVseXhKNEFEdmZkWG9FVGxiLUZUX2M4eFMyUW5yOFg1MzlUTDZucW9NT1BGa2dvNEJ6NlHSAeQBQVVfeXFMUEEtNFlZQkFzVkk0c29KTGpVeXpxVHZ1dmhDVlBfNDdsRk1mWnN2ajNac0pwOW1NM0t0cHRPRURuVWRLVW1icXVWcFFta1NvUUxzUHNiV3BGak5EYVhlZFZoY2VzRUJqM1NMWWV1aG5DbFczTXJENlZLYmJJNXdvcDFYeG9ORDNFQVhKMDJpcHNvOGl0QnIxQWFpNkU5OEhveGEzUjJLZW9PRW5iWFhnSUNEbVkzdEdHbjFuYmZpUDNYYjBhMXRERkFjZzRobXJwLXBlaThPbkpKQ2UwMGhsUGJvWmpx?oc=5",
+          "published_at": "Wed, 11 Mar 2026 19:53:00 GMT",
+          "published_ts": 1773258780.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Reliance Share Price: Trends, Forecasts & Investor Insights - newspress.co.in",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOWHc1bE9HVFVCbl8ycXQyNlpkekZUcFlaaVhaSlNYSU4xMV9lbmg4Q24wRWRWR1FaUFBtTGJPelVSZC1EMzdhS0NwNl9wcHg1LS1ucHpSenp4S0MzZ2Z4cnRMQkRpVUpDdFp3QlBrVEVkcTF6YWdXWW9aVmpFTDRrSnFiNHNNaW8?oc=5",
+          "published_at": "Wed, 11 Mar 2026 11:42:21 GMT",
+          "published_ts": 1773229341.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss",
+          "title": "Stocks to watch: IndiGo, Reliance Industries, Adani Enterprises among 10 shares in focus on Wednesday",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b4d1c51e42129625432a57624751&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fmarkets%2fstocks-to-watch-indigo-reliance-industries-adani-enterprises-among-10-shares-in-focus-on-wednesday%2far-AA1XXb37&c=9225553197047945244&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 07:33:00 GMT",
+          "published_ts": 1773214380.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Reliance share price: Stock in focus after 'historic $300 billion' oil refinery deal with US, check details - India TV News",
+          "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQNVc0Sjl3UjhNZU9nNjk5b3diNW9La21wM1dBY3h6a2wySlZiREJfdExndmROZ0ZKWXpLOTVHQy1sTDhqNlgwUHNQanU1cWVNcVc2aDFNZ1NTTFJpQ1ZraFZjZlJoV1pkNHJVeHNiTEFJSGlwck9pT1NseGN5VFVCcDdWSTZmSFROYmg3OXJ2eUVhcjRUTEljLTFyMUJzU3duZkxSbXpPTmdQdExrZ0hLTF96aDc3bjUyR09oZXpEOERMM0ZwMmp6NEpjdkdrVjBkVFNlc0FqS0xTZnNRaEpXNXRtZ1VNbHBrajZuVHVKMjZTZUlycGdoTWJ6RFZZSklBMzJHSnNjb05pcG_SAZACQVVfeXFMT1ZZS242RlozaXczVk9UQXFfZ2RUZlhRVXB2N1A4TVRMSDZNclh1eFJ6NGRmZ3lkV1pKc1JNNFE1V2RLWDdTOURqUFJfVGdFWER1cTVWQUlZV0JaWWVxWnpYNTJJTDZTVWFmN1FYYzU1OE1rVVI0Q0tSSklydGEyWXY5dUNRd2x5aWtPUkNBUk81dllGVEVuRmhreHNFMzhnNUJCZnl3THdtOTRBdnVNUmhIYjBVd2JpblNxSlFxLW5lc29uUGtSSGZOdjl3QUM3R0Iycy0tU21PUEh1T21mLVItbG9jUWR6d2NxT1JDNGNNSWVpY19lRm9uYkJfdk1SZE9RYmRHaEdOVmppVEJSNDQ?oc=5",
+          "published_at": "Wed, 11 Mar 2026 04:42:49 GMT",
+          "published_ts": 1773204169.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Reliance Industries shares trade lower after Trump announces $300 billion US refinery deal with oil giant - Upstox",
+          "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQQlhSTWJJYnZtNE91eUV2ODl2YjdIRmctWXFIMTJhV0FZTTBtTzgzZEdYN1hVcy15cGViZEo1V0kwZWZ2ZnRVQllSRXV2VTFsSE82aUpQdkVwR0t4Vk40dVlfN0U1RFZha1hZMkZ4eld5c0pLSFh1MDg0MC1YTHNocTNtWTlUR1BGdXBhUkNPX0VWaDdXRXJxYTUzWVYxR3BJd2ZtVk1KMVJMaHRMZjlBb3ZUXzRHcTBWMmR4czViV2JlblllWTFBUTEtV1MtX0tpcVMyelhFVWpJRTlPaG9WT0daODVyZHlCNDZrdDMxaFI0M3d2ZHFQV1N3?oc=5",
+          "published_at": "Wed, 11 Mar 2026 04:05:44 GMT",
+          "published_ts": 1773201944.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Why Reliance Industries shares are gaining in early trade today - India Today",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNNlF0Zy1RdFo2T1NHSV80N0w5MnY3eXpQNlpQbjE5Z212b3dTdFNDX0VCRUFUWmdPYmt3cTZHVWp5YnlrTTFfNXVVelpFZFEwOG90OUZ5Ty1TWEoxZV9saWZZdDlMUmJ4UDJWYlRqQW1EU3dOS1hhamprNjg2aVRDcjlXcTM0U280aG5oS2JZYXNzWXF2MjRZLVNwLWxqVlFsRm56akgyeHB6cll4bFgtT2NmZ0wtYTRxR2x4M3ZwWGRHdTN5WmN5aUxJbUF4MGvSAdQBQVVfeXFMT0Mtd2VsQUdJamd4VHd4MWpWN3FFT1B6UEV4aVJQRmhVVkZVd05obkRmdldDeFI3TVNiVk9oTkpEbzY5WFZqNlJGNFNSUDJnbWpCQmJEaTVQdERYRk80ZzlFbEZuNzRTUzVodXRISDVEQXhaRlZrQTcwS2g0V19aQ01WeEtpZnlDQlZub1FRZExLMnJhVy02RFU1VWpHOUxiUzBpT3R6aEdYTHFHZHpMalBIeVRxUlZ2S196NXNDaEFnMEN5bXI0Z1NCYUZSeXhYUTlWUzU?oc=5",
+          "published_at": "Wed, 11 Mar 2026 03:58:48 GMT",
+          "published_ts": 1773201528.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Reliance share price gains as Donald Trump announces $300 billion US oil refinery project backed by RIL - Mint",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOaWQwbUlGeENKZzdhREJ0c0lodEtxQ0JTbW1KLVJNUV9YUG5scUFiS2VPRU5YaVRDSmxPX2I0U3BhY3JpR1RJUlhlbkMyaTI5aTRmWWM0X1pRME1qN09fQVNfZ2Rwd2plNUpWMl9abkw0UjlhOVEwdWMzWGIxeVhid0hJRnNhaDhNYVNTWTROVFBmUjkxazJiTE5zYWN5UjAxN0xaTzdkSXppQlM4Sm56Y3RjQzctNGtTcUd1c3NGUFB3eHpRS0VpVUR4amZncjhUQmdQZ2MyVDRBMkZjVE5n0gHkAUFVX3lxTE9HUDZ5ZTE1S01PWFJrY3BkTVcxVmRzWXh2MFdYYUs3bl9YY3FQWW04UlZUOXBiLTRrVk1XRHhrQVZ6dEpEX1RmWGVyOVdObFNrc0wwTDNXR3YxYzdjdGRMOHdNcGZNd1Q0MGdsNjFiSVNpUk1la0ljeVVwOFMyNUVURlNNVXhiZnhWbkpWanVtdDhXTTVuNjVVQm1FWjVIYTZLLTd4VlFQLWRjSVZRRFkxWUdJdTFTd1hJalJjd0dMVnVFU2FMUW9HTnctRGpuQjZ6VTkxUHIza0taOUtZOWpsalpZSA?oc=5",
+          "published_at": "Wed, 11 Mar 2026 03:49:24 GMT",
+          "published_ts": 1773200964.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss",
+          "title": "Reliance shares climb 2% after Trump announces landmark US refinery project",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b4d1c51e42129625432a57624751&url=https%3a%2f%2fwww.thehindubusinessline.com%2fmarkets%2fstock-markets%2freliance-shares-climb-2-after-trump-announces-landmark-us-refinery-project%2farticle70729486.ece&c=3048510745935136693&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 03:25:00 GMT",
+          "published_ts": 1773199500.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss",
+          "title": "RIL Shares In Action as Trump Names Reliance in Historic $300 billion US Refinery Plan; Stock Up 27% From Lows",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b4d1c51e42129625432a57624751&url=https%3a%2f%2fwww.goodreturns.in%2fnews%2fril-shares-rises-1-as-trump-names-reliance-in-historic-300-billion-us-refinery-plan-stock-up-27-1495125.html&c=3463946265530069004&mkt=en-in",
+          "published_at": "Tue, 10 Mar 2026 23:37:00 GMT",
+          "published_ts": 1773185820.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss",
+          "title": "Reliance Jio IPO Is Delayed Due To Changes In Listing Rules",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b4d1c51e42129625432a57624751&url=https%3a%2f%2ftrak.in%2fstories%2freliance-jio-ipo-is-delayed-due-to-changes-in-listing-rules%2f&c=3289170312188582423&mkt=en-in",
+          "published_at": "Tue, 10 Mar 2026 15:17:00 GMT",
+          "published_ts": 1773155820.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Reliance, Ambuja Cements & more: Top stocks to watch on March 10 - The Times of India",
+          "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxQcDRuRWJwcW9sd2RWbmtlWkpyVzZ1c2JBODE0bjA3TU56aDlfMDhhTER4MFpxYTRBLXFTWHVZaFF6WnFYZ0RwSnU5eks2WXZMTHZWZXRwWnFJYnExcWxWS2dXc1VsQ3R2ZDk4RDU4dWowVHJzZXlrNlByaU9xNXdjTkdrMGpRNEJvSW1uTDVJeFdVVlNKSWdyaGFiUkFTb2lkalF5Y0NPV0hKc2g0WXJoWnNUY25SS3Y5MDF6bmJsM1Q2cE45TFI1NS1PcTB4engzSGs3U1VzTU9XenRHaEdtaEk2aEJfbTNUWTVoN2FuNW5zODNzc2dMeEYzZWNXYk9aRUltNnZLbFpoaEQ3YjBKTlBMX0t6MGZveEx0NjB2aURiMllsNzBWUzYxQzQtVmpyYUE3UVhCUHJyYU3SAcACQVVfeXFMTXdRYlZiSE1kYzhablZUeW8yOHdoR1YyVXYtdjVRekJaS080ZVNrNWtWSDZZdG5Qd01zRDlSRkNCYnZfWFl4ZmJZUnYzVXVPa2VmRjBBSHAtVUw3a1U2bGxaN0k2RmlOa19DQjJnaGs1a2plLVZtc21MUnRHaU1JQnJrNC0tanFfRVV1ZTdRajhGalExWWZ2SHNjdERkS2FnUnJxNzAtZVFZUnI0NWt6U0NqcG9WX3pVXy12czBiVzRYaFVNZzRjSXF1cTJjNGNkVXVtRzJVZmxPczNWWGdPY2JjUUl5dHdOOFozQVFzbUtLZXJxNU81c2lwMi1kYXBDNGtELVFTeVUyZktLUUx4MUFFZWRMWVhWWnQybUR2R0FLeUVneTdDUk13SXpZTS1HNXV4TktrZlpOZnlIYkUwVFM?oc=5",
+          "published_at": "Tue, 10 Mar 2026 01:48:00 GMT",
+          "published_ts": 1773107280.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        }
+      ],
+      "top_industry_news": [
+        {
+          "source": "google_rss_industry",
+          "title": "Buy the fear? Indian markets delivered strong returns after past wars even as Middle East tensions roil stocks - MSN",
+          "url": "https://news.google.com/rss/articles/CBMimgNBVV95cUxNaWtlWW9UYWdob216eWxEXzVicjVDdGlMbFpXT210VU5Qa3dpc0MxWnhPQWRNRElhenR0UFhNbEFmbTkyeTNOcnZoRy0wUDRRTFVzamNLMnhJODJJNlR3TGoxOEgtWXNiNXQ4UHZibjFtaHd2enJ4Z1EtbElKMmVzQlFtaW0xdHRJRWIyLTNJbTExSExzam8xZWpFTlJsVV83RUtGblB5aHA0dG55YW8xOENnRmlnT2NUTXN2aXRldURRY0FEQTVxVy1jRXdhQl8zWGt6YzNpNzRPdlZ3aUx2WEtsZEt2ZEhNWXhWNEhxemtEaEg4SFJTUldsV2RTUUhMdFlxMUhjV2N5RDBzTG0yeVUyYThwT0hCaFdVNTZIUGFsM3REa3ZRUTV2clp2eFVQS0dfMFdxRGgzYTdIYXBvWlhUT3lHbkExMTFxVWVxRkhVZFNxS05JVmhZc1RXam02c3lQV1dDNHI2bWg0MHNGWkhHaGMwLXM2MEdfS1h4MWVOZXVqcDlFYjZUUzBzd21SS2MtbE1JSlR1QQ?oc=5",
+          "published_at": "Fri, 13 Mar 2026 19:20:46 GMT",
+          "published_ts": 1773429646.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Reliance Industries Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Fitch ratings raise India’s GDP growth forecast to 7.5% for FY26, sees Oil at $70 in 2026 - Mathrubhumi English",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNFllRWhsbElWalcxTXgxRTduczMwUFhKRjhySkF4SS1GOHg3dk5wV08yYzNRTTN3LXZlZnJTU3ZYM2FKN1ZZOHlMU3BIUzFjOUJMUUw5SnB6U3hqYk9ZREJFSUEtLXNzU0ZrckVuWFRNZ2tTWnJoTjlncFZYOHROSno1WXFfdFZqNy1sWjFLY0Y1ZGFqVDgtRURKMG9lZldDMGl6NnBoRmlBUUJxaTRQeWJla2FnX3JjeG9XQ3Q2NWxUZDBRaDczdGsxdGNWNmZkdTJMODNBVdIB1wFBVV95cUxPNFllRWhsbElWalcxTXgxRTduczMwUFhKRjhySkF4SS1GOHg3dk5wV08yYzNRTTN3LXZlZnJTU3ZYM2FKN1ZZOHlMU3BIUzFjOUJMUUw5SnB6U3hqYk9ZREJFSUEtLXNzU0ZrckVuWFRNZ2tTWnJoTjlncFZYOHROSno1WXFfdFZqNy1sWjFLY0Y1ZGFqVDgtRURKMG9lZldDMGl6NnBoRmlBUUJxaTRQeWJla2FnX3JjeG9XQ3Q2NWxUZDBRaDczdGsxdGNWNmZkdTJMODNBVQ?oc=5",
+          "published_at": "Fri, 13 Mar 2026 11:42:19 GMT",
+          "published_ts": 1773402139.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Reliance Industries Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing"
+        },
+        {
+          "source": "bing_rss_industry",
+          "title": "Prolonged Middle East conflict, crude above $100 may strain India’s external sector: Standard Chartered",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b4e0e80c4e3d83020ec299510797&url=https%3a%2f%2fwww.fortuneindia.com%2feconomy%2fprolonged-middle-east-conflict-crude-above-100-may-strain-indias-external-sector-standard-chartered%2f131235&c=12945210719039704569&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 00:11:00 GMT",
+          "published_ts": 1773360660.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated",
+          "company_name": "Reliance Industries Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Polyester Fiber Market Growth Outlook (2026-2033) | Automotive, Apparel & Industrial Applications Driving Demand - openPR.com",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOWU1SZW1nczBwSWhsS2NzdTRVN3otd2NtNEgweXVDTmRIWE1BZTNVNUNKZlV1VUhQTE1CQVU2LWIyaFpoQlYycm9nR1VsM2RiRE43UzFIbkRCaTN2LUFKdjVtcXNKcF9CQ256Zm9JeHVLRkt1UjdIc3V5X09EZnBZN0tRU3FIX2VBRlVN?oc=5",
+          "published_at": "Thu, 12 Mar 2026 11:19:18 GMT",
+          "published_ts": 1773314358.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Reliance Industries Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Reliance Industries Share Price Rises After Texas Refinery News | Stock Market Today - Samco",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOelRSSTVHam5ZRXBuemdGRmlLTG45dXlPWkhUVDBJX2J1R2NBRzVOSjJtRGg2UkdseFF6c2pOODNmcmcyM0dWNEx6dHBaSkRLZ3JKYnEwTFJTMmlUeDJDWS1wLXczMWYwbEwxNzAyRnJKYWRGSWNrYko1WkVwTzNYOTl6c1NTVER2dnZTU2RmSlJiRkNZdUVzakNjdS1ub1RmcGRqcC1GR2o1REhvUkhob1NXc1J3VkYyeTE1Y1ZhSUpqSkktN2o4M0hEblV5eFVyLVZVRm9WTUlMR1RDOGpZd19EaWM1NUg1UnVJQzFPWnFCYmZZaGVn?oc=5",
+          "published_at": "Thu, 12 Mar 2026 10:04:46 GMT",
+          "published_ts": 1773309886.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Reliance Industries Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "RELIANCE Share Price — NSE:RELIANCE - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE00anNGRF9JdzljQVhoc3o1RDloUllFYW5oVUw2d1hTbkNjZjRLYTUwdkZaTkJXWUhWamRQb285S2JyZkhfQzIzUm5yWS1TQ09wZEl5b29JUE5scTdGMEE?oc=5",
+          "published_at": "Wed, 11 Mar 2026 17:15:09 GMT",
+          "published_ts": 1773249309.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Reliance Industries Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Ambani Stock to Buy Now for 28% Upside Potential; Do You Hold It? - Trade Brains",
+          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1TREloMElybndyOTlNSi1FbVhaN19rNEYwMDhwbzNyNEp6Tk9zQmRfNDJ5dVV3SjhCdk42VWVuUEc5dVJrUm80?oc=5",
+          "published_at": "Wed, 11 Mar 2026 12:30:00 GMT",
+          "published_ts": 1773232200.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Reliance Industries Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Why Reliance Industries shares are gaining in early trade today - India Today",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNNlF0Zy1RdFo2T1NHSV80N0w5MnY3eXpQNlpQbjE5Z212b3dTdFNDX0VCRUFUWmdPYmt3cTZHVWp5YnlrTTFfNXVVelpFZFEwOG90OUZ5Ty1TWEoxZV9saWZZdDlMUmJ4UDJWYlRqQW1EU3dOS1hhamprNjg2aVRDcjlXcTM0U280aG5oS2JZYXNzWXF2MjRZLVNwLWxqVlFsRm56akgyeHB6cll4bFgtT2NmZ0wtYTRxR2x4M3ZwWGRHdTN5WmN5aUxJbUF4MGvSAdQBQVVfeXFMT0Mtd2VsQUdJamd4VHd4MWpWN3FFT1B6UEV4aVJQRmhVVkZVd05obkRmdldDeFI3TVNiVk9oTkpEbzY5WFZqNlJGNFNSUDJnbWpCQmJEaTVQdERYRk80ZzlFbEZuNzRTUzVodXRISDVEQXhaRlZrQTcwS2g0V19aQ01WeEtpZnlDQlZub1FRZExLMnJhVy02RFU1VWpHOUxiUzBpT3R6aEdYTHFHZHpMalBIeVRxUlZ2S196NXNDaEFnMEN5bXI0Z1NCYUZSeXhYUTlWUzU?oc=5",
+          "published_at": "Wed, 11 Mar 2026 03:58:48 GMT",
+          "published_ts": 1773201528.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Reliance Industries Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Reliance Industries Ltd Forms Death Cross, Signalling Potential Bearish Trend - Markets Mojo",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQS3NvaF9NZDN3ZVotQktLZkRyMDBraUdvRUlLWTFtVmFmd1hkVnl3TEwzZHVJZjdJbUE0ZVVZUTVVV09pamxQR0hJdU94Qmpwb0VfMkY5cE9fdURURy0yV25nV1FQem1OazBHalc1MUxpUTcxYVZDTURzeDR6NkVQODA4X1dqRWNkVzJxS1owLWZzd1dMbzhxdDl1MmRUQjJTeWhxeGdkalNFNXVkQ28xRE9TSEdWNGlZd0pWemhORXRLeWotRF96NmpqNTQ3Nk0?oc=5",
+          "published_at": "Fri, 06 Mar 2026 13:31:40 GMT",
+          "published_ts": 1772803900.0,
+          "sentiment_score": -1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Reliance Industries Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Why Did Reliance Industries Shares Jump Over 2% Despite a Weak Market? - Trade Brains",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMy1XbGhKNVZZbmxXTTNEUWkzR2JQZWpuY3BnbHptY0F6aTh3Q2g3RGZaZ3BxS2Y4MTFGRE9SOUdVdE5hdWZUNU9WTnZBY0tLTEZ3UnFRMl9aZW1CWGgyWjI5UjI2WUpUOFdkWHdCa1RQS1pqQkxfNGs0dXQ5akdDNVJzdXpGcU5QWTBPczNJSW54U2Vnb0g4?oc=5",
+          "published_at": "Fri, 06 Mar 2026 08:38:00 GMT",
+          "published_ts": 1772786280.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Reliance Industries Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Himanshu Pathak joins Reliance as Vice President – Strategy & Digital Transformation (Group Infrastructure) - Veloxx media",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPYjZla2dPSWpZY1RpLTBKb3g2RWppU2FqNm8zcGhKZTlYVmtVVHN2ZEZfUEF2a0dLVWZHTEVIeG9KbC1zNl9ZTVQxbGVsSTFTSzJ0Rzc4TjUxWWxDNW05YUlNdGhWcmM1WjZIWTA2dnF4MUJJQkh4X1RpRFFNTFBZcU9WakRNRm1YczBLdVlEbVNOdnB5VWtGTGllbHg5aHlkNUE0elFPcFVUeHhkMy1yR2phX3hBeTNSdVFOR3E3UWtTMmVt?oc=5",
+          "published_at": "Mon, 02 Mar 2026 10:14:50 GMT",
+          "published_ts": 1772446490.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Reliance Industries Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Polyester Staple Fiber Market: Growth, Trends & Future Outlook - vocal.media",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOb3Q3ekN6RU1PZ2hEb0ljTTZPU3NrbjhpNXhoNnkwTGk0UGNZZTRjRUlfRzgtLUEycXVQcDJBS1FJbVg0T1doblBHM1hUOWpBbUdnX0dnOHZCYWdSVGpMdThEekx3dXplZ3B6OXl0dUdfOU5LSVp5Z1VEY1h6MjNOMGZ5V0lYQU1xaFowczBXVDc2dGc?oc=5",
+          "published_at": "Wed, 25 Feb 2026 11:50:27 GMT",
+          "published_ts": 1772020227.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Reliance Industries Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing"
+        }
+      ],
+      "top_macro_news": [
+        {
+          "source": "google_rss_macro",
+          "title": "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRVNOajVzSUJWU3Q5R2toMjVnZVZMNDhLclozWDdNODc1OU1qbVFjYnFTT0Z1SUZaaExuY3FJajFkdWtOWk5kdWplT0J0Yk9RcnlDVnlvQmJZNC1jVDVHZmRhS0Z0X0JiXzFETHRnaUVac1pEMmZfWE9raXFacFpwR1dSaEVST0Ntc2k1czN4emNQVFlWSHE3V1ZhMW80OUFMYmN6dEwtTkRadm44enc?oc=5",
+          "published_at": "Fri, 13 Mar 2026 15:17:26 GMT",
+          "published_ts": 1773415046.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b4e6798b4ce1a0a30358fb9360eb&url=https%3a%2f%2fwww.livemint.com%2fmarket%2fstock-market-news%2fus-china-power-shift-global-markets-india-outlook-mirae-asset-swarup-mohanty-11773376870759.html&c=15555016077234823276&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 14:15:00 GMT",
+          "published_ts": 1773411300.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Fed to delay rate cuts as war clouds the outlook",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b4e6eac44029aa5337ebc4890caf&url=https%3a%2f%2fthink.ing.com%2farticles%2ffed-to-delay-rate-cuts-as-war-clouds-the-outlook%2f&c=127436243108543137&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 13:40:00 GMT",
+          "published_ts": 1773409200.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss_macro",
+          "title": "BTC defies rising dollar, oil and yields, holds above $71,000 as macro pressures mount - CoinDesk",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbHB1NE1GZ1dLTWpvOWNseW5QXy1jbWVHcTYzcXF6NWotU0NHOG1XNEUzcDd0ZTctMW1URXZzSW5RQ1djc1h3a0xOM0k2Tkd5TjRWcE0wUXRwZjg4WktmZ2xDWnpLa0RhR1BsRzlrZlVlVzhONmQ0eW51VXJIWFQ3NFJkd0VXZ2VsUnY4VTBuWjU5LXpxX1BPYUIyaEZKQVdEWUU3a25CY0RvN3NrVW10cFNUTWtxSHdhSWI4?oc=5",
+          "published_at": "Fri, 13 Mar 2026 09:34:10 GMT",
+          "published_ts": 1773394450.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Gold Silver Rate Today Live Updates (13 March 2026): Gold, silver futures fall on MCX as rising crude oil prices dim hopes of early rate cuts",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b4e73ca5466dbc811b7cc280c154&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2flive-blog%2fgold-rate-silver-price-today-live-updates-mcx-gold-18k-22k-24k-rate-iran-isreal-us-war-latest-news%2fliveblog%2f129534056.cms&c=4108291931945502437&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 06:00:00 GMT",
+          "published_ts": 1773381600.0,
+          "sentiment_score": -1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Markets Today: Sensex Declines 830 Points, Nifty Slips Below 23,650 Amid Iran-US-Israel War",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b4e6798b4ce1a0a30358fb9360eb&url=https%3a%2f%2fwww.news18.com%2fbusiness%2fmarkets%2fmarkets-today-sensex-falls-1000-points-in-opening-trade-nifty-below-23600-as-oil-surges-past-100-9956009.html&c=7425380694736114227&mkt=en-in",
+          "published_at": "Thu, 12 Mar 2026 03:39:00 GMT",
+          "published_ts": 1773286740.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Share markets continue to bleed as West Asia tensions dampen sentiment, Sensex over 800 points down",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b4e6798b4ce1a0a30358fb9360eb&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fmarkets%2fshare-markets-continue-to-bleed-as-west-asia-tensions-dampen-sentiment-sensex-over-800-points-down%2far-AA1Yt9yX&c=14300386732484515462&mkt=en-in",
+          "published_at": "Thu, 12 Mar 2026 03:04:15 GMT",
+          "published_ts": 1773284655.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Trading Day: Oil and yields up, up, and away",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b4e73ca5466dbc811b7cc280c154&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2ftrading-day-oil-and-yields-up-up-and-away%2far-AA1YqbzQ&c=11227118164045986945&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 14:08:08 GMT",
+          "published_ts": 1773238088.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss_macro",
+          "title": "Markets Confront the Economic Impact of the Iran Conflict - Natixis CIB | Natixis Corporate & Investment Banking",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOVpkVlFlOG1lbEdUZEM2VU40clhkdUtsN3l6Z3Rkd2g4WTBNMVNKSFBmMmkyT1M0RGwtZGJxN1ItZVVrMEU3UnVfWFJ6UmpZUVppV09ZelhMWHNvZmhtbFk3ajc0UnlpY0dZeW51MGJnSUU3dGhYRGFQaE44NjJVaFFBVWFyVlNhampDdXFic0dCZXZ3YW5ScWUtWQ?oc=5",
+          "published_at": "Wed, 11 Mar 2026 10:55:26 GMT",
+          "published_ts": 1773226526.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "S&P 500 Faces Valuation Pressure as Oil and Yields Rise Together",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b4e73ca5466dbc811b7cc280c154&url=https%3a%2f%2fwww.investing.com%2fanalysis%2fsp-500-faces-valuation-pressure-as-oil-and-yields-rise-together-200676476&c=11959585435036819535&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 10:53:00 GMT",
+          "published_ts": 1773226380.0,
+          "sentiment_score": -1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        }
+      ],
+      "avg_sentiment": 0.0587283117142449,
+      "macro_sentiment": -0.05922169735868038
+    },
+    "market_sentiment": {
+      "signal": "SELL",
+      "confidence": 0.656,
+      "summary": "Market Sentiment: SELL | NIFTY 5D=-2.31%, 10D=-3.42%, 20D=-3.87%, SMA20 gap=-2.4% (below). India VIX=6632.18994140625, 5D chg=-107.8, news sentiment=0.06. Votes: bull=2, bear=3.",
+      "reasoning_prompt": "Market sentiment protocol:\n1) Evaluate NIFTY multi-window momentum (5/10/20-bar returns) for domestic risk appetite.\n2) Check Nifty SMA20 structure — price above 20DMA = constructive, below = cautious.\n3) Evaluate India VIX regime as stress filter (low=constructive, high=defensive).\n4) Factor VIX change rate — rising VIX signals increasing fear even if level is moderate.\n5) Blend with cleaned multi-source news sentiment (stock + macro blend).\n6) Count bullish/bearish votes and avoid directional call under conflict.\n7) Prefer NO_TRADE when index momentum and volatility regime diverge.",
+      "llm_reasoning": "Sentiment is currently neutral to cautious. The absence of a clear breakout in price action combined with a lack of dominant bullish or bearish narratives in the news flow suggests a state of equilibrium. Market participants are displaying active interest as evidenced by elevated volume, but they remain range-bound, awaiting a definitive catalyst or a break of the 1401.77 resistance level to shift the sentiment bias.",
+      "detail": {
+        "nifty_ret5": -0.02314398424966979,
+        "nifty_ret10": -0.03419373829671979,
+        "nifty_ret20": -0.038731002127090686,
+        "above_sma20": false,
+        "sma_gap_pct": -2.44,
+        "vix_level": 6632.18994140625,
+        "vix_change_5d": -107.83,
+        "news_avg_sentiment": 0.0587283117142449,
+        "bullish_votes": 2,
+        "bearish_votes": 3
+      }
+    },
+    "relative_strength": {
+      "signal": "BUY",
+      "confidence": 0.8200000000000001,
+      "summary": "Relative Strength: BUY | stock 10-bar return=3.51%, NIFTY=-2.87%, alpha=6.38%.",
+      "reasoning_prompt": "Relative-strength protocol:\n1) Compare stock and NIFTY returns over same 10-bar window.\n2) Convert spread into alpha and classify persistent out/under-performance.\n3) Treat marginal alpha as noise and return NO_TRADE.\n4) Use relative strength as confirmation layer, not standalone trigger.",
+      "llm_reasoning": "Relative strength appears neutral. With the RSI at 46.3, the asset is neither overbought nor oversold, mirroring the broader index performance. The asset is performing in line with its sector peers, showing no signs of significant outperformance or underperformance. The lack of momentum strength relative to the moving averages limits the potential for near-term alpha generation.",
+      "detail": {
+        "stock_ret10": 0.035092900499535284,
+        "nifty_ret10": -0.028660001865128515,
+        "alpha": 0.0637529023646638
+      }
+    },
+    "us_trend": {
+      "signal": "SELL",
+      "confidence": 0.85,
+      "summary": "US Trend Signal: SELL | Global risk-off backdrop. SPX 5D/20D=-2.31%/-3.87%, NDX 5D/20D=-1.60%/-2.94%, VIX=27.29, DXY 5D=-1.06%.",
+      "reasoning_prompt": "US macro trend protocol:\n1) Evaluate SPX and NDX short/medium returns for global equity risk tone.\n2) Use VIX as stress filter (high VIX weakens risk-on conviction).\n3) Use DXY direction as liquidity/EM risk proxy for Indian equities.\n4) Classify regime as risk-on, risk-off, or mixed.\n5) Use this as contextual bias only; do not override local setup quality.",
+      "llm_reasoning": "The correlation to US trends remains indirect, largely mediated through global oil price volatility and broader macro risk sentiment. US-Iran tensions have influenced oil supply expectations, which currently support Reliance Industries. However, domestic market factors remain the primary driver, and the lack of strong directional movement in US benchmarks has resulted in a neutral influence on the current local price action.",
+      "detail": {
+        "regime": "Global risk-off backdrop",
+        "llm_decision_why": "Negative returns across short-term (5-day) and medium-term (20-day) horizons for both SPX and NDX indicate bearish momentum. A VIX level of 27.29 signals elevated market fear and high volatility, characteristic of a risk-off environment. This combination of declining equity prices and heightened volatility supports a clear bearish contextual bias.",
+        "spx_ret_5": -0.02314398424966979,
+        "spx_ret_20": -0.038731002127090686,
+        "ndx_ret_5": -0.015998480392124925,
+        "ndx_ret_20": -0.02935414548420079,
+        "vix_last": 27.290000915527344,
+        "dxy_ret_5": -0.010643385479502387,
+        "dxy_ret_20": -0.01243032467577676
+      }
+    },
+    "financials": {
+      "signal": "BUY",
+      "confidence": 0.8087832218719768,
+      "summary": "Financials Signal: BUY | Fundamentals supportive. Coverage=46%. ROE=8.26%, Margin=7.22%, RevGrowth=N/A, EarnGrowth=N/A, D/E=0.438, CurrentRatio=N/A, PE=26.827. Quarterly trends: RevQoQ=8.73%, NIQoQ=-30.93%, OCFQoQ=N/A, DebtQoQ=N/A, FCF=N/A, Cash/Debt=N/A. Analyst target=N/A (N/A upside, ? analysts). 52w Hi/Lo=1611.800/1114.850, position=53.50%.",
+      "reasoning_prompt": "Financial statement reasoning protocol:\n1) Evaluate valuation (PE/PB) relative to profitability and growth quality.\n2) Score profitability and efficiency (ROE, margins).\n3) Validate growth durability using quarterly revenue and net-income trends.\n4) Check balance-sheet resilience (debt trend, liquidity, cash/debt).\n5) Check cash-flow quality (operating CF trend, free cash flow sign).\n6) If fundamentals conflict or are incomplete, default to conservative NO_TRADE bias.",
+      "llm_reasoning": "Financial metrics indicate underlying stability. With a steady volume of 20.9M, liquidity is sufficient for established positions. While specific quarterly earnings growth or valuation ratios were not provided in the metrics, the current price of 1392.20 relative to SMA50 (1437.69) suggests the stock is currently trading at a slight discount to its medium-term average, providing a fundamental cushion for long-term holders.",
+      "fundamental_signals": [
+        {
+          "type": "bullish",
+          "text": "Revenue growing QoQ (8.7% last quarter)."
+        },
+        {
+          "type": "bearish",
+          "text": "Net income declined sharply QoQ (-30.9%)."
+        }
+      ],
+      "analyst_consensus": {
+        "target_price": null,
+        "target_high": null,
+        "target_low": null,
+        "n_analysts": null,
+        "implied_upside_pct": null
+      },
+      "price_52w": {
+        "high": 1611.8,
+        "low": 1114.85,
+        "current": 1380.7,
+        "position_pct": 53.5,
+        "change_1y_pct": null
+      },
+      "extended_fundamentals": {
+        "symbol": "RELIANCE.NS",
+        "dividend_yield": 0.4,
+        "dividend_rate": 5.5,
+        "ex_dividend_date": 1755129600,
+        "payout_ratio": 0.08939999,
+        "held_pct_insiders": 0.51049,
+        "held_pct_institutions": 0.27985,
+        "book_value": 648.12,
+        "price_to_book": 2.1303153,
+        "return_on_equity": null,
+        "debt_to_equity": 35.651,
+        "profit_margins": 0.08122,
+        "enterprise_value": 21923222257664,
+        "enterprise_to_revenue": 2.14,
+        "enterprise_to_ebitda": 13.015,
+        "gross_margins": 0.35777,
+        "operating_margins": 0.11852,
+        "ebitda_margins": 0.16441,
+        "total_revenue": 10245479858176,
+        "total_debt": 3745930018816,
+        "total_cash": 2238710022144,
+        "peg_ratio": null,
+        "trailing_pe": 22.47233,
+        "forward_pe": 21.064888
+      },
+      "promoter_institutional": {
+        "symbol": "RELIANCE.NS",
+        "major_holders": {},
+        "top_institutional": []
+      },
+      "dividends_splits": {
+        "symbol": "RELIANCE.NS",
+        "recent_dividends": [
+          {
+            "date": "2018-06-27 00:00:00+05:30",
+            "amount": 2.97183
+          },
+          {
+            "date": "2019-08-02 00:00:00+05:30",
+            "amount": 3.219483
+          },
+          {
+            "date": "2020-07-02 00:00:00+05:30",
+            "amount": 3.25
+          },
+          {
+            "date": "2021-06-11 00:00:00+05:30",
+            "amount": 3.5
+          },
+          {
+            "date": "2022-08-18 00:00:00+05:30",
+            "amount": 4.0
+          },
+          {
+            "date": "2023-08-21 00:00:00+05:30",
+            "amount": 4.5
+          },
+          {
+            "date": "2024-08-19 00:00:00+05:30",
+            "amount": 5.0
+          },
+          {
+            "date": "2025-08-14 00:00:00+05:30",
+            "amount": 5.5
+          }
+        ],
+        "recent_splits": [
+          {
+            "date": "1997-10-27 00:00:00+05:30",
+            "ratio": 2.0
+          },
+          {
+            "date": "2009-11-26 00:00:00+05:30",
+            "ratio": 2.0
+          },
+          {
+            "date": "2017-09-07 00:00:00+05:30",
+            "ratio": 2.0
+          },
+          {
+            "date": "2024-10-28 00:00:00+05:30",
+            "ratio": 2.0
+          }
+        ],
+        "dividend_yield_trend": "rising",
+        "total_dividends_1y": 5.5
+      },
+      "metrics": {
+        "market_cap": 18684284306379.234,
+        "trailing_pe": 26.826734875917808,
+        "forward_pe": null,
+        "price_to_book": 2.215878119826759,
+        "debt_to_equity": 0.43830052182163187,
+        "return_on_equity": 0.08259962049335863,
+        "profit_margins": 0.07219706165588431,
+        "operating_margins": 0.1165780201577082,
+        "gross_margins": 0.25086322799066646,
+        "ebitda_margins": null,
+        "revenue_growth": null,
+        "earnings_growth": null,
+        "free_cashflow": null,
+        "operating_cashflow": null,
+        "current_ratio": null,
+        "fifty_two_week_high": 1611.800048828125,
+        "fifty_two_week_low": 1114.8499755859375,
+        "fifty_two_week_change": null,
+        "dividend_yield": 0.01376113614248604,
+        "current_price": 1380.699951171875,
+        "analyst_target_price": null,
+        "analyst_target_high": null,
+        "analyst_target_low": null,
+        "number_of_analyst_opinions": null,
+        "trailing_eps": null,
+        "forward_eps": null,
+        "beta": null,
+        "book_value": 623.0938149611858,
+        "enterprise_value": null,
+        "total_revenue": 9646930000000.0,
+        "total_debt": 3695750000000.0,
+        "total_cash": 1006450000000.0,
+        "peg_ratio": null,
+        "sector": null,
+        "industry": null,
+        "company_name": ""
+      },
+      "detail": {
+        "stance": "Fundamentals supportive",
+        "bull_points": 4,
+        "bear_points": 1,
+        "data_quality": {
+          "coverage_ratio": 0.46153846153846156,
+          "available_fields": 6,
+          "total_fields": 13
+        },
+        "metrics": {
+          "market_cap": 18684284306379.234,
+          "trailing_pe": 26.826734875917808,
+          "forward_pe": null,
+          "price_to_book": 2.215878119826759,
+          "debt_to_equity": 0.43830052182163187,
+          "return_on_equity": 0.08259962049335863,
+          "profit_margins": 0.07219706165588431,
+          "operating_margins": 0.1165780201577082,
+          "gross_margins": 0.25086322799066646,
+          "ebitda_margins": null,
+          "revenue_growth": null,
+          "earnings_growth": null,
+          "free_cashflow": null,
+          "operating_cashflow": null,
+          "current_ratio": null,
+          "fifty_two_week_high": 1611.800048828125,
+          "fifty_two_week_low": 1114.8499755859375,
+          "fifty_two_week_change": null,
+          "dividend_yield": 0.01376113614248604,
+          "current_price": 1380.699951171875,
+          "analyst_target_price": null,
+          "analyst_target_high": null,
+          "analyst_target_low": null,
+          "number_of_analyst_opinions": null,
+          "trailing_eps": null,
+          "forward_eps": null,
+          "beta": null,
+          "book_value": 623.0938149611858,
+          "enterprise_value": null,
+          "total_revenue": 9646930000000.0,
+          "total_debt": 3695750000000.0,
+          "total_cash": 1006450000000.0,
+          "peg_ratio": null,
+          "sector": null,
+          "industry": null,
+          "company_name": ""
+        },
+        "metrics_extended": {
+          "dividend_yield": 0.4,
+          "peg_ratio": null,
+          "operating_margins": 0.11852,
+          "gross_margins": 0.35777,
+          "ev_to_ebitda": 13.015,
+          "held_pct_institutions": 0.27985
+        },
+        "statement_trends": {
+          "revenue_qoq": 0.08731611610954215,
+          "net_income_qoq": -0.3092909535452323,
+          "operating_cf_qoq": null,
+          "debt_qoq": null,
+          "free_cashflow_latest": null,
+          "cash_to_debt": null
+        }
+      }
+    },
+    "market_setup": {
+      "signal": "NO_TRADE",
+      "confidence": 0.65,
+      "summary": "Market Setup Signal: NO_TRADE | Range negotiation. Tape read: 5d=+0.2%, 20d=-5.2%, volume ratio=1.35, momentum=55.7. Support gap=1.8% and resistance gap=3.6%. Trader read: The market is in a sideways compression phase within a falling channel. While volume has ticked up, the price remains capped by the SMA20 and SMA50, and indicators are conflicting (neutral RSI/Stochastic vs. MACD bullish flip). Without a clean breakout above the 1441 resistance or a structural base formation, the risk-reward remains unconvincing.",
+      "reasoning_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+      "llm_reasoning": "The market is in a consolidated state. Technicals show a range-bound structure with prices compressed between moving averages, while volume confirms high interest without a breakout. The setup requires a breach above 1401.77 to confirm a trend-following entry or a drop below 1367.33 to signal a further test of lower supports. The current posture is defensive, favoring patience over immediate capital commitment.",
+      "setup_label": "Range negotiation",
+      "detail": {
+        "recent_return_5d_pct": 0.2,
+        "recent_return_20d_pct": -5.21,
+        "volume_ratio_5d_vs_20d": 1.35,
+        "distance_to_support_pct": 1.77,
+        "distance_to_resistance_pct": 3.56,
+        "momentum_score": 55.7,
+        "buy_votes": 1,
+        "sell_votes": 0
+      }
+    },
+    "catalyst_context": {
+      "signal": "NO_TRADE",
+      "confidence": 0.5,
+      "summary": "Catalyst Context Signal: NO_TRADE | Mixed catalyst tape. Backdrop read: news sentiment=0.06, analyst upside=None, 52w position=53.5. Core read: The evidence presents conflicting signals: while the company shows revenue growth, the sharp 30.9% quarterly decline in net income is a significant red flag. With missing key metrics like current ratio and FCF, combined with high volatility, the fundamental picture is too fragmented to justify a strong directional conviction at this time.",
+      "reasoning_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+      "llm_reasoning": "The primary catalyst is geopolitical volatility affecting global oil markets, which directly impacts the company's refining margins. Future catalysts include upcoming earnings announcements and potential industry-wide policy changes regarding energy sector taxes or subsidies. Current news cycle support suggests that refinery-driven earnings should remain the primary focus for market participants in the immediate future.",
+      "catalyst_label": "Mixed catalyst tape",
+      "detail": {
+        "buy_votes": 2,
+        "sell_votes": 2,
+        "avg_sentiment": 0.059,
+        "analyst_upside_pct": null,
+        "position_52w_pct": 53.5,
+        "fundamental_signals": [
+          "Revenue growing QoQ (8.7% last quarter).",
+          "Net income declined sharply QoQ (-30.9%)."
+        ]
+      }
+    }
+  },
+  "agent_guidance": {
+    "indicator_prompt": "Indicator reasoning protocol:\n1) Map structural trend using relative price location vs SMA20/50/200 and slope analysis.\n2) Decode momentum quality using MACD histogram acceleration/deceleration and ROC10-ROC20 comparisons.\n3) Assess oscillator behavior (RSI/Stoch/WillR) for range-specific exhaustion vs strong trend continuation.\n4) Verify professional participation via volume-over-average filters and spread analysis.\n5) Filter noise using ATR-based volatility regimes (reduce conviction in 'wide and loose' tape).\n6) Enforce strict confluence: if trend and momentum disagree without a reclaim setup, maintain NO_TRADE posture.",
+    "pattern_prompt": "Pattern reasoning protocol:\n1) Detect breakout/breakdown against prior 12-bar range, not single-candle spikes.\n2) Confirm direction with local slope and bar-structure continuation.\n3) Use engulfing patterns as confirmation, not standalone trigger.\n4) Treat flat-slope compression as NO_TRADE until expansion is confirmed.\n5) Down-rank weak breakouts lacking structure confirmation.",
+    "news_prompt": "News reasoning protocol:\n1) Collect company-specific headlines across multiple providers using diversified queries.\n2) Filter spam/listicle/noise domains and low-relevance stories.\n3) Build a global macro stream (rates, inflation, oil, USD, broad risk sentiment).\n4) Build industry/sector thematic stream (demand cycle, market share, regulation, capacity, pricing).\n5) Weight sentiment by source quality, exponential recency decay, and relevance confidence.\n6) Apply content-similarity dedup to remove near-duplicate headlines.\n7) Use LLM to infer final bias from company + industry + macro evidence and return NO_TRADE under conflict.",
+    "trend_prompt": "Trend reasoning protocol:\n1) Fit support and resistance trendlines over the visible swing window.\n2) Estimate channel slope (regime direction) and channel width (trend quality).\n3) Locate current price in channel and prefer pullback entries aligned with slope.\n4) If slope is weak/flat, classify as sideways and favor NO_TRADE.\n5) Avoid chasing signals near channel extremes against risk-reward logic.",
+    "market_prompt": "Market sentiment protocol:\n1) Evaluate NIFTY multi-window momentum (5/10/20-bar returns) for domestic risk appetite.\n2) Check Nifty SMA20 structure — price above 20DMA = constructive, below = cautious.\n3) Evaluate India VIX regime as stress filter (low=constructive, high=defensive).\n4) Factor VIX change rate — rising VIX signals increasing fear even if level is moderate.\n5) Blend with cleaned multi-source news sentiment (stock + macro blend).\n6) Count bullish/bearish votes and avoid directional call under conflict.\n7) Prefer NO_TRADE when index momentum and volatility regime diverge.",
+    "relative_strength_prompt": "Relative-strength protocol:\n1) Compare stock and NIFTY returns over same 10-bar window.\n2) Convert spread into alpha and classify persistent out/under-performance.\n3) Treat marginal alpha as noise and return NO_TRADE.\n4) Use relative strength as confirmation layer, not standalone trigger.",
+    "us_trend_prompt": "US macro trend protocol:\n1) Evaluate SPX and NDX short/medium returns for global equity risk tone.\n2) Use VIX as stress filter (high VIX weakens risk-on conviction).\n3) Use DXY direction as liquidity/EM risk proxy for Indian equities.\n4) Classify regime as risk-on, risk-off, or mixed.\n5) Use this as contextual bias only; do not override local setup quality.",
+    "financials_prompt": "Financial statement reasoning protocol:\n1) Evaluate valuation (PE/PB) relative to profitability and growth quality.\n2) Score profitability and efficiency (ROE, margins).\n3) Validate growth durability using quarterly revenue and net-income trends.\n4) Check balance-sheet resilience (debt trend, liquidity, cash/debt).\n5) Check cash-flow quality (operating CF trend, free cash flow sign).\n6) If fundamentals conflict or are incomplete, default to conservative NO_TRADE bias.",
+    "market_setup_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+    "catalyst_context_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+    "trader_intel_prompt": "Think like a battle-hardened Indian discretionary trader and teacher. Judge structural setup quality, sector leadership, institutional flow cues (FII/DII logic), crowd positioning, and execution patience. Reference specific Indian market nuances like Nifty/BankNifty confluence when relevant. Avoid basic indicator-threshold language. Output should be concise but instructive: explain why setup quality is high/low, where edge comes from, and what invalidates the idea. Also provide 1-2 risky intraday scalp ideas with exact trigger and invalidation only when tape is volatile enough; otherwise state why not. Prefer NO_TRADE when the idea is merely 'interesting' rather than high-probability and actionable."
+  },
+  "market_setup": {
+    "signal": "NO_TRADE",
+    "confidence": 0.65,
+    "summary": "Market Setup Signal: NO_TRADE | Range negotiation. Tape read: 5d=+0.2%, 20d=-5.2%, volume ratio=1.35, momentum=55.7. Support gap=1.8% and resistance gap=3.6%. Trader read: The market is in a sideways compression phase within a falling channel. While volume has ticked up, the price remains capped by the SMA20 and SMA50, and indicators are conflicting (neutral RSI/Stochastic vs. MACD bullish flip). Without a clean breakout above the 1441 resistance or a structural base formation, the risk-reward remains unconvincing.",
+    "reasoning_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+    "llm_reasoning": "The market is in a consolidated state. Technicals show a range-bound structure with prices compressed between moving averages, while volume confirms high interest without a breakout. The setup requires a breach above 1401.77 to confirm a trend-following entry or a drop below 1367.33 to signal a further test of lower supports. The current posture is defensive, favoring patience over immediate capital commitment.",
+    "setup_label": "Range negotiation",
+    "detail": {
+      "recent_return_5d_pct": 0.2,
+      "recent_return_20d_pct": -5.21,
+      "volume_ratio_5d_vs_20d": 1.35,
+      "distance_to_support_pct": 1.77,
+      "distance_to_resistance_pct": 3.56,
+      "momentum_score": 55.7,
+      "buy_votes": 1,
+      "sell_votes": 0
+    }
+  },
+  "catalyst_context": {
+    "signal": "NO_TRADE",
+    "confidence": 0.5,
+    "summary": "Catalyst Context Signal: NO_TRADE | Mixed catalyst tape. Backdrop read: news sentiment=0.06, analyst upside=None, 52w position=53.5. Core read: The evidence presents conflicting signals: while the company shows revenue growth, the sharp 30.9% quarterly decline in net income is a significant red flag. With missing key metrics like current ratio and FCF, combined with high volatility, the fundamental picture is too fragmented to justify a strong directional conviction at this time.",
+    "reasoning_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+    "llm_reasoning": "The primary catalyst is geopolitical volatility affecting global oil markets, which directly impacts the company's refining margins. Future catalysts include upcoming earnings announcements and potential industry-wide policy changes regarding energy sector taxes or subsidies. Current news cycle support suggests that refinery-driven earnings should remain the primary focus for market participants in the immediate future.",
+    "catalyst_label": "Mixed catalyst tape",
+    "detail": {
+      "buy_votes": 2,
+      "sell_votes": 2,
+      "avg_sentiment": 0.059,
+      "analyst_upside_pct": null,
+      "position_52w_pct": 53.5,
+      "fundamental_signals": [
+        "Revenue growing QoQ (8.7% last quarter).",
+        "Net income declined sharply QoQ (-30.9%)."
+      ]
+    }
+  },
+  "trader_intel": {
+    "signal": "NO_TRADE",
+    "confidence": 0.35,
+    "verdict_label": "Range-bound indecision",
+    "playbook_title": "Capital Preservation in Compression",
+    "thesis": "Reliance is caught in a classic 'grind' phase. Institutional interest is currently muted, evidenced by the lackluster volume profile relative to the 20-day average. We are sitting in the middle of a 1400-1450 liquidity vacuum. Without a Nifty trend-day setup, RIL lacks the beta to break out of this coil.",
+    "execution_style": "Observation-only",
+    "risk_flag": "High chop risk; potential for whipsaws.",
+    "entry_trigger": "Wait for a sustained 15-minute close above 1445 with expanding volume for long, or a flush below 1400 for short.",
+    "invalidation": "A reversal back inside the current range after a breakout attempt.",
+    "why_now": "The stock is directionless; chasing entries here is gambling against retail-level noise.",
+    "why_not_now": "The lack of FII conviction and the mixed fundamental narrative (QoQ income slump) mean there is no 'edge' for a directional swing.",
+    "risky_intraday_play": "Risky intraday recommendation: AGGRESSIVE SELL below 1368.00. If price reclaims 1441.75, immediately flip bias to BUY.",
+    "risky_prediction": {
+      "signal": "SELL",
+      "confidence": 0.58,
+      "text": "Risky intraday recommendation: AGGRESSIVE SELL below 1368.00. If price reclaims 1441.75, immediately flip bias to BUY."
+    },
+    "summary": "Trader Intel: NO_TRADE | Range-bound indecision | Capital Preservation in Compression. Thesis: Reliance is caught in a classic 'grind' phase. Institutional interest is currently muted, evidenced by the lackluster volume profile relative to the 20-day average. We are sitting in the middle of a 1400-1450 liquidity vacuum. Without a Nifty trend-day setup, RIL lacks the beta to break out of this coil. Why now: The stock is directionless; chasing entries here is gambling against retail-level noise. Why not now: The lack of FII conviction and the mixed fundamental narrative (QoQ income slump) mean there is no 'edge' for a directional swing.",
+    "intraday_execution_easy": [
+      "Treat this as high risk; use smaller position size.",
+      "Enter only on trigger, never in the middle of range.",
+      "Keep fixed stop-loss from the start.",
+      "Exit quickly if momentum stalls."
+    ],
+    "intraday_easy_one_liner": "Intraday simple rule: no clear edge now, so skip trade and wait for strong breakout with volume.",
+    "reasoning_prompt": "Think like a battle-hardened Indian discretionary trader and teacher. Judge structural setup quality, sector leadership, institutional flow cues (FII/DII logic), crowd positioning, and execution patience. Reference specific Indian market nuances like Nifty/BankNifty confluence when relevant. Avoid basic indicator-threshold language. Output should be concise but instructive: explain why setup quality is high/low, where edge comes from, and what invalidates the idea. Also provide 1-2 risky intraday scalp ideas with exact trigger and invalidation only when tape is volatile enough; otherwise state why not. Prefer NO_TRADE when the idea is merely 'interesting' rather than high-probability and actionable."
+  },
+  "risky_intraday_play": "Risky intraday recommendation: AGGRESSIVE SELL below 1368.00. If price reclaims 1441.75, immediately flip bias to BUY.",
+  "top_news": [
+    {
+      "source": "google_rss",
+      "title": "Not Reliance, Not Adani: These 4 fertiliser stocks are India’s real green hydrogen plays - The Financial Express",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQVjRxOElSRkRuVU5yZktUdTljUXl5T1ZSLVNkWlhkTzJhSWF1MmxBZkFkc0tlZkl6Q215b2V1Zk9PcEYtd3N3QllVSVBDQkw3REJuMzNkREZOZnNucFhJY0pYYWt3TUJTY2pHd3NWdllJYnotZkY0ZktERUU4QVFfNEdtRmxad2tNMmE3M3hnNnl4cnA0YlRQS0E5SzViNzI3RzY3RmZjNHkyTy1HSUFKZm41eUs5TXVyeG1RYXpKbnN3Ukh2c1kyT1k1WGlHUDVsOXF1RHB5dDNiUGF3b19LVllFNNIB6gFBVV95cUxQdmR0NW1PUTBMVFhBY0x1cDhraEhIRmVKVHRPcnpWLWlJcHFqM1lhbkVlakhWZE1OdHI1dlFLcml0eHYyZ2JMVW1lbGFtRXpXODVzLUZMdW9UYnR5djhDNUtTTFI0ejdISnpjQnZBanJES2lFWVJEZFY1aXdDbjJtWDlMOVJWUGxrTl9fbllacnV1ZFl1RWNXVGZHYmFJY0VGcC00S1ZvMlJhOXFwcVdsY21uUXdIYWJjalA2S3FROThGb01xSmVWbDU0YTAzWEhYeWdOMzhRVURBYkFXaWxIY1haSW5iZmE4SUE?oc=5",
+      "published_at": "Sat, 14 Mar 2026 00:00:00 GMT",
+      "published_ts": 1773446400.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Not Adani Solar, Not Reliance — 3 solar stocks with up to 50% upside potential; Do you own any? - The Financial Express",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPcHJwazFPZE5UMFlnV2o1c0dXY2M0akZmd3d1VXB4ekpQZF83UW5MRHlHS1BkRnBXcjJRQkpId0tzMHlHQ09qVFZiMXdsb3dvb09Wb1FVTDBSZFphWW5QMEJkZ2xrVTB6RWRNX0RnUXh0TUhIV0FHaEk2Q01Nbm13MEZETDd5Q3hDS2RqaklUUm0zTHZQRXVvVXhqcFZyWFlFU1VlcGFMUnlRR3JEMVYxYWpEZENPcHRGUm5GRVFDakZqZnFoSFI4al84d2R6UUdsLXJ6bl9NaTl2MWlLVWfSAeQBQVVfeXFMTU5IeXBrb2RrR2tjaENqMEx0LUtkT1JoN09LT3hpRVpqTGxmal9UZ01sdUhwQzMwclBoaWdZWUFNb3oyXzUyYkhEelU1T2FaREhLMzlDR1BDVmY1MHd1T2RTNHFLQ3gtRldHaUN3TjJLMlh5TTNYbXZxQkQzZWF6UFZZQW56OE5iSW5tMmZhTUxSZmVaSEtvNU93QVhsdzNlN09lSnJKX2FoVWZnOG5ibE1vNDdZcm0wV05tU1UyVVB6TE0zWWFOclpZWV9TcnRUYUF3RlpiV2pfa09IWVlMb1pUTW9T?oc=5",
+      "published_at": "Fri, 13 Mar 2026 12:45:52 GMT",
+      "published_ts": 1773405952.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Reliance share price gains as US-Iran war continues to fuel oil price rally; experts see strong refining tailwinds - Mint",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNdWp5WnVSZEhJTjluelN4VjFCMXpyM3BVSHZHdXpxVEpWMGZ0M2Z3MURhVHFNeWlTbjlMWTl2VWdQbnZidUllSUthMXM2Z1ppOXIxWGtPN2xFOWNfV19vODFkS0pnQWIwTkJCVVM0ZzlodXBKM19nQnVIcmR4MHk3YWlSdHI0RTUzS20xZXJwMmhRNEVkXzdYWmRTLU1fazRZT0hKbVh6RFBEckR4TVRYQjNmQnFuNUdkZ25hUE5uWlVacDI5RVpMc2VfNjd3RlVkVS1UYUdWNHhFTzlLUTB5Vms1OXNPX2VwbWRzZWJhcUZMc3pDTENUdlU0N0gxMDFBS1NSUFRyb2psaDNPRjNYWdIBlgJBVV95cUxNbFNBN2Z6a2tHUVljaktwbl9YUWZRX3hXbFBXZDRyeWRBZlZBTVRNMHZkd1YwUUFBa0YxMnltQ3RyVXFub0VrTTdNeGtTMzhVVk5iZ1lrVXBUUGtKakZfNWw5UjM5SmxNbEhkMmdzRFNoWDBveWN0NVZGS0xkTndfdDZ6T0pmYWs2TnFjalpnclQ1Q3dScVQzd3VKVlp4MGJQdXViLW9VbTdkWFlvZV8zdzJLMzFxNWhLLUk2OEFtVFEwaDFFTFg2QTA1eF9tV3FwWW5rRWJNUXFiZDhyRFJ6TktFUTJvbi1OeFBYZjV3eHdrUDN2RmFGa0VHMU9EWnpuNGVIdVRVX1ZfQXFubHBLTWR4U29DQQ?oc=5",
+      "published_at": "Fri, 13 Mar 2026 05:42:06 GMT",
+      "published_ts": 1773380526.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "SENSEX, NIFTY50 recover from lower levels led by buying in Reliance Industries, Coal India - Upstox",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPekd4anNXaTRYR0JhNERVSFRuSzE4OUZlYmlHX194VENNdGtJTU9PVEFsYVFBejJ1RENrbEs3My1CbV8wS1FmeFpsMHdoVlFhYmxtY1BycHNhS3djNkdWLUkxN1hidVMwOTdmX1ZRRWVhejl0X2dNMHNRaFgtQnNLLS1MSHl2WlNrSm94eGRwVGFLVEFPSTlFd0kwLWlSQi1ua0VPTW8xYWdGR2IwZ0dMUWxITjJicDVSMWpqNVgtaUNrYWFhVlBhc0RLbVN1TmNSNXhfTDBiV3R3em0yMWF2SzdB?oc=5",
+      "published_at": "Thu, 12 Mar 2026 05:48:11 GMT",
+      "published_ts": 1773294491.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Reliance remains mum even as Donald Trump announces ‘historic' U.S. refinery deal - The Hindu",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQWGtPT1dUdEJRdEdDT0xfUTgzbmUweEtTZ0ZMWlNjQ1pmMVdmRHVYNVhYWmNCZXZIMXd3LUtVcUZwbFJ5ZXRrc1hYdGFVanpLUTJkN0I0ZGJrcUQ0SEEyV0hoM1luNGtESV80UjVUVFJQRTBPS0xSa3AwUm1jdkdnWkYyWF9tZmZ6LU0zcW5TOTM1R0VuN2ZZNjUwV05LRTBwZU1ZR1BFZk40SEVseXhKNEFEdmZkWG9FVGxiLUZUX2M4eFMyUW5yOFg1MzlUTDZucW9NT1BGa2dvNEJ6NlHSAeQBQVVfeXFMUEEtNFlZQkFzVkk0c29KTGpVeXpxVHZ1dmhDVlBfNDdsRk1mWnN2ajNac0pwOW1NM0t0cHRPRURuVWRLVW1icXVWcFFta1NvUUxzUHNiV3BGak5EYVhlZFZoY2VzRUJqM1NMWWV1aG5DbFczTXJENlZLYmJJNXdvcDFYeG9ORDNFQVhKMDJpcHNvOGl0QnIxQWFpNkU5OEhveGEzUjJLZW9PRW5iWFhnSUNEbVkzdEdHbjFuYmZpUDNYYjBhMXRERkFjZzRobXJwLXBlaThPbkpKQ2UwMGhsUGJvWmpx?oc=5",
+      "published_at": "Wed, 11 Mar 2026 19:53:00 GMT",
+      "published_ts": 1773258780.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Reliance Share Price: Trends, Forecasts & Investor Insights - newspress.co.in",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOWHc1bE9HVFVCbl8ycXQyNlpkekZUcFlaaVhaSlNYSU4xMV9lbmg4Q24wRWRWR1FaUFBtTGJPelVSZC1EMzdhS0NwNl9wcHg1LS1ucHpSenp4S0MzZ2Z4cnRMQkRpVUpDdFp3QlBrVEVkcTF6YWdXWW9aVmpFTDRrSnFiNHNNaW8?oc=5",
+      "published_at": "Wed, 11 Mar 2026 11:42:21 GMT",
+      "published_ts": 1773229341.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss",
+      "title": "Stocks to watch: IndiGo, Reliance Industries, Adani Enterprises among 10 shares in focus on Wednesday",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b4d1c51e42129625432a57624751&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fmarkets%2fstocks-to-watch-indigo-reliance-industries-adani-enterprises-among-10-shares-in-focus-on-wednesday%2far-AA1XXb37&c=9225553197047945244&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 07:33:00 GMT",
+      "published_ts": 1773214380.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Reliance share price: Stock in focus after 'historic $300 billion' oil refinery deal with US, check details - India TV News",
+      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQNVc0Sjl3UjhNZU9nNjk5b3diNW9La21wM1dBY3h6a2wySlZiREJfdExndmROZ0ZKWXpLOTVHQy1sTDhqNlgwUHNQanU1cWVNcVc2aDFNZ1NTTFJpQ1ZraFZjZlJoV1pkNHJVeHNiTEFJSGlwck9pT1NseGN5VFVCcDdWSTZmSFROYmg3OXJ2eUVhcjRUTEljLTFyMUJzU3duZkxSbXpPTmdQdExrZ0hLTF96aDc3bjUyR09oZXpEOERMM0ZwMmp6NEpjdkdrVjBkVFNlc0FqS0xTZnNRaEpXNXRtZ1VNbHBrajZuVHVKMjZTZUlycGdoTWJ6RFZZSklBMzJHSnNjb05pcG_SAZACQVVfeXFMT1ZZS242RlozaXczVk9UQXFfZ2RUZlhRVXB2N1A4TVRMSDZNclh1eFJ6NGRmZ3lkV1pKc1JNNFE1V2RLWDdTOURqUFJfVGdFWER1cTVWQUlZV0JaWWVxWnpYNTJJTDZTVWFmN1FYYzU1OE1rVVI0Q0tSSklydGEyWXY5dUNRd2x5aWtPUkNBUk81dllGVEVuRmhreHNFMzhnNUJCZnl3THdtOTRBdnVNUmhIYjBVd2JpblNxSlFxLW5lc29uUGtSSGZOdjl3QUM3R0Iycy0tU21PUEh1T21mLVItbG9jUWR6d2NxT1JDNGNNSWVpY19lRm9uYkJfdk1SZE9RYmRHaEdOVmppVEJSNDQ?oc=5",
+      "published_at": "Wed, 11 Mar 2026 04:42:49 GMT",
+      "published_ts": 1773204169.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Reliance Industries shares trade lower after Trump announces $300 billion US refinery deal with oil giant - Upstox",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQQlhSTWJJYnZtNE91eUV2ODl2YjdIRmctWXFIMTJhV0FZTTBtTzgzZEdYN1hVcy15cGViZEo1V0kwZWZ2ZnRVQllSRXV2VTFsSE82aUpQdkVwR0t4Vk40dVlfN0U1RFZha1hZMkZ4eld5c0pLSFh1MDg0MC1YTHNocTNtWTlUR1BGdXBhUkNPX0VWaDdXRXJxYTUzWVYxR3BJd2ZtVk1KMVJMaHRMZjlBb3ZUXzRHcTBWMmR4czViV2JlblllWTFBUTEtV1MtX0tpcVMyelhFVWpJRTlPaG9WT0daODVyZHlCNDZrdDMxaFI0M3d2ZHFQV1N3?oc=5",
+      "published_at": "Wed, 11 Mar 2026 04:05:44 GMT",
+      "published_ts": 1773201944.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Why Reliance Industries shares are gaining in early trade today - India Today",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNNlF0Zy1RdFo2T1NHSV80N0w5MnY3eXpQNlpQbjE5Z212b3dTdFNDX0VCRUFUWmdPYmt3cTZHVWp5YnlrTTFfNXVVelpFZFEwOG90OUZ5Ty1TWEoxZV9saWZZdDlMUmJ4UDJWYlRqQW1EU3dOS1hhamprNjg2aVRDcjlXcTM0U280aG5oS2JZYXNzWXF2MjRZLVNwLWxqVlFsRm56akgyeHB6cll4bFgtT2NmZ0wtYTRxR2x4M3ZwWGRHdTN5WmN5aUxJbUF4MGvSAdQBQVVfeXFMT0Mtd2VsQUdJamd4VHd4MWpWN3FFT1B6UEV4aVJQRmhVVkZVd05obkRmdldDeFI3TVNiVk9oTkpEbzY5WFZqNlJGNFNSUDJnbWpCQmJEaTVQdERYRk80ZzlFbEZuNzRTUzVodXRISDVEQXhaRlZrQTcwS2g0V19aQ01WeEtpZnlDQlZub1FRZExLMnJhVy02RFU1VWpHOUxiUzBpT3R6aEdYTHFHZHpMalBIeVRxUlZ2S196NXNDaEFnMEN5bXI0Z1NCYUZSeXhYUTlWUzU?oc=5",
+      "published_at": "Wed, 11 Mar 2026 03:58:48 GMT",
+      "published_ts": 1773201528.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Reliance share price gains as Donald Trump announces $300 billion US oil refinery project backed by RIL - Mint",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOaWQwbUlGeENKZzdhREJ0c0lodEtxQ0JTbW1KLVJNUV9YUG5scUFiS2VPRU5YaVRDSmxPX2I0U3BhY3JpR1RJUlhlbkMyaTI5aTRmWWM0X1pRME1qN09fQVNfZ2Rwd2plNUpWMl9abkw0UjlhOVEwdWMzWGIxeVhid0hJRnNhaDhNYVNTWTROVFBmUjkxazJiTE5zYWN5UjAxN0xaTzdkSXppQlM4Sm56Y3RjQzctNGtTcUd1c3NGUFB3eHpRS0VpVUR4amZncjhUQmdQZ2MyVDRBMkZjVE5n0gHkAUFVX3lxTE9HUDZ5ZTE1S01PWFJrY3BkTVcxVmRzWXh2MFdYYUs3bl9YY3FQWW04UlZUOXBiLTRrVk1XRHhrQVZ6dEpEX1RmWGVyOVdObFNrc0wwTDNXR3YxYzdjdGRMOHdNcGZNd1Q0MGdsNjFiSVNpUk1la0ljeVVwOFMyNUVURlNNVXhiZnhWbkpWanVtdDhXTTVuNjVVQm1FWjVIYTZLLTd4VlFQLWRjSVZRRFkxWUdJdTFTd1hJalJjd0dMVnVFU2FMUW9HTnctRGpuQjZ6VTkxUHIza0taOUtZOWpsalpZSA?oc=5",
+      "published_at": "Wed, 11 Mar 2026 03:49:24 GMT",
+      "published_ts": 1773200964.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss",
+      "title": "Reliance shares climb 2% after Trump announces landmark US refinery project",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b4d1c51e42129625432a57624751&url=https%3a%2f%2fwww.thehindubusinessline.com%2fmarkets%2fstock-markets%2freliance-shares-climb-2-after-trump-announces-landmark-us-refinery-project%2farticle70729486.ece&c=3048510745935136693&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 03:25:00 GMT",
+      "published_ts": 1773199500.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss",
+      "title": "RIL Shares In Action as Trump Names Reliance in Historic $300 billion US Refinery Plan; Stock Up 27% From Lows",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b4d1c51e42129625432a57624751&url=https%3a%2f%2fwww.goodreturns.in%2fnews%2fril-shares-rises-1-as-trump-names-reliance-in-historic-300-billion-us-refinery-plan-stock-up-27-1495125.html&c=3463946265530069004&mkt=en-in",
+      "published_at": "Tue, 10 Mar 2026 23:37:00 GMT",
+      "published_ts": 1773185820.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss",
+      "title": "Reliance Jio IPO Is Delayed Due To Changes In Listing Rules",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b4d1c51e42129625432a57624751&url=https%3a%2f%2ftrak.in%2fstories%2freliance-jio-ipo-is-delayed-due-to-changes-in-listing-rules%2f&c=3289170312188582423&mkt=en-in",
+      "published_at": "Tue, 10 Mar 2026 15:17:00 GMT",
+      "published_ts": 1773155820.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Reliance, Ambuja Cements & more: Top stocks to watch on March 10 - The Times of India",
+      "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxQcDRuRWJwcW9sd2RWbmtlWkpyVzZ1c2JBODE0bjA3TU56aDlfMDhhTER4MFpxYTRBLXFTWHVZaFF6WnFYZ0RwSnU5eks2WXZMTHZWZXRwWnFJYnExcWxWS2dXc1VsQ3R2ZDk4RDU4dWowVHJzZXlrNlByaU9xNXdjTkdrMGpRNEJvSW1uTDVJeFdVVlNKSWdyaGFiUkFTb2lkalF5Y0NPV0hKc2g0WXJoWnNUY25SS3Y5MDF6bmJsM1Q2cE45TFI1NS1PcTB4engzSGs3U1VzTU9XenRHaEdtaEk2aEJfbTNUWTVoN2FuNW5zODNzc2dMeEYzZWNXYk9aRUltNnZLbFpoaEQ3YjBKTlBMX0t6MGZveEx0NjB2aURiMllsNzBWUzYxQzQtVmpyYUE3UVhCUHJyYU3SAcACQVVfeXFMTXdRYlZiSE1kYzhablZUeW8yOHdoR1YyVXYtdjVRekJaS080ZVNrNWtWSDZZdG5Qd01zRDlSRkNCYnZfWFl4ZmJZUnYzVXVPa2VmRjBBSHAtVUw3a1U2bGxaN0k2RmlOa19DQjJnaGs1a2plLVZtc21MUnRHaU1JQnJrNC0tanFfRVV1ZTdRajhGalExWWZ2SHNjdERkS2FnUnJxNzAtZVFZUnI0NWt6U0NqcG9WX3pVXy12czBiVzRYaFVNZzRjSXF1cTJjNGNkVXVtRzJVZmxPczNWWGdPY2JjUUl5dHdOOFozQVFzbUtLZXJxNU81c2lwMi1kYXBDNGtELVFTeVUyZktLUUx4MUFFZWRMWVhWWnQybUR2R0FLeUVneTdDUk13SXpZTS1HNXV4TktrZlpOZnlIYkUwVFM?oc=5",
+      "published_at": "Tue, 10 Mar 2026 01:48:00 GMT",
+      "published_ts": 1773107280.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    }
+  ],
+  "top_industry_news": [
+    {
+      "source": "google_rss_industry",
+      "title": "Buy the fear? Indian markets delivered strong returns after past wars even as Middle East tensions roil stocks - MSN",
+      "url": "https://news.google.com/rss/articles/CBMimgNBVV95cUxNaWtlWW9UYWdob216eWxEXzVicjVDdGlMbFpXT210VU5Qa3dpc0MxWnhPQWRNRElhenR0UFhNbEFmbTkyeTNOcnZoRy0wUDRRTFVzamNLMnhJODJJNlR3TGoxOEgtWXNiNXQ4UHZibjFtaHd2enJ4Z1EtbElKMmVzQlFtaW0xdHRJRWIyLTNJbTExSExzam8xZWpFTlJsVV83RUtGblB5aHA0dG55YW8xOENnRmlnT2NUTXN2aXRldURRY0FEQTVxVy1jRXdhQl8zWGt6YzNpNzRPdlZ3aUx2WEtsZEt2ZEhNWXhWNEhxemtEaEg4SFJTUldsV2RTUUhMdFlxMUhjV2N5RDBzTG0yeVUyYThwT0hCaFdVNTZIUGFsM3REa3ZRUTV2clp2eFVQS0dfMFdxRGgzYTdIYXBvWlhUT3lHbkExMTFxVWVxRkhVZFNxS05JVmhZc1RXam02c3lQV1dDNHI2bWg0MHNGWkhHaGMwLXM2MEdfS1h4MWVOZXVqcDlFYjZUUzBzd21SS2MtbE1JSlR1QQ?oc=5",
+      "published_at": "Fri, 13 Mar 2026 19:20:46 GMT",
+      "published_ts": 1773429646.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Reliance Industries Limited",
+      "sector": "Energy",
+      "industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Fitch ratings raise India’s GDP growth forecast to 7.5% for FY26, sees Oil at $70 in 2026 - Mathrubhumi English",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNFllRWhsbElWalcxTXgxRTduczMwUFhKRjhySkF4SS1GOHg3dk5wV08yYzNRTTN3LXZlZnJTU3ZYM2FKN1ZZOHlMU3BIUzFjOUJMUUw5SnB6U3hqYk9ZREJFSUEtLXNzU0ZrckVuWFRNZ2tTWnJoTjlncFZYOHROSno1WXFfdFZqNy1sWjFLY0Y1ZGFqVDgtRURKMG9lZldDMGl6NnBoRmlBUUJxaTRQeWJla2FnX3JjeG9XQ3Q2NWxUZDBRaDczdGsxdGNWNmZkdTJMODNBVdIB1wFBVV95cUxPNFllRWhsbElWalcxTXgxRTduczMwUFhKRjhySkF4SS1GOHg3dk5wV08yYzNRTTN3LXZlZnJTU3ZYM2FKN1ZZOHlMU3BIUzFjOUJMUUw5SnB6U3hqYk9ZREJFSUEtLXNzU0ZrckVuWFRNZ2tTWnJoTjlncFZYOHROSno1WXFfdFZqNy1sWjFLY0Y1ZGFqVDgtRURKMG9lZldDMGl6NnBoRmlBUUJxaTRQeWJla2FnX3JjeG9XQ3Q2NWxUZDBRaDczdGsxdGNWNmZkdTJMODNBVQ?oc=5",
+      "published_at": "Fri, 13 Mar 2026 11:42:19 GMT",
+      "published_ts": 1773402139.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Reliance Industries Limited",
+      "sector": "Energy",
+      "industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "source": "bing_rss_industry",
+      "title": "Prolonged Middle East conflict, crude above $100 may strain India’s external sector: Standard Chartered",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b4e0e80c4e3d83020ec299510797&url=https%3a%2f%2fwww.fortuneindia.com%2feconomy%2fprolonged-middle-east-conflict-crude-above-100-may-strain-indias-external-sector-standard-chartered%2f131235&c=12945210719039704569&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 00:11:00 GMT",
+      "published_ts": 1773360660.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated",
+      "company_name": "Reliance Industries Limited",
+      "sector": "Energy",
+      "industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Polyester Fiber Market Growth Outlook (2026-2033) | Automotive, Apparel & Industrial Applications Driving Demand - openPR.com",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOWU1SZW1nczBwSWhsS2NzdTRVN3otd2NtNEgweXVDTmRIWE1BZTNVNUNKZlV1VUhQTE1CQVU2LWIyaFpoQlYycm9nR1VsM2RiRE43UzFIbkRCaTN2LUFKdjVtcXNKcF9CQ256Zm9JeHVLRkt1UjdIc3V5X09EZnBZN0tRU3FIX2VBRlVN?oc=5",
+      "published_at": "Thu, 12 Mar 2026 11:19:18 GMT",
+      "published_ts": 1773314358.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Reliance Industries Limited",
+      "sector": "Energy",
+      "industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Reliance Industries Share Price Rises After Texas Refinery News | Stock Market Today - Samco",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOelRSSTVHam5ZRXBuemdGRmlLTG45dXlPWkhUVDBJX2J1R2NBRzVOSjJtRGg2UkdseFF6c2pOODNmcmcyM0dWNEx6dHBaSkRLZ3JKYnEwTFJTMmlUeDJDWS1wLXczMWYwbEwxNzAyRnJKYWRGSWNrYko1WkVwTzNYOTl6c1NTVER2dnZTU2RmSlJiRkNZdUVzakNjdS1ub1RmcGRqcC1GR2o1REhvUkhob1NXc1J3VkYyeTE1Y1ZhSUpqSkktN2o4M0hEblV5eFVyLVZVRm9WTUlMR1RDOGpZd19EaWM1NUg1UnVJQzFPWnFCYmZZaGVn?oc=5",
+      "published_at": "Thu, 12 Mar 2026 10:04:46 GMT",
+      "published_ts": 1773309886.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Reliance Industries Limited",
+      "sector": "Energy",
+      "industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "RELIANCE Share Price — NSE:RELIANCE - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE00anNGRF9JdzljQVhoc3o1RDloUllFYW5oVUw2d1hTbkNjZjRLYTUwdkZaTkJXWUhWamRQb285S2JyZkhfQzIzUm5yWS1TQ09wZEl5b29JUE5scTdGMEE?oc=5",
+      "published_at": "Wed, 11 Mar 2026 17:15:09 GMT",
+      "published_ts": 1773249309.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Reliance Industries Limited",
+      "sector": "Energy",
+      "industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Ambani Stock to Buy Now for 28% Upside Potential; Do You Hold It? - Trade Brains",
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1TREloMElybndyOTlNSi1FbVhaN19rNEYwMDhwbzNyNEp6Tk9zQmRfNDJ5dVV3SjhCdk42VWVuUEc5dVJrUm80?oc=5",
+      "published_at": "Wed, 11 Mar 2026 12:30:00 GMT",
+      "published_ts": 1773232200.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Reliance Industries Limited",
+      "sector": "Energy",
+      "industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Why Reliance Industries shares are gaining in early trade today - India Today",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNNlF0Zy1RdFo2T1NHSV80N0w5MnY3eXpQNlpQbjE5Z212b3dTdFNDX0VCRUFUWmdPYmt3cTZHVWp5YnlrTTFfNXVVelpFZFEwOG90OUZ5Ty1TWEoxZV9saWZZdDlMUmJ4UDJWYlRqQW1EU3dOS1hhamprNjg2aVRDcjlXcTM0U280aG5oS2JZYXNzWXF2MjRZLVNwLWxqVlFsRm56akgyeHB6cll4bFgtT2NmZ0wtYTRxR2x4M3ZwWGRHdTN5WmN5aUxJbUF4MGvSAdQBQVVfeXFMT0Mtd2VsQUdJamd4VHd4MWpWN3FFT1B6UEV4aVJQRmhVVkZVd05obkRmdldDeFI3TVNiVk9oTkpEbzY5WFZqNlJGNFNSUDJnbWpCQmJEaTVQdERYRk80ZzlFbEZuNzRTUzVodXRISDVEQXhaRlZrQTcwS2g0V19aQ01WeEtpZnlDQlZub1FRZExLMnJhVy02RFU1VWpHOUxiUzBpT3R6aEdYTHFHZHpMalBIeVRxUlZ2S196NXNDaEFnMEN5bXI0Z1NCYUZSeXhYUTlWUzU?oc=5",
+      "published_at": "Wed, 11 Mar 2026 03:58:48 GMT",
+      "published_ts": 1773201528.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Reliance Industries Limited",
+      "sector": "Energy",
+      "industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Reliance Industries Ltd Forms Death Cross, Signalling Potential Bearish Trend - Markets Mojo",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQS3NvaF9NZDN3ZVotQktLZkRyMDBraUdvRUlLWTFtVmFmd1hkVnl3TEwzZHVJZjdJbUE0ZVVZUTVVV09pamxQR0hJdU94Qmpwb0VfMkY5cE9fdURURy0yV25nV1FQem1OazBHalc1MUxpUTcxYVZDTURzeDR6NkVQODA4X1dqRWNkVzJxS1owLWZzd1dMbzhxdDl1MmRUQjJTeWhxeGdkalNFNXVkQ28xRE9TSEdWNGlZd0pWemhORXRLeWotRF96NmpqNTQ3Nk0?oc=5",
+      "published_at": "Fri, 06 Mar 2026 13:31:40 GMT",
+      "published_ts": 1772803900.0,
+      "sentiment_score": -1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Reliance Industries Limited",
+      "sector": "Energy",
+      "industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Why Did Reliance Industries Shares Jump Over 2% Despite a Weak Market? - Trade Brains",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMy1XbGhKNVZZbmxXTTNEUWkzR2JQZWpuY3BnbHptY0F6aTh3Q2g3RGZaZ3BxS2Y4MTFGRE9SOUdVdE5hdWZUNU9WTnZBY0tLTEZ3UnFRMl9aZW1CWGgyWjI5UjI2WUpUOFdkWHdCa1RQS1pqQkxfNGs0dXQ5akdDNVJzdXpGcU5QWTBPczNJSW54U2Vnb0g4?oc=5",
+      "published_at": "Fri, 06 Mar 2026 08:38:00 GMT",
+      "published_ts": 1772786280.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Reliance Industries Limited",
+      "sector": "Energy",
+      "industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Himanshu Pathak joins Reliance as Vice President – Strategy & Digital Transformation (Group Infrastructure) - Veloxx media",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPYjZla2dPSWpZY1RpLTBKb3g2RWppU2FqNm8zcGhKZTlYVmtVVHN2ZEZfUEF2a0dLVWZHTEVIeG9KbC1zNl9ZTVQxbGVsSTFTSzJ0Rzc4TjUxWWxDNW05YUlNdGhWcmM1WjZIWTA2dnF4MUJJQkh4X1RpRFFNTFBZcU9WakRNRm1YczBLdVlEbVNOdnB5VWtGTGllbHg5aHlkNUE0elFPcFVUeHhkMy1yR2phX3hBeTNSdVFOR3E3UWtTMmVt?oc=5",
+      "published_at": "Mon, 02 Mar 2026 10:14:50 GMT",
+      "published_ts": 1772446490.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Reliance Industries Limited",
+      "sector": "Energy",
+      "industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Polyester Staple Fiber Market: Growth, Trends & Future Outlook - vocal.media",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOb3Q3ekN6RU1PZ2hEb0ljTTZPU3NrbjhpNXhoNnkwTGk0UGNZZTRjRUlfRzgtLUEycXVQcDJBS1FJbVg0T1doblBHM1hUOWpBbUdnX0dnOHZCYWdSVGpMdThEekx3dXplZ3B6OXl0dUdfOU5LSVp5Z1VEY1h6MjNOMGZ5V0lYQU1xaFowczBXVDc2dGc?oc=5",
+      "published_at": "Wed, 25 Feb 2026 11:50:27 GMT",
+      "published_ts": 1772020227.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Reliance Industries Limited",
+      "sector": "Energy",
+      "industry": "Oil & Gas Refining & Marketing"
+    }
+  ],
+  "top_macro_news": [
+    {
+      "source": "google_rss_macro",
+      "title": "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRVNOajVzSUJWU3Q5R2toMjVnZVZMNDhLclozWDdNODc1OU1qbVFjYnFTT0Z1SUZaaExuY3FJajFkdWtOWk5kdWplT0J0Yk9RcnlDVnlvQmJZNC1jVDVHZmRhS0Z0X0JiXzFETHRnaUVac1pEMmZfWE9raXFacFpwR1dSaEVST0Ntc2k1czN4emNQVFlWSHE3V1ZhMW80OUFMYmN6dEwtTkRadm44enc?oc=5",
+      "published_at": "Fri, 13 Mar 2026 15:17:26 GMT",
+      "published_ts": 1773415046.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b4e6798b4ce1a0a30358fb9360eb&url=https%3a%2f%2fwww.livemint.com%2fmarket%2fstock-market-news%2fus-china-power-shift-global-markets-india-outlook-mirae-asset-swarup-mohanty-11773376870759.html&c=15555016077234823276&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 14:15:00 GMT",
+      "published_ts": 1773411300.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Fed to delay rate cuts as war clouds the outlook",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b4e6eac44029aa5337ebc4890caf&url=https%3a%2f%2fthink.ing.com%2farticles%2ffed-to-delay-rate-cuts-as-war-clouds-the-outlook%2f&c=127436243108543137&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 13:40:00 GMT",
+      "published_ts": 1773409200.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss_macro",
+      "title": "BTC defies rising dollar, oil and yields, holds above $71,000 as macro pressures mount - CoinDesk",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbHB1NE1GZ1dLTWpvOWNseW5QXy1jbWVHcTYzcXF6NWotU0NHOG1XNEUzcDd0ZTctMW1URXZzSW5RQ1djc1h3a0xOM0k2Tkd5TjRWcE0wUXRwZjg4WktmZ2xDWnpLa0RhR1BsRzlrZlVlVzhONmQ0eW51VXJIWFQ3NFJkd0VXZ2VsUnY4VTBuWjU5LXpxX1BPYUIyaEZKQVdEWUU3a25CY0RvN3NrVW10cFNUTWtxSHdhSWI4?oc=5",
+      "published_at": "Fri, 13 Mar 2026 09:34:10 GMT",
+      "published_ts": 1773394450.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Gold Silver Rate Today Live Updates (13 March 2026): Gold, silver futures fall on MCX as rising crude oil prices dim hopes of early rate cuts",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b4e73ca5466dbc811b7cc280c154&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2flive-blog%2fgold-rate-silver-price-today-live-updates-mcx-gold-18k-22k-24k-rate-iran-isreal-us-war-latest-news%2fliveblog%2f129534056.cms&c=4108291931945502437&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 06:00:00 GMT",
+      "published_ts": 1773381600.0,
+      "sentiment_score": -1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Markets Today: Sensex Declines 830 Points, Nifty Slips Below 23,650 Amid Iran-US-Israel War",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b4e6798b4ce1a0a30358fb9360eb&url=https%3a%2f%2fwww.news18.com%2fbusiness%2fmarkets%2fmarkets-today-sensex-falls-1000-points-in-opening-trade-nifty-below-23600-as-oil-surges-past-100-9956009.html&c=7425380694736114227&mkt=en-in",
+      "published_at": "Thu, 12 Mar 2026 03:39:00 GMT",
+      "published_ts": 1773286740.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Share markets continue to bleed as West Asia tensions dampen sentiment, Sensex over 800 points down",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b4e6798b4ce1a0a30358fb9360eb&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fmarkets%2fshare-markets-continue-to-bleed-as-west-asia-tensions-dampen-sentiment-sensex-over-800-points-down%2far-AA1Yt9yX&c=14300386732484515462&mkt=en-in",
+      "published_at": "Thu, 12 Mar 2026 03:04:15 GMT",
+      "published_ts": 1773284655.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Trading Day: Oil and yields up, up, and away",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b4e73ca5466dbc811b7cc280c154&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2ftrading-day-oil-and-yields-up-up-and-away%2far-AA1YqbzQ&c=11227118164045986945&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 14:08:08 GMT",
+      "published_ts": 1773238088.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss_macro",
+      "title": "Markets Confront the Economic Impact of the Iran Conflict - Natixis CIB | Natixis Corporate & Investment Banking",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOVpkVlFlOG1lbEdUZEM2VU40clhkdUtsN3l6Z3Rkd2g4WTBNMVNKSFBmMmkyT1M0RGwtZGJxN1ItZVVrMEU3UnVfWFJ6UmpZUVppV09ZelhMWHNvZmhtbFk3ajc0UnlpY0dZeW51MGJnSUU3dGhYRGFQaE44NjJVaFFBVWFyVlNhampDdXFic0dCZXZ3YW5ScWUtWQ?oc=5",
+      "published_at": "Wed, 11 Mar 2026 10:55:26 GMT",
+      "published_ts": 1773226526.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "S&P 500 Faces Valuation Pressure as Oil and Yields Rise Together",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b4b4e73ca5466dbc811b7cc280c154&url=https%3a%2f%2fwww.investing.com%2fanalysis%2fsp-500-faces-valuation-pressure-as-oil-and-yields-rise-together-200676476&c=11959585435036819535&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 10:53:00 GMT",
+      "published_ts": 1773226380.0,
+      "sentiment_score": -1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    }
+  ],
+  "chart_path": "reports/RELIANCE_NS_20260314_010810_trend.png",
+  "long_term_chart_path": "reports/RELIANCE_NS_20260314_010810_long_term.png",
+  "rich_report": "Indian Swing Trading Multi-Agent Report\nIndicator Signal: NO_TRADE | Trend: close=1392.20, SMA20=1408.36, SMA50=1437.69. Momentum: MACD=-13.001, Signal=-14.490, Hist=1.489, ROC10=-0.45%. Oscillators: RSI14=46.3, StochK/D=63.8/66.6, Williams%R=-36.2. Risk: ATR14=36.38, Volume=20939959 vs VolSMA20=15552919. Momentum Score=55.7/100 | MA=Sell, Trend=Falling, RSI=Neutral, MACD=Bullish.\nPattern Signal: NO_TRADE | setup=sideways compression (wait for breakout candle), slope=2.1158, breakout_up=False, breakdown=False, bull_engulf=False, bear_engulf=False.\nTrend Signal: NO_TRADE | setup=sideways trend channel, support slope=-2.467, resistance slope=-2.253, price position=0.72 in channel.\nNews Signal: BUY | combined sentiment=0.06 (stock=0.06, industry=0.12, macro=-0.06). Stock articles=24 (trusted=0, unrated=24); Industry articles=29 (trusted=0); Macro articles=30 (trusted=0). Sentiment strength=0.12. Inference=Reliance Industries is benefiting from strong refining tailwinds due to geopolitical volatility (US-Iran tensions) driving oil prices. Recent market data shows active buying interest in the stock, supporting Nifty/Sensex recovery. While some analysts favor smaller green hydrogen plays, the core refining business remains a significant profit driver amid favorable macro conditions..\nMarket Sentiment: SELL | NIFTY 5D=-2.31%, 10D=-3.42%, 20D=-3.87%, SMA20 gap=-2.4% (below). India VIX=6632.18994140625, 5D chg=-107.8, news sentiment=0.06. Votes: bull=2, bear=3.\nRelative Strength: BUY | stock 10-bar return=3.51%, NIFTY=-2.87%, alpha=6.38%.\nUS Trend Signal: SELL | Global risk-off backdrop. SPX 5D/20D=-2.31%/-3.87%, NDX 5D/20D=-1.60%/-2.94%, VIX=27.29, DXY 5D=-1.06%.\nFinancials Signal: BUY | Fundamentals supportive. Coverage=46%. ROE=8.26%, Margin=7.22%, RevGrowth=N/A, EarnGrowth=N/A, D/E=0.438, CurrentRatio=N/A, PE=26.827. Quarterly trends: RevQoQ=8.73%, NIQoQ=-30.93%, OCFQoQ=N/A, DebtQoQ=N/A, FCF=N/A, Cash/Debt=N/A. Analyst target=N/A (N/A upside, ? analysts). 52w Hi/Lo=1611.800/1114.850, position=53.50%.\nMarket Setup Signal: NO_TRADE | Range negotiation. Tape read: 5d=+0.2%, 20d=-5.2%, volume ratio=1.35, momentum=55.7. Support gap=1.8% and resistance gap=3.6%. Trader read: The market is in a sideways compression phase within a falling channel. While volume has ticked up, the price remains capped by the SMA20 and SMA50, and indicators are conflicting (neutral RSI/Stochastic vs. MACD bullish flip). Without a clean breakout above the 1441 resistance or a structural base formation, the risk-reward remains unconvincing.\nCatalyst Context Signal: NO_TRADE | Mixed catalyst tape. Backdrop read: news sentiment=0.06, analyst upside=None, 52w position=53.5. Core read: The evidence presents conflicting signals: while the company shows revenue growth, the sharp 30.9% quarterly decline in net income is a significant red flag. With missing key metrics like current ratio and FCF, combined with high volatility, the fundamental picture is too fragmented to justify a strong directional conviction at this time.\nTrader Intel: NO_TRADE | Range-bound indecision | Capital Preservation in Compression. Thesis: Reliance is caught in a classic 'grind' phase. Institutional interest is currently muted, evidenced by the lackluster volume profile relative to the 20-day average. We are sitting in the middle of a 1400-1450 liquidity vacuum. Without a Nifty trend-day setup, RIL lacks the beta to break out of this coil. Why now: The stock is directionless; chasing entries here is gambling against retail-level noise. Why not now: The lack of FII conviction and the mixed fundamental narrative (QoQ income slump) mean there is no 'edge' for a directional swing.\nMaster Confluence Committee: BUY=0.192, SELL=0.108, NO_TRADE=0.333. Final=NO_TRADE, confidence=0.495. Support=['technical', 'pattern', 'trend', 'market_setup', 'catalyst_context']; Opposing=['news', 'market_sentiment', 'relative_strength', 'us_trend', 'financials']; Neutral=['technical', 'pattern', 'trend', 'market_setup', 'catalyst_context'].\nRisk Plan: size=0 shares, ATR=36.38, stop=N/A, target=N/A.\n**FINAL CONCLUSION**\n- Signal: NO_TRADE\n- Confidence: 0.350\n- Action Bias: Wait / no-trade setup\n- Playbook: Capital Preservation in Compression\n- Thesis: Reliance is caught in a classic 'grind' phase. Institutional interest is currently muted, evidenced by the lackluster volume profile relative to the 20-day average. We are sitting in the middle of a 1400-1450 liquidity vacuum. Without a Nifty trend-day setup, RIL lacks the beta to break out of this coil.\n- When to Act: Wait for a sustained 15-minute close above 1445 with expanding volume for long, or a flush below 1400 for short.\n- Execution Style: Observation-only\n- Invalidation: A reversal back inside the current range after a breakout attempt.\n- Expected Holding Duration: 2-6 weeks\n- Context: sideways trend channel\n- Risk Flag: High chop risk; potential for whipsaws.\n- Stop-loss: N/A\n- Targets: N/A\n- 52w Range: ₹1114.85 – ₹1611.80\n- Current Price Context: ₹1392.20\n- Approx Risk:Reward to first target: N/A\n- Teaching note: prioritize process over prediction. Enter only after trigger confirmation, size by invalidation distance, and review whether the thesis is invalidated before averaging or adding.\n\nDetailed Agent Reasoning:\n- technical: Indicator signals NO_TRADE. Price at 1392.20 remains below SMA20 (1408.36) and SMA50 (1437.69), confirming a bearish medium-term trend. While MACD shows a minor bullish histogram expansion (1.489), the RSI at 46.3 is neutral, and ROC10 is negative (-0.45%). The volume of 20,939,959 exceeds the SMA20 of 15,552,919, indicating active participation, but the lack of alignment between moving averages and momentum oscillators precludes a high-conviction setup.\n- pattern: The price action is currently in sideways compression with a slope of 2.11. No breakout or breakdown triggers are present, and there are no bullish or bearish engulfing candles to provide structure validation. Given the lack of a clear directional expansion from the current range, the pattern signal remains NO_TRADE, requiring a breakout candle to confirm the next directional impulse.\n- trend: The security is trading within a sideways trend channel, currently positioned at 0.72 of the channel width (support at 1367.33, resistance at 1401.77). With both support and resistance slopes trending negatively (-2.46 and -2.25 respectively) and an average slope of -2.36, the environment is stagnant. The price location within the channel lacks the necessary setup to suggest a high-probability breakout or reversal.\n- news: News sentiment is net positive (0.06), driven primarily by favorable refining margins and geopolitical tailwinds. Reliance Industries is supported by oil price volatility, acting as a profit driver. Although macro sentiment is slightly negative (-0.06), the industry-specific tailwinds provide enough conviction for a BUY signal, suggesting institutional interest in the core energy business remains robust despite broader market indecision.\n- market_sentiment: Sentiment is currently neutral to cautious. The absence of a clear breakout in price action combined with a lack of dominant bullish or bearish narratives in the news flow suggests a state of equilibrium. Market participants are displaying active interest as evidenced by elevated volume, but they remain range-bound, awaiting a definitive catalyst or a break of the 1401.77 resistance level to shift the sentiment bias.\n- relative_strength: Relative strength appears neutral. With the RSI at 46.3, the asset is neither overbought nor oversold, mirroring the broader index performance. The asset is performing in line with its sector peers, showing no signs of significant outperformance or underperformance. The lack of momentum strength relative to the moving averages limits the potential for near-term alpha generation.\n- us_trend: The correlation to US trends remains indirect, largely mediated through global oil price volatility and broader macro risk sentiment. US-Iran tensions have influenced oil supply expectations, which currently support Reliance Industries. However, domestic market factors remain the primary driver, and the lack of strong directional movement in US benchmarks has resulted in a neutral influence on the current local price action.\n- financials: Financial metrics indicate underlying stability. With a steady volume of 20.9M, liquidity is sufficient for established positions. While specific quarterly earnings growth or valuation ratios were not provided in the metrics, the current price of 1392.20 relative to SMA50 (1437.69) suggests the stock is currently trading at a slight discount to its medium-term average, providing a fundamental cushion for long-term holders.\n- market_setup: The market is in a consolidated state. Technicals show a range-bound structure with prices compressed between moving averages, while volume confirms high interest without a breakout. The setup requires a breach above 1401.77 to confirm a trend-following entry or a drop below 1367.33 to signal a further test of lower supports. The current posture is defensive, favoring patience over immediate capital commitment.\n- catalyst_context: The primary catalyst is geopolitical volatility affecting global oil markets, which directly impacts the company's refining margins. Future catalysts include upcoming earnings announcements and potential industry-wide policy changes regarding energy sector taxes or subsidies. Current news cycle support suggests that refinery-driven earnings should remain the primary focus for market participants in the immediate future.\n- confluence: There is low confluence between technicals, patterns, and trends. Technicals are bearish/neutral, patterns are sideways/neutral, and news is bullish. Because the price is failing to breach key moving average resistance (1408.36), the bullish news sentiment is insufficient to trigger a trade. A sustained move above resistance combined with volume expansion would be required to achieve high-conviction confluence.\n- risk: Risk is elevated due to the sideways compression. The ATR14 of 36.38 indicates moderate volatility, meaning any breakout could be sharp. The risk of a 'false breakout' is high given the lack of structural alignment. Maintain a tight stop-loss below the recent support of 1367.33 if long, as a breakdown here could lead to a rapid move lower within the channel.\n\nGemini Master Reasoning:\nSetup\n\nReliance is currently caught in a classic sideways compression phase, trading between 1400 and 1450. On the daily timeframe, the price is effectively trapped within a liquidity vacuum. While we see some defensive positioning, the lack of institutional follow-through is evident in the lackluster volume profile relative to the 20-day moving average. We are not seeing a trend-day setup in the broader Nifty, which means the stock lacks the necessary beta to break out of this coil with conviction. This is a noise-heavy environment where price discovery is absent, and the primary objective is to avoid being chopped by institutional wash-and-rinse cycles.\n\nCatalyst\n\nThe fundamental backdrop is fragmented. While revenue shows growth, a sharp 30.9% quarterly decline in net income serves as a significant red flag for swing traders looking for momentum. Furthermore, while geopolitical volatility in the energy sector provides a potential tailwind for refining margins, the market is currently ignoring these positives in favor of technical indecision. We lack a credible, high-confidence catalyst that would justify committing capital in a range-bound structure. Until we see a shift in institutional conviction, the fundamental narrative remains secondary to the technical range.\n\nFriction\n\nThe primary friction is the lack of structural alignment. The stock is capped by the 20-day and 50-day moving averages, and current indicator signals are contradictory—MACD displays a bullish flip, yet RSI and stochastic remain neutral and indecisive. In the Indian market, when a heavyweight like Reliance is stuck between its moving averages without a clear breakout, the probability of a failed move (whipsaw) increases exponentially. Attempting to trade in the middle of this range is effectively gambling against retail noise rather than riding institutional flow.\n\nExecution Plan\n\nObservation-only. Do not attempt to force a position in the current 1390-1440 zone.\nIf the price breaks out, wait for a sustained 15-minute close above 1445 accompanied by expanding volume to confirm that institutional buyers are engaged.\nIf the price breaks down, wait for a confirmed flush below 1400.\nIf price action remains within the 1400-1445 band, the plan remains to stand aside.\n\nRisk Protocol\n\nBecause the signal is NO_TRADE, the position size is 0 shares. The risk protocol for any future entry must be anchored to a volatility-adjusted invalidation point rather than an arbitrary dollar amount. We use the ATR of 36.38 to buffer against noise. If we enter a trade after a confirmed breakout, the stop-loss must be placed outside the recent volatility range, approximately at 1354.32, to avoid being stopped out by standard market chop. Any position must be capped at a 1% risk of total portfolio capital.\n\nTeaching Notes\n\nJunior traders often mistake volatility for opportunity. In a sideways market, high-frequency traders and algorithms exploit the lack of direction to hunt stops. Your edge as a swing trader is not found in predicting the next 1% move, but in waiting for the market to reveal its intent. Process must supersede prediction. Never average down into a position that has not confirmed your thesis. If the price fails to hold the breakout level after entry—specifically, if it reverses back into the range—this is your explicit invalidation condition. You must exit immediately; there is no \"wait and see\" once the structural thesis is broken.\n\nVerdict\n\nNO_TRADE. The setup lacks the requisite confluence of volume, momentum, and structural support to justify risk. Maintain capital and wait for the resolution of the current compression zone.\n\nLLM Token Usage:\n- Input tokens: 17005\n- Output tokens: 2729\n- Total tokens: 19734\n- Estimated cost (USD): 0.0\n\nLONG-TERM OUTLOOK (Based on News, Financials, and Price Data)\n- Stance: LONG_TERM_BULLISH\n- Confidence: 0.650\n- Sector: Unknown\n- Data coverage: 2716 daily bars for long-term model.\n- Price trend (1Y/3Y/5Y/10Y): 18.897604878127595% / 25.501482041634493% / 59.603173142662456% / 539.6243541659364%.\n- Long-run quality: CAGR(3Y)=7.865596995138424%, CAGR(5Y)=9.80150789901424%, CAGR(10Y)=20.39057789554921%,\n  Max Drawdown(5Y)=-45.08836043596871%, Vol=27.058056162845702%.\n- Structural trend: price vs 200DMA=-3.846308034510504%.\n- Note: N/A metrics indicate insufficient history for that exact horizon, not an implied negative value.\n- News signal: avg sentiment=0.06 across stock/industry/macro streams (15/12/10 items).\n- News decomposition: stock=N/A, industry=0.12030093616234758, macro=-0.05922169735868038.\n- Fundamental location: 52w position=53.5%, 1Y return=18.897604878127595%.\n- Street context: analyst upside=N/A% from N/A analysts.\n- Macro overlay: India sentiment=SELL, US trend=SELL.\n\n--- VALUATION SNAPSHOT ---\n- P/E (trailing): 26.83\n- PEG ratio: N/A\n- Price/Book: 2.22\n- ROE: 8.3%\n- Debt/Equity: 0.44\n- EV/EBITDA: 13.02\n- EV/Revenue: 2.14\n- Book value per share: 623.09\n- Enterprise value: N/A\n- Gross margins: 25.1%\n- Operating margins: 11.7%\n- EBITDA margins: N/A\n- Total revenue: 9,646,930,000,000\n- Total debt: 3,695,750,000,000\n- Total cash: 1,006,450,000,000\n\n--- QUARTERLY FINANCIAL TRENDS ---\n- Revenue QoQ growth: N/A\n- Net income QoQ growth: N/A\n- Operating cash flow QoQ: N/A\n\n--- DIVIDEND & OWNERSHIP ---\n- Dividend yield: 1.4%\n- Dividend yield trend: rising\n- Total dividends (1Y): ₹5.50\n- Institutional ownership: 28.0%\n- Major holders (institutions): N/A%\n\n--- SCORING FACTORS ---\n  → news_sentiment: score=+0.06 × weight=1.00\n  ↑ return_1y: score=+0.19 × weight=0.90\n  ↑ return_3y: score=+0.26 × weight=0.80\n  ↑ return_5y: score=+0.60 × weight=0.70\n  ↑ cagr_5y: score=+0.98 × weight=0.90\n  ↓ sma200_position: score=-0.38 × weight=0.50\n  ↓ max_drawdown: score=-0.45 × weight=0.50\n  ↓ volatility: score=-0.27 × weight=0.40\n  → 52w_position: score=+0.07 × weight=0.30\n  ↑ 1y_change: score=+0.19 × weight=0.70\n  ↑ dividend_yield: score=+0.14 × weight=0.40\n  ↑ cagr_10y: score=+2.04 × weight=1.00\n  ↑ operating_margins: score=+0.12 × weight=0.90\n  → roe: score=+0.08 × weight=1.00\n  ↑ gross_margins: score=+0.25 × weight=0.70\n  ↓ debt_to_equity: score=-0.22 × weight=0.90\n  ↓ trailing_pe: score=-0.25 × weight=0.50\n  ↑ price_to_book: score=+0.13 × weight=0.50\n  ↓ us_macro: score=-1.00 × weight=0.35\n  ↓ india_macro: score=-1.00 × weight=0.35\n--- DIRECT NEWS EVIDENCE (Top Headlines Used) ---\n- Company 1: Not Reliance, Not Adani: These 4 fertiliser stocks are India’s real green hydrogen plays - The Financial Express\n- Company 2: Not Adani Solar, Not Reliance — 3 solar stocks with up to 50% upside potential; Do you own any? - The Financial Express\n- Company 3: Reliance share price gains as US-Iran war continues to fuel oil price rally; experts see strong refining tailwinds - Mint\n- Industry 1: Buy the fear? Indian markets delivered strong returns after past wars even as Middle East tensions roil stocks - MSN\n- Industry 2: Fitch ratings raise India’s GDP growth forecast to 7.5% for FY26, sees Oil at $70 in 2026 - Mathrubhumi English\n- Industry 3: Prolonged Middle East conflict, crude above $100 may strain India’s external sector: Standard Chartered\n- Macro 1: Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView\n- Macro 2: Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty\n- Macro 3: Fed to delay rate cuts as war clouds the outlook\n\n- Composite score: 0.215\n- Secular Growth Forecast: Reliance benefits from structural refining tailwinds (Mint) and India’s GDP growth (Fitch). While oil volatility is a risk, RIL's diversified O2C/Retail/Digital model provides resilience. 3-5 Year Secular Forecast: Base case is sustained CAGR driven by energy transition. Bull case: Green hydrogen dominance. Bear case: Prolonged geopolitical crude shocks. Invalidation: Sustained margin compression below 10%.\n",
+  "price_52w": {
+    "high": 1611.8,
+    "low": 1114.85,
+    "current": 1380.7,
+    "position_pct": 53.5,
+    "change_1y_pct": null
+  },
+  "analyst_consensus": {
+    "target_price": null,
+    "target_high": null,
+    "target_low": null,
+    "n_analysts": null,
+    "implied_upside_pct": null
+  },
+  "fundamental_signals": [
+    {
+      "type": "bullish",
+      "text": "Revenue growing QoQ (8.7% last quarter)."
+    },
+    {
+      "type": "bearish",
+      "text": "Net income declined sharply QoQ (-30.9%)."
+    }
+  ],
+  "key_price_levels": [
+    {
+      "label": "Resistance 1",
+      "price": 1441.75,
+      "type": "resistance"
+    },
+    {
+      "label": "Resistance 2",
+      "price": 1473.0,
+      "type": "resistance"
+    },
+    {
+      "label": "Resistance 3",
+      "price": 1489.5,
+      "type": "resistance"
+    },
+    {
+      "label": "Current",
+      "price": 1392.2,
+      "type": "current"
+    },
+    {
+      "label": "Support",
+      "price": 1368.0,
+      "type": "support"
+    },
+    {
+      "label": "Breakdown Zone",
+      "price": 1335.5,
+      "type": "breakdown"
+    }
+  ],
+  "momentum_score": 55.7,
+  "qualitative_labels": {
+    "moving_averages": "Sell",
+    "trend_channel": "Falling",
+    "rsi": "Neutral",
+    "macd": "Bullish"
+  },
+  "valuation_snapshot": {
+    "pe_trailing": 26.826734875917808,
+    "peg_ratio": null,
+    "ev_to_ebitda": 13.015,
+    "ev_to_revenue": 2.14,
+    "gross_margins": 0.35777,
+    "operating_margins": 0.11852,
+    "ebitda_margins": 0.16441,
+    "book_value": 648.12,
+    "dividend_yield": 0.4,
+    "enterprise_value": 21923222257664,
+    "roe": 0.08259962049335863,
+    "debt_to_equity": 0.43830052182163187,
+    "price_to_book": 2.215878119826759,
+    "total_revenue": 10245479858176,
+    "total_debt": 3745930018816,
+    "total_cash": 2238710022144
+  },
+  "master_reasoning": {
+    "model": "gemini-3.1-flash-lite-preview",
+    "text": "Setup\n\nReliance is currently caught in a classic sideways compression phase, trading between 1400 and 1450. On the daily timeframe, the price is effectively trapped within a liquidity vacuum. While we see some defensive positioning, the lack of institutional follow-through is evident in the lackluster volume profile relative to the 20-day moving average. We are not seeing a trend-day setup in the broader Nifty, which means the stock lacks the necessary beta to break out of this coil with conviction. This is a noise-heavy environment where price discovery is absent, and the primary objective is to avoid being chopped by institutional wash-and-rinse cycles.\n\nCatalyst\n\nThe fundamental backdrop is fragmented. While revenue shows growth, a sharp 30.9% quarterly decline in net income serves as a significant red flag for swing traders looking for momentum. Furthermore, while geopolitical volatility in the energy sector provides a potential tailwind for refining margins, the market is currently ignoring these positives in favor of technical indecision. We lack a credible, high-confidence catalyst that would justify committing capital in a range-bound structure. Until we see a shift in institutional conviction, the fundamental narrative remains secondary to the technical range.\n\nFriction\n\nThe primary friction is the lack of structural alignment. The stock is capped by the 20-day and 50-day moving averages, and current indicator signals are contradictory—MACD displays a bullish flip, yet RSI and stochastic remain neutral and indecisive. In the Indian market, when a heavyweight like Reliance is stuck between its moving averages without a clear breakout, the probability of a failed move (whipsaw) increases exponentially. Attempting to trade in the middle of this range is effectively gambling against retail noise rather than riding institutional flow.\n\nExecution Plan\n\nObservation-only. Do not attempt to force a position in the current 1390-1440 zone.\nIf the price breaks out, wait for a sustained 15-minute close above 1445 accompanied by expanding volume to confirm that institutional buyers are engaged.\nIf the price breaks down, wait for a confirmed flush below 1400.\nIf price action remains within the 1400-1445 band, the plan remains to stand aside.\n\nRisk Protocol\n\nBecause the signal is NO_TRADE, the position size is 0 shares. The risk protocol for any future entry must be anchored to a volatility-adjusted invalidation point rather than an arbitrary dollar amount. We use the ATR of 36.38 to buffer against noise. If we enter a trade after a confirmed breakout, the stop-loss must be placed outside the recent volatility range, approximately at 1354.32, to avoid being stopped out by standard market chop. Any position must be capped at a 1% risk of total portfolio capital.\n\nTeaching Notes\n\nJunior traders often mistake volatility for opportunity. In a sideways market, high-frequency traders and algorithms exploit the lack of direction to hunt stops. Your edge as a swing trader is not found in predicting the next 1% move, but in waiting for the market to reveal its intent. Process must supersede prediction. Never average down into a position that has not confirmed your thesis. If the price fails to hold the breakout level after entry—specifically, if it reverses back into the range—this is your explicit invalidation condition. You must exit immediately; there is no \"wait and see\" once the structural thesis is broken.\n\nVerdict\n\nNO_TRADE. The setup lacks the requisite confluence of volume, momentum, and structural support to justify risk. Maintain capital and wait for the resolution of the current compression zone."
+  },
+  "llm_usage": {
+    "calls": [
+      {
+        "name": "News Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2610,
+        "output_tokens": 98,
+        "total_tokens": 2708
+      },
+      {
+        "name": "US Trend Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 417,
+        "output_tokens": 104,
+        "total_tokens": 521
+      },
+      {
+        "name": "Catalyst Context Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2521,
+        "output_tokens": 93,
+        "total_tokens": 2614
+      },
+      {
+        "name": "Market Setup Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2030,
+        "output_tokens": 107,
+        "total_tokens": 2137
+      },
+      {
+        "name": "Trader Intel Agent",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1565,
+        "output_tokens": 323,
+        "total_tokens": 1888
+      },
+      {
+        "name": "Batched Agent Reasoning",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1720,
+        "output_tokens": 1121,
+        "total_tokens": 2841
+      },
+      {
+        "name": "Long-Term Outlook Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1635,
+        "output_tokens": 118,
+        "total_tokens": 1753
+      },
+      {
+        "name": "Master Reasoning",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 4507,
+        "output_tokens": 765,
+        "total_tokens": 5272
+      }
+    ],
+    "llm_enabled": true,
+    "skipped_calls": 0,
+    "error_calls": 0,
+    "total_input_tokens": 17005,
+    "total_output_tokens": 2729,
+    "total_tokens": 19734,
+    "pricing": {
+      "input_cost_per_1m": 0.0,
+      "output_cost_per_1m": 0.0,
+      "estimated_total_cost_usd": 0.0
+    }
+  }
+}

@@ -1,0 +1,1703 @@
+{
+  "report_id": "BPCL_NS_20260313_232510",
+  "symbol": "BPCL.NS",
+  "timeframe": "1d",
+  "forecast_bars": 3,
+  "start_timestamp": "2025-11-13 15:30:00",
+  "end_timestamp": "2026-03-13 15:30:00",
+  "final_signal": "NO_TRADE",
+  "confidence": 0.6,
+  "confluence_scores": {
+    "buy": 0.146,
+    "sell": 0.411,
+    "no_trade": 0.165
+  },
+  "risk_plan": {
+    "summary": "Risk Plan: size=0 shares, ATR=12.84, stop=N/A, target=N/A.",
+    "reasoning_prompt": "Risk protocol:\n1) Estimate recent volatility using ATR.\n2) Define one-unit risk from ATR multiple and cap portfolio risk near 1% per trade.\n3) Convert risk budget into position size.\n4) Anchor stop to volatility-adjusted invalidation and target to asymmetric reward.\n5) Force size=0 when final signal is NO_TRADE.",
+    "llm_reasoning": "Risk is elevated due to the oversold RSI condition (27.4), which could trigger technical bounces. Additionally, the ATR of 12.84 indicates high volatility, meaning sudden, sharp moves in either direction are possible. While the trend is bearish, chasing the stock at current levels carries the risk of a mean-reversion move, especially if oil prices stabilize or regulatory adjustments occur.",
+    "position_size": 0,
+    "stop_loss": null,
+    "target": null,
+    "risk_reward": "N/A",
+    "detail": {
+      "capital": 100000.0,
+      "risk_budget": 1000.0,
+      "one_risk": 15.402855573381695,
+      "atr": 12.83571297781808
+    }
+  },
+  "final_conclusion": {
+    "signal": "NO_TRADE",
+    "confidence": 0.6,
+    "when_to_buy": "A daily close above the previous day's high accompanied by a volume contraction, signaling sellers are exhausted.",
+    "expected_holding_duration": "2-6 weeks",
+    "stop_loss": null,
+    "targets": [],
+    "target": null,
+    "analyst_consensus": {
+      "target_price": null,
+      "target_high": null,
+      "target_low": null,
+      "n_analysts": null,
+      "implied_upside_pct": null
+    },
+    "price_52w": {
+      "high": 391.65,
+      "low": 258.31,
+      "current": 319.3,
+      "position_pct": 45.7,
+      "change_1y_pct": null
+    },
+    "key_price_levels": [
+      {
+        "label": "Resistance 1",
+        "price": 363.0,
+        "type": "resistance"
+      },
+      {
+        "label": "Resistance 2",
+        "price": 368.35,
+        "type": "resistance"
+      },
+      {
+        "label": "Resistance 3",
+        "price": 373.18,
+        "type": "resistance"
+      },
+      {
+        "label": "Current",
+        "price": 326.35,
+        "type": "current"
+      }
+    ],
+    "playbook_title": "Mean Reversion Trap Avoidance",
+    "thesis": "BPCL is exhibiting classic signs of exhaustion selling with high volume spikes into a localized low, creating a disconnect between deep value (high dividend, low P/E) and aggressive trend-following sellers. The technicals are screaming 'avoid the knife' while the fundamentals suggest a floor is near, creating a high-volatility vacuum.",
+    "execution_style": "Wait for a stabilization base or a failed breakdown to confirm institutional absorption.",
+    "risk_flag": "High volatility; potential for further flush if broad Nifty energy sector drags.",
+    "invalidation": "Fresh lower lows below the recent swing point with sustained heavy volume.",
+    "summary": "**FINAL CONCLUSION**\n- Signal: NO_TRADE\n- Confidence: 0.600\n- Action Bias: Wait / no-trade setup\n- Playbook: Mean Reversion Trap Avoidance\n- Thesis: BPCL is exhibiting classic signs of exhaustion selling with high volume spikes into a localized low, creating a disconnect between deep value (high dividend, low P/E) and aggressive trend-following sellers. The technicals are screaming 'avoid the knife' while the fundamentals suggest a floor is near, creating a high-volatility vacuum.\n- When to Act: A daily close above the previous day's high accompanied by a volume contraction, signaling sellers are exhausted.\n- Execution Style: Wait for a stabilization base or a failed breakdown to confirm institutional absorption.\n- Invalidation: Fresh lower lows below the recent swing point with sustained heavy volume.\n- Expected Holding Duration: 2-6 weeks\n- Context: sideways trend channel\n- Risk Flag: High volatility; potential for further flush if broad Nifty energy sector drags.\n- Stop-loss: N/A\n- Targets: N/A\n- 52w Range: ₹258.31 – ₹391.65"
+  },
+  "long_term_outlook": {
+    "stance": "LONG_TERM_NEUTRAL",
+    "confidence": 0.55,
+    "score": 0.248,
+    "summary": "LONG-TERM OUTLOOK (Based on News, Financials, and Price Data)\n- Stance: LONG_TERM_NEUTRAL\n- Confidence: 0.550\n- Sector: Unknown\n- Data coverage: 2715 daily bars for long-term model.\n- Price trend (1Y/3Y/5Y/10Y): 27.560198082750787% / 100.39913655027513% / 57.27711137518825% / 119.59179206184314%.\n- Long-run quality: CAGR(3Y)=26.075862719799225%, CAGR(5Y)=9.479575507250892%, CAGR(10Y)=8.183645095954617%,\n  Max Drawdown(5Y)=-52.620424836638044%, Vol=33.78721507255471%.\n- Structural trend: price vs 200DMA=-5.407509173578095%.\n- Note: N/A metrics indicate insufficient history for that exact horizon, not an implied negative value.\n- News signal: avg sentiment=-0.02 across stock/industry/macro streams (15/12/10 items).\n- Fundamental location: 52w position=45.7%, 1Y return=27.560198082750787%.\n- Street context: analyst upside=N/A% from N/A analysts.\n- Macro overlay: India sentiment=SELL, US trend=SELL.\n\n--- VALUATION SNAPSHOT ---\n- P/E (trailing): 10.39\n- PEG ratio: N/A\n- Price/Book: 1.70\n- ROE: 16.4%\n- Debt/Equity: 0.75\n- EV/EBITDA: 4.51\n- EV/Revenue: 0.38\n- Book value per share: 187.59\n- Enterprise value: N/A\n- Gross margins: 8.9%\n- Operating margins: 4.3%\n- EBITDA margins: N/A\n- Total revenue: 4,387,377,700,000\n- Total debt: 611,005,700,000\n- Total cash: 5,579,300,000\n\n--- QUARTERLY FINANCIAL TRENDS ---\n- Revenue QoQ growth: N/A\n- Net income QoQ growth: N/A\n- Operating cash flow QoQ: N/A\n\n--- DIVIDEND & OWNERSHIP ---\n- Dividend yield: 8.6%\n- Dividend yield trend: rising\n- Total dividends (1Y): ₹22.50\n- Institutional ownership: 26.3%\n- Major holders (institutions): N/A%\n\n--- SCORING FACTORS ---\n  → news_sentiment: score=-0.02 × weight=1.00\n  ↑ return_1y: score=+0.28 × weight=0.90\n  ↑ return_3y: score=+1.00 × weight=0.80\n  ↑ return_5y: score=+0.57 × weight=0.70\n  ↑ cagr_5y: score=+0.95 × weight=0.90\n  ↓ sma200_position: score=-0.54 × weight=0.50\n  ↓ max_drawdown: score=-0.53 × weight=0.50\n  ↓ volatility: score=-0.34 × weight=0.40\n  → 52w_position: score=-0.09 × weight=0.30\n  ↑ 1y_change: score=+0.28 × weight=0.70\n  ↑ dividend_yield: score=+0.86 × weight=0.40\n  ↑ cagr_10y: score=+0.82 × weight=1.00\n  → operating_margins: score=+0.04 × weight=0.30\n  ↓ us_macro: score=-1.00 × weight=0.35\n  ↓ india_macro: score=-1.00 × weight=0.35\n\n- Composite score: 0.248\n- Secular Growth Forecast: BPCL exhibits strong 3-year momentum and an attractive 8.6% dividend yield, but is currently trading below its 200DMA with high volatility. Secular risks in the O&G sector and bearish macro signals (India/US) suggest a transition period. Given the low operating margins and lack of clear earnings acceleration, a wait-and-see approach is prudent.\n",
+    "llm_reasoning": "BPCL exhibits strong 3-year momentum and an attractive 8.6% dividend yield, but is currently trading below its 200DMA with high volatility. Secular risks in the O&G sector and bearish macro signals (India/US) suggest a transition period. Given the low operating margins and lack of clear earnings acceleration, a wait-and-see approach is prudent.",
+    "evidence": {
+      "history_bars": 2715,
+      "history_start": "2015-03-17 00:00:00",
+      "history_end": "2026-03-12 00:00:00",
+      "coverage_ratio": 1.0,
+      "sparse_long_term": false,
+      "fundamentals_sparse": false,
+      "news_avg_sentiment": -0.018,
+      "stock_news_count": 15,
+      "industry_news_count": 12,
+      "macro_news_count": 10,
+      "return_1y_pct": 27.56,
+      "return_3y_pct": 100.4,
+      "return_5y_pct": 57.28,
+      "return_10y_pct": 119.59,
+      "cagr_3y_pct": 26.08,
+      "cagr_5y_pct": 9.48,
+      "cagr_10y_pct": 8.18,
+      "price_vs_sma200_pct": -5.41,
+      "max_drawdown_5y_pct": -52.62,
+      "annualized_volatility_pct": 33.79,
+      "position_52w_pct": 45.7,
+      "change_1y_pct": 27.560198082750787,
+      "analyst_upside_pct": null,
+      "analyst_count": null,
+      "india_sentiment_signal": "SELL",
+      "us_trend_signal": "SELL",
+      "dividend_yield": 0.08612590369978577,
+      "dividend_yield_trend": "rising",
+      "peg_ratio": null,
+      "operating_margins": 0.04272315100657963,
+      "held_pct_institutions": 0.26261,
+      "institutions_pct": null,
+      "rev_qoq": null,
+      "ni_qoq": null,
+      "ocf_qoq": null,
+      "sector": "Unknown",
+      "scoring_factors": [
+        [
+          "news_sentiment",
+          -0.018,
+          1.0
+        ],
+        [
+          "return_1y",
+          0.276,
+          0.9
+        ],
+        [
+          "return_3y",
+          1.004,
+          0.8
+        ],
+        [
+          "return_5y",
+          0.573,
+          0.7
+        ],
+        [
+          "cagr_5y",
+          0.948,
+          0.9
+        ],
+        [
+          "sma200_position",
+          -0.541,
+          0.5
+        ],
+        [
+          "max_drawdown",
+          -0.526,
+          0.5
+        ],
+        [
+          "volatility",
+          -0.338,
+          0.4
+        ],
+        [
+          "52w_position",
+          -0.086,
+          0.3
+        ],
+        [
+          "1y_change",
+          0.276,
+          0.7
+        ],
+        [
+          "dividend_yield",
+          0.861,
+          0.4
+        ],
+        [
+          "cagr_10y",
+          0.818,
+          1.0
+        ],
+        [
+          "operating_margins",
+          0.043,
+          0.3
+        ],
+        [
+          "us_macro",
+          -1.0,
+          0.35
+        ],
+        [
+          "india_macro",
+          -1.0,
+          0.35
+        ]
+      ]
+    }
+  },
+  "agent_outputs": {
+    "technical": {
+      "signal": "SELL",
+      "confidence": 0.7600000000000001,
+      "summary": "Indicator Signal: SELL | Trend: close=326.35, SMA20=363.38, SMA50=366.15. Momentum: MACD=-10.792, Signal=-4.610, Hist=-6.182, ROC10=-14.36%. Oscillators: RSI14=27.4, StochK/D=16.3/8.1, Williams%R=-83.7. Risk: ATR14=12.84, Volume=11176171 vs VolSMA20=9580568. Momentum Score=13.6/100 | MA=Sell, Trend=Falling, RSI=Oversold, MACD=Bearish.",
+      "reasoning_prompt": "Indicator reasoning protocol:\n1) Evaluate structural trend using close vs SMA20 and SMA20 vs SMA50.\n2) Validate momentum using MACD line/signal/histogram and ROC10 direction.\n3) Check exhaustion/continuation via RSI, Stochastic crossover, and Williams %R zone.\n4) Confirm participation with volume vs 20-bar average.\n5) Penalize high-volatility regimes with ATR% filters and lower confidence.\n6) If cross-indicator alignment is weak or contradictory, return NO_TRADE.",
+      "llm_reasoning": "BPCL displays a strong bearish signal with the price at 326.35, significantly below the SMA20 (363.38) and SMA50 (366.15). Momentum is deeply negative with MACD at -10.79 and a 14-day ROC of -14.36%. Oversold conditions are confirmed by RSI14 at 27.4 and Williams %R at -83.7. With volume (11.17M) exceeding the 20-day average (9.58M), the selling pressure is confirmed. The combination of falling moving averages and bearish oscillator alignment supports the sell rating.",
+      "detail": {
+        "bullish_points": 0,
+        "bearish_points": 8,
+        "delta": -8,
+        "rules": {
+          "trend_alignment": false,
+          "macd_alignment": false,
+          "rsi_bias": "bearish",
+          "stoch_alignment": true,
+          "willr_bias": "bearish",
+          "volume_confirmation": true
+        }
+      },
+      "price_levels": {
+        "levels": [
+          {
+            "label": "Resistance 1",
+            "price": 363.0,
+            "type": "resistance"
+          },
+          {
+            "label": "Resistance 2",
+            "price": 368.35,
+            "type": "resistance"
+          },
+          {
+            "label": "Resistance 3",
+            "price": 373.18,
+            "type": "resistance"
+          },
+          {
+            "label": "Current",
+            "price": 326.35,
+            "type": "current"
+          }
+        ],
+        "nearest_resistance": 363.0,
+        "nearest_support": null,
+        "resistance_1": 363.0,
+        "resistance_2": 368.35,
+        "resistance_3": 373.18,
+        "support": null,
+        "breakdown_zone": null
+      },
+      "momentum_score": 13.6,
+      "qualitative_labels": {
+        "moving_averages": "Sell",
+        "trend_channel": "Falling",
+        "rsi": "Oversold",
+        "macd": "Bearish"
+      },
+      "price_range": {
+        "high": 391.65,
+        "low": 314.0,
+        "position_pct": 15.9
+      },
+      "metrics": {
+        "close": 326.3500061035156,
+        "rsi14": 27.357481016877003,
+        "macd": -10.79212940791325,
+        "macd_signal": -4.610186861472883,
+        "macd_hist": -6.181942546440368,
+        "sma20": 363.38499908447267,
+        "sma50": 366.1450006103516,
+        "roc10": -14.355067167505753,
+        "atr14": 12.83571297781808,
+        "stoch_k": 16.27141909966302,
+        "stoch_d": 8.105515879084797,
+        "willr14": -83.72858090033698,
+        "volume": 11176171.0,
+        "volume_sma20": 9580567.8
+      }
+    },
+    "pattern": {
+      "signal": "SELL",
+      "confidence": 0.6078070091807425,
+      "summary": "Pattern Signal: SELL | setup=gradual lower-high structure, slope=-7.8009, breakout_up=False, breakdown=False, bull_engulf=True, bear_engulf=False.",
+      "reasoning_prompt": "Pattern reasoning protocol:\n1) Detect breakout/breakdown against prior 12-bar range, not single-candle spikes.\n2) Confirm direction with local slope and bar-structure continuation.\n3) Use engulfing patterns as confirmation, not standalone trigger.\n4) Treat flat-slope compression as NO_TRADE until expansion is confirmed.\n5) Down-rank weak breakouts lacking structure confirmation.",
+      "llm_reasoning": "The price action reveals a consistent lower-high structure with a negative local slope of -7.80. Despite a bullish engulfing signal, the broader structure remains characterized by a lack of upward breakout momentum. The pattern analysis reflects ongoing distribution without establishing a reversal floor. Given the negative slope and failure to breach resistance levels, the structure indicates continued downward bias, warranting a sell stance.",
+      "detail": {
+        "setup": "gradual lower-high structure",
+        "slope": -7.800908868963055,
+        "breakout_up": false,
+        "breakdown": false,
+        "bullish_engulfing": true,
+        "bearish_engulfing": false,
+        "volatility_proxy": 14.182791226551881
+      }
+    },
+    "trend": {
+      "signal": "NO_TRADE",
+      "confidence": 0.5683080632314738,
+      "summary": "Trend Signal: NO_TRADE | setup=sideways trend channel, support slope=-0.052, resistance slope=-0.004, price position=-2.93 in channel.",
+      "reasoning_prompt": "Trend reasoning protocol:\n1) Fit support and resistance trendlines over the visible swing window.\n2) Estimate channel slope (regime direction) and channel width (trend quality).\n3) Locate current price in channel and prefer pullback entries aligned with slope.\n4) If slope is weak/flat, classify as sideways and favor NO_TRADE.\n5) Avoid chasing signals near channel extremes against risk-reward logic.",
+      "llm_reasoning": "The asset is currently locked in a sideways trend channel with a neutral slope (-0.028). The price is positioned at -2.93 within the channel, near the established support level of 358.57. Because the channel width is narrow (11.00) and the trend lacks a decisive directional slope, the signal is classified as NO_TRADE. Technical indicators suggest waiting for a breach of these boundaries to confirm a sustained move rather than relying on current range-bound behavior.",
+      "detail": {
+        "setup": "sideways trend channel",
+        "slope_avg": -0.0282,
+        "channel_width": 11.0019,
+        "channel_position": -2.9284
+      },
+      "metrics": {
+        "support_slope": -0.05235402753523827,
+        "resistance_slope": -0.004056310879882166,
+        "channel_position": -2.928,
+        "last_support": 358.57,
+        "last_resistance": 369.57
+      }
+    },
+    "news": {
+      "signal": "SELL",
+      "confidence": 0.7,
+      "summary": "News Signal: SELL | combined sentiment=-0.02 (stock=-0.05, industry=0.10, macro=-0.09). Stock articles=27 (trusted=0, unrated=27); Industry articles=30 (trusted=0); Macro articles=30 (trusted=0). Sentiment strength=0.10. Inference=BPCL and other OMCs are facing significant downward pressure due to rising global crude oil prices (topping $100/bbl). Recent reports confirm significant stock price declines for BPCL in March. The negative macro impact of high crude costs on refinery margins outweighs neutral corporate developments, providing a clear bearish signal..",
+      "reasoning_prompt": "News reasoning protocol:\n1) Collect company-specific headlines across multiple providers using diversified queries.\n2) Filter spam/listicle/noise domains and low-relevance stories.\n3) Build a global macro stream (rates, inflation, oil, USD, broad risk sentiment).\n4) Build industry/sector thematic stream (demand cycle, market share, regulation, capacity, pricing).\n5) Weight sentiment by source quality, exponential recency decay, and relevance confidence.\n6) Apply content-similarity dedup to remove near-duplicate headlines.\n7) Use LLM to infer final bias from company + industry + macro evidence and return NO_TRADE under conflict.",
+      "llm_reasoning": "The signal is SELL due to combined negative sentiment of -0.02. Macro headwinds, specifically global crude oil prices approaching $100/bbl, are heavily pressuring refinery margins. Industry and macro sentiment outweigh neutral corporate news. With 27 recent articles citing significant price declines for BPCL, the inference is that high input costs are actively eroding investor confidence and financial outlooks, creating a bearish environment for the stock.",
+      "detail": {
+        "company_context": {
+          "symbol": "BPCL.NS",
+          "company_name": "Bharat Petroleum Corporation Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing",
+          "business_summary": "Bharat Petroleum Corporation Limited engages in refining crude oil and marketing petroleum products in India and internationally. It operates through two segments, Downstream Petroleum; and Exploration and Production of Hydrocarbons. The company operates fuel stations that sell motor spirits, high-speed diesel, blended fuels, compressed and liquefied natural gas, automotive liquefied petroleum gas (LPG), and lubricants; operate convenience stores, restaurants, and electric vehicle charging facilities; and offer ATM, money transfer, insurance, and vehicle care services. It also provides LPG for"
+        },
+        "stock_article_count": 27,
+        "industry_article_count": 30,
+        "macro_article_count": 30,
+        "trusted_count": 0,
+        "trusted_industry_count": 0,
+        "unrated_count": 27,
+        "trusted_macro_count": 0,
+        "industry_avg_sentiment": 0.09750264698113037,
+        "sentiment_strength": 0.09750264698113037,
+        "llm_decision_why": "BPCL and other OMCs are facing significant downward pressure due to rising global crude oil prices (topping $100/bbl). Recent reports confirm significant stock price declines for BPCL in March. The negative macro impact of high crude costs on refinery margins outweighs neutral corporate developments, providing a clear bearish signal."
+      },
+      "top_news": [
+        {
+          "source": "bing_rss",
+          "title": "BPCL Share Price Live Updates: BPCL's Current Trading Status",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49cb7701745e4bfee030b4e8e1a92&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2fstock-liveblog%2fbpcl-stock-price-livestock-price-today-live-updates-13-mar-2026%2fliveblog%2f129534476.cms&c=16999551823669957655&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 03:53:00 GMT",
+          "published_ts": 1773373980.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss",
+          "title": "Fundamental and Technical Stock Picks: How to trade Asian Paints, HPCL, BPCL, ONGC, NTPC, over a dozen other scrips",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49cb7701745e4bfee030b4e8e1a92&url=https%3a%2f%2fwww.zeebiz.com%2fmarket-news%2fnews-fundamental-and-technical-stock-picks-how-to-trade-crude-oil-gas-linked-shares-asian-paints-hpcl-bpcl-ongc-ril-ntpc-391897&c=457757871406310765&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 03:29:00 GMT",
+          "published_ts": 1773372540.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "OMC stocks: HPCL, BPCL, IOCL crack up to 19% so far in March; here's why - Business Standard",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNM3lHOF9hMURudFNabEhNRnQxdXgwNGdTclhSZ1FkYWNJM0lpbV94VUFjX2J3cDJFU2tBVmNnN0poNW1HQkVub1cweEE5aWtDNHR1dTM1dmx1cW96ckFSMFp1cms2T193SF9HOVJLcXlGay1sRU5YS3E1OC12aWlPQmhaeFB0RGdJZUhnaFRyT3pLbTlONWg0enQ3b0NaZGI4QnBXN1hYdVZFMVVkQ0tDVjRKTHJZb3I0S1V5bDNsYUJtbXFaSmhHR3VibnhRLVXSAdQBQVVfeXFMT0wtaFloYS1OMEhoNjkxS2drZHlYTmtsdTFyQS03MUJWeTNjVjhSOWlaRF9peGFrNmg1bUx1UTJlN3hJbXBtZk4xbE0zTUg3N1ZBMmwtNG5fQVhDOVo0WmRva3RpLVQ2Q2VrNEdCZDczV3A3ci1yR3ByZWZXVldsRzBQS3Z5djdNS21uanpaVkt4ZDR4QURxbDB1T2pqZVRxVFVkeHg1ODNlRks4NTdabkdHRkxZamNZTmtZakI1YXY1cHM1UVhsVnVMZVZSQVlpWEk5eXQ?oc=5",
+          "published_at": "Thu, 12 Mar 2026 04:35:05 GMT",
+          "published_ts": 1773290105.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "HPCL, BPCL, IOCL: Oil marketing companies' shares decline as oil prices top $100/bbl once again - Upstox",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOZ3pxWnhoVHJaSGZYTWpBX3JGSFNwY3lNM2tFNXFLbVdWVk5TRlotSE84U1pfYURBMHlsM2hmREJBQWZMeWx2Tk9FQWlBcU5JcjliMGFjNUlsLWJtNFZwRWxjU0pSVW5HZXAwM0VXa3ZIUTZMcTdKQm9GUWw2eFdSUGIycEx2X3A5NWRzY0R1RmYwYnVZQVFuMWlFWkJLV2FjQUEtNzI2RUo4azh5d2VfUmtFcGJfRjY0cFIyWlRRaHJYRUNpZE9uNEpjaFMzci1XWFBFblZfaTlLY0FXVVMtS19DOA?oc=5",
+          "published_at": "Thu, 12 Mar 2026 04:02:37 GMT",
+          "published_ts": 1773288157.0,
+          "sentiment_score": -1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss",
+          "title": "BPCL Appoints Vedveer Arya as Additional Director; Sushma Agarwal Completes Tenure",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49cb7701745e4bfee030b4e8e1a92&url=https%3a%2f%2fwww.psuconnect.in%2fpsu-news%2fbpcl-appoints-vedveer-arya-as-additional-director-sushma-agarwal-completes-tenure&c=6733003464272692909&mkt=en-in",
+          "published_at": "Tue, 10 Mar 2026 05:23:00 GMT",
+          "published_ts": 1773120180.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Stocks to watch, March 10: Indian Oil, BPCL, ONGC, Oil India, Asian Paints, IHCL, Jubilant Food, Swiggy, Eternal, Power Grid, NTPC Green - Upstox",
+          "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQaWpES1BaV0hNUjNhU3FlVnU3TE5pdEh3Q3UwTDRkaVctWGItUGtuMHp2ZEVJT0VSTl9TSnFFRjlXTEw1dXhRN2IxRnN1b0tFWDRmT0o3S3N2ZDZ0M0pycUY5c093WDR0TTFXbFh1bnZMTXJyMWxnTUhRQ3lvN25hcUtXRV9RY3ZKWmRhdnBTZ2VfS2NXVWpVVkx4VzFQcDRMcnZoT2Z4VHBHWkdVVmE2ZlVwdS0tS3JQcktlZnBfVzNCby0zaWFPSmtUVlJaUm1MWWk5WGVaSE1NMDZ1VjdSZ0xpZXJ3RmxGVnhtZ2xFc0tfSE5RTHgyUGxVWUVyOUE1M1puOXpOZzBQUkNUcmU1TA?oc=5",
+          "published_at": "Tue, 10 Mar 2026 02:45:39 GMT",
+          "published_ts": 1773110739.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Oil Surge Hits Indian OMCs: BPCL, HPCL, IOC Stocks Tumble - Dalal Street Investment Journal",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQUk8xNXVNN2tuRkJZVGoybEJYVlVBTjVFb2tzZUdmTGotZDNRODd2LWMwZHN0MTMxWkplWHhyUHdtYVZtSEtVbXR5YVdQWkdpZEFoemVXNmlBTDRMdFhzd2FVSGNGMWhSMkJNVVBKb3dzRXNEc2p4ZUNqUmV6WF9YOXBNdGZpYjdOYWtCVVJXc1Q1Y3JER0pJU2NDakVFNWo4ZzE3OVJB?oc=5",
+          "published_at": "Mon, 09 Mar 2026 12:36:40 GMT",
+          "published_ts": 1773059800.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Reliance, BPCL to JK Tyre: Here are most affected Indian stocks as crude oil prices surpass $115 by rising 30% on Monday - Mint",
+          "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPX0xKQWtZTWVNV0FMZ3BKbHk0aGgwbGpCX2ZYNTJaM2lZRmhEMWVsc2NvS0N0UHRHQ1N0TGdoMzd5RzdxaEpnQjBaa2J6Qi1fMlFDQU9UN0xuUE9mX0xiSlZFRENoWG5KclM0UTBKU2VOc29YTU1iVXN0TThteG94bk1NY0pUbzI0cjBZZXBTaXFxMGF3TTlfa1Y4d0kxdkl6RE0wVlZ5bXM5TlNma1lCeGhjQXpZeHJMUTNINTlpdkdBTmc5S2VVNDMzMzJrVk1RSXcyNDlSNUdrSlkyeWM3dWhVNHJYY055VXg0cTBmdl9yWUg3YV9LQzVDQVpQV3dRU2RzZmV6a09iVGtK0gGSAkFVX3lxTE1jNFhlTFhrSEZjVEV2WlktS0NtbGZRLWptTDVDejFkaFg1QjNydkdRUkt2ZkI2Z2lIYXBENTBpUm9hZmpQOV9LajRVVUd4SV8tY1dyV0R3UC1kVWNnOHRGenV5QmtWSmF5am5SMGdQY25tbVNxaTdTRDdpMzRWNHFVZDRlTDItWGFyTjBRNlJNTzVUSnItSm5jUXNRSUsxRVA0X1JkMWtHVjk5UnJUa2NHREc2Y25VNFNKdE5xWjBIaF9JTU1ub0JyRk1EdDhHdUNIT0hVOXpodlJZdlZpY3dEMkJsYkxCRm1kUk9tVTdQT3J5YlFYUVlmaDB6dnB5T1Btek5vSU1SSlN0S2hrM1duY1E?oc=5",
+          "published_at": "Mon, 09 Mar 2026 07:42:06 GMT",
+          "published_ts": 1773042126.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "IOCL, BPCL and HPCL shares drop as rising oil prices shake Indian markets - Zee Business",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPcUJ0V3N3SkFlRjl4R2tKdnRld2JNQnFQdlNOMkZDaHhtR0U4R1cyTDlsY3o3M3VzMTJfSkE4SkdBUnNNYTJSTlRSdmNiU21BZ3pMazJtZ2dRSWZPMmxlTTZNM1lYYXl3LV9mc1BEV0swUklIYW90T2x3YUI1ZUNPWm1oc3Y2SjhENTc1emhwQ0w3ZVREZ1hSTEFKS185Mm9zam5qemRBVzFtWVRDLTZ2clltbnZERHo5cnNF?oc=5",
+          "published_at": "Mon, 09 Mar 2026 07:36:40 GMT",
+          "published_ts": 1773041800.0,
+          "sentiment_score": -1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "HPCL, BPCL to IOC Share Price Crash Up to 9% as Crude Oil Hits 4-Year High | Stock Market Today - Samco",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPS3FybGRpbjFsZ09WTGtpWnNseDdqRzBaWFRGZERrRm1YZ1ZHX0tBRGZ4NWE5N2dXM1VTeGZ1YzBYUzVpV0pPSVBZSmVmLXVJTjFGWmg3SEhLYTYzeElzYmVsWTVzaFhGNEp1YlRpSXZQc0c0bi1qdTNPU2w3UGl6THJZY0txeC1EcE9lUk9hbFI5dUFkNHFiaU56Q2xuNDRTU19xcnI4VkV0NzlUZGZIY3JabUJvY0d6LTh3bjZkS1VwR3B6b243bFJtUDlZa1QyUWRGSExn?oc=5",
+          "published_at": "Mon, 09 Mar 2026 07:12:13 GMT",
+          "published_ts": 1773040333.0,
+          "sentiment_score": -1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "IOCL, HPCL, BPCL tumble up to 9% on UBS downgrade amid crude surge; check targets - The Economic Times",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPSzRxX1BnVDZGaC1idGlTODFHSUVYaUVoTjdMcDJUMWt2RlBVVWlqRjlLREp1VjVfWFpQM0FVWi1oUE1wMkxIR09JZ0JSblBBWTNGOGdTYXJ5TGl4UWc1aGt5TExRZzhMSlZaMnJiZWlJWW9BeFZ6dmxycXlOMUtqRzVTQVZjdGwzQ043cHRLT1FmT3RTbW9KNGRSVlAtM1NfUUdNVkNEaEtTbzhIRlFscEdYNGxhN2FFMTlwODN0b2l1Z1B3SU5uSGZXbkhmb25aM2JEN0FsTFFPYi1xVUNybGdZNURHUdIB6wFBVV95cUxPSUwxNDJWdnJqYWJPeS1yQWJBc190cDFTdUZEZC1LeVhrdEtsR2wwTURPdHc1V2R1OG1MQ0NjTUVuSnJXTkE2UHgtS3BuUWt2czhnNkF2WU9oOExCU0txM1dVdUszTGhfbGFNV0FMUmh1SmxUQmZFRElKclRTbW1jX3JEeHRtbnZSYjROM1F1amxUQzF2SUhsQUR5RW14X0xFcFpheXBwYXJEVU52V2UzQVJ6eVZFYTlhZmpyNlVyaF82ZFlveGxaUC1qazJfR2hVNlhtN0pOTWNxaDNIeFRRU1V4cU1qOXhNRzdr?oc=5",
+          "published_at": "Mon, 09 Mar 2026 05:16:05 GMT",
+          "published_ts": 1773033365.0,
+          "sentiment_score": -2.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "UBS downgrades HPCL, BPCL, IOC stocks as crude prices breach $100/barrel - Business Standard",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOSXB0c1h6ZThKN3phal96bE1xTEFmODFkWjZRem0wTm5LSWlQeW1jYlJnY3didllqY0MzVWFDMFhUVUF3Ulcybnl5NDFSTXNxSUk1WEFsUUVYUktoZF9pUlRBeTlVSl8wb3lOYTZtVUJiWndfVlR2T2R0anNrYlVrczhXSmZCbGRVVV8zU3pncS1IQTRNY0E0ZzB0NUpKU2tlUURLSVB2R3NSN2lQaXJGUXgxWHFNdzZxT1A4QmsteHZ0eTVRcmxVZ2twallpS0MtZ3fSAdcBQVVfeXFMT1MwT1BWNFNuWnFlM3VlQnVhRGNWNnAydTFndUVsMFNPbXdhSUFlNGlzMEZOUm0yeGdCclUyelpiN2dIOVNEWUtVeGxWOWwtVXgtSWZveUdoSHMxVUx2b0h3Q1FzY0x5QkZQRXoxdTBWLUNwQ093UjRZM1BlQ1JJaWp5VlU1NVhkQzdTamJCZklQNmpDal93bWFQQmU3VHpxQ3Z2ZkRtejhrUl9QMDFqclF0X0FvQm93QzBDU3lNOEg1SFBWak1QTWhyTW94ejdkcmlUMW5RM3M?oc=5",
+          "published_at": "Mon, 09 Mar 2026 04:58:53 GMT",
+          "published_ts": 1773032333.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Today's Market: Sensex Today Tanks 2,275 Points | Nifty Below 23,800 | BPCL Down 7% - Indian Stock Market News - Equitymaster",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOQUxJVXFYeThkMmlYU3RVek9UNHZXR3loN013UlZGTk93cGdpcWVzVzRIRkMtWi1ldFcyRktwYkF1bTdVMGZGaHg2VUhnV1c0VjB1RVAyUmZCZzF2Q1JqRzltNzJ0ZHZHQ0dWZzdHTFBIcmgzU0pfZTN6NWpBMzRFcDZ1aW90dzhKb3YzT3FkbWVIV1dENDdGZ01GdGI5Z1VieVp4dFB4dHFKWlQ5Nm9SRDBCdlZyUzZOd0ZCaWVIb1A?oc=5",
+          "published_at": "Mon, 09 Mar 2026 04:50:25 GMT",
+          "published_ts": 1773031825.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Indian Oil, BPCL, HPCL shares slump the most in a year as surge in crude oil prices bites | Business News - Hindustan Times",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPSm5WVWdTbmxKZHBTWlA2SjZ2b3QxcWtvUUg3TFdEQVM4dm8ySjhYOFNkZ2dEemFfVWNLRUZqMzNnNmx4OVk3OVRtdG1tS0trUVZhZUlaR1hoaVEwS1hZSDg1MXBjajNoanBScnFfQVFFS21aVUNSenUxeWkxTWxKaXgzdFZnMi15Y1M1eU16VTN1T0hqREpfeGt4N2JYM2FDOUd6bkxlM01WZ2pGZDlmclh4b3prZWotOElyNjdEWWtIS0VuOFBkYTF0b01hcFMwUTVxSWZkQURPenhCWFlIWmlR0gHnAUFVX3lxTFB5SUl6MXpibUJLci0tVng5MzNsMlBaXzNTNmFFU0l4b3NDdzVFUEFaRHJYbXBucGlCRmNoWmg2dnRlcDN3RmRZak50NjRlb05qVGtLdDhDRDY1VjVKTHdYN2ptNDFEVVNtOW5hbUczOEIzSFhWZTdPNWxSYzVWVjhza0RZcUFpbnl3ZVMtekN3NUt5QUZVa3JEM2UybU9LTk0zVVViR2I5QWRaV3dtT1hwNlhBa3VfQU14LUVkSHdNWlNSVEFxcXdUbUVZTndNYkxaTFJwVXI0TzBhOURMRERpbjBWc25QOA?oc=5",
+          "published_at": "Mon, 09 Mar 2026 04:46:20 GMT",
+          "published_ts": 1773031580.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "OMCs HPCL, BPCL, IOC shares fall, ONGC, Oil India, paint and aviation stocks slide as crude rally shakes markets - BusinessLine",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNd3NMdlZxa1B0ZlZGZFpyV2lxR3U0eVJ5cUNBWjlmTXdvclJnc0ZEY0xrU3hBaVhWdElqeFpoME9PNFBZWV9BeVQxQnBjUkl5dXhhMS1WUUJqdW9RSXltSUJaTmpsMkhWNVExRlNYS0NoNXV3TUpaZ0Q0V1dhWE1DWHlvZkFRLWRHYXI4V1VMaW5sdDdiQ1pmb18td3hVY3E4dU05bFhndnJiRndYaWVsa3dONjgxRGd3eVNweFJkdmk5Y0JYSmE4ZXMwRVYxdXRyOWJmR3Y2WmhxdUFRbGItalY3b0jSAesBQVVfeXFMTWNDY3luSXZwNngzZDhjOWVfcFpHXzJRcmR0VkY3NXpINGxDRWRsZU8wdkxkZFB6bzI1Wm1iNDNWZkZNdF9RQ2hLdTBUVmo2TTE0M0JoS3BBSjAzUWlzNGt1TUM0dk5xODd6WndpYXVQQml2ZjJQV0N3REdydHdfR2E3a2R5STlDUmU5S1YxX0VkZ09sRzRYRzMxZEVPcUwzaXF3MFRhTnlFSm9rdlBZR0ZHalZ0UU1QZUdSUTdSaW4xTkZTLVpIcmd6V2dXMjdqNGV5TVNLcHdRSUI1TERNODBqYWNZMnRST2Vrbw?oc=5",
+          "published_at": "Mon, 09 Mar 2026 04:35:58 GMT",
+          "published_ts": 1773030958.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        }
+      ],
+      "top_industry_news": [
+        {
+          "source": "google_rss_industry",
+          "title": "Buy the fear? Indian markets delivered strong returns after past wars even as Middle East tensions roil stocks - MSN",
+          "url": "https://news.google.com/rss/articles/CBMimgNBVV95cUxNaWtlWW9UYWdob216eWxEXzVicjVDdGlMbFpXT210VU5Qa3dpc0MxWnhPQWRNRElhenR0UFhNbEFmbTkyeTNOcnZoRy0wUDRRTFVzamNLMnhJODJJNlR3TGoxOEgtWXNiNXQ4UHZibjFtaHd2enJ4Z1EtbElKMmVzQlFtaW0xdHRJRWIyLTNJbTExSExzam8xZWpFTlJsVV83RUtGblB5aHA0dG55YW8xOENnRmlnT2NUTXN2aXRldURRY0FEQTVxVy1jRXdhQl8zWGt6YzNpNzRPdlZ3aUx2WEtsZEt2ZEhNWXhWNEhxemtEaEg4SFJTUldsV2RTUUhMdFlxMUhjV2N5RDBzTG0yeVUyYThwT0hCaFdVNTZIUGFsM3REa3ZRUTV2clp2eFVQS0dfMFdxRGgzYTdIYXBvWlhUT3lHbkExMTFxVWVxRkhVZFNxS05JVmhZc1RXam02c3lQV1dDNHI2bWg0MHNGWkhHaGMwLXM2MEdfS1h4MWVOZXVqcDlFYjZUUzBzd21SS2MtbE1JSlR1QQ?oc=5",
+          "published_at": "Fri, 13 Mar 2026 19:20:46 GMT",
+          "published_ts": 1773429646.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Bharat Petroleum Corporation Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Fitch ratings raise India’s GDP growth forecast to 7.5% for FY26, sees Oil at $70 in 2026 - Mathrubhumi English",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNFllRWhsbElWalcxTXgxRTduczMwUFhKRjhySkF4SS1GOHg3dk5wV08yYzNRTTN3LXZlZnJTU3ZYM2FKN1ZZOHlMU3BIUzFjOUJMUUw5SnB6U3hqYk9ZREJFSUEtLXNzU0ZrckVuWFRNZ2tTWnJoTjlncFZYOHROSno1WXFfdFZqNy1sWjFLY0Y1ZGFqVDgtRURKMG9lZldDMGl6NnBoRmlBUUJxaTRQeWJla2FnX3JjeG9XQ3Q2NWxUZDBRaDczdGsxdGNWNmZkdTJMODNBVdIB1wFBVV95cUxPNFllRWhsbElWalcxTXgxRTduczMwUFhKRjhySkF4SS1GOHg3dk5wV08yYzNRTTN3LXZlZnJTU3ZYM2FKN1ZZOHlMU3BIUzFjOUJMUUw5SnB6U3hqYk9ZREJFSUEtLXNzU0ZrckVuWFRNZ2tTWnJoTjlncFZYOHROSno1WXFfdFZqNy1sWjFLY0Y1ZGFqVDgtRURKMG9lZldDMGl6NnBoRmlBUUJxaTRQeWJla2FnX3JjeG9XQ3Q2NWxUZDBRaDczdGsxdGNWNmZkdTJMODNBVQ?oc=5",
+          "published_at": "Fri, 13 Mar 2026 11:42:19 GMT",
+          "published_ts": 1773402139.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Bharat Petroleum Corporation Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing"
+        },
+        {
+          "source": "bing_rss_industry",
+          "title": "Prolonged Middle East conflict, crude above $100 may strain India’s external sector: Standard Chartered",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49cc1499347549cc6a68b1ee43c6f&url=https%3a%2f%2fwww.fortuneindia.com%2feconomy%2fprolonged-middle-east-conflict-crude-above-100-may-strain-indias-external-sector-standard-chartered%2f131235&c=12945210719039704569&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 00:11:00 GMT",
+          "published_ts": 1773360660.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated",
+          "company_name": "Bharat Petroleum Corporation Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Bharat Petroleum Corporation Ltd Technical Momentum Shifts Signal Bullish Outlook - Markets Mojo",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPamJhYmMwVDJNVmlhUVlmRTZ5cXJxUkR4ZlNkUWpkQ3NZblRpOVhaSVRQNzJORHdreW0xOGFJX2pwZERwaDBXOV9hRC1ManptY29wMTRnTU5PcjBqT0E2LXhUUmJ6QmxIaERweXZEbmItb1RsalROQUxzeTJLblNMUnEzM1dIQk0zOFMzOVlaR3o1Nm0xQnc5NDByTHM1QklpVUlPemR2WmlEX3Y5VmFKVFZ3bzBNNUFyV2xWS1dfYjNQRTFMVnU5RHl5RkljWndnNDY3V3VB?oc=5",
+          "published_at": "Thu, 12 Mar 2026 23:55:22 GMT",
+          "published_ts": 1773359722.0,
+          "sentiment_score": 2.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Bharat Petroleum Corporation Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "LPG bookings crash Indane's IVR system in parts of Tamil Nadu - The New Indian Express",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOR2thZnFjeHdQUVJSQ3BtTnh5dUN2bXYyS1N5a251Sk0xSndpVjNJSmlkdjFhNGR4ck05bWo0UURPblNuOWtyelF6RDJhN09PQ3N3OG1nTzRHRGtPRlhfUERWSXFBQXFJTmMtWld1UGV0MThIYW44Rmg5TjJIa3E0ZlBNUU1TUm53TDUzYVdEZHVCUTZXV05sVXhGQjJNZFdwRzdveG4wbmMtdG9zUkZraUJCblhCT3RsNUlnVlVGbTHSAc4BQVVfeXFMTW9LUEZfUV9BN1plQUZKZk1zOWw4ZmJ6QW9FNlZ0eDAyRjc3aGNMOXNrdXEzTXhZV1c3cUpQeWFxXzhYVkhjY1kyQVg3T2tnQ1BUNkxvbW93ZFk3Ylk0UkNGRjM1NFJhVkhraGd5NnJCM1ZEdjRJNTg0ZVFfaEI5b09FdTBxZHFWbk5Jd1kxZzhCZ0ZOS3did1hBMkxNc1FjYnFva1pMWVlKQnQxUEQyemVSY25rV1dVTmlfNnlWeC1DOXBrUVFUdFU5N3psMUE?oc=5",
+          "published_at": "Thu, 12 Mar 2026 02:18:45 GMT",
+          "published_ts": 1773281925.0,
+          "sentiment_score": -1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Bharat Petroleum Corporation Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "IOC, BPCL, HPCL Could See Margin Pressure Amid Oil Price Spike: S&P - outlookbusiness.com",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSU9YVlBjVnJWZ0JydGozeTJCemNDTHc3OXNsM05ldFBUSmZxMUFNcmJVa09ydDJRNkhXM1BQRHNUWkVmczlxOWdCZTk5MDZ4WF9pc0Q2RXYtV2NHSXY5b3dEXy1IY01tUG1xS2VKekg4QWViQTBvZUd1YkhrSi1reHhKdHZ3cXhoeDNzYXc2MDJEWEFmYlNXdEJoZ2JSUG1uckhTOEM3QXdhTEFlOU9BN0tMWVdIQdIBtgFBVV95cUxOSU9YVlBjVnJWZ0JydGozeTJCemNDTHc3OXNsM05ldFBUSmZxMUFNcmJVa09ydDJRNkhXM1BQRHNUWkVmczlxOWdCZTk5MDZ4WF9pc0Q2RXYtV2NHSXY5b3dEXy1IY01tUG1xS2VKekg4QWViQTBvZUd1YkhrSi1reHhKdHZ3cXhoeDNzYXc2MDJEWEFmYlNXdEJoZ2JSUG1uckhTOEM3QXdhTEFlOU9BN0tMWVdIQQ?oc=5",
+          "published_at": "Wed, 11 Mar 2026 12:38:15 GMT",
+          "published_ts": 1773232695.0,
+          "sentiment_score": -2.4,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Bharat Petroleum Corporation Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "HPCL To IOC Share Price Fall As Brent Hits $100 | Stock Market Today - Samco",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPOWo0eVBlUzVRUVlfTGRfNlB4bVA1MEc2UTI4TnYyTEZuMGRIcFdkdXlDY0RxVy1aUWs0N09ya0RjQ0txSzVDV2pRWUNVaTlPZmZPQUF5Mmo0ZGthMVZpNmhvSlJNQllOakhnVGVoeVBvQVJEUEVhMjRVZ2tsaTF2WVphd1hkOXgxc0RDRzJVSThZVy16OGZ0M2hYY2ZQY3o1U3otT0xsd3gwS2Zsb1RHRDVOQzNaV3lId3M4eWVTOTdzaVRoMlJQeURMTlZDdw?oc=5",
+          "published_at": "Wed, 11 Mar 2026 12:23:58 GMT",
+          "published_ts": 1773231838.0,
+          "sentiment_score": -1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Bharat Petroleum Corporation Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "BPCL, HPCL: Only 2 PSU stocks FIIs loaded up on in Q3 FY26? - The Financial Express",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTWJmb2NIeWUxN1p2aFdfTzlMaFRZeDZVc3o0dnJBYVE4MjhsNU9zZ3pwdy1MWUVQeXlRWmEzd3l2dVpuY0tqNjQ3V2tLR05ELXlpWTgzME5LVTRTZV9lWEdmaGJiRnFJTVFleXBLaXBoaXR2VDZDSE1FY0JPRHJIbzhzUlc5YjRIdm9RcWxuNEpxU2taNUExU3RoZi0xOWhpNEhuZHdBM3dsQlY1dGNVb1Y4ZkpsY0l6ejhZVNIBwwFBVV95cUxQLS1TM1FDN1pqR0dTako3dlFWaWlXM1YzMVpyUVpPYU9nUXhoV0NJV19jeG00aktJbkdzQ0FhakRxcXBzczJKeDRVZ0dkbGxWYTc2ZXFuMHptLVBHaVdUWWh5bFBmNE8zOU9jSzhGZ1EzLUtPaEJRdHRmWVFqRzhLOE9Ra2ExRm8ycEhkVWdnQlc4NWJuM1AxT0NfRmtGSDVvTVppSG5RX2lFR01URVo0dFVjOGxWdnVGdFhBOXJaSGYtVzA?oc=5",
+          "published_at": "Tue, 03 Mar 2026 08:00:00 GMT",
+          "published_ts": 1772524800.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Bharat Petroleum Corporation Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Indian Oil, BPCL, HPCL Fall As Crude Oil Jumps; ONGC, OIL India Rally | Stock Market Today - Samco",
+          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPU2cyeWg0NUdmeS0tYzZZMElrZC15eDk5SFN2YXJoc3liM0ZYcmRmVGhMdnlRd0J4b2EzUUM4OGlLc0FScUFpSGs1b1FuQVRQbGU0NURaYXU0Ynp0eThfazdYcjZYSHdZRllLUU9GTlpRUVJtUXdEQktraXlIeTdUSmljTjNOMmZuT0s1RF9uSktFR2pmOXRndzhMb3pCV1NJWEdNeElobzZpZm94cGRmLXVxSld0TUxVTllsNmxjNW81R3VpcnkzbFNqVlUwZmxxMGh1Ml9PdHRmVUJjWjdZSUZaMG5ZcUdMTk93ejFDNWl2bHNBNVJ0RDN1TWtUb2NzZTFv?oc=5",
+          "published_at": "Mon, 02 Mar 2026 08:00:00 GMT",
+          "published_ts": 1772438400.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Bharat Petroleum Corporation Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "BPCL Inaugurates 71 MWp Solar Power Plant at Prayagraj, Strengthening Its Renewable Energy Portfolio - TheWire.in",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNQXIyMGhMTkRiRmVMTnZjS0hQNC1fb3N1LWgyOHlqNVI5ZEdqZ2NxTXBvVWNKVzdTY3hvYjk5Mm40b1dIcWlERGs2QmNBVnFlelVpdFRuZEIybXFuNlB2dG5MLVFEYjlkY2tSMkJkcGNkRmF4eGVpTVNicU5fREdWb25PMnlDeWhNTmxhTWhRRmxrUVk0WVE1bzkwY2F4ZFp4MUVrYTBGa1pDQ09QSDEyZXBCaWgzWkxnbF8ydFJwMG5NMTNFQVhzRHpUZVozblJ6UGdmb9IB2gFBVV95cUxPZ0hwXzZDd3BOd0J5YU1oWWhlbG9QcnhKaFQyVld2RlNrUE9TdV9tdHZnUG5RVUh3NFZDRW8zblRfSjI0N3hZbkZWN1pjWThRaXJVeVRzRkUxZ3JMZHc4Z2lzYmpNcVhjaUctNzdmdE9YdExyTHV6YWQyQUZWR2c3emFtVlRRMzc0bEF2RjZodmE4WUlwcmdFY1hNNkE0cFU1TTFJRl9vVVdxXzlkUWJNRE9UazFYWEJGdFRJWGNJbWQyWXJxeEd5VFQ2dlpvZ24zczlRdGlXa1lvUQ?oc=5",
+          "published_at": "Wed, 18 Feb 2026 09:29:45 GMT",
+          "published_ts": 1771406985.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Bharat Petroleum Corporation Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Oil and Gas Market Size, Share | Analysis & Forecast [2033] - SkyQuest Technology",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9tSktEYTkyOGgwazEzeHFHeHhnS1NNRlNWcnFLOURwTXVNbm5XbU1FRlRCbGtHbDJ3Ums5X3ZJTDRQWnBuTGR1amtqU29wbnd2RzJuRmVaM2l4WTNFQ01Sbg?oc=5",
+          "published_at": "Thu, 12 Feb 2026 08:49:27 GMT",
+          "published_ts": 1770886167.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Bharat Petroleum Corporation Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "BPCL, Trafigura Sign Crude Oil Supply Agreement Amid Rising Energy Demand - outlookbusiness.com",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPMXRXcnI5MTRRdzhFUGo2MmNkREFZT3V1LXpURFIzT3ZnR2dBd0FrRDFENmUzVXFXeXhoM3pNZlJnTk1WNS1BX3ZrcUlDZWhQUHYybFY1SGpsNXkxbnZXQkhlR3JWYjFoTmw4QXoxNE9VWDQwbjFrSVpseWtGT0RMSEozUUZPUE1lTlHSAZcBQVVfeXFMTktBTFZ5LU5hWlZsX0x0MDVlRGstTENJXzB2NXB3a2NNS1pqZDQ1WmtqSDhCSWs5VHpsNmhWeFB0QVlKR1RNcnZCZS1tRFYyM0dOUUtHN0ZpN19SQTJkNzVzVEZxTGhLY0w5eDdKckdtM3hLcFQzRzRDR01IX2tBbVJRZkNPeGI4SDFKdEtsWkxXOXVQcWtJYw?oc=5",
+          "published_at": "Tue, 03 Feb 2026 08:00:00 GMT",
+          "published_ts": 1770105600.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Bharat Petroleum Corporation Limited",
+          "sector": "Energy",
+          "industry": "Oil & Gas Refining & Marketing"
+        }
+      ],
+      "top_macro_news": [
+        {
+          "source": "google_rss_macro",
+          "title": "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRVNOajVzSUJWU3Q5R2toMjVnZVZMNDhLclozWDdNODc1OU1qbVFjYnFTT0Z1SUZaaExuY3FJajFkdWtOWk5kdWplT0J0Yk9RcnlDVnlvQmJZNC1jVDVHZmRhS0Z0X0JiXzFETHRnaUVac1pEMmZfWE9raXFacFpwR1dSaEVST0Ntc2k1czN4emNQVFlWSHE3V1ZhMW80OUFMYmN6dEwtTkRadm44enc?oc=5",
+          "published_at": "Fri, 13 Mar 2026 15:17:26 GMT",
+          "published_ts": 1773415046.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49cc2252c4713933df5d422e6c41e&url=https%3a%2f%2fwww.livemint.com%2fmarket%2fstock-market-news%2fus-china-power-shift-global-markets-india-outlook-mirae-asset-swarup-mohanty-11773376870759.html&c=15555016077234823276&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 14:15:00 GMT",
+          "published_ts": 1773411300.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Fed to delay rate cuts as war clouds the outlook",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49cc3acbf425d828710fb98cf37ff&url=https%3a%2f%2fthink.ing.com%2farticles%2ffed-to-delay-rate-cuts-as-war-clouds-the-outlook%2f&c=127436243108543137&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 13:40:00 GMT",
+          "published_ts": 1773409200.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss_macro",
+          "title": "Bitcoin holds above $71,000, defying rising dollar, oil and U.S. bond yields - CoinDesk",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbHB1NE1GZ1dLTWpvOWNseW5QXy1jbWVHcTYzcXF6NWotU0NHOG1XNEUzcDd0ZTctMW1URXZzSW5RQ1djc1h3a0xOM0k2Tkd5TjRWcE0wUXRwZjg4WktmZ2xDWnpLa0RhR1BsRzlrZlVlVzhONmQ0eW51VXJIWFQ3NFJkd0VXZ2VsUnY4VTBuWjU5LXpxX1BPYUIyaEZKQVdEWUU3a25CY0RvN3NrVW10cFNUTWtxSHdhSWI4?oc=5",
+          "published_at": "Fri, 13 Mar 2026 09:34:10 GMT",
+          "published_ts": 1773394450.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Gold Silver Rate Today Live Updates (13 March 2026): Gold, silver futures fall on MCX as rising crude oil prices dim hopes of early rate cuts",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49cc38eb445b386df017216d6b244&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2flive-blog%2fgold-rate-silver-price-today-live-updates-mcx-gold-18k-22k-24k-rate-iran-isreal-us-war-latest-news%2fliveblog%2f129534056.cms&c=4108291931945502437&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 06:00:00 GMT",
+          "published_ts": 1773381600.0,
+          "sentiment_score": -1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Markets Today: Sensex Declines 830 Points, Nifty Slips Below 23,650 Amid Iran-US-Israel War",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49cc2252c4713933df5d422e6c41e&url=https%3a%2f%2fwww.news18.com%2fbusiness%2fmarkets%2fmarkets-today-sensex-falls-1000-points-in-opening-trade-nifty-below-23600-as-oil-surges-past-100-9956009.html&c=7425380694736114227&mkt=en-in",
+          "published_at": "Thu, 12 Mar 2026 03:39:00 GMT",
+          "published_ts": 1773286740.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Share markets continue to bleed as West Asia tensions dampen sentiment, Sensex over 800 points down",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49cc2252c4713933df5d422e6c41e&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fmarkets%2fshare-markets-continue-to-bleed-as-west-asia-tensions-dampen-sentiment-sensex-over-800-points-down%2far-AA1Yt9yX&c=14300386732484515462&mkt=en-in",
+          "published_at": "Thu, 12 Mar 2026 03:04:15 GMT",
+          "published_ts": 1773284655.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Trading Day: Oil and yields up, up, and away",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49cc38eb445b386df017216d6b244&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2ftrading-day-oil-and-yields-up-up-and-away%2far-AA1YqbzQ&c=11227118164045986945&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 14:08:08 GMT",
+          "published_ts": 1773238088.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss_macro",
+          "title": "Markets Confront the Economic Impact of the Iran Conflict - Natixis CIB | Natixis Corporate & Investment Banking",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOVpkVlFlOG1lbEdUZEM2VU40clhkdUtsN3l6Z3Rkd2g4WTBNMVNKSFBmMmkyT1M0RGwtZGJxN1ItZVVrMEU3UnVfWFJ6UmpZUVppV09ZelhMWHNvZmhtbFk3ajc0UnlpY0dZeW51MGJnSUU3dGhYRGFQaE44NjJVaFFBVWFyVlNhampDdXFic0dCZXZ3YW5ScWUtWQ?oc=5",
+          "published_at": "Wed, 11 Mar 2026 10:55:26 GMT",
+          "published_ts": 1773226526.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Oil price spike could push US inflation to 4%, delaying Fed rate cut",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49cc3acbf425d828710fb98cf37ff&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2foil-price-spike-could-push-us-inflation-to-4-delaying-fed-rate-cut%2far-AA1Ym49n&c=7065206888862373143&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 03:02:32 GMT",
+          "published_ts": 1773198152.0,
+          "sentiment_score": 1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        }
+      ],
+      "avg_sentiment": -0.01826783792760798,
+      "macro_sentiment": -0.09145492569317897
+    },
+    "market_sentiment": {
+      "signal": "SELL",
+      "confidence": 0.656,
+      "summary": "Market Sentiment: SELL | NIFTY 5D=-4.55%, 10D=-7.23%, 20D=-8.92%, SMA20 gap=-5.7% (below). India VIX=23151.099609375, 5D chg=-1299.3, news sentiment=-0.02. Votes: bull=2, bear=3.",
+      "reasoning_prompt": "Market sentiment protocol:\n1) Evaluate NIFTY multi-window momentum (5/10/20-bar returns) for domestic risk appetite.\n2) Check Nifty SMA20 structure — price above 20DMA = constructive, below = cautious.\n3) Evaluate India VIX regime as stress filter (low=constructive, high=defensive).\n4) Factor VIX change rate — rising VIX signals increasing fear even if level is moderate.\n5) Blend with cleaned multi-source news sentiment (stock + macro blend).\n6) Count bullish/bearish votes and avoid directional call under conflict.\n7) Prefer NO_TRADE when index momentum and volatility regime diverge.",
+      "llm_reasoning": "Sentiment is bearish, driven by the convergence of falling price action and macro-economic concerns regarding crude oil volatility. Institutional focus on energy sector margins amid high global energy prices has led to a negative outlook. Market participants are showing increased selling volume compared to the 20-day mean, signaling a lack of appetite for long positions in the current refinery margin environment.",
+      "detail": {
+        "nifty_ret5": -0.04549602405840758,
+        "nifty_ret10": -0.0723378636073776,
+        "nifty_ret20": -0.08918519809538727,
+        "above_sma20": false,
+        "sma_gap_pct": -5.67,
+        "vix_level": 23151.099609375,
+        "vix_change_5d": -1299.35,
+        "news_avg_sentiment": -0.01826783792760798,
+        "bullish_votes": 2,
+        "bearish_votes": 3
+      }
+    },
+    "relative_strength": {
+      "signal": "SELL",
+      "confidence": 0.8200000000000001,
+      "summary": "Relative Strength: SELL | stock 10-bar return=-8.43%, NIFTY=-3.44%, alpha=-4.99%.",
+      "reasoning_prompt": "Relative-strength protocol:\n1) Compare stock and NIFTY returns over same 10-bar window.\n2) Convert spread into alpha and classify persistent out/under-performance.\n3) Treat marginal alpha as noise and return NO_TRADE.\n4) Use relative strength as confirmation layer, not standalone trigger.",
+      "llm_reasoning": "BPCL is showing significant underperformance, evidenced by the 14-day rate of change at -14.36% and an RSI of 27.4. The price is trading well below major moving averages (SMA20/50), indicating that it is losing strength relative to both its own historical baseline and expected sector performance. The negative momentum score of 13.6/100 confirms its weak position against broader market benchmarks.",
+      "detail": {
+        "stock_ret10": -0.08431534317505263,
+        "nifty_ret10": -0.03436815462817344,
+        "alpha": -0.049947188546879184
+      }
+    },
+    "us_trend": {
+      "signal": "SELL",
+      "confidence": 0.95,
+      "summary": "US Trend Signal: SELL | Global risk-off backdrop. SPX 5D/20D=-9.44%/-15.80%, NDX 5D/20D=-5.31%/-10.29%, VIX=319.30, DXY 5D=14.91%.",
+      "reasoning_prompt": "US macro trend protocol:\n1) Evaluate SPX and NDX short/medium returns for global equity risk tone.\n2) Use VIX as stress filter (high VIX weakens risk-on conviction).\n3) Use DXY direction as liquidity/EM risk proxy for Indian equities.\n4) Classify regime as risk-on, risk-off, or mixed.\n5) Use this as contextual bias only; do not override local setup quality.",
+      "llm_reasoning": "Not applicable to this specific asset, as BPCL is traded on the Indian National Stock Exchange (NSE). However, global macro trends impacting the energy sector, such as USD-denominated crude oil prices and general market risk appetite, continue to exert downward pressure on international and local oil marketing companies.",
+      "detail": {
+        "regime": "Global risk-off backdrop",
+        "llm_decision_why": "SPX and NDX demonstrate significant negative momentum across 5-day and 20-day horizons, indicating a strong risk-off regime. The VIX at 319 suggests extreme volatility, and a rising DXY confirms a flight to safety. The structural breakdown across all major indices mandates a defensive SELL bias.",
+        "spx_ret_5": -0.09435271104236642,
+        "spx_ret_20": -0.1580237333217226,
+        "ndx_ret_5": -0.05314215692931257,
+        "ndx_ret_20": -0.1029208782735801,
+        "vix_last": 319.29998779296875,
+        "dxy_ret_5": 0.14905267012746704,
+        "dxy_ret_20": 0.5461757226825255
+      }
+    },
+    "financials": {
+      "signal": "BUY",
+      "confidence": 0.8615384615384616,
+      "summary": "Financials Signal: BUY | Fundamentals supportive. Coverage=62%. ROE=16.39%, Margin=3.04%, RevGrowth=N/A, EarnGrowth=N/A, D/E=0.751, CurrentRatio=N/A, PE=10.387. Quarterly trends: RevQoQ=5.76%, NIQoQ=5.11%, OCFQoQ=N/A, DebtQoQ=3.77%, FCF=N/A, Cash/Debt=0.009. Analyst target=N/A (N/A upside, ? analysts). 52w Hi/Lo=391.650/258.310, position=45.74%.",
+      "reasoning_prompt": "Financial statement reasoning protocol:\n1) Evaluate valuation (PE/PB) relative to profitability and growth quality.\n2) Score profitability and efficiency (ROE, margins).\n3) Validate growth durability using quarterly revenue and net-income trends.\n4) Check balance-sheet resilience (debt trend, liquidity, cash/debt).\n5) Check cash-flow quality (operating CF trend, free cash flow sign).\n6) If fundamentals conflict or are incomplete, default to conservative NO_TRADE bias.",
+      "llm_reasoning": "Financial metrics reveal a bearish outlook for margin expansion. The company faces direct pressure from rising crude oil costs, which limits the profitability of downstream operations. While specific earnings figures are within expected ranges for the industry, the current high-volatility regime and reliance on volatile commodity prices exacerbate risk. The structural decline in price aligns with the market's unfavorable reception of these cost-intensive operational conditions.",
+      "fundamental_signals": [
+        {
+          "type": "bullish",
+          "text": "Revenue growing QoQ (5.8% last quarter)."
+        }
+      ],
+      "analyst_consensus": {
+        "target_price": null,
+        "target_high": null,
+        "target_low": null,
+        "n_analysts": null,
+        "implied_upside_pct": null
+      },
+      "price_52w": {
+        "high": 391.65,
+        "low": 258.31,
+        "current": 319.3,
+        "position_pct": 45.7,
+        "change_1y_pct": null
+      },
+      "extended_fundamentals": {
+        "symbol": "BPCL.NS",
+        "dividend_yield": 6.13,
+        "dividend_rate": 20.0,
+        "ex_dividend_date": 1769990400,
+        "payout_ratio": 0.3039,
+        "held_pct_insiders": 0.57893,
+        "held_pct_institutions": 0.26261,
+        "book_value": 219.838,
+        "price_to_book": 1.4524331,
+        "return_on_equity": null,
+        "debt_to_equity": 56.386,
+        "profit_margins": 0.054959998,
+        "enterprise_value": 1719964008448,
+        "enterprise_to_revenue": 0.384,
+        "enterprise_to_ebitda": 4.512,
+        "gross_margins": 0.15632,
+        "operating_margins": 0.08156,
+        "ebitda_margins": 0.08514,
+        "total_revenue": 4477573660672,
+        "total_debt": 529668308992,
+        "total_cash": 174303707136,
+        "peg_ratio": null,
+        "trailing_pe": 5.5434027,
+        "forward_pe": 6.7288575
+      },
+      "promoter_institutional": {
+        "symbol": "BPCL.NS",
+        "major_holders": {},
+        "top_institutional": []
+      },
+      "dividends_splits": {
+        "symbol": "BPCL.NS",
+        "recent_dividends": [
+          {
+            "date": "2022-08-19 00:00:00+05:30",
+            "amount": 3.0
+          },
+          {
+            "date": "2023-08-11 00:00:00+05:30",
+            "amount": 2.0
+          },
+          {
+            "date": "2023-12-12 00:00:00+05:30",
+            "amount": 10.5
+          },
+          {
+            "date": "2024-08-09 00:00:00+05:30",
+            "amount": 10.5
+          },
+          {
+            "date": "2025-01-29 00:00:00+05:30",
+            "amount": 5.0
+          },
+          {
+            "date": "2025-07-31 00:00:00+05:30",
+            "amount": 5.0
+          },
+          {
+            "date": "2025-11-07 00:00:00+05:30",
+            "amount": 7.5
+          },
+          {
+            "date": "2026-02-02 00:00:00+05:30",
+            "amount": 10.0
+          }
+        ],
+        "recent_splits": [
+          {
+            "date": "2000-12-20 00:00:00+05:30",
+            "ratio": 2.0
+          },
+          {
+            "date": "2012-07-13 00:00:00+05:30",
+            "ratio": 2.0
+          },
+          {
+            "date": "2016-07-13 00:00:00+05:30",
+            "ratio": 2.0
+          },
+          {
+            "date": "2017-07-13 00:00:00+05:30",
+            "ratio": 1.5
+          },
+          {
+            "date": "2024-06-21 00:00:00+05:30",
+            "ratio": 2.0
+          }
+        ],
+        "dividend_yield_trend": "rising",
+        "total_dividends_1y": 22.5
+      },
+      "metrics": {
+        "market_cap": 1385284749358.128,
+        "trailing_pe": 10.38712972513977,
+        "forward_pe": null,
+        "price_to_book": 1.7021569198277207,
+        "debt_to_equity": 0.7507680863382618,
+        "return_on_equity": 0.16387173019588105,
+        "profit_margins": 0.03039754247736638,
+        "operating_margins": 0.04272315100657963,
+        "gross_margins": 0.08876543726791518,
+        "ebitda_margins": null,
+        "revenue_growth": null,
+        "earnings_growth": null,
+        "free_cashflow": null,
+        "operating_cashflow": null,
+        "current_ratio": null,
+        "fifty_two_week_high": 391.6499938964844,
+        "fifty_two_week_low": 258.30999755859375,
+        "fifty_two_week_change": null,
+        "dividend_yield": 0.08612590369978577,
+        "current_price": 319.29998779296875,
+        "analyst_target_price": null,
+        "analyst_target_high": null,
+        "analyst_target_low": null,
+        "number_of_analyst_opinions": null,
+        "trailing_eps": null,
+        "forward_eps": null,
+        "beta": null,
+        "book_value": 187.58551815850555,
+        "enterprise_value": null,
+        "total_revenue": 4387377700000.0,
+        "total_debt": 611005700000.0,
+        "total_cash": 5579300000.0,
+        "peg_ratio": null,
+        "sector": null,
+        "industry": null,
+        "company_name": ""
+      },
+      "detail": {
+        "stance": "Fundamentals supportive",
+        "bull_points": 8,
+        "bear_points": 3,
+        "data_quality": {
+          "coverage_ratio": 0.6153846153846154,
+          "available_fields": 8,
+          "total_fields": 13
+        },
+        "metrics": {
+          "market_cap": 1385284749358.128,
+          "trailing_pe": 10.38712972513977,
+          "forward_pe": null,
+          "price_to_book": 1.7021569198277207,
+          "debt_to_equity": 0.7507680863382618,
+          "return_on_equity": 0.16387173019588105,
+          "profit_margins": 0.03039754247736638,
+          "operating_margins": 0.04272315100657963,
+          "gross_margins": 0.08876543726791518,
+          "ebitda_margins": null,
+          "revenue_growth": null,
+          "earnings_growth": null,
+          "free_cashflow": null,
+          "operating_cashflow": null,
+          "current_ratio": null,
+          "fifty_two_week_high": 391.6499938964844,
+          "fifty_two_week_low": 258.30999755859375,
+          "fifty_two_week_change": null,
+          "dividend_yield": 0.08612590369978577,
+          "current_price": 319.29998779296875,
+          "analyst_target_price": null,
+          "analyst_target_high": null,
+          "analyst_target_low": null,
+          "number_of_analyst_opinions": null,
+          "trailing_eps": null,
+          "forward_eps": null,
+          "beta": null,
+          "book_value": 187.58551815850555,
+          "enterprise_value": null,
+          "total_revenue": 4387377700000.0,
+          "total_debt": 611005700000.0,
+          "total_cash": 5579300000.0,
+          "peg_ratio": null,
+          "sector": null,
+          "industry": null,
+          "company_name": ""
+        },
+        "metrics_extended": {
+          "dividend_yield": 6.13,
+          "peg_ratio": null,
+          "operating_margins": 0.08156,
+          "gross_margins": 0.15632,
+          "ev_to_ebitda": 4.512,
+          "held_pct_institutions": 0.26261
+        },
+        "statement_trends": {
+          "revenue_qoq": 0.05755572229411521,
+          "net_income_qoq": 0.051086266745820286,
+          "operating_cf_qoq": null,
+          "debt_qoq": 0.03770714037753842,
+          "free_cashflow_latest": null,
+          "cash_to_debt": 0.009131338709278817
+        }
+      }
+    },
+    "market_setup": {
+      "signal": "NO_TRADE",
+      "confidence": 0.65,
+      "summary": "Market Setup Signal: NO_TRADE | Breakdown pressure. Tape read: 5d=-9.4%, 20d=-15.8%, volume ratio=1.80, momentum=13.6. Support gap=N/A and resistance gap=11.2%. Trader read: The asset is in a strong bearish trend with negative momentum and significant relative weakness. However, with RSI at 27.4 and price well below moving averages, the stock is deeply oversold and prone to reflexive bounces or mean reversion. Entering a new short here risks getting caught in an exhaustion rally.",
+      "reasoning_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+      "llm_reasoning": "The setup is characterized by high volatility (ATR of 12.84) and sustained selling pressure. The market is attempting to find support near 326.35 after a steep decline from levels above 360. Volume confirms active selling, indicating that the move is not merely a liquidity-thin anomaly but a systematic rejection of higher prices. A lack of structural recovery suggests the current setup favors further testing of lower support levels.",
+      "setup_label": "Breakdown pressure",
+      "detail": {
+        "recent_return_5d_pct": -9.44,
+        "recent_return_20d_pct": -15.8,
+        "volume_ratio_5d_vs_20d": 1.8,
+        "distance_to_support_pct": null,
+        "distance_to_resistance_pct": 11.23,
+        "momentum_score": 13.6,
+        "buy_votes": 0,
+        "sell_votes": 3
+      }
+    },
+    "catalyst_context": {
+      "signal": "BUY",
+      "confidence": 0.75,
+      "summary": "Catalyst Context Signal: BUY | Mixed catalyst tape. Backdrop read: news sentiment=-0.02, analyst upside=None, 52w position=45.7. Core read: BPCL demonstrates strong valuation support with a P/E of ~10.4 and a compelling dividend yield exceeding 8%. The balance sheet is manageable (D/E 0.75), and the stock is trading well off its highs, providing a favorable risk-reward entry. Robust fundamental health and consistent profitability support a tactical long position.",
+      "reasoning_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+      "llm_reasoning": "The primary catalyst is the persistent elevation of global crude oil prices, which directly impacts BPCL's refining and marketing margins. As an oil marketing company, BPCL is highly sensitive to the cost of raw inputs and regulatory price caps. The lack of relief in commodity markets, combined with recent negative price performance, serves as a continuous catalyst for institutional selling.",
+      "catalyst_label": "Mixed catalyst tape",
+      "detail": {
+        "buy_votes": 1,
+        "sell_votes": 3,
+        "avg_sentiment": -0.018,
+        "analyst_upside_pct": null,
+        "position_52w_pct": 45.7,
+        "fundamental_signals": [
+          "Revenue growing QoQ (5.8% last quarter)."
+        ]
+      }
+    }
+  },
+  "agent_guidance": {
+    "indicator_prompt": "Indicator reasoning protocol:\n1) Evaluate structural trend using close vs SMA20 and SMA20 vs SMA50.\n2) Validate momentum using MACD line/signal/histogram and ROC10 direction.\n3) Check exhaustion/continuation via RSI, Stochastic crossover, and Williams %R zone.\n4) Confirm participation with volume vs 20-bar average.\n5) Penalize high-volatility regimes with ATR% filters and lower confidence.\n6) If cross-indicator alignment is weak or contradictory, return NO_TRADE.",
+    "pattern_prompt": "Pattern reasoning protocol:\n1) Detect breakout/breakdown against prior 12-bar range, not single-candle spikes.\n2) Confirm direction with local slope and bar-structure continuation.\n3) Use engulfing patterns as confirmation, not standalone trigger.\n4) Treat flat-slope compression as NO_TRADE until expansion is confirmed.\n5) Down-rank weak breakouts lacking structure confirmation.",
+    "news_prompt": "News reasoning protocol:\n1) Collect company-specific headlines across multiple providers using diversified queries.\n2) Filter spam/listicle/noise domains and low-relevance stories.\n3) Build a global macro stream (rates, inflation, oil, USD, broad risk sentiment).\n4) Build industry/sector thematic stream (demand cycle, market share, regulation, capacity, pricing).\n5) Weight sentiment by source quality, exponential recency decay, and relevance confidence.\n6) Apply content-similarity dedup to remove near-duplicate headlines.\n7) Use LLM to infer final bias from company + industry + macro evidence and return NO_TRADE under conflict.",
+    "trend_prompt": "Trend reasoning protocol:\n1) Fit support and resistance trendlines over the visible swing window.\n2) Estimate channel slope (regime direction) and channel width (trend quality).\n3) Locate current price in channel and prefer pullback entries aligned with slope.\n4) If slope is weak/flat, classify as sideways and favor NO_TRADE.\n5) Avoid chasing signals near channel extremes against risk-reward logic.",
+    "market_prompt": "Market sentiment protocol:\n1) Evaluate NIFTY multi-window momentum (5/10/20-bar returns) for domestic risk appetite.\n2) Check Nifty SMA20 structure — price above 20DMA = constructive, below = cautious.\n3) Evaluate India VIX regime as stress filter (low=constructive, high=defensive).\n4) Factor VIX change rate — rising VIX signals increasing fear even if level is moderate.\n5) Blend with cleaned multi-source news sentiment (stock + macro blend).\n6) Count bullish/bearish votes and avoid directional call under conflict.\n7) Prefer NO_TRADE when index momentum and volatility regime diverge.",
+    "relative_strength_prompt": "Relative-strength protocol:\n1) Compare stock and NIFTY returns over same 10-bar window.\n2) Convert spread into alpha and classify persistent out/under-performance.\n3) Treat marginal alpha as noise and return NO_TRADE.\n4) Use relative strength as confirmation layer, not standalone trigger.",
+    "us_trend_prompt": "US macro trend protocol:\n1) Evaluate SPX and NDX short/medium returns for global equity risk tone.\n2) Use VIX as stress filter (high VIX weakens risk-on conviction).\n3) Use DXY direction as liquidity/EM risk proxy for Indian equities.\n4) Classify regime as risk-on, risk-off, or mixed.\n5) Use this as contextual bias only; do not override local setup quality.",
+    "financials_prompt": "Financial statement reasoning protocol:\n1) Evaluate valuation (PE/PB) relative to profitability and growth quality.\n2) Score profitability and efficiency (ROE, margins).\n3) Validate growth durability using quarterly revenue and net-income trends.\n4) Check balance-sheet resilience (debt trend, liquidity, cash/debt).\n5) Check cash-flow quality (operating CF trend, free cash flow sign).\n6) If fundamentals conflict or are incomplete, default to conservative NO_TRADE bias.",
+    "market_setup_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+    "catalyst_context_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+    "trader_intel_prompt": "Think like a discretionary Indian swing trader. Judge setup quality, catalyst quality, crowd positioning, and execution patience together. Avoid indicator-threshold language. Prefer NO_TRADE when the idea is merely interesting rather than executable. Use nearby levels, 52-week context, analyst framing, and headline quality to write a trader-grade verdict."
+  },
+  "market_setup": {
+    "signal": "NO_TRADE",
+    "confidence": 0.65,
+    "summary": "Market Setup Signal: NO_TRADE | Breakdown pressure. Tape read: 5d=-9.4%, 20d=-15.8%, volume ratio=1.80, momentum=13.6. Support gap=N/A and resistance gap=11.2%. Trader read: The asset is in a strong bearish trend with negative momentum and significant relative weakness. However, with RSI at 27.4 and price well below moving averages, the stock is deeply oversold and prone to reflexive bounces or mean reversion. Entering a new short here risks getting caught in an exhaustion rally.",
+    "reasoning_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+    "llm_reasoning": "The setup is characterized by high volatility (ATR of 12.84) and sustained selling pressure. The market is attempting to find support near 326.35 after a steep decline from levels above 360. Volume confirms active selling, indicating that the move is not merely a liquidity-thin anomaly but a systematic rejection of higher prices. A lack of structural recovery suggests the current setup favors further testing of lower support levels.",
+    "setup_label": "Breakdown pressure",
+    "detail": {
+      "recent_return_5d_pct": -9.44,
+      "recent_return_20d_pct": -15.8,
+      "volume_ratio_5d_vs_20d": 1.8,
+      "distance_to_support_pct": null,
+      "distance_to_resistance_pct": 11.23,
+      "momentum_score": 13.6,
+      "buy_votes": 0,
+      "sell_votes": 3
+    }
+  },
+  "catalyst_context": {
+    "signal": "BUY",
+    "confidence": 0.75,
+    "summary": "Catalyst Context Signal: BUY | Mixed catalyst tape. Backdrop read: news sentiment=-0.02, analyst upside=None, 52w position=45.7. Core read: BPCL demonstrates strong valuation support with a P/E of ~10.4 and a compelling dividend yield exceeding 8%. The balance sheet is manageable (D/E 0.75), and the stock is trading well off its highs, providing a favorable risk-reward entry. Robust fundamental health and consistent profitability support a tactical long position.",
+    "reasoning_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+    "llm_reasoning": "The primary catalyst is the persistent elevation of global crude oil prices, which directly impacts BPCL's refining and marketing margins. As an oil marketing company, BPCL is highly sensitive to the cost of raw inputs and regulatory price caps. The lack of relief in commodity markets, combined with recent negative price performance, serves as a continuous catalyst for institutional selling.",
+    "catalyst_label": "Mixed catalyst tape",
+    "detail": {
+      "buy_votes": 1,
+      "sell_votes": 3,
+      "avg_sentiment": -0.018,
+      "analyst_upside_pct": null,
+      "position_52w_pct": 45.7,
+      "fundamental_signals": [
+        "Revenue growing QoQ (5.8% last quarter)."
+      ]
+    }
+  },
+  "trader_intel": {
+    "signal": "NO_TRADE",
+    "confidence": 0.6,
+    "verdict_label": "Oversold vs Momentum Clash",
+    "playbook_title": "Mean Reversion Trap Avoidance",
+    "thesis": "BPCL is exhibiting classic signs of exhaustion selling with high volume spikes into a localized low, creating a disconnect between deep value (high dividend, low P/E) and aggressive trend-following sellers. The technicals are screaming 'avoid the knife' while the fundamentals suggest a floor is near, creating a high-volatility vacuum.",
+    "execution_style": "Wait for a stabilization base or a failed breakdown to confirm institutional absorption.",
+    "risk_flag": "High volatility; potential for further flush if broad Nifty energy sector drags.",
+    "entry_trigger": "A daily close above the previous day's high accompanied by a volume contraction, signaling sellers are exhausted.",
+    "invalidation": "Fresh lower lows below the recent swing point with sustained heavy volume.",
+    "why_now": "The stock is at an extreme RSI level, making immediate shorts dangerous and premature longs statistically unproven until the selling pressure dies down.",
+    "why_not_now": "The tape remains decisively bearish with 5d and 20d returns deep in negative territory; there is no 'buy the dip' confirmation, only a 'don't catch the knife' warning.",
+    "summary": "Trader Intel: NO_TRADE | Oversold vs Momentum Clash | Mean Reversion Trap Avoidance. Thesis: BPCL is exhibiting classic signs of exhaustion selling with high volume spikes into a localized low, creating a disconnect between deep value (high dividend, low P/E) and aggressive trend-following sellers. The technicals are screaming 'avoid the knife' while the fundamentals suggest a floor is near, creating a high-volatility vacuum. Why now: The stock is at an extreme RSI level, making immediate shorts dangerous and premature longs statistically unproven until the selling pressure dies down. Why not now: The tape remains decisively bearish with 5d and 20d returns deep in negative territory; there is no 'buy the dip' confirmation, only a 'don't catch the knife' warning.",
+    "reasoning_prompt": "Think like a discretionary Indian swing trader. Judge setup quality, catalyst quality, crowd positioning, and execution patience together. Avoid indicator-threshold language. Prefer NO_TRADE when the idea is merely interesting rather than executable. Use nearby levels, 52-week context, analyst framing, and headline quality to write a trader-grade verdict."
+  },
+  "top_news": [
+    {
+      "source": "bing_rss",
+      "title": "BPCL Share Price Live Updates: BPCL's Current Trading Status",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49cb7701745e4bfee030b4e8e1a92&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2fstock-liveblog%2fbpcl-stock-price-livestock-price-today-live-updates-13-mar-2026%2fliveblog%2f129534476.cms&c=16999551823669957655&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 03:53:00 GMT",
+      "published_ts": 1773373980.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss",
+      "title": "Fundamental and Technical Stock Picks: How to trade Asian Paints, HPCL, BPCL, ONGC, NTPC, over a dozen other scrips",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49cb7701745e4bfee030b4e8e1a92&url=https%3a%2f%2fwww.zeebiz.com%2fmarket-news%2fnews-fundamental-and-technical-stock-picks-how-to-trade-crude-oil-gas-linked-shares-asian-paints-hpcl-bpcl-ongc-ril-ntpc-391897&c=457757871406310765&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 03:29:00 GMT",
+      "published_ts": 1773372540.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "OMC stocks: HPCL, BPCL, IOCL crack up to 19% so far in March; here's why - Business Standard",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNM3lHOF9hMURudFNabEhNRnQxdXgwNGdTclhSZ1FkYWNJM0lpbV94VUFjX2J3cDJFU2tBVmNnN0poNW1HQkVub1cweEE5aWtDNHR1dTM1dmx1cW96ckFSMFp1cms2T193SF9HOVJLcXlGay1sRU5YS3E1OC12aWlPQmhaeFB0RGdJZUhnaFRyT3pLbTlONWg0enQ3b0NaZGI4QnBXN1hYdVZFMVVkQ0tDVjRKTHJZb3I0S1V5bDNsYUJtbXFaSmhHR3VibnhRLVXSAdQBQVVfeXFMT0wtaFloYS1OMEhoNjkxS2drZHlYTmtsdTFyQS03MUJWeTNjVjhSOWlaRF9peGFrNmg1bUx1UTJlN3hJbXBtZk4xbE0zTUg3N1ZBMmwtNG5fQVhDOVo0WmRva3RpLVQ2Q2VrNEdCZDczV3A3ci1yR3ByZWZXVldsRzBQS3Z5djdNS21uanpaVkt4ZDR4QURxbDB1T2pqZVRxVFVkeHg1ODNlRks4NTdabkdHRkxZamNZTmtZakI1YXY1cHM1UVhsVnVMZVZSQVlpWEk5eXQ?oc=5",
+      "published_at": "Thu, 12 Mar 2026 04:35:05 GMT",
+      "published_ts": 1773290105.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "HPCL, BPCL, IOCL: Oil marketing companies' shares decline as oil prices top $100/bbl once again - Upstox",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOZ3pxWnhoVHJaSGZYTWpBX3JGSFNwY3lNM2tFNXFLbVdWVk5TRlotSE84U1pfYURBMHlsM2hmREJBQWZMeWx2Tk9FQWlBcU5JcjliMGFjNUlsLWJtNFZwRWxjU0pSVW5HZXAwM0VXa3ZIUTZMcTdKQm9GUWw2eFdSUGIycEx2X3A5NWRzY0R1RmYwYnVZQVFuMWlFWkJLV2FjQUEtNzI2RUo4azh5d2VfUmtFcGJfRjY0cFIyWlRRaHJYRUNpZE9uNEpjaFMzci1XWFBFblZfaTlLY0FXVVMtS19DOA?oc=5",
+      "published_at": "Thu, 12 Mar 2026 04:02:37 GMT",
+      "published_ts": 1773288157.0,
+      "sentiment_score": -1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss",
+      "title": "BPCL Appoints Vedveer Arya as Additional Director; Sushma Agarwal Completes Tenure",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49cb7701745e4bfee030b4e8e1a92&url=https%3a%2f%2fwww.psuconnect.in%2fpsu-news%2fbpcl-appoints-vedveer-arya-as-additional-director-sushma-agarwal-completes-tenure&c=6733003464272692909&mkt=en-in",
+      "published_at": "Tue, 10 Mar 2026 05:23:00 GMT",
+      "published_ts": 1773120180.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Stocks to watch, March 10: Indian Oil, BPCL, ONGC, Oil India, Asian Paints, IHCL, Jubilant Food, Swiggy, Eternal, Power Grid, NTPC Green - Upstox",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQaWpES1BaV0hNUjNhU3FlVnU3TE5pdEh3Q3UwTDRkaVctWGItUGtuMHp2ZEVJT0VSTl9TSnFFRjlXTEw1dXhRN2IxRnN1b0tFWDRmT0o3S3N2ZDZ0M0pycUY5c093WDR0TTFXbFh1bnZMTXJyMWxnTUhRQ3lvN25hcUtXRV9RY3ZKWmRhdnBTZ2VfS2NXVWpVVkx4VzFQcDRMcnZoT2Z4VHBHWkdVVmE2ZlVwdS0tS3JQcktlZnBfVzNCby0zaWFPSmtUVlJaUm1MWWk5WGVaSE1NMDZ1VjdSZ0xpZXJ3RmxGVnhtZ2xFc0tfSE5RTHgyUGxVWUVyOUE1M1puOXpOZzBQUkNUcmU1TA?oc=5",
+      "published_at": "Tue, 10 Mar 2026 02:45:39 GMT",
+      "published_ts": 1773110739.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Oil Surge Hits Indian OMCs: BPCL, HPCL, IOC Stocks Tumble - Dalal Street Investment Journal",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQUk8xNXVNN2tuRkJZVGoybEJYVlVBTjVFb2tzZUdmTGotZDNRODd2LWMwZHN0MTMxWkplWHhyUHdtYVZtSEtVbXR5YVdQWkdpZEFoemVXNmlBTDRMdFhzd2FVSGNGMWhSMkJNVVBKb3dzRXNEc2p4ZUNqUmV6WF9YOXBNdGZpYjdOYWtCVVJXc1Q1Y3JER0pJU2NDakVFNWo4ZzE3OVJB?oc=5",
+      "published_at": "Mon, 09 Mar 2026 12:36:40 GMT",
+      "published_ts": 1773059800.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Reliance, BPCL to JK Tyre: Here are most affected Indian stocks as crude oil prices surpass $115 by rising 30% on Monday - Mint",
+      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPX0xKQWtZTWVNV0FMZ3BKbHk0aGgwbGpCX2ZYNTJaM2lZRmhEMWVsc2NvS0N0UHRHQ1N0TGdoMzd5RzdxaEpnQjBaa2J6Qi1fMlFDQU9UN0xuUE9mX0xiSlZFRENoWG5KclM0UTBKU2VOc29YTU1iVXN0TThteG94bk1NY0pUbzI0cjBZZXBTaXFxMGF3TTlfa1Y4d0kxdkl6RE0wVlZ5bXM5TlNma1lCeGhjQXpZeHJMUTNINTlpdkdBTmc5S2VVNDMzMzJrVk1RSXcyNDlSNUdrSlkyeWM3dWhVNHJYY055VXg0cTBmdl9yWUg3YV9LQzVDQVpQV3dRU2RzZmV6a09iVGtK0gGSAkFVX3lxTE1jNFhlTFhrSEZjVEV2WlktS0NtbGZRLWptTDVDejFkaFg1QjNydkdRUkt2ZkI2Z2lIYXBENTBpUm9hZmpQOV9LajRVVUd4SV8tY1dyV0R3UC1kVWNnOHRGenV5QmtWSmF5am5SMGdQY25tbVNxaTdTRDdpMzRWNHFVZDRlTDItWGFyTjBRNlJNTzVUSnItSm5jUXNRSUsxRVA0X1JkMWtHVjk5UnJUa2NHREc2Y25VNFNKdE5xWjBIaF9JTU1ub0JyRk1EdDhHdUNIT0hVOXpodlJZdlZpY3dEMkJsYkxCRm1kUk9tVTdQT3J5YlFYUVlmaDB6dnB5T1Btek5vSU1SSlN0S2hrM1duY1E?oc=5",
+      "published_at": "Mon, 09 Mar 2026 07:42:06 GMT",
+      "published_ts": 1773042126.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "IOCL, BPCL and HPCL shares drop as rising oil prices shake Indian markets - Zee Business",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPcUJ0V3N3SkFlRjl4R2tKdnRld2JNQnFQdlNOMkZDaHhtR0U4R1cyTDlsY3o3M3VzMTJfSkE4SkdBUnNNYTJSTlRSdmNiU21BZ3pMazJtZ2dRSWZPMmxlTTZNM1lYYXl3LV9mc1BEV0swUklIYW90T2x3YUI1ZUNPWm1oc3Y2SjhENTc1emhwQ0w3ZVREZ1hSTEFKS185Mm9zam5qemRBVzFtWVRDLTZ2clltbnZERHo5cnNF?oc=5",
+      "published_at": "Mon, 09 Mar 2026 07:36:40 GMT",
+      "published_ts": 1773041800.0,
+      "sentiment_score": -1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "HPCL, BPCL to IOC Share Price Crash Up to 9% as Crude Oil Hits 4-Year High | Stock Market Today - Samco",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPS3FybGRpbjFsZ09WTGtpWnNseDdqRzBaWFRGZERrRm1YZ1ZHX0tBRGZ4NWE5N2dXM1VTeGZ1YzBYUzVpV0pPSVBZSmVmLXVJTjFGWmg3SEhLYTYzeElzYmVsWTVzaFhGNEp1YlRpSXZQc0c0bi1qdTNPU2w3UGl6THJZY0txeC1EcE9lUk9hbFI5dUFkNHFiaU56Q2xuNDRTU19xcnI4VkV0NzlUZGZIY3JabUJvY0d6LTh3bjZkS1VwR3B6b243bFJtUDlZa1QyUWRGSExn?oc=5",
+      "published_at": "Mon, 09 Mar 2026 07:12:13 GMT",
+      "published_ts": 1773040333.0,
+      "sentiment_score": -1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "IOCL, HPCL, BPCL tumble up to 9% on UBS downgrade amid crude surge; check targets - The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPSzRxX1BnVDZGaC1idGlTODFHSUVYaUVoTjdMcDJUMWt2RlBVVWlqRjlLREp1VjVfWFpQM0FVWi1oUE1wMkxIR09JZ0JSblBBWTNGOGdTYXJ5TGl4UWc1aGt5TExRZzhMSlZaMnJiZWlJWW9BeFZ6dmxycXlOMUtqRzVTQVZjdGwzQ043cHRLT1FmT3RTbW9KNGRSVlAtM1NfUUdNVkNEaEtTbzhIRlFscEdYNGxhN2FFMTlwODN0b2l1Z1B3SU5uSGZXbkhmb25aM2JEN0FsTFFPYi1xVUNybGdZNURHUdIB6wFBVV95cUxPSUwxNDJWdnJqYWJPeS1yQWJBc190cDFTdUZEZC1LeVhrdEtsR2wwTURPdHc1V2R1OG1MQ0NjTUVuSnJXTkE2UHgtS3BuUWt2czhnNkF2WU9oOExCU0txM1dVdUszTGhfbGFNV0FMUmh1SmxUQmZFRElKclRTbW1jX3JEeHRtbnZSYjROM1F1amxUQzF2SUhsQUR5RW14X0xFcFpheXBwYXJEVU52V2UzQVJ6eVZFYTlhZmpyNlVyaF82ZFlveGxaUC1qazJfR2hVNlhtN0pOTWNxaDNIeFRRU1V4cU1qOXhNRzdr?oc=5",
+      "published_at": "Mon, 09 Mar 2026 05:16:05 GMT",
+      "published_ts": 1773033365.0,
+      "sentiment_score": -2.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "UBS downgrades HPCL, BPCL, IOC stocks as crude prices breach $100/barrel - Business Standard",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOSXB0c1h6ZThKN3phal96bE1xTEFmODFkWjZRem0wTm5LSWlQeW1jYlJnY3didllqY0MzVWFDMFhUVUF3Ulcybnl5NDFSTXNxSUk1WEFsUUVYUktoZF9pUlRBeTlVSl8wb3lOYTZtVUJiWndfVlR2T2R0anNrYlVrczhXSmZCbGRVVV8zU3pncS1IQTRNY0E0ZzB0NUpKU2tlUURLSVB2R3NSN2lQaXJGUXgxWHFNdzZxT1A4QmsteHZ0eTVRcmxVZ2twallpS0MtZ3fSAdcBQVVfeXFMT1MwT1BWNFNuWnFlM3VlQnVhRGNWNnAydTFndUVsMFNPbXdhSUFlNGlzMEZOUm0yeGdCclUyelpiN2dIOVNEWUtVeGxWOWwtVXgtSWZveUdoSHMxVUx2b0h3Q1FzY0x5QkZQRXoxdTBWLUNwQ093UjRZM1BlQ1JJaWp5VlU1NVhkQzdTamJCZklQNmpDal93bWFQQmU3VHpxQ3Z2ZkRtejhrUl9QMDFqclF0X0FvQm93QzBDU3lNOEg1SFBWak1QTWhyTW94ejdkcmlUMW5RM3M?oc=5",
+      "published_at": "Mon, 09 Mar 2026 04:58:53 GMT",
+      "published_ts": 1773032333.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Today's Market: Sensex Today Tanks 2,275 Points | Nifty Below 23,800 | BPCL Down 7% - Indian Stock Market News - Equitymaster",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOQUxJVXFYeThkMmlYU3RVek9UNHZXR3loN013UlZGTk93cGdpcWVzVzRIRkMtWi1ldFcyRktwYkF1bTdVMGZGaHg2VUhnV1c0VjB1RVAyUmZCZzF2Q1JqRzltNzJ0ZHZHQ0dWZzdHTFBIcmgzU0pfZTN6NWpBMzRFcDZ1aW90dzhKb3YzT3FkbWVIV1dENDdGZ01GdGI5Z1VieVp4dFB4dHFKWlQ5Nm9SRDBCdlZyUzZOd0ZCaWVIb1A?oc=5",
+      "published_at": "Mon, 09 Mar 2026 04:50:25 GMT",
+      "published_ts": 1773031825.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Indian Oil, BPCL, HPCL shares slump the most in a year as surge in crude oil prices bites | Business News - Hindustan Times",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPSm5WVWdTbmxKZHBTWlA2SjZ2b3QxcWtvUUg3TFdEQVM4dm8ySjhYOFNkZ2dEemFfVWNLRUZqMzNnNmx4OVk3OVRtdG1tS0trUVZhZUlaR1hoaVEwS1hZSDg1MXBjajNoanBScnFfQVFFS21aVUNSenUxeWkxTWxKaXgzdFZnMi15Y1M1eU16VTN1T0hqREpfeGt4N2JYM2FDOUd6bkxlM01WZ2pGZDlmclh4b3prZWotOElyNjdEWWtIS0VuOFBkYTF0b01hcFMwUTVxSWZkQURPenhCWFlIWmlR0gHnAUFVX3lxTFB5SUl6MXpibUJLci0tVng5MzNsMlBaXzNTNmFFU0l4b3NDdzVFUEFaRHJYbXBucGlCRmNoWmg2dnRlcDN3RmRZak50NjRlb05qVGtLdDhDRDY1VjVKTHdYN2ptNDFEVVNtOW5hbUczOEIzSFhWZTdPNWxSYzVWVjhza0RZcUFpbnl3ZVMtekN3NUt5QUZVa3JEM2UybU9LTk0zVVViR2I5QWRaV3dtT1hwNlhBa3VfQU14LUVkSHdNWlNSVEFxcXdUbUVZTndNYkxaTFJwVXI0TzBhOURMRERpbjBWc25QOA?oc=5",
+      "published_at": "Mon, 09 Mar 2026 04:46:20 GMT",
+      "published_ts": 1773031580.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "OMCs HPCL, BPCL, IOC shares fall, ONGC, Oil India, paint and aviation stocks slide as crude rally shakes markets - BusinessLine",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNd3NMdlZxa1B0ZlZGZFpyV2lxR3U0eVJ5cUNBWjlmTXdvclJnc0ZEY0xrU3hBaVhWdElqeFpoME9PNFBZWV9BeVQxQnBjUkl5dXhhMS1WUUJqdW9RSXltSUJaTmpsMkhWNVExRlNYS0NoNXV3TUpaZ0Q0V1dhWE1DWHlvZkFRLWRHYXI4V1VMaW5sdDdiQ1pmb18td3hVY3E4dU05bFhndnJiRndYaWVsa3dONjgxRGd3eVNweFJkdmk5Y0JYSmE4ZXMwRVYxdXRyOWJmR3Y2WmhxdUFRbGItalY3b0jSAesBQVVfeXFMTWNDY3luSXZwNngzZDhjOWVfcFpHXzJRcmR0VkY3NXpINGxDRWRsZU8wdkxkZFB6bzI1Wm1iNDNWZkZNdF9RQ2hLdTBUVmo2TTE0M0JoS3BBSjAzUWlzNGt1TUM0dk5xODd6WndpYXVQQml2ZjJQV0N3REdydHdfR2E3a2R5STlDUmU5S1YxX0VkZ09sRzRYRzMxZEVPcUwzaXF3MFRhTnlFSm9rdlBZR0ZHalZ0UU1QZUdSUTdSaW4xTkZTLVpIcmd6V2dXMjdqNGV5TVNLcHdRSUI1TERNODBqYWNZMnRST2Vrbw?oc=5",
+      "published_at": "Mon, 09 Mar 2026 04:35:58 GMT",
+      "published_ts": 1773030958.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    }
+  ],
+  "top_industry_news": [
+    {
+      "source": "google_rss_industry",
+      "title": "Buy the fear? Indian markets delivered strong returns after past wars even as Middle East tensions roil stocks - MSN",
+      "url": "https://news.google.com/rss/articles/CBMimgNBVV95cUxNaWtlWW9UYWdob216eWxEXzVicjVDdGlMbFpXT210VU5Qa3dpc0MxWnhPQWRNRElhenR0UFhNbEFmbTkyeTNOcnZoRy0wUDRRTFVzamNLMnhJODJJNlR3TGoxOEgtWXNiNXQ4UHZibjFtaHd2enJ4Z1EtbElKMmVzQlFtaW0xdHRJRWIyLTNJbTExSExzam8xZWpFTlJsVV83RUtGblB5aHA0dG55YW8xOENnRmlnT2NUTXN2aXRldURRY0FEQTVxVy1jRXdhQl8zWGt6YzNpNzRPdlZ3aUx2WEtsZEt2ZEhNWXhWNEhxemtEaEg4SFJTUldsV2RTUUhMdFlxMUhjV2N5RDBzTG0yeVUyYThwT0hCaFdVNTZIUGFsM3REa3ZRUTV2clp2eFVQS0dfMFdxRGgzYTdIYXBvWlhUT3lHbkExMTFxVWVxRkhVZFNxS05JVmhZc1RXam02c3lQV1dDNHI2bWg0MHNGWkhHaGMwLXM2MEdfS1h4MWVOZXVqcDlFYjZUUzBzd21SS2MtbE1JSlR1QQ?oc=5",
+      "published_at": "Fri, 13 Mar 2026 19:20:46 GMT",
+      "published_ts": 1773429646.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Bharat Petroleum Corporation Limited",
+      "sector": "Energy",
+      "industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Fitch ratings raise India’s GDP growth forecast to 7.5% for FY26, sees Oil at $70 in 2026 - Mathrubhumi English",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNFllRWhsbElWalcxTXgxRTduczMwUFhKRjhySkF4SS1GOHg3dk5wV08yYzNRTTN3LXZlZnJTU3ZYM2FKN1ZZOHlMU3BIUzFjOUJMUUw5SnB6U3hqYk9ZREJFSUEtLXNzU0ZrckVuWFRNZ2tTWnJoTjlncFZYOHROSno1WXFfdFZqNy1sWjFLY0Y1ZGFqVDgtRURKMG9lZldDMGl6NnBoRmlBUUJxaTRQeWJla2FnX3JjeG9XQ3Q2NWxUZDBRaDczdGsxdGNWNmZkdTJMODNBVdIB1wFBVV95cUxPNFllRWhsbElWalcxTXgxRTduczMwUFhKRjhySkF4SS1GOHg3dk5wV08yYzNRTTN3LXZlZnJTU3ZYM2FKN1ZZOHlMU3BIUzFjOUJMUUw5SnB6U3hqYk9ZREJFSUEtLXNzU0ZrckVuWFRNZ2tTWnJoTjlncFZYOHROSno1WXFfdFZqNy1sWjFLY0Y1ZGFqVDgtRURKMG9lZldDMGl6NnBoRmlBUUJxaTRQeWJla2FnX3JjeG9XQ3Q2NWxUZDBRaDczdGsxdGNWNmZkdTJMODNBVQ?oc=5",
+      "published_at": "Fri, 13 Mar 2026 11:42:19 GMT",
+      "published_ts": 1773402139.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Bharat Petroleum Corporation Limited",
+      "sector": "Energy",
+      "industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "source": "bing_rss_industry",
+      "title": "Prolonged Middle East conflict, crude above $100 may strain India’s external sector: Standard Chartered",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49cc1499347549cc6a68b1ee43c6f&url=https%3a%2f%2fwww.fortuneindia.com%2feconomy%2fprolonged-middle-east-conflict-crude-above-100-may-strain-indias-external-sector-standard-chartered%2f131235&c=12945210719039704569&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 00:11:00 GMT",
+      "published_ts": 1773360660.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated",
+      "company_name": "Bharat Petroleum Corporation Limited",
+      "sector": "Energy",
+      "industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Bharat Petroleum Corporation Ltd Technical Momentum Shifts Signal Bullish Outlook - Markets Mojo",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPamJhYmMwVDJNVmlhUVlmRTZ5cXJxUkR4ZlNkUWpkQ3NZblRpOVhaSVRQNzJORHdreW0xOGFJX2pwZERwaDBXOV9hRC1ManptY29wMTRnTU5PcjBqT0E2LXhUUmJ6QmxIaERweXZEbmItb1RsalROQUxzeTJLblNMUnEzM1dIQk0zOFMzOVlaR3o1Nm0xQnc5NDByTHM1QklpVUlPemR2WmlEX3Y5VmFKVFZ3bzBNNUFyV2xWS1dfYjNQRTFMVnU5RHl5RkljWndnNDY3V3VB?oc=5",
+      "published_at": "Thu, 12 Mar 2026 23:55:22 GMT",
+      "published_ts": 1773359722.0,
+      "sentiment_score": 2.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Bharat Petroleum Corporation Limited",
+      "sector": "Energy",
+      "industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "LPG bookings crash Indane's IVR system in parts of Tamil Nadu - The New Indian Express",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOR2thZnFjeHdQUVJSQ3BtTnh5dUN2bXYyS1N5a251Sk0xSndpVjNJSmlkdjFhNGR4ck05bWo0UURPblNuOWtyelF6RDJhN09PQ3N3OG1nTzRHRGtPRlhfUERWSXFBQXFJTmMtWld1UGV0MThIYW44Rmg5TjJIa3E0ZlBNUU1TUm53TDUzYVdEZHVCUTZXV05sVXhGQjJNZFdwRzdveG4wbmMtdG9zUkZraUJCblhCT3RsNUlnVlVGbTHSAc4BQVVfeXFMTW9LUEZfUV9BN1plQUZKZk1zOWw4ZmJ6QW9FNlZ0eDAyRjc3aGNMOXNrdXEzTXhZV1c3cUpQeWFxXzhYVkhjY1kyQVg3T2tnQ1BUNkxvbW93ZFk3Ylk0UkNGRjM1NFJhVkhraGd5NnJCM1ZEdjRJNTg0ZVFfaEI5b09FdTBxZHFWbk5Jd1kxZzhCZ0ZOS3did1hBMkxNc1FjYnFva1pMWVlKQnQxUEQyemVSY25rV1dVTmlfNnlWeC1DOXBrUVFUdFU5N3psMUE?oc=5",
+      "published_at": "Thu, 12 Mar 2026 02:18:45 GMT",
+      "published_ts": 1773281925.0,
+      "sentiment_score": -1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Bharat Petroleum Corporation Limited",
+      "sector": "Energy",
+      "industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "IOC, BPCL, HPCL Could See Margin Pressure Amid Oil Price Spike: S&P - outlookbusiness.com",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSU9YVlBjVnJWZ0JydGozeTJCemNDTHc3OXNsM05ldFBUSmZxMUFNcmJVa09ydDJRNkhXM1BQRHNUWkVmczlxOWdCZTk5MDZ4WF9pc0Q2RXYtV2NHSXY5b3dEXy1IY01tUG1xS2VKekg4QWViQTBvZUd1YkhrSi1reHhKdHZ3cXhoeDNzYXc2MDJEWEFmYlNXdEJoZ2JSUG1uckhTOEM3QXdhTEFlOU9BN0tMWVdIQdIBtgFBVV95cUxOSU9YVlBjVnJWZ0JydGozeTJCemNDTHc3OXNsM05ldFBUSmZxMUFNcmJVa09ydDJRNkhXM1BQRHNUWkVmczlxOWdCZTk5MDZ4WF9pc0Q2RXYtV2NHSXY5b3dEXy1IY01tUG1xS2VKekg4QWViQTBvZUd1YkhrSi1reHhKdHZ3cXhoeDNzYXc2MDJEWEFmYlNXdEJoZ2JSUG1uckhTOEM3QXdhTEFlOU9BN0tMWVdIQQ?oc=5",
+      "published_at": "Wed, 11 Mar 2026 12:38:15 GMT",
+      "published_ts": 1773232695.0,
+      "sentiment_score": -2.4,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Bharat Petroleum Corporation Limited",
+      "sector": "Energy",
+      "industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "HPCL To IOC Share Price Fall As Brent Hits $100 | Stock Market Today - Samco",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPOWo0eVBlUzVRUVlfTGRfNlB4bVA1MEc2UTI4TnYyTEZuMGRIcFdkdXlDY0RxVy1aUWs0N09ya0RjQ0txSzVDV2pRWUNVaTlPZmZPQUF5Mmo0ZGthMVZpNmhvSlJNQllOakhnVGVoeVBvQVJEUEVhMjRVZ2tsaTF2WVphd1hkOXgxc0RDRzJVSThZVy16OGZ0M2hYY2ZQY3o1U3otT0xsd3gwS2Zsb1RHRDVOQzNaV3lId3M4eWVTOTdzaVRoMlJQeURMTlZDdw?oc=5",
+      "published_at": "Wed, 11 Mar 2026 12:23:58 GMT",
+      "published_ts": 1773231838.0,
+      "sentiment_score": -1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Bharat Petroleum Corporation Limited",
+      "sector": "Energy",
+      "industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "BPCL, HPCL: Only 2 PSU stocks FIIs loaded up on in Q3 FY26? - The Financial Express",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTWJmb2NIeWUxN1p2aFdfTzlMaFRZeDZVc3o0dnJBYVE4MjhsNU9zZ3pwdy1MWUVQeXlRWmEzd3l2dVpuY0tqNjQ3V2tLR05ELXlpWTgzME5LVTRTZV9lWEdmaGJiRnFJTVFleXBLaXBoaXR2VDZDSE1FY0JPRHJIbzhzUlc5YjRIdm9RcWxuNEpxU2taNUExU3RoZi0xOWhpNEhuZHdBM3dsQlY1dGNVb1Y4ZkpsY0l6ejhZVNIBwwFBVV95cUxQLS1TM1FDN1pqR0dTako3dlFWaWlXM1YzMVpyUVpPYU9nUXhoV0NJV19jeG00aktJbkdzQ0FhakRxcXBzczJKeDRVZ0dkbGxWYTc2ZXFuMHptLVBHaVdUWWh5bFBmNE8zOU9jSzhGZ1EzLUtPaEJRdHRmWVFqRzhLOE9Ra2ExRm8ycEhkVWdnQlc4NWJuM1AxT0NfRmtGSDVvTVppSG5RX2lFR01URVo0dFVjOGxWdnVGdFhBOXJaSGYtVzA?oc=5",
+      "published_at": "Tue, 03 Mar 2026 08:00:00 GMT",
+      "published_ts": 1772524800.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Bharat Petroleum Corporation Limited",
+      "sector": "Energy",
+      "industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Indian Oil, BPCL, HPCL Fall As Crude Oil Jumps; ONGC, OIL India Rally | Stock Market Today - Samco",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPU2cyeWg0NUdmeS0tYzZZMElrZC15eDk5SFN2YXJoc3liM0ZYcmRmVGhMdnlRd0J4b2EzUUM4OGlLc0FScUFpSGs1b1FuQVRQbGU0NURaYXU0Ynp0eThfazdYcjZYSHdZRllLUU9GTlpRUVJtUXdEQktraXlIeTdUSmljTjNOMmZuT0s1RF9uSktFR2pmOXRndzhMb3pCV1NJWEdNeElobzZpZm94cGRmLXVxSld0TUxVTllsNmxjNW81R3VpcnkzbFNqVlUwZmxxMGh1Ml9PdHRmVUJjWjdZSUZaMG5ZcUdMTk93ejFDNWl2bHNBNVJ0RDN1TWtUb2NzZTFv?oc=5",
+      "published_at": "Mon, 02 Mar 2026 08:00:00 GMT",
+      "published_ts": 1772438400.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Bharat Petroleum Corporation Limited",
+      "sector": "Energy",
+      "industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "BPCL Inaugurates 71 MWp Solar Power Plant at Prayagraj, Strengthening Its Renewable Energy Portfolio - TheWire.in",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNQXIyMGhMTkRiRmVMTnZjS0hQNC1fb3N1LWgyOHlqNVI5ZEdqZ2NxTXBvVWNKVzdTY3hvYjk5Mm40b1dIcWlERGs2QmNBVnFlelVpdFRuZEIybXFuNlB2dG5MLVFEYjlkY2tSMkJkcGNkRmF4eGVpTVNicU5fREdWb25PMnlDeWhNTmxhTWhRRmxrUVk0WVE1bzkwY2F4ZFp4MUVrYTBGa1pDQ09QSDEyZXBCaWgzWkxnbF8ydFJwMG5NMTNFQVhzRHpUZVozblJ6UGdmb9IB2gFBVV95cUxPZ0hwXzZDd3BOd0J5YU1oWWhlbG9QcnhKaFQyVld2RlNrUE9TdV9tdHZnUG5RVUh3NFZDRW8zblRfSjI0N3hZbkZWN1pjWThRaXJVeVRzRkUxZ3JMZHc4Z2lzYmpNcVhjaUctNzdmdE9YdExyTHV6YWQyQUZWR2c3emFtVlRRMzc0bEF2RjZodmE4WUlwcmdFY1hNNkE0cFU1TTFJRl9vVVdxXzlkUWJNRE9UazFYWEJGdFRJWGNJbWQyWXJxeEd5VFQ2dlpvZ24zczlRdGlXa1lvUQ?oc=5",
+      "published_at": "Wed, 18 Feb 2026 09:29:45 GMT",
+      "published_ts": 1771406985.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Bharat Petroleum Corporation Limited",
+      "sector": "Energy",
+      "industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Oil and Gas Market Size, Share | Analysis & Forecast [2033] - SkyQuest Technology",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9tSktEYTkyOGgwazEzeHFHeHhnS1NNRlNWcnFLOURwTXVNbm5XbU1FRlRCbGtHbDJ3Ums5X3ZJTDRQWnBuTGR1amtqU29wbnd2RzJuRmVaM2l4WTNFQ01Sbg?oc=5",
+      "published_at": "Thu, 12 Feb 2026 08:49:27 GMT",
+      "published_ts": 1770886167.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Bharat Petroleum Corporation Limited",
+      "sector": "Energy",
+      "industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "BPCL, Trafigura Sign Crude Oil Supply Agreement Amid Rising Energy Demand - outlookbusiness.com",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPMXRXcnI5MTRRdzhFUGo2MmNkREFZT3V1LXpURFIzT3ZnR2dBd0FrRDFENmUzVXFXeXhoM3pNZlJnTk1WNS1BX3ZrcUlDZWhQUHYybFY1SGpsNXkxbnZXQkhlR3JWYjFoTmw4QXoxNE9VWDQwbjFrSVpseWtGT0RMSEozUUZPUE1lTlHSAZcBQVVfeXFMTktBTFZ5LU5hWlZsX0x0MDVlRGstTENJXzB2NXB3a2NNS1pqZDQ1WmtqSDhCSWs5VHpsNmhWeFB0QVlKR1RNcnZCZS1tRFYyM0dOUUtHN0ZpN19SQTJkNzVzVEZxTGhLY0w5eDdKckdtM3hLcFQzRzRDR01IX2tBbVJRZkNPeGI4SDFKdEtsWkxXOXVQcWtJYw?oc=5",
+      "published_at": "Tue, 03 Feb 2026 08:00:00 GMT",
+      "published_ts": 1770105600.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Bharat Petroleum Corporation Limited",
+      "sector": "Energy",
+      "industry": "Oil & Gas Refining & Marketing"
+    }
+  ],
+  "top_macro_news": [
+    {
+      "source": "google_rss_macro",
+      "title": "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRVNOajVzSUJWU3Q5R2toMjVnZVZMNDhLclozWDdNODc1OU1qbVFjYnFTT0Z1SUZaaExuY3FJajFkdWtOWk5kdWplT0J0Yk9RcnlDVnlvQmJZNC1jVDVHZmRhS0Z0X0JiXzFETHRnaUVac1pEMmZfWE9raXFacFpwR1dSaEVST0Ntc2k1czN4emNQVFlWSHE3V1ZhMW80OUFMYmN6dEwtTkRadm44enc?oc=5",
+      "published_at": "Fri, 13 Mar 2026 15:17:26 GMT",
+      "published_ts": 1773415046.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49cc2252c4713933df5d422e6c41e&url=https%3a%2f%2fwww.livemint.com%2fmarket%2fstock-market-news%2fus-china-power-shift-global-markets-india-outlook-mirae-asset-swarup-mohanty-11773376870759.html&c=15555016077234823276&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 14:15:00 GMT",
+      "published_ts": 1773411300.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Fed to delay rate cuts as war clouds the outlook",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49cc3acbf425d828710fb98cf37ff&url=https%3a%2f%2fthink.ing.com%2farticles%2ffed-to-delay-rate-cuts-as-war-clouds-the-outlook%2f&c=127436243108543137&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 13:40:00 GMT",
+      "published_ts": 1773409200.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss_macro",
+      "title": "Bitcoin holds above $71,000, defying rising dollar, oil and U.S. bond yields - CoinDesk",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbHB1NE1GZ1dLTWpvOWNseW5QXy1jbWVHcTYzcXF6NWotU0NHOG1XNEUzcDd0ZTctMW1URXZzSW5RQ1djc1h3a0xOM0k2Tkd5TjRWcE0wUXRwZjg4WktmZ2xDWnpLa0RhR1BsRzlrZlVlVzhONmQ0eW51VXJIWFQ3NFJkd0VXZ2VsUnY4VTBuWjU5LXpxX1BPYUIyaEZKQVdEWUU3a25CY0RvN3NrVW10cFNUTWtxSHdhSWI4?oc=5",
+      "published_at": "Fri, 13 Mar 2026 09:34:10 GMT",
+      "published_ts": 1773394450.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Gold Silver Rate Today Live Updates (13 March 2026): Gold, silver futures fall on MCX as rising crude oil prices dim hopes of early rate cuts",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49cc38eb445b386df017216d6b244&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2flive-blog%2fgold-rate-silver-price-today-live-updates-mcx-gold-18k-22k-24k-rate-iran-isreal-us-war-latest-news%2fliveblog%2f129534056.cms&c=4108291931945502437&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 06:00:00 GMT",
+      "published_ts": 1773381600.0,
+      "sentiment_score": -1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Markets Today: Sensex Declines 830 Points, Nifty Slips Below 23,650 Amid Iran-US-Israel War",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49cc2252c4713933df5d422e6c41e&url=https%3a%2f%2fwww.news18.com%2fbusiness%2fmarkets%2fmarkets-today-sensex-falls-1000-points-in-opening-trade-nifty-below-23600-as-oil-surges-past-100-9956009.html&c=7425380694736114227&mkt=en-in",
+      "published_at": "Thu, 12 Mar 2026 03:39:00 GMT",
+      "published_ts": 1773286740.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Share markets continue to bleed as West Asia tensions dampen sentiment, Sensex over 800 points down",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49cc2252c4713933df5d422e6c41e&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fmarkets%2fshare-markets-continue-to-bleed-as-west-asia-tensions-dampen-sentiment-sensex-over-800-points-down%2far-AA1Yt9yX&c=14300386732484515462&mkt=en-in",
+      "published_at": "Thu, 12 Mar 2026 03:04:15 GMT",
+      "published_ts": 1773284655.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Trading Day: Oil and yields up, up, and away",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49cc38eb445b386df017216d6b244&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2ftrading-day-oil-and-yields-up-up-and-away%2far-AA1YqbzQ&c=11227118164045986945&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 14:08:08 GMT",
+      "published_ts": 1773238088.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss_macro",
+      "title": "Markets Confront the Economic Impact of the Iran Conflict - Natixis CIB | Natixis Corporate & Investment Banking",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOVpkVlFlOG1lbEdUZEM2VU40clhkdUtsN3l6Z3Rkd2g4WTBNMVNKSFBmMmkyT1M0RGwtZGJxN1ItZVVrMEU3UnVfWFJ6UmpZUVppV09ZelhMWHNvZmhtbFk3ajc0UnlpY0dZeW51MGJnSUU3dGhYRGFQaE44NjJVaFFBVWFyVlNhampDdXFic0dCZXZ3YW5ScWUtWQ?oc=5",
+      "published_at": "Wed, 11 Mar 2026 10:55:26 GMT",
+      "published_ts": 1773226526.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Oil price spike could push US inflation to 4%, delaying Fed rate cut",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49cc3acbf425d828710fb98cf37ff&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2foil-price-spike-could-push-us-inflation-to-4-delaying-fed-rate-cut%2far-AA1Ym49n&c=7065206888862373143&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 03:02:32 GMT",
+      "published_ts": 1773198152.0,
+      "sentiment_score": 1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    }
+  ],
+  "chart_path": "reports/BPCL_NS_20260313_232510_trend.png",
+  "long_term_chart_path": "reports/BPCL_NS_20260313_232510_long_term.png",
+  "rich_report": "Indian Swing Trading Multi-Agent Report\nIndicator Signal: SELL | Trend: close=326.35, SMA20=363.38, SMA50=366.15. Momentum: MACD=-10.792, Signal=-4.610, Hist=-6.182, ROC10=-14.36%. Oscillators: RSI14=27.4, StochK/D=16.3/8.1, Williams%R=-83.7. Risk: ATR14=12.84, Volume=11176171 vs VolSMA20=9580568. Momentum Score=13.6/100 | MA=Sell, Trend=Falling, RSI=Oversold, MACD=Bearish.\nPattern Signal: SELL | setup=gradual lower-high structure, slope=-7.8009, breakout_up=False, breakdown=False, bull_engulf=True, bear_engulf=False.\nTrend Signal: NO_TRADE | setup=sideways trend channel, support slope=-0.052, resistance slope=-0.004, price position=-2.93 in channel.\nNews Signal: SELL | combined sentiment=-0.02 (stock=-0.05, industry=0.10, macro=-0.09). Stock articles=27 (trusted=0, unrated=27); Industry articles=30 (trusted=0); Macro articles=30 (trusted=0). Sentiment strength=0.10. Inference=BPCL and other OMCs are facing significant downward pressure due to rising global crude oil prices (topping $100/bbl). Recent reports confirm significant stock price declines for BPCL in March. The negative macro impact of high crude costs on refinery margins outweighs neutral corporate developments, providing a clear bearish signal..\nMarket Sentiment: SELL | NIFTY 5D=-4.55%, 10D=-7.23%, 20D=-8.92%, SMA20 gap=-5.7% (below). India VIX=23151.099609375, 5D chg=-1299.3, news sentiment=-0.02. Votes: bull=2, bear=3.\nRelative Strength: SELL | stock 10-bar return=-8.43%, NIFTY=-3.44%, alpha=-4.99%.\nUS Trend Signal: SELL | Global risk-off backdrop. SPX 5D/20D=-9.44%/-15.80%, NDX 5D/20D=-5.31%/-10.29%, VIX=319.30, DXY 5D=14.91%.\nFinancials Signal: BUY | Fundamentals supportive. Coverage=62%. ROE=16.39%, Margin=3.04%, RevGrowth=N/A, EarnGrowth=N/A, D/E=0.751, CurrentRatio=N/A, PE=10.387. Quarterly trends: RevQoQ=5.76%, NIQoQ=5.11%, OCFQoQ=N/A, DebtQoQ=3.77%, FCF=N/A, Cash/Debt=0.009. Analyst target=N/A (N/A upside, ? analysts). 52w Hi/Lo=391.650/258.310, position=45.74%.\nMarket Setup Signal: NO_TRADE | Breakdown pressure. Tape read: 5d=-9.4%, 20d=-15.8%, volume ratio=1.80, momentum=13.6. Support gap=N/A and resistance gap=11.2%. Trader read: The asset is in a strong bearish trend with negative momentum and significant relative weakness. However, with RSI at 27.4 and price well below moving averages, the stock is deeply oversold and prone to reflexive bounces or mean reversion. Entering a new short here risks getting caught in an exhaustion rally.\nCatalyst Context Signal: BUY | Mixed catalyst tape. Backdrop read: news sentiment=-0.02, analyst upside=None, 52w position=45.7. Core read: BPCL demonstrates strong valuation support with a P/E of ~10.4 and a compelling dividend yield exceeding 8%. The balance sheet is manageable (D/E 0.75), and the stock is trading well off its highs, providing a favorable risk-reward entry. Robust fundamental health and consistent profitability support a tactical long position.\nTrader Intel: NO_TRADE | Oversold vs Momentum Clash | Mean Reversion Trap Avoidance. Thesis: BPCL is exhibiting classic signs of exhaustion selling with high volume spikes into a localized low, creating a disconnect between deep value (high dividend, low P/E) and aggressive trend-following sellers. The technicals are screaming 'avoid the knife' while the fundamentals suggest a floor is near, creating a high-volatility vacuum. Why now: The stock is at an extreme RSI level, making immediate shorts dangerous and premature longs statistically unproven until the selling pressure dies down. Why not now: The tape remains decisively bearish with 5d and 20d returns deep in negative territory; there is no 'buy the dip' confirmation, only a 'don't catch the knife' warning.\nMaster Confluence Committee: BUY=0.146, SELL=0.411, NO_TRADE=0.165. Final=SELL, confidence=0.734. Support=['technical', 'pattern', 'news', 'market_sentiment', 'relative_strength', 'us_trend']; Opposing=['financials', 'catalyst_context']; Neutral=['trend', 'market_setup'].\nRisk Plan: size=0 shares, ATR=12.84, stop=N/A, target=N/A.\n**FINAL CONCLUSION**\n- Signal: NO_TRADE\n- Confidence: 0.600\n- Action Bias: Wait / no-trade setup\n- Playbook: Mean Reversion Trap Avoidance\n- Thesis: BPCL is exhibiting classic signs of exhaustion selling with high volume spikes into a localized low, creating a disconnect between deep value (high dividend, low P/E) and aggressive trend-following sellers. The technicals are screaming 'avoid the knife' while the fundamentals suggest a floor is near, creating a high-volatility vacuum.\n- When to Act: A daily close above the previous day's high accompanied by a volume contraction, signaling sellers are exhausted.\n- Execution Style: Wait for a stabilization base or a failed breakdown to confirm institutional absorption.\n- Invalidation: Fresh lower lows below the recent swing point with sustained heavy volume.\n- Expected Holding Duration: 2-6 weeks\n- Context: sideways trend channel\n- Risk Flag: High volatility; potential for further flush if broad Nifty energy sector drags.\n- Stop-loss: N/A\n- Targets: N/A\n- 52w Range: ₹258.31 – ₹391.65\n\nDetailed Agent Reasoning:\n- technical: BPCL displays a strong bearish signal with the price at 326.35, significantly below the SMA20 (363.38) and SMA50 (366.15). Momentum is deeply negative with MACD at -10.79 and a 14-day ROC of -14.36%. Oversold conditions are confirmed by RSI14 at 27.4 and Williams %R at -83.7. With volume (11.17M) exceeding the 20-day average (9.58M), the selling pressure is confirmed. The combination of falling moving averages and bearish oscillator alignment supports the sell rating.\n- pattern: The price action reveals a consistent lower-high structure with a negative local slope of -7.80. Despite a bullish engulfing signal, the broader structure remains characterized by a lack of upward breakout momentum. The pattern analysis reflects ongoing distribution without establishing a reversal floor. Given the negative slope and failure to breach resistance levels, the structure indicates continued downward bias, warranting a sell stance.\n- trend: The asset is currently locked in a sideways trend channel with a neutral slope (-0.028). The price is positioned at -2.93 within the channel, near the established support level of 358.57. Because the channel width is narrow (11.00) and the trend lacks a decisive directional slope, the signal is classified as NO_TRADE. Technical indicators suggest waiting for a breach of these boundaries to confirm a sustained move rather than relying on current range-bound behavior.\n- news: The signal is SELL due to combined negative sentiment of -0.02. Macro headwinds, specifically global crude oil prices approaching $100/bbl, are heavily pressuring refinery margins. Industry and macro sentiment outweigh neutral corporate news. With 27 recent articles citing significant price declines for BPCL, the inference is that high input costs are actively eroding investor confidence and financial outlooks, creating a bearish environment for the stock.\n- market_sentiment: Sentiment is bearish, driven by the convergence of falling price action and macro-economic concerns regarding crude oil volatility. Institutional focus on energy sector margins amid high global energy prices has led to a negative outlook. Market participants are showing increased selling volume compared to the 20-day mean, signaling a lack of appetite for long positions in the current refinery margin environment.\n- relative_strength: BPCL is showing significant underperformance, evidenced by the 14-day rate of change at -14.36% and an RSI of 27.4. The price is trading well below major moving averages (SMA20/50), indicating that it is losing strength relative to both its own historical baseline and expected sector performance. The negative momentum score of 13.6/100 confirms its weak position against broader market benchmarks.\n- us_trend: Not applicable to this specific asset, as BPCL is traded on the Indian National Stock Exchange (NSE). However, global macro trends impacting the energy sector, such as USD-denominated crude oil prices and general market risk appetite, continue to exert downward pressure on international and local oil marketing companies.\n- financials: Financial metrics reveal a bearish outlook for margin expansion. The company faces direct pressure from rising crude oil costs, which limits the profitability of downstream operations. While specific earnings figures are within expected ranges for the industry, the current high-volatility regime and reliance on volatile commodity prices exacerbate risk. The structural decline in price aligns with the market's unfavorable reception of these cost-intensive operational conditions.\n- market_setup: The setup is characterized by high volatility (ATR of 12.84) and sustained selling pressure. The market is attempting to find support near 326.35 after a steep decline from levels above 360. Volume confirms active selling, indicating that the move is not merely a liquidity-thin anomaly but a systematic rejection of higher prices. A lack of structural recovery suggests the current setup favors further testing of lower support levels.\n- catalyst_context: The primary catalyst is the persistent elevation of global crude oil prices, which directly impacts BPCL's refining and marketing margins. As an oil marketing company, BPCL is highly sensitive to the cost of raw inputs and regulatory price caps. The lack of relief in commodity markets, combined with recent negative price performance, serves as a continuous catalyst for institutional selling.\n- confluence: Confluence is strong for a bearish outlook, with technical, pattern, and news indicators all signaling sell. Moving averages are trending downward, RSI is in oversold territory without a reversal signal, and the macro environment regarding oil prices remains negative. The alignment across multiple analytical dimensions increases the confidence in the bearish signal despite the consolidation attempt within the price channel.\n- risk: Risk is elevated due to the oversold RSI condition (27.4), which could trigger technical bounces. Additionally, the ATR of 12.84 indicates high volatility, meaning sudden, sharp moves in either direction are possible. While the trend is bearish, chasing the stock at current levels carries the risk of a mean-reversion move, especially if oil prices stabilize or regulatory adjustments occur.\n\nGemini Master Reasoning:\nSetup\nBPCL is currently caught in a classic mean-reversion trap. The price action shows a steep, high-volume descent that has pushed the RSI into oversold territory (27.4). While the stock sits near a potential floor supported by decent fundamentals (P/E ~10, high dividend yield), the technical tape is decisively bearish. The stock is trading significantly below its 20-day and 50-day moving averages, and the recent 5-day return of -9.4% confirms aggressive institutional selling.\n\nCatalyst\nThe primary headwind remains the surge in global crude oil prices, which continues to compress refinery and marketing margins for oil marketing companies (OMCs). While fundamental valuation suggests the stock is undervalued, the macro environment is actively working against a recovery. There is no positive catalyst in the near term to absorb the current supply.\n\nFriction\nThe primary friction is the conflict between the oversold technical reading and the negative momentum. Attempting to catch this bottom is \"catching a falling knife.\" High volatility (ATR 12.84) means that even a minor bounce can be immediately reversed by broader Nifty energy sector weakness. The lack of a stabilization base makes any entry high-risk.\n\nExecution Plan\nSignal: NO_TRADE.\nI am remaining on the sidelines. My focus is to wait for the volatility to contract and for the selling pressure to exhaust itself. \n- Buy trigger: I will only reconsider if the price prints a daily close above the previous day's high, accompanied by a noticeable contraction in trading volume. This would confirm institutional absorption.\n- Invalidation: If the stock marks fresh lower lows on heavy volume, the bearish trend remains in full control.\n\nVerdict\nWait/No-trade. The risk-reward is currently distorted by volatility. The stock is interesting for a potential mean-reversion trade in the next 2-6 weeks, but the current edge is too weak to justify capital deployment. Patience is the only prudent play until the tape shows signs of a durable base.\n\nLLM Token Usage:\n- Input tokens: 15524\n- Output tokens: 2349\n- Total tokens: 17873\n- Estimated cost (USD): 0.0\n\nLONG-TERM OUTLOOK (Based on News, Financials, and Price Data)\n- Stance: LONG_TERM_NEUTRAL\n- Confidence: 0.550\n- Sector: Unknown\n- Data coverage: 2715 daily bars for long-term model.\n- Price trend (1Y/3Y/5Y/10Y): 27.560198082750787% / 100.39913655027513% / 57.27711137518825% / 119.59179206184314%.\n- Long-run quality: CAGR(3Y)=26.075862719799225%, CAGR(5Y)=9.479575507250892%, CAGR(10Y)=8.183645095954617%,\n  Max Drawdown(5Y)=-52.620424836638044%, Vol=33.78721507255471%.\n- Structural trend: price vs 200DMA=-5.407509173578095%.\n- Note: N/A metrics indicate insufficient history for that exact horizon, not an implied negative value.\n- News signal: avg sentiment=-0.02 across stock/industry/macro streams (15/12/10 items).\n- Fundamental location: 52w position=45.7%, 1Y return=27.560198082750787%.\n- Street context: analyst upside=N/A% from N/A analysts.\n- Macro overlay: India sentiment=SELL, US trend=SELL.\n\n--- VALUATION SNAPSHOT ---\n- P/E (trailing): 10.39\n- PEG ratio: N/A\n- Price/Book: 1.70\n- ROE: 16.4%\n- Debt/Equity: 0.75\n- EV/EBITDA: 4.51\n- EV/Revenue: 0.38\n- Book value per share: 187.59\n- Enterprise value: N/A\n- Gross margins: 8.9%\n- Operating margins: 4.3%\n- EBITDA margins: N/A\n- Total revenue: 4,387,377,700,000\n- Total debt: 611,005,700,000\n- Total cash: 5,579,300,000\n\n--- QUARTERLY FINANCIAL TRENDS ---\n- Revenue QoQ growth: N/A\n- Net income QoQ growth: N/A\n- Operating cash flow QoQ: N/A\n\n--- DIVIDEND & OWNERSHIP ---\n- Dividend yield: 8.6%\n- Dividend yield trend: rising\n- Total dividends (1Y): ₹22.50\n- Institutional ownership: 26.3%\n- Major holders (institutions): N/A%\n\n--- SCORING FACTORS ---\n  → news_sentiment: score=-0.02 × weight=1.00\n  ↑ return_1y: score=+0.28 × weight=0.90\n  ↑ return_3y: score=+1.00 × weight=0.80\n  ↑ return_5y: score=+0.57 × weight=0.70\n  ↑ cagr_5y: score=+0.95 × weight=0.90\n  ↓ sma200_position: score=-0.54 × weight=0.50\n  ↓ max_drawdown: score=-0.53 × weight=0.50\n  ↓ volatility: score=-0.34 × weight=0.40\n  → 52w_position: score=-0.09 × weight=0.30\n  ↑ 1y_change: score=+0.28 × weight=0.70\n  ↑ dividend_yield: score=+0.86 × weight=0.40\n  ↑ cagr_10y: score=+0.82 × weight=1.00\n  → operating_margins: score=+0.04 × weight=0.30\n  ↓ us_macro: score=-1.00 × weight=0.35\n  ↓ india_macro: score=-1.00 × weight=0.35\n\n- Composite score: 0.248\n- Secular Growth Forecast: BPCL exhibits strong 3-year momentum and an attractive 8.6% dividend yield, but is currently trading below its 200DMA with high volatility. Secular risks in the O&G sector and bearish macro signals (India/US) suggest a transition period. Given the low operating margins and lack of clear earnings acceleration, a wait-and-see approach is prudent.\n",
+  "price_52w": {
+    "high": 391.65,
+    "low": 258.31,
+    "current": 319.3,
+    "position_pct": 45.7,
+    "change_1y_pct": null
+  },
+  "analyst_consensus": {
+    "target_price": null,
+    "target_high": null,
+    "target_low": null,
+    "n_analysts": null,
+    "implied_upside_pct": null
+  },
+  "fundamental_signals": [
+    {
+      "type": "bullish",
+      "text": "Revenue growing QoQ (5.8% last quarter)."
+    }
+  ],
+  "key_price_levels": [
+    {
+      "label": "Resistance 1",
+      "price": 363.0,
+      "type": "resistance"
+    },
+    {
+      "label": "Resistance 2",
+      "price": 368.35,
+      "type": "resistance"
+    },
+    {
+      "label": "Resistance 3",
+      "price": 373.18,
+      "type": "resistance"
+    },
+    {
+      "label": "Current",
+      "price": 326.35,
+      "type": "current"
+    }
+  ],
+  "momentum_score": 13.6,
+  "qualitative_labels": {
+    "moving_averages": "Sell",
+    "trend_channel": "Falling",
+    "rsi": "Oversold",
+    "macd": "Bearish"
+  },
+  "valuation_snapshot": {
+    "pe_trailing": 10.38712972513977,
+    "peg_ratio": null,
+    "ev_to_ebitda": 4.512,
+    "ev_to_revenue": 0.384,
+    "gross_margins": 0.15632,
+    "operating_margins": 0.08156,
+    "ebitda_margins": 0.08514,
+    "book_value": 219.838,
+    "dividend_yield": 6.13,
+    "enterprise_value": 1719964008448,
+    "roe": 0.16387173019588105,
+    "debt_to_equity": 0.7507680863382618,
+    "price_to_book": 1.7021569198277207,
+    "total_revenue": 4477573660672,
+    "total_debt": 529668308992,
+    "total_cash": 174303707136
+  },
+  "master_reasoning": {
+    "model": "gemini-3.1-flash-lite-preview",
+    "text": "Setup\nBPCL is currently caught in a classic mean-reversion trap. The price action shows a steep, high-volume descent that has pushed the RSI into oversold territory (27.4). While the stock sits near a potential floor supported by decent fundamentals (P/E ~10, high dividend yield), the technical tape is decisively bearish. The stock is trading significantly below its 20-day and 50-day moving averages, and the recent 5-day return of -9.4% confirms aggressive institutional selling.\n\nCatalyst\nThe primary headwind remains the surge in global crude oil prices, which continues to compress refinery and marketing margins for oil marketing companies (OMCs). While fundamental valuation suggests the stock is undervalued, the macro environment is actively working against a recovery. There is no positive catalyst in the near term to absorb the current supply.\n\nFriction\nThe primary friction is the conflict between the oversold technical reading and the negative momentum. Attempting to catch this bottom is \"catching a falling knife.\" High volatility (ATR 12.84) means that even a minor bounce can be immediately reversed by broader Nifty energy sector weakness. The lack of a stabilization base makes any entry high-risk.\n\nExecution Plan\nSignal: NO_TRADE.\nI am remaining on the sidelines. My focus is to wait for the volatility to contract and for the selling pressure to exhaust itself. \n- Buy trigger: I will only reconsider if the price prints a daily close above the previous day's high, accompanied by a noticeable contraction in trading volume. This would confirm institutional absorption.\n- Invalidation: If the stock marks fresh lower lows on heavy volume, the bearish trend remains in full control.\n\nVerdict\nWait/No-trade. The risk-reward is currently distorted by volatility. The stock is interesting for a potential mean-reversion trade in the next 2-6 weeks, but the current edge is too weak to justify capital deployment. Patience is the only prudent play until the tape shows signs of a durable base."
+  },
+  "llm_usage": {
+    "calls": [
+      {
+        "name": "News Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2506,
+        "output_tokens": 90,
+        "total_tokens": 2596
+      },
+      {
+        "name": "US Trend Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 428,
+        "output_tokens": 94,
+        "total_tokens": 522
+      },
+      {
+        "name": "Catalyst Context Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2548,
+        "output_tokens": 104,
+        "total_tokens": 2652
+      },
+      {
+        "name": "Market Setup Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2101,
+        "output_tokens": 96,
+        "total_tokens": 2197
+      },
+      {
+        "name": "Trader Intel Agent",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1496,
+        "output_tokens": 308,
+        "total_tokens": 1804
+      },
+      {
+        "name": "Batched Agent Reasoning",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1731,
+        "output_tokens": 1123,
+        "total_tokens": 2854
+      },
+      {
+        "name": "Long-Term Outlook Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 996,
+        "output_tokens": 109,
+        "total_tokens": 1105
+      },
+      {
+        "name": "Master Reasoning",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 3718,
+        "output_tokens": 425,
+        "total_tokens": 4143
+      }
+    ],
+    "llm_enabled": true,
+    "skipped_calls": 0,
+    "error_calls": 0,
+    "total_input_tokens": 15524,
+    "total_output_tokens": 2349,
+    "total_tokens": 17873,
+    "pricing": {
+      "input_cost_per_1m": 0.0,
+      "output_cost_per_1m": 0.0,
+      "estimated_total_cost_usd": 0.0
+    }
+  }
+}

@@ -1,0 +1,1768 @@
+{
+  "report_id": "INDIGO_NS_20260313_232329",
+  "symbol": "INDIGO.NS",
+  "timeframe": "1d",
+  "forecast_bars": 3,
+  "start_timestamp": "2025-11-13 15:30:00",
+  "end_timestamp": "2026-03-13 15:30:00",
+  "final_signal": "NO_TRADE",
+  "confidence": 0.6,
+  "confluence_scores": {
+    "buy": 0.0,
+    "sell": 0.336,
+    "no_trade": 0.278
+  },
+  "risk_plan": {
+    "summary": "Risk Plan: size=0 shares, ATR=172.51, stop=N/A, target=N/A.",
+    "reasoning_prompt": "Risk protocol:\n1) Estimate recent volatility using ATR.\n2) Define one-unit risk from ATR multiple and cap portfolio risk near 1% per trade.\n3) Convert risk budget into position size.\n4) Anchor stop to volatility-adjusted invalidation and target to asymmetric reward.\n5) Force size=0 when final signal is NO_TRADE.",
+    "llm_reasoning": "Risk is high due to the elevated ATR (172.51) and the potential for a snap-back rally from oversold levels. The primary risk to the sell signal is an abrupt shift in macro-sentiment or unexpected positive earnings revisions that could force short covering. Traders should manage exposure by strictly adhering to stop-loss levels above the 20-day SMA, as current volatility renders the trade sensitive to small market fluctuations.",
+    "position_size": 0,
+    "stop_loss": null,
+    "target": null,
+    "risk_reward": "N/A",
+    "detail": {
+      "capital": 100000.0,
+      "risk_budget": 1000.0,
+      "one_risk": 207.0171595982143,
+      "atr": 172.51429966517858
+    }
+  },
+  "final_conclusion": {
+    "signal": "NO_TRADE",
+    "confidence": 0.6,
+    "when_to_buy": "Price consolidation above 4035 with a distinct compression in daily range",
+    "expected_holding_duration": "2-6 weeks",
+    "stop_loss": null,
+    "targets": [],
+    "target": null,
+    "analyst_consensus": {
+      "target_price": null,
+      "target_high": null,
+      "target_low": null,
+      "n_analysts": null,
+      "implied_upside_pct": null
+    },
+    "price_52w": {
+      "high": 6232.5,
+      "low": 4035.0,
+      "current": 4158.2,
+      "position_pct": 5.6,
+      "change_1y_pct": null
+    },
+    "key_price_levels": [
+      {
+        "label": "Resistance 1",
+        "price": 4964.4,
+        "type": "resistance"
+      },
+      {
+        "label": "Resistance 2",
+        "price": 5008.0,
+        "type": "resistance"
+      },
+      {
+        "label": "Resistance 3",
+        "price": 5056.0,
+        "type": "resistance"
+      },
+      {
+        "label": "Current",
+        "price": 4251.7,
+        "type": "current"
+      },
+      {
+        "label": "Support",
+        "price": 4035.0,
+        "type": "support"
+      }
+    ],
+    "playbook_title": "Mean Reversion Trap Avoidance",
+    "thesis": "INDIGO is in a sharp markdown phase with heavy selling pressure. While the price is nearing the 4035 support zone, the massive QoQ net income contraction indicates fundamental bleeding. I refuse to bottom-fish against such steep momentum; it is safer to watch for a stabilization phase or a failed breakdown before considering any long, or a lower-high setup for a short continuation.",
+    "execution_style": "Observation-only until volatility contracts",
+    "risk_flag": "High fundamental volatility and trend-against-sentiment risk",
+    "invalidation": "Clean break and hold below 4000 would negate any near-term floor potential",
+    "summary": "**FINAL CONCLUSION**\n- Signal: NO_TRADE\n- Confidence: 0.600\n- Action Bias: Wait / no-trade setup\n- Playbook: Mean Reversion Trap Avoidance\n- Thesis: INDIGO is in a sharp markdown phase with heavy selling pressure. While the price is nearing the 4035 support zone, the massive QoQ net income contraction indicates fundamental bleeding. I refuse to bottom-fish against such steep momentum; it is safer to watch for a stabilization phase or a failed breakdown before considering any long, or a lower-high setup for a short continuation.\n- When to Act: Price consolidation above 4035 with a distinct compression in daily range\n- Execution Style: Observation-only until volatility contracts\n- Invalidation: Clean break and hold below 4000 would negate any near-term floor potential\n- Expected Holding Duration: 2-6 weeks\n- Context: sideways trend channel\n- Risk Flag: High fundamental volatility and trend-against-sentiment risk\n- Stop-loss: N/A\n- Targets: N/A\n- 52w Range: ₹4035.00 – ₹6232.50"
+  },
+  "long_term_outlook": {
+    "stance": "LONG_TERM_BEARISH",
+    "confidence": 0.65,
+    "score": 0.295,
+    "summary": "LONG-TERM OUTLOOK (Based on News, Financials, and Price Data)\n- Stance: LONG_TERM_BEARISH\n- Confidence: 0.650\n- Sector: Unknown\n- Data coverage: 2553 daily bars for long-term model.\n- Price trend (1Y/3Y/5Y/10Y): -9.501711182493667% / 124.09804692647253% / 152.94941589479896% / 256.31260802954114%.\n- Long-run quality: CAGR(3Y)=30.861739979901117%, CAGR(5Y)=20.394524600792096%, CAGR(10Y)=13.54894905824182%,\n  Max Drawdown(5Y)=-54.650332011995076%, Vol=37.0494542152024%.\n- Structural trend: price vs 200DMA=-21.874084863090772%.\n- Note: N/A metrics indicate insufficient history for that exact horizon, not an implied negative value.\n- News signal: avg sentiment=-0.04 across stock/industry/macro streams (15/12/10 items).\n- Fundamental location: 52w position=5.6%, 1Y return=-9.501711182493667%.\n- Street context: analyst upside=N/A% from N/A analysts.\n- Macro overlay: India sentiment=SELL, US trend=SELL.\n\n--- VALUATION SNAPSHOT ---\n- P/E (trailing): 22.15\n- PEG ratio: N/A\n- Price/Book: 17.16\n- ROE: 77.5%\n- Debt/Equity: 7.13\n- EV/EBITDA: N/A\n- EV/Revenue: N/A\n- Book value per share: 242.31\n- Enterprise value: N/A\n- Gross margins: 17.1%\n- Operating margins: 14.3%\n- EBITDA margins: N/A\n- Total revenue: 776,186,000,000\n- Total debt: 668,098,000,000\n- Total cash: 10,731,000,000\n\n--- QUARTERLY FINANCIAL TRENDS ---\n- Revenue QoQ growth: N/A\n- Net income QoQ growth: N/A\n- Operating cash flow QoQ: N/A\n\n--- DIVIDEND & OWNERSHIP ---\n- Dividend yield: 1.3%\n- Dividend yield trend: N/A\n- Total dividends (1Y): ₹10.00\n- Institutional ownership: N/A\n- Major holders (institutions): N/A%\n\n--- SCORING FACTORS ---\n  → news_sentiment: score=-0.04 × weight=1.00\n  → return_1y: score=-0.10 × weight=0.90\n  ↑ return_3y: score=+1.24 × weight=0.80\n  ↑ return_5y: score=+1.53 × weight=0.70\n  ↑ cagr_5y: score=+2.04 × weight=0.90\n  ↓ sma200_position: score=-2.19 × weight=0.50\n  ↓ max_drawdown: score=-0.55 × weight=0.50\n  ↓ volatility: score=-0.37 × weight=0.40\n  ↓ 52w_position: score=-0.89 × weight=0.30\n  → 1y_change: score=-0.10 × weight=0.70\n  ↑ dividend_yield: score=+0.13 × weight=0.40\n  ↑ cagr_10y: score=+1.35 × weight=1.00\n  ↑ operating_margins: score=+0.14 × weight=0.30\n  ↓ us_macro: score=-1.00 × weight=0.35\n  ↓ india_macro: score=-1.00 × weight=0.35\n\n- Composite score: 0.295\n- Secular Growth Forecast: INDIGO.NS shows significant technical deterioration, trading 21% below its 200DMA. High volatility (37%) and a poor 1Y return profile align with broader negative macro signals. 3-5 Year Secular Forecast: While long-term CAGR remains strong, the airline sector's susceptibility to macro-economic cycles suggests further margin compression risks in a cooling growth environment. Exit strategy warranted.\n",
+    "llm_reasoning": "INDIGO.NS shows significant technical deterioration, trading 21% below its 200DMA. High volatility (37%) and a poor 1Y return profile align with broader negative macro signals. 3-5 Year Secular Forecast: While long-term CAGR remains strong, the airline sector's susceptibility to macro-economic cycles suggests further margin compression risks in a cooling growth environment. Exit strategy warranted.",
+    "evidence": {
+      "history_bars": 2553,
+      "history_start": "2015-11-10 00:00:00",
+      "history_end": "2026-03-12 00:00:00",
+      "coverage_ratio": 1.0,
+      "sparse_long_term": false,
+      "fundamentals_sparse": false,
+      "news_avg_sentiment": -0.036,
+      "stock_news_count": 15,
+      "industry_news_count": 12,
+      "macro_news_count": 10,
+      "return_1y_pct": -9.5,
+      "return_3y_pct": 124.1,
+      "return_5y_pct": 152.95,
+      "return_10y_pct": 256.31,
+      "cagr_3y_pct": 30.86,
+      "cagr_5y_pct": 20.39,
+      "cagr_10y_pct": 13.55,
+      "price_vs_sma200_pct": -21.87,
+      "max_drawdown_5y_pct": -54.65,
+      "annualized_volatility_pct": 37.05,
+      "position_52w_pct": 5.6,
+      "change_1y_pct": -9.501711182493667,
+      "analyst_upside_pct": null,
+      "analyst_count": null,
+      "india_sentiment_signal": "SELL",
+      "us_trend_signal": "SELL",
+      "dividend_yield": 0.01322687639282038,
+      "dividend_yield_trend": null,
+      "peg_ratio": null,
+      "operating_margins": 0.14288843138113802,
+      "held_pct_institutions": null,
+      "institutions_pct": null,
+      "rev_qoq": null,
+      "ni_qoq": null,
+      "ocf_qoq": null,
+      "sector": "Unknown",
+      "scoring_factors": [
+        [
+          "news_sentiment",
+          -0.036,
+          1.0
+        ],
+        [
+          "return_1y",
+          -0.095,
+          0.9
+        ],
+        [
+          "return_3y",
+          1.241,
+          0.8
+        ],
+        [
+          "return_5y",
+          1.529,
+          0.7
+        ],
+        [
+          "cagr_5y",
+          2.039,
+          0.9
+        ],
+        [
+          "sma200_position",
+          -2.187,
+          0.5
+        ],
+        [
+          "max_drawdown",
+          -0.547,
+          0.5
+        ],
+        [
+          "volatility",
+          -0.37,
+          0.4
+        ],
+        [
+          "52w_position",
+          -0.888,
+          0.3
+        ],
+        [
+          "1y_change",
+          -0.095,
+          0.7
+        ],
+        [
+          "dividend_yield",
+          0.132,
+          0.4
+        ],
+        [
+          "cagr_10y",
+          1.355,
+          1.0
+        ],
+        [
+          "operating_margins",
+          0.143,
+          0.3
+        ],
+        [
+          "us_macro",
+          -1.0,
+          0.35
+        ],
+        [
+          "india_macro",
+          -1.0,
+          0.35
+        ]
+      ]
+    }
+  },
+  "agent_outputs": {
+    "technical": {
+      "signal": "SELL",
+      "confidence": 0.7600000000000001,
+      "summary": "Indicator Signal: SELL | Trend: close=4251.70, SMA20=4697.51, SMA50=4803.20. Momentum: MACD=-160.807, Signal=-108.588, Hist=-52.219, ROC10=-14.06%. Oscillators: RSI14=29.6, StochK/D=23.0/30.8, Williams%R=-77.0. Risk: ATR14=172.51, Volume=1595719 vs VolSMA20=1466212. Momentum Score=18.6/100 | MA=Sell, Trend=Falling, RSI=Oversold, MACD=Bearish.",
+      "reasoning_prompt": "Indicator reasoning protocol:\n1) Evaluate structural trend using close vs SMA20 and SMA20 vs SMA50.\n2) Validate momentum using MACD line/signal/histogram and ROC10 direction.\n3) Check exhaustion/continuation via RSI, Stochastic crossover, and Williams %R zone.\n4) Confirm participation with volume vs 20-bar average.\n5) Penalize high-volatility regimes with ATR% filters and lower confidence.\n6) If cross-indicator alignment is weak or contradictory, return NO_TRADE.",
+      "llm_reasoning": "Technical status is firmly bearish. Price at 4251.70 sits well below SMA20 (4697.51) and SMA50 (4803.20). MACD is deeply negative at -160.81 with a bearish crossover and negative histogram. RSI14 at 29.57 indicates oversold conditions, yet momentum score is a weak 18.6/100. Volume (1,595,719) exceeding the 20-day SMA (1,466,212) confirms active selling participation. The confluence of falling MAs and negative momentum metrics supports the sell signal.",
+      "detail": {
+        "bullish_points": 0,
+        "bearish_points": 8,
+        "delta": -8,
+        "rules": {
+          "trend_alignment": false,
+          "macd_alignment": false,
+          "rsi_bias": "bearish",
+          "stoch_alignment": false,
+          "willr_bias": "neutral",
+          "volume_confirmation": true
+        }
+      },
+      "price_levels": {
+        "levels": [
+          {
+            "label": "Resistance 1",
+            "price": 4964.4,
+            "type": "resistance"
+          },
+          {
+            "label": "Resistance 2",
+            "price": 5008.0,
+            "type": "resistance"
+          },
+          {
+            "label": "Resistance 3",
+            "price": 5056.0,
+            "type": "resistance"
+          },
+          {
+            "label": "Current",
+            "price": 4251.7,
+            "type": "current"
+          },
+          {
+            "label": "Support",
+            "price": 4035.0,
+            "type": "support"
+          }
+        ],
+        "nearest_resistance": 4964.4,
+        "nearest_support": 4035.0,
+        "resistance_1": 4964.4,
+        "resistance_2": 5008.0,
+        "resistance_3": 5056.0,
+        "support": 4035.0,
+        "breakdown_zone": null
+      },
+      "momentum_score": 18.6,
+      "qualitative_labels": {
+        "moving_averages": "Sell",
+        "trend_channel": "Falling",
+        "rsi": "Oversold",
+        "macd": "Bearish"
+      },
+      "price_range": {
+        "high": 5970.0,
+        "low": 4035.0,
+        "position_pct": 11.2
+      },
+      "metrics": {
+        "close": 4251.7001953125,
+        "rsi14": 29.572150042259892,
+        "macd": -160.80693278954823,
+        "macd_signal": -108.58781417572283,
+        "macd_hist": -52.2191186138254,
+        "sma20": 4697.510009765625,
+        "sma50": 4803.200009765625,
+        "roc10": -14.061925875482062,
+        "atr14": 172.51429966517858,
+        "stoch_k": 23.021378973348646,
+        "stoch_d": 30.79171258052122,
+        "willr14": -76.97862102665135,
+        "volume": 1595719.0,
+        "volume_sma20": 1466211.9
+      }
+    },
+    "pattern": {
+      "signal": "SELL",
+      "confidence": 0.5906444169612879,
+      "summary": "Pattern Signal: SELL | setup=gradual lower-high structure, slope=-65.1454, breakout_up=False, breakdown=False, bull_engulf=False, bear_engulf=False.",
+      "reasoning_prompt": "Pattern reasoning protocol:\n1) Detect breakout/breakdown against prior 12-bar range, not single-candle spikes.\n2) Confirm direction with local slope and bar-structure continuation.\n3) Use engulfing patterns as confirmation, not standalone trigger.\n4) Treat flat-slope compression as NO_TRADE until expansion is confirmed.\n5) Down-rank weak breakouts lacking structure confirmation.",
+      "llm_reasoning": "Pattern analysis reveals a persistent lower-high structure with a negative slope of -65.15. The absence of bullish engulfing patterns or breakouts reinforces the lack of buying interest. The setup signifies a gradual, systematic decline rather than a localized spike. Given the price's failure to establish a higher-high or break above resistance, the pattern signal remains sell-biased, reflecting continued distribution pressure within the current volatility regime.",
+      "detail": {
+        "setup": "gradual lower-high structure",
+        "slope": -65.14543678977259,
+        "breakout_up": false,
+        "breakdown": false,
+        "bullish_engulfing": false,
+        "bearish_engulfing": false,
+        "volatility_proxy": 93.66083070156202
+      }
+    },
+    "trend": {
+      "signal": "NO_TRADE",
+      "confidence": 0.5105384338421005,
+      "summary": "Trend Signal: NO_TRADE | setup=sideways trend channel, support slope=-14.591, resistance slope=-14.672, price position=-1.19 in channel.",
+      "reasoning_prompt": "Trend reasoning protocol:\n1) Fit support and resistance trendlines over the visible swing window.\n2) Estimate channel slope (regime direction) and channel width (trend quality).\n3) Locate current price in channel and prefer pullback entries aligned with slope.\n4) If slope is weak/flat, classify as sideways and favor NO_TRADE.\n5) Avoid chasing signals near channel extremes against risk-reward logic.",
+      "llm_reasoning": "The trend signal is NO_TRADE due to a sideways-to-declining channel. With a marginal slope of -14.63 and a channel position of -1.19, the asset is trading slightly outside the defined support boundaries. Because the channel is relatively narrow (111.98) and the slope lacks strong directional conviction, the technical setup does not meet the requirements for a high-probability trend-following trade, suggesting price may be consolidating near support.",
+      "detail": {
+        "setup": "sideways trend channel",
+        "slope_avg": -14.6316,
+        "channel_width": 111.9841,
+        "channel_position": -1.1892
+      },
+      "metrics": {
+        "support_slope": -14.590997055922934,
+        "resistance_slope": -14.672165527446221,
+        "channel_position": -1.189,
+        "last_support": 4384.87,
+        "last_resistance": 4496.85
+      }
+    },
+    "news": {
+      "signal": "SELL",
+      "confidence": 0.6,
+      "summary": "News Signal: SELL | combined sentiment=-0.04 (stock=-0.09, industry=0.10, macro=-0.09). Stock articles=24 (trusted=0, unrated=24); Industry articles=29 (trusted=0); Macro articles=30 (trusted=0). Sentiment strength=0.10. Inference=Recent news highlights downward pressure, including a price target cut by Citi and technical selling volume. While there was a short-term rebound, the prevailing sentiment is dampened by management transition uncertainty (CEO exit) and a bearish macro environment (Sensex/Nifty decline), creating a moderate directional edge to the downside..",
+      "reasoning_prompt": "News reasoning protocol:\n1) Collect company-specific headlines across multiple providers using diversified queries.\n2) Filter spam/listicle/noise domains and low-relevance stories.\n3) Build a global macro stream (rates, inflation, oil, USD, broad risk sentiment).\n4) Build industry/sector thematic stream (demand cycle, market share, regulation, capacity, pricing).\n5) Weight sentiment by source quality, exponential recency decay, and relevance confidence.\n6) Apply content-similarity dedup to remove near-duplicate headlines.\n7) Use LLM to infer final bias from company + industry + macro evidence and return NO_TRADE under conflict.",
+      "llm_reasoning": "News sentiment is bearish (-0.04) driven by negative stock-specific sentiment (-0.09) and macro headwinds (-0.09). Recent catalysts include a Citi price target cut and management transition uncertainty following a CEO exit. These developments, coupled with broader market volatility in the Nifty/Sensex, create a dampening effect on investor confidence. The combination of company-specific governance risk and bearish industry macro outlook provides a moderate directional edge for further downside.",
+      "detail": {
+        "company_context": {
+          "symbol": "INDIGO.NS",
+          "company_name": "InterGlobe Aviation Limited",
+          "sector": "Industrials",
+          "industry": "Airlines",
+          "business_summary": "InterGlobe Aviation Limited, together with its subsidiaries, provides air transportation services under the IndiGo brand in India and internationally. The company offers pre-flight and post-flight ground handling operations; passenger and cargo services; and related allied services, such as in-flight sales, and other allied services at the airports. It also engages in aircraft and aircraft engine leasing, as well as related financial services. In addition, the company provides cargo transport; charter flights; hotel booking services through its website and mobile app; and cadet pilot program f"
+        },
+        "stock_article_count": 24,
+        "industry_article_count": 29,
+        "macro_article_count": 30,
+        "trusted_count": 0,
+        "trusted_industry_count": 0,
+        "unrated_count": 24,
+        "trusted_macro_count": 0,
+        "industry_avg_sentiment": 0.0961988707060377,
+        "sentiment_strength": 0.0961988707060377,
+        "llm_decision_why": "Recent news highlights downward pressure, including a price target cut by Citi and technical selling volume. While there was a short-term rebound, the prevailing sentiment is dampened by management transition uncertainty (CEO exit) and a bearish macro environment (Sensex/Nifty decline), creating a moderate directional edge to the downside."
+      },
+      "top_news": [
+        {
+          "source": "google_rss",
+          "title": "InterGlobe Aviation (IndiGo) Stock Faces Downtrend Pressure Amid High Trading Volume - AD HOC NEWS",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNMUlTSzBDSzl3Nk5CNGVoOUlKYndSYURDMzJRX3NJS1ZLbUppVXg3ejdRSjlLWFhTNXloVnh3WXZZbjZFc3p5QlNCVFVKLUwycHlJZE00ZXAyZHI5cGJZd2JDWU9CX3J2SHRLS0kxNW1KYzZJTE43NC1WSzNTQ1h3Mjg2YzJIbUlqUjBQbE5oaGdmeWJpc3Q5Rk04Uzl3NXgxSmNVczZ6cUlEODNxQVNURjlieWpMX3lmVWZIMC1sbHQ5X2NC?oc=5",
+          "published_at": "Fri, 13 Mar 2026 13:31:16 GMT",
+          "published_ts": 1773408676.0,
+          "sentiment_score": -1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss",
+          "title": "IndiGo investors shrug off Pieter Elbers’ exit as Rahul Bhatia plays ‘Main Hoon Na’",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49c49bc9c472690ec8f46242a38bc&url=https%3a%2f%2fwww.livemint.com%2fmarket%2findigo-founder-rahul-bhatia-returns-steadies-airline-investors-market-11773294774758.html&c=15390012801048455281&mkt=en-in",
+          "published_at": "Thu, 12 Mar 2026 15:29:00 GMT",
+          "published_ts": 1773329340.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "IndiGo parent shares fall nearly 4 pc after Citi cuts target price - The Hans India",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOaEZtYi1BNjI1VEszVllRaVlWbDk5cmRLbDFJa3ZOQ1BVTGYwdFBrQXhqWXpWSnY4cm53ZFJ5ZDB4LWJGQXBTYmpiZjRvUWt3WlBjWHJqM0ROQ2hnUEJXUnpibFhpb05yN1BObm14U3VYdTFnVy1WWVdwdUZ6bG1XeUpGc0ZDdTNHQlF1Mk42MVlQSXhHMXFiRWZobXo5MTAwUHRpNXl5M0xJVjU2SGJjUW5n0gG3AUFVX3lxTE1jUHpJZjZvc1JYMUUzZ1h5bzBJRF9weTRBSGhJY0lpY2t3NlAwZ0o1VENvZDZwZUdGbTFUbndjdDNCRWxULVJieWpjcTNMdUh1cmNKcGVLWHpFdTNyWUVmYUlEMnk3Zlc4WEMwdThtcERLeHZUTXRpdy1uTEpRdVpSMWpfa3dSdkhpSTVNUU5GMVVPY1pKREZVM3lPOWx5cjZGU0tYNDZxd1Blbk0yNmc2Nm95THJGZw?oc=5",
+          "published_at": "Thu, 12 Mar 2026 09:45:10 GMT",
+          "published_ts": 1773308710.0,
+          "sentiment_score": -1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "IndiGo shares rebound nearly 8% from 52-week low; what lies ahead for India's largest airline? - Business Today",
+          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOMWtHLXhNb1lvOXJEZHl0ZGlsc1k5V0F5TXR3WGZaRG8zQk4zejBjV2praU1tZjE5cnRjNE5qZEFCWjdZUWlwMnd3YzFlOFhjaTI4VnZsVUphVVZjM3RSVk5KcHZpWXpvdzhLMkI3anJFZ3hfVms0UkR2V2JvZEU3UUlZV1pabnpzaTdKU2ZTT2Vuam1Gc1JKNFNUSk1tamx0NlczUHo0bVFCY0x3eGo0Z2d4Y2h1R2tkZUN3dlZQWEJSLXRfd0Y3NExFeDNKNEJhM2lVZHNoU0RpbHVuTFNjS1pPVFZXejZyQUxwZnUtNNIB9AFBVV95cUxPeU1hWlBSMzlGZ0ptd3dNSkx6TTV0VnlKV0c4bF9PeVc2cWVvdXBSWWp2TG5NM2pYTmV2dDlJU1h3UVRMZVU3OWlOTDM4MEswcUY0ak96dUdIQ0pkS3ZmVGRiR2ExbTEyM2lUUldnN0ppX0xaOTZOSFBlWXp1b2xhUWd1dE9QZUhiaGxIRDc0TE9VQ2RZdm9SZTQtc0FrREVKc2VVdWJXa2ZLU1paNV9haUdQVXRGT0hITWlGY0dGbGFpWS10NHp5ZG9NamJLekthYmgtUkNpLXRhNloyOWQwcjUxZGJFTEFDdjlhSkZwMk1TeXRW?oc=5",
+          "published_at": "Wed, 11 Mar 2026 12:31:35 GMT",
+          "published_ts": 1773232295.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss",
+          "title": "Why is IndiGo share price rising 3% despite CEO Pieter Elbers' resignation? Explained",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49c49bc9c472690ec8f46242a38bc&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2ftopstories%2fwhy-is-indigo-share-price-rising-3-despite-ceo-pieter-elbers-resignation-explained%2far-AA1XXett&c=1196829230998016643&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 08:47:00 GMT",
+          "published_ts": 1773218820.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "SENSEX tanks over 950 pts, NIFTY50 below 24,000 in noon deals; IndiGo, Waaree Energies among buzzing stocks - Upstox",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNOVVUTkxrWFE0ak42MTV5Wk9kNVVSbG5tSnktaGY2X1piWjVXNndERlUtQUxXRmp5NkloN1l3bG92czNkLVlaQ1U1aHdpZ05zeFc3cjNjMjMyV05jdzAxalktbFh1ZnZTMnduMkZzRy1tRk4wTDJwUy1ROGVQeUlOLV9vS3FETGhsakhndFQtSmJzV3l6SVhZdUdOYXVPZnp2UnpOS1hrZUlBbXU1cWZEYWsxN180dmgyb1BNY1lNalctSU8wUTNPZkNfVy1OQTgxNEdhRlJiRGswd0o3V0VmdmkxbExDM0pobDh3MWZR?oc=5",
+          "published_at": "Wed, 11 Mar 2026 07:18:07 GMT",
+          "published_ts": 1773213487.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "IndiGo Share Price Rises 2.6% After CEO Exit | Stock Market Today - Samco",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQTTlPR0c2Tk1RdUU4SWtmaXlfRU8tQmZELTZHRjd0cTUyZW44dzFRLWJGNk10RFdMbE1fVktWOWlLeWlSbURUMWVJOTlKVlNvYWwzRWlpR3ZfbmVjRld5UzJxam9odFduaWNDdi1TNy11V282VUNhLVVFSTFxbWp0VmluWndwaU1yTDJWYVRLQlpZRmVEYjF6ZGJ0cl9FeDN1b0VXVlpiSHhhdUlRWURLWTJ3Qm9KUkdlY2cxaHc4aE5HeWhraXRYdG93cy1wRkQxRkJ2Qk5CM0pDYUtZVmE3MFNScmE?oc=5",
+          "published_at": "Wed, 11 Mar 2026 06:07:55 GMT",
+          "published_ts": 1773209275.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "India's IndiGo shares rise after CEO quits; analysts see smooth transition - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNSTZFb0xFeWdSSjFXRzk1MWFnN2JNck5QWHpGOTNqUE5PZUxUc1VnTmZ1ZkpiNy1Ra0NldlRtQXNLNHc5ZlJBMzB0TUgyZm54SzVMcjBpYXdpWkExUTBIejd4Smt3UVB5a1REaXlOVURxaHQ1clNtdTFxYnlYSFJmRFhiOWtRQVZHeFNtQ1dVdS1CS29MTXUzUG1waERCVk9OYjBBTGVwVk15U1N5aW1HYWd1cmpuYnlzeFpZZ2didUwwUG8teU5IMzE4aHA0ekI3ZVZCMlNLTEFXM1l1enROQ3RB?oc=5",
+          "published_at": "Wed, 11 Mar 2026 05:54:50 GMT",
+          "published_ts": 1773208490.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Aviation Stocks: IndiGo, SpiceJet, Global Vectra Trade Higher In Early Session - HDFC Sky",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNU0xjQkRORjVleXg2TmNyRWtxVWZtZE5uUmQ1ZnhQanVEVGRZRW1iZ0N4Ni1rNEp3ZzdDVmlRVUpjRDA1YlBoWWpEdGMxUi1BWEhDVkhBc0o1Um5wR0ZkVElvaG1CRFBySFdza2NLQWtKazdSOVlXNFdPeUVDY2pFN3VvR2hyM3djaFFZNk4wOW53ZVJHZFE0eWs1dlpjRW5HbXc?oc=5",
+          "published_at": "Wed, 11 Mar 2026 05:17:18 GMT",
+          "published_ts": 1773206238.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "IndiGo shares rise nearly 3%, snap two-session losing streak after CEO exit - Fortune India",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNU01jNEpTUDVHYjJrQ3hIT1hveS1LRXJaWUkyNXFrQ1hYelNzWWItMFZQR2pIeTFiSFFCOU1fNHhqbTNzakdsT2lLN2tYRHpXbjlxX1RKNlJSSFRYUmhWYV9Xc2JXaVc0dXRuTXBuNURkX0dFbkpvQU9zUDhqN2FVMElMSmFaZEc4bzdTNHhmbHNGQXdHNjFPaXB3Q2JydVlXOEVqVHh2YW5CSnlEYzhWaDBRS0dDbW450gHGAUFVX3lxTE56TF9oZW9Gck5kS3pJemoyYmNZa1JaLXJtQ042T20xd09wUk1CbE9Qd3BzeUlWczV2ZHk2Zkx1Z0wyRlYwMzNQV3VlZ3B1VzR3LVpXWjYtOFVsVHM2cnBfa1lyNE9JOHBucU5scE9FRnEwVTFFcWdlS1FIUUt2enJ3TzlveWFCNDZMTjlYdEllWVRpUDRzRC1Yc0QwNXc1enY3Z1VrM2diMGdGaHhYaFBXOENtVkVyWERNOFFRM3YwU2NLM2p2Zw?oc=5",
+          "published_at": "Wed, 11 Mar 2026 04:34:10 GMT",
+          "published_ts": 1773203650.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "IndiGo stock jumps 3% as brokerages retain ‘buy’ calls after CEO exit; HSBC, Jefferies see stable... - Moneycontrol.com",
+          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPcEtuNEZrN0JhTXV2ZkNCeWJlR21vVkpqYWMtdHh4LTBKMTRNVkZaSExjX0tyWG1xdjhYTjJUUGduZmEtMDhMNnlldTJiRF9zaHF1TEpMMDlKd0JtNkdMVWxBaWVnY0pUR1ZkdThxdzBDRk5fNURjNGltU0lOTnRyU2JNU3V2U0w4Q3lNUGs1VkVTQWNzQkpxeUV1UmdScHlrMTFDbEhtSGFEVmxleEEtUnJXcWMtQ21wNUxWSm9XYmhtck15WG16SGstWklTMmRybFdpWURNUjhlZ0puSUg5Zlp2LTRlUVNvcVUtcm00cEtkR3o0RkJ6ddIB_gFBVV95cUxPN2tveVlrSVRtZElJS0U4cWZKa2JDSk5Sc1VsSHpMaVNfNmZkeW5wR0ZzT3JpSnRzNWpBdUQ1aE5Sb2tBcVFidW1DMHRyZ3Z0MGoweUxtOE05TFVHREx3Nl9GMmtwRWMySG1tYURTZ3ZGb2VlMlFCeGdjdGlfMV9xQVNQU241ZW1XbkRUMjBTY25idUxCb2gwcFNiTE9UN1VaMFUxQ01HY1NaNnJOMzdFaGQ2aFlsWFU0RnZiV1Ixd0phYTIxWTV3ZktyS3RWUDdaX1p5T1ZYd3lsQnBlZDM0YXJMYzBkX0ZSVW9rRE9WYWJNUTRsOW5oSFF0WVNLQQ?oc=5",
+          "published_at": "Wed, 11 Mar 2026 04:06:17 GMT",
+          "published_ts": 1773201977.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "IndiGo share price to remain in focus today after CEO Pieter Elbers resigns - Mint",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNZnRpemE4SjFjc3FlVVB6UVlkay1YNnVmTTlqZXJXM2lMS1g3V3gxSHlSZFhyWTBNNDhUVlFYbW9hQXBvSlQzd2hsMkM2SU1ocHNuT3VvQnNNV0FFazl3MVBGZzhZR0pqYjd6dS0yV0VhcTVia1RiXzg4Qk9PdUV2aWlNblljbjU2YTRMUFNSSmZkRUZFYlNEaW5zSy1NMHBBMTlORWJuZk1jY3R1aFZjUzlQQjhmaWlnQVdYWS12SjRxaUVhLWdPdXljb3BmU2JRVVlzWl9wRHU2ZmdmVXfSAeMBQVVfeXFMT0pQMkR6S3N3cXRiYmEwenU5T2huMVh1TWg4dDh5NUQ0S012RkhLck1vbEJBeEhNNWk3N3AyNmRJNjk3UUQ4M0dEZE9wVGJ2ZzROUHBiRTEtTmkwOVVVaE9aamdhWkR0RDFYVzUyY2FBNjl3ZTE0RFJBNkFLUmRvRkFHb0RLek1qMWlfdGdRRmJ4cl9GLXRQbTNvc3Fnc3BtSWpyeWYyMTlOdWlVMHJ1QmdRNjJyakFtMHVQRmJ2czRJbVNXR1FEWGh6TTVrT1J6YV9Ob2ZHZTBWVDVmektBTFBIdmc?oc=5",
+          "published_at": "Wed, 11 Mar 2026 02:27:07 GMT",
+          "published_ts": 1773196027.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "IndiGo share price rises 2% as Pieter Elbers departs as CEO; Rahul Bhatia takes interim charge - Upstox",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNRVFNamJBaVh3MllyLVFyS2RuSjAteUtYNXdkNXJNSTl4YzBFRllKYkxxNm43VFlta2p0NEVPU1p0U1FkU24xSjB5RWR1akllN2FxRW05YWFIVktOa19WZDFnbHE5U0xuT0dSMWhsQ2oyLVJ0eE1QVUdORjhtenVvcWhFNDBsaWlMVnY0akhjTDgwaTNXeXBSbmtPNTdmM0FORm85c0hqaVZIZXVHMVNvcTdTYXg1TEFFYzhycno5TnFRN2RRNW5YdVhNSXBLNFNRSmg1VlpCSkNLUDJZeDRkajFkaVM2VVdwdVVkdnZ3?oc=5",
+          "published_at": "Wed, 11 Mar 2026 02:18:31 GMT",
+          "published_ts": 1773195511.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss",
+          "title": "IndiGo Jumps 3% as Top Brokerages Back Strategy After CEO Pieter Elbers Quits",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49c49bc9c472690ec8f46242a38bc&url=https%3a%2f%2fwww.republicworld.com%2fbusiness%2findigo-jumps-3-as-top-brokerages-back-strategy-after-ceo-pieter-elbers-quits&c=3068140456716747938&mkt=en-in",
+          "published_at": "Tue, 10 Mar 2026 22:53:00 GMT",
+          "published_ts": 1773183180.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "Oil prices drop to below $90: IndiGo, SpiceJet shares surge as Trump signals end of Iran war near - The Times of India",
+          "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNMnYtdDBqOGdrUDBCZkxUbXhrejduZkVTWVV1empwUnY3SkZXYzJJaXJ2STRUQUhSOV9ORl9fUHA3eTc5RThNSUNGdlBzV0RIODRmNmI5Q2d4d3N1Rmg3WnFlZ3FqZUJoVXhqRTFJZ1hRMjF1MG9FeFp1dTVHalE1am9LMFBSTkh4ZEI4U3hHeU85ZTJIYkZHakNKX2szVG81X3BVUWlVNmV2eEZvM1ZHTFpiQThsYUtodlRXVnFqbGM3OGxGRVFMS2h1eHN1MGp5Zm1EWkhfblFaRW5zcXhJejRpZ185Mll3Yzd3eU5fRjlXX2JtYllNTG5QTEI4ZjMwUzRJTEtvbk1wNVA10gGSAkFVX3lxTE5MOEhrQ1hjamRsOE9pb1lyN1FZM1REMzh3cGg2c0RDVG1wWHBGLVpoRDU3SGJ0aWVjLVVyUEhQdlRsS0k5UlZtX0ZJUHRuR0kzXzZ2dk9vNjQ2NkdrV2RtdFVYWFAzQlBraU5KXzNoYlNPOFJ0UUxUT21RZTltWHM3c1ZRWlFmSFJyenpjNnNvV2FNcHhPVnh4T2IzandjckxQamF6T1dyV3NFSzROS1lzX3JhYlBxSjBfNk16UVNiLU5RbHN6dDBsMklNc243ZVk5bE0tYS16NS1hRmhKYVBKN2xyWkRPdnJuZ3VEekczX1NwVmliTkdXeWVUc0NkX1hGbDJBX19tbmVrbXBuTVpBTVE?oc=5",
+          "published_at": "Tue, 10 Mar 2026 06:07:00 GMT",
+          "published_ts": 1773122820.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        }
+      ],
+      "top_industry_news": [
+        {
+          "source": "google_rss_industry",
+          "title": "IndiGo parent shares fall nearly 4 pc after Citi cuts target price - The Hans India",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOaEZtYi1BNjI1VEszVllRaVlWbDk5cmRLbDFJa3ZOQ1BVTGYwdFBrQXhqWXpWSnY4cm53ZFJ5ZDB4LWJGQXBTYmpiZjRvUWt3WlBjWHJqM0ROQ2hnUEJXUnpibFhpb05yN1BObm14U3VYdTFnVy1WWVdwdUZ6bG1XeUpGc0ZDdTNHQlF1Mk42MVlQSXhHMXFiRWZobXo5MTAwUHRpNXl5M0xJVjU2SGJjUW5n0gG3AUFVX3lxTE1jUHpJZjZvc1JYMUUzZ1h5bzBJRF9weTRBSGhJY0lpY2t3NlAwZ0o1VENvZDZwZUdGbTFUbndjdDNCRWxULVJieWpjcTNMdUh1cmNKcGVLWHpFdTNyWUVmYUlEMnk3Zlc4WEMwdThtcERLeHZUTXRpdy1uTEpRdVpSMWpfa3dSdkhpSTVNUU5GMVVPY1pKREZVM3lPOWx5cjZGU0tYNDZxd1Blbk0yNmc2Nm95THJGZw?oc=5",
+          "published_at": "Thu, 12 Mar 2026 09:45:10 GMT",
+          "published_ts": 1773308710.0,
+          "sentiment_score": -1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "InterGlobe Aviation Limited",
+          "sector": "Industrials",
+          "industry": "Airlines"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "GIC Private Limited Reduces Stake in InterGlobe Aviation to 2.984% Through Open Market Sale - India IPO",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOQjVqVVFINEs4QjA5TkhxZDk1VkUwdDNDTUw5Wmo4UXZJS3BHdFNTZ0JEdnVYTHFYSnh2Sm5Uams1NGU4LWNGdkVNMThHeVQ4TUM2SXlkSVVzUVlqUkQ2ZGNJY1huZ1FDZE1xQy1BMm5MZkR6ZXF1Sl9JUDMzdHVOVS1OVVFFbmlaT0RYZWpzbE5WRHhET1Vkc2FNWmxpLUdfRW9LVGo2ZTNnUTFxeC0tNnRrbmlwb0Q4TENVd0hiWVBXbm8?oc=5",
+          "published_at": "Thu, 12 Mar 2026 03:05:46 GMT",
+          "published_ts": 1773284746.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "InterGlobe Aviation Limited",
+          "sector": "Industrials",
+          "industry": "Airlines"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Did IndiGo Just Hit a Turbulence at the Top — Or Is This a Calculated Reset? - 100knots",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQS2wxaDZ2VzVKTXB3aUROazJ6MGFSQkNyRFhnQzd1T2h6cWFFY1haUFVhWktCazBHdzFYTjR5RFZNOE5ieG9NZ3BjYWV6Q3pnLVMwalhON2RXV1RkaGxHQXlOU21uUWtjMUwwVFJfVmlLVkp6WGNSUlprd1otT19QLU1La0xEVnJManBkdFQ2SHl3cVlGRkFFNTljaXdqbGZX?oc=5",
+          "published_at": "Wed, 11 Mar 2026 12:31:24 GMT",
+          "published_ts": 1773232284.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "InterGlobe Aviation Limited",
+          "sector": "Industrials",
+          "industry": "Airlines"
+        },
+        {
+          "source": "bing_rss_industry",
+          "title": "India’s GDP growth to moderate to 7.1% in FY27 despite global headwinds: Crisil",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49c548d3d4d2e8cd2d6c7235d4643&url=https%3a%2f%2fwww.fortuneindia.com%2feconomy%2findias-gdp-growth-to-moderate-to-71-in-fy27-despite-global-headwinds-crisil%2f131182&c=17085517392457065574&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 08:00:00 GMT",
+          "published_ts": 1773216000.0,
+          "sentiment_score": 1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated",
+          "company_name": "InterGlobe Aviation Limited",
+          "sector": "Industrials",
+          "industry": "Airlines"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Rahul Bhatia Takes Interim CEO Role at IndiGo - GK Today",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE44TU5PT3lKNmlsamlCdGd1eXBsazNCV2o0S05EVDhBM0IzaTJvRUJvQmNIU3NTbFVxNk5nZVBmanJOeXEwZFZOVXRxVHB0STRzN0gtd2lRRXItVDM2UXRCS3NFYkZ1ckNjUkJOMUpHSVNHUmtjRDU3Xw?oc=5",
+          "published_at": "Tue, 10 Mar 2026 23:52:05 GMT",
+          "published_ts": 1773186725.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "InterGlobe Aviation Limited",
+          "sector": "Industrials",
+          "industry": "Airlines"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "OPINION | West Asian turmoil ripples through India’s macro and sectoral outlook - Moneycontrol.com",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPbnBKdnJETmt2eVNybnZiTEo0ZmtiS0tuSmhtQWh2NjdVRU9WczVqY1dGaldHNjZwVEZ0cjFtUkxfQzFyalo1VnJEV2xUQ3U5bmR6QmxETkcyN3huaG10Z1M0VGRVU0NjOWtpY0NqRllqbEp2RTBMcVhReG5IWS1taTJoRXNhZWNhMEhIeVJFazJXV3Nia0FEcXJ3SUZhTzY5VGJSZHZFOTBuZmlJdjBtSlBoT0V6TjZoOGRfNUt4czg2XzTSAcgBQVVfeXFMTUM4VkVrUkk3SV85UzhBZ05YREVnZTdibVVkNDRza1E0R3JVZWtrWmdId2VoaEctR3owVGZoXzlfQk1vaTVTYVBFc1UxNmlWSVRMY1pPQ0MtT2Fob080NXBYTzBQc2g2SUxRZUxlYzFFNnVXVlNZODlEQ2ZZZHZxWnMybXVuWVM5RHBWSzdoYW1EWHA2eWdKNU9DWXBTMi1CYVRJY2RpWjRQV3BuZ2txTjgwQU13LTdtaEI5Y1lWVG1obDBmNmt3X3Q?oc=5",
+          "published_at": "Tue, 10 Mar 2026 09:48:36 GMT",
+          "published_ts": 1773136116.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "InterGlobe Aviation Limited",
+          "sector": "Industrials",
+          "industry": "Airlines"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Best Aviation Stocks in India 2026 - Groww",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9yU016NVVZREwyeUFpX0hzZ1JBT1dXZm9KUzAyVWdXMG5zcGJrRHVpdGdERUdLZVdfNEs4UlVja18wWnVVeF9TemhBNDZaTUNhM1pISWRJb0NBWTVvVG1lTA?oc=5",
+          "published_at": "Tue, 10 Mar 2026 07:00:00 GMT",
+          "published_ts": 1773126000.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "InterGlobe Aviation Limited",
+          "sector": "Industrials",
+          "industry": "Airlines"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "IndiGo CEO resigns months after flight cancellation crisis| Gulf Times - Gulf Times",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSnp1VTF0X3lHV0hwOVR5RTU2YWR6MXFUUFNtZjFHcDc4TGlwdlBhMlduQ3hhTE1EMUtfTUlKN0FrbHJsbmltY3FLdk1Vbzk3eWNKTE1jUlBtOFZyZHpXTmExTVVOSllTalR6U01Wbko1ZW5FTkw2cWd4bVlPSUJIREJaczJySkNsVVRUYV8zYWNycV9yTlA1WVBCaUdrOU50OGxxZ2NoT1JHaTBVXzRyUWZlZ9IBswFBVV95cUxNSnp1VTF0X3lHV0hwOVR5RTU2YWR6MXFUUFNtZjFHcDc4TGlwdlBhMlduQ3hhTE1EMUtfTUlKN0FrbHJsbmltY3FLdk1Vbzk3eWNKTE1jUlBtOFZyZHpXTmExTVVOSllTalR6U01Wbko1ZW5FTkw2cWd4bVlPSUJIREJaczJySkNsVVRUYV8zYWNycV9yTlA1WVBCaUdrOU50OGxxZ2NoT1JHaTBVXzRyUWZlZw?oc=5",
+          "published_at": "Mon, 09 Mar 2026 21:00:00 GMT",
+          "published_ts": 1773090000.0,
+          "sentiment_score": -1.5,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "InterGlobe Aviation Limited",
+          "sector": "Industrials",
+          "industry": "Airlines"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "IndiGo Reports ₹80,986 Crore Operating Income As Fleet Expansion & CRISIL AA- Rating Support Growth - Free Press Journal",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNR18xR3poQUdzSGd1aUR4VG44aDlucUhrVzJEaEdWMmp3Qnpid0Y4OU00eW9UY1JmbUJfbkJRcGZXSk50Mm5ySEo4aVNkenk0MV9xUmF2R0VBd0xWb0w0d2tVMUVvS05JbV84MElKWmowS0RlMFQxX0U5TkFvN1NHYlVSZUNfbTBpbHZrdFYxWDN1eko2UERkOTZCcGdjRU41bUtMeXJPSjJQWVhESnFJbHRuTmZ2M0JMTHpzWERsa0F6dWc3dzItcGY3djhQcFJZ0gHWAUFVX3lxTFBVYW9seVdwU0dYZkJCZ0pILU1ZUHVCa1NQMFVWUGExYkFSSDl1eEtqMURCY1BMVTI0UFpCbW95WHVKWUtQTEwzemhmWVB6NGNWbVpCZmdZR0tXVlpoMmh5bDBJTTBid2xqenE5cUNWbTQwU0VjLVBJaENyc2hUZ0hkUUJLNDBLUjE3R3FORTg5UmhtYnRZRzdYTkJsbmtubmRLTUhiMjA3a0d4VXljMWp4OTdtQjNIbGhaWUoyN1ZoMDB2Q2ZQU2pYT2gyREh3Y19GdU55NVE?oc=5",
+          "published_at": "Sat, 07 Mar 2026 03:14:19 GMT",
+          "published_ts": 1772853259.0,
+          "sentiment_score": 2.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "InterGlobe Aviation Limited",
+          "sector": "Industrials",
+          "industry": "Airlines"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "InterGlobe Aviation Limited CRISIL Reaffirms Credit Ratings with Positive Outlook - InvestyWise",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNcHNxbUxMbWZFWFRhNWRIY3p5VXNoWHljck1qTzRSeTllVVlEcFkzX1FmZUVIeG4yX0MyeGhrXzdRLUlZTnFUY3YyT203b2I1ZUF0bUNWTlJVOHlHaVQwemJ6Rms2eGw3bVhFN2NPYkhZR18xYm9FUEp0dGQ2S2xocC1rbXVsa21JQ0FCclN4X0ZLNUlLSlRMM1duaw?oc=5",
+          "published_at": "Fri, 06 Mar 2026 13:33:56 GMT",
+          "published_ts": 1772804036.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "InterGlobe Aviation Limited",
+          "sector": "Industrials",
+          "industry": "Airlines"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "IndiGo Share Price Falls 2.28% To ₹4,410.00 At Close On 6 March; Aviation Stocks Trade Weak - HDFC Sky",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBKakJzUVpRMW1aRkZNeUFXRHRjMnVvaFNxeXlaS3dRMU5OZlVWWUhWeF9Rc21WVWdWTTM2T0U3OVdZRTJJUWFxY3VXcm05aS1nY2VjZExrUE5tdC1QdG5LczdNWWp2YlB1a0RmcUsyaw?oc=5",
+          "published_at": "Fri, 06 Mar 2026 13:23:46 GMT",
+          "published_ts": 1772803426.0,
+          "sentiment_score": -1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "InterGlobe Aviation Limited",
+          "sector": "Industrials",
+          "industry": "Airlines"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Indigo Approves ESOP Allotment Of 200 Shares Under Employee Stock Option Scheme 2023 - HDFC Sky",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNYTIxWmQ5QW9BWGtRSExKR3dFd0ZSQkRVVVIycG1MQ01pNkdiLWpqMUdWMUFMUWluWWxhQlRMX2xGT3NfYU1wa0xwcWNzWjhSRmtHMmxBQzc1WG8yS1ZzaVVVdHZJR3FSdE4wX2J0ckFtamR5ZDNoQXJ3M0JZZm1OSFRfOXRVZzhfdERaSm9jSXBCN29ZVUFRbGcwbEpMN1FJUU1KR1ROSzBBT1NrcHc?oc=5",
+          "published_at": "Thu, 05 Mar 2026 07:25:47 GMT",
+          "published_ts": 1772695547.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "InterGlobe Aviation Limited",
+          "sector": "Industrials",
+          "industry": "Airlines"
+        }
+      ],
+      "top_macro_news": [
+        {
+          "source": "google_rss_macro",
+          "title": "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRVNOajVzSUJWU3Q5R2toMjVnZVZMNDhLclozWDdNODc1OU1qbVFjYnFTT0Z1SUZaaExuY3FJajFkdWtOWk5kdWplT0J0Yk9RcnlDVnlvQmJZNC1jVDVHZmRhS0Z0X0JiXzFETHRnaUVac1pEMmZfWE9raXFacFpwR1dSaEVST0Ntc2k1czN4emNQVFlWSHE3V1ZhMW80OUFMYmN6dEwtTkRadm44enc?oc=5",
+          "published_at": "Fri, 13 Mar 2026 15:17:26 GMT",
+          "published_ts": 1773415046.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49c5cce1a4790ac994484d06354ab&url=https%3a%2f%2fwww.livemint.com%2fmarket%2fstock-market-news%2fus-china-power-shift-global-markets-india-outlook-mirae-asset-swarup-mohanty-11773376870759.html&c=15555016077234823276&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 14:15:00 GMT",
+          "published_ts": 1773411300.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Fed to delay rate cuts as war clouds the outlook",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49c5cc63c480898eebed1f7dd438f&url=https%3a%2f%2fthink.ing.com%2farticles%2ffed-to-delay-rate-cuts-as-war-clouds-the-outlook%2f&c=127436243108543137&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 13:40:00 GMT",
+          "published_ts": 1773409200.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss_macro",
+          "title": "Bitcoin holds above $71,000, defying rising dollar, oil and U.S. bond yields - CoinDesk",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbHB1NE1GZ1dLTWpvOWNseW5QXy1jbWVHcTYzcXF6NWotU0NHOG1XNEUzcDd0ZTctMW1URXZzSW5RQ1djc1h3a0xOM0k2Tkd5TjRWcE0wUXRwZjg4WktmZ2xDWnpLa0RhR1BsRzlrZlVlVzhONmQ0eW51VXJIWFQ3NFJkd0VXZ2VsUnY4VTBuWjU5LXpxX1BPYUIyaEZKQVdEWUU3a25CY0RvN3NrVW10cFNUTWtxSHdhSWI4?oc=5",
+          "published_at": "Fri, 13 Mar 2026 09:34:10 GMT",
+          "published_ts": 1773394450.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Gold Silver Rate Today Live Updates (13 March 2026): Gold, silver futures fall on MCX as rising crude oil prices dim hopes of early rate cuts",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49c5dafcd46c5a1ff1a0e1ce2ecd5&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2flive-blog%2fgold-rate-silver-price-today-live-updates-mcx-gold-18k-22k-24k-rate-iran-isreal-us-war-latest-news%2fliveblog%2f129534056.cms&c=4108291931945502437&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 06:00:00 GMT",
+          "published_ts": 1773381600.0,
+          "sentiment_score": -1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Markets Today: Sensex Declines 830 Points, Nifty Slips Below 23,650 Amid Iran-US-Israel War",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49c5cce1a4790ac994484d06354ab&url=https%3a%2f%2fwww.news18.com%2fbusiness%2fmarkets%2fmarkets-today-sensex-falls-1000-points-in-opening-trade-nifty-below-23600-as-oil-surges-past-100-9956009.html&c=7425380694736114227&mkt=en-in",
+          "published_at": "Thu, 12 Mar 2026 03:39:00 GMT",
+          "published_ts": 1773286740.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Share markets continue to bleed as West Asia tensions dampen sentiment, Sensex over 800 points down",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49c5cce1a4790ac994484d06354ab&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fmarkets%2fshare-markets-continue-to-bleed-as-west-asia-tensions-dampen-sentiment-sensex-over-800-points-down%2far-AA1Yt9yX&c=14300386732484515462&mkt=en-in",
+          "published_at": "Thu, 12 Mar 2026 03:04:15 GMT",
+          "published_ts": 1773284655.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Trading Day: Oil and yields up, up, and away",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49c5dafcd46c5a1ff1a0e1ce2ecd5&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2ftrading-day-oil-and-yields-up-up-and-away%2far-AA1YqbzQ&c=11227118164045986945&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 14:08:08 GMT",
+          "published_ts": 1773238088.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss_macro",
+          "title": "Markets Confront the Economic Impact of the Iran Conflict - Natixis CIB | Natixis Corporate & Investment Banking",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOVpkVlFlOG1lbEdUZEM2VU40clhkdUtsN3l6Z3Rkd2g4WTBNMVNKSFBmMmkyT1M0RGwtZGJxN1ItZVVrMEU3UnVfWFJ6UmpZUVppV09ZelhMWHNvZmhtbFk3ajc0UnlpY0dZeW51MGJnSUU3dGhYRGFQaE44NjJVaFFBVWFyVlNhampDdXFic0dCZXZ3YW5ScWUtWQ?oc=5",
+          "published_at": "Wed, 11 Mar 2026 10:55:26 GMT",
+          "published_ts": 1773226526.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Oil price spike could push US inflation to 4%, delaying Fed rate cut",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49c5cc63c480898eebed1f7dd438f&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2foil-price-spike-could-push-us-inflation-to-4-delaying-fed-rate-cut%2far-AA1Ym49n&c=7065206888862373143&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 03:02:32 GMT",
+          "published_ts": 1773198152.0,
+          "sentiment_score": 1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        }
+      ],
+      "avg_sentiment": -0.035769590770827545,
+      "macro_sentiment": -0.09146728678443877
+    },
+    "market_sentiment": {
+      "signal": "SELL",
+      "confidence": 0.656,
+      "summary": "Market Sentiment: SELL | NIFTY 5D=-4.55%, 10D=-7.23%, 20D=-8.92%, SMA20 gap=-5.7% (below). India VIX=6632.18994140625, 5D chg=-107.8, news sentiment=-0.04. Votes: bull=2, bear=3.",
+      "reasoning_prompt": "Market sentiment protocol:\n1) Evaluate NIFTY multi-window momentum (5/10/20-bar returns) for domestic risk appetite.\n2) Check Nifty SMA20 structure — price above 20DMA = constructive, below = cautious.\n3) Evaluate India VIX regime as stress filter (low=constructive, high=defensive).\n4) Factor VIX change rate — rising VIX signals increasing fear even if level is moderate.\n5) Blend with cleaned multi-source news sentiment (stock + macro blend).\n6) Count bullish/bearish votes and avoid directional call under conflict.\n7) Prefer NO_TRADE when index momentum and volatility regime diverge.",
+      "llm_reasoning": "Sentiment is predominantly negative. High volume on the downside suggests institutional distribution. The combination of bearish technicals and headline pressure around the CEO transition indicates investor anxiety. With RSI reaching oversold territory but no bullish divergence present, sentiment is currently characterized by fear and liquidity preference, favoring further price erosion rather than an immediate reversal.",
+      "detail": {
+        "nifty_ret5": -0.04549602405840758,
+        "nifty_ret10": -0.0723378636073776,
+        "nifty_ret20": -0.08918519809538727,
+        "above_sma20": false,
+        "sma_gap_pct": -5.67,
+        "vix_level": 6632.18994140625,
+        "vix_change_5d": -107.83,
+        "news_avg_sentiment": -0.035769590770827545,
+        "bullish_votes": 2,
+        "bearish_votes": 3
+      }
+    },
+    "relative_strength": {
+      "signal": "NO_TRADE",
+      "confidence": 0.44677377707115157,
+      "summary": "Relative Strength: NO_TRADE | stock 10-bar return=-3.21%, NIFTY=-3.44%, alpha=0.22%.",
+      "reasoning_prompt": "Relative-strength protocol:\n1) Compare stock and NIFTY returns over same 10-bar window.\n2) Convert spread into alpha and classify persistent out/under-performance.\n3) Treat marginal alpha as noise and return NO_TRADE.\n4) Use relative strength as confirmation layer, not standalone trigger.",
+      "llm_reasoning": "The stock exhibits significant relative weakness. Trading below both the 20-day and 50-day moving averages while showing a -14.06% ROC10 indicates that the stock is underperforming its moving averages and typical trend cycles. The inability to hold above the 4300 level while volume remains elevated compared to the 20-day average confirms that the asset is failing to attract defensive buying relative to broader market averages.",
+      "detail": {
+        "stock_ret10": -0.03214270986596246,
+        "nifty_ret10": -0.03436815462817344,
+        "alpha": 0.002225444762210982
+      }
+    },
+    "us_trend": {
+      "signal": "SELL",
+      "confidence": 0.85,
+      "summary": "US Trend Signal: SELL | Global risk-off backdrop. SPX 5D/20D=-5.79%/-15.20%, NDX 5D/20D=-1.60%/-2.94%, VIX=27.29, DXY 5D=0.00%.",
+      "reasoning_prompt": "US macro trend protocol:\n1) Evaluate SPX and NDX short/medium returns for global equity risk tone.\n2) Use VIX as stress filter (high VIX weakens risk-on conviction).\n3) Use DXY direction as liquidity/EM risk proxy for Indian equities.\n4) Classify regime as risk-on, risk-off, or mixed.\n5) Use this as contextual bias only; do not override local setup quality.",
+      "llm_reasoning": "The macro environment is currently bearish. Broad equity market indices are facing pressure from higher-for-longer interest rate narratives, which negatively impact airline stocks due to fuel costs and debt-servicing burdens. This macro-level constraint, combined with sector-specific volatility, aligns with the negative sentiment observed in Indian aviation indices, reinforcing the broader sell bias for the stock.",
+      "detail": {
+        "regime": "Global risk-off backdrop",
+        "llm_decision_why": "The macro regime is clearly risk-off. SPX and NDX returns are negative across short and medium horizons, reflecting persistent downward momentum. The VIX at 27.29 indicates elevated market stress and volatility, characteristic of a bearish environment. Current evidence strongly supports a defensive, risk-off positioning for equity markets.",
+        "spx_ret_5": -0.057857565297665725,
+        "spx_ret_20": -0.15200040669005133,
+        "ndx_ret_5": -0.015998480392124925,
+        "ndx_ret_20": -0.02935414548420079,
+        "vix_last": 27.290000915527344,
+        "dxy_ret_5": 0.0,
+        "dxy_ret_20": 0.0
+      }
+    },
+    "financials": {
+      "signal": "NO_TRADE",
+      "confidence": 0.5310497450942346,
+      "summary": "Financials Signal: NO_TRADE | Fundamentals mixed/neutral. Coverage=62%. ROE=77.48%, Margin=9.35%, RevGrowth=N/A, EarnGrowth=N/A, D/E=7.132, CurrentRatio=N/A, PE=22.148. Quarterly trends: RevQoQ=14.52%, NIQoQ=-74.74%, OCFQoQ=N/A, DebtQoQ=12.78%, FCF=N/A, Cash/Debt=0.016. Analyst target=N/A (N/A upside, ? analysts). 52w Hi/Lo=6232.500/4035.000, position=5.61%.",
+      "reasoning_prompt": "Financial statement reasoning protocol:\n1) Evaluate valuation (PE/PB) relative to profitability and growth quality.\n2) Score profitability and efficiency (ROE, margins).\n3) Validate growth durability using quarterly revenue and net-income trends.\n4) Check balance-sheet resilience (debt trend, liquidity, cash/debt).\n5) Check cash-flow quality (operating CF trend, free cash flow sign).\n6) If fundamentals conflict or are incomplete, default to conservative NO_TRADE bias.",
+      "llm_reasoning": "Financial metrics reveal significant pressure. The 10-day rate of change is -14.06%, underscoring a rapid deterioration in price. The ATR14 of 172.51 indicates elevated volatility, increasing the risk of sharp downside gaps. With the price substantially detached from the SMA20 and SMA50, the financials reflect a stock currently struggling with valuation adjustments and momentum decay, warranting a cautious, bearish stance.",
+      "fundamental_signals": [
+        {
+          "type": "mixed",
+          "text": "Near 52-week low (₹4035.00–₹4158.20) — historically strong demand zone. Deep oversold bounces common, but confirm volume."
+        },
+        {
+          "type": "bullish",
+          "text": "Revenue growing QoQ (14.5% last quarter)."
+        },
+        {
+          "type": "bearish",
+          "text": "Net income declined sharply QoQ (-74.7%)."
+        }
+      ],
+      "analyst_consensus": {
+        "target_price": null,
+        "target_high": null,
+        "target_low": null,
+        "n_analysts": null,
+        "implied_upside_pct": null
+      },
+      "price_52w": {
+        "high": 6232.5,
+        "low": 4035.0,
+        "current": 4158.2,
+        "position_pct": 5.6,
+        "change_1y_pct": null
+      },
+      "extended_fundamentals": {
+        "symbol": "INDIGO.NS",
+        "dividend_yield": null,
+        "dividend_rate": null,
+        "ex_dividend_date": null,
+        "payout_ratio": null,
+        "held_pct_insiders": null,
+        "held_pct_institutions": null,
+        "book_value": null,
+        "price_to_book": null,
+        "return_on_equity": null,
+        "debt_to_equity": null,
+        "profit_margins": null,
+        "enterprise_value": null,
+        "enterprise_to_revenue": null,
+        "enterprise_to_ebitda": null,
+        "gross_margins": null,
+        "operating_margins": null,
+        "ebitda_margins": null,
+        "total_revenue": null,
+        "total_debt": null,
+        "total_cash": null,
+        "peg_ratio": null,
+        "trailing_pe": null,
+        "forward_pe": null
+      },
+      "promoter_institutional": {
+        "symbol": "INDIGO.NS",
+        "major_holders": {},
+        "top_institutional": []
+      },
+      "dividends_splits": {
+        "symbol": "INDIGO.NS",
+        "recent_dividends": [
+          {
+            "date": "2016-09-12 00:00:00+05:30",
+            "amount": 15.0
+          },
+          {
+            "date": "2017-08-18 00:00:00+05:30",
+            "amount": 34.0
+          },
+          {
+            "date": "2018-08-02 00:00:00+05:30",
+            "amount": 6.0
+          },
+          {
+            "date": "2019-08-19 00:00:00+05:30",
+            "amount": 5.0
+          },
+          {
+            "date": "2025-08-13 00:00:00+05:30",
+            "amount": 10.0
+          }
+        ],
+        "recent_splits": [],
+        "dividend_yield_trend": null,
+        "total_dividends_1y": 10.0
+      },
+      "metrics": {
+        "market_cap": 1607613412153.912,
+        "trailing_pe": 22.148316600819907,
+        "forward_pe": null,
+        "price_to_book": 17.160323350845545,
+        "debt_to_equity": 7.131551418628979,
+        "return_on_equity": 0.7747913153006981,
+        "profit_margins": 0.09351366811563208,
+        "operating_margins": 0.14288843138113802,
+        "gross_margins": 0.17081859245077854,
+        "ebitda_margins": null,
+        "revenue_growth": null,
+        "earnings_growth": null,
+        "free_cashflow": null,
+        "operating_cashflow": null,
+        "current_ratio": null,
+        "fifty_two_week_high": 6232.5,
+        "fifty_two_week_low": 4035.0,
+        "fifty_two_week_change": null,
+        "dividend_yield": 0.01322687639282038,
+        "current_price": 4158.2001953125,
+        "analyst_target_price": null,
+        "analyst_target_high": null,
+        "analyst_target_low": null,
+        "number_of_analyst_opinions": null,
+        "trailing_eps": null,
+        "forward_eps": null,
+        "beta": null,
+        "book_value": 242.31479269343794,
+        "enterprise_value": null,
+        "total_revenue": 776186000000.0,
+        "total_debt": 668098000000.0,
+        "total_cash": 10731000000.0,
+        "peg_ratio": null,
+        "sector": null,
+        "industry": null,
+        "company_name": ""
+      },
+      "detail": {
+        "stance": "Fundamentals mixed/neutral",
+        "bull_points": 3,
+        "bear_points": 3,
+        "data_quality": {
+          "coverage_ratio": 0.6153846153846154,
+          "available_fields": 8,
+          "total_fields": 13
+        },
+        "metrics": {
+          "market_cap": 1607613412153.912,
+          "trailing_pe": 22.148316600819907,
+          "forward_pe": null,
+          "price_to_book": 17.160323350845545,
+          "debt_to_equity": 7.131551418628979,
+          "return_on_equity": 0.7747913153006981,
+          "profit_margins": 0.09351366811563208,
+          "operating_margins": 0.14288843138113802,
+          "gross_margins": 0.17081859245077854,
+          "ebitda_margins": null,
+          "revenue_growth": null,
+          "earnings_growth": null,
+          "free_cashflow": null,
+          "operating_cashflow": null,
+          "current_ratio": null,
+          "fifty_two_week_high": 6232.5,
+          "fifty_two_week_low": 4035.0,
+          "fifty_two_week_change": null,
+          "dividend_yield": 0.01322687639282038,
+          "current_price": 4158.2001953125,
+          "analyst_target_price": null,
+          "analyst_target_high": null,
+          "analyst_target_low": null,
+          "number_of_analyst_opinions": null,
+          "trailing_eps": null,
+          "forward_eps": null,
+          "beta": null,
+          "book_value": 242.31479269343794,
+          "enterprise_value": null,
+          "total_revenue": 776186000000.0,
+          "total_debt": 668098000000.0,
+          "total_cash": 10731000000.0,
+          "peg_ratio": null,
+          "sector": null,
+          "industry": null,
+          "company_name": ""
+        },
+        "metrics_extended": {
+          "dividend_yield": null,
+          "peg_ratio": null,
+          "operating_margins": null,
+          "gross_margins": null,
+          "ev_to_ebitda": null,
+          "held_pct_institutions": null
+        },
+        "statement_trends": {
+          "revenue_qoq": 0.1451774222664579,
+          "net_income_qoq": -0.7473693884115242,
+          "operating_cf_qoq": null,
+          "debt_qoq": 0.1278409234784399,
+          "free_cashflow_latest": null,
+          "cash_to_debt": 0.016062014854108228
+        }
+      }
+    },
+    "market_setup": {
+      "signal": "NO_TRADE",
+      "confidence": 0.55,
+      "summary": "Market Setup Signal: NO_TRADE | Early bearish alignment. Tape read: 5d=-5.8%, 20d=-15.2%, volume ratio=1.74, momentum=18.6. Support gap=5.4% and resistance gap=16.8%. Trader read: The structure is in a heavy downtrend with weak momentum and poor RSI positioning, suggesting exhaustion rather than a fresh sell. While the trend is bearish, the price is nearing support at 4035 with an RSI near 30. Entering a short here carries significant mean-reversion risk, making the risk-reward ratio unfavorable for a new position.",
+      "reasoning_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+      "llm_reasoning": "The market setup is configured for a potential breakdown. Price is testing the lower bound of a channel (4384.87 support) with a channel position of -1.19, suggesting potential exhaustion. However, the lack of positive price action or bullish volume confirmation keeps the bias skewed to the downside. The setup requires a clean hold above 4400 to negate the current sell signal, which is currently unsupported by incoming data.",
+      "setup_label": "Early bearish alignment",
+      "detail": {
+        "recent_return_5d_pct": -5.79,
+        "recent_return_20d_pct": -15.2,
+        "volume_ratio_5d_vs_20d": 1.74,
+        "distance_to_support_pct": 5.37,
+        "distance_to_resistance_pct": 16.76,
+        "momentum_score": 18.6,
+        "buy_votes": 0,
+        "sell_votes": 2
+      }
+    },
+    "catalyst_context": {
+      "signal": "NO_TRADE",
+      "confidence": 0.65,
+      "summary": "Catalyst Context Signal: NO_TRADE | Deteriorating backdrop. Backdrop read: news sentiment=-0.04, analyst upside=None, 52w position=5.6. Core read: The stock is hovering near a critical support level, which is technically interesting, but the fundamental picture is concerning. A massive 74.7% QoQ decline in net income combined with a very high debt-to-equity ratio of 7.13 suggests significant financial stress. Without clearer signs of margin stabilization or debt reduction, the risk of a breakdown outweighs the bounce potential.",
+      "reasoning_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+      "llm_reasoning": "The primary catalyst is the combination of a Citi price target downgrade and the ongoing management uncertainty related to the CEO transition. These fundamental triggers are exacerbated by the technical failure to maintain support levels, creating a negative feedback loop. Until clarity on leadership or a shift in macro-economic sentiment regarding the airline sector emerges, these catalysts will likely continue to exert downward pressure.",
+      "catalyst_label": "Deteriorating backdrop",
+      "detail": {
+        "buy_votes": 0,
+        "sell_votes": 3,
+        "avg_sentiment": -0.036,
+        "analyst_upside_pct": null,
+        "position_52w_pct": 5.6,
+        "fundamental_signals": [
+          "Near 52-week low (₹4035.00–₹4158.20) — historically strong demand zone. Deep oversold bounces common, but confirm volume.",
+          "Revenue growing QoQ (14.5% last quarter).",
+          "Net income declined sharply QoQ (-74.7%)."
+        ]
+      }
+    }
+  },
+  "agent_guidance": {
+    "indicator_prompt": "Indicator reasoning protocol:\n1) Evaluate structural trend using close vs SMA20 and SMA20 vs SMA50.\n2) Validate momentum using MACD line/signal/histogram and ROC10 direction.\n3) Check exhaustion/continuation via RSI, Stochastic crossover, and Williams %R zone.\n4) Confirm participation with volume vs 20-bar average.\n5) Penalize high-volatility regimes with ATR% filters and lower confidence.\n6) If cross-indicator alignment is weak or contradictory, return NO_TRADE.",
+    "pattern_prompt": "Pattern reasoning protocol:\n1) Detect breakout/breakdown against prior 12-bar range, not single-candle spikes.\n2) Confirm direction with local slope and bar-structure continuation.\n3) Use engulfing patterns as confirmation, not standalone trigger.\n4) Treat flat-slope compression as NO_TRADE until expansion is confirmed.\n5) Down-rank weak breakouts lacking structure confirmation.",
+    "news_prompt": "News reasoning protocol:\n1) Collect company-specific headlines across multiple providers using diversified queries.\n2) Filter spam/listicle/noise domains and low-relevance stories.\n3) Build a global macro stream (rates, inflation, oil, USD, broad risk sentiment).\n4) Build industry/sector thematic stream (demand cycle, market share, regulation, capacity, pricing).\n5) Weight sentiment by source quality, exponential recency decay, and relevance confidence.\n6) Apply content-similarity dedup to remove near-duplicate headlines.\n7) Use LLM to infer final bias from company + industry + macro evidence and return NO_TRADE under conflict.",
+    "trend_prompt": "Trend reasoning protocol:\n1) Fit support and resistance trendlines over the visible swing window.\n2) Estimate channel slope (regime direction) and channel width (trend quality).\n3) Locate current price in channel and prefer pullback entries aligned with slope.\n4) If slope is weak/flat, classify as sideways and favor NO_TRADE.\n5) Avoid chasing signals near channel extremes against risk-reward logic.",
+    "market_prompt": "Market sentiment protocol:\n1) Evaluate NIFTY multi-window momentum (5/10/20-bar returns) for domestic risk appetite.\n2) Check Nifty SMA20 structure — price above 20DMA = constructive, below = cautious.\n3) Evaluate India VIX regime as stress filter (low=constructive, high=defensive).\n4) Factor VIX change rate — rising VIX signals increasing fear even if level is moderate.\n5) Blend with cleaned multi-source news sentiment (stock + macro blend).\n6) Count bullish/bearish votes and avoid directional call under conflict.\n7) Prefer NO_TRADE when index momentum and volatility regime diverge.",
+    "relative_strength_prompt": "Relative-strength protocol:\n1) Compare stock and NIFTY returns over same 10-bar window.\n2) Convert spread into alpha and classify persistent out/under-performance.\n3) Treat marginal alpha as noise and return NO_TRADE.\n4) Use relative strength as confirmation layer, not standalone trigger.",
+    "us_trend_prompt": "US macro trend protocol:\n1) Evaluate SPX and NDX short/medium returns for global equity risk tone.\n2) Use VIX as stress filter (high VIX weakens risk-on conviction).\n3) Use DXY direction as liquidity/EM risk proxy for Indian equities.\n4) Classify regime as risk-on, risk-off, or mixed.\n5) Use this as contextual bias only; do not override local setup quality.",
+    "financials_prompt": "Financial statement reasoning protocol:\n1) Evaluate valuation (PE/PB) relative to profitability and growth quality.\n2) Score profitability and efficiency (ROE, margins).\n3) Validate growth durability using quarterly revenue and net-income trends.\n4) Check balance-sheet resilience (debt trend, liquidity, cash/debt).\n5) Check cash-flow quality (operating CF trend, free cash flow sign).\n6) If fundamentals conflict or are incomplete, default to conservative NO_TRADE bias.",
+    "market_setup_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+    "catalyst_context_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+    "trader_intel_prompt": "Think like a discretionary Indian swing trader. Judge setup quality, catalyst quality, crowd positioning, and execution patience together. Avoid indicator-threshold language. Prefer NO_TRADE when the idea is merely interesting rather than executable. Use nearby levels, 52-week context, analyst framing, and headline quality to write a trader-grade verdict."
+  },
+  "market_setup": {
+    "signal": "NO_TRADE",
+    "confidence": 0.55,
+    "summary": "Market Setup Signal: NO_TRADE | Early bearish alignment. Tape read: 5d=-5.8%, 20d=-15.2%, volume ratio=1.74, momentum=18.6. Support gap=5.4% and resistance gap=16.8%. Trader read: The structure is in a heavy downtrend with weak momentum and poor RSI positioning, suggesting exhaustion rather than a fresh sell. While the trend is bearish, the price is nearing support at 4035 with an RSI near 30. Entering a short here carries significant mean-reversion risk, making the risk-reward ratio unfavorable for a new position.",
+    "reasoning_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+    "llm_reasoning": "The market setup is configured for a potential breakdown. Price is testing the lower bound of a channel (4384.87 support) with a channel position of -1.19, suggesting potential exhaustion. However, the lack of positive price action or bullish volume confirmation keeps the bias skewed to the downside. The setup requires a clean hold above 4400 to negate the current sell signal, which is currently unsupported by incoming data.",
+    "setup_label": "Early bearish alignment",
+    "detail": {
+      "recent_return_5d_pct": -5.79,
+      "recent_return_20d_pct": -15.2,
+      "volume_ratio_5d_vs_20d": 1.74,
+      "distance_to_support_pct": 5.37,
+      "distance_to_resistance_pct": 16.76,
+      "momentum_score": 18.6,
+      "buy_votes": 0,
+      "sell_votes": 2
+    }
+  },
+  "catalyst_context": {
+    "signal": "NO_TRADE",
+    "confidence": 0.65,
+    "summary": "Catalyst Context Signal: NO_TRADE | Deteriorating backdrop. Backdrop read: news sentiment=-0.04, analyst upside=None, 52w position=5.6. Core read: The stock is hovering near a critical support level, which is technically interesting, but the fundamental picture is concerning. A massive 74.7% QoQ decline in net income combined with a very high debt-to-equity ratio of 7.13 suggests significant financial stress. Without clearer signs of margin stabilization or debt reduction, the risk of a breakdown outweighs the bounce potential.",
+    "reasoning_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+    "llm_reasoning": "The primary catalyst is the combination of a Citi price target downgrade and the ongoing management uncertainty related to the CEO transition. These fundamental triggers are exacerbated by the technical failure to maintain support levels, creating a negative feedback loop. Until clarity on leadership or a shift in macro-economic sentiment regarding the airline sector emerges, these catalysts will likely continue to exert downward pressure.",
+    "catalyst_label": "Deteriorating backdrop",
+    "detail": {
+      "buy_votes": 0,
+      "sell_votes": 3,
+      "avg_sentiment": -0.036,
+      "analyst_upside_pct": null,
+      "position_52w_pct": 5.6,
+      "fundamental_signals": [
+        "Near 52-week low (₹4035.00–₹4158.20) — historically strong demand zone. Deep oversold bounces common, but confirm volume.",
+        "Revenue growing QoQ (14.5% last quarter).",
+        "Net income declined sharply QoQ (-74.7%)."
+      ]
+    }
+  },
+  "trader_intel": {
+    "signal": "NO_TRADE",
+    "confidence": 0.6,
+    "verdict_label": "Wait for structural confirmation",
+    "playbook_title": "Mean Reversion Trap Avoidance",
+    "thesis": "INDIGO is in a sharp markdown phase with heavy selling pressure. While the price is nearing the 4035 support zone, the massive QoQ net income contraction indicates fundamental bleeding. I refuse to bottom-fish against such steep momentum; it is safer to watch for a stabilization phase or a failed breakdown before considering any long, or a lower-high setup for a short continuation.",
+    "execution_style": "Observation-only until volatility contracts",
+    "risk_flag": "High fundamental volatility and trend-against-sentiment risk",
+    "entry_trigger": "Price consolidation above 4035 with a distinct compression in daily range",
+    "invalidation": "Clean break and hold below 4000 would negate any near-term floor potential",
+    "why_now": "The stock is currently in 'falling knife' territory where liquidity is poor and momentum is heavily skewed to the downside.",
+    "why_not_now": "Buying into a 15% 20-day decline with a 74% income drop is high-risk gambling; the risk-reward ratio does not justify a position until the seller fatigue is visible on the tape.",
+    "summary": "Trader Intel: NO_TRADE | Wait for structural confirmation | Mean Reversion Trap Avoidance. Thesis: INDIGO is in a sharp markdown phase with heavy selling pressure. While the price is nearing the 4035 support zone, the massive QoQ net income contraction indicates fundamental bleeding. I refuse to bottom-fish against such steep momentum; it is safer to watch for a stabilization phase or a failed breakdown before considering any long, or a lower-high setup for a short continuation. Why now: The stock is currently in 'falling knife' territory where liquidity is poor and momentum is heavily skewed to the downside. Why not now: Buying into a 15% 20-day decline with a 74% income drop is high-risk gambling; the risk-reward ratio does not justify a position until the seller fatigue is visible on the tape.",
+    "reasoning_prompt": "Think like a discretionary Indian swing trader. Judge setup quality, catalyst quality, crowd positioning, and execution patience together. Avoid indicator-threshold language. Prefer NO_TRADE when the idea is merely interesting rather than executable. Use nearby levels, 52-week context, analyst framing, and headline quality to write a trader-grade verdict."
+  },
+  "top_news": [
+    {
+      "source": "google_rss",
+      "title": "InterGlobe Aviation (IndiGo) Stock Faces Downtrend Pressure Amid High Trading Volume - AD HOC NEWS",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNMUlTSzBDSzl3Nk5CNGVoOUlKYndSYURDMzJRX3NJS1ZLbUppVXg3ejdRSjlLWFhTNXloVnh3WXZZbjZFc3p5QlNCVFVKLUwycHlJZE00ZXAyZHI5cGJZd2JDWU9CX3J2SHRLS0kxNW1KYzZJTE43NC1WSzNTQ1h3Mjg2YzJIbUlqUjBQbE5oaGdmeWJpc3Q5Rk04Uzl3NXgxSmNVczZ6cUlEODNxQVNURjlieWpMX3lmVWZIMC1sbHQ5X2NC?oc=5",
+      "published_at": "Fri, 13 Mar 2026 13:31:16 GMT",
+      "published_ts": 1773408676.0,
+      "sentiment_score": -1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss",
+      "title": "IndiGo investors shrug off Pieter Elbers’ exit as Rahul Bhatia plays ‘Main Hoon Na’",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49c49bc9c472690ec8f46242a38bc&url=https%3a%2f%2fwww.livemint.com%2fmarket%2findigo-founder-rahul-bhatia-returns-steadies-airline-investors-market-11773294774758.html&c=15390012801048455281&mkt=en-in",
+      "published_at": "Thu, 12 Mar 2026 15:29:00 GMT",
+      "published_ts": 1773329340.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "IndiGo parent shares fall nearly 4 pc after Citi cuts target price - The Hans India",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOaEZtYi1BNjI1VEszVllRaVlWbDk5cmRLbDFJa3ZOQ1BVTGYwdFBrQXhqWXpWSnY4cm53ZFJ5ZDB4LWJGQXBTYmpiZjRvUWt3WlBjWHJqM0ROQ2hnUEJXUnpibFhpb05yN1BObm14U3VYdTFnVy1WWVdwdUZ6bG1XeUpGc0ZDdTNHQlF1Mk42MVlQSXhHMXFiRWZobXo5MTAwUHRpNXl5M0xJVjU2SGJjUW5n0gG3AUFVX3lxTE1jUHpJZjZvc1JYMUUzZ1h5bzBJRF9weTRBSGhJY0lpY2t3NlAwZ0o1VENvZDZwZUdGbTFUbndjdDNCRWxULVJieWpjcTNMdUh1cmNKcGVLWHpFdTNyWUVmYUlEMnk3Zlc4WEMwdThtcERLeHZUTXRpdy1uTEpRdVpSMWpfa3dSdkhpSTVNUU5GMVVPY1pKREZVM3lPOWx5cjZGU0tYNDZxd1Blbk0yNmc2Nm95THJGZw?oc=5",
+      "published_at": "Thu, 12 Mar 2026 09:45:10 GMT",
+      "published_ts": 1773308710.0,
+      "sentiment_score": -1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "IndiGo shares rebound nearly 8% from 52-week low; what lies ahead for India's largest airline? - Business Today",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOMWtHLXhNb1lvOXJEZHl0ZGlsc1k5V0F5TXR3WGZaRG8zQk4zejBjV2praU1tZjE5cnRjNE5qZEFCWjdZUWlwMnd3YzFlOFhjaTI4VnZsVUphVVZjM3RSVk5KcHZpWXpvdzhLMkI3anJFZ3hfVms0UkR2V2JvZEU3UUlZV1pabnpzaTdKU2ZTT2Vuam1Gc1JKNFNUSk1tamx0NlczUHo0bVFCY0x3eGo0Z2d4Y2h1R2tkZUN3dlZQWEJSLXRfd0Y3NExFeDNKNEJhM2lVZHNoU0RpbHVuTFNjS1pPVFZXejZyQUxwZnUtNNIB9AFBVV95cUxPeU1hWlBSMzlGZ0ptd3dNSkx6TTV0VnlKV0c4bF9PeVc2cWVvdXBSWWp2TG5NM2pYTmV2dDlJU1h3UVRMZVU3OWlOTDM4MEswcUY0ak96dUdIQ0pkS3ZmVGRiR2ExbTEyM2lUUldnN0ppX0xaOTZOSFBlWXp1b2xhUWd1dE9QZUhiaGxIRDc0TE9VQ2RZdm9SZTQtc0FrREVKc2VVdWJXa2ZLU1paNV9haUdQVXRGT0hITWlGY0dGbGFpWS10NHp5ZG9NamJLekthYmgtUkNpLXRhNloyOWQwcjUxZGJFTEFDdjlhSkZwMk1TeXRW?oc=5",
+      "published_at": "Wed, 11 Mar 2026 12:31:35 GMT",
+      "published_ts": 1773232295.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss",
+      "title": "Why is IndiGo share price rising 3% despite CEO Pieter Elbers' resignation? Explained",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49c49bc9c472690ec8f46242a38bc&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2ftopstories%2fwhy-is-indigo-share-price-rising-3-despite-ceo-pieter-elbers-resignation-explained%2far-AA1XXett&c=1196829230998016643&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 08:47:00 GMT",
+      "published_ts": 1773218820.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "SENSEX tanks over 950 pts, NIFTY50 below 24,000 in noon deals; IndiGo, Waaree Energies among buzzing stocks - Upstox",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNOVVUTkxrWFE0ak42MTV5Wk9kNVVSbG5tSnktaGY2X1piWjVXNndERlUtQUxXRmp5NkloN1l3bG92czNkLVlaQ1U1aHdpZ05zeFc3cjNjMjMyV05jdzAxalktbFh1ZnZTMnduMkZzRy1tRk4wTDJwUy1ROGVQeUlOLV9vS3FETGhsakhndFQtSmJzV3l6SVhZdUdOYXVPZnp2UnpOS1hrZUlBbXU1cWZEYWsxN180dmgyb1BNY1lNalctSU8wUTNPZkNfVy1OQTgxNEdhRlJiRGswd0o3V0VmdmkxbExDM0pobDh3MWZR?oc=5",
+      "published_at": "Wed, 11 Mar 2026 07:18:07 GMT",
+      "published_ts": 1773213487.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "IndiGo Share Price Rises 2.6% After CEO Exit | Stock Market Today - Samco",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQTTlPR0c2Tk1RdUU4SWtmaXlfRU8tQmZELTZHRjd0cTUyZW44dzFRLWJGNk10RFdMbE1fVktWOWlLeWlSbURUMWVJOTlKVlNvYWwzRWlpR3ZfbmVjRld5UzJxam9odFduaWNDdi1TNy11V282VUNhLVVFSTFxbWp0VmluWndwaU1yTDJWYVRLQlpZRmVEYjF6ZGJ0cl9FeDN1b0VXVlpiSHhhdUlRWURLWTJ3Qm9KUkdlY2cxaHc4aE5HeWhraXRYdG93cy1wRkQxRkJ2Qk5CM0pDYUtZVmE3MFNScmE?oc=5",
+      "published_at": "Wed, 11 Mar 2026 06:07:55 GMT",
+      "published_ts": 1773209275.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "India's IndiGo shares rise after CEO quits; analysts see smooth transition - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNSTZFb0xFeWdSSjFXRzk1MWFnN2JNck5QWHpGOTNqUE5PZUxUc1VnTmZ1ZkpiNy1Ra0NldlRtQXNLNHc5ZlJBMzB0TUgyZm54SzVMcjBpYXdpWkExUTBIejd4Smt3UVB5a1REaXlOVURxaHQ1clNtdTFxYnlYSFJmRFhiOWtRQVZHeFNtQ1dVdS1CS29MTXUzUG1waERCVk9OYjBBTGVwVk15U1N5aW1HYWd1cmpuYnlzeFpZZ2didUwwUG8teU5IMzE4aHA0ekI3ZVZCMlNLTEFXM1l1enROQ3RB?oc=5",
+      "published_at": "Wed, 11 Mar 2026 05:54:50 GMT",
+      "published_ts": 1773208490.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Aviation Stocks: IndiGo, SpiceJet, Global Vectra Trade Higher In Early Session - HDFC Sky",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNU0xjQkRORjVleXg2TmNyRWtxVWZtZE5uUmQ1ZnhQanVEVGRZRW1iZ0N4Ni1rNEp3ZzdDVmlRVUpjRDA1YlBoWWpEdGMxUi1BWEhDVkhBc0o1Um5wR0ZkVElvaG1CRFBySFdza2NLQWtKazdSOVlXNFdPeUVDY2pFN3VvR2hyM3djaFFZNk4wOW53ZVJHZFE0eWs1dlpjRW5HbXc?oc=5",
+      "published_at": "Wed, 11 Mar 2026 05:17:18 GMT",
+      "published_ts": 1773206238.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "IndiGo shares rise nearly 3%, snap two-session losing streak after CEO exit - Fortune India",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNU01jNEpTUDVHYjJrQ3hIT1hveS1LRXJaWUkyNXFrQ1hYelNzWWItMFZQR2pIeTFiSFFCOU1fNHhqbTNzakdsT2lLN2tYRHpXbjlxX1RKNlJSSFRYUmhWYV9Xc2JXaVc0dXRuTXBuNURkX0dFbkpvQU9zUDhqN2FVMElMSmFaZEc4bzdTNHhmbHNGQXdHNjFPaXB3Q2JydVlXOEVqVHh2YW5CSnlEYzhWaDBRS0dDbW450gHGAUFVX3lxTE56TF9oZW9Gck5kS3pJemoyYmNZa1JaLXJtQ042T20xd09wUk1CbE9Qd3BzeUlWczV2ZHk2Zkx1Z0wyRlYwMzNQV3VlZ3B1VzR3LVpXWjYtOFVsVHM2cnBfa1lyNE9JOHBucU5scE9FRnEwVTFFcWdlS1FIUUt2enJ3TzlveWFCNDZMTjlYdEllWVRpUDRzRC1Yc0QwNXc1enY3Z1VrM2diMGdGaHhYaFBXOENtVkVyWERNOFFRM3YwU2NLM2p2Zw?oc=5",
+      "published_at": "Wed, 11 Mar 2026 04:34:10 GMT",
+      "published_ts": 1773203650.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "IndiGo stock jumps 3% as brokerages retain ‘buy’ calls after CEO exit; HSBC, Jefferies see stable... - Moneycontrol.com",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPcEtuNEZrN0JhTXV2ZkNCeWJlR21vVkpqYWMtdHh4LTBKMTRNVkZaSExjX0tyWG1xdjhYTjJUUGduZmEtMDhMNnlldTJiRF9zaHF1TEpMMDlKd0JtNkdMVWxBaWVnY0pUR1ZkdThxdzBDRk5fNURjNGltU0lOTnRyU2JNU3V2U0w4Q3lNUGs1VkVTQWNzQkpxeUV1UmdScHlrMTFDbEhtSGFEVmxleEEtUnJXcWMtQ21wNUxWSm9XYmhtck15WG16SGstWklTMmRybFdpWURNUjhlZ0puSUg5Zlp2LTRlUVNvcVUtcm00cEtkR3o0RkJ6ddIB_gFBVV95cUxPN2tveVlrSVRtZElJS0U4cWZKa2JDSk5Sc1VsSHpMaVNfNmZkeW5wR0ZzT3JpSnRzNWpBdUQ1aE5Sb2tBcVFidW1DMHRyZ3Z0MGoweUxtOE05TFVHREx3Nl9GMmtwRWMySG1tYURTZ3ZGb2VlMlFCeGdjdGlfMV9xQVNQU241ZW1XbkRUMjBTY25idUxCb2gwcFNiTE9UN1VaMFUxQ01HY1NaNnJOMzdFaGQ2aFlsWFU0RnZiV1Ixd0phYTIxWTV3ZktyS3RWUDdaX1p5T1ZYd3lsQnBlZDM0YXJMYzBkX0ZSVW9rRE9WYWJNUTRsOW5oSFF0WVNLQQ?oc=5",
+      "published_at": "Wed, 11 Mar 2026 04:06:17 GMT",
+      "published_ts": 1773201977.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "IndiGo share price to remain in focus today after CEO Pieter Elbers resigns - Mint",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNZnRpemE4SjFjc3FlVVB6UVlkay1YNnVmTTlqZXJXM2lMS1g3V3gxSHlSZFhyWTBNNDhUVlFYbW9hQXBvSlQzd2hsMkM2SU1ocHNuT3VvQnNNV0FFazl3MVBGZzhZR0pqYjd6dS0yV0VhcTVia1RiXzg4Qk9PdUV2aWlNblljbjU2YTRMUFNSSmZkRUZFYlNEaW5zSy1NMHBBMTlORWJuZk1jY3R1aFZjUzlQQjhmaWlnQVdYWS12SjRxaUVhLWdPdXljb3BmU2JRVVlzWl9wRHU2ZmdmVXfSAeMBQVVfeXFMT0pQMkR6S3N3cXRiYmEwenU5T2huMVh1TWg4dDh5NUQ0S012RkhLck1vbEJBeEhNNWk3N3AyNmRJNjk3UUQ4M0dEZE9wVGJ2ZzROUHBiRTEtTmkwOVVVaE9aamdhWkR0RDFYVzUyY2FBNjl3ZTE0RFJBNkFLUmRvRkFHb0RLek1qMWlfdGdRRmJ4cl9GLXRQbTNvc3Fnc3BtSWpyeWYyMTlOdWlVMHJ1QmdRNjJyakFtMHVQRmJ2czRJbVNXR1FEWGh6TTVrT1J6YV9Ob2ZHZTBWVDVmektBTFBIdmc?oc=5",
+      "published_at": "Wed, 11 Mar 2026 02:27:07 GMT",
+      "published_ts": 1773196027.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "IndiGo share price rises 2% as Pieter Elbers departs as CEO; Rahul Bhatia takes interim charge - Upstox",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNRVFNamJBaVh3MllyLVFyS2RuSjAteUtYNXdkNXJNSTl4YzBFRllKYkxxNm43VFlta2p0NEVPU1p0U1FkU24xSjB5RWR1akllN2FxRW05YWFIVktOa19WZDFnbHE5U0xuT0dSMWhsQ2oyLVJ0eE1QVUdORjhtenVvcWhFNDBsaWlMVnY0akhjTDgwaTNXeXBSbmtPNTdmM0FORm85c0hqaVZIZXVHMVNvcTdTYXg1TEFFYzhycno5TnFRN2RRNW5YdVhNSXBLNFNRSmg1VlpCSkNLUDJZeDRkajFkaVM2VVdwdVVkdnZ3?oc=5",
+      "published_at": "Wed, 11 Mar 2026 02:18:31 GMT",
+      "published_ts": 1773195511.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss",
+      "title": "IndiGo Jumps 3% as Top Brokerages Back Strategy After CEO Pieter Elbers Quits",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49c49bc9c472690ec8f46242a38bc&url=https%3a%2f%2fwww.republicworld.com%2fbusiness%2findigo-jumps-3-as-top-brokerages-back-strategy-after-ceo-pieter-elbers-quits&c=3068140456716747938&mkt=en-in",
+      "published_at": "Tue, 10 Mar 2026 22:53:00 GMT",
+      "published_ts": 1773183180.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "Oil prices drop to below $90: IndiGo, SpiceJet shares surge as Trump signals end of Iran war near - The Times of India",
+      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNMnYtdDBqOGdrUDBCZkxUbXhrejduZkVTWVV1empwUnY3SkZXYzJJaXJ2STRUQUhSOV9ORl9fUHA3eTc5RThNSUNGdlBzV0RIODRmNmI5Q2d4d3N1Rmg3WnFlZ3FqZUJoVXhqRTFJZ1hRMjF1MG9FeFp1dTVHalE1am9LMFBSTkh4ZEI4U3hHeU85ZTJIYkZHakNKX2szVG81X3BVUWlVNmV2eEZvM1ZHTFpiQThsYUtodlRXVnFqbGM3OGxGRVFMS2h1eHN1MGp5Zm1EWkhfblFaRW5zcXhJejRpZ185Mll3Yzd3eU5fRjlXX2JtYllNTG5QTEI4ZjMwUzRJTEtvbk1wNVA10gGSAkFVX3lxTE5MOEhrQ1hjamRsOE9pb1lyN1FZM1REMzh3cGg2c0RDVG1wWHBGLVpoRDU3SGJ0aWVjLVVyUEhQdlRsS0k5UlZtX0ZJUHRuR0kzXzZ2dk9vNjQ2NkdrV2RtdFVYWFAzQlBraU5KXzNoYlNPOFJ0UUxUT21RZTltWHM3c1ZRWlFmSFJyenpjNnNvV2FNcHhPVnh4T2IzandjckxQamF6T1dyV3NFSzROS1lzX3JhYlBxSjBfNk16UVNiLU5RbHN6dDBsMklNc243ZVk5bE0tYS16NS1hRmhKYVBKN2xyWkRPdnJuZ3VEekczX1NwVmliTkdXeWVUc0NkX1hGbDJBX19tbmVrbXBuTVpBTVE?oc=5",
+      "published_at": "Tue, 10 Mar 2026 06:07:00 GMT",
+      "published_ts": 1773122820.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    }
+  ],
+  "top_industry_news": [
+    {
+      "source": "google_rss_industry",
+      "title": "IndiGo parent shares fall nearly 4 pc after Citi cuts target price - The Hans India",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOaEZtYi1BNjI1VEszVllRaVlWbDk5cmRLbDFJa3ZOQ1BVTGYwdFBrQXhqWXpWSnY4cm53ZFJ5ZDB4LWJGQXBTYmpiZjRvUWt3WlBjWHJqM0ROQ2hnUEJXUnpibFhpb05yN1BObm14U3VYdTFnVy1WWVdwdUZ6bG1XeUpGc0ZDdTNHQlF1Mk42MVlQSXhHMXFiRWZobXo5MTAwUHRpNXl5M0xJVjU2SGJjUW5n0gG3AUFVX3lxTE1jUHpJZjZvc1JYMUUzZ1h5bzBJRF9weTRBSGhJY0lpY2t3NlAwZ0o1VENvZDZwZUdGbTFUbndjdDNCRWxULVJieWpjcTNMdUh1cmNKcGVLWHpFdTNyWUVmYUlEMnk3Zlc4WEMwdThtcERLeHZUTXRpdy1uTEpRdVpSMWpfa3dSdkhpSTVNUU5GMVVPY1pKREZVM3lPOWx5cjZGU0tYNDZxd1Blbk0yNmc2Nm95THJGZw?oc=5",
+      "published_at": "Thu, 12 Mar 2026 09:45:10 GMT",
+      "published_ts": 1773308710.0,
+      "sentiment_score": -1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "InterGlobe Aviation Limited",
+      "sector": "Industrials",
+      "industry": "Airlines"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "GIC Private Limited Reduces Stake in InterGlobe Aviation to 2.984% Through Open Market Sale - India IPO",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOQjVqVVFINEs4QjA5TkhxZDk1VkUwdDNDTUw5Wmo4UXZJS3BHdFNTZ0JEdnVYTHFYSnh2Sm5Uams1NGU4LWNGdkVNMThHeVQ4TUM2SXlkSVVzUVlqUkQ2ZGNJY1huZ1FDZE1xQy1BMm5MZkR6ZXF1Sl9JUDMzdHVOVS1OVVFFbmlaT0RYZWpzbE5WRHhET1Vkc2FNWmxpLUdfRW9LVGo2ZTNnUTFxeC0tNnRrbmlwb0Q4TENVd0hiWVBXbm8?oc=5",
+      "published_at": "Thu, 12 Mar 2026 03:05:46 GMT",
+      "published_ts": 1773284746.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "InterGlobe Aviation Limited",
+      "sector": "Industrials",
+      "industry": "Airlines"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Did IndiGo Just Hit a Turbulence at the Top — Or Is This a Calculated Reset? - 100knots",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQS2wxaDZ2VzVKTXB3aUROazJ6MGFSQkNyRFhnQzd1T2h6cWFFY1haUFVhWktCazBHdzFYTjR5RFZNOE5ieG9NZ3BjYWV6Q3pnLVMwalhON2RXV1RkaGxHQXlOU21uUWtjMUwwVFJfVmlLVkp6WGNSUlprd1otT19QLU1La0xEVnJManBkdFQ2SHl3cVlGRkFFNTljaXdqbGZX?oc=5",
+      "published_at": "Wed, 11 Mar 2026 12:31:24 GMT",
+      "published_ts": 1773232284.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "InterGlobe Aviation Limited",
+      "sector": "Industrials",
+      "industry": "Airlines"
+    },
+    {
+      "source": "bing_rss_industry",
+      "title": "India’s GDP growth to moderate to 7.1% in FY27 despite global headwinds: Crisil",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49c548d3d4d2e8cd2d6c7235d4643&url=https%3a%2f%2fwww.fortuneindia.com%2feconomy%2findias-gdp-growth-to-moderate-to-71-in-fy27-despite-global-headwinds-crisil%2f131182&c=17085517392457065574&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 08:00:00 GMT",
+      "published_ts": 1773216000.0,
+      "sentiment_score": 1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated",
+      "company_name": "InterGlobe Aviation Limited",
+      "sector": "Industrials",
+      "industry": "Airlines"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Rahul Bhatia Takes Interim CEO Role at IndiGo - GK Today",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE44TU5PT3lKNmlsamlCdGd1eXBsazNCV2o0S05EVDhBM0IzaTJvRUJvQmNIU3NTbFVxNk5nZVBmanJOeXEwZFZOVXRxVHB0STRzN0gtd2lRRXItVDM2UXRCS3NFYkZ1ckNjUkJOMUpHSVNHUmtjRDU3Xw?oc=5",
+      "published_at": "Tue, 10 Mar 2026 23:52:05 GMT",
+      "published_ts": 1773186725.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "InterGlobe Aviation Limited",
+      "sector": "Industrials",
+      "industry": "Airlines"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "OPINION | West Asian turmoil ripples through India’s macro and sectoral outlook - Moneycontrol.com",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPbnBKdnJETmt2eVNybnZiTEo0ZmtiS0tuSmhtQWh2NjdVRU9WczVqY1dGaldHNjZwVEZ0cjFtUkxfQzFyalo1VnJEV2xUQ3U5bmR6QmxETkcyN3huaG10Z1M0VGRVU0NjOWtpY0NqRllqbEp2RTBMcVhReG5IWS1taTJoRXNhZWNhMEhIeVJFazJXV3Nia0FEcXJ3SUZhTzY5VGJSZHZFOTBuZmlJdjBtSlBoT0V6TjZoOGRfNUt4czg2XzTSAcgBQVVfeXFMTUM4VkVrUkk3SV85UzhBZ05YREVnZTdibVVkNDRza1E0R3JVZWtrWmdId2VoaEctR3owVGZoXzlfQk1vaTVTYVBFc1UxNmlWSVRMY1pPQ0MtT2Fob080NXBYTzBQc2g2SUxRZUxlYzFFNnVXVlNZODlEQ2ZZZHZxWnMybXVuWVM5RHBWSzdoYW1EWHA2eWdKNU9DWXBTMi1CYVRJY2RpWjRQV3BuZ2txTjgwQU13LTdtaEI5Y1lWVG1obDBmNmt3X3Q?oc=5",
+      "published_at": "Tue, 10 Mar 2026 09:48:36 GMT",
+      "published_ts": 1773136116.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "InterGlobe Aviation Limited",
+      "sector": "Industrials",
+      "industry": "Airlines"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Best Aviation Stocks in India 2026 - Groww",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9yU016NVVZREwyeUFpX0hzZ1JBT1dXZm9KUzAyVWdXMG5zcGJrRHVpdGdERUdLZVdfNEs4UlVja18wWnVVeF9TemhBNDZaTUNhM1pISWRJb0NBWTVvVG1lTA?oc=5",
+      "published_at": "Tue, 10 Mar 2026 07:00:00 GMT",
+      "published_ts": 1773126000.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "InterGlobe Aviation Limited",
+      "sector": "Industrials",
+      "industry": "Airlines"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "IndiGo CEO resigns months after flight cancellation crisis| Gulf Times - Gulf Times",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSnp1VTF0X3lHV0hwOVR5RTU2YWR6MXFUUFNtZjFHcDc4TGlwdlBhMlduQ3hhTE1EMUtfTUlKN0FrbHJsbmltY3FLdk1Vbzk3eWNKTE1jUlBtOFZyZHpXTmExTVVOSllTalR6U01Wbko1ZW5FTkw2cWd4bVlPSUJIREJaczJySkNsVVRUYV8zYWNycV9yTlA1WVBCaUdrOU50OGxxZ2NoT1JHaTBVXzRyUWZlZ9IBswFBVV95cUxNSnp1VTF0X3lHV0hwOVR5RTU2YWR6MXFUUFNtZjFHcDc4TGlwdlBhMlduQ3hhTE1EMUtfTUlKN0FrbHJsbmltY3FLdk1Vbzk3eWNKTE1jUlBtOFZyZHpXTmExTVVOSllTalR6U01Wbko1ZW5FTkw2cWd4bVlPSUJIREJaczJySkNsVVRUYV8zYWNycV9yTlA1WVBCaUdrOU50OGxxZ2NoT1JHaTBVXzRyUWZlZw?oc=5",
+      "published_at": "Mon, 09 Mar 2026 21:00:00 GMT",
+      "published_ts": 1773090000.0,
+      "sentiment_score": -1.5,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "InterGlobe Aviation Limited",
+      "sector": "Industrials",
+      "industry": "Airlines"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "IndiGo Reports ₹80,986 Crore Operating Income As Fleet Expansion & CRISIL AA- Rating Support Growth - Free Press Journal",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNR18xR3poQUdzSGd1aUR4VG44aDlucUhrVzJEaEdWMmp3Qnpid0Y4OU00eW9UY1JmbUJfbkJRcGZXSk50Mm5ySEo4aVNkenk0MV9xUmF2R0VBd0xWb0w0d2tVMUVvS05JbV84MElKWmowS0RlMFQxX0U5TkFvN1NHYlVSZUNfbTBpbHZrdFYxWDN1eko2UERkOTZCcGdjRU41bUtMeXJPSjJQWVhESnFJbHRuTmZ2M0JMTHpzWERsa0F6dWc3dzItcGY3djhQcFJZ0gHWAUFVX3lxTFBVYW9seVdwU0dYZkJCZ0pILU1ZUHVCa1NQMFVWUGExYkFSSDl1eEtqMURCY1BMVTI0UFpCbW95WHVKWUtQTEwzemhmWVB6NGNWbVpCZmdZR0tXVlpoMmh5bDBJTTBid2xqenE5cUNWbTQwU0VjLVBJaENyc2hUZ0hkUUJLNDBLUjE3R3FORTg5UmhtYnRZRzdYTkJsbmtubmRLTUhiMjA3a0d4VXljMWp4OTdtQjNIbGhaWUoyN1ZoMDB2Q2ZQU2pYT2gyREh3Y19GdU55NVE?oc=5",
+      "published_at": "Sat, 07 Mar 2026 03:14:19 GMT",
+      "published_ts": 1772853259.0,
+      "sentiment_score": 2.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "InterGlobe Aviation Limited",
+      "sector": "Industrials",
+      "industry": "Airlines"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "InterGlobe Aviation Limited CRISIL Reaffirms Credit Ratings with Positive Outlook - InvestyWise",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNcHNxbUxMbWZFWFRhNWRIY3p5VXNoWHljck1qTzRSeTllVVlEcFkzX1FmZUVIeG4yX0MyeGhrXzdRLUlZTnFUY3YyT203b2I1ZUF0bUNWTlJVOHlHaVQwemJ6Rms2eGw3bVhFN2NPYkhZR18xYm9FUEp0dGQ2S2xocC1rbXVsa21JQ0FCclN4X0ZLNUlLSlRMM1duaw?oc=5",
+      "published_at": "Fri, 06 Mar 2026 13:33:56 GMT",
+      "published_ts": 1772804036.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "InterGlobe Aviation Limited",
+      "sector": "Industrials",
+      "industry": "Airlines"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "IndiGo Share Price Falls 2.28% To ₹4,410.00 At Close On 6 March; Aviation Stocks Trade Weak - HDFC Sky",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBKakJzUVpRMW1aRkZNeUFXRHRjMnVvaFNxeXlaS3dRMU5OZlVWWUhWeF9Rc21WVWdWTTM2T0U3OVdZRTJJUWFxY3VXcm05aS1nY2VjZExrUE5tdC1QdG5LczdNWWp2YlB1a0RmcUsyaw?oc=5",
+      "published_at": "Fri, 06 Mar 2026 13:23:46 GMT",
+      "published_ts": 1772803426.0,
+      "sentiment_score": -1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "InterGlobe Aviation Limited",
+      "sector": "Industrials",
+      "industry": "Airlines"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Indigo Approves ESOP Allotment Of 200 Shares Under Employee Stock Option Scheme 2023 - HDFC Sky",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNYTIxWmQ5QW9BWGtRSExKR3dFd0ZSQkRVVVIycG1MQ01pNkdiLWpqMUdWMUFMUWluWWxhQlRMX2xGT3NfYU1wa0xwcWNzWjhSRmtHMmxBQzc1WG8yS1ZzaVVVdHZJR3FSdE4wX2J0ckFtamR5ZDNoQXJ3M0JZZm1OSFRfOXRVZzhfdERaSm9jSXBCN29ZVUFRbGcwbEpMN1FJUU1KR1ROSzBBT1NrcHc?oc=5",
+      "published_at": "Thu, 05 Mar 2026 07:25:47 GMT",
+      "published_ts": 1772695547.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "InterGlobe Aviation Limited",
+      "sector": "Industrials",
+      "industry": "Airlines"
+    }
+  ],
+  "top_macro_news": [
+    {
+      "source": "google_rss_macro",
+      "title": "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRVNOajVzSUJWU3Q5R2toMjVnZVZMNDhLclozWDdNODc1OU1qbVFjYnFTT0Z1SUZaaExuY3FJajFkdWtOWk5kdWplT0J0Yk9RcnlDVnlvQmJZNC1jVDVHZmRhS0Z0X0JiXzFETHRnaUVac1pEMmZfWE9raXFacFpwR1dSaEVST0Ntc2k1czN4emNQVFlWSHE3V1ZhMW80OUFMYmN6dEwtTkRadm44enc?oc=5",
+      "published_at": "Fri, 13 Mar 2026 15:17:26 GMT",
+      "published_ts": 1773415046.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49c5cce1a4790ac994484d06354ab&url=https%3a%2f%2fwww.livemint.com%2fmarket%2fstock-market-news%2fus-china-power-shift-global-markets-india-outlook-mirae-asset-swarup-mohanty-11773376870759.html&c=15555016077234823276&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 14:15:00 GMT",
+      "published_ts": 1773411300.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Fed to delay rate cuts as war clouds the outlook",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49c5cc63c480898eebed1f7dd438f&url=https%3a%2f%2fthink.ing.com%2farticles%2ffed-to-delay-rate-cuts-as-war-clouds-the-outlook%2f&c=127436243108543137&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 13:40:00 GMT",
+      "published_ts": 1773409200.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss_macro",
+      "title": "Bitcoin holds above $71,000, defying rising dollar, oil and U.S. bond yields - CoinDesk",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbHB1NE1GZ1dLTWpvOWNseW5QXy1jbWVHcTYzcXF6NWotU0NHOG1XNEUzcDd0ZTctMW1URXZzSW5RQ1djc1h3a0xOM0k2Tkd5TjRWcE0wUXRwZjg4WktmZ2xDWnpLa0RhR1BsRzlrZlVlVzhONmQ0eW51VXJIWFQ3NFJkd0VXZ2VsUnY4VTBuWjU5LXpxX1BPYUIyaEZKQVdEWUU3a25CY0RvN3NrVW10cFNUTWtxSHdhSWI4?oc=5",
+      "published_at": "Fri, 13 Mar 2026 09:34:10 GMT",
+      "published_ts": 1773394450.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Gold Silver Rate Today Live Updates (13 March 2026): Gold, silver futures fall on MCX as rising crude oil prices dim hopes of early rate cuts",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49c5dafcd46c5a1ff1a0e1ce2ecd5&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2flive-blog%2fgold-rate-silver-price-today-live-updates-mcx-gold-18k-22k-24k-rate-iran-isreal-us-war-latest-news%2fliveblog%2f129534056.cms&c=4108291931945502437&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 06:00:00 GMT",
+      "published_ts": 1773381600.0,
+      "sentiment_score": -1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Markets Today: Sensex Declines 830 Points, Nifty Slips Below 23,650 Amid Iran-US-Israel War",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49c5cce1a4790ac994484d06354ab&url=https%3a%2f%2fwww.news18.com%2fbusiness%2fmarkets%2fmarkets-today-sensex-falls-1000-points-in-opening-trade-nifty-below-23600-as-oil-surges-past-100-9956009.html&c=7425380694736114227&mkt=en-in",
+      "published_at": "Thu, 12 Mar 2026 03:39:00 GMT",
+      "published_ts": 1773286740.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Share markets continue to bleed as West Asia tensions dampen sentiment, Sensex over 800 points down",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49c5cce1a4790ac994484d06354ab&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fmarkets%2fshare-markets-continue-to-bleed-as-west-asia-tensions-dampen-sentiment-sensex-over-800-points-down%2far-AA1Yt9yX&c=14300386732484515462&mkt=en-in",
+      "published_at": "Thu, 12 Mar 2026 03:04:15 GMT",
+      "published_ts": 1773284655.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Trading Day: Oil and yields up, up, and away",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49c5dafcd46c5a1ff1a0e1ce2ecd5&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2ftrading-day-oil-and-yields-up-up-and-away%2far-AA1YqbzQ&c=11227118164045986945&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 14:08:08 GMT",
+      "published_ts": 1773238088.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss_macro",
+      "title": "Markets Confront the Economic Impact of the Iran Conflict - Natixis CIB | Natixis Corporate & Investment Banking",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOVpkVlFlOG1lbEdUZEM2VU40clhkdUtsN3l6Z3Rkd2g4WTBNMVNKSFBmMmkyT1M0RGwtZGJxN1ItZVVrMEU3UnVfWFJ6UmpZUVppV09ZelhMWHNvZmhtbFk3ajc0UnlpY0dZeW51MGJnSUU3dGhYRGFQaE44NjJVaFFBVWFyVlNhampDdXFic0dCZXZ3YW5ScWUtWQ?oc=5",
+      "published_at": "Wed, 11 Mar 2026 10:55:26 GMT",
+      "published_ts": 1773226526.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Oil price spike could push US inflation to 4%, delaying Fed rate cut",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b49c5cc63c480898eebed1f7dd438f&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2foil-price-spike-could-push-us-inflation-to-4-delaying-fed-rate-cut%2far-AA1Ym49n&c=7065206888862373143&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 03:02:32 GMT",
+      "published_ts": 1773198152.0,
+      "sentiment_score": 1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    }
+  ],
+  "chart_path": "reports/INDIGO_NS_20260313_232329_trend.png",
+  "long_term_chart_path": "reports/INDIGO_NS_20260313_232329_long_term.png",
+  "rich_report": "Indian Swing Trading Multi-Agent Report\nIndicator Signal: SELL | Trend: close=4251.70, SMA20=4697.51, SMA50=4803.20. Momentum: MACD=-160.807, Signal=-108.588, Hist=-52.219, ROC10=-14.06%. Oscillators: RSI14=29.6, StochK/D=23.0/30.8, Williams%R=-77.0. Risk: ATR14=172.51, Volume=1595719 vs VolSMA20=1466212. Momentum Score=18.6/100 | MA=Sell, Trend=Falling, RSI=Oversold, MACD=Bearish.\nPattern Signal: SELL | setup=gradual lower-high structure, slope=-65.1454, breakout_up=False, breakdown=False, bull_engulf=False, bear_engulf=False.\nTrend Signal: NO_TRADE | setup=sideways trend channel, support slope=-14.591, resistance slope=-14.672, price position=-1.19 in channel.\nNews Signal: SELL | combined sentiment=-0.04 (stock=-0.09, industry=0.10, macro=-0.09). Stock articles=24 (trusted=0, unrated=24); Industry articles=29 (trusted=0); Macro articles=30 (trusted=0). Sentiment strength=0.10. Inference=Recent news highlights downward pressure, including a price target cut by Citi and technical selling volume. While there was a short-term rebound, the prevailing sentiment is dampened by management transition uncertainty (CEO exit) and a bearish macro environment (Sensex/Nifty decline), creating a moderate directional edge to the downside..\nMarket Sentiment: SELL | NIFTY 5D=-4.55%, 10D=-7.23%, 20D=-8.92%, SMA20 gap=-5.7% (below). India VIX=6632.18994140625, 5D chg=-107.8, news sentiment=-0.04. Votes: bull=2, bear=3.\nRelative Strength: NO_TRADE | stock 10-bar return=-3.21%, NIFTY=-3.44%, alpha=0.22%.\nUS Trend Signal: SELL | Global risk-off backdrop. SPX 5D/20D=-5.79%/-15.20%, NDX 5D/20D=-1.60%/-2.94%, VIX=27.29, DXY 5D=0.00%.\nFinancials Signal: NO_TRADE | Fundamentals mixed/neutral. Coverage=62%. ROE=77.48%, Margin=9.35%, RevGrowth=N/A, EarnGrowth=N/A, D/E=7.132, CurrentRatio=N/A, PE=22.148. Quarterly trends: RevQoQ=14.52%, NIQoQ=-74.74%, OCFQoQ=N/A, DebtQoQ=12.78%, FCF=N/A, Cash/Debt=0.016. Analyst target=N/A (N/A upside, ? analysts). 52w Hi/Lo=6232.500/4035.000, position=5.61%.\nMarket Setup Signal: NO_TRADE | Early bearish alignment. Tape read: 5d=-5.8%, 20d=-15.2%, volume ratio=1.74, momentum=18.6. Support gap=5.4% and resistance gap=16.8%. Trader read: The structure is in a heavy downtrend with weak momentum and poor RSI positioning, suggesting exhaustion rather than a fresh sell. While the trend is bearish, the price is nearing support at 4035 with an RSI near 30. Entering a short here carries significant mean-reversion risk, making the risk-reward ratio unfavorable for a new position.\nCatalyst Context Signal: NO_TRADE | Deteriorating backdrop. Backdrop read: news sentiment=-0.04, analyst upside=None, 52w position=5.6. Core read: The stock is hovering near a critical support level, which is technically interesting, but the fundamental picture is concerning. A massive 74.7% QoQ decline in net income combined with a very high debt-to-equity ratio of 7.13 suggests significant financial stress. Without clearer signs of margin stabilization or debt reduction, the risk of a breakdown outweighs the bounce potential.\nTrader Intel: NO_TRADE | Wait for structural confirmation | Mean Reversion Trap Avoidance. Thesis: INDIGO is in a sharp markdown phase with heavy selling pressure. While the price is nearing the 4035 support zone, the massive QoQ net income contraction indicates fundamental bleeding. I refuse to bottom-fish against such steep momentum; it is safer to watch for a stabilization phase or a failed breakdown before considering any long, or a lower-high setup for a short continuation. Why now: The stock is currently in 'falling knife' territory where liquidity is poor and momentum is heavily skewed to the downside. Why not now: Buying into a 15% 20-day decline with a 74% income drop is high-risk gambling; the risk-reward ratio does not justify a position until the seller fatigue is visible on the tape.\nMaster Confluence Committee: BUY=0.000, SELL=0.336, NO_TRADE=0.278. Final=SELL, confidence=0.855. Support=['technical', 'pattern', 'news', 'market_sentiment', 'us_trend']; Opposing=none; Neutral=['trend', 'relative_strength', 'financials', 'market_setup', 'catalyst_context'].\nRisk Plan: size=0 shares, ATR=172.51, stop=N/A, target=N/A.\n**FINAL CONCLUSION**\n- Signal: NO_TRADE\n- Confidence: 0.600\n- Action Bias: Wait / no-trade setup\n- Playbook: Mean Reversion Trap Avoidance\n- Thesis: INDIGO is in a sharp markdown phase with heavy selling pressure. While the price is nearing the 4035 support zone, the massive QoQ net income contraction indicates fundamental bleeding. I refuse to bottom-fish against such steep momentum; it is safer to watch for a stabilization phase or a failed breakdown before considering any long, or a lower-high setup for a short continuation.\n- When to Act: Price consolidation above 4035 with a distinct compression in daily range\n- Execution Style: Observation-only until volatility contracts\n- Invalidation: Clean break and hold below 4000 would negate any near-term floor potential\n- Expected Holding Duration: 2-6 weeks\n- Context: sideways trend channel\n- Risk Flag: High fundamental volatility and trend-against-sentiment risk\n- Stop-loss: N/A\n- Targets: N/A\n- 52w Range: ₹4035.00 – ₹6232.50\n\nDetailed Agent Reasoning:\n- technical: Technical status is firmly bearish. Price at 4251.70 sits well below SMA20 (4697.51) and SMA50 (4803.20). MACD is deeply negative at -160.81 with a bearish crossover and negative histogram. RSI14 at 29.57 indicates oversold conditions, yet momentum score is a weak 18.6/100. Volume (1,595,719) exceeding the 20-day SMA (1,466,212) confirms active selling participation. The confluence of falling MAs and negative momentum metrics supports the sell signal.\n- pattern: Pattern analysis reveals a persistent lower-high structure with a negative slope of -65.15. The absence of bullish engulfing patterns or breakouts reinforces the lack of buying interest. The setup signifies a gradual, systematic decline rather than a localized spike. Given the price's failure to establish a higher-high or break above resistance, the pattern signal remains sell-biased, reflecting continued distribution pressure within the current volatility regime.\n- trend: The trend signal is NO_TRADE due to a sideways-to-declining channel. With a marginal slope of -14.63 and a channel position of -1.19, the asset is trading slightly outside the defined support boundaries. Because the channel is relatively narrow (111.98) and the slope lacks strong directional conviction, the technical setup does not meet the requirements for a high-probability trend-following trade, suggesting price may be consolidating near support.\n- news: News sentiment is bearish (-0.04) driven by negative stock-specific sentiment (-0.09) and macro headwinds (-0.09). Recent catalysts include a Citi price target cut and management transition uncertainty following a CEO exit. These developments, coupled with broader market volatility in the Nifty/Sensex, create a dampening effect on investor confidence. The combination of company-specific governance risk and bearish industry macro outlook provides a moderate directional edge for further downside.\n- market_sentiment: Sentiment is predominantly negative. High volume on the downside suggests institutional distribution. The combination of bearish technicals and headline pressure around the CEO transition indicates investor anxiety. With RSI reaching oversold territory but no bullish divergence present, sentiment is currently characterized by fear and liquidity preference, favoring further price erosion rather than an immediate reversal.\n- relative_strength: The stock exhibits significant relative weakness. Trading below both the 20-day and 50-day moving averages while showing a -14.06% ROC10 indicates that the stock is underperforming its moving averages and typical trend cycles. The inability to hold above the 4300 level while volume remains elevated compared to the 20-day average confirms that the asset is failing to attract defensive buying relative to broader market averages.\n- us_trend: The macro environment is currently bearish. Broad equity market indices are facing pressure from higher-for-longer interest rate narratives, which negatively impact airline stocks due to fuel costs and debt-servicing burdens. This macro-level constraint, combined with sector-specific volatility, aligns with the negative sentiment observed in Indian aviation indices, reinforcing the broader sell bias for the stock.\n- financials: Financial metrics reveal significant pressure. The 10-day rate of change is -14.06%, underscoring a rapid deterioration in price. The ATR14 of 172.51 indicates elevated volatility, increasing the risk of sharp downside gaps. With the price substantially detached from the SMA20 and SMA50, the financials reflect a stock currently struggling with valuation adjustments and momentum decay, warranting a cautious, bearish stance.\n- market_setup: The market setup is configured for a potential breakdown. Price is testing the lower bound of a channel (4384.87 support) with a channel position of -1.19, suggesting potential exhaustion. However, the lack of positive price action or bullish volume confirmation keeps the bias skewed to the downside. The setup requires a clean hold above 4400 to negate the current sell signal, which is currently unsupported by incoming data.\n- catalyst_context: The primary catalyst is the combination of a Citi price target downgrade and the ongoing management uncertainty related to the CEO transition. These fundamental triggers are exacerbated by the technical failure to maintain support levels, creating a negative feedback loop. Until clarity on leadership or a shift in macro-economic sentiment regarding the airline sector emerges, these catalysts will likely continue to exert downward pressure.\n- confluence: Confluence is strong on the bearish side. Technical indicators (MACD, MAs), chart structure (lower-highs), and negative news sentiment all align toward a sell bias. The only neutral factor is the oversold RSI, but in a strong downtrend, RSI can remain oversold for extended periods. The convergence of these factors significantly increases the confidence behind the current sell signal.\n- risk: Risk is high due to the elevated ATR (172.51) and the potential for a snap-back rally from oversold levels. The primary risk to the sell signal is an abrupt shift in macro-sentiment or unexpected positive earnings revisions that could force short covering. Traders should manage exposure by strictly adhering to stop-loss levels above the 20-day SMA, as current volatility renders the trade sensitive to small market fluctuations.\n\nGemini Master Reasoning:\nSetup\nINDIGO is currently tracking near the 4035 support level, effectively testing its 52-week lows. The technical structure is defined by a consistent lower-high trajectory and a deep bearish trend, with the price trading well below both the 20-day and 50-day SMAs. Momentum remains heavily negative, though RSI levels are entering oversold territory.\n\nCatalyst\nThe fundamental backdrop is deteriorating rapidly. A 74.7% QoQ collapse in net income, coupled with a high debt-to-equity ratio of 7.13, signals severe financial stress. Coupled with management transition uncertainty and recent analyst downgrades, the sell-side pressure is institutional. There is no positive fundamental anchor to justify a long position at these levels.\n\nFriction\nThe primary friction is the \"falling knife\" profile. While the price is near a technical support zone, bottom-fishing into a stock with such intense fundamental bleeding and negative momentum is high-risk gambling. The ATR is elevated at 172.51, meaning volatility is high; small intraday moves can trigger stop-losses without any change in the structural thesis.\n\nExecution Plan\nThis is an observation-only trade. I am explicitly opting for a NO_TRADE stance. \n- For longs: I require clear price consolidation above the 4035 support level accompanied by a distinct compression in the daily range to show that seller exhaustion has occurred.\n- For shorts: I will wait for a failed bounce or a lower-high setup if the price rallies toward the 4964 resistance.\n- Invalidation: A clean daily close below 4000 would negate any near-term floor potential and confirm a deeper breakdown.\n\nVerdict\nNo trade. The risk-reward is currently unfavorable. The market is attempting to find a floor, but given the fundamental headwinds, I will not preempt the bottom. Patience is the only viable strategy here until the volatility contracts and a base is actually formed.\n\nLLM Token Usage:\n- Input tokens: 27213\n- Output tokens: 4391\n- Total tokens: 31604\n- Estimated cost (USD): 0.0\n\nLONG-TERM OUTLOOK (Based on News, Financials, and Price Data)\n- Stance: LONG_TERM_BEARISH\n- Confidence: 0.650\n- Sector: Unknown\n- Data coverage: 2553 daily bars for long-term model.\n- Price trend (1Y/3Y/5Y/10Y): -9.501711182493667% / 124.09804692647253% / 152.94941589479896% / 256.31260802954114%.\n- Long-run quality: CAGR(3Y)=30.861739979901117%, CAGR(5Y)=20.394524600792096%, CAGR(10Y)=13.54894905824182%,\n  Max Drawdown(5Y)=-54.650332011995076%, Vol=37.0494542152024%.\n- Structural trend: price vs 200DMA=-21.874084863090772%.\n- Note: N/A metrics indicate insufficient history for that exact horizon, not an implied negative value.\n- News signal: avg sentiment=-0.04 across stock/industry/macro streams (15/12/10 items).\n- Fundamental location: 52w position=5.6%, 1Y return=-9.501711182493667%.\n- Street context: analyst upside=N/A% from N/A analysts.\n- Macro overlay: India sentiment=SELL, US trend=SELL.\n\n--- VALUATION SNAPSHOT ---\n- P/E (trailing): 22.15\n- PEG ratio: N/A\n- Price/Book: 17.16\n- ROE: 77.5%\n- Debt/Equity: 7.13\n- EV/EBITDA: N/A\n- EV/Revenue: N/A\n- Book value per share: 242.31\n- Enterprise value: N/A\n- Gross margins: 17.1%\n- Operating margins: 14.3%\n- EBITDA margins: N/A\n- Total revenue: 776,186,000,000\n- Total debt: 668,098,000,000\n- Total cash: 10,731,000,000\n\n--- QUARTERLY FINANCIAL TRENDS ---\n- Revenue QoQ growth: N/A\n- Net income QoQ growth: N/A\n- Operating cash flow QoQ: N/A\n\n--- DIVIDEND & OWNERSHIP ---\n- Dividend yield: 1.3%\n- Dividend yield trend: N/A\n- Total dividends (1Y): ₹10.00\n- Institutional ownership: N/A\n- Major holders (institutions): N/A%\n\n--- SCORING FACTORS ---\n  → news_sentiment: score=-0.04 × weight=1.00\n  → return_1y: score=-0.10 × weight=0.90\n  ↑ return_3y: score=+1.24 × weight=0.80\n  ↑ return_5y: score=+1.53 × weight=0.70\n  ↑ cagr_5y: score=+2.04 × weight=0.90\n  ↓ sma200_position: score=-2.19 × weight=0.50\n  ↓ max_drawdown: score=-0.55 × weight=0.50\n  ↓ volatility: score=-0.37 × weight=0.40\n  ↓ 52w_position: score=-0.89 × weight=0.30\n  → 1y_change: score=-0.10 × weight=0.70\n  ↑ dividend_yield: score=+0.13 × weight=0.40\n  ↑ cagr_10y: score=+1.35 × weight=1.00\n  ↑ operating_margins: score=+0.14 × weight=0.30\n  ↓ us_macro: score=-1.00 × weight=0.35\n  ↓ india_macro: score=-1.00 × weight=0.35\n\n- Composite score: 0.295\n- Secular Growth Forecast: INDIGO.NS shows significant technical deterioration, trading 21% below its 200DMA. High volatility (37%) and a poor 1Y return profile align with broader negative macro signals. 3-5 Year Secular Forecast: While long-term CAGR remains strong, the airline sector's susceptibility to macro-economic cycles suggests further margin compression risks in a cooling growth environment. Exit strategy warranted.\n",
+  "price_52w": {
+    "high": 6232.5,
+    "low": 4035.0,
+    "current": 4158.2,
+    "position_pct": 5.6,
+    "change_1y_pct": null
+  },
+  "analyst_consensus": {
+    "target_price": null,
+    "target_high": null,
+    "target_low": null,
+    "n_analysts": null,
+    "implied_upside_pct": null
+  },
+  "fundamental_signals": [
+    {
+      "type": "mixed",
+      "text": "Near 52-week low (₹4035.00–₹4158.20) — historically strong demand zone. Deep oversold bounces common, but confirm volume."
+    },
+    {
+      "type": "bullish",
+      "text": "Revenue growing QoQ (14.5% last quarter)."
+    },
+    {
+      "type": "bearish",
+      "text": "Net income declined sharply QoQ (-74.7%)."
+    }
+  ],
+  "key_price_levels": [
+    {
+      "label": "Resistance 1",
+      "price": 4964.4,
+      "type": "resistance"
+    },
+    {
+      "label": "Resistance 2",
+      "price": 5008.0,
+      "type": "resistance"
+    },
+    {
+      "label": "Resistance 3",
+      "price": 5056.0,
+      "type": "resistance"
+    },
+    {
+      "label": "Current",
+      "price": 4251.7,
+      "type": "current"
+    },
+    {
+      "label": "Support",
+      "price": 4035.0,
+      "type": "support"
+    }
+  ],
+  "momentum_score": 18.6,
+  "qualitative_labels": {
+    "moving_averages": "Sell",
+    "trend_channel": "Falling",
+    "rsi": "Oversold",
+    "macd": "Bearish"
+  },
+  "valuation_snapshot": {
+    "pe_trailing": 22.148316600819907,
+    "peg_ratio": null,
+    "ev_to_ebitda": null,
+    "ev_to_revenue": null,
+    "gross_margins": 0.17081859245077854,
+    "operating_margins": 0.14288843138113802,
+    "ebitda_margins": null,
+    "book_value": 242.31479269343794,
+    "dividend_yield": 0.01322687639282038,
+    "enterprise_value": null,
+    "roe": 0.7747913153006981,
+    "debt_to_equity": 7.131551418628979,
+    "price_to_book": 17.160323350845545,
+    "total_revenue": 776186000000.0,
+    "total_debt": 668098000000.0,
+    "total_cash": 10731000000.0
+  },
+  "master_reasoning": {
+    "model": "gemini-3.1-flash-lite-preview",
+    "text": "Setup\nINDIGO is currently tracking near the 4035 support level, effectively testing its 52-week lows. The technical structure is defined by a consistent lower-high trajectory and a deep bearish trend, with the price trading well below both the 20-day and 50-day SMAs. Momentum remains heavily negative, though RSI levels are entering oversold territory.\n\nCatalyst\nThe fundamental backdrop is deteriorating rapidly. A 74.7% QoQ collapse in net income, coupled with a high debt-to-equity ratio of 7.13, signals severe financial stress. Coupled with management transition uncertainty and recent analyst downgrades, the sell-side pressure is institutional. There is no positive fundamental anchor to justify a long position at these levels.\n\nFriction\nThe primary friction is the \"falling knife\" profile. While the price is near a technical support zone, bottom-fishing into a stock with such intense fundamental bleeding and negative momentum is high-risk gambling. The ATR is elevated at 172.51, meaning volatility is high; small intraday moves can trigger stop-losses without any change in the structural thesis.\n\nExecution Plan\nThis is an observation-only trade. I am explicitly opting for a NO_TRADE stance. \n- For longs: I require clear price consolidation above the 4035 support level accompanied by a distinct compression in the daily range to show that seller exhaustion has occurred.\n- For shorts: I will wait for a failed bounce or a lower-high setup if the price rallies toward the 4964 resistance.\n- Invalidation: A clean daily close below 4000 would negate any near-term floor potential and confirm a deeper breakdown.\n\nVerdict\nNo trade. The risk-reward is currently unfavorable. The market is attempting to find a floor, but given the fundamental headwinds, I will not preempt the bottom. Patience is the only viable strategy here until the volatility contracts and a base is actually formed."
+  },
+  "llm_usage": {
+    "calls": [
+      {
+        "name": "News Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2523,
+        "output_tokens": 94,
+        "total_tokens": 2617
+      },
+      {
+        "name": "US Trend Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 399,
+        "output_tokens": 94,
+        "total_tokens": 493
+      },
+      {
+        "name": "Market Setup Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2121,
+        "output_tokens": 108,
+        "total_tokens": 2229
+      },
+      {
+        "name": "Catalyst Context Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2289,
+        "output_tokens": 108,
+        "total_tokens": 2397
+      },
+      {
+        "name": "News Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2503,
+        "output_tokens": 103,
+        "total_tokens": 2606
+      },
+      {
+        "name": "US Trend Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 396,
+        "output_tokens": 99,
+        "total_tokens": 495
+      },
+      {
+        "name": "Trader Intel Agent",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1509,
+        "output_tokens": 309,
+        "total_tokens": 1818
+      },
+      {
+        "name": "Catalyst Context Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2548,
+        "output_tokens": 111,
+        "total_tokens": 2659
+      },
+      {
+        "name": "Market Setup Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2101,
+        "output_tokens": 105,
+        "total_tokens": 2206
+      },
+      {
+        "name": "Trader Intel Agent",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1475,
+        "output_tokens": 291,
+        "total_tokens": 1766
+      },
+      {
+        "name": "Batched Agent Reasoning",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1743,
+        "output_tokens": 1172,
+        "total_tokens": 2915
+      },
+      {
+        "name": "Long-Term Outlook Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 993,
+        "output_tokens": 113,
+        "total_tokens": 1106
+      },
+      {
+        "name": "Batched Agent Reasoning",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1737,
+        "output_tokens": 1162,
+        "total_tokens": 2899
+      },
+      {
+        "name": "Long-Term Outlook Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 990,
+        "output_tokens": 106,
+        "total_tokens": 1096
+      },
+      {
+        "name": "Master Reasoning",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 3886,
+        "output_tokens": 416,
+        "total_tokens": 4302
+      }
+    ],
+    "llm_enabled": true,
+    "skipped_calls": 0,
+    "error_calls": 0,
+    "total_input_tokens": 27213,
+    "total_output_tokens": 4391,
+    "total_tokens": 31604,
+    "pricing": {
+      "input_cost_per_1m": 0.0,
+      "output_cost_per_1m": 0.0,
+      "estimated_total_cost_usd": 0.0
+    }
+  }
+}

@@ -1,0 +1,1404 @@
+{
+  "report_id": "TEJASNET_NS_20260313_223358",
+  "symbol": "TEJASNET.NS",
+  "timeframe": "1d",
+  "forecast_bars": 3,
+  "start_timestamp": "2025-11-13 15:30:00",
+  "end_timestamp": "2026-03-13 15:30:00",
+  "final_signal": "NO_TRADE",
+  "confidence": 0.35,
+  "confluence_scores": {
+    "buy": 0.122,
+    "sell": 0.25,
+    "no_trade": 0.267
+  },
+  "risk_plan": {
+    "summary": "Risk Plan: size=0 shares, ATR=40.06, stop=N/A, target=N/A.",
+    "reasoning_prompt": "Risk protocol:\n1) Estimate recent volatility using ATR.\n2) Define one-unit risk from ATR multiple and cap portfolio risk near 1% per trade.\n3) Convert risk budget into position size.\n4) Anchor stop to volatility-adjusted invalidation and target to asymmetric reward.\n5) Force size=0 when final signal is NO_TRADE.",
+    "llm_reasoning": "The primary risk is the low trading volume (7.8M vs 30.6M SMA20), which increases the likelihood of false breakouts and price slippage. High volatility, evidenced by the 40.06 ATR, combined with the conflict between short-term bullish momentum and a longer-term structural downtrend, suggests a significant risk of reversal. A failure to hold above the SMA20 (391.66) would invalidate the current bullish momentum.",
+    "position_size": 0,
+    "stop_loss": null,
+    "target": null,
+    "risk_reward": "N/A",
+    "detail": {
+      "capital": 100000.0,
+      "risk_budget": 1000.0,
+      "one_risk": 48.07286289760045,
+      "atr": 40.06071908133371
+    }
+  },
+  "final_conclusion": {
+    "signal": "NO_TRADE",
+    "confidence": 0.35,
+    "when_to_buy": "Daily close above 465 with volume confirming the move.",
+    "expected_holding_duration": "2-6 weeks",
+    "stop_loss": null,
+    "targets": [],
+    "target": null,
+    "analyst_consensus": {
+      "target_price": null,
+      "target_high": null,
+      "target_low": null,
+      "n_analysts": null,
+      "implied_upside_pct": null
+    },
+    "price_52w": {
+      "high": null,
+      "low": null,
+      "current": 24533.58,
+      "position_pct": null,
+      "change_1y_pct": null
+    },
+    "key_price_levels": [
+      {
+        "label": "Resistance 1",
+        "price": 464.73,
+        "type": "resistance"
+      },
+      {
+        "label": "Resistance 2",
+        "price": 499.95,
+        "type": "resistance"
+      },
+      {
+        "label": "Resistance 3",
+        "price": 526.93,
+        "type": "resistance"
+      },
+      {
+        "label": "Current",
+        "price": 441.1,
+        "type": "current"
+      },
+      {
+        "label": "Support",
+        "price": 418.55,
+        "type": "support"
+      },
+      {
+        "label": "Breakdown Zone",
+        "price": 364.25,
+        "type": "breakdown"
+      }
+    ],
+    "playbook_title": "Compression Breakout Watch",
+    "thesis": "The stock is cooling off after a sharp 30% rally. Price is currently stuck in a 'no man's land' between 420 support and 465 resistance. Without volume expansion, current price action is just noise.",
+    "execution_style": "Breakout-only; looking for a high-volume move above 465 to confirm buyers are back in control.",
+    "risk_flag": "Low participation (volume ratio 0.61) suggests the current pullback could deepen if broad market sentiment weakens.",
+    "invalidation": "Failure to hold the 420 support level, which would signal a deeper correction.",
+    "summary": "**FINAL CONCLUSION**\n- Signal: NO_TRADE\n- Confidence: 0.350\n- Action Bias: Wait / no-trade setup\n- Playbook: Compression Breakout Watch\n- Thesis: The stock is cooling off after a sharp 30% rally. Price is currently stuck in a 'no man's land' between 420 support and 465 resistance. Without volume expansion, current price action is just noise.\n- When to Act: Daily close above 465 with volume confirming the move.\n- Execution Style: Breakout-only; looking for a high-volume move above 465 to confirm buyers are back in control.\n- Invalidation: Failure to hold the 420 support level, which would signal a deeper correction.\n- Expected Holding Duration: 2-6 weeks\n- Context: downtrend with bounce near resistance\n- Risk Flag: Low participation (volume ratio 0.61) suggests the current pullback could deepen if broad market sentiment weakens.\n- Stop-loss: N/A\n- Targets: N/A\n- 52w Range: N/A – N/A"
+  },
+  "long_term_outlook": {
+    "stance": "LONG_TERM_BEARISH",
+    "confidence": 0.75,
+    "score": 0.052,
+    "summary": "LONG-TERM OUTLOOK (Based on News, Financials, and Price Data)\n- Stance: LONG_TERM_BEARISH\n- Confidence: 0.750\n- Sector: Unknown\n- Data coverage: 2154 daily bars for long-term model.\n- Price trend (1Y/3Y/5Y/10Y): -40.05571505899969% / -30.883735871753103% / 167.82028796402076% / 67.40038182296608%.\n- Long-run quality: CAGR(3Y)=-11.584837009156313%, CAGR(5Y)=21.77795999096521%, CAGR(10Y)=6.215963455086526%,\n  Max Drawdown(5Y)=-93.42016617106155%, Vol=54.70998650704948%.\n- Structural trend: price vs 200DMA=-17.895930864168776%.\n- Note: N/A metrics indicate insufficient history for that exact horizon, not an implied negative value.\n- News signal: avg sentiment=0.00 across stock/industry/macro streams (2/12/10 items).\n- Fundamental location: 52w position=24.45588268686302%, 1Y return=-40.05571505899969%.\n- Street context: analyst upside=N/A% from N/A analysts.\n- Macro overlay: India sentiment=SELL, US trend=SELL.\n\n--- VALUATION SNAPSHOT ---\n- P/E (trailing): N/A\n- PEG ratio: N/A\n- Price/Book: N/A\n- ROE: N/A\n- Debt/Equity: N/A\n- EV/EBITDA: N/A\n- EV/Revenue: N/A\n- Book value per share: N/A\n- Enterprise value: N/A\n- Gross margins: N/A\n- Operating margins: N/A\n- EBITDA margins: N/A\n- Total revenue: N/A\n- Total debt: N/A\n- Total cash: N/A\n\n--- QUARTERLY FINANCIAL TRENDS ---\n- Revenue QoQ growth: N/A\n- Net income QoQ growth: N/A\n- Operating cash flow QoQ: N/A\n\n--- DIVIDEND & OWNERSHIP ---\n- Dividend yield: N/A\n- Dividend yield trend: N/A\n- Total dividends (1Y): ₹2.50\n- Institutional ownership: N/A\n- Major holders (institutions): N/A%\n\n--- SCORING FACTORS ---\n  → news_sentiment: score=+0.00 × weight=1.00\n  ↓ return_1y: score=-0.40 × weight=0.90\n  ↓ return_3y: score=-0.31 × weight=0.80\n  ↑ return_5y: score=+1.68 × weight=0.70\n  ↑ cagr_5y: score=+2.18 × weight=0.90\n  ↓ sma200_position: score=-1.79 × weight=0.50\n  ↓ max_drawdown: score=-0.93 × weight=0.50\n  ↓ volatility: score=-0.55 × weight=0.40\n  ↓ 52w_position: score=-0.51 × weight=0.30\n  ↓ 1y_change: score=-0.40 × weight=0.70\n  ↑ cagr_10y: score=+0.62 × weight=1.00\n  ↓ us_macro: score=-1.00 × weight=0.35\n  ↓ india_macro: score=-1.00 × weight=0.35\n\n- Composite score: 0.052\n- Secular Growth Forecast: TEJASNET shows significant technical deterioration, trading below the 200DMA with a 40% one-year decline and extreme 54% volatility. Lacking fundamental support like PEG or margin data and facing negative macro headwinds, the risk-reward is poor. 3-5 Year Secular Forecast: High risk of continued capital erosion given deep historical drawdowns and lack of clear institutional growth catalysts.\n",
+    "llm_reasoning": "TEJASNET shows significant technical deterioration, trading below the 200DMA with a 40% one-year decline and extreme 54% volatility. Lacking fundamental support like PEG or margin data and facing negative macro headwinds, the risk-reward is poor. 3-5 Year Secular Forecast: High risk of continued capital erosion given deep historical drawdowns and lack of clear institutional growth catalysts.",
+    "evidence": {
+      "history_bars": 2154,
+      "history_start": "2017-06-27 00:00:00",
+      "history_end": "2026-03-12 00:00:00",
+      "coverage_ratio": 1.0,
+      "sparse_long_term": false,
+      "fundamentals_sparse": false,
+      "news_avg_sentiment": 0.001,
+      "stock_news_count": 2,
+      "industry_news_count": 12,
+      "macro_news_count": 10,
+      "return_1y_pct": -40.06,
+      "return_3y_pct": -30.88,
+      "return_5y_pct": 167.82,
+      "return_10y_pct": 67.4,
+      "cagr_3y_pct": -11.58,
+      "cagr_5y_pct": 21.78,
+      "cagr_10y_pct": 6.22,
+      "price_vs_sma200_pct": -17.9,
+      "max_drawdown_5y_pct": -93.42,
+      "annualized_volatility_pct": 54.71,
+      "position_52w_pct": 24.45588268686302,
+      "change_1y_pct": -40.05571505899969,
+      "analyst_upside_pct": null,
+      "analyst_count": null,
+      "india_sentiment_signal": "SELL",
+      "us_trend_signal": "SELL",
+      "dividend_yield": null,
+      "dividend_yield_trend": null,
+      "peg_ratio": null,
+      "operating_margins": null,
+      "held_pct_institutions": null,
+      "institutions_pct": null,
+      "rev_qoq": null,
+      "ni_qoq": null,
+      "ocf_qoq": null,
+      "sector": "Unknown",
+      "scoring_factors": [
+        [
+          "news_sentiment",
+          0.001,
+          1.0
+        ],
+        [
+          "return_1y",
+          -0.401,
+          0.9
+        ],
+        [
+          "return_3y",
+          -0.309,
+          0.8
+        ],
+        [
+          "return_5y",
+          1.678,
+          0.7
+        ],
+        [
+          "cagr_5y",
+          2.178,
+          0.9
+        ],
+        [
+          "sma200_position",
+          -1.79,
+          0.5
+        ],
+        [
+          "max_drawdown",
+          -0.934,
+          0.5
+        ],
+        [
+          "volatility",
+          -0.547,
+          0.4
+        ],
+        [
+          "52w_position",
+          -0.511,
+          0.3
+        ],
+        [
+          "1y_change",
+          -0.401,
+          0.7
+        ],
+        [
+          "cagr_10y",
+          0.622,
+          1.0
+        ],
+        [
+          "us_macro",
+          -1.0,
+          0.35
+        ],
+        [
+          "india_macro",
+          -1.0,
+          0.35
+        ]
+      ]
+    }
+  },
+  "agent_outputs": {
+    "technical": {
+      "signal": "BUY",
+      "confidence": 0.7600000000000001,
+      "summary": "Indicator Signal: BUY | Trend: close=441.10, SMA20=391.66, SMA50=378.40. Momentum: MACD=28.993, Signal=20.619, Hist=8.374, ROC10=38.80%. Oscillators: RSI14=66.1, StochK/D=59.4/67.5, Williams%R=-40.6. Risk: ATR14=40.06, Volume=7856082 vs VolSMA20=30647230. Momentum Score=69.0/100 | MA=Buy, Trend=Rising, RSI=Near overbought, MACD=Bullish.",
+      "reasoning_prompt": "Indicator reasoning protocol:\n1) Evaluate structural trend using close vs SMA20 and SMA20 vs SMA50.\n2) Validate momentum using MACD line/signal/histogram and ROC10 direction.\n3) Check exhaustion/continuation via RSI, Stochastic crossover, and Williams %R zone.\n4) Confirm participation with volume vs 20-bar average.\n5) Penalize high-volatility regimes with ATR% filters and lower confidence.\n6) If cross-indicator alignment is weak or contradictory, return NO_TRADE.",
+      "llm_reasoning": "The technical outlook is bullish with a signal score of 0.76. Price is trading at 441.10, well above the SMA20 (391.66) and SMA50 (378.40), confirming a strong uptrend. Momentum is positive with a MACD of 28.99 and a bullish histogram of 8.37. The ROC10 is significantly elevated at 38.80%. While RSI is approaching overbought territory at 66.11, the overall structural alignment is positive despite low relative volume (7.8M vs 30.6M SMA20).",
+      "detail": {
+        "bullish_points": 7,
+        "bearish_points": 0,
+        "delta": 7,
+        "rules": {
+          "trend_alignment": true,
+          "macd_alignment": true,
+          "rsi_bias": "bullish",
+          "stoch_alignment": false,
+          "willr_bias": "bullish",
+          "volume_confirmation": false
+        }
+      },
+      "price_levels": {
+        "levels": [
+          {
+            "label": "Resistance 1",
+            "price": 464.73,
+            "type": "resistance"
+          },
+          {
+            "label": "Resistance 2",
+            "price": 499.95,
+            "type": "resistance"
+          },
+          {
+            "label": "Resistance 3",
+            "price": 526.93,
+            "type": "resistance"
+          },
+          {
+            "label": "Current",
+            "price": 441.1,
+            "type": "current"
+          },
+          {
+            "label": "Support",
+            "price": 418.55,
+            "type": "support"
+          },
+          {
+            "label": "Breakdown Zone",
+            "price": 364.25,
+            "type": "breakdown"
+          }
+        ],
+        "nearest_resistance": 464.73,
+        "nearest_support": 418.55,
+        "resistance_1": 464.73,
+        "resistance_2": 499.95,
+        "resistance_3": 526.93,
+        "support": 418.55,
+        "breakdown_zone": 364.25
+      },
+      "momentum_score": 69.0,
+      "qualitative_labels": {
+        "moving_averages": "Buy",
+        "trend_channel": "Rising",
+        "rsi": "Near overbought",
+        "macd": "Bullish"
+      },
+      "price_range": {
+        "high": 547.8,
+        "low": 294.0,
+        "position_pct": 58.0
+      },
+      "metrics": {
+        "close": 441.1000061035156,
+        "rsi14": 66.11799034728696,
+        "macd": 28.993121821353952,
+        "macd_signal": 20.618784761539793,
+        "macd_hist": 8.37433705981416,
+        "sma20": 391.6574981689453,
+        "sma50": 378.4019964599609,
+        "roc10": 38.79799340674326,
+        "atr14": 40.06071908133371,
+        "stoch_k": 59.42262997528147,
+        "stoch_d": 67.521163552793,
+        "willr14": -40.57737002471853,
+        "volume": 7856082.0,
+        "volume_sma20": 30647230.0
+      }
+    },
+    "pattern": {
+      "signal": "NO_TRADE",
+      "confidence": 0.5281730224915897,
+      "summary": "Pattern Signal: NO_TRADE | setup=sideways compression (wait for breakout candle), slope=3.1685, breakout_up=False, breakdown=False, bull_engulf=False, bear_engulf=False.",
+      "reasoning_prompt": "Pattern reasoning protocol:\n1) Detect breakout/breakdown against prior 12-bar range, not single-candle spikes.\n2) Confirm direction with local slope and bar-structure continuation.\n3) Use engulfing patterns as confirmation, not standalone trigger.\n4) Treat flat-slope compression as NO_TRADE until expansion is confirmed.\n5) Down-rank weak breakouts lacking structure confirmation.",
+      "llm_reasoning": "Pattern analysis signals NO_TRADE due to sideways compression. The current setup lacks a definitive breakout candle, showing a flat local slope of 3.17. There are no confirming price action signals such as bullish or bearish engulfing patterns. Without a breakout from the existing range or clear directional momentum in the structural formation, the pattern remains neutral, necessitating a wait-and-see approach for a clearer trend expansion.",
+      "detail": {
+        "setup": "sideways compression (wait for breakout candle)",
+        "slope": 3.168484959457881,
+        "breakout_up": false,
+        "breakdown": false,
+        "bullish_engulfing": false,
+        "bearish_engulfing": false,
+        "volatility_proxy": 21.249120515065
+      }
+    },
+    "trend": {
+      "signal": "SELL",
+      "confidence": 0.7122281845928006,
+      "summary": "Trend Signal: SELL | setup=downtrend with bounce near resistance, support slope=-2.072, resistance slope=-1.840, price position=3.91 in channel.",
+      "reasoning_prompt": "Trend reasoning protocol:\n1) Fit support and resistance trendlines over the visible swing window.\n2) Estimate channel slope (regime direction) and channel width (trend quality).\n3) Locate current price in channel and prefer pullback entries aligned with slope.\n4) If slope is weak/flat, classify as sideways and favor NO_TRADE.\n5) Avoid chasing signals near channel extremes against risk-reward logic.",
+      "llm_reasoning": "The trend signal is SELL with 0.71 confidence. Despite short-term price momentum, the broader channel analysis identifies a structural downtrend with a support slope of -2.07 and a resistance slope of -1.84. The price is currently positioned at 3.91 within the channel relative to last resistance at 356.23, indicating it is trading near an area of potential exhaustion or reversal against the primary long-term descending trendline.",
+      "detail": {
+        "setup": "downtrend with bounce near resistance",
+        "slope_avg": -1.9559,
+        "channel_width": 29.1435,
+        "channel_position": 3.9122
+      },
+      "metrics": {
+        "support_slope": -2.071705731660583,
+        "resistance_slope": -1.8400108824548478,
+        "channel_position": 3.912,
+        "last_support": 327.08,
+        "last_resistance": 356.23
+      }
+    },
+    "news": {
+      "signal": "NO_TRADE",
+      "confidence": 0.1,
+      "summary": "News Signal: NO_TRADE | combined sentiment=0.00 (stock=0.00, industry=0.05, macro=-0.07). Stock articles=2 (trusted=0, unrated=2); Industry articles=30 (trusted=0); Macro articles=30 (trusted=0). Sentiment strength=0.05. Inference=The evidence provided consists of extremely outdated company-specific news (2017-2019) and generic industry reports. There is no current, relevant, or actionable information regarding Tejas Networks' recent performance or outlook. The lack of reliable, timely data makes it impossible to establish a directional edge..",
+      "reasoning_prompt": "News reasoning protocol:\n1) Collect company-specific headlines across multiple providers using diversified queries.\n2) Filter spam/listicle/noise domains and low-relevance stories.\n3) Build a global macro stream (rates, inflation, oil, USD, broad risk sentiment).\n4) Build industry/sector thematic stream (demand cycle, market share, regulation, capacity, pricing).\n5) Weight sentiment by source quality, exponential recency decay, and relevance confidence.\n6) Apply content-similarity dedup to remove near-duplicate headlines.\n7) Use LLM to infer final bias from company + industry + macro evidence and return NO_TRADE under conflict.",
+      "llm_reasoning": "News sentiment is neutral (0.00), resulting in a NO_TRADE signal. Available data comprises outdated 2017-2019 company-specific reports and generic industry updates. With no credible or timely news regarding Tejas Networks' current performance, and a macro sentiment score of -0.07, there is insufficient actionable information to establish a directional edge. The lack of current fundamental catalysts makes the news component statistically insignificant.",
+      "detail": {
+        "company_context": {
+          "symbol": "TEJASNET.NS",
+          "company_name": "Tejas Networks Limited",
+          "sector": "Technology",
+          "industry": "Communication Equipment",
+          "business_summary": "Tejas Networks Limited provides telecom and data networking-related products and services in India and internationally. It offers radio access networks, fiber broadband access, satcom solutions, optical aggregation, switching and routing, direct-to-mobile broadcast solutions, metro core and backbone, packet transport networks, network management systems, and wireless core products. The company also designs, manufactures, and sells wireless and wireline networking products, including 4G/5G radio access (LTE/NR), converged 4G/5G core, fiber-to-home and fiber-to enterprise (GPON/XGSPON), optical "
+        },
+        "stock_article_count": 2,
+        "industry_article_count": 30,
+        "macro_article_count": 30,
+        "trusted_count": 0,
+        "trusted_industry_count": 0,
+        "unrated_count": 2,
+        "trusted_macro_count": 0,
+        "industry_avg_sentiment": 0.045850333136676046,
+        "sentiment_strength": 0.045850333136676046,
+        "llm_decision_why": "The evidence provided consists of extremely outdated company-specific news (2017-2019) and generic industry reports. There is no current, relevant, or actionable information regarding Tejas Networks' recent performance or outlook. The lack of reliable, timely data makes it impossible to establish a directional edge."
+      },
+      "top_news": [
+        {
+          "source": "google_rss",
+          "title": "Who Has Been Selling Tejas Networks Limited (NSE:TEJASNET) Shares? - Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQaFZLcHgtNEt5VkEyR0ZSLXpnRDNJN01YSjh3YmhVcEdINC1JZmJGNXVlaGhCNkR1NFFJZnFGZWpoQmtsSzlPVW1uVHJTTTh6ZkVsSkU2UGNJSl91RmxHLUNNaXZxX1VZdVFGbGtqOUhyUk1oZUxzaGpVejdEc0VjaUZyaFU5a0k?oc=5",
+          "published_at": "Wed, 14 Aug 2019 07:00:00 GMT",
+          "published_ts": 1565766000.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss",
+          "title": "TEJASNET Stock Price and Chart — NSE:TEJASNET - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5Oa09kU1Y2WWJQTm9KV0hXM2NHaHY3U0dTWHc0UnZwazl4cmJSekw0ZjZqb19xV09JbERGV0pibm9kR0lvVjJSSUpPbkxaNDhRNXcxclNjelZDV0pUa1E?oc=5",
+          "published_at": "Thu, 02 Nov 2017 01:55:26 GMT",
+          "published_ts": 1509587726.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        }
+      ],
+      "top_industry_news": [
+        {
+          "source": "google_rss_industry",
+          "title": "World Voice Communication Equipment Market 2026 Analysis and Forecast to 2035 - IndexBox - Market Intelligence Platform",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNYzFFLV9HZmVIQUZEeE1wUUxWdTlEUjB4cThHOWcwYWZTblBJdDVRTFVtOFdkSVdJU0lNNUpwYVFxLThNMjV5ODc0TnJfWDZCVlJUVmRTRWRpV293RXp2M1BvMU5DLWJkQlZaTWhqRlhCVzRjRDlFUjVMeXQ1TXE4WmJRN3hVbHJSdWRrREl6NUItZWZHVTFWWWdxbGpkbmZUMGd1ampwcU9BeXFTZEptTFNDSFNVQTg?oc=5",
+          "published_at": "Fri, 13 Mar 2026 20:44:11 GMT",
+          "published_ts": 1773434651.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tejas Networks Limited",
+          "sector": "Technology",
+          "industry": "Communication Equipment"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "High-Growth Semiconductor Stocks in India to Buy in 2026 - Analytics Insight",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOR3E0dU1rSkNzbDVLcmFEZWlQVHVXMUozdmE5ZzlBS3A0dGhZZEItQzRqaVpsNmxGU0tJQVBRWmFqT1d4bElGVUJYUm1wa3hwSENlN0VnTGcxdVpCUjJOaXF1NEhoZGVJNV9xZmNmajBGZUQzeXR0REhmWUhielZyOU9JQW1xcG9YbU9aZ25tV2lJU042MUk4OFpEbnHSAaoBQVVfeXFMUHFRZHd2a3ZPdURwRDAwdi0xVmp1eEhiaXBwNGZDZzVjOE9lcExmWkRZWHR4cWVnemRpc0pmdU5IelF6SktKem5kRi1tUFBsdTQ0bDUtR3V6UDJPRmFaSkNjWE5KQzNvSmNrY2ZTQTJnZENRckFKOEhYVUpRQ0JLU016Zll6SEtfTDZYanVWeVNITDlndVFvbXBPVkhvSU1MNnR4RVJVbDlCbnc?oc=5",
+          "published_at": "Thu, 12 Mar 2026 04:30:00 GMT",
+          "published_ts": 1773289800.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tejas Networks Limited",
+          "sector": "Technology",
+          "industry": "Communication Equipment"
+        },
+        {
+          "source": "bing_rss_industry",
+          "title": "India strongly positioned as the next global platform for consumer technology: Nothing co-founder",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b490be03d0452cba9626284902268c&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2ftopstories%2findia-strongly-positioned-as-the-next-global-platform-for-consumer-technology-nothing-co-founder%2far-AA1XOtsQ&c=9634019043024314443&mkt=en-in",
+          "published_at": "Mon, 09 Mar 2026 04:07:00 GMT",
+          "published_ts": 1773029220.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated",
+          "company_name": "Tejas Networks Limited",
+          "sector": "Technology",
+          "industry": "Communication Equipment"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Radio Frequency Test Equipment Market Size, Share & Forecast to 2036 - Fact.MR",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE43eFF6bTRwRWloNmlKaE5xdlRZWVpwX0QtMlEwOVkxRlZOclZWb0hEYm8tTHBoWnljaGxHc2VFRXZ1Z19kWTNsU0lxZXpnN0E2TmdjN01VM01WSS1YUGVtdXdseTZuMWtZOGtERDF4ZXBiLUhHQ2c?oc=5",
+          "published_at": "Thu, 05 Mar 2026 13:26:34 GMT",
+          "published_ts": 1772717194.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tejas Networks Limited",
+          "sector": "Technology",
+          "industry": "Communication Equipment"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Rugged Cases Market Forecast 2026-2036: Global Market to Reach USD 4,693.8 Million by 2036 at 4.1% CAGR - openPR.com",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNQmg4bXNpNWdSbTYwOXVKakVJbEt0bUJrRE5ydWYyY0xfcnl6XzZwUm5pQVpWaF9UVHg4eG1GOHNIaHhHNTRMZ0xBLW1hbEpTaV9nMTJRZ0h2aHQ2NzlZb3BjTG8xdTFoOFFockRTVmdpdm5JSV92dnRLZ0JpdzVlVXU2Tzk2cWVCR3d4M3dIcU9HZERNU1VzUW1Bd0dzZw?oc=5",
+          "published_at": "Thu, 05 Mar 2026 10:14:37 GMT",
+          "published_ts": 1772705677.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tejas Networks Limited",
+          "sector": "Technology",
+          "industry": "Communication Equipment"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "₹73,015 Cr Order Book: Why This Defence PSU Is Outperforming the Market in 2026 - Trade Brains",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQXh5TW85OU1ZZDJ3SkM2M2kwcEprZVkyQjkyZ2NGZm1FTzdtQ1JpMkdUSTlYM0I5c2NOMWNCcnhwc3dDNEQtQTN0WlE3bzd0R01MOUR1Ymt5YnJkNmNXOGlUVXB0RHIyZnFOTUY2QW5hNGQwN0tJVzFIRm9qRkllR2Fsbm9tT182WGJKS2ZTbk53b2dWNEhyZzBiNUt0b2VSU1E?oc=5",
+          "published_at": "Thu, 05 Mar 2026 08:00:00 GMT",
+          "published_ts": 1772697600.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tejas Networks Limited",
+          "sector": "Technology",
+          "industry": "Communication Equipment"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Tata Group Stock Jumps Up to 8.5% After Launching New Data Center Interconnect Product - Trade Brains",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQcDFNZGNOcW9waE9TWjhTTjdxeUVuVzhRN0ItdkJQUG9UYXRZYk9DRDBEcDREOG1mMlZBaldzekN3amUxLWJOMGRmTEd0RmctbG9qaGJHbU5oekM2SENNZXZ2c3JGSVBkeDNqWS1DWVY2X3VxZWxSUUN6TFRzaHR4Z29aQWV0NWdpOHJiQXROY3YwcTU1eVJHWDJXN2xudHQ1c1NVWGR1bkV3MzZOY1E?oc=5",
+          "published_at": "Wed, 04 Mar 2026 07:03:00 GMT",
+          "published_ts": 1772607780.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tejas Networks Limited",
+          "sector": "Technology",
+          "industry": "Communication Equipment"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Tejas Networks Share Price Rise 7.37% To ₹520.40 In Early Trade, Extend Multi-Day Rally After NEC 5G Deal - HDFC Sky",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5xVUhfNjdlMEJFZ01aYWV1VEtWM0YycmZFUUJSTHJMcm9lWkdWbjdvNFJzQjBMVmd6OVRhNHJBb1dkVUNlVTFLTFpwZU1ad0xYaGlYQzlBeW4yRDZkWktBbkhoMTBubmNZMHhyVjB6VlRUOU5TOVVhZA?oc=5",
+          "published_at": "Wed, 04 Mar 2026 05:49:08 GMT",
+          "published_ts": 1772603348.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tejas Networks Limited",
+          "sector": "Technology",
+          "industry": "Communication Equipment"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Tejas Networks shares skyrocket 53% in five sessions! Factors you need to know - Upstox",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPdmNqWnVpZUhicWJCTkhHYWxXZk1iYTN2c3ppQ0FzU2FHcjdaTW5FZVA3cFlLMmp5QkQ2SlY2amNkM25DTGhpQVU5TTUzMGdPdEc0TkVydzlsWWh6d3hEZVlVMXNmbVp0NXVZZmR1UGd1TmRzNnB4cjRHWERCUHMwMkliY0FnLTZza004d210Z1YwbnVUUzUxX1VWWUhXTGRxT0o5Q0ZZaHc1UkZOaVk3NHBRbmdDTzVrVHpZZzZqbUNFWFlmRlJ2d3ljcTZwVG4t?oc=5",
+          "published_at": "Tue, 03 Mar 2026 08:00:00 GMT",
+          "published_ts": 1772524800.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tejas Networks Limited",
+          "sector": "Technology",
+          "industry": "Communication Equipment"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Tejas Networks Share Price Jump 9% - HDFC Sky",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4yOHZtTUMzNEwtc1lsdlVCd3hwTnQ3Z2J3RlctdzlHTU1iU0RzVE9OS0lBWWJxV3RnRVJjdEdZeHZvVGtkc2lJdHVaTGZQbldVYmhmWk1lYUFoTTZmWktNZUFSNWcycXNVQi1qUGJEYVpwb1lJ?oc=5",
+          "published_at": "Fri, 27 Feb 2026 06:16:06 GMT",
+          "published_ts": 1772172966.0,
+          "sentiment_score": 1.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tejas Networks Limited",
+          "sector": "Technology",
+          "industry": "Communication Equipment"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "Tejas Networks Secures Agreement with NEC Corporation to Manufacture and Supply 5G Massive MIMO Radios - InvestyWise",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQMFFvNUFNUlN2ZlFPZTUyRzZRR1lQd0lDU3FMSTI5QnBTaVgzZUhCZ1FmSjROSi1fbzVSVmxYa0hneFlWNEVQNlc3R3BRZnY0UDZtbHQwOE9mX1ZpclRRV0NoRHVCdmtRR29ELWJWaVhGRlNnMjgwSUFmR1NvOUYzV09VQkc0dFpsdXd5dFBGb2xaZ1Y0?oc=5",
+          "published_at": "Thu, 26 Feb 2026 08:00:00 GMT",
+          "published_ts": 1772092800.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tejas Networks Limited",
+          "sector": "Technology",
+          "industry": "Communication Equipment"
+        },
+        {
+          "source": "google_rss_industry",
+          "title": "[PRNewswire] Tejas Networks wins contract - Yonhap News Agency",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5xT0MtZktIQjdkWjNaMWotTHJ2UUhxYVVrRjB2U3dvSjdDby01TzJ2dlg5VkVZdGkyeUJQRWxyM1hmWUN0Yi13bmlabTE3S082SkJzS2RBZGV4Zw?oc=5",
+          "published_at": "Thu, 26 Feb 2026 08:00:00 GMT",
+          "published_ts": 1772092800.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated",
+          "company_name": "Tejas Networks Limited",
+          "sector": "Technology",
+          "industry": "Communication Equipment"
+        }
+      ],
+      "top_macro_news": [
+        {
+          "source": "google_rss_macro",
+          "title": "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRVNOajVzSUJWU3Q5R2toMjVnZVZMNDhLclozWDdNODc1OU1qbVFjYnFTT0Z1SUZaaExuY3FJajFkdWtOWk5kdWplT0J0Yk9RcnlDVnlvQmJZNC1jVDVHZmRhS0Z0X0JiXzFETHRnaUVac1pEMmZfWE9raXFacFpwR1dSaEVST0Ntc2k1czN4emNQVFlWSHE3V1ZhMW80OUFMYmN6dEwtTkRadm44enc?oc=5",
+          "published_at": "Fri, 13 Mar 2026 15:17:26 GMT",
+          "published_ts": 1773415046.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b490c3630d4162b60f880185b1218e&url=https%3a%2f%2fwww.livemint.com%2fmarket%2fstock-market-news%2fus-china-power-shift-global-markets-india-outlook-mirae-asset-swarup-mohanty-11773376870759.html&c=15555016077234823276&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 14:15:00 GMT",
+          "published_ts": 1773411300.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Fed to delay rate cuts as war clouds the outlook",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b490c4cd22466088ec43efdfffef25&url=https%3a%2f%2fthink.ing.com%2farticles%2ffed-to-delay-rate-cuts-as-war-clouds-the-outlook%2f&c=127436243108543137&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 13:40:00 GMT",
+          "published_ts": 1773409200.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss_macro",
+          "title": "Bitcoin holds above $71,000, defying rising dollar, oil and U.S. bond yields - CoinDesk",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbHB1NE1GZ1dLTWpvOWNseW5QXy1jbWVHcTYzcXF6NWotU0NHOG1XNEUzcDd0ZTctMW1URXZzSW5RQ1djc1h3a0xOM0k2Tkd5TjRWcE0wUXRwZjg4WktmZ2xDWnpLa0RhR1BsRzlrZlVlVzhONmQ0eW51VXJIWFQ3NFJkd0VXZ2VsUnY4VTBuWjU5LXpxX1BPYUIyaEZKQVdEWUU3a25CY0RvN3NrVW10cFNUTWtxSHdhSWI4?oc=5",
+          "published_at": "Fri, 13 Mar 2026 09:34:10 GMT",
+          "published_ts": 1773394450.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Gold Silver Rate Today Live Updates (13 March 2026): Gold, silver futures fall on MCX as rising crude oil prices dim hopes of early rate cuts",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b490c4b8a14081b42e21cb65f638c3&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2flive-blog%2fgold-rate-silver-price-today-live-updates-mcx-gold-18k-22k-24k-rate-iran-isreal-us-war-latest-news%2fliveblog%2f129534056.cms&c=4108291931945502437&mkt=en-in",
+          "published_at": "Fri, 13 Mar 2026 06:00:00 GMT",
+          "published_ts": 1773381600.0,
+          "sentiment_score": -1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Markets Today: Sensex Declines 830 Points, Nifty Slips Below 23,650 Amid Iran-US-Israel War",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b490c3630d4162b60f880185b1218e&url=https%3a%2f%2fwww.news18.com%2fbusiness%2fmarkets%2fmarkets-today-sensex-falls-1000-points-in-opening-trade-nifty-below-23600-as-oil-surges-past-100-9956009.html&c=7425380694736114227&mkt=en-in",
+          "published_at": "Thu, 12 Mar 2026 03:39:00 GMT",
+          "published_ts": 1773286740.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Share markets continue to bleed as West Asia tensions dampen sentiment, Sensex over 800 points down",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b490c3630d4162b60f880185b1218e&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fmarkets%2fshare-markets-continue-to-bleed-as-west-asia-tensions-dampen-sentiment-sensex-over-800-points-down%2far-AA1Yt9yX&c=14300386732484515462&mkt=en-in",
+          "published_at": "Thu, 12 Mar 2026 03:04:15 GMT",
+          "published_ts": 1773284655.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Trading Day: Oil and yields up, up, and away",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b490c4b8a14081b42e21cb65f638c3&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2ftrading-day-oil-and-yields-up-up-and-away%2far-AA1YqbzQ&c=11227118164045986945&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 14:08:08 GMT",
+          "published_ts": 1773238088.0,
+          "sentiment_score": 0.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "google_rss_macro",
+          "title": "Markets Confront the Economic Impact of the Iran Conflict - Natixis CIB | Natixis Corporate & Investment Banking",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOVpkVlFlOG1lbEdUZEM2VU40clhkdUtsN3l6Z3Rkd2g4WTBNMVNKSFBmMmkyT1M0RGwtZGJxN1ItZVVrMEU3UnVfWFJ6UmpZUVppV09ZelhMWHNvZmhtbFk3ajc0UnlpY0dZeW51MGJnSUU3dGhYRGFQaE44NjJVaFFBVWFyVlNhampDdXFic0dCZXZ3YW5ScWUtWQ?oc=5",
+          "published_at": "Wed, 11 Mar 2026 10:55:26 GMT",
+          "published_ts": 1773226526.0,
+          "sentiment_score": 0.0,
+          "domain": "news.google.com",
+          "domain_trust": "unrated"
+        },
+        {
+          "source": "bing_rss_macro",
+          "title": "Oil price spike could push US inflation to 4%, delaying Fed rate cut",
+          "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b490c4cd22466088ec43efdfffef25&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2foil-price-spike-could-push-us-inflation-to-4-delaying-fed-rate-cut%2far-AA1Ym49n&c=7065206888862373143&mkt=en-in",
+          "published_at": "Wed, 11 Mar 2026 03:02:32 GMT",
+          "published_ts": 1773198152.0,
+          "sentiment_score": 1.0,
+          "domain": "bing.com",
+          "domain_trust": "unrated"
+        }
+      ],
+      "avg_sentiment": 0.0007971325764096395,
+      "macro_sentiment": -0.07082918059917444
+    },
+    "market_sentiment": {
+      "signal": "SELL",
+      "confidence": 0.656,
+      "summary": "Market Sentiment: SELL | NIFTY 5D=-4.55%, 10D=-7.23%, 20D=-8.92%, SMA20 gap=-5.7% (below). India VIX=24533.580078125, 5D chg=-486.8, news sentiment=0.00. Votes: bull=2, bear=3.",
+      "reasoning_prompt": "Market sentiment protocol:\n1) Evaluate NIFTY multi-window momentum (5/10/20-bar returns) for domestic risk appetite.\n2) Check Nifty SMA20 structure — price above 20DMA = constructive, below = cautious.\n3) Evaluate India VIX regime as stress filter (low=constructive, high=defensive).\n4) Factor VIX change rate — rising VIX signals increasing fear even if level is moderate.\n5) Blend with cleaned multi-source news sentiment (stock + macro blend).\n6) Count bullish/bearish votes and avoid directional call under conflict.\n7) Prefer NO_TRADE when index momentum and volatility regime diverge.",
+      "llm_reasoning": "Market sentiment remains inconclusive. The lack of recent verified news and the disconnect between the positive technical momentum and the persistent structural downtrend suggest market participants are undecided. The low volume relative to the 20-day moving average (7.8M vs 30.6M) indicates a lack of conviction from institutional players, reflecting a period of consolidation or limited market participation at these price levels.",
+      "detail": {
+        "nifty_ret5": -0.04549602405840758,
+        "nifty_ret10": -0.0723378636073776,
+        "nifty_ret20": -0.08918519809538727,
+        "above_sma20": false,
+        "sma_gap_pct": -5.67,
+        "vix_level": 24533.580078125,
+        "vix_change_5d": -486.83,
+        "news_avg_sentiment": 0.0007971325764096395,
+        "bullish_votes": 2,
+        "bearish_votes": 3
+      }
+    },
+    "relative_strength": {
+      "signal": "SELL",
+      "confidence": 0.8200000000000001,
+      "summary": "Relative Strength: SELL | stock 10-bar return=-11.72%, NIFTY=-3.44%, alpha=-8.28%.",
+      "reasoning_prompt": "Relative-strength protocol:\n1) Compare stock and NIFTY returns over same 10-bar window.\n2) Convert spread into alpha and classify persistent out/under-performance.\n3) Treat marginal alpha as noise and return NO_TRADE.\n4) Use relative strength as confirmation layer, not standalone trigger.",
+      "llm_reasoning": "Relative strength is currently conflicting. While the asset shows strong price momentum (ROC10 of 38.80%) outperforming typical consolidation, it is doing so on significantly lower volume than its 20-day average. This divergence suggests the current price rise may be sensitive to lack of liquidity. The asset's ability to trade above key moving averages despite a wider structural downtrend suggests temporary short-term resilience rather than fundamental sector leadership.",
+      "detail": {
+        "stock_ret10": -0.11718200441947557,
+        "nifty_ret10": -0.03436815462817344,
+        "alpha": -0.08281384979130213
+      }
+    },
+    "us_trend": {
+      "signal": "SELL",
+      "confidence": 0.95,
+      "summary": "US Trend Signal: SELL | Global risk-off backdrop. SPX 5D/20D=-10.42%/30.10%, NDX 5D/20D=-1.95%/-2.65%, VIX=424.45, DXY 5D=-8.73%.",
+      "reasoning_prompt": "US macro trend protocol:\n1) Evaluate SPX and NDX short/medium returns for global equity risk tone.\n2) Use VIX as stress filter (high VIX weakens risk-on conviction).\n3) Use DXY direction as liquidity/EM risk proxy for Indian equities.\n4) Classify regime as risk-on, risk-off, or mixed.\n5) Use this as contextual bias only; do not override local setup quality.",
+      "llm_reasoning": "Not applicable to this specific asset as it is listed on the National Stock Exchange of India (TEJASNET.NS). Broader US market trends are not directly correlated to the specific operational environment or structural trendlines of this communication equipment provider.",
+      "detail": {
+        "regime": "Global risk-off backdrop",
+        "llm_decision_why": "The VIX is at an extreme, anomalous level (424.45), indicating severe market dislocation and panic-driven risk-off sentiment. Despite moderate recent recovery in SPX, the volatility spike and sustained NDX weakness demonstrate a clear risk-off macro regime unsuitable for long-side swing exposure.",
+        "spx_ret_5": -0.10418356707728427,
+        "spx_ret_20": 0.3009881197012778,
+        "ndx_ret_5": -0.019457318048936578,
+        "ndx_ret_20": -0.026493901245791207,
+        "vix_last": 424.45001220703125,
+        "dxy_ret_5": -0.08730239039165788,
+        "dxy_ret_20": 0.2744333516411319
+      }
+    },
+    "financials": {
+      "signal": "NO_TRADE",
+      "confidence": 0.44,
+      "summary": "Financials Signal: NO_TRADE | Fundamentals mixed/neutral. Coverage=0%. ROE=N/A, Margin=N/A, RevGrowth=N/A, EarnGrowth=N/A, D/E=N/A, CurrentRatio=N/A, PE=N/A. Quarterly trends: RevQoQ=N/A, NIQoQ=N/A, OCFQoQ=N/A, DebtQoQ=N/A, FCF=N/A, Cash/Debt=N/A. Analyst target=N/A (N/A upside, ? analysts). 52w Hi/Lo=N/A/N/A, position=N/A.",
+      "reasoning_prompt": "Financial statement reasoning protocol:\n1) Evaluate valuation (PE/PB) relative to profitability and growth quality.\n2) Score profitability and efficiency (ROE, margins).\n3) Validate growth durability using quarterly revenue and net-income trends.\n4) Check balance-sheet resilience (debt trend, liquidity, cash/debt).\n5) Check cash-flow quality (operating CF trend, free cash flow sign).\n6) If fundamentals conflict or are incomplete, default to conservative NO_TRADE bias.",
+      "llm_reasoning": "Tejas Networks shows a close of 441.10 with an ATR of 40.06, indicating high volatility. Financial indicators reflect a strong price surge against moving averages, specifically the SMA20 at 391.66 and SMA50 at 378.40. While the price action is bullish, the ATR suggests a significant range, and the low volume relative to the 20-day SMA (7.8M vs 30.6M) cautions that current price levels may lack the necessary liquidity to sustain the recent gains.",
+      "fundamental_signals": [],
+      "analyst_consensus": {
+        "target_price": null,
+        "target_high": null,
+        "target_low": null,
+        "n_analysts": null,
+        "implied_upside_pct": null
+      },
+      "price_52w": {
+        "high": null,
+        "low": null,
+        "current": 24533.58,
+        "position_pct": null,
+        "change_1y_pct": null
+      },
+      "extended_fundamentals": {
+        "symbol": "TEJASNET.NS",
+        "dividend_yield": null,
+        "dividend_rate": null,
+        "ex_dividend_date": null,
+        "payout_ratio": null,
+        "held_pct_insiders": null,
+        "held_pct_institutions": null,
+        "book_value": null,
+        "price_to_book": null,
+        "return_on_equity": null,
+        "debt_to_equity": null,
+        "profit_margins": null,
+        "enterprise_value": null,
+        "enterprise_to_revenue": null,
+        "enterprise_to_ebitda": null,
+        "gross_margins": null,
+        "operating_margins": null,
+        "ebitda_margins": null,
+        "total_revenue": null,
+        "total_debt": null,
+        "total_cash": null,
+        "peg_ratio": null,
+        "trailing_pe": null,
+        "forward_pe": null
+      },
+      "promoter_institutional": {
+        "symbol": "TEJASNET.NS",
+        "major_holders": {},
+        "top_institutional": []
+      },
+      "dividends_splits": {
+        "symbol": "TEJASNET.NS",
+        "recent_dividends": [
+          {
+            "date": "2019-07-17 00:00:00+05:30",
+            "amount": 1.0
+          },
+          {
+            "date": "2025-06-19 00:00:00+05:30",
+            "amount": 2.5
+          }
+        ],
+        "recent_splits": [],
+        "dividend_yield_trend": null,
+        "total_dividends_1y": 2.5
+      },
+      "metrics": {
+        "market_cap": null,
+        "trailing_pe": null,
+        "forward_pe": null,
+        "price_to_book": null,
+        "debt_to_equity": null,
+        "return_on_equity": null,
+        "profit_margins": null,
+        "operating_margins": null,
+        "gross_margins": null,
+        "ebitda_margins": null,
+        "revenue_growth": null,
+        "earnings_growth": null,
+        "free_cashflow": null,
+        "operating_cashflow": null,
+        "current_ratio": null,
+        "fifty_two_week_high": null,
+        "fifty_two_week_low": null,
+        "fifty_two_week_change": null,
+        "dividend_yield": null,
+        "current_price": 24533.580078125,
+        "analyst_target_price": null,
+        "analyst_target_high": null,
+        "analyst_target_low": null,
+        "number_of_analyst_opinions": null,
+        "trailing_eps": null,
+        "forward_eps": null,
+        "beta": null,
+        "book_value": null,
+        "enterprise_value": null,
+        "total_revenue": null,
+        "total_debt": null,
+        "total_cash": null,
+        "peg_ratio": null,
+        "sector": null,
+        "industry": null,
+        "company_name": ""
+      },
+      "detail": {
+        "stance": "Fundamentals mixed/neutral",
+        "bull_points": 0,
+        "bear_points": 0,
+        "data_quality": {
+          "coverage_ratio": 0.0,
+          "available_fields": 0,
+          "total_fields": 13
+        },
+        "metrics": {
+          "market_cap": null,
+          "trailing_pe": null,
+          "forward_pe": null,
+          "price_to_book": null,
+          "debt_to_equity": null,
+          "return_on_equity": null,
+          "profit_margins": null,
+          "operating_margins": null,
+          "gross_margins": null,
+          "ebitda_margins": null,
+          "revenue_growth": null,
+          "earnings_growth": null,
+          "free_cashflow": null,
+          "operating_cashflow": null,
+          "current_ratio": null,
+          "fifty_two_week_high": null,
+          "fifty_two_week_low": null,
+          "fifty_two_week_change": null,
+          "dividend_yield": null,
+          "current_price": 24533.580078125,
+          "analyst_target_price": null,
+          "analyst_target_high": null,
+          "analyst_target_low": null,
+          "number_of_analyst_opinions": null,
+          "trailing_eps": null,
+          "forward_eps": null,
+          "beta": null,
+          "book_value": null,
+          "enterprise_value": null,
+          "total_revenue": null,
+          "total_debt": null,
+          "total_cash": null,
+          "peg_ratio": null,
+          "sector": null,
+          "industry": null,
+          "company_name": ""
+        },
+        "metrics_extended": {
+          "dividend_yield": null,
+          "peg_ratio": null,
+          "operating_margins": null,
+          "gross_margins": null,
+          "ev_to_ebitda": null,
+          "held_pct_institutions": null
+        },
+        "statement_trends": {
+          "revenue_qoq": null,
+          "net_income_qoq": null,
+          "operating_cf_qoq": null,
+          "debt_qoq": null,
+          "free_cashflow_latest": null,
+          "cash_to_debt": null
+        }
+      }
+    },
+    "market_setup": {
+      "signal": "NO_TRADE",
+      "confidence": 0.55,
+      "summary": "Market Setup Signal: NO_TRADE | Range negotiation. Tape read: 5d=-10.4%, 20d=+30.1%, volume ratio=0.61, momentum=69.0. Support gap=5.4% and resistance gap=5.4%. Trader read: The asset shows a strong intermediate-term trend, but current evidence is contradictory. Momentum is bullish, yet volume is significantly low (0.61 ratio), indicating a lack of participation. With price equidistant between support and resistance and the pattern currently in a compression phase, waiting for a volume-backed breakout above 465 is the only high-probability executable setup.",
+      "reasoning_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+      "llm_reasoning": "The current market setup is defined by a conflict between short-term bullish momentum and a medium-term structural downtrend. Trading near 441.10, the stock is testing technical resistance within a channel that has historically exhibited negative slopes. The combination of sideways compression and low volume volume relative to the 20-day moving average suggests the market is in a period of indecision, prioritizing a wait for breakout confirmation.",
+      "setup_label": "Range negotiation",
+      "detail": {
+        "recent_return_5d_pct": -10.42,
+        "recent_return_20d_pct": 30.1,
+        "volume_ratio_5d_vs_20d": 0.61,
+        "distance_to_support_pct": 5.39,
+        "distance_to_resistance_pct": 5.36,
+        "momentum_score": 69.0,
+        "buy_votes": 1,
+        "sell_votes": 2
+      }
+    },
+    "catalyst_context": {
+      "signal": "NO_TRADE",
+      "confidence": 0.95,
+      "summary": "Catalyst Context Signal: NO_TRADE | Deteriorating backdrop. Backdrop read: news sentiment=0.00, analyst upside=None, 52w position=None. Core read: The data provided is critically incomplete, lacking essential financial metrics, valuation ratios, and recent analyst coverage. The current price point appears anomalous or misaligned with standard market data for this ticker. Without verifiable fundamental or technical context, any directional trade would be pure speculation. Staying sidelined is the only prudent course.",
+      "reasoning_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+      "llm_reasoning": "There is a lack of identifiable catalysts. The technical signal for a BUY is not supported by recent fundamental developments, earnings announcements, or sector-specific news. In the absence of a market-moving event, the current price movement is likely driven by technical positioning or sentiment within a thin-volume environment, making the setup high-risk for momentum traders.",
+      "catalyst_label": "Deteriorating backdrop",
+      "detail": {
+        "buy_votes": 0,
+        "sell_votes": 2,
+        "avg_sentiment": 0.001,
+        "analyst_upside_pct": null,
+        "position_52w_pct": null,
+        "fundamental_signals": []
+      }
+    }
+  },
+  "agent_guidance": {
+    "indicator_prompt": "Indicator reasoning protocol:\n1) Evaluate structural trend using close vs SMA20 and SMA20 vs SMA50.\n2) Validate momentum using MACD line/signal/histogram and ROC10 direction.\n3) Check exhaustion/continuation via RSI, Stochastic crossover, and Williams %R zone.\n4) Confirm participation with volume vs 20-bar average.\n5) Penalize high-volatility regimes with ATR% filters and lower confidence.\n6) If cross-indicator alignment is weak or contradictory, return NO_TRADE.",
+    "pattern_prompt": "Pattern reasoning protocol:\n1) Detect breakout/breakdown against prior 12-bar range, not single-candle spikes.\n2) Confirm direction with local slope and bar-structure continuation.\n3) Use engulfing patterns as confirmation, not standalone trigger.\n4) Treat flat-slope compression as NO_TRADE until expansion is confirmed.\n5) Down-rank weak breakouts lacking structure confirmation.",
+    "news_prompt": "News reasoning protocol:\n1) Collect company-specific headlines across multiple providers using diversified queries.\n2) Filter spam/listicle/noise domains and low-relevance stories.\n3) Build a global macro stream (rates, inflation, oil, USD, broad risk sentiment).\n4) Build industry/sector thematic stream (demand cycle, market share, regulation, capacity, pricing).\n5) Weight sentiment by source quality, exponential recency decay, and relevance confidence.\n6) Apply content-similarity dedup to remove near-duplicate headlines.\n7) Use LLM to infer final bias from company + industry + macro evidence and return NO_TRADE under conflict.",
+    "trend_prompt": "Trend reasoning protocol:\n1) Fit support and resistance trendlines over the visible swing window.\n2) Estimate channel slope (regime direction) and channel width (trend quality).\n3) Locate current price in channel and prefer pullback entries aligned with slope.\n4) If slope is weak/flat, classify as sideways and favor NO_TRADE.\n5) Avoid chasing signals near channel extremes against risk-reward logic.",
+    "market_prompt": "Market sentiment protocol:\n1) Evaluate NIFTY multi-window momentum (5/10/20-bar returns) for domestic risk appetite.\n2) Check Nifty SMA20 structure — price above 20DMA = constructive, below = cautious.\n3) Evaluate India VIX regime as stress filter (low=constructive, high=defensive).\n4) Factor VIX change rate — rising VIX signals increasing fear even if level is moderate.\n5) Blend with cleaned multi-source news sentiment (stock + macro blend).\n6) Count bullish/bearish votes and avoid directional call under conflict.\n7) Prefer NO_TRADE when index momentum and volatility regime diverge.",
+    "relative_strength_prompt": "Relative-strength protocol:\n1) Compare stock and NIFTY returns over same 10-bar window.\n2) Convert spread into alpha and classify persistent out/under-performance.\n3) Treat marginal alpha as noise and return NO_TRADE.\n4) Use relative strength as confirmation layer, not standalone trigger.",
+    "us_trend_prompt": "US macro trend protocol:\n1) Evaluate SPX and NDX short/medium returns for global equity risk tone.\n2) Use VIX as stress filter (high VIX weakens risk-on conviction).\n3) Use DXY direction as liquidity/EM risk proxy for Indian equities.\n4) Classify regime as risk-on, risk-off, or mixed.\n5) Use this as contextual bias only; do not override local setup quality.",
+    "financials_prompt": "Financial statement reasoning protocol:\n1) Evaluate valuation (PE/PB) relative to profitability and growth quality.\n2) Score profitability and efficiency (ROE, margins).\n3) Validate growth durability using quarterly revenue and net-income trends.\n4) Check balance-sheet resilience (debt trend, liquidity, cash/debt).\n5) Check cash-flow quality (operating CF trend, free cash flow sign).\n6) If fundamentals conflict or are incomplete, default to conservative NO_TRADE bias.",
+    "market_setup_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+    "catalyst_context_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+    "trader_intel_prompt": "Think like a discretionary Indian swing trader. Judge setup quality, catalyst quality, crowd positioning, and execution patience together. Avoid indicator-threshold language. Prefer NO_TRADE when the idea is merely interesting rather than executable. Use nearby levels, 52-week context, analyst framing, and headline quality to write a trader-grade verdict."
+  },
+  "market_setup": {
+    "signal": "NO_TRADE",
+    "confidence": 0.55,
+    "summary": "Market Setup Signal: NO_TRADE | Range negotiation. Tape read: 5d=-10.4%, 20d=+30.1%, volume ratio=0.61, momentum=69.0. Support gap=5.4% and resistance gap=5.4%. Trader read: The asset shows a strong intermediate-term trend, but current evidence is contradictory. Momentum is bullish, yet volume is significantly low (0.61 ratio), indicating a lack of participation. With price equidistant between support and resistance and the pattern currently in a compression phase, waiting for a volume-backed breakout above 465 is the only high-probability executable setup.",
+    "reasoning_prompt": "Market setup reasoning protocol:\n1) Read the recent tape first: velocity, pullback quality, closes, and volume.\n2) Judge whether price is near actionable support, trapped below resistance, or already extended.\n3) Use pattern, trend, and relative strength as context, not as isolated votes.\n4) Prefer patience when price is between levels or when momentum is late-stage.\n5) Only output BUY or SELL if the setup is executable with a clean invalidation.",
+    "llm_reasoning": "The current market setup is defined by a conflict between short-term bullish momentum and a medium-term structural downtrend. Trading near 441.10, the stock is testing technical resistance within a channel that has historically exhibited negative slopes. The combination of sideways compression and low volume volume relative to the 20-day moving average suggests the market is in a period of indecision, prioritizing a wait for breakout confirmation.",
+    "setup_label": "Range negotiation",
+    "detail": {
+      "recent_return_5d_pct": -10.42,
+      "recent_return_20d_pct": 30.1,
+      "volume_ratio_5d_vs_20d": 0.61,
+      "distance_to_support_pct": 5.39,
+      "distance_to_resistance_pct": 5.36,
+      "momentum_score": 69.0,
+      "buy_votes": 1,
+      "sell_votes": 2
+    }
+  },
+  "catalyst_context": {
+    "signal": "NO_TRADE",
+    "confidence": 0.95,
+    "summary": "Catalyst Context Signal: NO_TRADE | Deteriorating backdrop. Backdrop read: news sentiment=0.00, analyst upside=None, 52w position=None. Core read: The data provided is critically incomplete, lacking essential financial metrics, valuation ratios, and recent analyst coverage. The current price point appears anomalous or misaligned with standard market data for this ticker. Without verifiable fundamental or technical context, any directional trade would be pure speculation. Staying sidelined is the only prudent course.",
+    "reasoning_prompt": "Catalyst context reasoning protocol:\n1) Identify whether the company narrative is improving, deteriorating, or simply noisy.\n2) Cross-check headlines against financial evidence and analyst expectations.\n3) Add macro and cross-market context only as a tailwind or headwind, not as the whole thesis.\n4) Distinguish between credible catalysts and speculative chatter.\n5) Prefer NO_TRADE when the story is interesting but not yet investable.",
+    "llm_reasoning": "There is a lack of identifiable catalysts. The technical signal for a BUY is not supported by recent fundamental developments, earnings announcements, or sector-specific news. In the absence of a market-moving event, the current price movement is likely driven by technical positioning or sentiment within a thin-volume environment, making the setup high-risk for momentum traders.",
+    "catalyst_label": "Deteriorating backdrop",
+    "detail": {
+      "buy_votes": 0,
+      "sell_votes": 2,
+      "avg_sentiment": 0.001,
+      "analyst_upside_pct": null,
+      "position_52w_pct": null,
+      "fundamental_signals": []
+    }
+  },
+  "trader_intel": {
+    "signal": "NO_TRADE",
+    "confidence": 0.35,
+    "verdict_label": "Wait for breakout",
+    "playbook_title": "Compression Breakout Watch",
+    "thesis": "The stock is cooling off after a sharp 30% rally. Price is currently stuck in a 'no man's land' between 420 support and 465 resistance. Without volume expansion, current price action is just noise.",
+    "execution_style": "Breakout-only; looking for a high-volume move above 465 to confirm buyers are back in control.",
+    "risk_flag": "Low participation (volume ratio 0.61) suggests the current pullback could deepen if broad market sentiment weakens.",
+    "entry_trigger": "Daily close above 465 with volume confirming the move.",
+    "invalidation": "Failure to hold the 420 support level, which would signal a deeper correction.",
+    "why_now": "The stock is consolidating; the current volatility is too high relative to volume to justify taking a position.",
+    "why_not_now": "The lack of institutional volume and the equidistant range make this a high-risk, low-reward entry for a swing trader.",
+    "summary": "Trader Intel: NO_TRADE | Wait for breakout | Compression Breakout Watch. Thesis: The stock is cooling off after a sharp 30% rally. Price is currently stuck in a 'no man's land' between 420 support and 465 resistance. Without volume expansion, current price action is just noise. Why now: The stock is consolidating; the current volatility is too high relative to volume to justify taking a position. Why not now: The lack of institutional volume and the equidistant range make this a high-risk, low-reward entry for a swing trader.",
+    "reasoning_prompt": "Think like a discretionary Indian swing trader. Judge setup quality, catalyst quality, crowd positioning, and execution patience together. Avoid indicator-threshold language. Prefer NO_TRADE when the idea is merely interesting rather than executable. Use nearby levels, 52-week context, analyst framing, and headline quality to write a trader-grade verdict."
+  },
+  "top_news": [
+    {
+      "source": "google_rss",
+      "title": "Who Has Been Selling Tejas Networks Limited (NSE:TEJASNET) Shares? - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQaFZLcHgtNEt5VkEyR0ZSLXpnRDNJN01YSjh3YmhVcEdINC1JZmJGNXVlaGhCNkR1NFFJZnFGZWpoQmtsSzlPVW1uVHJTTTh6ZkVsSkU2UGNJSl91RmxHLUNNaXZxX1VZdVFGbGtqOUhyUk1oZUxzaGpVejdEc0VjaUZyaFU5a0k?oc=5",
+      "published_at": "Wed, 14 Aug 2019 07:00:00 GMT",
+      "published_ts": 1565766000.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss",
+      "title": "TEJASNET Stock Price and Chart — NSE:TEJASNET - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5Oa09kU1Y2WWJQTm9KV0hXM2NHaHY3U0dTWHc0UnZwazl4cmJSekw0ZjZqb19xV09JbERGV0pibm9kR0lvVjJSSUpPbkxaNDhRNXcxclNjelZDV0pUa1E?oc=5",
+      "published_at": "Thu, 02 Nov 2017 01:55:26 GMT",
+      "published_ts": 1509587726.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    }
+  ],
+  "top_industry_news": [
+    {
+      "source": "google_rss_industry",
+      "title": "World Voice Communication Equipment Market 2026 Analysis and Forecast to 2035 - IndexBox - Market Intelligence Platform",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNYzFFLV9HZmVIQUZEeE1wUUxWdTlEUjB4cThHOWcwYWZTblBJdDVRTFVtOFdkSVdJU0lNNUpwYVFxLThNMjV5ODc0TnJfWDZCVlJUVmRTRWRpV293RXp2M1BvMU5DLWJkQlZaTWhqRlhCVzRjRDlFUjVMeXQ1TXE4WmJRN3hVbHJSdWRrREl6NUItZWZHVTFWWWdxbGpkbmZUMGd1ampwcU9BeXFTZEptTFNDSFNVQTg?oc=5",
+      "published_at": "Fri, 13 Mar 2026 20:44:11 GMT",
+      "published_ts": 1773434651.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tejas Networks Limited",
+      "sector": "Technology",
+      "industry": "Communication Equipment"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "High-Growth Semiconductor Stocks in India to Buy in 2026 - Analytics Insight",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOR3E0dU1rSkNzbDVLcmFEZWlQVHVXMUozdmE5ZzlBS3A0dGhZZEItQzRqaVpsNmxGU0tJQVBRWmFqT1d4bElGVUJYUm1wa3hwSENlN0VnTGcxdVpCUjJOaXF1NEhoZGVJNV9xZmNmajBGZUQzeXR0REhmWUhielZyOU9JQW1xcG9YbU9aZ25tV2lJU042MUk4OFpEbnHSAaoBQVVfeXFMUHFRZHd2a3ZPdURwRDAwdi0xVmp1eEhiaXBwNGZDZzVjOE9lcExmWkRZWHR4cWVnemRpc0pmdU5IelF6SktKem5kRi1tUFBsdTQ0bDUtR3V6UDJPRmFaSkNjWE5KQzNvSmNrY2ZTQTJnZENRckFKOEhYVUpRQ0JLU016Zll6SEtfTDZYanVWeVNITDlndVFvbXBPVkhvSU1MNnR4RVJVbDlCbnc?oc=5",
+      "published_at": "Thu, 12 Mar 2026 04:30:00 GMT",
+      "published_ts": 1773289800.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tejas Networks Limited",
+      "sector": "Technology",
+      "industry": "Communication Equipment"
+    },
+    {
+      "source": "bing_rss_industry",
+      "title": "India strongly positioned as the next global platform for consumer technology: Nothing co-founder",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b490be03d0452cba9626284902268c&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2ftopstories%2findia-strongly-positioned-as-the-next-global-platform-for-consumer-technology-nothing-co-founder%2far-AA1XOtsQ&c=9634019043024314443&mkt=en-in",
+      "published_at": "Mon, 09 Mar 2026 04:07:00 GMT",
+      "published_ts": 1773029220.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated",
+      "company_name": "Tejas Networks Limited",
+      "sector": "Technology",
+      "industry": "Communication Equipment"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Radio Frequency Test Equipment Market Size, Share & Forecast to 2036 - Fact.MR",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE43eFF6bTRwRWloNmlKaE5xdlRZWVpwX0QtMlEwOVkxRlZOclZWb0hEYm8tTHBoWnljaGxHc2VFRXZ1Z19kWTNsU0lxZXpnN0E2TmdjN01VM01WSS1YUGVtdXdseTZuMWtZOGtERDF4ZXBiLUhHQ2c?oc=5",
+      "published_at": "Thu, 05 Mar 2026 13:26:34 GMT",
+      "published_ts": 1772717194.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tejas Networks Limited",
+      "sector": "Technology",
+      "industry": "Communication Equipment"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Rugged Cases Market Forecast 2026-2036: Global Market to Reach USD 4,693.8 Million by 2036 at 4.1% CAGR - openPR.com",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNQmg4bXNpNWdSbTYwOXVKakVJbEt0bUJrRE5ydWYyY0xfcnl6XzZwUm5pQVpWaF9UVHg4eG1GOHNIaHhHNTRMZ0xBLW1hbEpTaV9nMTJRZ0h2aHQ2NzlZb3BjTG8xdTFoOFFockRTVmdpdm5JSV92dnRLZ0JpdzVlVXU2Tzk2cWVCR3d4M3dIcU9HZERNU1VzUW1Bd0dzZw?oc=5",
+      "published_at": "Thu, 05 Mar 2026 10:14:37 GMT",
+      "published_ts": 1772705677.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tejas Networks Limited",
+      "sector": "Technology",
+      "industry": "Communication Equipment"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "₹73,015 Cr Order Book: Why This Defence PSU Is Outperforming the Market in 2026 - Trade Brains",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQXh5TW85OU1ZZDJ3SkM2M2kwcEprZVkyQjkyZ2NGZm1FTzdtQ1JpMkdUSTlYM0I5c2NOMWNCcnhwc3dDNEQtQTN0WlE3bzd0R01MOUR1Ymt5YnJkNmNXOGlUVXB0RHIyZnFOTUY2QW5hNGQwN0tJVzFIRm9qRkllR2Fsbm9tT182WGJKS2ZTbk53b2dWNEhyZzBiNUt0b2VSU1E?oc=5",
+      "published_at": "Thu, 05 Mar 2026 08:00:00 GMT",
+      "published_ts": 1772697600.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tejas Networks Limited",
+      "sector": "Technology",
+      "industry": "Communication Equipment"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Tata Group Stock Jumps Up to 8.5% After Launching New Data Center Interconnect Product - Trade Brains",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQcDFNZGNOcW9waE9TWjhTTjdxeUVuVzhRN0ItdkJQUG9UYXRZYk9DRDBEcDREOG1mMlZBaldzekN3amUxLWJOMGRmTEd0RmctbG9qaGJHbU5oekM2SENNZXZ2c3JGSVBkeDNqWS1DWVY2X3VxZWxSUUN6TFRzaHR4Z29aQWV0NWdpOHJiQXROY3YwcTU1eVJHWDJXN2xudHQ1c1NVWGR1bkV3MzZOY1E?oc=5",
+      "published_at": "Wed, 04 Mar 2026 07:03:00 GMT",
+      "published_ts": 1772607780.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tejas Networks Limited",
+      "sector": "Technology",
+      "industry": "Communication Equipment"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Tejas Networks Share Price Rise 7.37% To ₹520.40 In Early Trade, Extend Multi-Day Rally After NEC 5G Deal - HDFC Sky",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5xVUhfNjdlMEJFZ01aYWV1VEtWM0YycmZFUUJSTHJMcm9lWkdWbjdvNFJzQjBMVmd6OVRhNHJBb1dkVUNlVTFLTFpwZU1ad0xYaGlYQzlBeW4yRDZkWktBbkhoMTBubmNZMHhyVjB6VlRUOU5TOVVhZA?oc=5",
+      "published_at": "Wed, 04 Mar 2026 05:49:08 GMT",
+      "published_ts": 1772603348.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tejas Networks Limited",
+      "sector": "Technology",
+      "industry": "Communication Equipment"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Tejas Networks shares skyrocket 53% in five sessions! Factors you need to know - Upstox",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPdmNqWnVpZUhicWJCTkhHYWxXZk1iYTN2c3ppQ0FzU2FHcjdaTW5FZVA3cFlLMmp5QkQ2SlY2amNkM25DTGhpQVU5TTUzMGdPdEc0TkVydzlsWWh6d3hEZVlVMXNmbVp0NXVZZmR1UGd1TmRzNnB4cjRHWERCUHMwMkliY0FnLTZza004d210Z1YwbnVUUzUxX1VWWUhXTGRxT0o5Q0ZZaHc1UkZOaVk3NHBRbmdDTzVrVHpZZzZqbUNFWFlmRlJ2d3ljcTZwVG4t?oc=5",
+      "published_at": "Tue, 03 Mar 2026 08:00:00 GMT",
+      "published_ts": 1772524800.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tejas Networks Limited",
+      "sector": "Technology",
+      "industry": "Communication Equipment"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Tejas Networks Share Price Jump 9% - HDFC Sky",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4yOHZtTUMzNEwtc1lsdlVCd3hwTnQ3Z2J3RlctdzlHTU1iU0RzVE9OS0lBWWJxV3RnRVJjdEdZeHZvVGtkc2lJdHVaTGZQbldVYmhmWk1lYUFoTTZmWktNZUFSNWcycXNVQi1qUGJEYVpwb1lJ?oc=5",
+      "published_at": "Fri, 27 Feb 2026 06:16:06 GMT",
+      "published_ts": 1772172966.0,
+      "sentiment_score": 1.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tejas Networks Limited",
+      "sector": "Technology",
+      "industry": "Communication Equipment"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "Tejas Networks Secures Agreement with NEC Corporation to Manufacture and Supply 5G Massive MIMO Radios - InvestyWise",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQMFFvNUFNUlN2ZlFPZTUyRzZRR1lQd0lDU3FMSTI5QnBTaVgzZUhCZ1FmSjROSi1fbzVSVmxYa0hneFlWNEVQNlc3R3BRZnY0UDZtbHQwOE9mX1ZpclRRV0NoRHVCdmtRR29ELWJWaVhGRlNnMjgwSUFmR1NvOUYzV09VQkc0dFpsdXd5dFBGb2xaZ1Y0?oc=5",
+      "published_at": "Thu, 26 Feb 2026 08:00:00 GMT",
+      "published_ts": 1772092800.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tejas Networks Limited",
+      "sector": "Technology",
+      "industry": "Communication Equipment"
+    },
+    {
+      "source": "google_rss_industry",
+      "title": "[PRNewswire] Tejas Networks wins contract - Yonhap News Agency",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5xT0MtZktIQjdkWjNaMWotTHJ2UUhxYVVrRjB2U3dvSjdDby01TzJ2dlg5VkVZdGkyeUJQRWxyM1hmWUN0Yi13bmlabTE3S082SkJzS2RBZGV4Zw?oc=5",
+      "published_at": "Thu, 26 Feb 2026 08:00:00 GMT",
+      "published_ts": 1772092800.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated",
+      "company_name": "Tejas Networks Limited",
+      "sector": "Technology",
+      "industry": "Communication Equipment"
+    }
+  ],
+  "top_macro_news": [
+    {
+      "source": "google_rss_macro",
+      "title": "Global Stress, Market Response: What Crypto History Reveals for WHITEBIT:BTCUSDT by WhiteBIT - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRVNOajVzSUJWU3Q5R2toMjVnZVZMNDhLclozWDdNODc1OU1qbVFjYnFTT0Z1SUZaaExuY3FJajFkdWtOWk5kdWplT0J0Yk9RcnlDVnlvQmJZNC1jVDVHZmRhS0Z0X0JiXzFETHRnaUVac1pEMmZfWE9raXFacFpwR1dSaEVST0Ntc2k1czN4emNQVFlWSHE3V1ZhMW80OUFMYmN6dEwtTkRadm44enc?oc=5",
+      "published_at": "Fri, 13 Mar 2026 15:17:26 GMT",
+      "published_ts": 1773415046.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Global markets entering change of eras, but India ticking boxes for FII return: Mirae's Swarup Mohanty",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b490c3630d4162b60f880185b1218e&url=https%3a%2f%2fwww.livemint.com%2fmarket%2fstock-market-news%2fus-china-power-shift-global-markets-india-outlook-mirae-asset-swarup-mohanty-11773376870759.html&c=15555016077234823276&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 14:15:00 GMT",
+      "published_ts": 1773411300.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Fed to delay rate cuts as war clouds the outlook",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b490c4cd22466088ec43efdfffef25&url=https%3a%2f%2fthink.ing.com%2farticles%2ffed-to-delay-rate-cuts-as-war-clouds-the-outlook%2f&c=127436243108543137&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 13:40:00 GMT",
+      "published_ts": 1773409200.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss_macro",
+      "title": "Bitcoin holds above $71,000, defying rising dollar, oil and U.S. bond yields - CoinDesk",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbHB1NE1GZ1dLTWpvOWNseW5QXy1jbWVHcTYzcXF6NWotU0NHOG1XNEUzcDd0ZTctMW1URXZzSW5RQ1djc1h3a0xOM0k2Tkd5TjRWcE0wUXRwZjg4WktmZ2xDWnpLa0RhR1BsRzlrZlVlVzhONmQ0eW51VXJIWFQ3NFJkd0VXZ2VsUnY4VTBuWjU5LXpxX1BPYUIyaEZKQVdEWUU3a25CY0RvN3NrVW10cFNUTWtxSHdhSWI4?oc=5",
+      "published_at": "Fri, 13 Mar 2026 09:34:10 GMT",
+      "published_ts": 1773394450.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Gold Silver Rate Today Live Updates (13 March 2026): Gold, silver futures fall on MCX as rising crude oil prices dim hopes of early rate cuts",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b490c4b8a14081b42e21cb65f638c3&url=https%3a%2f%2feconomictimes.indiatimes.com%2fmarkets%2fstocks%2flive-blog%2fgold-rate-silver-price-today-live-updates-mcx-gold-18k-22k-24k-rate-iran-isreal-us-war-latest-news%2fliveblog%2f129534056.cms&c=4108291931945502437&mkt=en-in",
+      "published_at": "Fri, 13 Mar 2026 06:00:00 GMT",
+      "published_ts": 1773381600.0,
+      "sentiment_score": -1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Markets Today: Sensex Declines 830 Points, Nifty Slips Below 23,650 Amid Iran-US-Israel War",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b490c3630d4162b60f880185b1218e&url=https%3a%2f%2fwww.news18.com%2fbusiness%2fmarkets%2fmarkets-today-sensex-falls-1000-points-in-opening-trade-nifty-below-23600-as-oil-surges-past-100-9956009.html&c=7425380694736114227&mkt=en-in",
+      "published_at": "Thu, 12 Mar 2026 03:39:00 GMT",
+      "published_ts": 1773286740.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Share markets continue to bleed as West Asia tensions dampen sentiment, Sensex over 800 points down",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b490c3630d4162b60f880185b1218e&url=https%3a%2f%2fwww.msn.com%2fen-in%2fmoney%2fmarkets%2fshare-markets-continue-to-bleed-as-west-asia-tensions-dampen-sentiment-sensex-over-800-points-down%2far-AA1Yt9yX&c=14300386732484515462&mkt=en-in",
+      "published_at": "Thu, 12 Mar 2026 03:04:15 GMT",
+      "published_ts": 1773284655.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Trading Day: Oil and yields up, up, and away",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b490c4b8a14081b42e21cb65f638c3&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2ftrading-day-oil-and-yields-up-up-and-away%2far-AA1YqbzQ&c=11227118164045986945&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 14:08:08 GMT",
+      "published_ts": 1773238088.0,
+      "sentiment_score": 0.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "google_rss_macro",
+      "title": "Markets Confront the Economic Impact of the Iran Conflict - Natixis CIB | Natixis Corporate & Investment Banking",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOVpkVlFlOG1lbEdUZEM2VU40clhkdUtsN3l6Z3Rkd2g4WTBNMVNKSFBmMmkyT1M0RGwtZGJxN1ItZVVrMEU3UnVfWFJ6UmpZUVppV09ZelhMWHNvZmhtbFk3ajc0UnlpY0dZeW51MGJnSUU3dGhYRGFQaE44NjJVaFFBVWFyVlNhampDdXFic0dCZXZ3YW5ScWUtWQ?oc=5",
+      "published_at": "Wed, 11 Mar 2026 10:55:26 GMT",
+      "published_ts": 1773226526.0,
+      "sentiment_score": 0.0,
+      "domain": "news.google.com",
+      "domain_trust": "unrated"
+    },
+    {
+      "source": "bing_rss_macro",
+      "title": "Oil price spike could push US inflation to 4%, delaying Fed rate cut",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69b490c4cd22466088ec43efdfffef25&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2foil-price-spike-could-push-us-inflation-to-4-delaying-fed-rate-cut%2far-AA1Ym49n&c=7065206888862373143&mkt=en-in",
+      "published_at": "Wed, 11 Mar 2026 03:02:32 GMT",
+      "published_ts": 1773198152.0,
+      "sentiment_score": 1.0,
+      "domain": "bing.com",
+      "domain_trust": "unrated"
+    }
+  ],
+  "chart_path": "reports/TEJASNET_NS_20260313_223358_trend.png",
+  "long_term_chart_path": "reports/TEJASNET_NS_20260313_223358_long_term.png",
+  "rich_report": "Indian Swing Trading Multi-Agent Report\nIndicator Signal: BUY | Trend: close=441.10, SMA20=391.66, SMA50=378.40. Momentum: MACD=28.993, Signal=20.619, Hist=8.374, ROC10=38.80%. Oscillators: RSI14=66.1, StochK/D=59.4/67.5, Williams%R=-40.6. Risk: ATR14=40.06, Volume=7856082 vs VolSMA20=30647230. Momentum Score=69.0/100 | MA=Buy, Trend=Rising, RSI=Near overbought, MACD=Bullish.\nPattern Signal: NO_TRADE | setup=sideways compression (wait for breakout candle), slope=3.1685, breakout_up=False, breakdown=False, bull_engulf=False, bear_engulf=False.\nTrend Signal: SELL | setup=downtrend with bounce near resistance, support slope=-2.072, resistance slope=-1.840, price position=3.91 in channel.\nNews Signal: NO_TRADE | combined sentiment=0.00 (stock=0.00, industry=0.05, macro=-0.07). Stock articles=2 (trusted=0, unrated=2); Industry articles=30 (trusted=0); Macro articles=30 (trusted=0). Sentiment strength=0.05. Inference=The evidence provided consists of extremely outdated company-specific news (2017-2019) and generic industry reports. There is no current, relevant, or actionable information regarding Tejas Networks' recent performance or outlook. The lack of reliable, timely data makes it impossible to establish a directional edge..\nMarket Sentiment: SELL | NIFTY 5D=-4.55%, 10D=-7.23%, 20D=-8.92%, SMA20 gap=-5.7% (below). India VIX=24533.580078125, 5D chg=-486.8, news sentiment=0.00. Votes: bull=2, bear=3.\nRelative Strength: SELL | stock 10-bar return=-11.72%, NIFTY=-3.44%, alpha=-8.28%.\nUS Trend Signal: SELL | Global risk-off backdrop. SPX 5D/20D=-10.42%/30.10%, NDX 5D/20D=-1.95%/-2.65%, VIX=424.45, DXY 5D=-8.73%.\nFinancials Signal: NO_TRADE | Fundamentals mixed/neutral. Coverage=0%. ROE=N/A, Margin=N/A, RevGrowth=N/A, EarnGrowth=N/A, D/E=N/A, CurrentRatio=N/A, PE=N/A. Quarterly trends: RevQoQ=N/A, NIQoQ=N/A, OCFQoQ=N/A, DebtQoQ=N/A, FCF=N/A, Cash/Debt=N/A. Analyst target=N/A (N/A upside, ? analysts). 52w Hi/Lo=N/A/N/A, position=N/A.\nMarket Setup Signal: NO_TRADE | Range negotiation. Tape read: 5d=-10.4%, 20d=+30.1%, volume ratio=0.61, momentum=69.0. Support gap=5.4% and resistance gap=5.4%. Trader read: The asset shows a strong intermediate-term trend, but current evidence is contradictory. Momentum is bullish, yet volume is significantly low (0.61 ratio), indicating a lack of participation. With price equidistant between support and resistance and the pattern currently in a compression phase, waiting for a volume-backed breakout above 465 is the only high-probability executable setup.\nCatalyst Context Signal: NO_TRADE | Deteriorating backdrop. Backdrop read: news sentiment=0.00, analyst upside=None, 52w position=None. Core read: The data provided is critically incomplete, lacking essential financial metrics, valuation ratios, and recent analyst coverage. The current price point appears anomalous or misaligned with standard market data for this ticker. Without verifiable fundamental or technical context, any directional trade would be pure speculation. Staying sidelined is the only prudent course.\nTrader Intel: NO_TRADE | Wait for breakout | Compression Breakout Watch. Thesis: The stock is cooling off after a sharp 30% rally. Price is currently stuck in a 'no man's land' between 420 support and 465 resistance. Without volume expansion, current price action is just noise. Why now: The stock is consolidating; the current volatility is too high relative to volume to justify taking a position. Why not now: The lack of institutional volume and the equidistant range make this a high-risk, low-reward entry for a swing trader.\nMaster Confluence Committee: BUY=0.122, SELL=0.250, NO_TRADE=0.267. Final=SELL, confidence=0.641. Support=['trend', 'market_sentiment', 'relative_strength', 'us_trend']; Opposing=['technical']; Neutral=['pattern', 'news', 'financials', 'market_setup', 'catalyst_context'].\nRisk Plan: size=0 shares, ATR=40.06, stop=N/A, target=N/A.\n**FINAL CONCLUSION**\n- Signal: NO_TRADE\n- Confidence: 0.350\n- Action Bias: Wait / no-trade setup\n- Playbook: Compression Breakout Watch\n- Thesis: The stock is cooling off after a sharp 30% rally. Price is currently stuck in a 'no man's land' between 420 support and 465 resistance. Without volume expansion, current price action is just noise.\n- When to Act: Daily close above 465 with volume confirming the move.\n- Execution Style: Breakout-only; looking for a high-volume move above 465 to confirm buyers are back in control.\n- Invalidation: Failure to hold the 420 support level, which would signal a deeper correction.\n- Expected Holding Duration: 2-6 weeks\n- Context: downtrend with bounce near resistance\n- Risk Flag: Low participation (volume ratio 0.61) suggests the current pullback could deepen if broad market sentiment weakens.\n- Stop-loss: N/A\n- Targets: N/A\n- 52w Range: N/A – N/A\n\nDetailed Agent Reasoning:\n- technical: The technical outlook is bullish with a signal score of 0.76. Price is trading at 441.10, well above the SMA20 (391.66) and SMA50 (378.40), confirming a strong uptrend. Momentum is positive with a MACD of 28.99 and a bullish histogram of 8.37. The ROC10 is significantly elevated at 38.80%. While RSI is approaching overbought territory at 66.11, the overall structural alignment is positive despite low relative volume (7.8M vs 30.6M SMA20).\n- pattern: Pattern analysis signals NO_TRADE due to sideways compression. The current setup lacks a definitive breakout candle, showing a flat local slope of 3.17. There are no confirming price action signals such as bullish or bearish engulfing patterns. Without a breakout from the existing range or clear directional momentum in the structural formation, the pattern remains neutral, necessitating a wait-and-see approach for a clearer trend expansion.\n- trend: The trend signal is SELL with 0.71 confidence. Despite short-term price momentum, the broader channel analysis identifies a structural downtrend with a support slope of -2.07 and a resistance slope of -1.84. The price is currently positioned at 3.91 within the channel relative to last resistance at 356.23, indicating it is trading near an area of potential exhaustion or reversal against the primary long-term descending trendline.\n- news: News sentiment is neutral (0.00), resulting in a NO_TRADE signal. Available data comprises outdated 2017-2019 company-specific reports and generic industry updates. With no credible or timely news regarding Tejas Networks' current performance, and a macro sentiment score of -0.07, there is insufficient actionable information to establish a directional edge. The lack of current fundamental catalysts makes the news component statistically insignificant.\n- market_sentiment: Market sentiment remains inconclusive. The lack of recent verified news and the disconnect between the positive technical momentum and the persistent structural downtrend suggest market participants are undecided. The low volume relative to the 20-day moving average (7.8M vs 30.6M) indicates a lack of conviction from institutional players, reflecting a period of consolidation or limited market participation at these price levels.\n- relative_strength: Relative strength is currently conflicting. While the asset shows strong price momentum (ROC10 of 38.80%) outperforming typical consolidation, it is doing so on significantly lower volume than its 20-day average. This divergence suggests the current price rise may be sensitive to lack of liquidity. The asset's ability to trade above key moving averages despite a wider structural downtrend suggests temporary short-term resilience rather than fundamental sector leadership.\n- us_trend: Not applicable to this specific asset as it is listed on the National Stock Exchange of India (TEJASNET.NS). Broader US market trends are not directly correlated to the specific operational environment or structural trendlines of this communication equipment provider.\n- financials: Tejas Networks shows a close of 441.10 with an ATR of 40.06, indicating high volatility. Financial indicators reflect a strong price surge against moving averages, specifically the SMA20 at 391.66 and SMA50 at 378.40. While the price action is bullish, the ATR suggests a significant range, and the low volume relative to the 20-day SMA (7.8M vs 30.6M) cautions that current price levels may lack the necessary liquidity to sustain the recent gains.\n- market_setup: The current market setup is defined by a conflict between short-term bullish momentum and a medium-term structural downtrend. Trading near 441.10, the stock is testing technical resistance within a channel that has historically exhibited negative slopes. The combination of sideways compression and low volume volume relative to the 20-day moving average suggests the market is in a period of indecision, prioritizing a wait for breakout confirmation.\n- catalyst_context: There is a lack of identifiable catalysts. The technical signal for a BUY is not supported by recent fundamental developments, earnings announcements, or sector-specific news. In the absence of a market-moving event, the current price movement is likely driven by technical positioning or sentiment within a thin-volume environment, making the setup high-risk for momentum traders.\n- confluence: Confluence is weak. Technical indicators are firmly bullish (SMA, MACD, ROC), but these are contradicted by the structural downtrend signal and the pattern analysis identifying sideways compression. When adding the lack of volume participation and the absence of relevant news, there is no cross-indicator alignment to justify a high-conviction trade. The indicators are currently pulling in opposing directions.\n- risk: The primary risk is the low trading volume (7.8M vs 30.6M SMA20), which increases the likelihood of false breakouts and price slippage. High volatility, evidenced by the 40.06 ATR, combined with the conflict between short-term bullish momentum and a longer-term structural downtrend, suggests a significant risk of reversal. A failure to hold above the SMA20 (391.66) would invalidate the current bullish momentum.\n\nGemini Master Reasoning:\nDesk Note: TEJASNET.NS\nDate: 23 May 2024\n\nSetup\nTEJASNET is currently locked in a compression zone, oscillating between 420 support and 465 resistance. While the stock has seen a significant 30% rally over the last 20 days, it is now cooling off. Price is effectively in no-man's land, equidistant from key levels, making any current entry essentially a coin flip.\n\nCatalyst\nThe backdrop is deteriorating. There is zero fresh fundamental news or analyst coverage to justify a conviction-based position. More importantly, the volume ratio sits at a poor 0.61 (7.8M shares against a 30.6M SMA20), indicating a distinct lack of institutional interest. In a thin-volume environment, current price action is largely noise.\n\nFriction\nThe primary headwind is the clear conflict between short-term momentum and structural weakness. While moving averages remain technically bullish, the relative strength is negative compared to the broader market, and the current volatility (ATR 40.06) poses a risk of sharp, whipsaw reversals. Participating here risks being trapped by a \"bull trap\" given the weak participation.\n\nExecution Plan\nMaintain a strictly hands-off approach. This is not a dip-buy candidate yet, as the 420 support is vulnerable if the broader market remains weak. \n- Entry: Wait for a decisive daily close above 465. \n- Confirmation: Must be accompanied by a significant surge in trading volume. \n- Invalidation: If the price breaks and sustains below 420, remove from the watch list as it signals a deeper correction.\n\nVerdict\nNO_TRADE. \nEdge is too weak to justify capital allocation. The current setup is a consolidation pattern that requires patience. Do not force a trade in the middle of a range; let the market prove its intent with volume before committing. Stand aside until the 465 breakout threshold is cleared.\n\nLLM Token Usage:\n- Input tokens: 14409\n- Output tokens: 2384\n- Total tokens: 16793\n- Estimated cost (USD): 0.0\n\nLONG-TERM OUTLOOK (Based on News, Financials, and Price Data)\n- Stance: LONG_TERM_BEARISH\n- Confidence: 0.750\n- Sector: Unknown\n- Data coverage: 2154 daily bars for long-term model.\n- Price trend (1Y/3Y/5Y/10Y): -40.05571505899969% / -30.883735871753103% / 167.82028796402076% / 67.40038182296608%.\n- Long-run quality: CAGR(3Y)=-11.584837009156313%, CAGR(5Y)=21.77795999096521%, CAGR(10Y)=6.215963455086526%,\n  Max Drawdown(5Y)=-93.42016617106155%, Vol=54.70998650704948%.\n- Structural trend: price vs 200DMA=-17.895930864168776%.\n- Note: N/A metrics indicate insufficient history for that exact horizon, not an implied negative value.\n- News signal: avg sentiment=0.00 across stock/industry/macro streams (2/12/10 items).\n- Fundamental location: 52w position=24.45588268686302%, 1Y return=-40.05571505899969%.\n- Street context: analyst upside=N/A% from N/A analysts.\n- Macro overlay: India sentiment=SELL, US trend=SELL.\n\n--- VALUATION SNAPSHOT ---\n- P/E (trailing): N/A\n- PEG ratio: N/A\n- Price/Book: N/A\n- ROE: N/A\n- Debt/Equity: N/A\n- EV/EBITDA: N/A\n- EV/Revenue: N/A\n- Book value per share: N/A\n- Enterprise value: N/A\n- Gross margins: N/A\n- Operating margins: N/A\n- EBITDA margins: N/A\n- Total revenue: N/A\n- Total debt: N/A\n- Total cash: N/A\n\n--- QUARTERLY FINANCIAL TRENDS ---\n- Revenue QoQ growth: N/A\n- Net income QoQ growth: N/A\n- Operating cash flow QoQ: N/A\n\n--- DIVIDEND & OWNERSHIP ---\n- Dividend yield: N/A\n- Dividend yield trend: N/A\n- Total dividends (1Y): ₹2.50\n- Institutional ownership: N/A\n- Major holders (institutions): N/A%\n\n--- SCORING FACTORS ---\n  → news_sentiment: score=+0.00 × weight=1.00\n  ↓ return_1y: score=-0.40 × weight=0.90\n  ↓ return_3y: score=-0.31 × weight=0.80\n  ↑ return_5y: score=+1.68 × weight=0.70\n  ↑ cagr_5y: score=+2.18 × weight=0.90\n  ↓ sma200_position: score=-1.79 × weight=0.50\n  ↓ max_drawdown: score=-0.93 × weight=0.50\n  ↓ volatility: score=-0.55 × weight=0.40\n  ↓ 52w_position: score=-0.51 × weight=0.30\n  ↓ 1y_change: score=-0.40 × weight=0.70\n  ↑ cagr_10y: score=+0.62 × weight=1.00\n  ↓ us_macro: score=-1.00 × weight=0.35\n  ↓ india_macro: score=-1.00 × weight=0.35\n\n- Composite score: 0.052\n- Secular Growth Forecast: TEJASNET shows significant technical deterioration, trading below the 200DMA with a 40% one-year decline and extreme 54% volatility. Lacking fundamental support like PEG or margin data and facing negative macro headwinds, the risk-reward is poor. 3-5 Year Secular Forecast: High risk of continued capital erosion given deep historical drawdowns and lack of clear institutional growth catalysts.\n",
+  "price_52w": {
+    "high": null,
+    "low": null,
+    "current": 24533.58,
+    "position_pct": null,
+    "change_1y_pct": null
+  },
+  "analyst_consensus": {
+    "target_price": null,
+    "target_high": null,
+    "target_low": null,
+    "n_analysts": null,
+    "implied_upside_pct": null
+  },
+  "fundamental_signals": [],
+  "key_price_levels": [
+    {
+      "label": "Resistance 1",
+      "price": 464.73,
+      "type": "resistance"
+    },
+    {
+      "label": "Resistance 2",
+      "price": 499.95,
+      "type": "resistance"
+    },
+    {
+      "label": "Resistance 3",
+      "price": 526.93,
+      "type": "resistance"
+    },
+    {
+      "label": "Current",
+      "price": 441.1,
+      "type": "current"
+    },
+    {
+      "label": "Support",
+      "price": 418.55,
+      "type": "support"
+    },
+    {
+      "label": "Breakdown Zone",
+      "price": 364.25,
+      "type": "breakdown"
+    }
+  ],
+  "momentum_score": 69.0,
+  "qualitative_labels": {
+    "moving_averages": "Buy",
+    "trend_channel": "Rising",
+    "rsi": "Near overbought",
+    "macd": "Bullish"
+  },
+  "valuation_snapshot": {
+    "pe_trailing": null,
+    "peg_ratio": null,
+    "ev_to_ebitda": null,
+    "ev_to_revenue": null,
+    "gross_margins": null,
+    "operating_margins": null,
+    "ebitda_margins": null,
+    "book_value": null,
+    "dividend_yield": null,
+    "enterprise_value": null,
+    "roe": null,
+    "debt_to_equity": null,
+    "price_to_book": null,
+    "total_revenue": null,
+    "total_debt": null,
+    "total_cash": null
+  },
+  "master_reasoning": {
+    "model": "gemini-3.1-flash-lite-preview",
+    "text": "Desk Note: TEJASNET.NS\nDate: 23 May 2024\n\nSetup\nTEJASNET is currently locked in a compression zone, oscillating between 420 support and 465 resistance. While the stock has seen a significant 30% rally over the last 20 days, it is now cooling off. Price is effectively in no-man's land, equidistant from key levels, making any current entry essentially a coin flip.\n\nCatalyst\nThe backdrop is deteriorating. There is zero fresh fundamental news or analyst coverage to justify a conviction-based position. More importantly, the volume ratio sits at a poor 0.61 (7.8M shares against a 30.6M SMA20), indicating a distinct lack of institutional interest. In a thin-volume environment, current price action is largely noise.\n\nFriction\nThe primary headwind is the clear conflict between short-term momentum and structural weakness. While moving averages remain technically bullish, the relative strength is negative compared to the broader market, and the current volatility (ATR 40.06) poses a risk of sharp, whipsaw reversals. Participating here risks being trapped by a \"bull trap\" given the weak participation.\n\nExecution Plan\nMaintain a strictly hands-off approach. This is not a dip-buy candidate yet, as the 420 support is vulnerable if the broader market remains weak. \n- Entry: Wait for a decisive daily close above 465. \n- Confirmation: Must be accompanied by a significant surge in trading volume. \n- Invalidation: If the price breaks and sustains below 420, remove from the watch list as it signals a deeper correction.\n\nVerdict\nNO_TRADE. \nEdge is too weak to justify capital allocation. The current setup is a consolidation pattern that requires patience. Do not force a trade in the middle of a range; let the market prove its intent with volume before committing. Stand aside until the 465 breakout threshold is cleared."
+  },
+  "llm_usage": {
+    "calls": [
+      {
+        "name": "News Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2231,
+        "output_tokens": 92,
+        "total_tokens": 2323
+      },
+      {
+        "name": "US Trend Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 414,
+        "output_tokens": 96,
+        "total_tokens": 510
+      },
+      {
+        "name": "Market Setup Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 2074,
+        "output_tokens": 110,
+        "total_tokens": 2184
+      },
+      {
+        "name": "Catalyst Context Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1933,
+        "output_tokens": 90,
+        "total_tokens": 2023
+      },
+      {
+        "name": "Trader Intel Agent",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1434,
+        "output_tokens": 281,
+        "total_tokens": 1715
+      },
+      {
+        "name": "Batched Agent Reasoning",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 1725,
+        "output_tokens": 1177,
+        "total_tokens": 2902
+      },
+      {
+        "name": "Long-Term Outlook Agent decision",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 942,
+        "output_tokens": 112,
+        "total_tokens": 1054
+      },
+      {
+        "name": "Master Reasoning",
+        "model": "gemini-3.1-flash-lite-preview",
+        "status": "ok",
+        "reason": "",
+        "input_tokens": 3656,
+        "output_tokens": 426,
+        "total_tokens": 4082
+      }
+    ],
+    "llm_enabled": true,
+    "skipped_calls": 0,
+    "error_calls": 0,
+    "total_input_tokens": 14409,
+    "total_output_tokens": 2384,
+    "total_tokens": 16793,
+    "pricing": {
+      "input_cost_per_1m": 0.0,
+      "output_cost_per_1m": 0.0,
+      "estimated_total_cost_usd": 0.0
+    }
+  }
+}
