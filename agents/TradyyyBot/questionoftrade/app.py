@@ -13,7 +13,7 @@ import glob
 import random
 import base64
 
-GEMINI_API_KEY = "AIzaSyDeC5RdJKz0XY90k9uymqiUWKv_tZd9Itk"
+GEMINI_API_KEY = "GOOGLE_GEMINI_KEY"
 client = genai.Client(api_key=GEMINI_API_KEY)
 MODEL_ID = 'gemini-3.1-flash-lite-preview'
 
