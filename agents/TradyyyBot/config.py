@@ -4,7 +4,7 @@ import os
 NEWSAPI_KEY = os.getenv("NEWSAPI_KEY", "")
 FINNHUB_API_KEY = os.getenv("FINNHUB_API_KEY", "")
 ALPHAVANTAGE_API_KEY = os.getenv("ALPHAVANTAGE_API_KEY", "")
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyAAgsHG4R1rp1XR2_d9YHKwDqma6wW5iGs")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "GEMINI_API_KEY")
 GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.1-flash-lite-preview")
 
 # Runtime controls.
