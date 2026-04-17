@@ -11,6 +11,12 @@ export const auth = betterAuth({
   emailAndPassword: {
     enabled: true,
   },
+  socialProviders: {
+    google: {
+      clientId: env.GOOGLE_CLIENT_ID || "",
+      clientSecret: env.GOOGLE_CLIENT_SECRET || "",
+    },
+  },
   user: {
     additionalFields: {
       hasPassedKnowledgeCheck: {

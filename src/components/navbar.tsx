@@ -44,7 +44,7 @@ export function Navbar() {
       <div className="flex h-16 items-center justify-between px-4 md:px-6">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
-          <div className="text-xl font-bold">bullIQ</div>
+          <div className="text-xl font-bold">NivionAI</div>
         </Link>
 
         {/* Navigation Items */}

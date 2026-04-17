@@ -15,6 +15,8 @@ export const env = createEnv({
     KNOWLEDGE_API_URL: z.string().url(),
     STOCK_ANALYSIS_API_URL: z.string().url(),
     GEMINI_API_KEY: z.string().optional(),
+    GOOGLE_CLIENT_ID: z.string().optional(),
+    GOOGLE_CLIENT_SECRET: z.string().optional(),
     NODE_ENV: z
       .enum(["development", "test", "production"])
       .default("development"),
@@ -39,6 +41,8 @@ export const env = createEnv({
     KNOWLEDGE_API_URL: process.env.KNOWLEDGE_API_URL,
     STOCK_ANALYSIS_API_URL: process.env.STOCK_ANALYSIS_API_URL,
     GEMINI_API_KEY: process.env.GEMINI_API_KEY,
+    GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID,
+    GOOGLE_CLIENT_SECRET: process.env.GOOGLE_CLIENT_SECRET,
     NODE_ENV: process.env.NODE_ENV,
   },
   /**
