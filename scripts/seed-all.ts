@@ -11,7 +11,7 @@ async function runSeedScripts() {
   console.log("🌱 Starting complete seeding process...\n");
 
   for (let i = 0; i < scripts.length; i++) {
-    const { name, script } = scripts[i];
+    const { name, script } = scripts[i]!;
     const stepNumber = i + 1;
 
     console.log(`[${stepNumber}/${scripts.length}] ${name}...`);
