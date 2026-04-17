@@ -9,7 +9,7 @@ import { Navbar } from "~/components/navbar";
 import { KnowledgeChatbot } from "~/components/knowledge-chatbot";
 
 export const metadata: Metadata = {
-  title: "BullIQ",
+  title: "NivionAI",
   description: "",
   icons: [{ rel: "icon", url: "/images.ico" }],
 };
