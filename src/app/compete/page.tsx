@@ -13,7 +13,7 @@ import {
 } from "~/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Compete | BullIQ",
+  title: "Compete",
   description: "Select a trading competition mode.",
 };
 
